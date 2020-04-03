@@ -1,0 +1,4 @@
+- Guides
+    - [Getting started](/)
+- Reference
+    - [Nodes](/nodes/)
