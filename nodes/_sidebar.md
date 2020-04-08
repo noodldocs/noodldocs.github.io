@@ -1,2 +1,3 @@
 - Nodes
-    - [Collection](/nodes/collection.md)
+    [Collection](/nodes/data/collection.md)
+    [Model](/nodes/data/model.md)

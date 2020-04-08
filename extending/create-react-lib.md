@@ -7,14 +7,14 @@ Noodl is based on the popular React frontend library which makes it easy for you
 ## Setup
 First you need to install the Noodl command line interfaces. If you have not previously installed the CLI you can do so via npm.
 
-```
-$ npm install -g noodl-cli
+```bash
+npm install -g noodl-cli
 ```
 
 With the CLI tool you can easily create a new react library module from a template like so:
 
-```
-$ noodl-cli create-react-lib my-react-lib
+```bash
+noodl-cli create-react-lib my-react-lib
 ```
 
 You need to specify a directory name that will be created and will contain everything you need to get started. Using the command above the directory *my-react-lib* will be created.
@@ -33,20 +33,20 @@ The **module** directory contains the source code for the module and the **proje
 
 First enter the **module** folder and install the needed dependencies:
 
-```
-$ npm install
+```bash
+npm install
 ```
 
 Once the dependencies are installed you can build the module using:
 
-```
-$ npm run build
+```bash
+npm run build
 ```
 
 You can also enter development mode where the module will be rebuilt when it detects changes in the source code.
 
-```
-$ npm run dev
+```bash
+npm run dev
 ```
 
 Part of the development flow is to load the accompaning Noodl project that will now contain the built module. First launch Noodl.
@@ -74,8 +74,8 @@ We will soon dive into the code behind these components. But lets first push the
 
 First we need to add some descriptive information to our library. Go back to the root folder or the library, e.g. the *my-react-lib* folder we created in the first step. Then run this command. 
 
-```
-$ noodl-cli desc --label "My React Lib" --desc "A short description of my lib"
+```bash
+noodl-cli desc --label "My React Lib" --desc "A short description of my lib"
 ```
 
 You can provide your own nicely descriptive label and description. Next up you can replace the default *icon.png* file with something that represents your library visually.
@@ -90,8 +90,8 @@ And the at the bottom of that page you will find the key.
 
 With the key in hand you can run the following command in the root of your library folder, e.g. the *my-react-lib* folder in this example.
 
-```
-$ noodl-cli push --workspace "your-workspace-name" --accessKey "the-access-key"
+```bash
+noodl-cli push --workspace "your-workspace-name" --accessKey "the-access-key"
 ```
 
 Thats it. Now you will find your library in the library pane within the Noodl editor. Any user of your workspace will see all modules and it can be added to a project with the *Add* button.
