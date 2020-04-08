@@ -1,8 +1,8 @@
 - Videos
     - [Getting Started](/videos/getting-started)
 - Guides
-    - [States](/guides/states)
-    - [Layouting](/guides/layouting)
+    - [States](/guides/states.md)
+    - [Layouting](/guides/layouting.md)
 - Extending
     - [Create React Lib](/extending/create-react-lib)
 - Reference

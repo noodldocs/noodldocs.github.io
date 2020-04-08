@@ -2,7 +2,7 @@
 
 This guide will cover the layouting mechamism. It will be an important concept to master so that you can create responsive, dynamic front ends for your apps with ease.
 
-?> **Download** the example project covered in this tutorial [here](//guides/layout-guide.zip).
+?> **Download** the example project covered in this guide [here](//guides/layout-guide.zip).
 
 The example project contains many small snippets that highlight different aspects of the layouting system. You can take a look at them by using the navigation buttons. We will go through them one by one.
 
