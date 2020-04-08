@@ -103,6 +103,48 @@ If you make changes to the library module or project you need to rebuild and the
 ## A tour of the code
 Now you have created a new React library module from the template and you have pushed it to your Noodl workspace. Let's review the code a bit to get you up and running.
 
+The react code can be found in the **module** folder.
+
+```
+my-react-lib/
+    module/
+        src/
+            index.js
+        assets/
+            manifest.json
+        package.json
+        webpack.config.js
+    project/
+        ...
+```
+
+Check out *index.js* this file contains a simple React component and its export to Noodl. For each component that you want to be exposed in Noodl as a visual component you must create a short export.
+
+```javascript
+const MyCustomReactComponentNode = {
+	name: 'Custom React Component',
+	getReactComponent() {
+		return MyCustomReactComponent;
+	},
+	inputProps: {
+		backgroundColor: {type: 'color', default: 'white'}
+	},
+	outputProps: {
+		onClick: {type: 'signal', displayName: 'Click'}
+	}
+}
+```
+
+You specify the *name* of the component as well as a function that returns the actual React component. You also need to specify the *inputs* and *outputs* that will be available for the visual node in Noodl.
+
+The basic types for inputs are:
+* **number** for a number property.
+* **boolean** for a boolean (checkbox) property.
+* **string** for a string property.
+* **color** for a color property. Will show the color input in the Noodl properties.
+
+Outputs in react are typically done via callbacks. You can capture these callbacks and deliver them as outputs in Noodl.
+
 
 
 

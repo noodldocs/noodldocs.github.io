@@ -1,4 +1,9 @@
+- Videos
+    - [Getting Started](/videos/getting-started)
 - Guides
-    - [Getting started](/)
+    - [States](/guides/states)
+    - [Layouting](/guides/layouting)
+- Extending
+    - [Create React Lib](/extending/create-react-lib)
 - Reference
     - [Nodes](/nodes/)
