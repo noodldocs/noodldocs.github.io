@@ -1,3 +1,4 @@
-- Nodes
-    [Collection](/nodes/data/collection.md)
-    [Model](/nodes/data/model.md)
+- Data
+  - [Collection](nodes/data/collection.md)
+  - [For Each Item](nodes/data/for-each-item.md)  
+  - [For Each](nodes/data/for-each.md)   

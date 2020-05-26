@@ -201,6 +201,53 @@ body .sidebar-toggle span:nth-child(3) {
 }
 
 /****** IMAGES ******/
+.ndl-images {
+  position:relative; 
+  text-align:center; 
+  display:flex; 
+  justify-content:center;
+}
+
+.ndl-image {
+  height: auto; 
+  margin:5px;  
+  align-self: flex-start; 
+}
+
+.ndl-image.small {
+  width: 30%
+}
+
+.ndl-image.med {
+  width: 50%
+}
+
+.ndl-image.large {
+  width: 100%
+}
+
+/****** COPY NODES BUTTON ******/
+.ndl-copy-nodes-button {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  overflow: visible;
+  padding: 0.65em 0.8em;
+  border: 0;
+  border-radius: 0;
+  outline: 0;
+  font-size: 10px;
+  background: #808080;
+  background: var(--theme-color, #808080);
+  color: #fff;
+}
+
+.ndl-copy-nodes-button::after {
+  content: "COPY NODES";
+}
+
+
 .img-size-s {
   display: block;
   margin-left: auto;
@@ -220,4 +267,5 @@ body .sidebar-toggle span:nth-child(3) {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-}  
+}
+

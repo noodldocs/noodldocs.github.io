@@ -12,6 +12,11 @@ Let's dive deeper into the States nodes of this guide. First you can download an
 
 ?> **Download** the example project covered in this guide [here](//guides/states/states-guide.zip).
 
+<div style="position:relative;">
+    <img src="/guides/states/switch-nodes.png"></img>
+    <button style="top:0; right:0; position:absolute;" onClick='copyJsonToClipboard({"nodes":[{"id":"d0c1242b-072d-a0aa-dc93-3fe93c7d751c","type":"/Switch","x":0,"y":0,"parameters":{},"ports":[],"children":[]}],"connections":[]})'>COPY NODES</button>
+</div>
+
 ## The switch
 When you have downloaded and opened the project let's look at the <strong>Switch</strong> component. The node graph is quite simple. 
 
