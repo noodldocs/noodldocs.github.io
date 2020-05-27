@@ -7,8 +7,8 @@
 
 - Javascript API
     - [Introduction](javascript-api/README.md)
-    - [Model](javascript-api/noodl-model.md)
-    - [Collection](javascript-api/noodl-collection.md)
+    - [Object](javascript-api/noodl-object.md)
+    - [Array](javascript-api/noodl-array.md)
     - [Events](javascript-api/sending-and-receiving-events.md)
 
 - Extending
