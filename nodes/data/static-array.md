@@ -1,8 +1,6 @@
 # Static Data
 
-Store static data to populate a [Collection][0] with items.
-
-![](static-data.png)
+Store static data to populate an [Array](nodes/data/array.md) with items.
 
 <div class = "node-inputs">
 
@@ -48,10 +46,6 @@ Example:
 ## Outputs
 
 **Items**  
-A `Noodl.Collection` object that can be connected to a [Collection][0], [Javascript][1] or [For Each][2] node.
-
-[0]: ./collection
-[1]: ../standard-nodes/javascript
-[2]: ./for-each
+A `Noodl.Array` object that can be connected to e.g. an [Array](nodes/data/array.md), [Javascript](nodes/standard/javascript.md) or [For Each](nodes/data/for-each.md).
 
 </div>

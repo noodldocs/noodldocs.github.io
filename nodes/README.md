@@ -1,20 +1,22 @@
-## Data nodes
-One of the key aspects of Noodl is to connect to data sources and present data in front ends. These nodes are involved when working with data.
+## Component Utilities
+[Component Inputs](/nodes/standard/component-inputs.md)
 
-[Collection](/nodes/data/collection.md)
-Holds a collection of Models.
+[Component Inputs](/nodes/standard/component-outputs.md)
 
-[For Each Item](/nodes/data/for-each-item.md)
-This node is used in components that are part of a For Each to access specifics to the item instance.
+## Visual
+[Component Children](/nodes/visual/component-children.md)
 
-[For-Each](/nodes/data/for-each.md)
-Used to duplicate a component for each model item in a collection.
+## Animation
+[States](/nodes/standard/states.md)
 
-[Model](/nodes/data/model.md)
-Access data from models given a specific Id.
+## Data
+[Variable](/nodes/data/variable.md) 
 
-[Rest](/nodes/data/rest.md)
-This node can be used to perform a REST API call.
+[Object](/nodes/data/object.md)
 
-[Static Data](/nodes/data/static-data.md)
-Can be used to create a Collection with Models via a static data file in JSON or CSV.
+[Array](/nodes/data/array.md) 
+
+[Static Array](/nodes/data/static-array.md)  
+
+## Utilities
+[Boolean To String](nodes/standard/boolean-to-string.md)

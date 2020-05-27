@@ -1,6 +1,6 @@
 # COMPONENT OUTPUTS
 
-![](component-outputs.png)
+![](component-outputs.png ':class=img-size-m')
 
 Components are a very powerful feature of Noodl and are used to create reuseable parts.
 A core concept of components are that they can have inputs and outputs like any of the built in nodes.

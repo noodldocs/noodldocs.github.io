@@ -1,7 +1,9 @@
 # States
-Animate properties by jumping between different states.
+The **States** node is used to represent logical states visually. You can define your own states and values, each state will then have unique settings for these values and the node will transition between these settings as the state is changed. To learn more take a look at the [guide](/guides/switch.md).
 
-![](states.png)
+<div class="ndl-images">
+    <img src="/nodes/standard/states.png" class="ndl-image med">
+</div>
 
 <div class = "node-inputs">
 
@@ -12,33 +14,53 @@ A state node can have as many states as is necessary. Add a new state by clickin
 **Values**  
 Every state will have its own set of values. All values need to be set for every state that is added.
 
-<img src="states-example.png" width="400">
+<div class="ndl-images">
+    <img src="/nodes/standard/states-example.png" class="ndl-image small"></img>
+</div>
 
-**Toggle**  
-Will animate to the next state, or the first state if the current state is the last one.
+**State**
+This is the starting state for the state node when it is created. You can also connect to the input to force the state.
 
-**Current State**
-Set the current state with a string
+**Toggle**
+ Will animate to the next state, or the first state if the current state is the last one.
 
-## Inputs for every state
-Every state has its own set of inputs
-### State values  
-All values in a state has an input. Connect a number to set the values for a state.
+## Value types
+For each value you can specify the type. Default is **Number**.
 
-### State transition
+<div class="ndl-images">
+    <img src="/nodes/standard/states-value-types.png" class="ndl-image small"></img>
+</div>
+
+## State values
+For every state you can specify each of the values. This is the value that they will have whey you are at that specific state.
+
+<div class="ndl-images">
+    <img src="/nodes/standard/state-values.png" class="ndl-image small"></img>
+</div>
+
+## State transition
+Here you specify if there should be a transition to the target state. So when you switch to the given state it will transition smoothely over time.
+
+<div class="ndl-images">
+    <img src="/nodes/standard/state-transition.png" class="ndl-image small"></img>
+</div>
+
 **Easing Curve**
-Selects the curvature of the state animation.
+Selects the curvature of the state transition animation. Can be **Ease Out** (default), **Ease In**, **Linear**, **Ease In Out** and **Cubic Bezier**. If you choose the latter, you can use this [tool](https://cubic-bezier.com/) to generate the control points.
 
 **Duration**  
 The duration of the state animation. How long it takes in milliseconds to go from the previous state to this state.
+
+## To state actions
+Each state will have a signal input called **To** followed by the state name. This can be used to connect a signal that will take the states node to that state when the signal is triggered.
 
 </div>
 
 <div class = "node-outputs">
 
 ## OUTPUTS
-### Current State
-**Current State**  
+
+**State**  
 The name of the current state
 
 **State Changed**  

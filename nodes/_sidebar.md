@@ -1,4 +1,18 @@
+- Component Utilities
+  - [Component Inputs](nodes/standard/component-inputs.md)
+  - [Component Outputs](nodes/standard/component-outputs.md)  
+
+- Visual
+  - [Component Children](nodes/visual/component-children.md)    
+
+- Animation
+  - [States](nodes/standard/states.md) 
+
 - Data
-  - [Collection](nodes/data/collection.md)
-  - [For Each Item](nodes/data/for-each-item.md)  
-  - [For Each](nodes/data/for-each.md)   
+  - [Variable](/nodes/data/variable.md)  
+  - [Object](/nodes/data/object.md)
+  - [Array](/nodes/data/array.md)    
+  - [Static Array](/nodes/data/static-array.md)     
+
+- Utilities
+  - [Boolean To String](nodes/standard/boolean-to-string.md)
