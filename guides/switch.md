@@ -1,10 +1,10 @@
-# Making a switch
+# States
 
-In this guide we will cover how to create a simple reusable switch component.
+A common concept in Noodl is the use of different visual states. In this guide we will cover this with and example of how to create a simple reusable switch component.
 
 ![](switch/switch.gif ':class=img-size-s')
 
-It will cover how to use a **States** node for handling transitions and interactions. It will also cover some nice to know things when creating reusable components.
+It will cover how to use a **States** node for handling transitions and interactions. 
 
 ## The visuals
 First let's start with the basic visual nodes that make up the switch, this is simply a **Group** and a **Circle** with proper styling. You can copy the nodes below and paste into your project.
@@ -69,32 +69,3 @@ Finally we can make the States node toggle state when the switch Group node is c
     <img src="/guides/switch/click-toggle.png" class="ndl-image large"></img>
      <button class="ndl-copy-nodes-button" onClick='copyJsonToClipboard({"nodes":[{"id":"c8c55a5e-39ee-a97b-bf4b-ea3e9a1450a0","type":"States","x":-83.83799717887604,"y":114.25835059707853,"parameters":{"states":"On,Off","values":"Knob X,Background Color","type-Background Color":"color","value-On-Background Color":"#BED1BA","value-Off-Background Color":"#E6E6E6","value-Off-Knob X":0,"value-On-Knob X":40,"startState":"Off"},"ports":[],"children":[]},{"id":"b09ad4c4-4751-5431-93bd-08cd0989730d","type":"Group","x":183.12620813498165,"y":48.076321167880366,"parameters":{"backgroundColor":"#FFFFFF","padding":{}},"ports":[],"children":[{"id":"f228fecb-31a9-afee-4941-123903fefdfd","type":"Group","x":203.12620813498165,"y":94.07632116788037,"parameters":{"resize":{"pinLeft":false,"pinRight":false,"pinTop":true,"pinBottom":false,"pinHCenter":true,"pinVCenter":false,"sizeWidth":true,"sizeHeight":true,"width":{"value":80,"unit":"px"},"height":{"value":40,"unit":"px"}},"borderRadius":20,"margin":{"marginTop":{"value":20,"unit":"px"}},"padding":{}},"ports":[],"children":[{"id":"883f1b22-1122-a6d8-bbed-d282972dd14d","type":"Circle","x":223.12620813498165,"y":196.07632116788037,"parameters":{"resize":{"pinLeft":true,"pinRight":false,"pinTop":true,"pinBottom":false,"pinHCenter":false,"pinVCenter":false,"sizeWidth":true,"sizeHeight":false,"width":{"value":40,"unit":"px"}},"fillColor":"#E8E8E8","strokeEnabled":true,"strokeWidth":2,"strokeColor":"#454545"},"ports":[],"children":[]}]}]}],"connections":[{"fromId":"c8c55a5e-39ee-a97b-bf4b-ea3e9a1450a0","fromProperty":"Knob X","toId":"883f1b22-1122-a6d8-bbed-d282972dd14d","toProperty":"transformX"},{"fromId":"c8c55a5e-39ee-a97b-bf4b-ea3e9a1450a0","fromProperty":"Background Color","toId":"f228fecb-31a9-afee-4941-123903fefdfd","toProperty":"backgroundColor"},{"fromId":"f228fecb-31a9-afee-4941-123903fefdfd","fromProperty":"onClick","toId":"c8c55a5e-39ee-a97b-bf4b-ea3e9a1450a0","toProperty":"toggle"}]})'></button>
 </div>
-
-## Making it reusable
-If you have not checked out the video on components, you might want to do that now. To turn this switch into a reusable component we simply need to add the **Component Inputs** and **Component Outputs** nodes. You can basically choose yourself which inputs and outputs you prefer but here is an example.
-
-<div class="ndl-images">
-    <img src="/guides/switch/inputs-and-outputs.png" class="ndl-image large"></img>
-     <button class="ndl-copy-nodes-button" onClick='copyJsonToClipboard({"nodes":[{"id":"d6d301f2-1f96-6ea2-e780-687111e0b99d","type":"States","x":826.7326048418613,"y":406.91129221262827,"parameters":{"states":"On,Off","values":"Knob X,Background Color","type-Background Color":"color","value-On-Background Color":"#BED1BA","value-Off-Background Color":"#E6E6E6","value-Off-Knob X":0,"value-On-Knob X":40,"startState":"Off"},"ports":[],"children":[]},{"id":"b1c35c02-ef64-d53e-591e-05696993d856","type":"Group","x":1113.696810155719,"y":386.7292627834301,"parameters":{"resize":{"pinLeft":false,"pinRight":false,"pinTop":true,"pinBottom":false,"pinHCenter":true,"pinVCenter":false,"sizeWidth":true,"sizeHeight":true,"width":{"value":80,"unit":"px"},"height":{"value":40,"unit":"px"}},"borderRadius":20,"margin":{},"padding":{}},"ports":[],"children":[{"id":"86477d5c-bb6e-1c22-1646-239c6d0ca671","type":"Circle","x":1133.696810155719,"y":528.7292627834302,"parameters":{"resize":{"pinLeft":true,"pinRight":false,"pinTop":true,"pinBottom":false,"pinHCenter":false,"pinVCenter":false,"sizeWidth":true,"sizeHeight":false,"width":{"value":40,"unit":"px"}},"fillColor":"#E8E8E8","strokeEnabled":true,"strokeWidth":2,"strokeColor":"#454545"},"ports":[],"children":[]}]},{"id":"a1a9c2eb-c94f-97de-bf0b-364ed0111d3b","type":"Boolean To String","x":585.4713345508217,"y":455.7358186796131,"parameters":{"trueString":"On","falseString":"Off"},"ports":[],"children":[]},{"id":"45eec334-2c5c-907a-5aeb-e793ba119d5f","type":"Component Outputs","x":1113.4145782156565,"y":261.0000777909123,"parameters":{},"ports":[{"name":"State","plug":"input","type":{"name":"*"},"index":1},{"name":"Click","plug":"input","type":{"name":"*"},"index":2}],"children":[]},{"id":"4014ad0e-d4d3-4764-e718-f3a380e7965a","type":"Component Inputs","x":713.8556750528911,"y":263.84766451215614,"parameters":{},"ports":[{"name":"State","plug":"output","type":{"name":"*"},"index":1},{"name":"Sizing","plug":"output","type":{"name":"*"},"index":2},{"name":"Margins","plug":"output","type":{"name":"*"},"index":3}],"children":[]}],"connections":[{"fromId":"d6d301f2-1f96-6ea2-e780-687111e0b99d","fromProperty":"Knob X","toId":"86477d5c-bb6e-1c22-1646-239c6d0ca671","toProperty":"transformX"},{"fromId":"d6d301f2-1f96-6ea2-e780-687111e0b99d","fromProperty":"Background Color","toId":"b1c35c02-ef64-d53e-591e-05696993d856","toProperty":"backgroundColor"},{"fromId":"b1c35c02-ef64-d53e-591e-05696993d856","fromProperty":"onClick","toId":"d6d301f2-1f96-6ea2-e780-687111e0b99d","toProperty":"toggle"},{"fromId":"d6d301f2-1f96-6ea2-e780-687111e0b99d","fromProperty":"at-On","toId":"45eec334-2c5c-907a-5aeb-e793ba119d5f","toProperty":"State"},{"fromId":"b1c35c02-ef64-d53e-591e-05696993d856","fromProperty":"onClick","toId":"45eec334-2c5c-907a-5aeb-e793ba119d5f","toProperty":"Click"},{"fromId":"a1a9c2eb-c94f-97de-bf0b-364ed0111d3b","fromProperty":"currentValue","toId":"d6d301f2-1f96-6ea2-e780-687111e0b99d","toProperty":"currentState"},{"fromId":"4014ad0e-d4d3-4764-e718-f3a380e7965a","fromProperty":"Margins","toId":"b1c35c02-ef64-d53e-591e-05696993d856","toProperty":"margin"},{"fromId":"4014ad0e-d4d3-4764-e718-f3a380e7965a","fromProperty":"Sizing","toId":"b1c35c02-ef64-d53e-591e-05696993d856","toProperty":"resize"},{"fromId":"4014ad0e-d4d3-4764-e718-f3a380e7965a","fromProperty":"State","toId":"a1a9c2eb-c94f-97de-bf0b-364ed0111d3b","toProperty":"input"}]})'></button>
-</div>
-
-A few notes on the inputs:
-
-* **Sizing** this is the pinning, and width/height sizing, i.e. the dimensions part.
-* **Margins** these are the margins of the component, it's nice to have when others are using your component so they can place it where they want.
-
-When you have these two inputs connected you will get the margins and sizing properties when you create instances of this component.
-
-<div class="ndl-images">
-    <img src="/guides/switch/dims-and-margin.png" class="ndl-image small"></img>
-</div>
-
-The last input might need some further explanation. We want a nice checkbox on the input properties panel of the component and we also want to be able to connect it to data models that have a boolean output in the future. So we cannot connect directly to the **State** input of the States node since that input is a string type, the names of the states. But we can use a handy node called the **Boolean To String** node that will take a boolean input and convert it into one of two strings.
-
-<div class="ndl-images">
-    <img src="/guides/switch/bool-to-string-1.png" class="ndl-image small"></img>
-    <img src="/guides/switch/bool-to-string-2.png" class="ndl-image small"></img>
-</div>
-
-So we simply put in the state names for **true** which is **On** and for **false** which is **Off**.
-

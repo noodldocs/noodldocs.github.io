@@ -3,7 +3,8 @@
     - [Video lessons](video-lessons.md)
 
 - Guides
-    - [Making a switch](guides/switch.md)
+    - [States](guides/switch.md)
+    - [Events](guides/events.md)
 
 - Javascript API
     - [Introduction](javascript-api/README.md)
