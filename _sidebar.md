@@ -3,7 +3,7 @@
     - [Video lessons](video-lessons.md)
 
 - Guides
-    - [States](guides/switch.md)
+    - [States](guides/states.md)
     - [Events](guides/events.md)
 
 - Javascript API

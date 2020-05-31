@@ -5,6 +5,10 @@
 - Visual
   - [Component Children](nodes/visual/component-children.md)    
 
+- Events  
+  - [Send Event](nodes/standard/send-event.md) 
+  - [Receive Event](nodes/standard/receive-event.md)   
+
 - Animation
   - [States](nodes/standard/states.md) 
 

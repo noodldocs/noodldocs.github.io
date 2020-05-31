@@ -1,105 +1,71 @@
 # States
 
-States is an important and powerful concept in Noodl. Although very versatile, States are primarily used for two tasks.
+A common concept in Noodl is the use of different visual states. In this guide we will cover this with and example of how to create a simple reusable switch component.
 
 ![](states/switch.gif ':class=img-size-s')
 
-**User interaction states** is when you need to manage states as part of a user interaction, e.g. a switch that can be on and off. There is an example of that in the **Switch** component in this lesson.
+It will cover how to use a **States** node for handling transitions and interactions. 
 
-States can also be used to **present data** by specifying different visual representations for the states. This is also included in the example where the state of the switch is visualized.
+## The visuals
+First let's start with the basic visual nodes that make up the switch, this is simply a **Group** and a **Circle** with proper styling. You can copy the nodes below and paste into your project.
 
-Let's dive deeper into the States nodes of this guide. First you can download and open the project that we will be reviewing below.
-
-?> **Download** the example project covered in this guide [here](//guides/states/states-guide.zip).
-
-<div style="position:relative;">
-    <img src="/guides/states/switch-nodes.png"></img>
-    <button style="top:0; right:0; position:absolute;" onClick='copyJsonToClipboard({"nodes":[{"id":"d0c1242b-072d-a0aa-dc93-3fe93c7d751c","type":"/Switch","x":0,"y":0,"parameters":{},"ports":[],"children":[]}],"connections":[]})'>COPY NODES</button>
+<div class="ndl-images">
+    <img src="/guides/states/switch-nodes.png" class="ndl-image med"></img>
+    <button class="ndl-copy-nodes-button" onClick='copyJsonToClipboard({"nodes":[{"id":"a4ace8fb-60a2-f8e0-f545-ba01235c9949","type":"Group","x":80.54913581321142,"y":69.29866004702447,"parameters":{"backgroundColor":"#FFFFFF","padding":{}},"ports":[],"children":[{"id":"c648be6b-9a6c-1be5-277d-7b1cd053a799","type":"Group","x":100.54913581321142,"y":115.29866004702447,"parameters":{"resize":{"pinLeft":false,"pinRight":false,"pinTop":true,"pinBottom":false,"pinHCenter":true,"pinVCenter":false,"sizeWidth":true,"sizeHeight":true,"width":{"value":80,"unit":"px"},"height":{"value":40,"unit":"px"}},"borderRadius":20,"margin":{"marginTop":{"value":20,"unit":"px"}},"padding":{},"backgroundColor":"#F0F0F0"},"ports":[],"children":[{"id":"4846627c-af2a-042a-dfdf-7a2ef905f07a","type":"Circle","x":120.54913581321142,"y":161.29866004702447,"parameters":{"resize":{"pinLeft":true,"pinRight":false,"pinTop":true,"pinBottom":false,"pinHCenter":false,"pinVCenter":false,"sizeWidth":true,"sizeHeight":false,"width":{"value":40,"unit":"px"}},"fillColor":"#E8E8E8","strokeEnabled":true,"strokeWidth":2,"strokeColor":"#454545"},"ports":[],"children":[]}]}]}],"connections":[]})'></button>
 </div>
 
-## The switch
-When you have downloaded and opened the project let's look at the <strong>Switch</strong> component. The node graph is quite simple. 
+Then take a look at the styling of the two nodes. Don't forget that you can hover the nodes in the graph to see their placement in the preview.
 
-![](states/switch-nodes.png ':class=img-size-m')
+<div class="ndl-images">
+    <img src="/guides/states/style-props1.png" class="ndl-image small"></img>
+    <img src="/guides/states/style-props2.png" class="ndl-image small"></img>
+</div>
 
-Here a **States** node is controlling the states **On** and **Off** for the switch. First let's take a look at the properties for the States node.
+## The states node
+A very common pattern is that you want to represent states visually. In this case we want to have two states **On** and **Off** for our switch, and we want it to have different visuals for these states. This is achieved with the **States** node. Start by creating a new States node.
 
-The top part of the States properties contains the states list. Here you can create new states and rename or remove existing states. When you create a new states node this list is empty, but in this example we have created two states; one for when the switch is **On** and one for when it is **Off**.
+Next you need to create the two states.
 
-![](states/states-props-1.png ':class=img-size-m')
+<div class="ndl-images">
+    <img src="/guides/states/create-states.gif" class="ndl-image med"></img>
+</div>
 
-By changing the **Start at** property you can see how the switch is turned on and off. The property is used to specify which state should be the starting state.
+The State node will be in one of the defined states, it will start at the state specified by the **State** property that shows up when you add states. You can then switch state by connecting a signal (we will do this later).
 
-The following section of the properties contain the state values. These values will become outputs of the *States* node and can be given specific values for the different states the node can assume.
+We will also specify **Values** for each of our state. Just like you added states now also add a single value call it **Knob X**. It doesn't really matter what you call it as long as you know what it is for. In this case it's for moving the knobs (the Circle node) X position to it's correct position for the two states.
 
-![](states/states-props-2.png ':class=img-size-m')
+<div class="ndl-images">
+    <img src="/guides/states/values-1.png" class="ndl-image med"></img>
+</div>
 
-This is the core concept of the *States* node. For each state, these values will be different, so when we make the node change state the value outputs will change to their corresponding state values.
+Now you can specify the value for each state. The X position should be **0** when the switch is in the **Off** state and **40** when the Switch is in the **On** state. Enter these values in the States node properties.
 
-## The state values
-Next follows a section where you can specify the actual values for the different states. As you can see the first header of this section contains the value of **X**for the **On** state. The **X** value is the horizontal position of the switch group, so we want it to be 0 when the switch is turned on.
+<div class="ndl-images">
+    <img src="/guides/states/on-values.png" class="ndl-image med"></img>
+    <img src="/guides/states/off-values.png" class="ndl-image med"></img>
+</div>
 
-![](states/states-props-3.png ':class=img-size-m')
+Finally connect the *Knob X* output of the States to the *Pos X* input of the Circle node. 
 
-The section titled **On Transition** specifies how the value will transition smoothly to the specified state value from whatever the value currently is. You can specify transition easing and timing here.
+<div class="ndl-images">
+    <img src="/guides/states/knob-x-connected.png" class="ndl-image large"></img>
+</div>
 
-The final section specifies the **X** value for the **Off** state as well as the transition to that state.
+As you can see the States node will get an output corresponding to each value. This output will transition to the specified values when the states node changes state. An a way to see the different states and transitions is to play with the **State** drop down in the properties panel.
 
-![](states/states-props-4.png ':class=img-size-m')
+<div class="ndl-images">
+    <img src="/guides/states/change-state.gif" class="ndl-image large"></img>
+</div>
 
-As you can see in the node graph the **X** output of the States node is connected to the **X** position of the group visual for the actual Switch, and the **Click** signal of the parent group is connected to the Toggle action of the States node. This will make the States node toggle between the states.
+You can also see how the output of the States node changes value as it transitions for one state to the other. You are free to connect the outputs of the States node to anything you like, you can also use different types than numbers. Try to add a new **Value** to the States node and give it a **Color** type instead. Then choose two different colors for the two states and connect the output to the **Background Color** of the **Group** node containing the Circle.
 
-![](states/switch-nodes.png ':class=img-size-m')
+<div class="ndl-images">
+    <img src="/guides/states/color-type.png" class="ndl-image med"></img>
+</div>
 
-## Presenting data with states
+Finally we can make the States node toggle state when the switch Group node is clicked. This is achieved by connecting the **Click** signal from the group to the **Toggle** input of the States node. This will make the States node jump to the next state in the list and when the last one is reached it will jump to the first one again. In this case we only have two so it will toggle between **On** and **Off**.
 
-Next let's take a look at how you can present data with states. If you take a look at the **Main** component, in the sample project, you will see that the state of the Switch, that can be either **On** or **Off** is connected to another states node.
-
-![](states/main-graph-1.png ':class=img-size-m')
-
-The connection goes to **Current State** of the states node, this means that when the switch is flipped the states node will automatically switch to that state.
-
-Now let's take a look at the different ways the States node is used to visualize the **On** and **Off** states as you can see when flipping the switch.
-
-![](states/switch.gif ':class=img-size-m')
-
-## Color blend
-
-A color blend node is used to smoothly blend between two colors that is then connected to the color of the circle.
-
-![](states/color-blend.png ':class=img-size-m')
-
-If you take a look at the States node and specifically the values of Blend you can see that it is **1** for the **On** state and **0** for the **Off** state. This will correspond to the colors of the color Blend node. Open the properties panel for the Color Blend node to see and edit the colors.
-
-![](states/color-blend-props.png ':class=img-size-m')
-
-The States node will smoothly transition the Blend output based on the specified transition properties, and the Blend node will use the value between 0 and 1 to interpolate a color between the two specified colors.
-
-## String Selector
-
-The label **DAY** and **NIGHT** is produced by first connecting the Blend output to an expression that uses a math function called **round** to round the value to the nearest integer, that is 0 or 1.
-
-![](states/string-selector-1.png ':class=img-size-m')
-
-The integer value is then connected to the **String Selector** node that produces the label based on the **Index** input.
-
-If you look at the properties of the String Selector node you will see the two labels for the corresponding index.
-
-![](states/string-selector-props.png ':class=img-size-m')
-
-Finally the output is connected to the text label.
-
-![](states/string-selector-2.png ':class=img-size-m')
-
-## String Mapper
-
-Another way you can achieve the same thing is by using the **String Mapper** node. Instead of mapping an index to a string this maps one string to another. So you can use the **Current State** and map it to something else.
-
-![](states/string-mapper-1.png ':class=img-size-m')
-
-In this case the state is mapped to a filename that is used by the image to display the **Moon** or **Sun** icons. You can see the mappings by editing the properties of the String Mapper node.
-
-![](states/string-mapper-props.png ':class=img-size-m')
-
-
-
+<div class="ndl-images">
+    <img src="/guides/states/click-toggle.png" class="ndl-image large"></img>
+     <button class="ndl-copy-nodes-button" onClick='copyJsonToClipboard({"nodes":[{"id":"c8c55a5e-39ee-a97b-bf4b-ea3e9a1450a0","type":"States","x":-83.83799717887604,"y":114.25835059707853,"parameters":{"states":"On,Off","values":"Knob X,Background Color","type-Background Color":"color","value-On-Background Color":"#BED1BA","value-Off-Background Color":"#E6E6E6","value-Off-Knob X":0,"value-On-Knob X":40,"startState":"Off"},"ports":[],"children":[]},{"id":"b09ad4c4-4751-5431-93bd-08cd0989730d","type":"Group","x":183.12620813498165,"y":48.076321167880366,"parameters":{"backgroundColor":"#FFFFFF","padding":{}},"ports":[],"children":[{"id":"f228fecb-31a9-afee-4941-123903fefdfd","type":"Group","x":203.12620813498165,"y":94.07632116788037,"parameters":{"resize":{"pinLeft":false,"pinRight":false,"pinTop":true,"pinBottom":false,"pinHCenter":true,"pinVCenter":false,"sizeWidth":true,"sizeHeight":true,"width":{"value":80,"unit":"px"},"height":{"value":40,"unit":"px"}},"borderRadius":20,"margin":{"marginTop":{"value":20,"unit":"px"}},"padding":{}},"ports":[],"children":[{"id":"883f1b22-1122-a6d8-bbed-d282972dd14d","type":"Circle","x":223.12620813498165,"y":196.07632116788037,"parameters":{"resize":{"pinLeft":true,"pinRight":false,"pinTop":true,"pinBottom":false,"pinHCenter":false,"pinVCenter":false,"sizeWidth":true,"sizeHeight":false,"width":{"value":40,"unit":"px"}},"fillColor":"#E8E8E8","strokeEnabled":true,"strokeWidth":2,"strokeColor":"#454545"},"ports":[],"children":[]}]}]}],"connections":[{"fromId":"c8c55a5e-39ee-a97b-bf4b-ea3e9a1450a0","fromProperty":"Knob X","toId":"883f1b22-1122-a6d8-bbed-d282972dd14d","toProperty":"transformX"},{"fromId":"c8c55a5e-39ee-a97b-bf4b-ea3e9a1450a0","fromProperty":"Background Color","toId":"f228fecb-31a9-afee-4941-123903fefdfd","toProperty":"backgroundColor"},{"fromId":"f228fecb-31a9-afee-4941-123903fefdfd","fromProperty":"onClick","toId":"c8c55a5e-39ee-a97b-bf4b-ea3e9a1450a0","toProperty":"toggle"}]})'></button>
+</div>
