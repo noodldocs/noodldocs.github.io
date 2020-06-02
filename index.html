@@ -54,6 +54,9 @@ function copyTextToClipboard(text) {
 function copyJsonToClipboard(json) {
   copyTextToClipboard(JSON.stringify(json))
 }
+function importIntoNoodl(path) {
+  window.location = 'noodl:import/' + location.protocol+'//'+location.host + '/' + path;
+}
     </script>
   </head>
 

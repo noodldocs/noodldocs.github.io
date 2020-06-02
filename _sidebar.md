@@ -5,6 +5,7 @@
 - Guides
     - [States](guides/states.md)
     - [Events](guides/events.md)
+    - [For Each](guides/for-each.md)
 
 - Javascript API
     - [Introduction](javascript-api/README.md)
