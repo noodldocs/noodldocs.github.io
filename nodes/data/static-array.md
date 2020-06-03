@@ -2,9 +2,7 @@
 
 Store static data to populate an [Array](nodes/data/array.md) with items.
 
-<div class = "node-inputs">
-
-## Inputs
+## INPUTS
 **Type**  
 Choose what format the data will be in.
 
@@ -39,13 +37,8 @@ Example:
         }
     ]
 
-</div>
-
-<div class = "node-outputs">
-
-## Outputs
+## OUTPUTS
 
 **Items**  
 A `Noodl.Array` object that can be connected to e.g. an [Array](nodes/data/array.md), [Javascript](nodes/standard/javascript.md) or [For Each](nodes/data/for-each.md).
 
-</div>
