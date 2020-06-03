@@ -241,6 +241,7 @@ body .sidebar-toggle span:nth-child(3) {
   background: #808080;
   background: var(--theme-color, #808080);
   color: #fff;
+  cursor: pointer;
 }
 
 .ndl-copy-nodes-button::after {
