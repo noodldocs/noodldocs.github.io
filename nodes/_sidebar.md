@@ -17,6 +17,8 @@
   - [Object](/nodes/data/object.md)
   - [Array](/nodes/data/array.md)    
   - [Static Array](/nodes/data/static-array.md)     
+  - [For Each](/nodes/data/for-each.md) 
+  - [For Each Item](/nodes/data/for-each-item.md)             
 
 - Utilities
   - [Boolean To String](nodes/standard/boolean-to-string.md)
