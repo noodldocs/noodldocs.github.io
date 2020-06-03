@@ -1,6 +1,6 @@
 # States
 
-A common concept in Noodl is the use of different visual states. In this guide we will cover this with and example of how to create a simple reusable switch component.
+A common concept in Noodl is the use of different visual states. In this guide we will cover this with an example of how to create a simple reusable switch component.
 
 ![](states/switch.gif ':class=img-size-s')
 
