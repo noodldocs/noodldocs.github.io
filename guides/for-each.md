@@ -1,4 +1,4 @@
-# DYNAMIC CONTENT
+# For Each
 In this guide we are going to review how to create dynamic content. If you have not previously watched the video lesson on Components it's a good time to do that now. As you know you can create reusable components in Noodl that makes build interfaces much easier. But often you want to show dynamic data instead of just static content. Luckily it's quite easy to go from static to dynamic data in Noodl.
 
 We will look at an example of a list of National Parks, you can import the example below into Noodl by clicking the import button. You need to have a project open to import into.

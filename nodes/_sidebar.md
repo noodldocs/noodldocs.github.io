@@ -3,7 +3,8 @@
   - [Component Outputs](nodes/standard/component-outputs.md)  
 
 - Visual
-  - [Component Children](nodes/visual/component-children.md)    
+  - [Component Children](nodes/visual/component-children.md)
+  - [Group](nodes/visual/group.md)        
 
 - Events  
   - [Send Event](nodes/standard/send-event.md) 
