@@ -1,43 +1,45 @@
 # Layouting
 
-This guide will cover the layouting mechamism. It will be an important concept to master so that you can create responsive, dynamic front ends for your apps with ease.
+This guide will cover the layouting mechanism. It is an important concept to master in order to easily create responsive, dynamic front ends for your apps.
 
 ## Margin and padding
-A the center of layouting is the **Group** node so that is where we will start. Groups are arranged in a hierarchy as can be seen in the node graph below. A group controls the layout of its children and there are a number of properties that can be used to specify how the children of the group will be layouted.
+
+At the center of layouting is the **Group** node. Groups are arranged in a hierarchy as can be seen in the node graph below. A group controls the layout of its children and there are a number of properties that can be used to specify how the children of a group will be layouted.
 
 <div class="ndl-images">
     <img src="/guides/layouts/groups.png" class="ndl-image med"></img>  
      <button class="ndl-copy-nodes-button" onClick='copyJsonToClipboard({"nodes":[{"id":"5a81ad6d-b8eb-16f8-e2b3-3533c0a05462","type":"Group","label":"Group","x":176,"y":140.5,"parameters":{"backgroundColor":"#FFFFFF"},"ports":[],"children":[{"id":"999f7f8b-6678-ed24-5ea9-08b25e1b394e","type":"Group","x":196,"y":186.5,"parameters":{"marginTop":{"value":20,"unit":"px"},"marginLeft":{"value":20,"unit":"px"},"marginRight":{"value":20,"unit":"px"},"marginBottom":{"value":20,"unit":"px"},"paddingTop":{"value":50,"unit":"px"},"paddingLeft":{"value":50,"unit":"px"},"paddingRight":{"value":50,"unit":"px"},"paddingBottom":{"value":50,"unit":"px"},"backgroundColor":"#DBDBDB"},"ports":[],"children":[{"id":"ddde9610-f9a6-03bd-bb46-4a67d56a2180","type":"Group","x":216,"y":232.5,"parameters":{"backgroundColor":"#B5B5B5"},"ports":[],"children":[]}]}]}],"connections":[]})'></button>
 </div>
 
-?> **Hover** the nodes in the editor and they will be highlighted in the preview window. This is a great way to inspect a component that you are unfamiliar with.
+?> **Hover** the nodes in the Noodl editor and they will highlight in the preview window. This is a great way to inspect a component that you are unfamiliar with.
 
 <div class="ndl-images">
     <img src="/guides/layouts/hover.gif" class="ndl-image med"></img>
 </div>
 
-Select one of the nodes to view the properties. In the property panel you can find the *Margin and padding* controls.
+Select one of the nodes to view it's properties. In the property panel you can find the _Margin and padding_ controls.
 
 <div class="ndl-images">
     <img src="/guides/layouts/margin-and-padding-props.png" class="ndl-image small"></img>
 </div>
 
-Here you can specify the *margin*, i.e. the distance between this node and it's siblings in the layout. You can specify the margins in all four directions. You can also specify the *padding*, this is the distance from the borders of the group to it's children.
+Here you can specify the _margin_, i.e. the distance between this node and it's siblings in the layout. You can specify the margins in all four directions. You can also specify the _padding_, which is the distance from the borders of the group to it's children.
 
 The best way to learn is to play around with the three nodes in this simple hierarchy.
 
 ## Layout direction
-By default the **Group** node will stack it's children vertically. You can change the layout by editing the **Layout** property. You can choose to change the layout between:
 
-* **Vertical** Children are stacked vertically.
-* **Horizontal** Children are stacked horizontally.
-* **None** Children are *not* stacked.
+By default the **Group** node will stack it's children vertically. You can change the layout direction by editing the **Layout** property. You can change the layout between:
+
+- **Vertical** Children are stacked vertically.
+- **Horizontal** Children are stacked horizontally.
+- **None** Children are _not_ stacked.
 
 <div class="ndl-images">
     <img src="/guides/layouts/layout-prop.png" class="ndl-image med"></img>  
 </div>
 
-Check out the small node graph below. Copy these nodes and paste them into an empty component, you can try to change the **Layout** of the top level node and see how the positions of the child nodes change.
+Check out the small node graph below. Copy these nodes and paste them into an empty component in your Noodl editor, and then change the **Layout** of the top level node to see how the direction of the child nodes change.
 
 <div class="ndl-images">
     <img src="/guides/layouts/layout-dir.png" class="ndl-image med"></img>  
@@ -45,7 +47,8 @@ Check out the small node graph below. Copy these nodes and paste them into an em
 </div>
 
 ## Dimensions
-The dimensions section of the properties cover how the size of a **Group** is derived. The default is that both *Width* and *Height* is explicitly specified in either pixels (**px**), percent of parent, (**%**) or as a percentage of the viewport size (**vw** and **vh**).
+
+The dimensions section of the properties cover how the size of a **Group** is derived. The default is that both _Width_ and _Height_ is explicitly specified in either pixels (**px**), percent of parent (**%**), or as a percentage of the viewport size (**vw** and **vh**).
 
 <div class="ndl-images">
     <img src="/guides/layouts/dims-1.png" class="ndl-image med"></img>  
@@ -53,12 +56,12 @@ The dimensions section of the properties cover how the size of a **Group** is de
 
 A **Group** can also get it's dimensions from the size of it's children. You use the icons at the top to change between the four modes (from right):
 
-* **Explicit width and height** Specify both width and height explicitly.
-* **Explicit width, Content height** Specify the width explicitly but the height will be the total of the children heights and margins (depending on layout).
-* **Explicit height, Content width** Specify the height explicitly but the width will be the total of the children widths and margins (depending on layout).
-* **Content width and height** The size of this group will be the total width and height of the children based on the layout.
+- **Explicit width and height** Specify both width and height explicitly.
+- **Explicit width, Content height** Specify the width explicitly but the height will be the total of the children heights and margins (depending on layout).
+- **Explicit height, Content width** Specify the height explicitly but the width will be the total of the children widths and margins (depending on layout).
+- **Content width and height** The size of this group will be the total width and height of the children based on the layout.
 
-You can copy the nodes below to an empty component. The result is shown to the right. These nodes each use a different setting for the **Dimensions** icons.
+You can copy the nodes below to an empty component in your Noodl editor. The result is shown to the right. These nodes each use a different setting for the **Dimensions** icons.
 
 <div class="ndl-images">
     <img src="/guides/layouts/content-size-nodes.png" class="ndl-image small"></img>  
@@ -67,20 +70,21 @@ You can copy the nodes below to an empty component. The result is shown to the r
 </div>
 
 ## Alignment
+
 The Alignment controls can be used to specify how a child **Group** (or other visual node) is aligned relative to it's parent.
 
 <div class="ndl-images">
     <img src="/guides/layouts/align-props.png" class="ndl-image med"></img>  
 </div>
 
-If the parent **Group** has it's **Layout** property set to **None** you can use the alignment controls to pin the child visual node to a corner. Then you could use margins or padding to offset it from that corner.
+If the parent **Group** has it's **Layout** property set to **None** you can use the alignment controls to pin the child visual node to a corner. You can then use the margins or padding to offset it from that corner.
 
 <div class="ndl-images">
     <img src="/guides/layouts/align.gif" class="ndl-image large"></img>  
       <button class="ndl-copy-nodes-button" onClick='copyJsonToClipboard({"nodes":[{"id":"2d685790-39fe-32e0-ca4d-6db71529af6f","type":"Group","label":"Layout None","x":246.88905579077777,"y":242.63152555189907,"parameters":{"backgroundColor":"#FFFFFF"},"ports":[],"children":[{"id":"992a412b-d3d6-a66e-9634-acc87393902d","type":"Circle","x":266.8890557907778,"y":303.6315255518991,"parameters":{"fillColor":"#C9C9C9","alignY":"top","alignX":"left"},"ports":[],"children":[]}]}],"connections":[]})'></button> 
 </div>
 
-Now if you have a **Layout** set for the parent node, such as **Vertical** (default) or **Horizontal** one of the alignments will not have any effect as that dimension is controlled by the layout. In the example below the two circles are kept in a vertical layout so the vertical alignment will not have any effect.
+If you have a **Layout** set for the parent node, such as **Vertical** (default) or **Horizontal** one of the alignments will not have any effect as that dimension is controlled by the layout. In the example below the two circles are kept in a vertical layout so the vertical alignment will not have any effect.
 
 <div class="ndl-images">
     <img src="/guides/layouts/align-layout.gif" class="ndl-image large"></img>  
@@ -88,7 +92,10 @@ Now if you have a **Layout** set for the parent node, such as **Vertical** (defa
 </div>
 
 ## Wrapping
-If the layouted child nodes will extend beyond the border of the parent you have a couple of options to control the behaviour. One is wrapping. This is controlled by the **Multi Line Wrap** option in the properties.
+
+If the layouted child nodes extend beyond the border of the parent you have a couple of options to control the behaviour, wrapping or scrolling. This section will explain the wrapping options that are available.
+
+Wrapping is controlled by the **Multi Line Wrap** option in the properties.
 
 <div class="ndl-images">
     <img src="/guides/layouts/wrap.png" class="ndl-image med"></img>  
@@ -96,15 +103,14 @@ If the layouted child nodes will extend beyond the border of the parent you have
 
 You can choose any of these options:
 
-* **Off** The children will simply extend beyond the borders of the parent node (default).
-* **On** The children will wrap onto a new line when the extend beyond the border.
-* **On Reverse** The children will wrap but in the reverse direction.
+- **Off** The children will simply extend beyond the borders of the parent node (default).
+- **On** The children will wrap onto a new line when they extend beyond the border of their parent.
+- **On Reverse** The children will wrap but in the reverse direction.
 
 ## Scrolling
-If you don't want the items to wrap but instead want scrolling you need to enable it via the **Enable Scroll** property of the **Group** node.
+
+If you don't want the children to wrap but instead want scrolling you need to enable it via the **Enable Scroll** property of the **Group** node.
 
 <div class="ndl-images">
     <img src="/guides/layouts/scroll-props.png" class="ndl-image med"></img>  
 </div>
-
-
