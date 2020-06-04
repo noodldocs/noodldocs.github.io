@@ -3,6 +3,7 @@
     - [Video lessons](video-lessons.md)
 
 - Guides
+    - [Layouting](guides/layouts.md)
     - [States](guides/states.md)
     - [Events](guides/events.md)
     - [For Each](guides/for-each.md)
