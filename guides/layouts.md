@@ -81,7 +81,7 @@ If the parent **Group** has it's **Layout** property set to **None** you can use
 
 <div class="ndl-images">
     <img src="/guides/layouts/align.gif" class="ndl-image large"></img>  
-      <button class="ndl-copy-nodes-button" onClick='copyJsonToClipboard({"nodes":[{"id":"2d685790-39fe-32e0-ca4d-6db71529af6f","type":"Group","label":"Layout None","x":246.88905579077777,"y":242.63152555189907,"parameters":{"backgroundColor":"#FFFFFF"},"ports":[],"children":[{"id":"992a412b-d3d6-a66e-9634-acc87393902d","type":"Circle","x":266.8890557907778,"y":303.6315255518991,"parameters":{"fillColor":"#C9C9C9","alignY":"top","alignX":"left"},"ports":[],"children":[]}]}],"connections":[]})'></button> 
+      <button class="ndl-copy-nodes-button" onClick='copyJsonToClipboard({"nodes":[{"id":"8a968ff3-9099-fc23-eaef-b3f3c2f8a271","type":"Group","label":"Layout None","x":-124.8300537163023,"y":231.19983547495616,"parameters":{"backgroundColor":"#FFFFFF","flexDirection":"none"},"ports":[],"children":[{"id":"6c2df5ce-7596-06da-a5c5-335275501d64","type":"Circle","x":-104.8300537163023,"y":292.19983547495616,"parameters":{"fillColor":"#C9C9C9","alignY":"top","alignX":"left"},"ports":[],"children":[]}]}],"connections":[]})'></button> 
 </div>
 
 If you have a **Layout** set for the parent node, such as **Vertical** (default) or **Horizontal** one of the alignments will not have any effect as that dimension is controlled by the layout. In the example below the two circles are kept in a vertical layout so the vertical alignment will not have any effect.
