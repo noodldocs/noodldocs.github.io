@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Welcome to Noodl. This short video gives you a quick introduction on how to create a new project and introduce you to the basics of creating your first app.
+Welcome to Noodl. This short video gives you a quick introduction on how to create a new project and introduces you to the basics of creating your first app.
 
 <div style="padding:62.5% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/333294272" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
 
