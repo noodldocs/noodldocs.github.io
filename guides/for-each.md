@@ -1,7 +1,8 @@
 # For Each
-In this guide we are going to review how to create dynamic content. If you have not previously watched the video lesson on Components it's a good time to do that now. As you know you can create reusable components in Noodl that makes build interfaces much easier. But often you want to show dynamic data instead of just static content. Luckily it's quite easy to go from static to dynamic data in Noodl.
 
-We will look at an example of a list of National Parks, you can import the example below into Noodl by clicking the import button. You need to have a project open to import into.
+Noodl let's you create reusable components so that building front end interfaces is easier and faster. This guide will show you how reusable components can be used to show dynamic data in a list. It's a good idea to review the video lesson on Components before continuing with this example.
+
+Let's look at an example of a list of National Parks. You can import the example below into Noodl by clicking the import button. You need to have a project open to import into.
 
 <div class="ndl-images">
     <img src="/guides/for-each/screen.png" class="ndl-image small"></img>   
@@ -9,52 +10,60 @@ We will look at an example of a list of National Parks, you can import the examp
 </div>
 
 ## The For Each node
-There are two components **Main** and **Item**, the latter component contains the nodes that comprise the items in the list (as the name implies).
+
+There are two components, **Main** and **Item**, in the imported project. The **Item** component contains the nodes that comprise the items in the list (as the name implies).
 
 <div class="ndl-images">
     <img src="/guides/for-each/item-comp.png" class="ndl-image med"></img>  
 </div>
 
-The **Item** component is then used twice in the **Main** component with different inputs for the image and two labels.
+The **Item** component is then used twice in the **Main** component. Each instance of the **Item** component has it's own input values for the image and two labels.
 
 <div class="ndl-images">
     <img src="/guides/for-each/main-comp.png" class="ndl-image med"></img>  
      <img src="/guides/for-each/item-props.png" class="ndl-image small"></img>  
 </div>
 
-To turn this setup into a one with dynamic data we will replace the two **Item** components with a node called **For Each**. This node will dynamically create any component you tell it to based on data it takes as input in the **Items** input. There are many ways to bring data into Noodl but for simplicity we will use static data now. The setup we are going for is shown below. You can copy the nodes and replace the static ones in your project.
+To utilize dynamic data, let's change the node graph by replacing the the two **Item** components with a **For Each** component.
+
+The **For Each** node dynamically creates components based on the data it is given in it's **Items** input port. We will go through the **For Each** node in more detail later in this guide.
+
+There are many ways to bring data into Noodl, but in this example we will use a **Static Array** with static data.
+Below you can see the new node graph we want to create. You can copy the nodes and replace the previous node graph in your project.
 
 <div class="ndl-images">
     <img src="/guides/for-each/for-each-nodes.png" class="ndl-image med"></img>  
-     <button class="ndl-copy-nodes-button" onClick='copyJsonToClipboard({"nodes":[{"id":"e733a5af-1587-aa30-dd3b-563196297e99","type":"Group","x":464,"y":303,"parameters":{"backgroundColor":"#FFFFFF","scrollBehavior":"native"},"ports":[],"children":[{"id":"09bc84f0-99e8-b172-bdeb-3670f6362e85","type":"For Each","x":484,"y":349,"parameters":{"template":"/Item"},"ports":[],"children":[]}]},{"id":"593ad143-0560-19c7-3c04-5a26ea3a1893","type":"Static Data","x":192,"y":352,"parameters":{"csv":"","type":"json","json":"[\n     {\n        \"Image\":\"https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Grand_Canyon_view_from_Pima_Point_2010.jpg/460px-Grand_Canyon_view_from_Pima_Point_2010.jpg\",\n        \"Name\":\"Grand Canyon\",\n        \"Location\":\"Arizona,USA\"\n    },   \n    {\n        \"Image\":\"https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Tunnel_View%2C_Yosemite_Valley%2C_Yosemite_NP_-_Diliff.jpg/568px-Tunnel_View%2C_Yosemite_Valley%2C_Yosemite_NP_-_Diliff.jpg\",\n        \"Name\":\"Yosemite\",\n        \"Location\":\"California,USA\"\n    },\n    {\n        \"Image\":\"https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/YellowstonefallJUN05.JPG/500px-YellowstonefallJUN05.JPG\",\n        \"Name\":\"Yellowstone\",\n        \"Location\":\"Idaho, USA\"\n    },\n    {\n        \"Image\":\"https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Zion_angels_landing_view.jpg/568px-Zion_angels_landing_view.jpg\",\n        \"Name\":\"Zion National Park\",\n        \"Location\":\"Utah, USA\"\n    },\n    {\n        \"Image\":\"https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Hvannadalshnjukur-Vatnajokull_National_Park.JPG/568px-Hvannadalshnjukur-Vatnajokull_National_Park.JPG\",\n        \"Name\":\"Vatnajökull\",\n        \"Location\":\"Iceland\"\n    }\n    \n]"},"ports":[],"children":[]}],"connections":[{"fromId":"593ad143-0560-19c7-3c04-5a26ea3a1893","fromProperty":"items","toId":"09bc84f0-99e8-b172-bdeb-3670f6362e85","toProperty":"items"}]})'></button>
+     <button class="ndl-copy-nodes-button" onClick='copyJsonToClipboard({"nodes":[{"id":"c742d550-e134-e5ad-c6c3-0466ab68e456","type":"Group","x":430.22076842300993,"y":360.61425173633353,"parameters":{"backgroundColor":"#FFFFFF","scrollBehavior":"native","scrollEnabled":true},"ports":[],"children":[{"id":"26ca28ad-bc2c-43fe-e75d-95f8394e99d1","type":"For Each","x":450.22076842300993,"y":406.61425173633353,"parameters":{"template":"/Item"},"ports":[],"children":[]}]},{"id":"cdc83bfe-8962-cd05-7ac8-9e3c479d6aa0","type":"Static Data","x":158.22076842300993,"y":409.61425173633353,"parameters":{"csv":"","type":"json","json":"[\n     {\n        \"Image\":\"https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Grand_Canyon_view_from_Pima_Point_2010.jpg/460px-Grand_Canyon_view_from_Pima_Point_2010.jpg\",\n        \"Name\":\"Grand Canyon\",\n        \"Location\":\"Arizona,USA\"\n    },   \n    {\n        \"Image\":\"https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Tunnel_View%2C_Yosemite_Valley%2C_Yosemite_NP_-_Diliff.jpg/568px-Tunnel_View%2C_Yosemite_Valley%2C_Yosemite_NP_-_Diliff.jpg\",\n        \"Name\":\"Yosemite\",\n        \"Location\":\"California,USA\"\n    },\n    {\n        \"Image\":\"https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/YellowstonefallJUN05.JPG/500px-YellowstonefallJUN05.JPG\",\n        \"Name\":\"Yellowstone\",\n        \"Location\":\"Idaho, USA\"\n    },\n    {\n        \"Image\":\"https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Zion_angels_landing_view.jpg/568px-Zion_angels_landing_view.jpg\",\n        \"Name\":\"Zion National Park\",\n        \"Location\":\"Utah, USA\"\n    },\n    {\n        \"Image\":\"https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Hvannadalshnjukur-Vatnajokull_National_Park.JPG/568px-Hvannadalshnjukur-Vatnajokull_National_Park.JPG\",\n        \"Name\":\"Vatnajökull\",\n        \"Location\":\"Iceland\"\n    }\n    \n]"},"ports":[],"children":[]}],"connections":[{"fromId":"cdc83bfe-8962-cd05-7ac8-9e3c479d6aa0","fromProperty":"items","toId":"26ca28ad-bc2c-43fe-e75d-95f8394e99d1","toProperty":"items"}]})'></button>
 </div>
 
-Let's start with the simple data node **Static Array**, this node is great for specifying small pieces of data that typically does not change. In the node you pasted we have provided a small snippet of data. You can edit the data by editing the properties of the node. The data can be specifed in CSV or JSON format.
+Let's go through this new node graph, and let's start with the simple data node **Static Array**. This node is great for specifying small pieces of data that typically does not change. The **Static Array** node you pasted in, already has a small snippet of data filled in. You can edit the data by editing the properties of the node. The data can be specifed in CSV or JSON format.
 
 <div class="ndl-images">
     <img src="/guides/for-each/static-array.gif" class="ndl-image large"></img>  
 </div>
 
-The node will output the specified data in an output called **Items**. These types of outputs generally contain arrays. You can review the content of the items by hovering the connection. This is particulary useful when you are loading data from other sources and you want to review its content.
+The **Static Array** node will output the specified data in an output port called **Items**. These types of outputs generally contain arrays. You can review the content of the items that are being outputted by hovering over the connection. This is particulary useful when you are loading data from different sources and you want to review its content.
 
 <div class="ndl-images">
     <img src="/guides/for-each/hover-data.png" class="ndl-image med"></img>  
 </div>
 
-As you can see the array of items are feed into the **For Each** component, the input also called **Items**. What the node does is that *for each* object in the array it creates an instance of a specified component. The component it creates is specified in the properties of the **For Each** node.
+The array of items are fed into the **For Each** node by connecting it to the input port called **Items**.
+_For each_ object in the array of items, the **For Each** node creates an instance of a specified component. The component it creates is specified in the **Component** property of the **For Each** node.
 
 <div class="ndl-images">
     <img src="/guides/for-each/for-each-props.png" class="ndl-image small"></img>  
 </div>
 
-In this example, we have choosen the **Item** component that we used previously in our static design. Now the For Each node creates component instances dynamically.
+In this example, we use the **Item** component that was previously used in our static design. The For Each node creates **Item** component instances dynamically, based on the data received in the **Items** input port.
 
-As you can see this data contains an array of objects each with the attributes **Image**, **Name** and **Location**. These attributes match the inputs of our **Item** component and they will automatically be set by the For Each node.
+As you can see this data contains an array of objects, each with the attributes **Image**, **Name** and **Location**. These attributes match the input ports of our **Item** component and they will automatically be set by the For Each node.
 
 The result you should have now is a list with more items. You can try to add new items to the data in the **Static Array** node and see how the list updates.
 
 ## Item signals
-If you take a closer look at the **Item** component you will see that it has an output that is connected to the **Click** signal of the top level Group. So when the item is clicked it will send a signal on it's output. 
+
+If you take a closer look at the **Item** component you will see that it has an output that is connected to the **Click** signal of the top level Group. So when the item is clicked it will send a signal on it's output.
 
 <div class="ndl-images">
     <img src="/guides/for-each/item-click.png" class="ndl-image med"></img>  
@@ -89,6 +98,7 @@ When the popup appears you can see that it is empty. Now we want to show the pop
 You can use the cross at the top of the popup to close it again. Give it a try. If you like you can take a look at the contents of the **Popup** component and how it uses the **States** node to open and close, you can also review the states [guide](/guides/states.md) to learn more about that concept. Now as you can see the popup is empty and now we need to fill it with the correct content.
 
 ## Objects
+
 The data in the **Items** output from the **Static Array** node is actually an array (list) of individual objects. You can review the data by hovering the **Items** connection. Each of these objects are represented visually by one list item via the **For each** node. Each object also has a unique identifier this is just a random string of characters but it can be used to uniquely identify an object within a Noodl app.
 
 When the **For Each** node emits the **Click** signal from a component it will also provide the unqiue identifier of the component that triggered the signal. This is outputted on an output called **Item Id** on the For Each node. Now we want to access the individual attributes of the object, the **Name**, **Location** and **Image** and input those into the popup component. We can use the **Object** node and the following setup to achieve that.
@@ -99,9 +109,9 @@ When the **For Each** node emits the **Click** signal from a component it will a
 
 To achieve the setup above:
 
-* Create an **Object** node.
-* Connect the **Item Id** output of the **For Each** node to the **Id** input of the **Object** node.
-* Open the properties of the **Object** node and create the **Name**, **Location** and **Image** properties.
+- Create an **Object** node.
+- Connect the **Item Id** output of the **For Each** node to the **Id** input of the **Object** node.
+- Open the properties of the **Object** node and create the **Name**, **Location** and **Image** properties.
 
 <div class="ndl-images">
     <img src="/guides/for-each/object-props.gif" class="ndl-image med"></img>  
@@ -109,7 +119,7 @@ To achieve the setup above:
 
 You need to explicitly create outputs for the properties that you want to access. For each property that you specify you will get an output (and input) on the **Object** node.
 
-* Finally connect the **Name**, **Location** and **Image** outputs from the **Object** node to the corresponding inputs on the **Popup** node.
+- Finally connect the **Name**, **Location** and **Image** outputs from the **Object** node to the corresponding inputs on the **Popup** node.
 
 And voila now you can open the popup by clicking a list item and it will show the content for that item. You can also inspect the data as it flows in the graph by hovering the connections, and you can pin an inspector by clicking it. So you can see the conenctions updating as you navigate your app.
 
@@ -120,6 +130,7 @@ And voila now you can open the popup by clicking a list item and it will show th
 There you can also see the **Id** of the object. The Id can actually be any string, but when Noodl assigns Ids they become random unique strings. When the **Item Id** output is updated it is pushed to the Object node which then "switches" to the new object reference by the Id and thus updates it's outputs accordingly. This in turn will push the new values for **Image**, **Location** and **Name** to the popup component.
 
 ## For each item
+
 One more thing to mention before we wrap this guide up is the **For Each Item** node. This might be a bit tricky to visualize, but each **Item** component is duplicated many times by the **For Each** node and each time it has new inputs corresponding to the object that it is representing. You can also access the **Id** of the object the component is representing via the **For Each Item** node.
 
 Take a look at the following change in the **Item** component.
