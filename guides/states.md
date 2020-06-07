@@ -1,6 +1,6 @@
 # States
 
-A common concept in Noodl is the use of different visual states. In this guide we will cover this with an example of how to create a simple reusable switch component.
+A common concept in Noodl is the use of different visual states. In this guide we will cover this with an example of how to create a simple reusable switch component, and an example of hovering effects.
 
 ![](states/switch.gif ':class=img-size-s')
 
@@ -69,3 +69,56 @@ Finally we can make the States node toggle state when the switch Group node is c
     <img src="/guides/states/click-toggle.png" class="ndl-image large"></img>
      <button class="ndl-copy-nodes-button" onClick='copyJsonToClipboard({"nodes":[{"id":"f0d8169f-90ca-9cd9-bc88-af4c2ed631d0","type":"Group","x":441.71346128847347,"y":300.98375737190554,"parameters":{"backgroundColor":"#FFFFFF"},"ports":[],"children":[{"id":"f2461a9d-49c6-f184-1ac1-a75450a7c856","type":"Group","x":461.71346128847347,"y":346.98375737190554,"parameters":{"width":{"value":80,"unit":"px"},"height":{"value":40,"unit":"px"},"backgroundColor":"#F0F0F0","borderRadius":20,"alignX":"center","marginTop":{"value":20,"unit":"px"}},"ports":[],"children":[{"id":"c66997cc-19d2-630c-692e-0caafdf37dd7","type":"Circle","x":481.71346128847347,"y":448.98375737190554,"parameters":{"fillColor":"#E8E8E8","size":40,"strokeWidth":2,"strokeColor":"#454545","strokeEnabled":true},"ports":[],"children":[]}]}]},{"id":"5d631656-dea2-b5d7-f5ee-ee27e220463b","type":"States","x":232.07664638676232,"y":376.3848345864951,"parameters":{"states":"On,Off","values":"Knob X,Background Color","type-Background Color":"color","value-On-Knob X":40,"value-Off-Knob X":0,"value-Off-Background Color":"#F0F0F0","value-On-Background Color":"#CCE6CE","startState":"Off"},"ports":[],"children":[]}],"connections":[{"fromId":"5d631656-dea2-b5d7-f5ee-ee27e220463b","fromProperty":"Knob X","toId":"c66997cc-19d2-630c-692e-0caafdf37dd7","toProperty":"transformX"},{"fromId":"5d631656-dea2-b5d7-f5ee-ee27e220463b","fromProperty":"Background Color","toId":"f2461a9d-49c6-f184-1ac1-a75450a7c856","toProperty":"backgroundColor"},{"fromId":"f2461a9d-49c6-f184-1ac1-a75450a7c856","fromProperty":"onClick","toId":"5d631656-dea2-b5d7-f5ee-ee27e220463b","toProperty":"toggle"}]})'></button>
 </div>
+
+## Transitions
+For *number* and *color* types the States node will try to smoothly transition between the states. Sometimes this is not the desired behaviour, and sometimes you want to change how the transition behaves. For this you can edit the transition curves. Take a look at the example below, you can copy the nodes and replace the old ones or create a new component.
+
+<div class="ndl-images">
+    <img src="/guides/states/hover-fx-nodes.png" class="ndl-image med"></img>
+     <button class="ndl-copy-nodes-button" onClick='copyJsonToClipboard({"nodes":[{"id":"4c6ec6bd-2ba3-807a-9177-da451a835ec2","type":"Group","x":410.63681490171115,"y":392,"parameters":{"backgroundColor":"#FFFFFF"},"ports":[],"children":[{"id":"56e1ec26-a280-b297-baf3-f5365f6a6124","type":"Group","x":430.63681490171115,"y":438,"parameters":{"width":{"value":80,"unit":"px"},"height":{"value":80,"unit":"px"},"backgroundColor":"#E6DD39","borderRadius":20,"alignX":"center","marginTop":{"value":70,"unit":"px"}},"ports":[],"children":[]}]},{"id":"34a39ad5-0999-133a-5f7e-6943ebd8d899","type":"States","label":"Hover","x":177.3701941946174,"y":432.9317475959747,"parameters":{"states":"Yes,No","startState":"No","values":"Size,Color","type-Color":"color","value-Yes-Color":"#D4CE35","value-No-Color":"#323975","value-Yes-Size":1.5,"value-No-Size":1},"ports":[],"children":[]}],"connections":[{"fromId":"56e1ec26-a280-b297-baf3-f5365f6a6124","fromProperty":"hoverStart","toId":"34a39ad5-0999-133a-5f7e-6943ebd8d899","toProperty":"to-Yes"},{"fromId":"56e1ec26-a280-b297-baf3-f5365f6a6124","fromProperty":"hoverEnd","toId":"34a39ad5-0999-133a-5f7e-6943ebd8d899","toProperty":"to-No"},{"fromId":"34a39ad5-0999-133a-5f7e-6943ebd8d899","fromProperty":"Color","toId":"56e1ec26-a280-b297-baf3-f5365f6a6124","toProperty":"backgroundColor"},{"fromId":"34a39ad5-0999-133a-5f7e-6943ebd8d899","fromProperty":"Size","toId":"56e1ec26-a280-b297-baf3-f5365f6a6124","toProperty":"transformScale"}]})'></button>
+</div>
+
+This simple graph have a **States** node that controls the hover state of a **Group**. As you can see the Group sends a signal when it is hovered which takes the States node to **Yes** and another when the mouse leaves which takes the states node to **No**. The states node then changes the **Scale** and **Color** of the Group. The effect is shown below:
+
+<div class="ndl-images">
+    <img src="/guides/states/hover-fx1.gif" class="ndl-image small"></img>
+</div>
+
+Both transitions (color and size) have the default transition curve. You can edit the transition curves in the properties of the **States** node. Look for the transitions when moving to the **Yes** state (i.e. the hovered state).
+
+<div class="ndl-images">
+    <img src="/guides/states/transition-props.png" class="ndl-image med"></img>
+</div>
+
+The **Default** transition is the one that covers all values if they don't have a specific transition curve set for them. So if you want to change the curve for all transitions use that one. In this case we want to change the curve for the **Size** transition. You can edit the curve via the curve editor.
+
+<div class="ndl-images">
+    <img src="/guides/states/change-size-curve.gif" class="ndl-image med"></img>
+</div>
+
+You can play with different settings for the curves and see them working when you hover the rectangle in the preview. Here is one example with a little bounce in the **Size** transition and a linear **Color** transition. Don't forget that you can use the preset icons on the right in the curve editor to choose between the four presets.
+
+* **Ease In** Slower in the beginning and accelerating towards the end.
+* **Ease Out** Decelerates towards the end.
+* **Ease In and Out** Smooth start and end.
+* **Linear** Linear animation, starts instantly and keeps constant speed.
+
+<div class="ndl-images">
+    <img src="/guides/states/hover-fx2.gif" class="ndl-image small"></img>
+</div>
+
+## Chaining States
+You can also connect many states nodes together to create more complex types of animations. In the node graph below we have a second states node that expands the group (changes the width). The second states node labeled **Expand** simply changes the width between the states **Yes** and **No**. The neat thing is that it is triggered when the first states node (the hover states) has reached the **Yes** state. And it is returned to **No** when the mouse leaves (the hover end), just like the first node.
+
+<div class="ndl-images">
+    <img src="/guides/states/chaining-states.png" class="ndl-image large"></img>
+     <button class="ndl-copy-nodes-button" onClick='copyJsonToClipboard({"nodes":[{"id":"31b24415-e1ef-7480-db67-f8c3d9df8965","type":"Group","x":410.63681490171115,"y":392,"parameters":{"backgroundColor":"#FFFFFF"},"ports":[],"children":[{"id":"2255f3f8-c7c6-a195-9e20-22204968c916","type":"Group","x":430.63681490171115,"y":438,"parameters":{"width":{"value":80,"unit":"px"},"height":{"value":80,"unit":"px"},"backgroundColor":"#E6DD39","borderRadius":20,"alignX":"center","marginTop":{"value":70,"unit":"px"}},"ports":[],"children":[]}]},{"id":"dadabea3-2a7f-ca23-a71d-79fae0cfff6e","type":"States","label":"Hover","x":173.3701941946174,"y":343.9317475959747,"parameters":{"states":"Yes,No","startState":"No","values":"Size,Color","type-Color":"color","value-Yes-Color":"#D4CE35","value-No-Color":"#323975","value-Yes-Size":1.5,"value-No-Size":1,"transition-Yes-Size":{"curve":[0,0,0.39,2.31],"dur":300,"delay":0},"transition-Yes-Color":{"curve":[0,0,1,1],"dur":300,"delay":0},"transition-No-Color":{"curve":[0,0,1,1],"dur":300,"delay":0}},"ports":[],"children":[]},{"id":"82a0d318-ac00-eb50-653e-bf2aa4344425","type":"States","label":"Expand","x":181.5019645647742,"y":554.7158737979873,"parameters":{"states":"Yes,No","values":"Width","value-Yes-Width":200,"value-No-Width":90,"startState":"No","transition-Yes-Width":{"curve":[0,0,0.58,1],"dur":500,"delay":0}},"ports":[],"children":[]}],"connections":[{"fromId":"2255f3f8-c7c6-a195-9e20-22204968c916","fromProperty":"hoverStart","toId":"dadabea3-2a7f-ca23-a71d-79fae0cfff6e","toProperty":"to-Yes"},{"fromId":"2255f3f8-c7c6-a195-9e20-22204968c916","fromProperty":"hoverEnd","toId":"dadabea3-2a7f-ca23-a71d-79fae0cfff6e","toProperty":"to-No"},{"fromId":"dadabea3-2a7f-ca23-a71d-79fae0cfff6e","fromProperty":"Color","toId":"2255f3f8-c7c6-a195-9e20-22204968c916","toProperty":"backgroundColor"},{"fromId":"dadabea3-2a7f-ca23-a71d-79fae0cfff6e","fromProperty":"Size","toId":"2255f3f8-c7c6-a195-9e20-22204968c916","toProperty":"transformScale"},{"fromId":"82a0d318-ac00-eb50-653e-bf2aa4344425","fromProperty":"Width","toId":"2255f3f8-c7c6-a195-9e20-22204968c916","toProperty":"width"},{"fromId":"dadabea3-2a7f-ca23-a71d-79fae0cfff6e","fromProperty":"reached-Yes","toId":"82a0d318-ac00-eb50-653e-bf2aa4344425","toProperty":"to-Yes"},{"fromId":"2255f3f8-c7c6-a195-9e20-22204968c916","fromProperty":"hoverEnd","toId":"82a0d318-ac00-eb50-653e-bf2aa4344425","toProperty":"to-No"}]})'></button>
+</div>
+
+This will result in the behavoiur shown below. As you can see the first States node triggers the bouncy size change, this is immediately followed by the second **Expand** states node that changes the state to **Yes** and transitions the width to the expanded state.
+
+<div class="ndl-images">
+    <img src="/guides/states/hover-fx3.gif" class="ndl-image small"></img>
+</div>
+
+The states nodes are some of the most commonly used nodes in Noodl apps and mastering them will let you create many great interactions. Have fun!
