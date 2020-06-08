@@ -1,40 +1,44 @@
 # Events
-This guide covers an important concept in Noodl called Events. Events are used to send signals with accompanying data from one part of the node graph and receive it at one or many other locations. This is often useful when an user interaction occurs at one place in the app, such as the click of a button, that should trigger an action at a different place, e.g. a popup showing.
 
-This concept includes two nodes, the **Send Event** node and the **Receive Event** node. When you want to send an event you use the appropriately named node. Below is an example of an event being sent when a text node is clicked.
+This guide covers an important concept in Noodl called Events. Events are used to send and recive signals with accompanying data. Signals are sent from one part of the node graph to one or many other locations in the graph. This is often useful when an user interaction occurs in one place of the app, such as the click of a button, that should trigger an action in a different place, e.g. a popup showing.
+
+This concept includes two nodes, the **Send Event** node and the **Receive Event** node. As the name implies, the **Send Event** node is used when you want to send an event. Below is an example of an event being sent when a **Text** node is clicked.
 
 ![](events/send-event.png ':class=img-size-m')
 
 ## Sending and receiving events
-As you can see the **Click** signal on the **Text** node is connected to the **Send** input on the **Send Event** node. This will trigger the an event to be send when the text is clicked.
 
-An event is sent to a certain **Channel** which is specified in the properties of the Send Event node. In this case the name of the channel is *Show Popup*.
+In the example above, the **Click** signal of the **Text** node is connected to the **Send** input of the **Send Event** node. This will trigger the an event to be sent when the text is clicked.
+
+An event is sent to a certain **Channel** which is specified in the properties of the **Send Event** node. In this case the name of the channel is **Show Popup**.
 
 ![](events/channel-prop.png ':class=img-size-s')
 
-The event signal is passed to all **Receive Event** nodes that share the same **Channel**. In the example below the event send above is received.
+The event signal is passed to all **Receive Event** nodes that share the same **Channel**. In the example below the event that was sent above is received.
 
 ![](events/receive-event.png ':class=img-size-m')
 
-Just to illustrate this you can see below how when the click signal is sent via the **Send Event** node it is passed to the **Received** output of the **Event Receiver** node.
+To illustrate this you can see below how when the click signal is sent via the **Send Event** node, it is passed to the **Received** output of the **Event Receiver** node.
 
 ![](events/events-demo.gif ':class=img-size-l')
 
 ## Passing payload data
-This is the basic concept of the Events mechanism in Noodl. Next let's take a look at how you can pass data via payload connections to your event nodes. You start by adding ports to the **Send Event** node. You can add any number of ports for the data that you want to pass with the event.
+
+So far we have seen the basic concept of the Events mechanism in Noodl. Next, let's take a look at how you can pass data via payload connections to your event nodes. You start by adding ports to the **Send Event** node. You can add any number of ports for the data that you want to pass with the event.
 
 ![](events/add-port.gif ':class=img-size-l')
 
-Next you can connect to the input ports. When the **Send** signal is received the value will captured on all inputs of the **Send Event** node and passed to the **Receive Event**.
+Now you can connect data to the input ports that you created on the **Send Event** node. When the **Send** signal is received, the values on all inputs of the **Send Event** node will be captured and passed to the **Receive Event**.
 
 ![](events/connect-to-port.png ':class=img-size-m')
 
-When the **Receive Event** node sends the **Received** signal it will also update all outputs. You must add the payload port on the Send Event node first and it will become available on all Receive Event nodes that share the same channel.
+When the **Receive Event** node outputs the **Received** signal it will also update all other outputs. The payload ports added on the **Send Event** node will become available on all **Receive Event** nodes that share the same channel as the **Send Event** node.
 
 ![](events/receiver-outputs.png ':class=img-size-m')
 
 ## Propagation
-Event propagation means how an event is sent in the graph, i.e. which **Receive Event** nodes it is sent to. The default propagation mode is **Global** which means the *all* receivers will be triggered. You can however change the propagation via the **Send To** property of the **Send Event** node.
+
+Event propagation means how an event is sent in the graph, i.e. which **Receive Event** nodes an event is sent to. The default propagation mode is **Global** which means _all_ receivers will be triggered. You can however change the propagation via the **Send To** property of the **Send Event** node.
 
 ![](events/send-to.png ':class=img-size-m')
 
@@ -46,10 +50,8 @@ The **Siblings** mode will pass the event to all other components that are on th
 
 ![](events/send-to-siblings.png ':class=img-size-l')
 
-The last propagation mode is **Parent**. This mode will instead send the event up the hierarchy. So if for instance the **My Other Child** in the example graph below contained a **Send Event** node that sends an event to it's parent. First the parent **My Child Comp** component with receive it, followed by this component and then the event would be passed on to the parent of this component. The propagation follows the visual hierarchy chain.
+The last propagation mode is **Parent**. This mode will send events up the node graph hierarchy. The **My Other Child** in the example graph below contains a **Send Event** node that is using the **Parent** propagation mode. When an event is sent from **My Other Child**, the parent **My Child Comp** component with receive it, followed by the component we are in and then the event would be passed on to the parent of this component. The propagation follows the visual hierarchy chain.
 
 ![](events/send-to-parent.png ':class=img-size-l')
 
 The final thing to know about propagation is the **Consume** property of the **Receive Event** node. If that property is checked it means that when that particular node receives an event it will stop the propagation. So no other **Receive Event** nodes after that one will receive this specific event.
-
-
