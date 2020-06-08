@@ -39,17 +39,13 @@ For every state you can specify each of the values. This is the value that they 
 </div>
 
 ## State transition
-Here you specify if there should be a transition to the target state. So when you switch to the given state it will transition smoothely over time.
+Here you specify if there should be a transition to the target state. So when you switch to the given state it will transition smoothely over time. Each states has a default transition and individual transitions for **Number** and **Color** types. You use the curve editor to specify the timing for the transition.
 
 <div class="ndl-images">
-    <img src="/nodes/standard/state-transition.png" class="ndl-image small"></img>
+    <img src="/guides/states/change-size-curve.gif" class="ndl-image med"></img>
 </div>
 
-**Easing Curve**
-Selects the curvature of the state transition animation. Can be **Ease Out** (default), **Ease In**, **Linear**, **Ease In Out** and **Cubic Bezier**. If you choose the latter, you can use this [tool](https://cubic-bezier.com/) to generate the control points.
-
-**Duration**  
-The duration of the state animation. How long it takes in milliseconds to go from the previous state to this state.
+To learn more take a look at the [guide](/guides/switch.md).
 
 ## To state actions
 Each state will have a signal input called **To** followed by the state name. This can be used to connect a signal that will take the states node to that state when the signal is triggered.

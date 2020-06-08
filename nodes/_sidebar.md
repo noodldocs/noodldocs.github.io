@@ -4,7 +4,10 @@
 
 - Visual
   - [Component Children](nodes/visual/component-children.md)
-  - [Group](nodes/visual/group.md)        
+  - [Group](nodes/visual/group.md)
+  - [Circle](nodes/visual/circle.md)  
+  - [Text](nodes/visual/text.md)
+  - [Image](nodes/visual/image.md)                    
 
 - Events  
   - [Send Event](nodes/standard/send-event.md) 

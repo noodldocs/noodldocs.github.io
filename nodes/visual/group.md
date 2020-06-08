@@ -2,6 +2,8 @@
 
 This node represents a group that can have other visual nodes as children. These nodes are typically used to layout children by stacking (the default), but can also be used to simply provide margins and padding to a group of visual objects. To learn more about groups check out the layouting [guide](/guides/layouts.md).
 
+## INPUTS
+
 ## Margin and padding
 Using the margin and padding gadget you can specify the top, bottom, left and right margins and padding for this element. You can specify them in either pixels or percentage (of the corrensponding parent dimension). Margins are the distance between this object and siblings. Padding is the distance from the borders of this group to it's children.
 
@@ -9,7 +11,29 @@ Using the margin and padding gadget you can specify the top, bottom, left and ri
     <img src="/nodes/visual/margin-and-padding.png" class="ndl-image small"></img>  
 </div>
 
-## INPUTS
+**Margin Left**  
+The left margin in pixels or % of parent.
+
+**Margin Right**  
+The right margin in pixels or % of parent.
+
+**Margin Top**  
+The top margin in pixels or % of parent.
+
+**Margin Bottom**  
+The bottom margin in pixels or % of parent.
+
+**Padding Left**  
+The left padding in pixels or % of parent.
+
+**Padding Right**  
+The right padding in pixels or % of parent.
+
+**Padding Top**  
+The top padding in pixels or % of parent.
+
+**Padding Bottom**  
+The bottom padding in pixels or % of parent.
 
 ### Dimensions
 **Size Mode**  
