@@ -2,16 +2,15 @@
 
 ![](component-inputs.png ':class=img-size-m')
 
-Components are a very powerful feature of Noodl and are used to create reuseable parts.
-A core concept of components are that they can have inputs and outputs like any of the built in nodes. 
+A very powerful feature of Noodl is the ability to create **components** that act as reusable parts in your application.
 
-The inputs of an component originate from a *Component Inputs* node and are connected to any node in the component.
+A core concept of components is that they can have inputs and outputs like any of the built in nodes.
 
-When created a *Component Inputs* node doesn't have any ports. The ports must be created by inspecting the node (left clicking it).
+The inputs of a component originate from a **Component Inputs** node and are connected to any node in the component.
+
+When a **Component Inputs** node is created, it doesn't have any ports. The ports must be added by inspecting the node (left clicking it) and then clicking the **+Port** button.
 You can create and name ports as you wish.
 
 ![](component-inputs-add.png ':class=img-size-m')
 
-You may have many *Component Input* nodes in an component. If you have multiple *Component Input* nodes with ports
-of the same name they will be merged into one input. It's important that target ports have the same or compatible types.
-If not the port may not show up on instances of the component. 
+You can have multiple **Component Input** nodes in a single component. If you have multiple **Component Input** nodes with ports that share the same name, they will be merged into one input. It's important that target ports have the same or compatible types. If not, the port may not show up in instances of the component.
