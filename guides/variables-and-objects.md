@@ -30,7 +30,7 @@ Sometimes you want to control when variables are updated. You can use the **Fetc
 Check out the reference documentation for [Variable](/nodes/data/variable.md) for more details.
 
 ## Objects
-Objects works very much like the variable node but they can contain many values. You can create and name any number of values on an **Object** node and then use it just like you would use a variable node. You simply edit the properties of the Object node and create and name new ones as you like.
+Objects works very much like the variable node but they can contain many values. You can create and name any number of properties on an **Object** node and then use it just like you would use a variable node. You simply edit the properties of the Object node and create and name new ones as you like.
 
 <div class="ndl-images">
     <img src="/guides/for-each/object-props.gif" class="ndl-image med"></img>  

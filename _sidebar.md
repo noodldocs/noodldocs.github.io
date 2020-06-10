@@ -7,7 +7,10 @@
     - [States](guides/states.md)
     - [Events](guides/events.md)
     - [For Each](guides/for-each.md)
-    - [Variables and Objects](guides/variables-and-objects.md)    
+    - [Variables and Objects](guides/variables-and-objects.md)
+    - [Arrays](guides/arrays.md)    
+    - [Models and Collections](guides/models-and-collections.md)    
+    - [Javascript](guides/javascript.md)           
 
 - Javascript API
     - [Introduction](javascript-api/README.md)
