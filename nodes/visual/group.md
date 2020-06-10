@@ -1,12 +1,12 @@
 # Group
 
-This node represents a group that can have other visual nodes as children. **Group** nodes are typically used to layout children by stacking (the default), but can also be used to simply provide margins and padding to a group of visual objects. To learn more about groups check out the layouting [guide](/guides/layouts.md).
+This node represents a group that can have other visual nodes as children. **Group** nodes are typically used to layout children by stacking (the default), but can also be used to simply provide margins and padding to a group of visual objects. To learn more about **Group** nodes check out the layouting [guide](/guides/layouts.md).
 
 ## INPUTS
 
 ## Margin and padding
 
-Using the margin and padding gadget you can specify the top, bottom, left and right margins and padding for this element. You can specify them in either pixels or percentage (of the corrensponding parent dimension). Margins are the distance between this object and siblings. Padding is the distance from the borders of this group to it's children.
+Using the margin and padding gadget you can specify the top, bottom, left and right margins and padding for this element. You can specify them in either pixels or percentage of the corrensponding parent's dimension. Margins are the distance between this object and siblings. Padding is the distance from the borders of this group to it's children.
 
 <div class="ndl-images">
     <img src="/nodes/visual/margin-and-padding.png" class="ndl-image small"></img>  
@@ -39,38 +39,38 @@ The bottom padding in pixels or % of parent.
 ### Dimensions
 
 **Size Mode**  
-Controls how the width and height of a _Group_ is specified
+Controls how the width and height of a **Group** is specified
 
 <div class="ndl-images">
     <img src="/nodes/visual/dims-1.png" class="ndl-image small"></img>  
 </div>
 
-- _Explicit width and height_ - Set the width and height directly in pixels or percent. Percent is in relation to the parent, so 100% is the same size as the parent
-- _Explicit height, Content Width_ - The group will calculate the width to fit all of its children. The height is explicitly set
-- _Explicit width, Content Height_ - The group will calculate the height to fit all of its children. The width is explicitly set
-- _Content Size_ - Both the width and the height is calculated to fit all of the Group's children
+- _Explicit width and height_ - Set the width and height directly in pixels or percentage. Percentage is in relation to the parent, so 100% is the same size as the parent.
+- _Explicit height, Content Width_ - The Group will calculate the width to fit all of its children. The height is explicitly set.
+- _Explicit width, Content Height_ - The Group will calculate the height to fit all of its children. The width is explicitly set.
+- _Content Size_ - Both the width and the height is calculated to fit all of the Group's children.
 
 **Width**  
-Specify the width of this element in pixels, percentage of parent width or the unit _vw_ which is percentage of the browser window width.
+Specify the width of this element in pixels, percentage of parent's width or the unit _vw_ which is percentage of the browser window width.
 
 **Height**  
-Specify the height of this element in pixels, percentage of parent height or the unit _vw_ which is percentage of the browser window height.
+Specify the height of this element in pixels, percentage of parent's height or the unit _vw_ which is percentage of the browser window height.
 
 ### Layout
 
 **Layout**  
-By default children are stacked and this propery specifies which direction they should be stacked.
+By default children are stacked and this property specifies which direction they should be stacked.
 
 - _Vertical_ - Children are stacked vertically.
 - _Horizontal_ - Children are stacked horizontally.
 - _None_ - Children are not stacked.
 
 **Multi Line Wrap**  
-This propertpy specifies what happens with children stacked outside of the border of the group.
+This property specifies what happens with children that are stacked outside of the border of the Group.
 
-- _Off_ - Children are simply stacked beyond the boundries of the group, if _Clip_ is enabled they will not be visible.
+- _Off_ - Children are stacked beyond the boundaries of the Group. If _Clip_ is enabled they will not be visible.
 - _On_ - Children are wrapped to the next row or column (depending on layout direction).
-- _On Reverse_ - Same as wrap but opposite layout direction.
+- _On Reverse_ - Same as _On_ but opposite layout direction.
 
 ### Alignment
 
@@ -79,32 +79,30 @@ This propertpy specifies what happens with children stacked outside of the borde
 </div>
 
 **Align X**  
-How to align the object in relation to its parent. Can be **Left**, **Right** or **Center**.
+How to horizontally align the Group in relation to its parent. Can be **Left**, **Right** or **Center**.
 
 **Align Y**  
-How to align the object in relation to its parent. Can be **Top**, **Bottom**, or **Center**.
+How to vertically align the Group in relation to its parent. Can be **Top**, **Bottom**, or **Center**.
 
 ### Scroll
 
-**Scroll Behavior**  
-This specifies if the group should have scrolling enables for children that overflow outside of the group boundries.
+**Enable Scroll**  
+This specifies if the Group should have scrolling enabled for children that overflow outside of the group boundaries. Scrolling direction is determined by the Group's **Layout** direction. Enabling this will show the below scrolling properties.
 
-- _None_ - No scrolling.
-- _Native_ - Use the web native scrolling dependent on the platform.
-- _Noodl_ - Use custom Noodl scrolling, this will be a plaltform independent scrolling that have both touch and mouse support.
+**Snap**  
+Only available if _Native Platform Scroll_ is disabled. Enabling this will snap the scrolling between every screen.
 
-**Scroll Direction**  
-Specifies the direction of scrolling if enabled.
-
-- _Vertical_ - Vertical scrolling only.
-- _Horizontal_ - Horizontal scrolling only.
-- _Both_ - Scrolling on both directions.
-
-**Snap Enabled**  
-Only available if _Scroll Behavior_ is set to _Noodl_. Enabling this will force the scrolling to snap to individual items.
+**Snap To Every Item**  
+Only available if _Snap_ is enabled. Enabling this will force the scrolling to snap to individual items.
 
 **Show Scrollbar**  
-Only available if _Scroll Behavior_ is set to _Noodl_. Toggles the visibility of the scrollbar.
+Only available if _Native Platform Scroll_ is disabled. Toggles the visibility of the scrollbar.
+
+**Bounce at boundaries**  
+Only available if _Native Platform Scroll_ is disabled. Toggles if scrolling bounces when you are at top or bottom of list.
+
+**Native Platform Scroll**  
+When enabled, uses the web's native scrolling dependent on the platform. Uses custom Noodl scrolling when disabled. The custom Noodl scrolling is platform independent and has both touch and mouse support.
 
 ### Style
 
