@@ -22,7 +22,11 @@
   - [Array](/nodes/data/array.md)    
   - [Static Array](/nodes/data/static-array.md)     
   - [For Each](/nodes/data/for-each.md) 
-  - [For Each Item](/nodes/data/for-each-item.md)             
+  - [For Each Item](/nodes/data/for-each-item.md) 
+  - [String](/nodes/data/string.md)
+  - [Number](/nodes/data/number.md)   
+  - [Boolean](/nodes/data/boolean.md)  
+  - [Color](/nodes/data/color.md)            
 
 - Utilities
   - [Boolean To String](nodes/standard/boolean-to-string.md)
