@@ -22,6 +22,9 @@ Stores any properties that are connected to the object. All other Object nodes t
 **Clear**  
 Removes all properties and values from the Object.
 
+**Fetch**  
+Normally when an object Id is set the property outputs are immediately updated. But if you want to control how the data is updated you can connect to the **Fetch** signal input. Then you need to explictly send a signal here for the object to fetch the data.
+
 ## OUTPUTS
 ### General
 **Id**  
@@ -33,6 +36,9 @@ Signal that is sent when new property values are stored in the Object as a resul
 
 **Changed**  
 Signal when any of the properties of this object have changed.
+
+**Fetched**  
+Signal when the object has fetched and updated it's outputs. (Even if they have changed or not)
 
 ### Properties
 An object can have any amount of properties. Each property will get one output to get the current value.

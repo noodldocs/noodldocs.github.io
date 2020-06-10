@@ -14,6 +14,9 @@ The value that you want the variable to get when you trigger the **Set** signal.
 **Set**  
 A signal input, when received it will store the current value on the **Value** input in the variable and all other **Variable** nodes will receive the stored value.
 
+**Fetch**  
+Normally the value output of the node is updated once the **Name** input is set and if there is a change in the data from somewhere in the graph. But if this signal has a connection it will wait until it gets a signal on fetch before it updates.
+
 ## OUTPUTS
 
 **Value**  
@@ -24,6 +27,9 @@ Signal when the **Set** is complete and the data is stored.
 
 **Changed**  
 Signal when the Value of this variable have changed.
+
+**Fetched**  
+Signal when the data of the variable have been fetched and updated.
 
 **Name**  
 The name of the variable.
