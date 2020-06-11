@@ -187,37 +187,37 @@ This property is used to completely remove the Group from the DOM. If this prope
 ### Placement
 
 **Pos X**  
-The X position of this element either relative to it's parent top left corner or relative to it's layouted position depending on the _Position_ property. Can be specified in pixels or as a percentage of it's parents width.
+The X position of the Group. Either relative to its parent top left corner or relative to its layouted position depending on the _Position_ property. Can be specified in pixels or as a percentage of its parent's width.
 
 **Pos Y**  
-The Y position of this element either relative to it's parent top left corner or relative to it's layouted position depending on the _Position_ property. Can be specified in pixels or as a percentage of it's parents height.
+The Y position of the Group either relative to its parent's top left corner or relative to its layouted position depending on the _Position_ property. Can be specified in pixels or as a percentage of its parent's height.
 
 **Rotation**  
 The rotation in degrees.
 
 **Scale**  
-Specified scaling of this element, a value of 0 scales the element down completely it will no longer be visible, a value of 1 will give it the original size, and a value of 2 will double the size etc.
+Specifies scaling of the Group. A value of 0 scales the Group down completely so that it is no longer be visible. A value of 1 gives it the original size, and a value of 2 doubles the size and so on.
 
 **Transform Origin X**  
-Specifes the X position within this element that will be the center for rotation and scale. By default it is the center of the object (e.g. 50%) but you can specify an arbitrary value in either percentage of the element width or a explicitly in pixels.
+Specifes the X position within this Group that will be the center for rotation and scale. By default it is the center of the object (i.e. 50%) but you can specify an arbitrary value in either percentage of the Group's width or explicitly in pixels.
 
 **Transform Origin Y**  
-Specifes the Y position within this element that will be the center for rotation and scale. By default it is the center of the object (e.g. 50%) but you can specify an arbitrary value in either percentage of the element height or a explicitly in pixels.
+Specifes the Y position within this Group that will be the center for rotation and scale. By default it is the center of the object (i.e. 50%) but you can specify an arbitrary value in either percentage of the Group's height or explicitly in pixels.
 
 ### Advanced
 
 **CSS Style**  
-Here you can add custom CSS styles that will be added to this element. The styles are specified in camel case, so _background-color_ in CSS will be specified as _backgroundColor_.
+Here you can add custom CSS styles that will be added to this Group. The styles are specified in camel case, so _background-color_ in CSS will be specified as _backgroundColor_.
 
 ## Outputs
 
 ### Other
 
 **Child Index**  
-The place this node has in relation to its parent. E.g. if a _Group_ have three children, then the first child will have _Child Index_ 0, the second child will have _Child Index_ 1, and so on.
+The place this node has in relation to its parent. E.g. if a _Group_ has three children, then the first child will have _Child Index_ 0, the second child will have _Child Index_ 1, and so on.
 
 **This**  
-A reference to this node. Used in custom _Javascript_ nodes and more.
+A reference to this Group node. Used in custom _Javascript_ nodes and more.
 
 **Scroll Position**  
 The current position of scrolling in pixels.
@@ -231,43 +231,43 @@ Signal emitted when scrolling ends.
 ### Bounding Box
 
 **Screen Position X**  
-Where this object is on the screen, in pixels
+Where this Group node is on the screen, in pixels
 
 **Screen Position Y**  
-Where this object is on the screen, in pixels
+Where this Group node is on the screen, in pixels
 
 **Width**  
-Current width of this object
+Current width of this Group
 
 **Height**  
-Current height of this object
+Current height of this Group
 
 ### Pointer Events
 
 **Click**  
-Emitted when the element is clicked or tapped.
+Emitted when the Group is clicked or tapped.
 
 **Pointer Down**  
-Emitted when the mouse is pressed or finger is down on the element.
+Emitted when the mouse is pressed or finger is down on the Group.
 
 **Pointer Up**  
-Emitted when the mouse is released or finger is lifted on the element.
+Emitted when the mouse is released or finger is lifted on the Group.
 
 **Pointer Enter**  
-Emitted when the mouse enters the element.
+Emitted when the mouse enters the Group.
 
 ### Hover Events
 
 **Hover Start**  
-Emitted when the mouse enters the element.
+Emitted when the mouse enters the Group.
 
 **Hover End**  
-Emitted when the mouse leaves the element.
+Emitted when the mouse leaves the Group.
 
 ### Mounted
 
 **Did Mount**
-Signal sent when this node has been mounted, i.e. has become part of the visual tree and is visible.
+Signal sent when this Group node has been mounted, i.e. has become part of the visual tree and is visible.
 
 **Will Unmount**
 Signal sent when this node is about to be removed from the visual tree and become hidden.
