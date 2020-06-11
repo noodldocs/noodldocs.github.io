@@ -107,19 +107,19 @@ When enabled, uses the web's native scrolling dependent on the platform. Uses cu
 ### Style
 
 **Clip**  
-Specifies whether the group should clip any part of children that are outside of it's borders.
+Specifies whether the Group should clip any part of its children that are outside of its borders.
 
 **Opacity**  
-The opacity of the element, 0 will be completely translucent and this not visible, 1 will be completely solid.
+The opacity of the Group. 0 is completely transparent and invisible. 1 is completely solid and opaque.
 
 **Background Color**  
-Specifies the background color for this group.
+Specifies the background color for this Group.
 
 **Border Radius**  
-Specifies the border radius if the group are set to have a border.
+Specifies the border radius if the Group is set to have a border.
 
 **Border Style**  
-Specifies whether the group should have a border and what it should look like.
+Specifies whether the Group should have a border and what it should look like.
 
 - _None_ - No border.
 - _Solid_ - Solid border.
@@ -127,30 +127,30 @@ Specifies whether the group should have a border and what it should look like.
 - _Dashed_ - Dashed border.
 
 **Border Width**  
-The width of the border, if this group is set to have a border.
+The width of the border. Only available it **Border Style** is set to have a border.
 
 **Border Color**  
-The color of the border, if this group is set to have a border.
+The color of the border. Only available it **Border Style** is set to have a border.
 
 **Visible**  
-Toggle the visibility of this element on and off.
+Toggle the visibility of the Group on and off.
 
 **zIndex**  
-The depth index for this element, this can be any number.
+The depth index for the Group, this can be any number.
 
 ## Box Shadow
 
 **Shadow Enabled**  
-Enables and disables shadow below this group.
+Enables and disables shadow below the Group.
 
 **Offset X**  
-The horizontal offset of the shadow. A positive value puts the shadow on the right side of the box, a negative value puts the shadow on the left side of the box.
+The horizontal offset of the shadow. A positive value puts the shadow on the right side of the Group box, a negative value puts the shadow on the left side of the Group box.
 
 **Offset Y**  
-The vertical offset of the shadow. A positive value puts the shadow below the box, a negative value puts the shadow above the box.
+The vertical offset of the shadow. A positive value puts the shadow below the Group box, a negative value puts the shadow above the Group box.
 
 **Blur Radius**  
-The blur radius. The higher the number, the more blurred the shadow will be.
+The blur radius. The higher the number, the blurrier the shadow will be.
 
 **Spread Radius**  
 The spread radius. A positive value increases the size of the shadow, a negative value decreases the size of the shadow.
@@ -160,6 +160,29 @@ Changes the shadow from an outer shadow (outset) to an inner shadow.
 
 **Shadow Color**  
 The color of the shadow.
+
+### Other
+
+**Position**  
+Controls how this Group is layouted in its parent Group.
+
+- _In Layout_ - This Group is part of the parent group's layout. It will be stacked with its siblings depending on the parent group's layout settings.
+- _Absolute_ - This Group will not be part of the parent group's layout, instead you are free to use the _Pos X_ and _Pos Y_ to place this Group explicitly.
+
+**Pointer Events Mode**  
+This specifies how the Group responds to pointer events.
+
+- _Inherit_ - The Group will respond to pointer events in the same way as its parent.
+- _Explicit_ - The Group will respond to pointer events as specified by _Pointer Events Enabled_
+
+**Pointer Events Enabled**  
+This property is only available if _Pointer Events Mode_ is set to _Explicit_. It will specify if this Group responds to pointer events or not. If set to false this Group will completely ignore pointer events.
+
+**Block Pointer Events**  
+This will cause this Group to block all pointer events, e.g. any node that is behind this Group will not receive pointer events.
+
+**Mounted**  
+This property is used to completely remove the Group from the DOM. If this property is set to false the element is removed from the DOM. It differs from the _Visible_ property where the element is still part of the DOM but invisible.
 
 ### Placement
 
@@ -180,29 +203,6 @@ Specifes the X position within this element that will be the center for rotation
 
 **Transform Origin Y**  
 Specifes the Y position within this element that will be the center for rotation and scale. By default it is the center of the object (e.g. 50%) but you can specify an arbitrary value in either percentage of the element height or a explicitly in pixels.
-
-### Other
-
-**Position**  
-Controls how this node is layouted in it's parent group.
-
-- _In Layout_ - This node is part of the groups layout, it will be stacked with it's siblings depending on the parent group layout settings.
-- _Absolute_ - This node will not be part of the parent group layout, instead you are free to use the _Pos X_ and _Pos Y_ to place this node explicitly.
-
-**Block Pointer Events**  
-This will cause this element to block all pointer events, e.g. any element that are behind this element will not receive pointer events.
-
-**Pointer Events Mode**  
-This specifies how this node will responds to pointer events.
-
-- _Inherit_ - This node will respond to pointer events in the same way is it's parent.
-- _Explicit_ - This node will respond to pointer events as specified by _Pointer Events Enabled_
-
-**Pointer Events Enabled**  
-This property is only available if _Pointer Events Mode_ is set to _Explicit_. It will specify if this node responds to pointer events or not. If set to false this node will completely ignore pointer events.
-
-**Mounted**  
-This property can be used to completely remove this element from the DOM. As opposed to the _Visible_ property where the element is still part of the DOM by invisible if this property is set to false the element is removed from the DOM.
 
 ### Advanced
 
