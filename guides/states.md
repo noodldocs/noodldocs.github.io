@@ -34,7 +34,7 @@ Next, create the two states.
 
 The **States** node will be in one of the states that we just defined. It starts in the state specified by the **State** property that shows up when you add states. Later we will switch state by connecting a signal.
 
-We will also specify **Values** for each of our states. In the same way you added states, add a single value and call it **Knob X**. It doesn't really matter what you call it, as long as you know what it is for. In this case it's for moving the knob's (the Circle node) X position to it's correct position for the two states.
+We will also specify **Values** for each of our states. In the same way you added states, add a single value and call it **Knob X**. It doesn't really matter what you call it, as long as you know what it is for. In this case it's for moving the knob's (the Circle node) X position to its correct position for the two states.
 
 <div class="ndl-images">
     <img src="/guides/states/values-1.png" class="ndl-image med"></img>
@@ -47,7 +47,7 @@ Specify the value for each state. The X position should be **40** when the switc
     <img src="/guides/states/off-values.png" class="ndl-image med"></img>
 </div>
 
-Connect the **Knob X** output of the States to the **Pos X** input of the **Circle** node.
+Connect the **Knob X** output of the **States** node to the **Pos X** input of the **Circle** node.
 
 <div class="ndl-images">
     <img src="/guides/states/knob-x-connected.png" class="ndl-image large"></img>
@@ -59,9 +59,9 @@ As you can see the **States** node will get an output corresponding to each valu
     <img src="/guides/states/change-state.gif" class="ndl-image large"></img>
 </div>
 
-If you hover over the output connection of the States node a small popup will show the current value that is being outputted. If you click this small popup, you pin the popup so that it stays visible. Now you can see the output value change as it transitions from one state to the other.
+If you hover over the output connection of the **States** node a small popup will show the current value that is being outputted. If you click this small popup, you pin the popup so that it stays visible. Now you can see the output value change as it transitions from one state to another.
 
-You can connect the outputs of the States node to anything you like. In this example we connected the output to an input where they were both of the type **Number**. You can use different types than numbers. Add a new **Value** to the States node. Call it "Background Color" and give it a **Color** type instead of the default **Number** type. Then choose two different colors for the two states and connect the output to the **Background Color** of the **Group** node containing the Circle.
+You can connect the outputs of the **States** node to anything you like. In this example we connected the output to an input where they were both of the type **Number**. You can use different types than numbers. Add a new **Value** to the **States** node. Call it "Background Color" and give it a **Color** type instead of the default **Number** type. Then choose two different colors for the two states and connect the output to the **Background Color** of the **Group** node containing the **Circle**.
 
 <div class="ndl-images">
     <img src="/guides/states/color-type.png" class="ndl-image med"></img>
@@ -83,7 +83,7 @@ For _number_ and _color_ types the **States** node will try to smoothly transiti
      <button class="ndl-copy-nodes-button" onClick='copyJsonToClipboard({"nodes":[{"id":"4c6ec6bd-2ba3-807a-9177-da451a835ec2","type":"Group","x":410.63681490171115,"y":392,"parameters":{"backgroundColor":"#FFFFFF"},"ports":[],"children":[{"id":"56e1ec26-a280-b297-baf3-f5365f6a6124","type":"Group","x":430.63681490171115,"y":438,"parameters":{"width":{"value":80,"unit":"px"},"height":{"value":80,"unit":"px"},"backgroundColor":"#E6DD39","borderRadius":20,"alignX":"center","marginTop":{"value":70,"unit":"px"}},"ports":[],"children":[]}]},{"id":"34a39ad5-0999-133a-5f7e-6943ebd8d899","type":"States","label":"Hover","x":177.3701941946174,"y":432.9317475959747,"parameters":{"states":"Yes,No","startState":"No","values":"Size,Color","type-Color":"color","value-Yes-Color":"#D4CE35","value-No-Color":"#323975","value-Yes-Size":1.5,"value-No-Size":1},"ports":[],"children":[]}],"connections":[{"fromId":"56e1ec26-a280-b297-baf3-f5365f6a6124","fromProperty":"hoverStart","toId":"34a39ad5-0999-133a-5f7e-6943ebd8d899","toProperty":"to-Yes"},{"fromId":"56e1ec26-a280-b297-baf3-f5365f6a6124","fromProperty":"hoverEnd","toId":"34a39ad5-0999-133a-5f7e-6943ebd8d899","toProperty":"to-No"},{"fromId":"34a39ad5-0999-133a-5f7e-6943ebd8d899","fromProperty":"Color","toId":"56e1ec26-a280-b297-baf3-f5365f6a6124","toProperty":"backgroundColor"},{"fromId":"34a39ad5-0999-133a-5f7e-6943ebd8d899","fromProperty":"Size","toId":"56e1ec26-a280-b297-baf3-f5365f6a6124","toProperty":"transformScale"}]})'></button>
 </div>
 
-This simple graph have a **States** node that controls the hover state of a **Group**. As you can see the **Group** sends a signal when it is hovered which transitions the **States** node to the **Yes** state. A different signal is sent when the mouse leaves (you stop hovering), which changes the **States** node to the **No** state. The **States** node changes the **Scale** and **Color** of the **Group** node when it goes between it's states. The effect is shown below:
+This simple graph has a **States** node that controls the hover state of a **Group**. As you can see the **Group** sends a signal when it is hovered which transitions the **States** node to the **Yes** state. A different signal is sent when the mouse leaves (you stop hovering), which changes the **States** node to the **No** state. The **States** node changes the **Scale** and **Color** of the **Group** node when it goes between its states. The effect is shown below:
 
 <div class="ndl-images">
     <img src="/guides/states/hover-fx1.gif" class="ndl-image small"></img>
