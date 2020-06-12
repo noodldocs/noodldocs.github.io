@@ -24,7 +24,7 @@ The **Item** component is then used twice in the **Main** component. Each instan
      <img src="/guides/for-each/item-props.png" class="ndl-image small"></img>  
 </div>
 
-To utilize dynamic data, let's change the node graph by replacing the the two **Item** components with a **For Each** component.
+To utilize dynamic data, let's change the node graph by replacing the the two **Item** components with a **For Each** node.
 
 The **For Each** node dynamically creates components based on the data it is given in it's **Items** input port. We will go through the **For Each** node in more detail later in this guide.
 
