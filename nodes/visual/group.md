@@ -133,7 +133,7 @@ The width of the border. Only available it **Border Style** is set to have a bor
 The color of the border. Only available it **Border Style** is set to have a border.
 
 **Visible**  
-Toggle the visibility of the Group on and off.
+Toggle the visibility of the node on and off.
 
 **zIndex**  
 The depth index for this node, this can be any number.
@@ -196,7 +196,7 @@ The Y position of the node either relative to its parent's top left corner or re
 The rotation in degrees.
 
 **Scale**  
-Specifies scaling of the node. A value of 0 scales the node down completely so that it is no longer be visible. A value of 1 gives it the original size, and a value of 2 doubles the size and so on.
+Specifies scaling of this node. A value of 0 scales the node down completely so that it is no longer be visible. A value of 1 gives it the original size, and a value of 2 doubles the size and so on.
 
 **Transform Origin X**  
 Specifes the X position, within this node, that will be the center for rotation and scale. By default it is the center of the node (i.e. 50%) but you can specify an arbitrary value in either percentage of the node's width or explicitly in pixels.
