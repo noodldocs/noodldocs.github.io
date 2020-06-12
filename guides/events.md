@@ -24,7 +24,7 @@ To illustrate this you can see below how when the click signal is sent via the *
 
 ## Passing payload data
 
-So far we have seen the basic concept of the Events mechanism in Noodl. Next, let's take a look at how you can pass data via payload connections to your event nodes. You start by adding ports to the **Send Event** node. You can add any number of ports for the data that you want to pass with the event.
+So far we have seen the basic concept of the events mechanism in Noodl. Next, let's take a look at how you can pass data via payload connections to your event nodes. You start by adding ports to the **Send Event** node. You can add any number of ports for the data that you want to pass with the event.
 
 ![](events/add-port.gif ':class=img-size-l')
 
@@ -42,15 +42,15 @@ Event propagation means how an event is sent in the graph, i.e. which **Receive 
 
 ![](events/send-to.png ':class=img-size-m')
 
-The **Children** mode will send the events to all the children in the component where the **Send Event** node is. So in the example below, the event will first be sent to **My Child Comp** followed by any children that component may have. When all descendants of **My Child Comp** have received the event it will pass it to all children that are dynamically created by the **For Each** node, and their descendants.
+The **Children** mode will send the events to all the children in the component where the **Send Event** node is. So in the example below, the event will first be sent to **My Child Comp** followed by any children that node may have. When all descendants of **My Child Comp** node have received the event it will pass it to all children that are dynamically created by the **For Each** node, and their descendants.
 
 ![](events/send-to-children.png ':class=img-size-l')
 
-The **Siblings** mode will pass the event to all other components that are on the same level as the component where the originating **Send Event** node is. So if for instance the **My Child Comp** in the graph below contains a **Send Event** node that sends an event to its siblings all other My Child Comp nodes will receive it, except for the one sending the event, followed by the child instances dynamically created by the **For Each** node.
+The **Siblings** mode will pass the event to all other nodes that are on the same level as the node where the originating **Send Event** node is. So if for instance the **My Child Comp** in the graph below contains a **Send Event** node that sends an event to its siblings all other **My Child Comp** nodes will receive it, except for the one sending the event, followed by the child instances dynamically created by the **For Each** node.
 
 ![](events/send-to-siblings.png ':class=img-size-l')
 
-The last propagation mode is **Parent**. This mode will send events up the node graph hierarchy. The **My Other Child** in the example graph below contains a **Send Event** node that is using the **Parent** propagation mode. When an event is sent from **My Other Child**, the parent **My Child Comp** component with receive it, followed by the component we are in and then the event would be passed on to the parent of this component. The propagation follows the visual hierarchy chain.
+The last propagation mode is **Parent**. This mode will send events up the node graph hierarchy. The **My Other Child** in the example graph below contains a **Send Event** node that is using the **Parent** propagation mode. When an event is sent from **My Other Child**, the parent **My Child Comp** node with receive it, followed by the node we are in and then the event would be passed on to the parent of this node. The propagation follows the visual hierarchy chain.
 
 ![](events/send-to-parent.png ':class=img-size-l')
 
