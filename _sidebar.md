@@ -9,7 +9,8 @@
     - [For Each](guides/for-each.md)
     - [Variables and Objects](guides/variables-and-objects.md)
     - [Arrays](guides/arrays.md)    
-    - [Models and Collections](guides/models-and-collections.md)    
+    - [Models and Collections](guides/models-and-collections.md)  
+    - [Navigation](guides/navigation.md)  
     - [Javascript](guides/javascript.md)           
 
 - Javascript API
