@@ -56,7 +56,7 @@ From left to right, the alignment options are:
 ### Dimensions
 
 **Size Mode**  
-Controls how the width and height of a **Group** is specified
+Controls how the width and height of a **Group** is specified.
 
 <div class="ndl-images">
     <img src="/nodes/visual/dims-1.png" class="ndl-image small"></img>  
@@ -236,10 +236,10 @@ Signal emitted when scrolling ends.
 ### Bounding Box
 
 **Screen Position X**  
-Where this node is on the screen, in pixels.
+Where this node is on the screen's X-axis, in pixels.
 
 **Screen Position Y**  
-Where this node is on the screen, in pixels.
+Where this node is on the screen's Y-axis, in pixels.
 
 **Width**  
 Current width of this node.
