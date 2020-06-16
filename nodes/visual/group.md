@@ -236,10 +236,10 @@ Signal emitted when scrolling ends.
 ### Bounding Box
 
 **Screen Position X**  
-Where this node is on the screen, in pixels.
+Where this node is on the screen's X-axis, in pixels.
 
 **Screen Position Y**  
-Where this node is on the screen, in pixels.
+Where this node is on the screen's Y-axis, in pixels.
 
 **Width**  
 Current width of this node.
