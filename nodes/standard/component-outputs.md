@@ -2,8 +2,8 @@
 
 ![](component-outputs.png ':class=img-size-m')
 
-A very powerful feature of Noodl is the ability to create **components** that act as reusable parts in your application.
-A core concept of components are that they can have inputs and outputs like any of the built in nodes.
+A very powerful feature of Noodl is the ability to create **components** that act as reusable nodes in your application.
+A core concept of components is that they can have inputs and outputs like any of the built in nodes.
 
 The outputs of a component are derived from a **Component Outputs** node and are
 connected to any other node in the component.

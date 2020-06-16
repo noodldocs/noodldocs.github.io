@@ -8,7 +8,7 @@ Welcome to Noodl. This short video gives you a quick introduction on how to crea
 
 ## Visual basics
 
-This video will teach you the basics of using Noodl's visual components to create front ends for your applications. This is a good place to start.
+This video will teach you the basics of using Noodl's visual nodes to create front ends for your applications. This is a good place to start.
 
 <div style="padding:62.5% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/333294311" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 

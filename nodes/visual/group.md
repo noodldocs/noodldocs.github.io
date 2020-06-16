@@ -1,12 +1,12 @@
 # Group
 
-This node represents a group that can have other visual nodes as children. **Group** nodes are typically used to layout children by stacking (the default), but can also be used to simply provide margins and padding to a group of visual objects. To learn more about groups check out the layouting [guide](/guides/layouts.md).
+This node represents a group that can have other visual nodes as children. **Group** nodes are typically used to layout children by stacking (the default), but can also be used to simply provide margins and padding to a group of visual nodes. To learn more about **Group** nodes check out the layouting [guide](/guides/layouts.md).
 
 ## INPUTS
 
 ## Margin and padding
 
-Using the margin and padding gadget you can specify the top, bottom, left and right margins and padding for this element. You can specify them in either pixels or percentage (of the corrensponding parent dimension). Margins are the distance between this object and siblings. Padding is the distance from the borders of this group to it's children.
+Using the margin and padding gadget you can specify the top, bottom, left and right margins and padding for this node. You can specify them in either pixels or percentage of the corrensponding parent's dimension. Margins are the distance between this node and its siblings. Padding is the distance from the borders of this node to its children.
 
 <div class="ndl-images">
     <img src="/nodes/visual/margin-and-padding.png" class="ndl-image small"></img>  
@@ -36,92 +36,95 @@ The top padding in pixels or % of parent.
 **Padding Bottom**  
 The bottom padding in pixels or % of parent.
 
-### Dimensions
-
-**Size Mode**  
-Controls how the width and height of a _Group_ is specified
-
-<div class="ndl-images">
-    <img src="/nodes/visual/dims-1.png" class="ndl-image small"></img>  
-</div>
-
-- _Explicit width and height_ - Set the width and height directly in pixels or percent. Percent is in relation to the parent, so 100% is the same size as the parent
-- _Explicit height, Content Width_ - The group will calculate the width to fit all of its children. The height is explicitly set
-- _Explicit width, Content Height_ - The group will calculate the height to fit all of its children. The width is explicitly set
-- _Content Size_ - Both the width and the height is calculated to fit all of the Group's children
-
-**Width**  
-Specify the width of this element in pixels, percentage of parent width or the unit _vw_ which is percentage of the browser window width.
-
-**Height**  
-Specify the height of this element in pixels, percentage of parent height or the unit _vw_ which is percentage of the browser window height.
-
-### Layout
-
-**Layout**  
-By default children are stacked and this propery specifies which direction they should be stacked.
-
-- _Vertical_ - Children are stacked vertically.
-- _Horizontal_ - Children are stacked horizontally.
-- _None_ - Children are not stacked.
-
-**Multi Line Wrap**  
-This propertpy specifies what happens with children stacked outside of the border of the group.
-
-- _Off_ - Children are simply stacked beyond the boundries of the group, if _Clip_ is enabled they will not be visible.
-- _On_ - Children are wrapped to the next row or column (depending on layout direction).
-- _On Reverse_ - Same as wrap but opposite layout direction.
-
 ### Alignment
 
 <div class="ndl-images">
     <img src="/nodes/visual/align-props.png" class="ndl-image small"></img>  
 </div>
 
-**Align X**  
-How to align the object in relation to its parent. Can be **Left**, **Right** or **Center**.
+Use the alignment gadget to specify how this node is aligned to its parent. Important to note is that the horizontal alignment options won't have any effect if the parent's layout is set to _Horizontal_, and similarly the vertical alignments have no effect if the parent's layout is set to _Vertical_.
 
-**Align Y**  
-How to align the object in relation to its parent. Can be **Top**, **Bottom**, or **Center**.
+From left to right, the alignment options are:
+
+- _Align Bottom_ - Align this node to the bottom of its parent. Doesn't have any effect if parent's layout is set to _Vertical_.
+- _Align Vertical Center_ - Align this node to the vertical center of its parent. Doesn't have any effect if parent's layout is set to _Vertical_.
+- _Align Top_ -Align this node to the top of its parent. Doesn't have any effect if parent's layout is set to _Vertical_.
+- _Align Left_ - Align this node to the left side of its parent. Doesn't have any effect if parent's layout is set to _Horizontal_.
+- _Align Horizontal Center_ Align this node to the horizontal center of its parent. Doesn't have any effect if parent's layout is set to _Horizontal_.
+- _Align Right_ - Align this node to the right of its parent. Doesn't have any effect if parent's layout is set to _Horizontal_.
+
+### Dimensions
+
+**Size Mode**  
+Controls how the width and height of a **Group** is specified
+
+<div class="ndl-images">
+    <img src="/nodes/visual/dims-1.png" class="ndl-image small"></img>  
+</div>
+
+- _Explicit width and height_ - Set the width and height directly in pixels or percentage. Percentage is in relation to the parent, so 100% is the same size as the parent.
+- _Explicit height, Content Width_ - The node will calculate the width to fit all of its children. The height is explicitly set.
+- _Explicit width, Content Height_ - The node will calculate the height to fit all of its children. The width is explicitly set.
+- _Content Size_ - Both the width and the height is calculated to fit all of the node's children.
+
+**Width**  
+Specify the width of this node in pixels, percentage of parent's width or the unit _vw_ which is percentage of the browser window width.
+
+**Height**  
+Specify the height of this node in pixels, percentage of parent's height or the unit _vw_ which is percentage of the browser window height.
+
+### Layout
+
+**Layout**  
+By default children are stacked and this property specifies which direction they should be stacked.
+
+- _Vertical_ - Children are stacked vertically.
+- _Horizontal_ - Children are stacked horizontally.
+- _None_ - Children are not stacked.
+
+**Multi Line Wrap**  
+This property specifies what happens with children that are stacked outside of the border of the Group node.
+
+- _Off_ - Children are stacked beyond the boundaries of the node. If _Clip_ is enabled they will not be visible.
+- _On_ - Children are wrapped to the next row or column (depending on layout direction).
+- _On Reverse_ - Same as _On_ but opposite layout direction.
 
 ### Scroll
 
-**Scroll Behavior**  
-This specifies if the group should have scrolling enables for children that overflow outside of the group boundries.
+**Enable Scroll**  
+This specifies if the Group should have scrolling enabled for children that overflow outside of the group boundaries. Scrolling direction is determined by the Group's **Layout** direction. Enabling this will show the below scrolling properties.
 
-- _None_ - No scrolling.
-- _Native_ - Use the web native scrolling dependent on the platform.
-- _Noodl_ - Use custom Noodl scrolling, this will be a plaltform independent scrolling that have both touch and mouse support.
+**Snap**  
+Only available if _Native Platform Scroll_ is disabled. Enabling this will snap the scrolling between every screen.
 
-**Scroll Direction**  
-Specifies the direction of scrolling if enabled.
-
-- _Vertical_ - Vertical scrolling only.
-- _Horizontal_ - Horizontal scrolling only.
-- _Both_ - Scrolling on both directions.
-
-**Snap Enabled**  
-Only available if _Scroll Behavior_ is set to _Noodl_. Enabling this will force the scrolling to snap to individual items.
+**Snap To Every Item**  
+Only available if _Snap_ is enabled. Enabling this will force the scrolling to snap to individual items.
 
 **Show Scrollbar**  
-Only available if _Scroll Behavior_ is set to _Noodl_. Toggles the visibility of the scrollbar.
+Only available if _Native Platform Scroll_ is disabled. Toggles the visibility of the scrollbar.
+
+**Bounce at boundaries**  
+Only available if _Native Platform Scroll_ is disabled. Toggles if scrolling bounces when you are at top or bottom of list.
+
+**Native Platform Scroll**  
+When enabled, uses the web's native scrolling dependent on the platform. Uses custom Noodl scrolling when disabled. The custom Noodl scrolling is platform independent and has both touch and mouse support.
 
 ### Style
 
 **Clip**  
-Specifies whether the group should clip any part of children that are outside of it's borders.
+Specifies whether this node should clip any part of its children that are outside of its borders.
 
 **Opacity**  
-The opacity of the element, 0 will be completely translucent and this not visible, 1 will be completely solid.
+The opacity of this node. 0 is completely transparent and invisible. 1 is completely solid and opaque.
 
 **Background Color**  
-Specifies the background color for this group.
+Specifies the background color for this node.
 
 **Border Radius**  
-Specifies the border radius if the group are set to have a border.
+Specifies the border radius if this node is set to have a border.
 
 **Border Style**  
-Specifies whether the group should have a border and what it should look like.
+Specifies whether this node should have a border and what it should look like.
 
 - _None_ - No border.
 - _Solid_ - Solid border.
@@ -129,30 +132,30 @@ Specifies whether the group should have a border and what it should look like.
 - _Dashed_ - Dashed border.
 
 **Border Width**  
-The width of the border, if this group is set to have a border.
+The width of the border. Only available it **Border Style** is set to have a border.
 
 **Border Color**  
-The color of the border, if this group is set to have a border.
+The color of the border. Only available it **Border Style** is set to have a border.
 
 **Visible**  
-Toggle the visibility of this element on and off.
+Toggle the visibility of the node on and off.
 
 **zIndex**  
-The depth index for this element, this can be any number.
+The depth index for this node, this can be any number.
 
 ## Box Shadow
 
 **Shadow Enabled**  
-Enables and disables shadow below this group.
+Enables and disables shadow below the Group.
 
 **Offset X**  
-The horizontal offset of the shadow. A positive value puts the shadow on the right side of the box, a negative value puts the shadow on the left side of the box.
+The horizontal offset of the shadow. A positive value puts the shadow on the right side of the Group box, a negative value puts the shadow on the left side of the Group box.
 
 **Offset Y**  
-The vertical offset of the shadow. A positive value puts the shadow below the box, a negative value puts the shadow above the box.
+The vertical offset of the shadow. A positive value puts the shadow below the Group box, a negative value puts the shadow above the Group box.
 
 **Blur Radius**  
-The blur radius. The higher the number, the more blurred the shadow will be.
+The blur radius. The higher the number, the blurrier the shadow will be.
 
 **Spread Radius**  
 The spread radius. A positive value increases the size of the shadow, a negative value decreases the size of the shadow.
@@ -163,60 +166,60 @@ Changes the shadow from an outer shadow (outset) to an inner shadow.
 **Shadow Color**  
 The color of the shadow.
 
+### Other
+
+**Position**  
+Controls how this node is layouted in its parent node.
+
+- _In Layout_ - This node is part of the parent node's layout. It will be stacked with its siblings depending on the parent node's layout settings.
+- _Absolute_ - This node will not be part of the parent node's layout, instead you are free to use the _Pos X_ and _Pos Y_ to place this node explicitly.
+
+**Pointer Events Mode**  
+This specifies how this node responds to pointer events.
+
+- _Inherit_ - The node will respond to pointer events in the same way as its parent.
+- _Explicit_ - The node will respond to pointer events as specified by _Pointer Events Enabled_
+
+**Pointer Events Enabled**  
+This property is only available if _Pointer Events Mode_ is set to _Explicit_. It will specify if this node responds to pointer events or not. If set to false this node will completely ignore pointer events.
+
+**Block Pointer Events**  
+This will cause this node to block all pointer events, e.g. any node that is behind this node will not receive pointer events.
+
+**Mounted**  
+This property is used to completely remove the node from the DOM. If this property is set to false the node is removed from the DOM. It differs from the _Visible_ property where the node is still part of the DOM but invisible.
+
 ### Placement
 
 **Pos X**  
-The X position of this element either relative to it's parent top left corner or relative to it's layouted position depending on the _Position_ property. Can be specified in pixels or as a percentage of it's parents width.
+The X position of the node. Either relative to its parent top left corner or relative to its layouted position depending on the _Position_ property. Can be specified in pixels or as a percentage of its parent's width.
 
 **Pos Y**  
-The Y position of this element either relative to it's parent top left corner or relative to it's layouted position depending on the _Position_ property. Can be specified in pixels or as a percentage of it's parents height.
+The Y position of the node either relative to its parent's top left corner or relative to its layouted position depending on the _Position_ property. Can be specified in pixels or as a percentage of its parent's height.
 
 **Rotation**  
 The rotation in degrees.
 
 **Scale**  
-Specified scaling of this element, a value of 0 scales the element down completely it will no longer be visible, a value of 1 will give it the original size, and a value of 2 will double the size etc.
+Specifies scaling of this node. A value of 0 scales the node down completely so that it is no longer be visible. A value of 1 gives it the original size, and a value of 2 doubles the size and so on.
 
 **Transform Origin X**  
-Specifes the X position within this element that will be the center for rotation and scale. By default it is the center of the object (e.g. 50%) but you can specify an arbitrary value in either percentage of the element width or a explicitly in pixels.
+Specifes the X position, within this node, that will be the center for rotation and scale. By default it is the center of the node (i.e. 50%) but you can specify an arbitrary value in either percentage of the node's width or explicitly in pixels.
 
 **Transform Origin Y**  
-Specifes the Y position within this element that will be the center for rotation and scale. By default it is the center of the object (e.g. 50%) but you can specify an arbitrary value in either percentage of the element height or a explicitly in pixels.
-
-### Other
-
-**Position**  
-Controls how this node is layouted in it's parent group.
-
-- _In Layout_ - This node is part of the groups layout, it will be stacked with it's siblings depending on the parent group layout settings.
-- _Absolute_ - This node will not be part of the parent group layout, instead you are free to use the _Pos X_ and _Pos Y_ to place this node explicitly.
-
-**Block Pointer Events**  
-This will cause this element to block all pointer events, e.g. any element that are behind this element will not receive pointer events.
-
-**Pointer Events Mode**  
-This specifies how this node will responds to pointer events.
-
-- _Inherit_ - This node will respond to pointer events in the same way is it's parent.
-- _Explicit_ - This node will respond to pointer events as specified by _Pointer Events Enabled_
-
-**Pointer Events Enabled**  
-This property is only available if _Pointer Events Mode_ is set to _Explicit_. It will specify if this node responds to pointer events or not. If set to false this node will completely ignore pointer events.
-
-**Mounted**  
-This property can be used to completely remove this element from the DOM. As opposed to the _Visible_ property where the element is still part of the DOM by invisible if this property is set to false the element is removed from the DOM.
+Specifes the Y position, within this node, that will be the center for rotation and scale. By default it is the center of the node (i.e. 50%) but you can specify an arbitrary value in either percentage of the node's height or explicitly in pixels.
 
 ### Advanced
 
 **CSS Style**  
-Here you can add custom CSS styles that will be added to this element. The styles are specified in camel case, so _background-color_ in CSS will be specified as _backgroundColor_.
+Here you can add custom CSS styles that will be added to this node. The styles are specified in camel case, so _background-color_ in CSS will be specified as _backgroundColor_.
 
 ## Outputs
 
 ### Other
 
 **Child Index**  
-The place this node has in relation to its parent. E.g. if a _Group_ have three children, then the first child will have _Child Index_ 0, the second child will have _Child Index_ 1, and so on.
+The place this node has in relation to its parent. E.g. if a _Group_ has three children, then the first child will have _Child Index_ 0, the second child will have _Child Index_ 1, and so on.
 
 **This**  
 A reference to this node. Used in custom _Javascript_ nodes and more.
@@ -233,38 +236,38 @@ Signal emitted when scrolling ends.
 ### Bounding Box
 
 **Screen Position X**  
-Where this object is on the screen, in pixels
+Where this node is on the screen, in pixels.
 
 **Screen Position Y**  
-Where this object is on the screen, in pixels
+Where this node is on the screen, in pixels.
 
 **Width**  
-Current width of this object
+Current width of this node.
 
 **Height**  
-Current height of this object
+Current height of this node.
 
 ### Pointer Events
 
 **Click**  
-Emitted when the element is clicked or tapped.
+Emitted when the node is clicked or tapped.
 
 **Pointer Down**  
-Emitted when the mouse is pressed or finger is down on the element.
+Emitted when the mouse is pressed or finger is down on the node.
 
 **Pointer Up**  
-Emitted when the mouse is released or finger is lifted on the element.
+Emitted when the mouse is released or finger is lifted on the node.
 
 **Pointer Enter**  
-Emitted when the mouse enters the element.
+Emitted when the mouse enters the node.
 
 ### Hover Events
 
 **Hover Start**  
-Emitted when the mouse enters the element.
+Emitted when the mouse enters the node.
 
 **Hover End**  
-Emitted when the mouse leaves the element.
+Emitted when the mouse leaves the node.
 
 ### Mounted
 

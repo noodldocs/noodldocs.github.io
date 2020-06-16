@@ -9,31 +9,31 @@ Stores any amount of properties and can be used standalone or together with [Arr
 ### General
 
 **Id**  
-Set the Id for this Object. All object nodes with the same Id will refer to the same data and have the same properties.
+Set the Id for this Object. All Object nodes with the same Id will refer to the same data and have the same properties.
 
 ### Properties
 
-An Object can have any amount of properties. Each property will get one input and output to set/get their current value.
+An Object node can have any amount of properties. Each property will get one input and output to set/get their current value.
 
 ![](object-props.png ':class=img-size-s')
 
 ### Actions
 
 **Set**  
-Stores any properties that are connected to the object. All other Object nodes that share the same Id will be updated now.
+Stores any properties that are connected to the Object. All other Object nodes that share the same Id will be updated now.
 
 **Clear**  
 Removes all properties and values from the Object.
 
 **Fetch**  
-Normally when an object Id is set, the property outputs are immediately updated. If you want to control how the data is updated you can connect to the **Fetch** signal input. Then you need to explictly send a signal here for the object to fetch the data.
+Normally when an Object Id is set, the property outputs are immediately updated. If you want to control how the data is updated you can connect to the **Fetch** signal input. Then you need to explictly send a signal here for the Object node to fetch the data.
 
 ## OUTPUTS
 
 ### General
 
 **Id**  
-The Id for this Object.
+The Id for this Object node.
 
 ### Events
 

@@ -4,14 +4,14 @@ This guide will cover the layouting mechanism. It is an important concept to mas
 
 ## Margin and padding
 
-At the center of layouting is the **Group** node. Groups are arranged in a hierarchy as can be seen in the node graph below. A group controls the layout of its children and there are a number of properties that can be used to specify how the children of a group will be layouted.
+At the center of layouting is the **Group** node. **Group** nodes are arranged in a hierarchy as can be seen in the node graph below. A **Group** controls the layout of its children and there are a number of properties that can be used to specify how the children of a **Group** node will be layouted.
 
 <div class="ndl-images">
     <img src="/guides/layouts/groups.png" class="ndl-image med"></img>  
      <button class="ndl-copy-nodes-button" onClick='copyJsonToClipboard({"nodes":[{"id":"5a81ad6d-b8eb-16f8-e2b3-3533c0a05462","type":"Group","label":"Group","x":176,"y":140.5,"parameters":{"backgroundColor":"#FFFFFF"},"ports":[],"children":[{"id":"999f7f8b-6678-ed24-5ea9-08b25e1b394e","type":"Group","x":196,"y":186.5,"parameters":{"marginTop":{"value":20,"unit":"px"},"marginLeft":{"value":20,"unit":"px"},"marginRight":{"value":20,"unit":"px"},"marginBottom":{"value":20,"unit":"px"},"paddingTop":{"value":50,"unit":"px"},"paddingLeft":{"value":50,"unit":"px"},"paddingRight":{"value":50,"unit":"px"},"paddingBottom":{"value":50,"unit":"px"},"backgroundColor":"#DBDBDB"},"ports":[],"children":[{"id":"ddde9610-f9a6-03bd-bb46-4a67d56a2180","type":"Group","x":216,"y":232.5,"parameters":{"backgroundColor":"#B5B5B5"},"ports":[],"children":[]}]}]}],"connections":[]})'></button>
 </div>
 
-?> **Hover** the nodes in the Noodl editor and they will highlight in the preview window. This is a great way to inspect a component that you are unfamiliar with.
+?> **Hover** the nodes in the Noodl editor and they will highlight in the preview window. This is a great way to inspect a node that you are unfamiliar with.
 
 <div class="ndl-images">
     <img src="/guides/layouts/hover.gif" class="ndl-image med"></img>
@@ -23,7 +23,7 @@ Select one of the nodes to view it's properties. In the property panel you can f
     <img src="/guides/layouts/margin-and-padding-props.png" class="ndl-image small"></img>
 </div>
 
-Here you can specify the _margin_, i.e. the distance between this node and it's siblings in the layout. You can specify the margins in all four directions. You can also specify the _padding_, which is the distance from the borders of the group to it's children.
+Here you can specify the _margin_, i.e. the distance between this node and its siblings in the layout. You can specify the margins in all four directions. You can also specify the _padding_, which is the distance from the borders of the **Group** to it's children.
 
 The best way to learn is to play around with the three nodes in this simple hierarchy.
 
@@ -48,13 +48,13 @@ Check out the small node graph below. Copy these nodes and paste them into an em
 
 ## Dimensions
 
-The dimensions section of the properties cover how the size of a **Group** is derived. The default is that both _Width_ and _Height_ is explicitly specified in either pixels (**px**), percent of parent (**%**), or as a percentage of the viewport size (**vw** and **vh**).
+The dimensions section of the properties cover how the size of a **Group** is derived. The default is that both _Width_ and _Height_ is explicitly specified in either pixels (**px**), percentage of parent (**%**), or as a percentage of the viewport size (**vw** and **vh**).
 
 <div class="ndl-images">
     <img src="/guides/layouts/dims-1.png" class="ndl-image med"></img>  
 </div>
 
-A **Group** can also get it's dimensions from the size of it's children. You use the icons at the top to change between the four modes (from right):
+A **Group** can also get its dimensions from the size of its children. You use the icons at the top to change between the four modes (from right):
 
 - **Explicit width and height** Specify both width and height explicitly.
 - **Explicit width, Content height** Specify the width explicitly but the height will be the total of the children heights and margins (depending on layout).
@@ -71,13 +71,13 @@ You can copy the nodes below to an empty component in your Noodl editor. The res
 
 ## Alignment
 
-The Alignment controls can be used to specify how a child **Group** (or other visual node) is aligned relative to it's parent.
+The Alignment controls can be used to specify how a child **Group** (or other visual node) is aligned relative to its parent.
 
 <div class="ndl-images">
     <img src="/guides/layouts/align-props.png" class="ndl-image med"></img>  
 </div>
 
-If the parent **Group** has it's **Layout** property set to **None** you can use the alignment controls to pin the child visual node to a corner. You can then use the margins or padding to offset it from that corner.
+If the parent **Group** has its **Layout** property set to **None** you can use the alignment controls to pin the child visual node to a corner. You can then use the margins or padding to offset it from that corner.
 
 <div class="ndl-images">
     <img src="/guides/layouts/align.gif" class="ndl-image large"></img>  
