@@ -56,7 +56,7 @@ From left to right, the alignment options are:
 ### Dimensions
 
 **Size Mode**  
-Controls how the width and height of a **Group** is specified
+Controls how the width and height of a **Group** is specified.
 
 <div class="ndl-images">
     <img src="/nodes/visual/dims-1.png" class="ndl-image small"></img>  

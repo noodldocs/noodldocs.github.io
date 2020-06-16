@@ -57,7 +57,7 @@ The alignment of the text string wihtin the Text node's bounding box.
 ### Dimensions
 
 **Size Mode**  
-Controls how the width and height of this node is specified
+Controls how the width and height of this node is specified.
 
 <div class="ndl-images">
     <img src="/nodes/visual/dims-1.png" class="ndl-image small"></img>  
@@ -139,7 +139,7 @@ This will cause this node to block all pointer events, e.g. any node that is beh
 **Pointer Events Mode**  
 This specifies how this node responds to pointer events.
 
-- _Inherit_ - This node will respond to pointer events in the same way is its parent.
+- _Inherit_ - This node will respond to pointer events in the same way as its parent.
 - _Explicit_ - This node will respond to pointer events as specified by _Pointer Events Enabled_
 
 **Pointer Events Enabled**  
@@ -198,3 +198,11 @@ Emitted when the mouse enters the node.
 
 **Hover End**  
 Emitted when the mouse leaves the node.
+
+### Mounted
+
+**Did Mount**  
+Signal sent when this node has been mounted, i.e. has become part of the visual tree and is visible.
+
+**Will Unmount**  
+Signal sent when this node is about to be removed from the visual tree and become hidden.
