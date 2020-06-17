@@ -12,30 +12,6 @@ Using the margin and padding gadget you can specify the top, bottom, left and ri
     <img src="/nodes/visual/margin-and-padding.png" class="ndl-image small"></img>  
 </div>
 
-**Margin Left**  
-The left margin in pixels or % of parent.
-
-**Margin Right**  
-The right margin in pixels or % of parent.
-
-**Margin Top**  
-The top margin in pixels or % of parent.
-
-**Margin Bottom**  
-The bottom margin in pixels or % of parent.
-
-**Padding Left**  
-The left padding in pixels or % of parent.
-
-**Padding Right**  
-The right padding in pixels or % of parent.
-
-**Padding Top**  
-The top padding in pixels or % of parent.
-
-**Padding Bottom**  
-The bottom padding in pixels or % of parent.
-
 ### Alignment
 
 <div class="ndl-images">
@@ -166,6 +142,26 @@ Changes the shadow from an outer shadow (outset) to an inner shadow.
 **Shadow Color**  
 The color of the shadow.
 
+### Placement
+
+**Pos X**  
+The X position of the node. Either relative to its parent top left corner or relative to its layouted position depending on the _Position_ property. Can be specified in pixels or as a percentage of its parent's width.
+
+**Pos Y**  
+The Y position of the node either relative to its parent's top left corner or relative to its layouted position depending on the _Position_ property. Can be specified in pixels or as a percentage of its parent's height.
+
+**Rotation**  
+The rotation in degrees.
+
+**Scale**  
+Specifies scaling of this node. A value of 0 scales the node down completely so that it is no longer be visible. A value of 1 gives it the original size, and a value of 2 doubles the size and so on.
+
+**Transform Origin X**  
+Specifes the X position, within this node, that will be the center for rotation and scale. By default it is the center of the node (i.e. 50%) but you can specify an arbitrary value in either percentage of the node's width or explicitly in pixels.
+
+**Transform Origin Y**  
+Specifes the Y position, within this node, that will be the center for rotation and scale. By default it is the center of the node (i.e. 50%) but you can specify an arbitrary value in either percentage of the node's height or explicitly in pixels.
+
 ### Other
 
 **Position**  
@@ -188,26 +184,6 @@ This will cause this node to block all pointer events, e.g. any node that is beh
 
 **Mounted**  
 This property is used to completely remove the node from the DOM. If this property is set to false the node is removed from the DOM. It differs from the _Visible_ property where the node is still part of the DOM but invisible.
-
-### Placement
-
-**Pos X**  
-The X position of the node. Either relative to its parent top left corner or relative to its layouted position depending on the _Position_ property. Can be specified in pixels or as a percentage of its parent's width.
-
-**Pos Y**  
-The Y position of the node either relative to its parent's top left corner or relative to its layouted position depending on the _Position_ property. Can be specified in pixels or as a percentage of its parent's height.
-
-**Rotation**  
-The rotation in degrees.
-
-**Scale**  
-Specifies scaling of this node. A value of 0 scales the node down completely so that it is no longer be visible. A value of 1 gives it the original size, and a value of 2 doubles the size and so on.
-
-**Transform Origin X**  
-Specifes the X position, within this node, that will be the center for rotation and scale. By default it is the center of the node (i.e. 50%) but you can specify an arbitrary value in either percentage of the node's width or explicitly in pixels.
-
-**Transform Origin Y**  
-Specifes the Y position, within this node, that will be the center for rotation and scale. By default it is the center of the node (i.e. 50%) but you can specify an arbitrary value in either percentage of the node's height or explicitly in pixels.
 
 ### Advanced
 
@@ -247,6 +223,14 @@ Current width of this node.
 **Height**  
 Current height of this node.
 
+### Mounted
+
+**Did Mount**
+Signal sent when this node has been mounted, i.e. has become part of the visual tree and is visible.
+
+**Will Unmount**
+Signal sent when this node is about to be removed from the visual tree and become hidden.
+
 ### Pointer Events
 
 **Click**  
@@ -268,11 +252,3 @@ Emitted when the mouse enters the node.
 
 **Hover End**  
 Emitted when the mouse leaves the node.
-
-### Mounted
-
-**Did Mount**
-Signal sent when this node has been mounted, i.e. has become part of the visual tree and is visible.
-
-**Will Unmount**
-Signal sent when this node is about to be removed from the visual tree and become hidden.
