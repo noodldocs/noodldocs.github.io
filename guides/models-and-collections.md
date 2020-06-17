@@ -108,5 +108,78 @@ The setup below is what you want:
   <button class="ndl-copy-nodes-button" onClick='copyJsonToClipboard({"nodes":[{"id":"888b0511-874c-dcc3-bf98-c98af68b48eb","type":"Group","x":-117.1255445807002,"y":283.08062013197235,"parameters":{"backgroundColor":"#FFFFFF"},"ports":[],"children":[{"id":"0cc2e328-1acb-a922-1cab-2e6d445626eb","type":"/Parts/Header","x":-97.1255445807002,"y":329.08062013197235,"parameters":{"Title":"New task"},"ports":[],"children":[]},{"id":"4d13e6a1-e7ae-436a-b7f6-326f5006606c","type":"Group","x":-97.1255445807002,"y":411.08062013197235,"parameters":{"paddingLeft":{"value":20,"unit":"px"},"paddingRight":{"value":20,"unit":"px"}},"ports":[],"children":[{"id":"62036bbf-2a01-1a60-a048-04bc01ae30b3","type":"Text Input","x":-77.1255445807002,"y":457.08062013197235,"parameters":{"sizeMode":"explicit","type":"textArea","fontFamily":"OpenSans-Regular.ttf","fontSize":{"value":20,"unit":"px"},"color":"#545454","marginBottom":{"value":10,"unit":"px"}},"ports":[],"children":[]},{"id":"eba9b191-edc5-8eeb-eb58-611e0e339118","type":"/Parts/Button","label":"Save","x":-77.1255445807002,"y":539.0806201319724,"parameters":{"Label":"Save","Margin Bottom":{"value":20,"unit":"px"}},"ports":[],"children":[]}]}]},{"id":"524acf1f-f107-40a9-ca9f-d6bb19623579","type":"PageStackNavigateBack","x":-377.8536376170447,"y":276.4973969970899,"parameters":{},"ports":[],"children":[]},{"id":"5621ce0b-d4eb-4627-634a-bcaf2f67a4ca","type":"DbModel","x":-377.0510202634721,"y":425.2504935647117,"parameters":{"$ndlCollectionName":"Tasks"},"ports":[],"children":[]},{"id":"4163ea1a-0200-d710-07b1-31b4421fc329","type":"Boolean","x":-379.8940457253206,"y":583.2489203796379,"parameters":{},"ports":[],"children":[]}],"connections":[{"fromId":"0cc2e328-1acb-a922-1cab-2e6d445626eb","fromProperty":"Close","toId":"524acf1f-f107-40a9-ca9f-d6bb19623579","toProperty":"navigate"},{"fromId":"62036bbf-2a01-1a60-a048-04bc01ae30b3","fromProperty":"onTextChanged","toId":"5621ce0b-d4eb-4627-634a-bcaf2f67a4ca","toProperty":"Text"},{"fromId":"4163ea1a-0200-d710-07b1-31b4421fc329","fromProperty":"savedValue","toId":"5621ce0b-d4eb-4627-634a-bcaf2f67a4ca","toProperty":"Completed"},{"fromId":"eba9b191-edc5-8eeb-eb58-611e0e339118","fromProperty":"Click","toId":"5621ce0b-d4eb-4627-634a-bcaf2f67a4ca","toProperty":"insert"},{"fromId":"5621ce0b-d4eb-4627-634a-bcaf2f67a4ca","fromProperty":"saved","toId":"524acf1f-f107-40a9-ca9f-d6bb19623579","toProperty":"navigate"}]})'></button>      
 </div>
 
-There you go, now you can create new task items and they will show up in the list. When a Model is added to a Collection all **Collection** nodes will automatically update and any **For Each** node or similar will update as well.  
+There you go, now you can create new task items and they will show up in the list. When a Model is added to a Collection all **Collection** nodes will automatically update and any **For Each** node or similar will update as well. Now let's move on to editing.
+
+First we need to look at the **Task Item** component, here you can see that there is a Navigation node that navigates to the **Edit Task Screen** when the item is clicked. The **Id** of the task item is also passed as a navigation parameter. Just like **Objects** the *Id* of a Model uniquely identifies it, so to make sure we edit the right task that is passed and will be available as a component input in the **Edit Task Screen** component. To learn more about how navigation works take a look at the [navigation guide](/guides/navigation.md).
+
+<div class="ndl-images">
+    <img src="/guides/models-and-collections/pass-task-id.png" class="ndl-image med"></img>  
+</div>
+
+Lets move on to the **Edit Task Screen** component. Here we first need to fix so that the current task text is shown. This is done through the following steps:
+
+* Create a **Component Inputs** node and a **Task Id** input. This is the **Id** of the Model we are editing that was passed via the Navigation node.
+
+* Create a **Model** node and set the **Colllection Name** to **Tasks**. Then connect the **Task Id** component input to the **Id** input of the model node.
+
+* Finally connect the **Text** output of the Model node to the **Text** input of the **Text Input** node. This will send the text from the Model node when it is retrieved via the Id connection. So that the text input shows the current value of the Model's **Text** attribute.
+
+<div class="ndl-images">
+    <img src="/guides/models-and-collections/edit-task-step1.png" class="ndl-image large"></img>  
+</div>
+
+Now you can click the Task items and the **Edit Task Screen** is shown with the correct task text. You can edit the text input but nothing happens when you hit save. This is what we will do now, what you see below is what we want to build, to achieve this we need to:
+
+* Create another **Model** node and set the collection name to **Tasks**. We could actually use the existing node but sometimes it is easier to create another so to illustrate how thats done we'll do that here.
+
+* Connect the **Task Id** input to this new Model node as well. This is import to understand. As long as the two model nodes have the same **Id** they will work on the same model.
+
+* Connect the **Text** from the **Text Input** to the new model's **Text** input.
+
+* Connect the Save buttons **Click** to the **Save** signal input of the Model node. This will have the effect that when the button is clicked the node will Save the current value on it's inputs to the persistent database. This is similair to the **Set** signal but it will also persist the data.
+
+* Finally connect the **Saved** output from the Model node to the **Navigate Back** node as shown below. This will trigger the back navigation and close the popup when the model has been succesfully saved.
+
+<div class="ndl-images">
+    <img src="/guides/models-and-collections/edit-task-step2.png" class="ndl-image large"></img>  
+</div>
+
+Now you can edit and save the Model, it will take you back to the tasks list and you can see the updated task in the list. There is also a Delete button on the screen, so let's connect that one too. We can use the existing Model node for this.
+
+* Connect the Delete buttons **Click** output signal to the **Delete** input signal on the Model node.
+
+* Connect the **Deleted** signal from the Model node to the **Navigate** input of the Back Navigation node. This will have the edit screen close and return to the tasks list when an item has been deleted.
+
+Give it a try! So now we can **Create**, **Edit** and **Delete** out task items. That's pretty good. There is one last thing in this guide and that is to connect the check mark button for the items. This should be connected to the **Completed** attribute of the task Models.
+
+In the **Task Item** component, another component is used, the **Check Mark**. This is a simple check button created with a states node, you can take a look at it and read the [states guide](/guides/states.md) to learn more. This component has both a boolean input (checked true or false) and a boolean output that is updated when the user clicks. Let's hook up this component to our data model.
+
+* Create a **Model** node and choose our collection **Tasks**.
+
+* Connect the **Completed** output from the **Model** node to the **State** input of the **Check Mark** component.
+
+* We also need to provide the **Id** of the Model, so connect the **Item Id** output of the **For Each Item** node to the **Id** input of the **Model** node.
+
+<div class="ndl-images">
+    <img src="/guides/models-and-collections/check-mark-step1.png" class="ndl-image large"></img>  
+</div>
+
+Now the **Completed** attribute of our task models will be visualized with a check mark. If you have a task in your collection that has Completed set to true it should be reflected in the task list. Now we also want any change made by the user saved in the database.
+
+* Connect the **State** from **Check Mark** to the **Completed** in the **Model** node. So we essentially create a connection in the other direction as well. Before we used two nodes, one for reading and one for saving. You can use the same node if you like.
+
+* Connect the **Click** signal from the **Check Mark** node to the **Save** input of the **Model**. So when the user clicks the check mark the Model will be saved to the database.
+
+!> It's important to only do **Save** and **Insert** on Models on user interactions. If you hook up these to change signals or other non user events you can create feedback loops. It's not like you will disrupt the very fabric of time and space or anything but you could throw an exception or two.
+
+<div class="ndl-images">
+    <img src="/guides/models-and-collections/check-mark-step2.png" class="ndl-image large"></img>  
+  <button class="ndl-copy-nodes-button" onClick='copyJsonToClipboard({"nodes":[{"id":"9878bcde-6bd2-ab34-3878-b6ba6912d0b9","type":"Group","x":251.6487730624964,"y":426.1378094685841,"parameters":{"height":{"value":60,"unit":"px"},"flexDirection":"none"},"ports":[],"children":[{"id":"0146bd28-9dfd-15ec-b282-992f6a1944c2","type":"Group","x":271.6487730624964,"y":508.1378094685841,"parameters":{"height":{"value":1,"unit":"px"},"alignY":"bottom","backgroundColor":"#E0E0E0","marginLeft":{"value":40,"unit":"px"},"marginRight":{"value":20,"unit":"px"}},"ports":[],"children":[]},{"id":"ecaaca53-2dba-71b0-174b-a8b4062e01eb","type":"Text","x":271.6487730624964,"y":554.1378094685841,"parameters":{"fontFamily":"OpenSans-Regular.ttf","text":"Task text","alignY":"center","marginLeft":{"value":40,"unit":"px"}},"ports":[],"children":[]},{"id":"5bd991ff-6333-c2e0-13e1-64fa2f10c479","type":"/Parts/Check Mark","x":271.6487730624964,"y":636.1378094685841,"parameters":{},"ports":[],"children":[]}]},{"id":"3659ec6d-42ff-6d03-64a7-0a7b66b24a27","type":"Component Outputs","x":561.6980374538364,"y":420.1033739471129,"parameters":{},"ports":[{"name":"Click","plug":"input","type":"*","index":0}],"children":[]},{"id":"862b661d-cbd0-38e7-aeff-814bdab062ee","type":"Component Inputs","x":520.642325918066,"y":574.1025604304423,"parameters":{},"ports":[{"name":"Text","plug":"output","type":{"name":"*"},"index":1}],"children":[]},{"id":"2b7d1860-18c4-96e2-bb28-52e22d29db05","type":"PageStackNavigate","x":570.2927032380076,"y":314.36537252167625,"parameters":{"target":"/Screens/Edit Task Screen","tr-direction":"Left","parameters":"Task Id"},"ports":[],"children":[]},{"id":"fbbbb144-e766-694d-081b-ac0412dbb763","type":"For Each Actions","x":226.94139646254027,"y":305.8264692525363,"parameters":{},"ports":[],"children":[]},{"id":"fdb5ca73-d040-a050-7ae4-cd7a46391600","type":"DbModel","x":-58.04124890956044,"y":461.30635426666413,"parameters":{"$ndlCollectionName":"Tasks"},"ports":[],"children":[]}],"connections":[{"fromId":"9878bcde-6bd2-ab34-3878-b6ba6912d0b9","fromProperty":"onClick","toId":"3659ec6d-42ff-6d03-64a7-0a7b66b24a27","toProperty":"Click"},{"fromId":"862b661d-cbd0-38e7-aeff-814bdab062ee","fromProperty":"Text","toId":"ecaaca53-2dba-71b0-174b-a8b4062e01eb","toProperty":"text"},{"fromId":"9878bcde-6bd2-ab34-3878-b6ba6912d0b9","fromProperty":"onClick","toId":"2b7d1860-18c4-96e2-bb28-52e22d29db05","toProperty":"navigate"},{"fromId":"fbbbb144-e766-694d-081b-ac0412dbb763","fromProperty":"itemId","toId":"2b7d1860-18c4-96e2-bb28-52e22d29db05","toProperty":"pm-Task Id"},{"fromId":"fbbbb144-e766-694d-081b-ac0412dbb763","fromProperty":"itemId","toId":"fdb5ca73-d040-a050-7ae4-cd7a46391600","toProperty":"modelId"},{"fromId":"fdb5ca73-d040-a050-7ae4-cd7a46391600","fromProperty":"Completed","toId":"5bd991ff-6333-c2e0-13e1-64fa2f10c479","toProperty":"State"},{"fromId":"5bd991ff-6333-c2e0-13e1-64fa2f10c479","fromProperty":"State","toId":"fdb5ca73-d040-a050-7ae4-cd7a46391600","toProperty":"Completed"},{"fromId":"5bd991ff-6333-c2e0-13e1-64fa2f10c479","fromProperty":"Click","toId":"fdb5ca73-d040-a050-7ae4-cd7a46391600","toProperty":"save"}]})'></button>      
+</div>
+
+Pat yourself on the back because you have just hooked up the app to the Noodl database. So far we have just used the **Local Collection** setup, this is great for testing since it will reset every time you reload. But now that we are happy with how things are wired up let's change to a **Cloud Collection** instead.
+
+...
+
+
 
