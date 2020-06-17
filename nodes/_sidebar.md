@@ -5,23 +5,24 @@
 
 - Visual
 
+  - [Canvas](nodes/visual/canvas.md)
+  - [Circle](nodes/visual/circle.md)
   - [Component Children](nodes/visual/component-children.md)
   - [Group](nodes/visual/group.md)
-  - [Circle](nodes/visual/circle.md)
+  - [Image](nodes/visual/image.md)
   - [Text](nodes/visual/text.md)
   - [Text Input](nodes/visual/text-input.md)
-  - [Image](nodes/visual/image.md)
 
-- Events
+* Events
 
   - [Send Event](nodes/standard/send-event.md)
   - [Receive Event](nodes/standard/receive-event.md)
 
-- Animation
+* Animation
 
   - [States](nodes/standard/states.md)
 
-- Data
+* Data
 
   - [Variable](/nodes/data/variable.md)
   - [Object](/nodes/data/object.md)
@@ -37,6 +38,6 @@
   - [Model](/nodes/data/model.md)
   - [Collection](/nodes/data/collection.md)
 
-- Utilities
+* Utilities
   - [Boolean To String](nodes/standard/boolean-to-string.md)
   - [Index To String](nodes/standard/index-to-string.md)
