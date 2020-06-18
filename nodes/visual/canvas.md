@@ -4,7 +4,7 @@ This node represents an HTML Canvas. It can be placed in the visual tree and the
 
 <div class = "node-inputs">
 
-## Inputs
+## INPUTS
 
 ## Margin
 
@@ -132,7 +132,7 @@ Here you can add custom CSS styles that will be added to this node. The styles a
 
 <div class = "node-outputs">
 
-## Outputs
+## OUTPUTS
 
 ### Other
 

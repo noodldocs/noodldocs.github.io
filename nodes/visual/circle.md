@@ -2,7 +2,7 @@
 
 A circle or circle segment.
 
-## Inputs
+## INPUTS
 
 ### Margin
 
@@ -134,7 +134,7 @@ Specifes the Y position, within this node, that will be the center for rotation 
 **CSS Style**  
 Here you can add custom CSS styles that will be added to this node. The styles are specified in camel case, so _background-color_ in CSS will be specified as _backgroundColor_.
 
-## Outputs
+## OUTPUTS
 
 ### Other
 

@@ -2,7 +2,7 @@
 
 This is a text input node.
 
-## Inputs
+## INPUTS
 
 ## Margin and padding
 
@@ -149,7 +149,7 @@ Here you can add custom CSS styles that will be added to this node. The styles a
 
 <div class = "node-outputs">
 
-## Outputs
+## OUTPUTS
 
 ### Other
 

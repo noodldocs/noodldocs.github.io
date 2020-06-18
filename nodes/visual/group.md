@@ -2,7 +2,7 @@
 
 This node represents a group that can have other visual nodes as children. **Group** nodes are typically used to layout children by stacking (the default), but can also be used to simply provide margins and padding to a group of visual nodes. To learn more about **Group** nodes check out the layouting [guide](/guides/layouts.md).
 
-## Inputs
+## INPUTS
 
 ## Margin and padding
 
@@ -190,7 +190,7 @@ This property is used to completely remove the node from the DOM. If this proper
 **CSS Style**  
 Here you can add custom CSS styles that will be added to this node. The styles are specified in camel case, so _background-color_ in CSS will be specified as _backgroundColor_.
 
-## Outputs
+## OUTPUTS
 
 ### Other
 
