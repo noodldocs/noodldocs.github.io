@@ -1,21 +1,20 @@
 # Navigation Stack
 
-A navigation stack can be placed in the visual hierarchy and will function just as the *Default* screen stack. Take a look at the [Navigation guide](/guides/navigation.md) to learn more about navigation.
+A navigation stack can be placed in the visual hierarchy and will function just as the _Default_ screen stack. Take a look at the [Navigation guide](/guides/navigation.md) to learn more about navigation.
 
 <div class="ndl-images">
     <img src="/guides/navigation/navigation-stack.png" class="ndl-image med"></img>   
 </div>
-
 
 ## INPUTS
 
 ### General
 
 **Name**  
-The name of this stack. This is the identifier used by *Navigate* and *Navigate Back* nodes.
+The name of this stack. This is the identifier used by _Navigate_ and _Navigate Back_ nodes.
 
 **Start Page**  
-The component that will be the component shown when the stack is created and no navigation has been performed.
+The component that is shown when the stack is created and no navigation has been performed.
 
 ### Style
 
@@ -33,8 +32,6 @@ This property is used to completely remove the node from the DOM. If this proper
 Here you can add custom CSS styles that will be added to this node. The styles are specified in camel case, so _background-color_ in CSS will be specified as _backgroundColor_.
 
 ## OUTPUTS
-
-## Outputs
 
 ### Other
 

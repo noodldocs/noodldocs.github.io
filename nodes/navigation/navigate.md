@@ -1,6 +1,6 @@
 # Navigate
 
-This node is used to perform a navigation on a *Navigation Stack*. Take a look at the [Navigation guide](/guides/navigation.md) to learn more about navigation.
+This node is used to perform navigation on a _Navigation Stack_. Take a look at the [Navigation guide](/guides/navigation.md) to learn more about navigation.
 
 <div class="ndl-images">
     <img src="/guides/navigation/main-navigate.png" class="ndl-image med"></img>   
@@ -11,7 +11,7 @@ This node is used to perform a navigation on a *Navigation Stack*. Take a look a
 ### General
 
 **Stack**  
-This is the identifier (name) or the stack where the navigation should be performed. *Default* means the root screen stack. Otherwise it should be a name of a [Navigation Stack](/nodes/navigation/navigation-stack.md) node.
+This is the identifier (name) of the stack where the navigation should be performed. _Default_ means the root screen stack. Otherwise it should be a name of a [Navigation Stack](/nodes/navigation/navigation-stack.md) node.
 
 <div class="ndl-images">
     <img src="/guides/navigation/choose-stack.png" class="ndl-image med"></img>   
@@ -23,28 +23,28 @@ This is a component that is the target for the navigation node, i.e. the compone
 ### Transition
 
 **Transition**  
-The type of transition, can be any of:
+The type of transition. Can be any of:
 
-* *None* No transition, the target component is immediately made visible.
-* *Push* The current top on the stack is "pushed away" while the new top enters.
-* *Popup* The current top is not changed, the new top enters with a transition on top of it.
+- _None_ No transition, the target component is immediately made visible.
+- _Push_ The current top of the stack is "pushed away" while the new top enters.
+- _Popup_ The current top is not changed. The new top enters with a transition on top of it.
 
 Not all of the parameters below are available for all types of transitions.
 
 **Direction**  
-This is the direction the new top component enters from, and thus the direction the current top is pushed away if the transition is *Push*. It can be any of *Left*, *Right*, *Up*, *Down* and *In*,*Out*. The latter zooms in vs out.
+This is the direction the new top component enters from, and also the direction the current top is pushed away in, if the transition is _Push_. It can be any of _Left_, _Right_, _Up_, _Down_ and _In_,_Out_. The latter zooms in vs out.
 
 **Shift Distance**  
-This is the distance of the transition in either *%* or in *px*, i.e. the distance the component is moved in the specified direction.
+This is the distance of the transition in either _%_ or in _px_, i.e. the distance the component is moved in the specified direction.
 
 **Zoom**  
-This is available if the *Direction* is set to *In* or *Out* and specifies the amount of zoom the transition should apply.
+This is available if the _Direction_ is set to _In_ or _Out_ and specifies the amount of zoom the transition should apply.
 
 **Crossfade**  
-If enabled the target will fade in and the current top fade out. Only available for *Push* transitions.
+If enabled the target will fade in and the current top fade out. Only available for _Push_ transitions.
 
 **Face**  
-Available for *Popup* transitions. This indicates if the new top component should fade in our not during the transition.
+Available for _Popup_ transitions. This indicates if the new top component should fade in our not during the transition.
 
 **Timing**  
 This is a timing curve that controls the delay, duration and animation ease of the transition.
@@ -55,7 +55,7 @@ This is a timing curve that controls the delay, duration and animation ease of t
 
 ### Parameters
 
-These are the parameters that are passed to the new top component when the navigation is performed. Parameters are passes as *Component Input*s to the target component.
+These are the parameters that are passed to the new top component when the navigation is performed. Parameters are passes through a **Component Inputs** node to the target component.
 
 <div class="ndl-images">
     <img src="/guides/navigation/nav-params.png" class="ndl-image small"></img>   
@@ -64,7 +64,6 @@ These are the parameters that are passed to the new top component when the navig
 ### Actions
 
 **Navigate**  
-A signal input, when a signal is received the navigation will be performed.
+A signal input. When a signal is received the navigation will be performed.
 
 ## OUTPUTS
-
