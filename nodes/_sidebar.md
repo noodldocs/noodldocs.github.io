@@ -13,6 +13,7 @@
   - [Image](nodes/visual/image.md)
   - [Text](nodes/visual/text.md)
   - [Text Input](nodes/visual/text-input.md)
+  - [Video](nodes/visual/video.md)
 
 * Events
 
