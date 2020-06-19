@@ -1,12 +1,12 @@
 # Canvas
 
-This node represents an HTML Canvas. It can be placed in the visual tree and then accessed via Javascript.
+This node represents an HTML Canvas. It can be placed in the visual tree and then accessed via the **Javascript** node.
 
 <div class = "node-inputs">
 
 ## INPUTS
 
-## Margin
+### Margin
 
 Using the margin gadget you can specify the top, bottom, left and right margins for this node. You can specify them in either pixels or percentage (of the corrensponding parent dimension).
 
@@ -66,10 +66,10 @@ Specify the height of this node in pixels, percentage of parent height or the un
 ### Other
 
 **bufferWidth**  
-The width of the Canvas buffer.
+The width of the **Canvas** buffer.
 
 **bufferHeight**  
-The height of the Canvas buffer.
+The height of the **Canvas** buffer.
 
 **Position**  
 Controls how this node is layouted in its parent.

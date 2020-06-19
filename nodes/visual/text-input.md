@@ -4,7 +4,7 @@ This is a text input node.
 
 ## INPUTS
 
-## Margin and padding
+### Margin and padding
 
 Using the margin and padding gadget you can specify the top, bottom, left and right margins and padding for this node. You can specify them in either pixels or percentage (of the corrensponding parent dimension). Margins are the distance between this node and its siblings. Padding is the distance from the borders of this nodes container to its children.
 
@@ -79,7 +79,7 @@ This property is used to completely remove the node from the DOM. If this proper
 
 ### Text
 
-**Type**
+**Type**  
 The type of the Text Input.
 
 - _Text_ - A single line text input (default).
@@ -88,27 +88,27 @@ The type of the Text Input.
 - _Number_ - A single line number input.
 - _Password_ - A single line password input, will mask password by default.
 
-**Font Family**
+**Font Family**  
 The font family used in the Text Input node. Choose any font in the project folder or type in the font name.
 
-**Font Size**
+**Font Size**  
 The size of the font in the Text Input, in pixels.
 
-**Placeholder**
+**Placeholder**  
 The placeholder text for when the Text Input is empty.
 
 ### Style
 
-**Font Color**
+**Font Color**  
 The color of the text.
 
-**Background Color**
+**Background Color**  
 The background color of the Text Input.
 
-**Border Color**
+**Border Color**  
 The color of the border around the Text Input node. Only valid if _Border Width_ is more than 0.
 
-**Border Width**
+**Border Width**  
 The width of the border around the Text Input.
 
 **Opacity**  
@@ -122,13 +122,13 @@ The depth index for this node, this can be any number.
 
 ### Placement
 
-**Pos X**
+**Pos X**  
 The X position of this node. Either relative to its parent's top left corner or relative to its layouted position depending on the _Position_ property. Can be specified in pixels or as a percentage of its parents width.
 
-**Pos Y**
+**Pos Y**  
 The Y position of this node. Either relative to its parent's top left corner or relative to its layouted position depending on the _Position_ property. Can be specified in pixels or as a percentage of its parents height.
 
-**Rotation**
+**Rotation**  
 The rotation in degrees.
 
 **Scale**  
@@ -142,7 +142,7 @@ Specifes the Y position, within this node, that will be the center for rotation 
 
 ### Advanced
 
-**CSS Style**
+**CSS Style**  
 Here you can add custom CSS styles that will be added to this node. The styles are specified in camel case, so _background-color_ in CSS will be specified as _backgroundColor_.
 
 </div>
@@ -154,10 +154,10 @@ Here you can add custom CSS styles that will be added to this node. The styles a
 ### Other
 
 **Child Index**  
-The place this node has in relation to its parent. E.g. if a _Group_ has three children, then the first child will have _Child Index_ 0, the second child will have _Child Index_ 1, and so on.
+The place this node has in relation to its parent. E.g. if a **Group** has three children, then the first child will have _Child Index_ 0, the second child will have _Child Index_ 1, and so on.
 
 **This**  
-A reference to this node. Used in custom _Javascript_ nodes and more.
+A reference to this node. Used in custom **Javascript** nodes and more.
 
 ### Bounding Box
 
@@ -183,7 +183,7 @@ Signal sent when this node is about to be removed from the visual tree and becom
 
 ### Value
 
-**Text**
+**Text**  
 The current text string.
 
 ### Focus
@@ -196,7 +196,7 @@ Signal that is emitted when the Text Input node loses input focus.
 
 ### Actions
 
-**On Enter**
+**On Enter**  
 Signal emitted when Enter/Return key is pressed.
 
 </div>

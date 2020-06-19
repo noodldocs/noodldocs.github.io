@@ -1,10 +1,10 @@
 # Group
 
-This node represents a group that can have other visual nodes as children. **Group** nodes are typically used to layout children by stacking (the default), but can also be used to simply provide margins and padding to a group of visual nodes. To learn more about **Group** nodes check out the layouting [guide](/guides/layouts.md).
+This node represents a group that can have other visual nodes as children. **Group** nodes are typically used to layout children by stacking (the default), but can also be used to simply provide margins and padding to a group of visual nodes. To learn more about **Group** nodes check out the [Layouting guide](/guides/layouts.md).
 
 ## INPUTS
 
-## Margin and padding
+### Margin and padding
 
 Using the margin and padding gadget you can specify the top, bottom, left and right margins and padding for this node. You can specify them in either pixels or percentage of the corrensponding parent's dimension. Margins are the distance between this node and its siblings. Padding is the distance from the borders of this node to its children.
 
@@ -195,10 +195,10 @@ Here you can add custom CSS styles that will be added to this node. The styles a
 ### Other
 
 **Child Index**  
-The place this node has in relation to its parent. E.g. if a _Group_ has three children, then the first child will have _Child Index_ 0, the second child will have _Child Index_ 1, and so on.
+The place this node has in relation to its parent. E.g. if a **Group** has three children, then the first child will have _Child Index_ 0, the second child will have _Child Index_ 1, and so on.
 
 **This**  
-A reference to this node. Used in custom _Javascript_ nodes and more.
+A reference to this node. Used in custom **Javascript** nodes and more.
 
 **Scroll Position**  
 The current position of scrolling in pixels.
@@ -225,10 +225,10 @@ Current height of this node.
 
 ### Mounted
 
-**Did Mount**
+**Did Mount**  
 Signal sent when this node has been mounted, i.e. has become part of the visual tree and is visible.
 
-**Will Unmount**
+**Will Unmount**  
 Signal sent when this node is about to be removed from the visual tree and become hidden.
 
 ### Pointer Events

@@ -107,13 +107,13 @@ The depth index for this node, this can be any number.
 
 ### Placement
 
-**Pos X**
+**Pos X**  
 The X position of this node. Either relative to its parent's top left corner or relative to its layouted position depending on the _Position_ property. Can be specified in pixels or as a percentage of its parents width.
 
-**Pos Y**
+**Pos Y**  
 The Y position of this node. Either relative to its parent's top left corner or relative to its layouted position depending on the _Position_ property. Can be specified in pixels or as a percentage of its parents height.
 
-**Rotation**
+**Rotation**  
 The rotation in degrees.
 
 **Scale**  
@@ -158,10 +158,10 @@ Here you can add custom CSS styles that will be added to this node. The styles a
 ### Other
 
 **Child Index**  
-The place this node has in relation to its parent. E.g. if a _Group_ has three children, then the first child will have _Child Index_ 0, the second child will have _Child Index_ 1, and so on.
+The place this node has in relation to its parent. E.g. if a **Group** has three children, then the first child will have _Child Index_ 0, the second child will have _Child Index_ 1, and so on.
 
 **This**  
-A reference to this node. Used in custom _Javascript_ nodes and more.
+A reference to this node. Used in custom **Javascript** nodes and more.
 
 ### Bounding Box
 

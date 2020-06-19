@@ -60,7 +60,7 @@ This property is used to completely remove the node from the DOM. If this proper
 
 ### Advanced
 
-**CSS Style**
+**CSS Style**  
 Here you can add custom CSS styles that will be added to this node. The styles are specified in camel case, so _background-color_ in CSS will be specified as _backgroundColor_.
 
 ## OUTPUTS

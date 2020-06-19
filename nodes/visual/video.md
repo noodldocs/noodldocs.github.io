@@ -6,7 +6,7 @@ This node represents a video surface.
 
 ## INPUTS
 
-## Margin
+### Margin
 
 Using the margin gadget you can specify the top, bottom, left and right margins for this node. You can specify them in either pixels or percentage (of the corrensponding parent dimension).
 
@@ -111,7 +111,7 @@ The video's X position within the **Video** node's bounding box.
 **Video Position Y**  
 The video's Y position within the **Video** node's bounding box.
 
-**Object Fit**
+**Object Fit**  
 Specifies how the video will behave when scaled to other size than the default size.
 
 - _Contain_ - The video will be scaled by keeping aspect ratio and making sure the video fits in the bounding box. This may introduce transparent areas within the **Video** node's bounding box.
@@ -132,13 +132,13 @@ The depth index for this node, this can be any number.
 
 ### Placement
 
-**Pos X**
+**Pos X**  
 The X position of this node. Either relative to its parent's top left corner or relative to its layouted position depending on the _Position_ property. Can be specified in pixels or as a percentage of its parents width.
 
-**Pos Y**
+**Pos Y**  
 The Y position of this node. Either relative to its parent's top left corner or relative to its layouted position depending on the _Position_ property. Can be specified in pixels or as a percentage of its parents height.
 
-**Rotation**
+**Rotation**  
 The rotation in degrees.
 
 **Scale**  
@@ -187,10 +187,10 @@ Here you can add custom CSS styles that will be added to this node. The styles a
 ### Other
 
 **Child Index**  
-The place this node has in relation to its parent. E.g. if a _Group_ has three children, then the first child will have _Child Index_ 0, the second child will have _Child Index_ 1, and so on.
+The place this node has in relation to its parent. E.g. if a **Group** has three children, then the first child will have _Child Index_ 0, the second child will have _Child Index_ 1, and so on.
 
 **This**  
-A reference to this node. Used in custom _Javascript_ nodes and more.
+A reference to this node. Used in custom **Javascript** nodes and more.
 
 **onCanPlay**  
 Signal triggered when the video has loaded and is ready to be played.
