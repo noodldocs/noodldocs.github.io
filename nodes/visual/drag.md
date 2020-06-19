@@ -12,47 +12,47 @@ The drag node is used to make visual nodes draggable with the mouse or touch. Al
 
 ### Snap To Position X
 
-**Do**
+**Do**  
 Send a signal here to trigger a snap to the position specified by _Value_ and with the transtion duration specified by _Duration_.
 
-**Value**
+**Value**  
 This is the X value the the snap action will have as destination when triggered.
 
-**Duration**
+**Duration**  
 The snap transition duration.
 
 ### Snap To Position Y
 
-**Do**
+**Do**  
 Send a signal here to trigger a snap to the position specified by _Value_ and with the transtion duration specified by _Duration_.
 
-**Value**
+**Value**  
 This is the X value the the snap action will have as destination when triggered.
 
-**Duration**
+**Duration**  
 The snap transition duration.
 
 ### Drag
 
-**Enable**
-Enables or disables the drag node. If it is disabled the drag will not have any affect on child nodes.
+**Enable**  
+Enables or disables this node. If it is disabled, drag will not have any affect on child nodes.
 
-**Axis**
-Specifies along with axis the drag will work.
+**Axis**  
+Specifies along which axes the drag will work.
 
 - _X_ - Only horizontal drag is enabled.
 - _Y_ - Only vertical drag is enabled.
 - _Both_ - Both horizontal and vertical drag is enabled.
 
-**Constrain to parent**
+**Constrain to parent**  
 If enabled the child nodes being dragged will be constrained to the borders of the parent node so they cannot be dragged outside of the parent bounds.
 
 ### Other
 
-**Start Drag X**
+**Start Drag X**  
 Specifies the X position that will be used as the starting point. Setting this will force the child nodes to the specified position.
 
-**Start Drag Y**
+**Start Drag Y**  
 Specifies the Y position that will be used as the starting point. Setting this will force the child nodes to the specified position.
 
 **Mounted**  
@@ -68,10 +68,10 @@ Here you can add custom CSS styles that will be added to this node. The styles a
 ### Other
 
 **Child Index**  
-The place this node has in relation to its parent. E.g. if a _Group_ has three children, then the first child will have _Child Index_ 0, the second child will have _Child Index_ 1, and so on.
+The place this node has in relation to its parent. E.g. if a **Group** has three children, then the first child will have _Child Index_ 0, the second child will have _Child Index_ 1, and so on.
 
 **This**  
-A reference to this node. Used in custom _Javascript_ nodes and more.
+A reference to this node. Used in custom **Javascript** nodes and more.
 
 ### Bounding Box
 
