@@ -188,7 +188,17 @@ Now the **Completed** attribute of our task models will be visualized with a che
 
 Pat yourself on the back because you have just hooked up the app to the Noodl database. So far we have just used the **Local Collection** setup, this is great for testing since it will reset every time you reload. But now that we are happy with how things are wired up let's change to a **Cloud Collection** instead.
 
-...
+First you must enable cloud services for this project. You can find the cloud services popup via the toolbar at the top of the editor.
 
+<div class="ndl-images">
+    <img src="/guides/models-and-collections/enable-cloud-services.gif" class="ndl-image med"></img>  
+</div>
 
+Next open the database view again and click on the *Tasks* collection. Switch to the *Data* tab and at the bottom left you will find a storage icon, currently indicating *Local* storage. Click it and switch to *Cloud* storage.
+
+<div class="ndl-images">
+    <img src="/guides/models-and-collections/switch-to-cloud.gif" class="ndl-image med"></img>  
+</div>
+
+There you go, now you have a simple task app with a real-time database. You can try it out by deploying it and sharing the link.
 
