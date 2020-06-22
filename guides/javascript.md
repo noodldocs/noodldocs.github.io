@@ -278,13 +278,13 @@ Connecting to the the inputs and outputs, the Javascript nodes can be used as an
 ## Debugging
 If Noodl cannot parse your Javascript source, if a runtime error occurs, the Javascript node will be visually dashed and you can find the error in the debug section.
 <div class="ndl-images">
-    <img src="/guides/javascript/Javascript error.gif" class="ndl-image large"></img>  
+    <img src="/guides/javascript/Javascript_error.gif" class="ndl-image large"></img>  
 </div>
 
 You can also use logging functionality, for example `console.log("")` to log debug printouts. They will be found in the console window of the web debugger.
 
 <div class="ndl-images">
-    <img src="/guides/javascript/Javascript console.gif" class="ndl-image large"></img>  
+    <img src="/guides/javascript/Javascript_console.gif" class="ndl-image large"></img>  
 </div>
 
 
