@@ -33,7 +33,7 @@ To do this we first need to create a new collection for our Tasks. This is done 
 
 At the bottom of the panel you can create a new **Collection** call it _Tasks_ and make sure you pick _Local Collection_. There are two types of Collections you can create, local and cloud.
 
-- **Local Collection** Local collections will contain static data that will be refreshed everytime you reload the viewer or browser. This might sound strange since we want to do persistent storage but local collections are great when you are testing things, since you can put in a start state that you can easily reset to.
+- **Local Collection** Local collections will contain static data that will be reset to the start state everytime you reload the viewer or browser. This might sound strange since we want to do persistent storage but local collections are great when you are testing things, since you can put in a start state that you can easily reset to.
 
 - **Cloud Collection** Cloud collections are stored in the cloud and are persistent in real time between all current users. This is what we will use later. You can switch between the two at any time.
 
@@ -41,7 +41,16 @@ At the bottom of the panel you can create a new **Collection** call it _Tasks_ a
     <img src="/guides/models-and-collections/create-collection.png" class="ndl-image med"></img>   
 </div>
 
-Now that we have our Collection let's put some test data into it. Create a Model with the attributes _Text_ and _Completed_, the latter should be a boolean (indicating if the task is completed or not). When you add models to a collection you use JSON which is great to [learn](https://www.w3schools.com/js/js_json_intro.asp) if you don't already know it.
+Now that we have our Collection we need to specify the schema for the models in the collection, a schema is simply a list of properties with types that all models in the collection share. Out _Tasks_ models will have two properties, a _Text_ with the task content and a _Completed_ that will store if the task is done or not. Open the collection by clicking on it and on the tab labeled _Schema_. Then create two properties.
+
+* *Text* This property should be of type *String*, it will contain the text of the task.
+* *Completed* This property should be of type *Boolean* so it can be either *true* for when a task has been marked completed, and *false* if not.
+
+<div class="ndl-images">
+    <img src="/guides/models-and-collections/schema.gif" class="ndl-image large"></img>   
+</div>
+
+With the schema in place we can add some test data to the collection, this is done in the other tab labeled *Data*. Create a Model with the attributes _Text_ and _Completed_. When you add models to a collection you use JSON which is great to [learn](https://www.w3schools.com/js/js_json_intro.asp) if you don't already know it.
 
 <div class="ndl-images">
     <img src="/guides/models-and-collections/add-model.gif" class="ndl-image large"></img>   
