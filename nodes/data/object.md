@@ -9,18 +9,18 @@ Stores any amount of properties and can be used standalone or together with [Arr
 ### General
 
 **Id**  
-Set the Id for this Object. All Object nodes with the same Id will refer to the same data and have the same properties.
+Set the _Id_ for this **Object**. All **Object** nodes with the same _Id_ will refer to the same data and have the same properties.
 
 ### Properties
 
-An Object node can have any amount of properties. Each property will get one input and output to set/get their current value.
+An **Object** node can have any amount of properties. Each property will get one input and output to set/get their current value.
 
 ![](object-props.png ':class=img-size-s')
 
 ### Actions
 
 **Set**  
-Stores any properties that are connected to the Object. All other Object nodes that share the same Id will be updated now.
+Stores any properties that are connected to the **Object**. All other **Object** nodes that share the same _Id_ will be updated now.
 
 **Clear**  
 Removes all properties and values from the Object.
