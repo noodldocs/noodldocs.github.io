@@ -1,6 +1,6 @@
 # SEND EVENT
 
-_Send Event_ nodes are used to send a signal to another place in your design without having to connect the nodes directly. To learn more about **Events** check out the [guide](/guides/events.md).
+**Send Event** nodes are used to send a signal to another place in your design without having to connect the nodes directly. To learn more about **Events** check out the [guide](/guides/events.md).
 
 ![](send-event.png)
 
@@ -27,10 +27,10 @@ This is a signal port and when triggered the corresponding [Receive Event][0] no
 **Send To**  
 Controls what components the event will be sent to.
 
-- **Global** - Send to all components
-- **Parent** - Send the event up the visual hierarchy to parent components.
-- **Children** - Send the events to all children of this component, and their descendants.
-- **Siblings** - Send the event to all siblings of this component in the visual hierarchy.
+- _Global_ - Send to all components
+- _Parent_ - Send the event up the visual hierarchy to parent components.
+- _Children_ - Send the events to all children of this component, and their descendants.
+- _Siblings_ - Send the event to all siblings of this component in the visual hierarchy.
 
 </div>
 

@@ -26,30 +26,30 @@ Stores any properties that are connected to the **Object**. All other **Object**
 Removes all properties and values from the Object.
 
 **Fetch**  
-Normally when an Object Id is set, the property outputs are immediately updated. If you want to control how the data is updated you can connect to the **Fetch** signal input. Then you need to explictly send a signal here for the Object node to fetch the data.
+Normally when an **Object** _Id_ is set, the property outputs are immediately updated. If you want to control how the data is updated you can connect to the _Fetch_ signal input. Then you need to explictly send a signal here for the **Object** node to fetch the data.
 
 ## OUTPUTS
 
 ### General
 
 **Id**  
-The Id for this Object node.
+The _Id_ for this **Object** node.
 
 ### Events
 
 **Stored**  
-Signal that is sent when new property values are stored in the Object as a result of a Set action triggered.
+Signal that is sent when new property values are stored in the **Object** as a result of a _Set_ action triggered.
 
 **Changed**  
-Signal when any of the properties of this Object have changed.
+Signal when any of the properties of this **Object** have changed.
 
 **Fetched**  
-Signal when the Object has fetched and updated it's outputs. (Even if they have changed or not)
+Signal when the **Object** has fetched and updated it's outputs. (Even if they have changed or not)
 
 ### Properties
 
-An Object can have any amount of properties. Each property will get one output to get the current value.
+An **Object** can have any amount of properties. Each property will get one output to get the current value.
 
 ### Changed signals
 
-An Object will also get changed signal outputs for each of it's properties. They will emit a signal when the property changes value when this or some other Object node with the same Id triggers a set.
+An **Object** will also get changed signal outputs for each of it's properties. They will emit a signal when the property changes value when this or some other **Object** node with the same _Id_ triggers a set.
