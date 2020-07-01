@@ -7,7 +7,7 @@ Contains a boolean value (true/false). This can be used to quickly store a boole
 **Value**  
 The value to store in the node. The output value will equal this value, unless _Set_ is connected, then it will be updated when **Set** receives a signal.
 
-**Set**
+**Set**  
 This is used to only update the output when _Save Value_ is set to true. This will allow you to freeze the stored value and only allow it to update under certain conditions, e.g. on a Tap.
 
 ## OUTPUTS
@@ -16,4 +16,4 @@ This is used to only update the output when _Save Value_ is set to true. This wi
 The boolean stored in the node
 
 **Stored**  
-A signal when the value is stored via the **Set** input signal.
+A signal when the value is stored via the _Set_ input signal.
