@@ -51,3 +51,4 @@
   - [Navigate Back](nodes/navigation/navigate-back.md)
   - [Navigation Stack](nodes/navigation/navigation-stack.md)
   - [Hash Router](nodes/navigation/hash-router.md)
+  - [Hash Navigate](nodes/navigation/hash-navigate.md)
