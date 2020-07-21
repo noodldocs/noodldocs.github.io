@@ -11,7 +11,7 @@ A navigation stack can be placed in the visual hierarchy and will function just 
 ### General
 
 **Name**  
-The name of this stack. This is the identifier used by _Navigate_ and _Navigate Back_ nodes.
+The name of this stack. This is the identifier used by [Navigate](/nodes/navigation/navigate.md) and [Navigate Back](/nodes/navigation/navigate-back.md) nodes.
 
 **Start Page**  
 The component that is shown when the stack is created and no navigation has been performed.
@@ -36,10 +36,10 @@ Here you can add custom CSS styles that will be added to this node. The styles a
 ### Other
 
 **Child Index**  
-The place this node has in relation to its parent. E.g. if a _Group_ has three children, then the first child will have _Child Index_ 0, the second child will have _Child Index_ 1, and so on.
+The place this node has in relation to its parent. E.g. if a **Group** has three children, then the first child will have _Child Index_ 0, the second child will have _Child Index_ 1, and so on.
 
 **This**  
-A reference to this node. Used in custom _Javascript_ nodes and more.
+A reference to this node. Used in custom **Javascript** nodes and more.
 
 ### Bounding Box
 

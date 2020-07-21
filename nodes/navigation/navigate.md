@@ -1,6 +1,6 @@
 # Navigate
 
-This node is used to perform navigation on a _Navigation Stack_. Take a look at the [Navigation guide](/guides/navigation.md) to learn more about navigation.
+This node is used to perform navigation on a **Navigation Stack**. Take a look at the [Navigation guide](/guides/navigation.md) to learn more about navigation.
 
 <div class="ndl-images">
     <img src="/guides/navigation/main-navigate.png" class="ndl-image med"></img>   
@@ -55,7 +55,7 @@ This is a timing curve that controls the delay, duration and animation ease of t
 
 ### Parameters
 
-These are the parameters that are passed to the new top component when the navigation is performed. Parameters are passes through a **Component Inputs** node to the target component.
+These are the parameters that are passed to the new top component when the navigation is performed. Parameters are passed through a **Component Inputs** node to the target component.
 
 <div class="ndl-images">
     <img src="/guides/navigation/nav-params.png" class="ndl-image small"></img>   
@@ -67,3 +67,5 @@ These are the parameters that are passed to the new top component when the navig
 A signal input. When a signal is received the navigation will be performed.
 
 ## OUTPUTS
+
+This node has no outputs.

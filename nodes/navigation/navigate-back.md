@@ -21,3 +21,5 @@ This is the identifier (name) of the stack where the navigation should be perfor
 A signal input. Wshen a signal is received the navigation will be performed.
 
 ## OUTPUTS
+
+This node has no outputs.
