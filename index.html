@@ -10,53 +10,63 @@
     />
     <meta
       name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
-    
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+
     <!--  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" /> -->
     <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css" />
     <link rel="stylesheet" href="assets/styles.css" />
 
     <script type="text/javascript">
       function fallbackCopyTextToClipboard(text) {
-  var textArea = document.createElement("textarea");
-  textArea.value = text;
-  
-  // Avoid scrolling to bottom
-  textArea.style.top = "0";
-  textArea.style.left = "0";
-  textArea.style.position = "fixed";
+        var textArea = document.createElement('textarea');
+        textArea.value = text;
 
-  document.body.appendChild(textArea);
-  textArea.focus();
-  textArea.select();
+        // Avoid scrolling to bottom
+        textArea.style.top = '0';
+        textArea.style.left = '0';
+        textArea.style.position = 'fixed';
 
-  try {
-    var successful = document.execCommand('copy');
-    var msg = successful ? 'successful' : 'unsuccessful';
-    console.log('Fallback: Copying text command was ' + msg);
-  } catch (err) {
-    console.error('Fallback: Oops, unable to copy', err);
-  }
+        document.body.appendChild(textArea);
+        textArea.focus();
+        textArea.select();
 
-  document.body.removeChild(textArea);
-}
-function copyTextToClipboard(text) {
-  if (!navigator.clipboard) {
-    fallbackCopyTextToClipboard(text);
-    return;
-  }
-  navigator.clipboard.writeText(text).then(function() {
-    console.log('Async: Copying to clipboard was successful!');
-  }, function(err) {
-    console.error('Async: Could not copy text: ', err);
-  });
-}
-function copyJsonToClipboard(json) {
-  copyTextToClipboard(JSON.stringify(json))
-}
-function importIntoNoodl(path) {
-  window.location = 'noodl:import/' + location.protocol+'//'+location.host + '/' + path;
-}
+        try {
+          var successful = document.execCommand('copy');
+          var msg = successful ? 'successful' : 'unsuccessful';
+          console.log('Fallback: Copying text command was ' + msg);
+        } catch (err) {
+          console.error('Fallback: Oops, unable to copy', err);
+        }
+
+        document.body.removeChild(textArea);
+      }
+      function copyTextToClipboard(text) {
+        if (!navigator.clipboard) {
+          fallbackCopyTextToClipboard(text);
+          return;
+        }
+        navigator.clipboard.writeText(text).then(
+          function () {
+            console.log('Async: Copying to clipboard was successful!');
+          },
+          function (err) {
+            console.error('Async: Could not copy text: ', err);
+          }
+        );
+      }
+      function copyJsonToClipboard(json) {
+        copyTextToClipboard(JSON.stringify(json));
+      }
+      function importIntoNoodl(path) {
+        window.location =
+          'noodl:import/' +
+          location.protocol +
+          '//' +
+          location.host +
+          '/' +
+          path;
+      }
     </script>
   </head>
 
@@ -72,16 +82,16 @@ function importIntoNoodl(path) {
         onlyCover: true,
         auto2top: true,
         autoHeader: false,
-        subMaxLevel: 1,
+        subMaxLevel: 0,
         maxLevel: 4,
-       //alias: {
-       //   '/.*/_sidebar.md': '/_sidebar.md'
-       // },
+        //alias: {
+        //   '/.*/_sidebar.md': '/_sidebar.md'
+        // },
         search: {
           paths: 'auto',
           placeholder: 'Search',
-          noData: 'No Results.'
-        }
+          noData: 'No Results.',
+        },
       };
     </script>
     <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>

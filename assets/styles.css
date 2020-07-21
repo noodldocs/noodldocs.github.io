@@ -1,5 +1,5 @@
 :root {
-  --theme-color: #F5BD41;
+  --theme-color: #f5bd41;
   --theme-color-dark: rgb(168, 127, 38);
 
   --text-color-base: #2e2e46;
@@ -27,11 +27,19 @@ a {
 
 /****** Sidebar ******/
 .sidebar .app-name-link img {
+  margin-left: -50px;
   width: 100px;
 }
 
+.sidebar ul li {
+  margin-left: 50px;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
 .sidebar ul li a {
-  font-size: 15px;
+  font-size: 16px;
+  line-height: 1.2;
 }
 
 .sidebar ul li a:hover {
@@ -202,28 +210,28 @@ body .sidebar-toggle span:nth-child(3) {
 
 /****** IMAGES ******/
 .ndl-images {
-  position:relative; 
-  text-align:center; 
-  display:flex; 
-  justify-content:center;
+  position: relative;
+  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .ndl-image {
-  height: auto; 
-  margin:5px;  
-  align-self: flex-start; 
+  height: auto;
+  margin: 5px;
+  align-self: flex-start;
 }
 
 .ndl-image.small {
-  width: 30%
+  width: 30%;
 }
 
 .ndl-image.med {
-  width: 50%
+  width: 50%;
 }
 
 .ndl-image.large {
-  width: 100%
+  width: 100%;
 }
 
 /****** COPY NODES BUTTON ******/
@@ -245,7 +253,7 @@ body .sidebar-toggle span:nth-child(3) {
 }
 
 .ndl-copy-nodes-button::after {
-  content: "COPY NODES";
+  content: 'COPY NODES';
 }
 
 .ndl-copy-nodes-button:active {
@@ -266,17 +274,16 @@ body .sidebar-toggle span:nth-child(3) {
   background: #808080;
   background: var(--theme-color, #808080);
   color: #fff;
-  cursor: pointer;  
+  cursor: pointer;
 }
 
 .ndl-import-button::after {
-  content: "IMPORT";
+  content: 'IMPORT';
 }
 
 .ndl-import-button:active {
   background: var(--theme-color-dark, #808080);
 }
-
 
 .img-size-s {
   display: block;
@@ -298,4 +305,3 @@ body .sidebar-toggle span:nth-child(3) {
   margin-right: auto;
   width: 100%;
 }
-

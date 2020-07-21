@@ -15,16 +15,16 @@
   - [Text Input](nodes/visual/text-input.md)
   - [Video](nodes/visual/video.md)
 
-* Events
+- Events
 
   - [Send Event](nodes/standard/send-event.md)
   - [Receive Event](nodes/standard/receive-event.md)
 
-* Animation
+- Animation
 
   - [States](nodes/standard/states.md)
 
-* Data
+- Data
 
   - [Variable](/nodes/data/variable.md)
   - [Object](/nodes/data/object.md)
@@ -40,12 +40,12 @@
   - [Model](/nodes/data/model.md)
   - [Collection](/nodes/data/collection.md)
 
-* Utilities
+- Utilities
 
   - [Boolean To String](nodes/standard/boolean-to-string.md)
   - [Index To String](nodes/standard/index-to-string.md)
 
-* Navigation
+- Navigation
 
   - [Navigate](nodes/navigation/navigate.md)
   - [Navigate Back](nodes/navigation/navigate-back.md)
