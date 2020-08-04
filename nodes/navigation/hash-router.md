@@ -18,7 +18,7 @@ The active component will be inserted as a child to the **Hash Router**, replaci
 This is the identifier of the **Hash Router**. Since there could be several Hash Routers, _Name_ is used to identify the which router to use in the **Hash Navigate** node.
 
 <div class="ndl-images">
-    <img src="/nodes/navigation/hash-router-name.png" class="ndl-image med"></img>   
+    <img src="/nodes/navigation/hash-router-name.png" class="ndl-image large"></img>   
 </div>
 
 ### Pages

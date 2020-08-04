@@ -13,6 +13,7 @@
 * [Arrays](guides/arrays.md)
 * [Models and Collections](guides/models-and-collections.md)
 * [Navigation](guides/navigation.md)
+* [Hash Fragment Navigation](guides/hash-fragment-navigation.md)
 * [Javascript](guides/javascript.md)
   <br/>
 
