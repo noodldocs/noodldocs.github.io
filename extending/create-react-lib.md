@@ -56,7 +56,7 @@ npm run dev
 
 Part of the development flow is to load the accompaning Noodl project that will now contain the built module. First launch Noodl.
 
-Next go to the **Projects** tab and choose **Import existing project** at the bottom of the page.
+Next choose **Import existing project** at the bottom of the page.
 
 ![](import-project.png ':class=img-size-l')
 
@@ -88,11 +88,11 @@ noodl-cli desc --label "My React Lib" --desc "A short description of my lib"
 
 Add your own descriptive label and description of your module. Next up you can replace the default _icon.png_ file with something that represents your library visually.
 
-Now you need to find the Noodl workspace access key. This key is found in the admin page of the workspace within Noodl.
+Now you need to find the Noodl workspace access key. This key is found in the Noodl console, you need to sign in to the Noodl console at [https://console.noodl.net](https://console.noodl.net). After you sign in, find the workspace your want to push to and click *Manage*.
 
-![](workspace-admin.png ':class=img-size-m')
+![](manage-workspace.png ':class=img-size-m')
 
-You will find the key at the bottom of the admin page.
+You will find the access key by clicking *Show Access Key* in the header, this will show a popup with the access key.
 
 ![](access-key.png ':class=img-size-m')
 
