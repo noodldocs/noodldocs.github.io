@@ -4,14 +4,12 @@ Noodl is based on the popular React front end library which makes it easy for yo
 
 !> This guide requires <a href="https://nodejs.org/en/download/" target="_blank">Node js</a> and <a href="https://docs.npmjs.com/downloading-and-installing-node-js-and-npm" target="_blank">npm</a> installed.
 
-!> Currently the npm tool is not publicly available. Please contact the Noodl team through email or through the slack support channel if you need access.
-
 ## Setup
 
 First you need to install the Noodl command line interfaces. If you have not previously installed the CLI you can do so via npm.
 
 ```bash
-npm install -g noodl-cli
+npm install -g @noodl/noodl-cli
 ```
 
 With the CLI tool you can easily create a new react library module from a template:
