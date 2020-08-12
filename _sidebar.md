@@ -27,6 +27,7 @@
 - Extending
 
 - [Introduction](extending/README.md)
+- [Simple node](extending/create-lib.md)
 - [React library](extending/create-react-lib.md)
   <br/>
 
