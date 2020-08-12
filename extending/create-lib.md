@@ -1,8 +1,8 @@
 # Create a new core node
 
-Noodl is very extensible, you can as a developer add new modules with new capablities, connections to data or new visual components to your workspace. This guide gets us starting by showing how the Noodl command line tool works and how to create an extension module with a single new node. This node will behave and appear just like the standard core nodes of Noodl.
+Noodl is very extensible. As a developer you can add new modules with new capablities, create connections to data or make new visual components in your workspace. This guide gets us started by showing how the Noodl command line tool works and how to create an extension module with a single new node. This node will behave and appear just like the standard core nodes of Noodl.
 
-!> This guide requires <a href="https://nodejs.org/en/download/" target="_blank">Node js</a> and <a href="https://docs.npmjs.com/downloading-and-installing-node-js-and-npm" target="_blank">npm</a> installed.
+!> This guide requires <a href="https://nodejs.org/en/download/" target="_blank">Node.js</a> and <a href="https://docs.npmjs.com/downloading-and-installing-node-js-and-npm" target="_blank">npm</a> installed.
 
 ## Setup
 
@@ -33,11 +33,11 @@ my-noodl-lib/
 
 First some notes on the content of a library module:
 
-* The **module** directory contains the source code for the module as well as build scripts and any assets you might want, such as fonts, css etc.
+- The **module** directory contains the source code for the module as well as build scripts and any assets you might want, such as fonts, css etc.
 
-* The **project** directory contains a Noodl project that will accompany the module. When a module is imported into a Noodl project, all content of this project is added to the project. So if you want components to follow along with your module you can add it to this project. By default the project is empty and only contains the code of your module.
+- The **project** directory contains a Noodl project that will accompany the module. When a module is imported into a Noodl project, all content of this project is added to the project. So if you want components to follow along with your module you can add it to this project. By default the project is empty and only contains the code of your module.
 
-* The **tests** folder contains a test project that you can use when you are developing your module, nothing in this project will be packaged into the module. This is a local project that need to be imported into Noodl, we will show you how to do that below.
+- The **tests** folder contains a test project that you can use when you are developing your module, nothing in this project will be packaged into the module. This is a local project that needs to be imported into Noodl, we will show you how to do that below.
 
 First enter the **module** directory and install the needed dependencies:
 
@@ -61,7 +61,7 @@ You can also enter development mode where the module will be rebuilt when it det
 npm run dev
 ```
 
-Part of the development flow is to load the accompaning Noodl tests project that we can use to develop and test our module. First launch Noodl.
+Part of the development flow is to load the accompanying Noodl tests project that we can use to develop and test our module. First launch Noodl.
 
 Next choose **Import existing project** at the bottom of the page.
 
@@ -77,7 +77,7 @@ Give your project a name (any name will do) and then hit the **Pick project fold
 
 ![](pick-project-folder.png ':class=img-size-l')
 
-Find the **tests** directory of your newly created library and the hit Open. Noodl will now open the test project that contains your custom module code.
+Find the **tests** directory of your newly created library and then hit Open. Noodl will now open the test project that contains your custom module code.
 
 As mentioned before there are two projects created as part of the template, the **tests** folder and the **project** folder. You can import the latter in the same way and edit it in Noodl, both projects will contain the code of the module. The **project** folder will be packaged up with your module, so any components or content you add to that project, e.g. fonts or images, will be part of your module.
 
@@ -93,11 +93,11 @@ noodl-cli desc --label "My Noodl Lib" --desc "A short description of my lib"
 
 Add your own descriptive label and description of your module. Next up you can replace the default _icon.png_ file with something that represents your library visually.
 
-Now you need to find the Noodl workspace access key. This key is found in the Noodl console, you need to sign in to the Noodl console at [https://console.noodl.net](https://console.noodl.net). After you sign in, find the workspace your want to push to and click *Manage*.
+Now you need to find the Noodl workspace access key. This key is found in the Noodl console, you need to sign in to the Noodl console at [https://console.noodl.net](https://console.noodl.net). After you sign in, find the workspace your want to push to and click _Manage_.
 
 ![](manage-workspace.png ':class=img-size-m')
 
-You will find the access key by clicking *Show Access Key* in the header, this will show a popup with the access key.
+You will find the access key by clicking _Show Access Key_ in the header, this will show a popup with the access key.
 
 ![](access-key.png ':class=img-size-m')
 
@@ -144,59 +144,60 @@ Next you will define the node specification. This works very similair to the Jav
 
 ```javascript
 const MyFullNameNode = Noodl.defineNode({
-	category:'My Utils',
-	name:'Full Name',
-	inputs:{
-		FirstName:'string',
-		LastName:'string'
-	},
-	outputs:{
-		FullName:'string'
-	},
-	changed:{
-		FirstName:function() {
-			this.setOutputs({FullName:this.inputs.FirstName + ' ' + this.inputs.LastName});
-		},
-		LastName:function() {
-			this.setOutputs({FullName:this.inputs.FirstName + ' ' + this.inputs.LastName});
-		},		
-	}
-})
+  category: 'My Utils',
+  name: 'Full Name',
+  inputs: {
+    FirstName: 'string',
+    LastName: 'string',
+  },
+  outputs: {
+    FullName: 'string',
+  },
+  changed: {
+    FirstName: function () {
+      this.setOutputs({
+        FullName: this.inputs.FirstName + ' ' + this.inputs.LastName,
+      });
+    },
+    LastName: function () {
+      this.setOutputs({
+        FullName: this.inputs.FirstName + ' ' + this.inputs.LastName,
+      });
+    },
+  },
+});
 ```
 
 There are a few differences worth noting.
 
-* You need to specify the **name** of the node, this is the name that shows up in the list when creating new nodes.
-* you can optionally specify a **category**, this will also be used in the new node popup list in Noodl.
+- You need to specify the **name** of the node, this is the name that shows up in the list when creating new nodes.
+- you can optionally specify a **category**, this will also be used in the new node popup list in Noodl.
 
 Finally you need to define the specification of your module.
 
 ```javascript
 Noodl.defineModule({
-    nodes:[
-		MyFullNameNode
-    ],
-    setup() {
-    	//this is called once on startup
-    }
+  nodes: [MyFullNameNode],
+  setup() {
+    //this is called once on startup
+  },
 });
 ```
 
 In this simple template we provide our new node as part of the module.
 
-Now if you make a change to your code you either need to run the *npm build* command in the *module* folder as shown about, or if you are running the *npm run dev* it will automatically detect the change and rebuild your module. 
+Now if you make a change to your code you either need to run the _npm build_ command in the _module_ folder as shown about, or if you are running the _npm run dev_ it will automatically detect the change and rebuild your module.
 
-You need to reload the viewer in Noodl for the changes to appear. Use *Cmd/Ctrl-R* or the refresh button at the top of the viewer.
+You need to reload the viewer in Noodl for the changes to appear. Use _Cmd/Ctrl-R_ or the refresh button at the top of the viewer.
 
 ## Documentation
 
-It is important to document your module so that your fellow Noodlers will know how to use it. Once you have your documentation hosted somewhere where it is accessible to the users of your module you can add a docs link as shown below.
+It is important to document your module so that your fellow Noodlers will know how to use it. Once you have your documentation hosted somewhere, where it is accessible to the users of your module, you can add a docs link as shown below.
 
 ```bash
 noodl-cli desc --docs "https://url.to.my/docs"
 ```
 
-Now after you push your module the documentation will be accessible via the *Docs* button from the library panel in Noodl.
+Now after you push your module the documentation will be accessible via the _Docs_ button from the library panel in Noodl.
 
 ![](library-pane.png ':class=img-size-l')
-
