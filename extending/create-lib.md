@@ -187,3 +187,16 @@ In this simple template we provide our new node as part of the module.
 Now if you make a change to your code you either need to run the *npm build* command in the *module* folder as shown about, or if you are running the *npm run dev* it will automatically detect the change and rebuild your module. 
 
 You need to reload the viewer in Noodl for the changes to appear. Use *Cmd/Ctrl-R* or the refresh button at the top of the viewer.
+
+## Documentation
+
+It is important to document your module so that your fellow Noodlers will know how to use it. Once you have your documentation hosted somewhere where it is accessible to the users of your module you can add a docs link as shown below.
+
+```bash
+noodl-cli desc --docs "https://url.to.my/docs"
+```
+
+Now after you push your module the documentation will be accessible via the *Docs* button from the library panel in Noodl.
+
+![](library-pane.png ':class=img-size-l')
+
