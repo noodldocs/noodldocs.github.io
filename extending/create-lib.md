@@ -115,6 +115,8 @@ That's it. Now you will find your library in the library pane within the Noodl e
 
 If you make changes to the library module or project, you need to rebuild and then push the new module to your workspace.
 
+!> Currently you need to restart Noodl for the module to show up, also you need to restart to make sure you have the latest version of the library.
+
 ## A tour of the code
 
 Now you have created a new library module from the template and you have pushed it to your Noodl workspace. Let's review the code a bit to get you up and running.
