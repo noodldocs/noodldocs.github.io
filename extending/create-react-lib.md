@@ -1,16 +1,8 @@
-# Create a React library
+# Create a React component
 
-Noodl is based on the popular React front end library which makes it easy for you to add customer or community React components to your workspace. This guide will help you create a React library from scratch and push it to your Noodl workspace.
+Noodl is based on the popular React front end library which makes it easy for you to add custom or community React components to your workspace. This guide will help you create a React library from scratch and push it to your Noodl workspace.
 
-!> This guide requires <a href="https://nodejs.org/en/download/" target="_blank">Node js</a> and <a href="https://docs.npmjs.com/downloading-and-installing-node-js-and-npm" target="_blank">npm</a> installed.
-
-## Setup
-
-First you need to install the Noodl command line interfaces. If you have not previously installed the CLI you can do so via npm.
-
-```bash
-npm install -g @noodl/noodl-cli
-```
+In order to complete this guide you must install the *Noodl CLI* and learn how to push the module to your workspace. Please review [this guide](extending/create-lib.md) first.
 
 With the CLI tool you can easily create a new react library module from a template:
 
@@ -26,87 +18,14 @@ The newly created directory has the following structure:
 my-react-lib/
     module/
     project/
+    tests/
     icon.png
     module.json
 ```
 
-The **module** directory contains the source code for the module and the **project** directory contains a Noodl project that will accompany the module. We will look closer at the project directory later, but first lets take a look at the module content.
+Just like in the introductory [guide](extending/create-lib.md) the folder contains the **project** and **tests** subfolders that you may to import into Noodl. Especially the **tests** folder is a good place to play around with your library and create tests to make sure the component is working as expected.
 
-First enter the **module** directory and install the needed dependencies:
-
-```bash
-cd module
-```
-
-```bash
-npm install
-```
-
-Once the dependencies are installed you can build the module using:
-
-```bash
-npm run build
-```
-
-You can also enter development mode where the module will be rebuilt when it detects changes in the source code.
-
-```bash
-npm run dev
-```
-
-Part of the development flow is to load the accompaning Noodl project that will now contain the built module. First launch Noodl.
-
-Next choose **Import existing project** at the bottom of the page.
-
-![](import-project.png ':class=img-size-l')
-
-This is **very important**: Make sure the “Save locally” checkbox is checked!
-
-This will ensure that the project you are importing is stored locally on your computer and is edited in the place where you import from. In this case you will edit the project in your workspace directory.
-
-![](save-locally.png ':class=img-size-l')
-
-Give your project a name (any name will do) and then hit the **Pick project folder button**.
-
-![](pick-project-folder.png ':class=img-size-l')
-
-Find the **project** directory of you newly created React library and the hit Open. Noodl will now open the library project that contains your custom React components.
-
-The module template will create a very simple component, fittingly called **Custom React Component**. You can create an instance of the component as you would any other visual node in Noodl.
-
-?> The terminology might be a bit confusing, but _components_ in React actually become core nodes in Noodl. Noodl components are comprised of other Noodl nodes and connections. So keep in mind that we sometimes talk about React components and sometimes about Noodl components.
-
-## Push library to Noodl
-
-We will soon dive into the code behind these components, but let's first push the library to our Noodl workspace.
-
-First we need to add some descriptive information to our library. Go back to the root folder or the library, in this example it's the _my-react-lib_ folder we created in the first step. Then run this command:
-
-```bash
-noodl-cli desc --label "My React Lib" --desc "A short description of my lib"
-```
-
-Add your own descriptive label and description of your module. Next up you can replace the default _icon.png_ file with something that represents your library visually.
-
-Now you need to find the Noodl workspace access key. This key is found in the Noodl console, you need to sign in to the Noodl console at [https://console.noodl.net](https://console.noodl.net). After you sign in, find the workspace your want to push to and click *Manage*.
-
-![](manage-workspace.png ':class=img-size-m')
-
-You will find the access key by clicking *Show Access Key* in the header, this will show a popup with the access key.
-
-![](access-key.png ':class=img-size-m')
-
-With the key in hand you can run the following command in the root of your library folder, e.g. the _my-react-lib_ folder in this example.
-
-```bash
-noodl-cli push --workspace "your-workspace-name" --accessKey "the-access-key"
-```
-
-That's it. Now you will find your library in the library pane within the Noodl editor. Any user of your workspace will see all modules and it can be added to a project with the _Add_ button.
-
-![](library-pane.png ':class=img-size-l')
-
-If you make changes to the library module or project, you need to rebuild and then push the new module to your workspace.
+!> It is important that you do now change the name of the **project** and **tests** folders. The build scripts in the *module* folder is dependent on these names or it till not build the module properly and you cannot push to your workspace.
 
 ## A tour of the code
 
@@ -129,28 +48,56 @@ my-react-lib/
 
 Open _index.js_ in your favorite editor. This file contains a simple React component and its export to Noodl. Each component that you want to be exposed in Noodl as a visual component, must be exported.
 
+First a simple React component:
+
 ```javascript
-const MyCustomReactComponentNode = {
-  name: 'Custom React Component',
-  getReactComponent() {
-    return MyCustomReactComponent;
-  },
-  inputProps: {
-    backgroundColor: { type: 'color', default: 'white' },
-  },
-  outputProps: {
-    onClick: { type: 'signal', displayName: 'Click' },
-  },
-};
+function MyCustomReactComponent(props) {
+	const style = {
+		color: props.textColor,
+		backgroundColor: props.backgroundColor,
+		borderRadius: '10px',
+		padding: '20px',
+		marginBottom: props.marginBottom
+	};
+
+	return <div style={style} onClick={props.onClick} >{props.children}</div>
+}
 ```
 
-You specify the _name_ of the component as well as a function that returns the actual React component. You also need to specify the _inputs_ and _outputs_ that will be available for the visual node in Noodl.
+Next the export of the component to Noodl:
 
-The basic types for inputs are:
+```javascript
+const MyCustomReactComponentNode = Noodl.defineReactNode({
+	name: 'Custom React Component',
+	category: 'Tutorial',
+	getReactComponent() {
+		return MyCustomReactComponent;
+	},
+	inputProps: {
+		backgroundColor: {type: 'color', default: 'white'},
+		marginBottom: {type: {name: 'number', units: ['px'], defaultUnit: 'px'}, default: 10}
+	},
+	outputProps: {
+		onClick: {type: 'signal', displayName: 'Click'}
+	}
+})
+```
 
-- **number** for a number property.
-- **boolean** for a boolean (checkbox) property.
-- **string** for a string property.
-- **color** for a color property. Will show the color input in the Noodl properties.
+In addition to how you would specify a simple Noodl node, as in the introductory [guide](extending/create-lib.md), you must provide the *getReactComponent* function that retuns the React component. You may also specify _inputProps_ and _outputProps_ that map to the properties of the React node and will become inputs and outputs of your Noodl node.
 
-Outputs in react are typically done via callbacks. You can capture these callbacks and deliver them as outputs in Noodl.
+Outputs in React are typically done via callbacks. You can capture these callbacks and deliver them as outputs in Noodl.
+
+Finally the component is provided as part of your module declaration. Here you need to put it under the *reactNodes* section to make sure Noodl recognises it as a visual node.
+
+```javascript
+Noodl.defineModule({
+    reactNodes: [
+    	MyCustomReactComponentNode
+    ],
+    nodes:[
+    ],
+    setup() {
+    	//this is called once on startup
+    }
+});
+```

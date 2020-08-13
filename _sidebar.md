@@ -28,7 +28,7 @@
 
 - [Introduction](extending/README.md)
 - [Simple node](extending/create-lib.md)
-- [React library](extending/create-react-lib.md)
+- [React component](extending/create-react-lib.md)
   <br/>
 
 - Node Reference
