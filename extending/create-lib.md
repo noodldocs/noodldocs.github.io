@@ -79,7 +79,9 @@ Give your project a name (any name will do) and then hit the **Pick project fold
 
 ![](pick-project-folder.png ':class=img-size-l')
 
-Find the **tests** directory of your newly created library and then hit Open. Noodl will now open the test project that contains your custom module code.
+Find the **tests** directory of your newly created library and then hit Open. Noodl will now open the test project that contains your custom module code. In the project there is a simple test the uses the new node:
+
+![](fullname-tests.png ':class=img-size-l')
 
 As mentioned before there are two projects created as part of the template, the **tests** folder and the **project** folder. You can import the latter in the same way and edit it in Noodl, both projects will contain the code of the module. The **project** folder will be packaged up with your module, so any components or content you add to that project, e.g. fonts or images, will be part of your module.
 
