@@ -39,7 +39,7 @@ First some notes on the content of a library module:
 
 - The **tests** folder contains a test project that you can use when you are developing your module, nothing in this project will be packaged into the module. This is a local project that needs to be imported into Noodl, we will show you how to do that below.
 
-!> It is important that you do now change the name of the **project** and **tests** folders. The build scripts in the *module* folder is dependent on these names or it till not build the module properly and you cannot push to your workspace.
+!> It is important that you do not change the name of the **project** and **tests** folders. The build scripts in the *module* folder is dependent on these names or it till not build the module properly and you cannot push to your workspace.
 
 First enter the **module** directory and install the needed dependencies:
 
