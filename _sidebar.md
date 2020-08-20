@@ -80,6 +80,10 @@
 
 - [Boolean To String](nodes/standard/boolean-to-string.md)
 - [Index To String](nodes/standard/index-to-string.md)
+- [Expression](nodes/standard/expression.md)
+- [Condition](nodes/standard/condition.md)
+- [Counter](nodes/standard/counter.md)
+
   <br/>
 - Navigation
 - [Navigate](nodes/navigation/navigate.md)

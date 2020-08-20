@@ -1,7 +1,7 @@
 # Counter
 A number that can be increased and decreased with signals
 
-![](counter.png)
+![](counter.gif)
 
 <div class = "node-inputs">
 
