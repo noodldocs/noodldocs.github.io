@@ -17,6 +17,10 @@
 * [Javascript](guides/javascript.md)
   <br/>
 
+* Modules
+- [MQTT](modules/mqtt/_sidebar.md)
+  <br/>
+
 - Javascript API
 
 - [Introduction](javascript-api/README.md)
@@ -81,7 +85,7 @@
 - Interpolation
 - [Number Blend](nodes/standard/number-blend.md)
   <br/>
-  
+
 - Utilities
 - [Boolean To String](nodes/standard/boolean-to-string.md)
 - [Index To String](nodes/standard/index-to-string.md)
