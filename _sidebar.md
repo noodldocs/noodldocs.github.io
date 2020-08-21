@@ -15,6 +15,7 @@
 * [Navigation](guides/navigation.md)
 * [Hash Fragment Navigation](guides/hash-fragment-navigation.md)
 * [Javascript](guides/javascript.md)
+* [MQTT](guides/mqtt.md)
   <br/>
 
 * Modules
