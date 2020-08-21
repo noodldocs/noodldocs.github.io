@@ -1,7 +1,7 @@
 # NUMBER BLEND
 Computes a result output based on blending (linearly interpolating) between the inputs.
 
-![](number-blend.png)
+![](number-blend.gif)
 
 <div class = "node-inputs">
 

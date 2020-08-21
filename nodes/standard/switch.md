@@ -1,7 +1,7 @@
 # Switch
 A boolean state that can be either on or off
 
-![](switch.png)
+![](switch.gif)
 
 <div class = "node-inputs">
 

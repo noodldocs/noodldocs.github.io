@@ -56,9 +56,10 @@
 - [Send Event](nodes/standard/send-event.md)
 - [Receive Event](nodes/standard/receive-event.md)
   <br/>
-- Animation
+- State handling
 
 - [States](nodes/standard/states.md)
+- [Switch](nodes/standard/switch.md)
   <br/>
 - Data
 
@@ -76,8 +77,12 @@
 - [Model](/nodes/data/model.md)
 - [Collection](/nodes/data/collection.md)
   <br/>
-- Utilities
 
+- Interpolation
+- [Number Blend](nodes/standard/number-blend.md)
+  <br/>
+  
+- Utilities
 - [Boolean To String](nodes/standard/boolean-to-string.md)
 - [Index To String](nodes/standard/index-to-string.md)
 - [Expression](nodes/standard/expression.md)
