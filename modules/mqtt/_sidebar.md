@@ -1,7 +1,7 @@
 - MQTT Module
 
-- [Introduction](modules/mqtt/README.md)
-- [Using the MQTT nodes](modules/mqtt/guide.md)
+- [Introduction](modules/mqtt/mqtt-intro.md)
+- [Using the MQTT nodes](guides/mqtt.md)
   <br/>
 
 - Nodes
