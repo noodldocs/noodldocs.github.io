@@ -1,32 +1,32 @@
 # MQTT
 
-This guide will create a small MQTT communication example using the *Send Message* and *Receive Message* nodes available in the MQTT module.
+In this guide we will create a small MQTT communication example using the *Send Message* and *Receive Message* nodes available in the MQTT module.
 
 ## Overview
 
-MQTT is a very popular way of communicating between IoT devices. It's based on a simple publisher/subscriber architecture where all messages passes through an MQTT broker, who direct messages from publishers to the right subscribers. As a subscriber, you subscribe to *topics*, which are typically built by different paths. Then as a publisher of message, you publish your messages to topics. A message can contain a *payload*, i.e. a data object containing one or more pieces of data.
+MQTT is a very popular communication protocol between IoT devices. It's based on a simple publisher/subscriber architecture where all messages passes through an MQTT broker, who direct messages from publishers to the right subscribers. As a subscriber, you subscribe to *topics*, which are typically made up of different subpaths. Then as a publisher of message, you publish your messages to these topics. A message can contain a *payload*, i.e. a data object with one or more pieces of data.
 
-As an example, an IoT thermometer may publish to "/thermometer1/thermometer" a payload containing a time and a temperature reading.
+As an example, an IoT thermometer, called "thermometer1", may publish temperature and pressure data to "/thermometer1/thermometer" a payload containing a time, a temperature and a pressure reading.
 
-MQTT is a very capable protocol and we will only cover parts of it here. You can read more about it [here](https://en.wikipedia.org/wiki/MQTT);
+MQTT is a very capable protocol and we will only cover parts of it in this guide. You can read more about it [here](https://en.wikipedia.org/wiki/MQTT);
 
 ## Using the the MQTT module
 
 First lets create a new project, using the minimal "Hello" template. Give the project a name, for example "MQTT Messaging".
-Then find the module tab in the sidebar and add the "MQTT" module.
+Since the MQTT nodes are not part of the default node set in Noodl we have to first enable the MQTT module. Find the module tab in the sidebar and add the "MQTT" module.
 
-Now two new nodes are available in this project, the [Send Message](modules/mqtt/send-message.md) and [Receive Message](modules/mqtt/receive-message.md) nodes.
+Now two mre nodes are available in this project, the [Send Message](modules/mqtt/send-message.md) and [Receive Message](modules/mqtt/receive-message.md) nodes.
 
 <div class="ndl-images">
     <img src="/guides/mqtt/mqtt-guide1.png" class="ndl-image medium"></img>  
 </div>
 
-Try adding a *Send Message* and *Receive Message* node, to see that it works properly.
+Try adding a *Send Message* and *Receive Message* node to the project, to see that they have becom available.
 
 ## Connecting to an MQTT broker
-For the MQTT messaging to work, we need to connect to an MQTT broker. Setting up a commercial, secure MQTT broker is a bit of hassle. For this experiment we will instead use the open MQTT broker "Shiftr". Another good alternative is the open source broker [Mosquitto](https://mosquitto.org/). In this guide we will use Shiftr.io.
+For the MQTT messaging to work, we need to connect to an MQTT broker. Setting up and hosting a commercial, secure MQTT broker is a bit of hassle. For this guide we will instead use the open MQTT broker "Shiftr". It's being hosted in the cloud so we don't need to worry about hosting it. Another good alternative is the open source broker [Mosquitto](https://mosquitto.org/) that you can run locally or host yourself. 
 
-Go to [shiftr.io](http://shiftr.io) and sign up for an account if you don't already have one. Also create a new "Namespace" and a "Token" for the namespace. In the end you should have gotten an MQTT endpoint to use similar to the one below.
+Go to [shiftr.io](http://shiftr.io) and sign up for an account if you don't already have one. Also create a new "Name space" and a "Token" for the namespace. In the end you should have gotten an MQTT endpoint to use similar to the one below.
 
 <div class="ndl-images">
     <img src="/guides/mqtt/mqtt-guide2.png" class="ndl-image medium"></img>  
@@ -41,7 +41,7 @@ Now go into project settings and paste in the URL (beginning with "mqtt:") into 
 ## Testing our MQTT broker
 Ok, now we have everything to get started to send MQTT messages. Let's try it!
 
-Start by adding a "Send Message" node. Set it's topic to "mytopic" and add a payload called "myvalue".
+Start by adding a "Send Message" node. Set its topic to "mytopic" and add a payload called "myvalue".
 
 <div class="ndl-images">
     <img src="/guides/mqtt/mqtt-guide4.png" class="ndl-image medium"></img>  
@@ -53,14 +53,14 @@ Now let's send our first message to the topic "mytopic". So we assign a value to
     <img src="/guides/mqtt/mqtt-guide5.png" class="ndl-image medium"></img> 
 </div>
 
-When you start clicking the background rectangle, you should now be sending messages to the MQTT broker. If you bring up you web browser with your Shiftr workspace you should be seing some events entering the system everytime you click.
+When you start clicking the background rectangle, you should now be sending messages to the MQTT broker. If you bring up you web browser with your Shiftr name space topology you should be seing some events entering the system everytime you click. Again, remember that the MQTT messages are being sent to a router hosted somewhere in the cloud, which means that any device with an internet connection can now connect to your Noodl app, or vice versa, by sending messages to the router.
 
 <div class="ndl-images">
     <img src="/guides/mqtt/mqtt-guide6.gif" class="ndl-image medium"></img>
     <button class="ndl-copy-nodes-button" onClick='copyJsonToClipboard({"nodes":[{"id":"3b093066-8241-2d44-8430-07b7e37b6977","type":"Group","x":177,"y":141.5,"parameters":{"backgroundColor":"#FFFFFF"},"ports":[],"children":[{"id":"ada2b412-3417-a23c-b4c2-86a5dfa1d480","type":"Text","x":197,"y":223.5,"parameters":{"sizeMode":"contentSize","alignX":"center","alignY":"center","text":"Hello","color":"#171717","fontFamily":"Arial","position":"absolute","fontSize":{"value":30,"unit":"px"}},"ports":[],"children":[]}]},{"id":"f95cf4c6-2ad9-c84b-882d-865d015193c0","type":"Send Message","x":-30.5,"y":139,"parameters":{"topic":"mytopic","payload":"myvalue"},"ports":[],"children":[]},{"id":"fb4aa28a-06fc-6b1b-128c-78cb989e1455","type":"Number","x":191.5,"y":298,"parameters":{"value":25},"ports":[],"children":[]}],"connections":[{"fromId":"3b093066-8241-2d44-8430-07b7e37b6977","fromProperty":"onClick","toId":"f95cf4c6-2ad9-c84b-882d-865d015193c0","toProperty":"Send"},{"fromId":"fb4aa28a-06fc-6b1b-128c-78cb989e1455","fromProperty":"savedValue","toId":"f95cf4c6-2ad9-c84b-882d-865d015193c0","toProperty":"payload-myvalue"}]})'></button>
 </div>
 
-You can inspect the messages in Shiftr and see the payload that's being sent. Also try opening a few browser windows running you simple Noodl app. As you will see, there are now multiple nodes in Shiftr that can publish messages to the "mytopic" topic. Each browser window is a publisher in the broker, as well as your Noodl Editor.
+You can inspect the messages in Shiftr and see the payload that's being sent. Also try opening a few browser windows running you simple Noodl app. As you will see, there are now multiple clients in Shiftr that can publish messages to the "mytopic" topic. Each browser window is a publisher in the broker, as well as your Noodl Editor.
 
 <div class="ndl-images">
     <img src="/guides/mqtt/mqtt-guide7.png" class="ndl-image medium"></img>  
@@ -68,25 +68,23 @@ You can inspect the messages in Shiftr and see the payload that's being sent. Al
 
 Now let's change things up slightly as we are going to receive messages as well. We are going to assign each client a random color. When you click the background, that color will be sent out to all subscribers of the topic "mytopic". A circle in the middle of the screen will present any received value.
 
-The random color is generated using a *Color Blend* node with 5 different base colors. By generating a random number, between 0 and 5, we randomly pick a color on that scale. Each client will have their own random number and color.
+The random color is generated using a *Color Blend* node with 5 different base colors. By generating a random number, between 0 and 5, we randomly pick a color on that color scale. Each client will have their own random number and respective color.
 
-The color is published once the background is clicked, or rather, the random number is published. When you receive a message which will include the random number, that number is translated to a color through a *color blend* node with the same colors as before.
+The color is published once the background is clicked, or rather, the random number is published. When you receive a message which will include the random number, that number is translated back to a color through a *color blend* node with the same colors as before.
 
 <div class="ndl-images">
     <img src="/guides/mqtt/mqtt-guide8.png" class="ndl-image medium"></img>
     <button class="ndl-copy-nodes-button" onClick='copyJsonToClipboard({"nodes":[{"id":"6643149e-ba94-b26f-bc40-80b79bfc01cf","type":"Group","x":177,"y":141.5,"parameters":{"backgroundColor":"#FFFFFF"},"ports":[],"children":[{"id":"daadd5d9-073e-c3e7-0d4d-f5ec6ddcf190","type":"Circle","x":197,"y":243.5,"parameters":{"size":200,"position":"absolute","alignY":"center","alignX":"center","strokeEnabled":true,"strokeWidth":5,"strokeColor":"#FFFFFF"},"ports":[],"children":[]}]},{"id":"6c0a2207-03bd-835f-83a3-834b5a9548eb","type":"Send Message","x":-39.46794686634766,"y":12.167608604511884,"parameters":{"topic":"mytopic","payload":"myvalue"},"ports":[],"children":[]},{"id":"00f5506c-2a41-7c97-d1ec-4c1f17f83542","type":"Expression","x":334.05517426052154,"y":-157.0598440470801,"parameters":{"expression":"random()*5"},"ports":[],"children":[]},{"id":"00f617a2-baf5-5e99-e1ac-714af2f765cf","type":"Receive Message","x":366.07566421792484,"y":486.0503305263981,"parameters":{"topic":"mytopic","payload":"myvalue"},"ports":[],"children":[]},{"id":"9888cd86-341e-cc47-62d0-aa18095daa2a","type":"Color Blend","x":399.4325313988179,"y":17.225848316195083,"parameters":{"color 0":"#000000","color 1":"#A7A04A","color 2":"#E8423A","color 3":"#C6C6C6","color 4":"#006394"},"ports":[],"children":[]},{"id":"f82c3bf5-127e-6eba-20f1-397c8fd0b114","type":"Color Blend","x":387.8845576559488,"y":321.32249021174806,"parameters":{"color 0":"#000000","color 1":"#A7A04A","color 2":"#E8423A","color 3":"#C6C6C6","color 4":"#006394"},"ports":[],"children":[]}],"connections":[{"fromId":"6643149e-ba94-b26f-bc40-80b79bfc01cf","fromProperty":"onClick","toId":"6c0a2207-03bd-835f-83a3-834b5a9548eb","toProperty":"Send"},{"fromId":"00f5506c-2a41-7c97-d1ec-4c1f17f83542","fromProperty":"result","toId":"6c0a2207-03bd-835f-83a3-834b5a9548eb","toProperty":"payload-myvalue"},{"fromId":"00f5506c-2a41-7c97-d1ec-4c1f17f83542","fromProperty":"result","toId":"9888cd86-341e-cc47-62d0-aa18095daa2a","toProperty":"blendValue"},{"fromId":"9888cd86-341e-cc47-62d0-aa18095daa2a","fromProperty":"result","toId":"6643149e-ba94-b26f-bc40-80b79bfc01cf","toProperty":"backgroundColor"},{"fromId":"00f617a2-baf5-5e99-e1ac-714af2f765cf","fromProperty":"payload-myvalue","toId":"f82c3bf5-127e-6eba-20f1-397c8fd0b114","toProperty":"blendValue"},{"fromId":"f82c3bf5-127e-6eba-20f1-397c8fd0b114","fromProperty":"result","toId":"daadd5d9-073e-c3e7-0d4d-f5ec6ddcf190","toProperty":"fillColor"}]})'></button>
 </div>
 
-Now let's load up a couple of browser windows running your app, and maybe your mobile phone, and click around in the different windows. You will see that the inner circles in all clients will change color to the background you just clicked.
+Let's load up a couple of browser windows running your app, and maybe your mobile phone as well, and click around in the different windows. If everythign works as expected you should see that the inner circles in all clients will change color to the background you just clicked.
 
 <div class="ndl-images">
     <img src="/guides/mqtt/mqtt-guide9.gif" class="ndl-image medium"></img>  
 </div>
 
-A **Javascript** node works as any other node in Noodl, in the sense that it has inputs and outputs that can be connected to other nodes. All inputs and outputs are available to the developer in their Javascript code. In a **Javascript** node you can call any Javascript function normally available in a browser environment.
-
 ## Dynamic Topic names
-We have now published and subscribed to messages on one single topic, more or less broadcasting messages. You may want to identify yourself as a publisher, or be more selective on what messages you subscribe to. So let's divide the clients into five groups. You belong to a specific group (Group_1 - Group_5) depending on you random number (0-0.999... to first group, 1-1.999... to second, etc). We use some neat nodes, i.e. [Expressions](nodes/standard/expression.md),[String Formats](nodes/standard/string-format.md) and [Index To String](nodes/standard/index-to-string.md) to create the group names. 
+We have now published and subscribed to messages on one single topic, basically broadcasting messages to all clients. You may want to identify yourself as a publisher, or be more selective on what messages you subscribe to. So let's divide the clients into five groups. You belong to a specific group (Group_1 - Group_5) depending on you random number (0-0.999... to first group, 1-1.999... to second, etc). We use some neat nodes, i.e. [Expressions](nodes/standard/expression.md),[String Formats](nodes/standard/string-format.md) and [Index To String](nodes/standard/index-to-string.md) to create the group names and determine which group you belong to. 
 
 Each group gets their own topic which is dynamically created using a *{}* construct. Note that you have to be a bit careful when naming topics. For example, avoid whitespaces, hence we call the groups "Group_X".
 
@@ -94,7 +92,7 @@ Each group gets their own topic which is dynamically created using a *{}* constr
     <img src="/guides/mqtt/mqtt-guide10.png" class="ndl-image medium"></img>  
 </div>
 
-There is also a *Receive Message* node that each group use to subscribe to only their groups messages. When they receive a message a [Transiton](nodes/standard/transition.md) node triggers a message that's being flashed in the circle.
+There is also a *Receive Message* node that each group use to subscribe to only their groups messages. When they receive a message a [Transiton](nodes/standard/transition.md) node triggers a animation on the opacity of the text node, causing it to flash in the circle.
 
  <div class="ndl-images">
     <img src="/guides/mqtt/mqtt-guide11.png" class="ndl-image large"></img>
@@ -112,5 +110,8 @@ As you click around you in your browser windows you can see that messages are on
 <div class="ndl-images">
     <img src="/guides/mqtt/mqtt-guide13.gif" class="ndl-image medium"></img>  
 </div>
+
+Now you know how to publish and subscribe to topics and how to connect to a MQTT broker. This could be used for example to connect to an Arduino or a Raspberry Pi as well, if you want to play with some hardware. Find some software that can connect to an MQTT broker and start publishing and subscribing to messages. Best of luck!
+
 
 
