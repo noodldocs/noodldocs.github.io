@@ -1,9 +1,11 @@
 # Navigation Stack
 
-A navigation stack can be placed in the visual hierarchy and will function just as the _Default_ screen stack. Take a look at the [Navigation guide](/guides/navigation.md) to learn more about navigation.
+!> Note, this node is part of the _Mobile Web App Navigation_ module. You need to install that module to be able to use this node.
+
+A navigation stack can be placed in the visual hierarchy and will function just as the _Default_ screen stack. Take a look at the [Navigation guide](/modules/mobile-web-app-nav/nav-guide.md) to learn more about navigation.
 
 <div class="ndl-images">
-    <img src="/guides/navigation/navigation-stack.png" class="ndl-image med"></img>   
+    <img src="/modules/mobile-web-app-nav/guide/navigation-stack.png" class="ndl-image med"></img>   
 </div>
 
 ## INPUTS
@@ -11,7 +13,7 @@ A navigation stack can be placed in the visual hierarchy and will function just 
 ### General
 
 **Name**  
-The name of this stack. This is the identifier used by [Navigate](/nodes/navigation/navigate.md) and [Navigate Back](/nodes/navigation/navigate-back.md) nodes.
+The name of this stack. This is the identifier used by [Navigate](/modules/mobile-web-app-nav/navigate.md) and [Navigate Back](/modules/mobile-web-app-nav/navigate-back.md) nodes.
 
 **Start Page**  
 The component that is shown when the stack is created and no navigation has been performed.
