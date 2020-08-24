@@ -1,4 +1,5 @@
 # Switch
+
 A boolean state that can be either on or off
 
 ![](switch.gif)
@@ -8,31 +9,34 @@ A boolean state that can be either on or off
 ## Inputs
 
 ### Change state
+
 **On**  
-Sets the state of the Switch to *On*
+Sets the state of the **Switch** to _On_
 
 **Off**  
-Sets the state of the Switch to *Off*
+Sets the state of the **Switch** to _Off_
 
 **Flip**  
-Set the Switch to the opposite state. If it's *On* flip will set it to *Off* and vice versa
+Set the **Switch** to the opposite state. If it's _On_ flip will set it to _Off_ and vice versa
 
 ### Start State
+
 **Start State**  
-The starting state of the Switch. If the *Start State* is set to *On* then the *Switched To On* output signal will trigger instantly when applications starts, or when a component is created dynamically.
+The starting state of the **Switch**. If the _Start State_ is set to _On_ then the _Switched To On_ output signal will trigger instantly when applications starts, or when a component is created dynamically.
 
 </div>
 
 <div class = "node-outputs">
 
 ## Outputs
+
 **Current State**  
-Outputs *True* or *False* depending on if the Switch is *On* or *Off*
+Outputs _True_ or _False_ depending on if the **Switch** is _On_ or _Off_
 
 **Switched To On**  
-This signal is triggered when the Switch goes from *Off* to *On*
+This signal is triggered when the **Switch** goes from _Off_ to _On_
 
 **Switched To Off**  
-This signal is triggered when the Switch goes from *On* to *Off*
+This signal is triggered when the **Switch** goes from _On_ to _Off_
 
 </div>
