@@ -86,7 +86,8 @@
   <br/>
 
 - Interpolation
-- [Number Blend](nodes/standard/number-blend.md)
+- [Number Blend](nodes/interpolation/number-blend.md)
+- [Color Blend](nodes/interpolation/color-blend.md)
   <br/>
 
 - Utilities
