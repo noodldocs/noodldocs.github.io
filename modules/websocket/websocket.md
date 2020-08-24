@@ -1,7 +1,7 @@
-# Websocket
+# WebSocket
 Bidirectional communication via a websocket. Works with flat JSON objects
 
-<div class = "node-inputs">
+!> Note: To use the Websocket node you first need to add the WebSocket module to your project.
 
 ## INPUTS
 **Ip Address:Port**  
@@ -13,9 +13,7 @@ Creates a flat object of all inputs created in the *Data to Send* category, enco
 **Data to Send**  
 Defines attributes of the JSON object that will be sent
 
-</div>
 
-<div class = "node-outputs">
 
 ## Outputs
 **New Data Received**  
@@ -24,4 +22,3 @@ This signal will fire when a new JSON object is sent from the server. This signa
 **Outputs**  
 Here you can specify values that will be sent from the server. You don't have to include all properties and different Websocket nodes can have different properties. Properties from the server that aren't used will be ignored.
 
-</div>

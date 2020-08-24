@@ -19,7 +19,9 @@
 
 * Modules
 - [MQTT](modules/mqtt/README.md)
-- [WebSocket](modules/mqtt/websocket.md)
+- [WebSocket](modules/websocket/README.md)
+- [WebRouter](modules/webrouter/README.md)
+- [WebCamera](modules/webcamera/README.md)
   <br/>
 
 - Javascript API
