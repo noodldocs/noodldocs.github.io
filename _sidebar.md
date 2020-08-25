@@ -96,6 +96,9 @@
 - [Index To String](nodes/standard/index-to-string.md)
 - [Expression](nodes/standard/expression.md)
 - [Counter](nodes/standard/counter.md)
+- [Reload](nodes/standard/reload.md)
+- [Screen Resolution](nodes/standard/screen-resolution.md)
+- [String Mapper](nodes/standard/string-mapper.md)
   <br/>
 
 - Visual
