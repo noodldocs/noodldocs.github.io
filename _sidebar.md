@@ -88,6 +88,7 @@
 * String Manipulation
 * [String Format](nodes/string-manipulation/string-format.md)
 * [Substring](nodes/string-manipulation/substring.md)
+* [Unique Id](nodes/string-manipulation/unique-id.md)
   <br/>
 
 - Utilities
