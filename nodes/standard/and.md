@@ -22,6 +22,6 @@ created so you will never run out of inputs.
 
 **Result**
 
-The result of a logic AND operation on all of the inputs. Either `true` or `false`.
+The result of a logic AND operation on all of the inputs. Either `true` or `false`. `True` if all inputs are `true`, `false` if one or more inputs are `false`.
 
 </div>
