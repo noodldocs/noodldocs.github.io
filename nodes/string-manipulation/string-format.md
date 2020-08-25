@@ -1,19 +1,15 @@
 # String Format
 Creates an output string from a string format specified and input ports.
 
-![](string-format.png)
+![](string-format.gif)
 
-<div class = "node-inputs">
+
 
 ## Inputs
 **Format**
 This input contains the format string, that is the template that will be used to generated the output. Any part
 of the template that is encapsulated in bracets will generate an input port. E.g. setting the string format to _{Hours} hours ago_
 will create an input port called _Hours_.
-
-</div>
-
-<div class = "node-outputs">
 
 ## Outputs
 **Formatted**  

@@ -85,6 +85,10 @@
 * [States](nodes/standard/states.md)
   <br/>
 
+* String Manipulation
+* [String Format](nodes/string-manipulation/string-format.md)
+  <br/>
+
 - Utilities
 - [Boolean To String](nodes/standard/boolean-to-string.md)
 - [Index To String](nodes/standard/index-to-string.md)
