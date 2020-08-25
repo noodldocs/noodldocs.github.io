@@ -1,11 +1,15 @@
 # Substring
+
 This node can be used to extract a part of a string given a start and end character position.
+
+![](substring.png)
 
 <div class = "node-inputs">
 
 ## Inputs
+
 **String**  
-The string source value where the substring should be extracted from.
+The source string where the substring should be extracted from.
 
 **Start**  
 The character index of the start of the substring.
@@ -18,6 +22,7 @@ The character index of the end of the substring.
 <div class = "node-outputs">
 
 ## Outputs
+
 **Result**  
 The extracted substring.
 

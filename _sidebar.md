@@ -87,6 +87,7 @@
 
 * String Manipulation
 * [String Format](nodes/string-manipulation/string-format.md)
+* [Substring](nodes/string-manipulation/substring.md)
   <br/>
 
 - Utilities
