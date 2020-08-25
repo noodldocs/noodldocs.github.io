@@ -1,5 +1,6 @@
 # Timer
-A timer that can be used to delay actions
+
+A timer that can be used to delay actions.
 
 ![](timer.png)
 
@@ -11,13 +12,13 @@ A timer that can be used to delay actions
 Starts the timer. Does nothing if the timer is already running.
 
 **Restart**  
-Starts the timer. Restarts it if the timer is already running.
+Starts the timer. Restarts the timer if the timer is already running.
 
 **Duration**  
-The duration of the timer in milliseconds
+The duration of the timer in milliseconds.
 
 **Start Delay**  
-The delay before the timer starts after the *Start* input is triggered. Specified in milliseconds.
+The delay before the timer starts after the _Start_ input is triggered. Specified in milliseconds.
 
 **Stop**  
 Stops the timer if it's running. Does nothing otherwise.
@@ -27,10 +28,11 @@ Stops the timer if it's running. Does nothing otherwise.
 <div class = "node-outputs">
 
 ## Outputs
+
 **Started**  
-Emits a signal when the timer starts.
+Signal emitted when the timer starts.
 
 **Finished**  
-Emits a signal when the timer is finished.
+Signal emitted when the timer is finished.
 
 </div>

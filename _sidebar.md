@@ -99,6 +99,7 @@
 - [Reload](nodes/standard/reload.md)
 - [Screen Resolution](nodes/standard/screen-resolution.md)
 - [String Mapper](nodes/standard/string-mapper.md)
+- [Timer](nodes/standard/timer.md)
   <br/>
 
 - Visual
