@@ -73,12 +73,12 @@
   <br/>
 
 - Logic
-- [And](nodes/standard/and.md)
-- [Condition](nodes/standard/condition.md)
-- [Or](nodes/standard/or.md)
-- [Signal To Index](nodes/standard/signal-to-index.md)
-- [Switch](nodes/standard/switch.md)
-- [Value Changed](nodes/standard/value-changed.md)
+- [And](nodes/logicnodes/and.md)
+- [Condition](nodes/logicnodes/condition.md)
+- [Or](nodes/logicnodes/or.md)
+- [Signal To Index](nodes/logicnodes/signal-to-index.md)
+- [Switch](nodes/logicnodes/switch.md)
+- [Value Changed](nodes/logicnodes/value-changed.md)
   <br/>
 
 * State handling
