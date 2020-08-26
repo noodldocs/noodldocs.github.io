@@ -41,6 +41,13 @@
 - Node Reference
   <!-- - [Nodes](nodes/README.md)-->
   <br/>
+
+- Animation
+- [Animation](nodes/standard/animation.md)
+- [States](nodes/standard/states.md)
+- [Transition](nodes/standard/transition.md)
+  <br/>
+
 - Component Utilities
 - [Component Inputs](nodes/standard/component-inputs.md)
 - [Component Outputs](nodes/standard/component-outputs.md)
@@ -82,7 +89,7 @@
   <br/>
 
 * State handling
-* [States](nodes/standard/states.md)
+
   <br/>
 
 * String Manipulation
@@ -92,14 +99,14 @@
   <br/>
 
 - Utilities
-- [Boolean To String](nodes/standard/boolean-to-string.md)
-- [Index To String](nodes/standard/index-to-string.md)
+- [Boolean To String](nodes/utilities/boolean-to-string.md)
+- [Index To String](nodes/utilities/index-to-string.md)
 - [Expression](nodes/standard/expression.md)
 - [Counter](nodes/standard/counter.md)
-- [Reload](nodes/standard/reload.md)
-- [Screen Resolution](nodes/standard/screen-resolution.md)
-- [String Mapper](nodes/standard/string-mapper.md)
-- [Timer](nodes/standard/timer.md)
+- [Reload](nodes/utilities/reload.md)
+- [Screen Resolution](nodes/utilities/screen-resolution.md)
+- [String Mapper](nodes/utilities/string-mapper.md)
+- [Timer](nodes/utilities/timer.md)
   <br/>
 
 - Visual

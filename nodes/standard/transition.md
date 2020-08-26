@@ -5,31 +5,29 @@
 <div class = "node-inputs">
 
 ## Inputs
-### Target Value
-**Target Value**  
-The value to chase after
 
-### Override current value
+**Target Value**  
+The value to chase after.
+
 **Override Value**  
-When Do is triggered, the current value will instantly jump to this value
+When _Do_ is triggered, the current value will instantly jump to this value.
 
 **Do**  
-When triggered, the current value will instantly jump to the Override Value
+When triggered, the current value will instantly jump to the _Override Value_.
 
-### Parameters
 **Duration (ms)**  
-How long it takes to reach the target value, specified in milliseconds
+How long it takes to reach the _Target Value_, specified in milliseconds.
 
 **Delay (ms)**  
-Delay the transition to the target value, specified in milliseconds
+Delay before this node starts chasing/transitioning to the _Target Value_. Specified in milliseconds.
 
 **Easing Curve**  
-Define the curvature of the transition
+Define the curvature of the Transition:
 
-* Ease Out
-* Ease In
-* Ease in Ease Out
-* Linear
+- Ease Out
+- Ease In
+- Ease in Ease Out
+- Linear
 
 </div>
 
@@ -37,10 +35,10 @@ Define the curvature of the transition
 
 ## Outputs
 
-**Current State**  
-The current value of the transition
+**Current Value**  
+The current value of the Transition.
 
 **At Target Value**  
-This signal fires when the transition reaches the target value
+This signal fires when this node reaches its _Target Value_.
 
 </div>
