@@ -82,14 +82,19 @@
 - Logic
 - [And](nodes/logicnodes/and.md)
 - [Condition](nodes/logicnodes/condition.md)
+- [Inverter](nodes/standard/inverter.md)
 - [Or](nodes/logicnodes/or.md)
 - [Signal To Index](nodes/logicnodes/signal-to-index.md)
 - [Switch](nodes/logicnodes/switch.md)
 - [Value Changed](nodes/logicnodes/value-changed.md)
   <br/>
 
-* State handling
+* Math
 
+- [Counter](nodes/standard/counter.md)
+- [Expression](nodes/standard/expression.md)
+- [Number Remapper](nodes/standard/number-remapper.md)
+- [Velocity](nodes/standard/velocity.md)
   <br/>
 
 * String Manipulation
@@ -101,8 +106,6 @@
 - Utilities
 - [Boolean To String](nodes/utilities/boolean-to-string.md)
 - [Index To String](nodes/utilities/index-to-string.md)
-- [Expression](nodes/standard/expression.md)
-- [Counter](nodes/standard/counter.md)
 - [Reload](nodes/utilities/reload.md)
 - [Screen Resolution](nodes/utilities/screen-resolution.md)
 - [String Mapper](nodes/utilities/string-mapper.md)

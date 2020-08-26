@@ -1,31 +1,32 @@
 # Number Remapper
-Maps a range of inputs to a different range of outputs
+
+Maps a range of input valuess to a different range of output values.
 
 ![](number-remapper.png)
 
 <div class = "node-inputs">
 
 ## Inputs
+
 **Input Value**  
-The number to remap
+The number to remap.
 
 **Input Minimum**  
-When the *Input Value* equals this value the output of this node will exactly equal the value specified in *Output Minimum*
+When the _Input Value_ equals this value the output of this node will exactly equal the value specified in _Output Minimum_.
 
 **Input Maximum**  
-When the *Input Value* equals this value the output of this node will exactly equal the value specified in *Output Maximum*
+When the _Input Value_ equals this value the output of this node will exactly equal the value specified in _Output Maximum_.
 
 **Output Minimum**  
-The lowest value to output
+The lowest value to output.
 
 **Output Maximum**  
-The highest value to output
+The highest value to output.
 
 **Clamp Output**  
-Controls the behavior if the *Input Value* is lower than *Input Minimum* or higher than *Input Maximum*.
+Controls the behavior if the _Input Value_ is lower than _Input Minimum_ or higher than _Input Maximum_.
 
-If *Clamp Output* is set to *Yes* then the output will cannot be lower than *Output Minimum* or
-higher than *Output Maximum*. If *Clamp Output* is set to *No* then the output will be linearly extrapolated
+If _Clamp Output_ is set to _Yes_ then the output will not be lower than _Output Minimum_ or higher than _Output Maximum_. If _Clamp Output_ is set to _No_ then the output will be linearly extrapolated
 and will be lower or higher than the specified minimum and maximum values.
 
 </div>
@@ -33,7 +34,8 @@ and will be lower or higher than the specified minimum and maximum values.
 <div class = "node-outputs">
 
 ## Outputs
+
 **Remapped Value**  
-The result of remapping the *Input Value* with the values specified above
+The result of remapping the _Input Value_ with the values specified above.
 
 </div>
