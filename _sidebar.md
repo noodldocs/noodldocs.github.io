@@ -38,11 +38,13 @@
 - [React component](extending/create-react-lib.md)
   <br/>
 
-- Node Reference
+- <h1>Node Reference</h1>
+
   <!-- - [Nodes](nodes/README.md)-->
   <br/>
 
 - Animation
+
 - [Animation](nodes/animation/animation.md)
 - [States](nodes/animation/states.md)
 - [Transition](nodes/animation/transition.md)
@@ -54,24 +56,25 @@
   <br/>
 
 - Data
-- [Variable](/nodes/data/variable.md)
-- [Object](/nodes/data/object.md)
+
 - [Array](/nodes/data/array.md)
 - [Array Filter](/nodes/data/array-filter.md)
-- [Static Array](/nodes/data/static-array.md)
+- [Boolean](/nodes/data/boolean.md)
+- [Collection](/nodes/data/collection.md)
+- [Color](/nodes/data/color.md)
 - [For Each](/nodes/data/for-each.md)
 - [For Each Item](/nodes/data/for-each-item.md)
-- [String](/nodes/data/string.md)
-- [Number](/nodes/data/number.md)
-- [Boolean](/nodes/data/boolean.md)
-- [Color](/nodes/data/color.md)
 - [Model](/nodes/data/model.md)
-- [Collection](/nodes/data/collection.md)
+- [Number](/nodes/data/number.md)
+- [Object](/nodes/data/object.md)
+- [Static Array](/nodes/data/static-array.md)
+- [String](/nodes/data/string.md)
+- [Variable](/nodes/data/variable.md)
   <br/>
 
 - Events
-- [Receive Event](nodes/standard/receive-event.md)
-- [Send Event](nodes/standard/send-event.md)
+- [Receive Event](nodes/events/receive-event.md)
+- [Send Event](nodes/events/send-event.md)
   <br/>
 
 - Interpolation
@@ -83,22 +86,25 @@
 - [Script Downloader](nodes/javascript/script-downloader.md)
   <br/>
 
-* Logic
-* [And](nodes/logicnodes/and.md)
-* [Condition](nodes/logicnodes/condition.md)
-* [Inverter](nodes/standard/inverter.md)
-* [Or](nodes/logicnodes/or.md)
-* [Signal To Index](nodes/logicnodes/signal-to-index.md)
-* [Switch](nodes/logicnodes/switch.md)
-* [Value Changed](nodes/logicnodes/value-changed.md)
+- Logic
+- [And](nodes/logic/and.md)
+- [Condition](nodes/logic/condition.md)
+- [Inverter](nodes/logic/inverter.md)
+- [Or](nodes/logic/or.md)
+- [Signal To Index](nodes/logic/signal-to-index.md)
+- [Switch](nodes/logic/switch.md)
+- [Value Changed](nodes/logic/value-changed.md)
   <br/>
 
 - Math
+- [Counter](nodes/math/counter.md)
+- [Expression](nodes/math/expression.md)
+- [Number Remapper](nodes/math/number-remapper.md)
+- [Velocity](nodes/math/velocity.md)
+  <br/>
 
-* [Counter](nodes/standard/counter.md)
-* [Expression](nodes/standard/expression.md)
-* [Number Remapper](nodes/standard/number-remapper.md)
-* [Velocity](nodes/standard/velocity.md)
+- Sensors
+- [Device Orientation](nodes/sensors/device-orientation.md)
   <br/>
 
 - String Manipulation
