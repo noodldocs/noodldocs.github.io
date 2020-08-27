@@ -43,14 +43,14 @@
   <br/>
 
 - Animation
-- [Animation](nodes/standard/animation.md)
-- [States](nodes/standard/states.md)
-- [Transition](nodes/standard/transition.md)
+- [Animation](nodes/animation/animation.md)
+- [States](nodes/animation/states.md)
+- [Transition](nodes/animation/transition.md)
   <br/>
 
 - Component Utilities
-- [Component Inputs](nodes/standard/component-inputs.md)
-- [Component Outputs](nodes/standard/component-outputs.md)
+- [Component Inputs](nodes/componentutils/component-inputs.md)
+- [Component Outputs](nodes/componentutils/component-outputs.md)
   <br/>
 
 - Data
@@ -79,37 +79,41 @@
 - [Color Blend](nodes/interpolation/color-blend.md)
   <br/>
 
-- Logic
-- [And](nodes/logicnodes/and.md)
-- [Condition](nodes/logicnodes/condition.md)
-- [Inverter](nodes/standard/inverter.md)
-- [Or](nodes/logicnodes/or.md)
-- [Signal To Index](nodes/logicnodes/signal-to-index.md)
-- [Switch](nodes/logicnodes/switch.md)
-- [Value Changed](nodes/logicnodes/value-changed.md)
+- JavaScript
+- [Script Downloader](nodes/javascript/script-downloader.md)
   <br/>
 
-* Math
-
-- [Counter](nodes/standard/counter.md)
-- [Expression](nodes/standard/expression.md)
-- [Number Remapper](nodes/standard/number-remapper.md)
-- [Velocity](nodes/standard/velocity.md)
+* Logic
+* [And](nodes/logicnodes/and.md)
+* [Condition](nodes/logicnodes/condition.md)
+* [Inverter](nodes/standard/inverter.md)
+* [Or](nodes/logicnodes/or.md)
+* [Signal To Index](nodes/logicnodes/signal-to-index.md)
+* [Switch](nodes/logicnodes/switch.md)
+* [Value Changed](nodes/logicnodes/value-changed.md)
   <br/>
 
-* String Manipulation
-* [String Format](nodes/string-manipulation/string-format.md)
-* [Substring](nodes/string-manipulation/substring.md)
-* [Unique Id](nodes/string-manipulation/unique-id.md)
+- Math
+
+* [Counter](nodes/standard/counter.md)
+* [Expression](nodes/standard/expression.md)
+* [Number Remapper](nodes/standard/number-remapper.md)
+* [Velocity](nodes/standard/velocity.md)
   <br/>
 
-- Utilities
-- [Boolean To String](nodes/utilities/boolean-to-string.md)
-- [Index To String](nodes/utilities/index-to-string.md)
-- [Reload](nodes/utilities/reload.md)
-- [Screen Resolution](nodes/utilities/screen-resolution.md)
-- [String Mapper](nodes/utilities/string-mapper.md)
-- [Timer](nodes/utilities/timer.md)
+- String Manipulation
+- [String Format](nodes/string-manipulation/string-format.md)
+- [Substring](nodes/string-manipulation/substring.md)
+- [Unique Id](nodes/string-manipulation/unique-id.md)
+  <br/>
+
+* Utilities
+* [Boolean To String](nodes/utilities/boolean-to-string.md)
+* [Index To String](nodes/utilities/index-to-string.md)
+* [Reload](nodes/utilities/reload.md)
+* [Screen Resolution](nodes/utilities/screen-resolution.md)
+* [String Mapper](nodes/utilities/string-mapper.md)
+* [Timer](nodes/utilities/timer.md)
   <br/>
 
 - Visual

@@ -3,7 +3,7 @@
 The **States** node is used to represent logical states visually. You can define your own states and values, each state will then have unique settings for these values and the node will transition between these settings as the state is changed. To learn more take a look at the [States guide](/guides/switch.md).
 
 <div class="ndl-images">
-    <img src="/nodes/standard/states.png" class="ndl-image med">
+    <img src="/nodes/animation/states.png" class="ndl-image med">
 </div>
 
 <div class = "node-inputs">
@@ -17,7 +17,7 @@ A **States** node can have as many states as is necessary. Add a new state by cl
 Every state will have its own set of values. All values need to be set for every state that is added.
 
 <div class="ndl-images">
-    <img src="/nodes/standard/states-example.png" class="ndl-image small"></img>
+    <img src="/nodes/animation/states-example.png" class="ndl-image small"></img>
 </div>
 
 **State**  
@@ -31,7 +31,7 @@ Will animate to the next state, or the first state if the current state is the l
 For each value you can specify the type. Default is _Number_.
 
 <div class="ndl-images">
-    <img src="/nodes/standard/states-value-types.png" class="ndl-image small"></img>
+    <img src="/nodes/animation/states-value-types.png" class="ndl-image small"></img>
 </div>
 
 ## State values
@@ -39,7 +39,7 @@ For each value you can specify the type. Default is _Number_.
 For every state you can specify each of the values. This is the value that they will have when you are at that specific state.
 
 <div class="ndl-images">
-    <img src="/nodes/standard/state-values.png" class="ndl-image small"></img>
+    <img src="/nodes/animation/state-values.png" class="ndl-image small"></img>
 </div>
 
 ## State transition
