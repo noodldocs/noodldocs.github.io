@@ -1,6 +1,6 @@
 # Model
 
-This node is used to access the data of a single item in a [Collection](/nodes/data/collection.md), refered to as a Model. To learn more about Models and Collections check out the [guide](/guides/models-and-collections.md).
+This node is used to access the data of a single item in the result from a [Query Collection](/nodes/data/collection.md), refered to as a Model. To learn more about Models and Collections check out the [guide](/guides/models-and-collections.md).
 
 ![](model.png ':class=img-size-m')
 
@@ -17,33 +17,30 @@ The Id of this model that uniquely identifiers it. All model nodes that share th
 ### Actions
 
 **Fetch**  
-When a signal is sent to _Fetch_ the model will get the most recent data from the database.
+When a signal is sent to _Fetch_ the model will get the most recent data from the cloud store.
 
 **Set**  
 When a signal is sent to _Set_ the values on the property inputs of this node will be set on the object referenced by the _Id_. This is the same as for [Object](/nodes/data/object.md).
 
 **Save**  
-When triggered will save the data on the property inputs to the database. This will also issue a _Set_ so other Models and Objects with the same _Id_ will be updated. If it completed successfully a _Deleted_ signal will be outputed, otherwise a _Failure_ signal will be send and the error can be found on the _Error_ output.
+When triggered will save the data on the property inputs to the cloud store. This will also issue a _Set_ so other Models and Objects with the same _Id_ will be updated. If it completed successfully a _Saved_ signal will be outputed, otherwise a _Failure_ signal will be send and the error can be found on the _Error_ output.
 
 **Delete**  
-When triggered will delete the model with the given _Id_ from the database. If it completed successfully a _Deleted_ signal will be outputed, otherwise a _Failure_ signal will be send and the error can be found on the _Error_ output.
-
-**New**  
-A signal on this input will create a new Model with a fresh new unique _Id_. The data on the property inputs will be set on this new model. When completed the _Created_ signal will be sent.
+When triggered will delete the model with the given _Id_ from the cloud store. If it completed successfully a _Deleted_ signal will be outputed, otherwise a _Failure_ signal will be send and the error can be found on the _Error_ output.
 
 **Insert**  
-A signal here will first do a _New_ to create a new object followed by a _Save_.
+A signal on this input will create a new Model with a fresh new unique _Id_. The data on the property inputs will be set on this new model as well as the result of the initialize script. When completed the _Created_ signal will be sent. The model will also be inserted into the collection in the cloud store and when completed the _Saved_ signal output will be emitted.
 
 ### Properties
 
-The node will have any properties from the Models in the Collection that it can find in the database as well as any properties that the are specified directly on the Model, just like for [Objects](/nodes/data/object.md).
+The node will have any properties from the Models in the Collection that it can find in the cloud store schema as well as any properties that the are specified directly on the Model, just like for [Objects](/nodes/data/object.md).
 
 ![](object-props.png ':class=img-size-s')
 
 ### Scripts
 
 **Initialize**  
-Here you can provide a small Javascript snippet that is run when a new model is created via the _New_ or _Insert_ signals.
+Here you can provide a small Javascript snippet that is run when a new model is created via the _Insert_ signal.
 
 ```javascript
 initialize({
@@ -66,18 +63,18 @@ initialize({
 ### General
 
 **Id**  
-The _Id_ of this model. This will be updated when a _New_ or _Insert_ signal is received.
+The _Id_ of this model. This will be updated when an _Insert_ signal is received or when the _Id_ input is set.
 
 ### Events
 
 **Saved**  
-Signal sent when a Model is successfully saved to the database.
+Signal sent when a Model is successfully saved to the cloud store.
 
 **Stored**  
 Signal sent when a Model is successfully stored to memory via _Set_.
 
 **Created**  
-Signal sent when a Model is succesfully created via _New_ or _Insert_.
+Signal sent when a Model is succesfully created via _Insert_.
 
 **Fetched**  
 Signal sent when a Model is succesfully fetched via _Fetch_.
@@ -86,13 +83,13 @@ Signal sent when a Model is succesfully fetched via _Fetch_.
 Sent when any property of the Model is changed, same as for [Object](/nodes/data/object.md).
 
 **Deleted**  
-Sent when a Model with this _Id_ is successfully deleted from the database.
+Sent when a Model with this _Id_ is successfully deleted from the cloud store.
 
 **Failure**  
-Sent when an operation _Save_, _New_, _Insert_, _Delete_ fails. The failure reason will be outputed on _Error_.
+Sent when an operation _Save_, _Insert_, _Delete_ fails. The failure reason will be outputed on _Error_.
 
 **Error**  
-The reason for a failure.
+The reason for a failure, as a message string.
 
 ### Properties
 

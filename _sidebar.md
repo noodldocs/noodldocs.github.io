@@ -59,7 +59,7 @@
 - [Boolean](/nodes/data/boolean.md)
 - [Color](/nodes/data/color.md)
 - [Model](/nodes/data/model.md)
-- [Collection](/nodes/data/collection.md)
+- [Query Collection](/nodes/data/collection.md)
   <br/>
 
 - Events

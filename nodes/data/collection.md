@@ -1,6 +1,6 @@
-# Collection
+# Query Collection
 
-This node is used to access a collection of **Models** in the persistent database. To learn more about **Models** and **Collections** check out the [guide](/guides/models-and-collections.md).
+This node is used to access a collection of **Models** in the cloud store. To learn more about **Models** and **Collections** check out the [guide](/guides/models-and-collections.md).
 
 ![](collection.png ':class=img-size-m')
 
@@ -12,14 +12,14 @@ This node is used to access a collection of **Models** in the persistent databas
 The name of the **Collection** that this node will access.
 
 **Use Limit**  
-Enables or disables limiting the number of result fetched from the database.
+Enables or disables limiting the number of result fetched from the cloud store.
 
 **Limit**  
-Specift the maximum number of **Models** that will be fetched from the database.
+Specifies the maximum number of **Models** that will be fetched from the cloud store.
 
 ### Filter
 
-By default the **Collection** will fetch all **Models**, you can however add a filter. You can filter on **Model** properties. Add which properties you want to filter on.
+By default the **Query Collection** will fetch all **Models**, you can however add a filter. You can filter on **Model** properties. Add which properties you want to filter on.
 
 ![](collection-filter.png ':class=img-size-m')
 
@@ -45,7 +45,7 @@ The value used to test against in the filter operation.
 
 ### Sort
 
-By default the **Collection** does not return the result of a fetch sorted. You can specify sorting. Like filters you add which properties you want to sort on.
+By default the **Query Collection** does not return the result of a fetch sorted. You can specify sorting. Like filters you add which properties you want to sort on.
 
 For each property you can choose the sorting order.
 
@@ -58,16 +58,16 @@ For each property you can choose the sorting order.
 **Name**  
 The identifier of this **Collection**. This is the collection name.
 
-**Items**  
-An array of the items fetched from the database.
+**Result**  
+An array of the items fetched from the cloud store.
 
 **Count**  
-The count of the retuned array from the database.
+The count of the retuned array from the cloud store.
 
 ### Events
 
 **Modified**  
-Event signal sent when the collection is modified locally, e.g. when a **Model** is added or removed.
+Event signal sent when the collection is modified locally, e.g. when a **Model** that has previously been fetched is deleted.
 
 **Fetched**  
 Event signal sent when a _Fetch_ is successful.
@@ -76,4 +76,4 @@ Event signal sent when a _Fetch_ is successful.
 Sent when a _Fetch_ has failed.
 
 **Error**  
-The reason for failure.
+A string with a message indicating the reason for failure.
