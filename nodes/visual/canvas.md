@@ -123,10 +123,7 @@ Specifes the X position, within this node, that will be the center for rotation 
 **Transform Origin Y**  
 Specifes the Y position, within this node, that will be the center for rotation and scale. By default it is the center of the node (i.e. 50%) but you can specify an arbitrary value in either percentage of the node's height or explicitly in pixels.
 
-### Advanced
-
-**CSS Style**  
-Here you can add custom CSS styles that will be added to this node. The styles are specified in camel case, so _background-color_ in CSS will be specified as _backgroundColor_.
+[filename](../advanced-style.md ':include')
 
 </div>
 
