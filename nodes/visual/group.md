@@ -185,10 +185,8 @@ This will cause this node to block all pointer events, e.g. any node that is beh
 **Mounted**  
 This property is used to completely remove the node from the DOM. If this property is set to false the node is removed from the DOM. It differs from the _Visible_ property where the node is still part of the DOM but invisible.
 
-### Advanced
 
-**CSS Style**  
-Here you can add custom CSS styles that will be added to this node. The styles are specified in camel case, so _background-color_ in CSS will be specified as _backgroundColor_.
+[filename](../advanced-style.md ':include').
 
 ## OUTPUTS
 
