@@ -38,33 +38,43 @@
 - [React component](extending/create-react-lib.md)
   <br/>
 
-- Node Reference
+- <h1>Node Reference</h1>
+
   <!-- - [Nodes](nodes/README.md)-->
   <br/>
+
+- Animation
+
+- [Animation](nodes/animation/animation.md)
+- [States](nodes/animation/states.md)
+- [Transition](nodes/animation/transition.md)
+  <br/>
+
 - Component Utilities
-- [Component Inputs](nodes/standard/component-inputs.md)
-- [Component Outputs](nodes/standard/component-outputs.md)
+- [Component Inputs](nodes/componentutils/component-inputs.md)
+- [Component Outputs](nodes/componentutils/component-outputs.md)
   <br/>
 
 - Data
-- [Variable](/nodes/data/variable.md)
-- [Object](/nodes/data/object.md)
+
 - [Array](/nodes/data/array.md)
 - [Array Filter](/nodes/data/array-filter.md)
-- [Static Array](/nodes/data/static-array.md)
+- [Boolean](/nodes/data/boolean.md)
+- [Query Collection](/nodes/data/collection.md)
+- [Color](/nodes/data/color.md)
 - [For Each](/nodes/data/for-each.md)
 - [For Each Item](/nodes/data/for-each-item.md)
-- [String](/nodes/data/string.md)
-- [Number](/nodes/data/number.md)
-- [Boolean](/nodes/data/boolean.md)
-- [Color](/nodes/data/color.md)
 - [Model](/nodes/data/model.md)
-- [Query Collection](/nodes/data/collection.md)
+- [Number](/nodes/data/number.md)
+- [Object](/nodes/data/object.md)
+- [Static Array](/nodes/data/static-array.md)
+- [String](/nodes/data/string.md)
+- [Variable](/nodes/data/variable.md)
   <br/>
 
 - Events
-- [Receive Event](nodes/standard/receive-event.md)
-- [Send Event](nodes/standard/send-event.md)
+- [Receive Event](nodes/events/receive-event.md)
+- [Send Event](nodes/events/send-event.md)
   <br/>
 
 - Interpolation
@@ -72,24 +82,44 @@
 - [Color Blend](nodes/interpolation/color-blend.md)
   <br/>
 
+- JavaScript
+- [Script Downloader](nodes/javascript/script-downloader.md)
+  <br/>
+
 - Logic
-- [And](nodes/standard/and.md)
-- [Condition](nodes/standard/condition.md)
-- [Or](nodes/standard/or.md)
-- [Signal To Index](nodes/standard/signal-to-index.md)
-- [Switch](nodes/standard/switch.md)
-- [Value Changed](nodes/standard/value-changed.md)
+- [And](nodes/logic/and.md)
+- [Condition](nodes/logic/condition.md)
+- [Inverter](nodes/logic/inverter.md)
+- [Or](nodes/logic/or.md)
+- [Signal To Index](nodes/logic/signal-to-index.md)
+- [Switch](nodes/logic/switch.md)
+- [Value Changed](nodes/logic/value-changed.md)
   <br/>
 
-* State handling
-* [States](nodes/standard/states.md)
+- Math
+- [Counter](nodes/math/counter.md)
+- [Expression](nodes/math/expression.md)
+- [Number Remapper](nodes/math/number-remapper.md)
+- [Velocity](nodes/math/velocity.md)
   <br/>
 
-- Utilities
-- [Boolean To String](nodes/standard/boolean-to-string.md)
-- [Index To String](nodes/standard/index-to-string.md)
-- [Expression](nodes/standard/expression.md)
-- [Counter](nodes/standard/counter.md)
+- Sensors
+- [Device Orientation](nodes/sensors/device-orientation.md)
+  <br/>
+
+- String Manipulation
+- [String Format](nodes/string-manipulation/string-format.md)
+- [Substring](nodes/string-manipulation/substring.md)
+- [Unique Id](nodes/string-manipulation/unique-id.md)
+  <br/>
+
+* Utilities
+* [Boolean To String](nodes/utilities/boolean-to-string.md)
+* [Index To String](nodes/utilities/index-to-string.md)
+* [Reload](nodes/utilities/reload.md)
+* [Screen Resolution](nodes/utilities/screen-resolution.md)
+* [String Mapper](nodes/utilities/string-mapper.md)
+* [Timer](nodes/utilities/timer.md)
   <br/>
 
 - Visual
