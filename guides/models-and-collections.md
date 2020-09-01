@@ -4,7 +4,7 @@ In the [Variables and Objects](/guides/variables-and-objects.md) guide you learn
 
 - **Model** A model typically represents an item that you want to store, e.g. a Task item in a task app, or a Shopping Item in a shopping cart. It is accessed via the model node. A Model node is an extended Object. It works like an Object where you can Set and Fetch values but it also includes functionality to save to the cloud.
 
-- **Collection** A collection contains a set of models of a specific type. When you create a collection you typically name it after the type you want it to contain. You can access the models of a collection with the *Query Collection* node.
+- **Collection** A collection contains a set of models of a specific type. When you create a collection you typically name it after the type you want it to contain. You can access the models of a collection with the _Query Collection_ node.
 
 Let's take a closer look at Models and Collections with this example project. It is a static Task app that we will turn into a functional database backed app. You can import the project below.
 
@@ -15,17 +15,17 @@ Let's take a closer look at Models and Collections with this example project. It
 
 After importing you should have a number of components in your project. There should be one folder called **Parts** this folder contains the diffent UI components used in the screens. The other folder is called **Screens** and contains the three screens of the app.
 
-* *Tasks Screen* This is the main screen, a list of all the tasks.
-* *New Task Screen* This is the screen used to create new tasks.
-* *Edit Task Screen* The screen where the user can edit a task.
+- _Tasks Screen_ This is the main screen, a list of all the tasks.
+- _New Task Screen_ This is the screen used to create new tasks.
+- _Edit Task Screen_ The screen where the user can edit a task.
 
-You can use the *eye* icon to switch between the different components in the viewer, when you are done make sure the **Tasks Screen** is the visible. It contains three static task items that we will replace with dynamic data.
+You can use the _eye_ icon to switch between the different components in the viewer, when you are done make sure the **Tasks Screen** is the visible. It contains three static task items that we will replace with dynamic data.
 
 <div class="ndl-images">
     <img src="/guides/models-and-collections/task-items.png" class="ndl-image large"></img>   
 </div>
 
-We are going to use collections to store the data in the cloud. But to make collections available in this project we need to enable cloud services. This needs to be done in every project that uses any of the cloud features. More on this later, but for now simply open the cloud services popup and hit *enable*.
+We are going to use collections to store the data in the cloud. But to make collections available in this project we need to enable cloud services. This needs to be done in every project that uses any of the cloud features. More on this later, but for now simply open the cloud services popup and hit _enable_.
 
 <div class="ndl-images">
     <img src="/guides/models-and-collections/enable-cloud-services.gif" class="ndl-image med"></img>  
@@ -45,14 +45,14 @@ At the bottom of the panel you can create a new **Collection** call it _Tasks_. 
 
 Now that we have our Collection we need to specify the schema for the models in the collection, a schema is simply a list of properties with types that all models in the collection share. Out _Tasks_ models will have two properties, a _Text_ with the task content and a _Completed_ that will store if the task is done or not. Open the collection by clicking on it and on the tab labeled _Schema_. Then create two properties.
 
-* *Text* This property should be of type *String*, it will contain the text of the task.
-* *Completed* This property should be of type *Boolean* so it can be either *true* for when a task has been marked completed, and *false* if not.
+- _Text_ This property should be of type _String_, it will contain the text of the task.
+- _Completed_ This property should be of type _Boolean_ so it can be either _true_ for when a task has been marked completed, and _false_ if not.
 
 <div class="ndl-images">
     <img src="/guides/models-and-collections/schema.gif" class="ndl-image large"></img>   
 </div>
 
-With the schema in place we can add some test data to the collection, this is done in the other tab labeled *Data*. Create a Model with the attributes _Text_ and _Completed_. When you add models to a collection you use JSON which is great to [learn](https://www.w3schools.com/js/js_json_intro.asp) if you don't already know it.
+With the schema in place we can add some test data to the collection, this is done in the other tab labeled _Data_. Create a Model with the attributes _Text_ and _Completed_. When you add models to a collection you use JSON which is great to [learn](https://www.w3schools.com/js/js_json_intro.asp) if you don't already know it.
 
 <div class="ndl-images">
     <img src="/guides/models-and-collections/add-model.gif" class="ndl-image large"></img>   
@@ -65,29 +65,29 @@ Go ahead and add a few more models to the collection in the same way. Next up we
   <button class="ndl-copy-nodes-button" onClick='copyJsonToClipboard({"nodes":[{"id":"41b407b0-1d78-f7aa-7b77-d328431691be","type":"Group","x":-61.842898249714494,"y":106.85295677441763,"parameters":{},"ports":[],"children":[{"id":"794f0ee8-315e-26f8-4c91-f80ad40e0bc4","type":"Group","x":-41.842898249714494,"y":188.85295677441763,"parameters":{"backgroundColor":"#FFFFFF","paddingLeft":{"value":5,"unit":"px"},"paddingRight":{"value":5,"unit":"px"},"paddingTop":{"value":20,"unit":"px"},"paddingBottom":{"value":20,"unit":"px"},"position":"absolute"},"ports":[],"children":[{"id":"7e43e470-9c21-4367-9928-2aa482d5fb4e","type":"Text","x":-21.842898249714494,"y":234.85295677441763,"parameters":{"fontFamily":"OpenSans-Regular.ttf","text":"My Tasks","fontSize":{"value":30,"unit":"px"},"marginLeft":{"value":31,"unit":"px"}},"ports":[],"children":[]},{"id":"a263dc80-eefb-daea-71e2-1558b85caf07","type":"Group","x":-21.842898249714494,"y":280.85295677441763,"parameters":{"marginTop":{"value":20,"unit":"px"},"scrollBehavior":"native","clip":true,"marginBottom":{"value":20,"unit":"px"}},"ports":[],"children":[{"id":"64401a30-613c-4946-c15d-4e32c082222f","type":"For Each","x":-1.8428982497144943,"y":326.85295677441763,"parameters":{"template":"/Parts/Task Item"},"ports":[],"children":[]}]},{"id":"dbb3ccd8-419f-40a3-c85c-f1451cfe0113","type":"/Parts/Add Button","x":-21.842898249714494,"y":408.85295677441763,"parameters":{"Align X":"right","Align Y":"bottom","Margin Right":{"value":10,"unit":"px"},"Margin Bottom":{"value":10,"unit":"px"}},"ports":[],"children":[]}]}]},{"id":"7db8ff3d-9293-0393-58ff-22e404625cb9","type":"PageStackNavigate","x":244.43601436983369,"y":444.4054142410768,"parameters":{"target":"/Screens/New Task Screen","transition":"Popup","tr-direction":"Up","tr-timing":{"curve":[0,0,0.58,1],"dur":300,"delay":0},"tr-fadein":true,"tr-shift":{"value":75,"unit":"%"}},"ports":[],"children":[]},{"id":"9bbb5f12-ecc6-032a-1dcc-49266eee53bb","type":"DbCollection","x":-321.5387225298615,"y":258.8532974218833,"parameters":{"collectionName":"Tasks"},"ports":[],"children":[]}],"connections":[{"fromId":"dbb3ccd8-419f-40a3-c85c-f1451cfe0113","fromProperty":"Click","toId":"7db8ff3d-9293-0393-58ff-22e404625cb9","toProperty":"navigate"},{"fromId":"41b407b0-1d78-f7aa-7b77-d328431691be","fromProperty":"didMount","toId":"9bbb5f12-ecc6-032a-1dcc-49266eee53bb","toProperty":"storageFetch"},{"fromId":"9bbb5f12-ecc6-032a-1dcc-49266eee53bb","fromProperty":"items","toId":"64401a30-613c-4946-c15d-4e32c082222f","toProperty":"items"}]})'></button>      
 </div>
 
-* Create a **Query Collection** node and set the *Collection Name* property to *Tasks*. This property is used to select which collection this node will access. If you create more collections they will show up here. This node is used to return all or some of the models in the collection.
+- Create a **Query Collection** node and set the _Collection Name_ property to _Tasks_. This property is used to select which collection this node will access. If you create more collections they will show up here. This node is used to return all or some of the models in the collection.
 
 <div class="ndl-images">
     <img src="/guides/models-and-collections/collection-name.png" class="ndl-image small"></img>   
 </div>
 
-* Next, create a **For Each** and replace the three **Task Item** components with that single node. Make sure you select the *Task Item* component as the template component.
+- Next, create a **For Each** and replace the three **Task Item** components with that single node. Make sure you select the _Task Item_ component as the template component.
 
 <div class="ndl-images">
     <img src="/guides/models-and-collections/for-each-template.png" class="ndl-image small"></img>   
 </div>
 
-* Connect the **Did mount** output of the top group to the **Fetch** input of the *Query Collection* node. The *Did mount* signal is triggered when these nodes become visible and when that happens we want the *Query Collection* to fetch all models of the collection from the cloud storage. We need to send the *Fetch* signal when we want to retrieve the content of the collection it is not done automatically just by setting the collection name.
+- Connect the **Did mount** output of the top group to the **Fetch** input of the _Query Collection_ node. The _Did mount_ signal is triggered when these nodes become visible and when that happens we want the _Query Collection_ to fetch all models of the collection from the cloud storage. We need to send the _Fetch_ signal when we want to retrieve the content of the collection it is not done automatically just by setting the collection name.
 
-* Finally connect the **Items** output of the Collection node to the **Items** input of the **For Each**. This will have the *For Each* node replicate the *Task Item* component once for every model in the Tasks collection.
+- Finally connect the **Items** output of the Collection node to the **Items** input of the **For Each**. This will have the _For Each_ node replicate the _Task Item_ component once for every model in the Tasks collection.
 
-You will need to refresh in order for the **Did mount** signal to be send so that the Collection node will fetch the models. This will result in one **Task Item** for every model in the collection, the *Text* you put in your data items should show up in the list.
+You will need to refresh in order for the **Did mount** signal to be send so that the Collection node will fetch the models. This will result in one **Task Item** for every model in the collection, the _Text_ you put in your data items should show up in the list.
 
 <div class="ndl-images">
     <img src="/guides/models-and-collections/connected-tasks.png" class="ndl-image med"></img>   
 </div>
 
-Let's review what happened. Each item you create in the collection data panel will become one **Model** in Noodl containing all the attributes you entered. The *For Each* node will duplicate the **Task Item** component for every model in the collection and the attribute *Text* will be provided as a **Component Input** to the task items. In that component it is connected to the text node.
+Let's review what happened. Each item you create in the collection data panel will become one **Model** in Noodl containing all the attributes you entered. The _For Each_ node will duplicate the **Task Item** component for every model in the collection and the attribute _Text_ will be provided as a **Component Input** to the task items. In that component it is connected to the text node.
 
 <div class="ndl-images">
     <img src="/guides/models-and-collections/text-attr-in-datapanel.png" class="ndl-image large"></img>   
@@ -105,15 +105,15 @@ Next we'll dive into the **New Task Screen** and add functionality for creating 
 
 Just like we used a **Query Collection** node to access the collection we will use a **Model** node to create a new Model in a Collection. These are the steps needed:
 
-* Create a **Model** node and set the **Collection Name** to **Tasks**. When you select a Collection the node will automatically get inputs for the attributes of the models in the collection.
+- Create a **Model** node and set the **Collection Name** to **Tasks**. When you select a Collection the node will automatically get inputs for the attributes of the models in the collection.
 
-* Connect the **Text** output from the **Text Input** node to the **Text** input of the **Model** node. This will push the text that you type in the text field to the model node.
+- Connect the **Text** output from the **Text Input** node to the **Text** input of the **Model** node. This will push the text that you type in the text field to the model node.
 
-* Create a **Boolean** node and connect the **Value** output to the **Completed** input of the model node. This will provide the default value of *false* for the completed attribute. (The boolean node value is false by default, you can of course change it if you want another value when creating the model.)
+- Create a **Boolean** node and connect the **Value** output to the **Completed** input of the model node. This will provide the default value of _false_ for the completed attribute. (The boolean node value is false by default, you can of course change it if you want another value when creating the model.)
 
-* Now connect **Click** from the Button to **Insert** on the Model. This will insert a new model into the collection when it receives a signal, i.e. when the button is clicked.
+- Now connect **Click** from the Button to **Insert** on the Model. This will insert a new model into the collection when it receives a signal, i.e. when the button is clicked.
 
-* Finnaly you can connect the **Saved** output signal from the Model node to the **Navigate** input on the **Navigate Back** node. This will close the popup when the Model has been successfully saved in the collection.
+- Finally you can connect the **Saved** output signal from the Model node to the **Navigate** input on the **Navigate Back** node. This will close the popup when the Model has been successfully saved in the collection.
 
 The setup below is what you want:
 
@@ -122,33 +122,33 @@ The setup below is what you want:
   <button class="ndl-copy-nodes-button" onClick='copyJsonToClipboard({"nodes":[{"id":"888b0511-874c-dcc3-bf98-c98af68b48eb","type":"Group","x":-117.1255445807002,"y":283.08062013197235,"parameters":{"backgroundColor":"#FFFFFF"},"ports":[],"children":[{"id":"0cc2e328-1acb-a922-1cab-2e6d445626eb","type":"/Parts/Header","x":-97.1255445807002,"y":329.08062013197235,"parameters":{"Title":"New task"},"ports":[],"children":[]},{"id":"4d13e6a1-e7ae-436a-b7f6-326f5006606c","type":"Group","x":-97.1255445807002,"y":411.08062013197235,"parameters":{"paddingLeft":{"value":20,"unit":"px"},"paddingRight":{"value":20,"unit":"px"}},"ports":[],"children":[{"id":"62036bbf-2a01-1a60-a048-04bc01ae30b3","type":"Text Input","x":-77.1255445807002,"y":457.08062013197235,"parameters":{"sizeMode":"explicit","type":"textArea","fontFamily":"OpenSans-Regular.ttf","fontSize":{"value":20,"unit":"px"},"color":"#545454","marginBottom":{"value":10,"unit":"px"}},"ports":[],"children":[]},{"id":"eba9b191-edc5-8eeb-eb58-611e0e339118","type":"/Parts/Button","label":"Save","x":-77.1255445807002,"y":539.0806201319724,"parameters":{"Label":"Save","Margin Bottom":{"value":20,"unit":"px"}},"ports":[],"children":[]}]}]},{"id":"524acf1f-f107-40a9-ca9f-d6bb19623579","type":"PageStackNavigateBack","x":-377.8536376170447,"y":276.4973969970899,"parameters":{},"ports":[],"children":[]},{"id":"5621ce0b-d4eb-4627-634a-bcaf2f67a4ca","type":"DbModel","x":-377.0510202634721,"y":425.2504935647117,"parameters":{"$ndlCollectionName":"Tasks"},"ports":[],"children":[]},{"id":"4163ea1a-0200-d710-07b1-31b4421fc329","type":"Boolean","x":-379.8940457253206,"y":583.2489203796379,"parameters":{},"ports":[],"children":[]}],"connections":[{"fromId":"0cc2e328-1acb-a922-1cab-2e6d445626eb","fromProperty":"Close","toId":"524acf1f-f107-40a9-ca9f-d6bb19623579","toProperty":"navigate"},{"fromId":"62036bbf-2a01-1a60-a048-04bc01ae30b3","fromProperty":"onTextChanged","toId":"5621ce0b-d4eb-4627-634a-bcaf2f67a4ca","toProperty":"Text"},{"fromId":"4163ea1a-0200-d710-07b1-31b4421fc329","fromProperty":"savedValue","toId":"5621ce0b-d4eb-4627-634a-bcaf2f67a4ca","toProperty":"Completed"},{"fromId":"eba9b191-edc5-8eeb-eb58-611e0e339118","fromProperty":"Click","toId":"5621ce0b-d4eb-4627-634a-bcaf2f67a4ca","toProperty":"insert"},{"fromId":"5621ce0b-d4eb-4627-634a-bcaf2f67a4ca","fromProperty":"saved","toId":"524acf1f-f107-40a9-ca9f-d6bb19623579","toProperty":"navigate"}]})'></button>      
 </div>
 
-What happened here is that a new *Model* was created and pushed to the cloud storage when the *Insert* signal was received. But as you can see the *Task Items* list does not update automatically to include the newly created model. New models that are created in cloud storage are not automatically sent to the client, instead we must query the collection again. This is a great place to use what we learned in the [events](/guides/events.md) guide. 
+What happened here is that a new _Model_ was created and pushed to the cloud storage when the _Insert_ signal was received. But as you can see the _Task Items_ list does not update automatically to include the newly created model. New models that are created in cloud storage are not automatically sent to the client, instead we must query the collection again. This is a great place to use what we learned in the [events](/guides/events.md) guide.
 
-* In the *Tasks Screen* component. Create a *Receive Event* node that listens to the *Reload Tasks* event channel.
+- In the _Tasks Screen_ component. Create a _Receive Event_ node that listens to the _Reload Tasks_ event channel.
 
-* Connect it to the *Fetch* signal of the *Query Collection* node.
+- Connect it to the _Fetch_ signal of the _Query Collection_ node.
 
 <div class="ndl-images">
     <img src="/guides/models-and-collections/receive-reload.png" class="ndl-image large"></img>  
 </div>
 
-This will have the *Query Collection* node fetch the models from the cloud storage and any newly created models will show up. Now make sure we send the event as well.
+This will have the _Query Collection_ node fetch the models from the cloud storage and any newly created models will show up. Now make sure we send the event as well.
 
-* In the *New Task Screen* component. Create a *Send Event* node that will send on the *Reload Tasks* channel.
+- In the _New Task Screen_ component. Create a _Send Event_ node that will send on the _Reload Tasks_ channel.
 
-* Connect the *Saved* signal from the *Model* node to the *Send* signal on the *Send Event* node.
+- Connect the _Saved_ signal from the _Model_ node to the _Send_ signal on the _Send Event_ node.
 
 <div class="ndl-images">
     <img src="/guides/models-and-collections/send-reload.png" class="ndl-image large"></img>  
 </div>
 
-There you go, now you can create new task items and they will show up in the list. When the *Query Collection* returns the new *Result* that is passed to the *For Each* node it will update to reflect the new models.
+There you go, now you can create new task items and they will show up in the list. When the _Query Collection_ returns the new _Result_ that is passed to the _For Each_ node it will update to reflect the new models.
 
-?> You might wonder why the *Did mount* signal is not sent when we navigate back to the *Tasks screen* after creating a new model, thus forcing a *Fetch* from the *Query Collection*. The reason is that the navigation module will keep pages alive so to be more performant when navigation. The *Did mount* signal is only sent when a visual node is created and made visible.
+?> You might wonder why the _Did mount_ signal is not sent when we navigate back to the _Tasks screen_ after creating a new model, thus forcing a _Fetch_ from the _Query Collection_. The reason is that the navigation module will keep pages alive so to be more performant when navigation. The _Did mount_ signal is only sent when a visual node is created and made visible.
 
 Now let's move on to editing.
 
-First we need to look at the **Task Item** component, here you can see that there is a Navigation node that navigates to the **Edit Task Screen** when the item is clicked. The **Id** of the task item is also passed as a navigation parameter. Just like **Objects** the *Id* of a Model uniquely identifies it, so to make sure we edit the right task that is passed and will be available as a component input in the **Edit Task Screen** component. To learn more about how navigation works take a look at the [navigation guide](/modules/mobile-web-app-nav/nav-guide).
+First we need to look at the **Task Item** component, here you can see that there is a Navigation node that navigates to the **Edit Task Screen** when the item is clicked. The **Id** of the task item is also passed as a navigation parameter. Just like **Objects** the _Id_ of a Model uniquely identifies it, so to make sure we edit the right task that is passed and will be available as a component input in the **Edit Task Screen** component. To learn more about how navigation works take a look at the [navigation guide](/modules/mobile-web-app-nav/nav-guide).
 
 <div class="ndl-images">
     <img src="/guides/models-and-collections/pass-task-id.png" class="ndl-image med"></img>  
@@ -156,11 +156,11 @@ First we need to look at the **Task Item** component, here you can see that ther
 
 Lets move on to the **Edit Task Screen** component. Here we first need to fix so that the current task text is shown. This is done through the following steps:
 
-* Create a **Component Inputs** node and a **Task Id** input. This is the **Id** of the Model we are editing that was passed via the Navigation node.
+- Create a **Component Inputs** node and a **Task Id** input. This is the **Id** of the Model we are editing that was passed via the Navigation node.
 
-* Create a **Model** node and set the **Colllection Name** to **Tasks**. Then connect the **Task Id** component input to the **Id** input of the model node.
+- Create a **Model** node and set the **Colllection Name** to **Tasks**. Then connect the **Task Id** component input to the **Id** input of the model node.
 
-* Finally connect the **Text** output of the Model node to the **Text** input of the **Text Input** node. This will send the text from the Model node when it is retrieved via the Id connection. So that the text input shows the current value of the Model's **Text** attribute.
+- Finally connect the **Text** output of the Model node to the **Text** input of the **Text Input** node. This will send the text from the Model node when it is retrieved via the Id connection. So that the text input shows the current value of the Model's **Text** attribute.
 
 <div class="ndl-images">
     <img src="/guides/models-and-collections/edit-task-step1.png" class="ndl-image large"></img>  
@@ -168,15 +168,15 @@ Lets move on to the **Edit Task Screen** component. Here we first need to fix so
 
 Now you can click the Task items and the **Edit Task Screen** is shown with the correct task text. You can edit the text input but nothing happens when you hit save. This is what we will do now, what you see below is what we want to build, to achieve this we need to:
 
-* Create another **Model** node and set the collection name to **Tasks**. We could actually use the existing node but sometimes it is easier to create another so to illustrate how thats done we'll do that here.
+- Create another **Model** node and set the collection name to **Tasks**. We could actually use the existing node but sometimes it is easier to create another so to illustrate how thats done we'll do that here.
 
-* Connect the **Task Id** input to this new Model node as well. This is import to understand. As long as the two model nodes have the same **Id** they will work on the same model.
+- Connect the **Task Id** input to this new Model node as well. This is import to understand. As long as the two model nodes have the same **Id** they will work on the same model.
 
-* Connect the **Text** from the **Text Input** to the new model's **Text** input.
+- Connect the **Text** from the **Text Input** to the new model's **Text** input.
 
-* Connect the Save buttons **Click** to the **Save** signal input of the Model node. This will have the effect that when the button is clicked the node will Save the current value on it's inputs to the persistent database. This is similair to the **Set** signal but it will also persist the data.
+- Connect the Save buttons **Click** to the **Save** signal input of the Model node. This will have the effect that when the button is clicked the node will Save the current value on it's inputs to the persistent database. This is similair to the **Set** signal but it will also persist the data.
 
-* Finally connect the **Saved** output from the Model node to the **Navigate Back** node as shown below. This will trigger the back navigation and close the popup when the model has been succesfully saved.
+- Finally connect the **Saved** output from the Model node to the **Navigate Back** node as shown below. This will trigger the back navigation and close the popup when the model has been succesfully saved.
 
 <div class="ndl-images">
     <img src="/guides/models-and-collections/edit-task-step2.png" class="ndl-image large"></img>  
@@ -184,21 +184,21 @@ Now you can click the Task items and the **Edit Task Screen** is shown with the 
 
 Now you can edit and save the Model, it will take you back to the tasks list and you can see the updated task in the list. There is also a Delete button on the screen, so let's connect that one too. We can use the existing Model node for this.
 
-* Connect the Delete buttons **Click** output signal to the **Delete** input signal on the Model node.
+- Connect the Delete buttons **Click** output signal to the **Delete** input signal on the Model node.
 
-* Connect the **Deleted** signal from the Model node to the **Navigate** input of the *Navigate Back* node. This will have the edit screen close and return to the tasks list when an item has been deleted.
+- Connect the **Deleted** signal from the Model node to the **Navigate** input of the _Navigate Back_ node. This will have the edit screen close and return to the tasks list when an item has been deleted.
 
-Give it a try! So now we can **Create**, **Edit** and **Delete** out task items. That's pretty good. On thing to note is that we didn't have to send the *Reload Tasks* event, this is because any model that is already on the client, i.e. models that we have fetched previously, that are modified will be automatically updated. 
+Give it a try! So now we can **Create**, **Edit** and **Delete** out task items. That's pretty good. On thing to note is that we didn't have to send the _Reload Tasks_ event, this is because any model that is already on the client, i.e. models that we have fetched previously, that are modified will be automatically updated.
 
 There is one last thing in this guide and that is to connect the check mark button for the items. This should be connected to the **Completed** attribute of the task Models.
 
 In the **Task Item** component, another component is used, the **Check Mark**. This is a simple check button created with a states node, you can take a look at it and read the [states guide](/guides/states.md) to learn more. This component has both a boolean input (checked true or false) and a boolean output that is updated when the user clicks. Let's hook up this component to our data model.
 
-* Create a **Model** node and choose our collection **Tasks**.
+- Create a **Model** node and choose our collection **Tasks**.
 
-* Connect the **Completed** output from the **Model** node to the **State** input of the **Check Mark** component.
+- Connect the **Completed** output from the **Model** node to the **State** input of the **Check Mark** component.
 
-* We also need to provide the **Id** of the Model, so connect the **Item Id** output of the **For Each Item** node to the **Id** input of the **Model** node.
+- We also need to provide the **Id** of the Model, so connect the **Item Id** output of the **For Each Item** node to the **Id** input of the **Model** node.
 
 <div class="ndl-images">
     <img src="/guides/models-and-collections/check-mark-step1.png" class="ndl-image large"></img>  
@@ -206,9 +206,9 @@ In the **Task Item** component, another component is used, the **Check Mark**. T
 
 Now the **Completed** attribute of our task models will be visualized with a check mark. If you have a task in your collection that has Completed set to true it should be reflected in the task list. Now we also want any change made by the user saved in the database.
 
-* Connect the **State** from **Check Mark** to the **Completed** in the **Model** node. So we essentially create a connection in the other direction as well. Before we used two nodes, one for reading and one for saving. You can use the same node if you like.
+- Connect the **State** from **Check Mark** to the **Completed** in the **Model** node. So we essentially create a connection in the other direction as well. Before we used two nodes, one for reading and one for saving. You can use the same node if you like.
 
-* Connect the **Click** signal from the **Check Mark** node to the **Save** input of the **Model**. So when the user clicks the check mark the Model will be saved to the database.
+- Connect the **Click** signal from the **Check Mark** node to the **Save** input of the **Model**. So when the user clicks the check mark the Model will be saved to the database.
 
 !> It's important to only do **Save** and **Insert** on Models on user interactions. If you hook up these to change signals or other non user events you can create feedback loops. It's not like you will disrupt the very fabric of time and space or anything but you could throw an exception or two.
 
