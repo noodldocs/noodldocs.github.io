@@ -2,7 +2,7 @@
 
 Stores any amount of properties and can be used standalone or together with [Array](nodes/data/array.md) and [For Each](nodes/data/for-each.md) nodes.
 
-![](object.png ':class=img-size-m')
+![](object.png ':class=img-size-l')
 
 ## INPUTS
 
