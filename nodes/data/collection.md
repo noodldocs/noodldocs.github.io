@@ -17,6 +17,9 @@ Enables or disables limiting the number of result fetched from the cloud store.
 **Limit**  
 Specifies the maximum number of **Models** that will be fetched from the cloud store.
 
+**Skip**  
+Specifies a number of *Models* that will be skipped when returning the result of the query. This is typically used together with *limit* to achieve pagination.
+
 **Filter**  
 The type of filter to choose, can be *Simple* or *JSON*. See below for more details.
 
@@ -124,6 +127,12 @@ An array of the items fetched from the cloud store.
 
 **Count**  
 The count of the retuned array from the cloud store.
+
+**First Item**  
+The first model in the result or *undefined* if there are no result. This is of *object* type, [Noodl.Object](/javascript-api/noodl-object.md)
+
+**First Item Id**  
+The *Id* of the first model or *undefined*.
 
 ### Events
 
