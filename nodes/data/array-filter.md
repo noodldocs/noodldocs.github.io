@@ -66,9 +66,6 @@ The filtered and sorted array.
 **Count**  
 The number of objects in the filtered array.
 
-**First Item**  
-The first object in the filtered array, or *undefined* if there are no items in the filtered array.
-
 **First Item Id**  
 The *Id* of the first object in the filtered array, or *undefined* if there are no items in the filtered array.
 
