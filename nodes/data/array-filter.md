@@ -8,14 +8,23 @@ This node will take an array of items as input and output a filtered version of 
 
 ### General
 
+**Enabled**  
+The filtering is enabled by default, if disabled the array will simply pass through unfiltered.
+
+**Items**  
+The array that should be filtered.
+
+### Limit
+
 **Use Limit**  
 Enables or disables limiting the number of objects in the outputted items array.
 
 **Limit**  
 Specift the maximum number of objects in the filtered output.
 
-**Items**  
-The array that should be filtered.
+**Skip**  
+Specift the number of objects to skip from the beginning of the filtered output.
+
 
 ### Actions
 
