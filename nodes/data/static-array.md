@@ -1,4 +1,4 @@
-# Static Data
+# Static Array
 
 Store static data to populate an [Array](nodes/data/array.md) with items.
 
