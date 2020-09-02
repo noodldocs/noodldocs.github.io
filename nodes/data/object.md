@@ -11,9 +11,6 @@ Stores any amount of properties and can be used standalone or together with [Arr
 **Id**  
 Set the _Id_ for this **Object**. All **Object** nodes with the same _Id_ will refer to the same data and have the same properties.
 
-**Object**  
-This input can be used *instead* of the Id input to specify the object this node acts on via reference. This inputs is of *object* type. [Noodl.Object](/javascript-api/noodl-object.md)
-
 ### Properties
 
 An **Object** node can have any amount of properties. Each property will get one input and output to set/get their current value.
@@ -40,9 +37,6 @@ Sending a signal to this input will generate a new object with a unique *Id* and
 
 **Id**  
 The _Id_ for this **Object** node.
-
-**Object**  
-A reference to the object that this nodes acts on. This can be used to pass the object via reference to other nodes that accept the *Object* type as input.
 
 ### Events
 
