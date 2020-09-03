@@ -2,10 +2,10 @@
 
 !> Note, this node is part of the _Mobile Web App Navigation_ module. You need to install that module to be able to use this node.
 
-This node is used to perform navigation on a **Navigation Stack**. Take a look at the [Navigation guide](/modules/mobile-web-app-nav/nav-guide.md) to learn more about navigation.
+This node is used to perform navigation on a **Navigation Stack**. Take a look at the [Navigation guide](/modules/webappnavigation/nav-guide.md) to learn more about navigation.
 
 <div class="ndl-images">
-    <img src="/modules/mobile-web-app-nav/guide/main-navigate.png" class="ndl-image med"></img>   
+    <img src="/modules/webappnavigation/guide/main-navigate.png" class="ndl-image med"></img>   
 </div>
 
 ## INPUTS
@@ -13,10 +13,10 @@ This node is used to perform navigation on a **Navigation Stack**. Take a look a
 ### General
 
 **Stack**  
-This is the identifier (name) of the stack where the navigation should be performed. _Default_ means the root screen stack. Otherwise it should be a name of a [Navigation Stack](/modules/mobile-web-app-nav/navigation-stack.md) node.
+This is the identifier (name) of the stack where the navigation should be performed. _Default_ means the root screen stack. Otherwise it should be a name of a [Navigation Stack](/modules/webappnavigation/navigation-stack.md) node.
 
 <div class="ndl-images">
-    <img src="/modules/mobile-web-app-nav/guide/choose-stack.png" class="ndl-image med"></img>   
+    <img src="/modules/webappnavigation/guide/choose-stack.png" class="ndl-image med"></img>   
 </div>
 
 **Target**  
@@ -52,7 +52,7 @@ Available for _Popup_ transitions. This indicates if the new top component shoul
 This is a timing curve that controls the delay, duration and animation ease of the transition.
 
 <div class="ndl-images">
-    <img src="/modules/mobile-web-app-nav/guide/transition-params.png" class="ndl-image med"></img>   
+    <img src="/modules/webappnavigation/guide/transition-params.png" class="ndl-image med"></img>   
 </div>
 
 ### Parameters
@@ -60,7 +60,7 @@ This is a timing curve that controls the delay, duration and animation ease of t
 These are the parameters that are passed to the new top component when the navigation is performed. Parameters are passed through a **Component Inputs** node to the target component.
 
 <div class="ndl-images">
-    <img src="/modules/mobile-web-app-nav/guide/nav-params.png" class="ndl-image small"></img>   
+    <img src="/modules/webappnavigation/guide/nav-params.png" class="ndl-image small"></img>   
 </div>
 
 ### Actions

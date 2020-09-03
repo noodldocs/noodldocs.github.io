@@ -16,7 +16,7 @@
   <br/>
 
 * Modules
-- [Mobile Web App Navigation](modules/mobile-web-app-nav/README.md)
+- [Mobile Web App Navigation](modules/webappnavigation/README.md)
 - [MQTT](modules/mqtt/README.md)
 - [User Management](modules/cloud-services-user-management/README.md)
 - [WebCamera](modules/webcamera/README.md)

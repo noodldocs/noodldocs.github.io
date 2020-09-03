@@ -122,33 +122,13 @@ The setup below is what you want:
   <button class="ndl-copy-nodes-button" onClick='copyJsonToClipboard({"nodes":[{"id":"888b0511-874c-dcc3-bf98-c98af68b48eb","type":"Group","x":-117.1255445807002,"y":283.08062013197235,"parameters":{"backgroundColor":"#FFFFFF"},"ports":[],"children":[{"id":"0cc2e328-1acb-a922-1cab-2e6d445626eb","type":"/Parts/Header","x":-97.1255445807002,"y":329.08062013197235,"parameters":{"Title":"New task"},"ports":[],"children":[]},{"id":"4d13e6a1-e7ae-436a-b7f6-326f5006606c","type":"Group","x":-97.1255445807002,"y":411.08062013197235,"parameters":{"paddingLeft":{"value":20,"unit":"px"},"paddingRight":{"value":20,"unit":"px"}},"ports":[],"children":[{"id":"62036bbf-2a01-1a60-a048-04bc01ae30b3","type":"Text Input","x":-77.1255445807002,"y":457.08062013197235,"parameters":{"sizeMode":"explicit","type":"textArea","fontFamily":"OpenSans-Regular.ttf","fontSize":{"value":20,"unit":"px"},"color":"#545454","marginBottom":{"value":10,"unit":"px"}},"ports":[],"children":[]},{"id":"eba9b191-edc5-8eeb-eb58-611e0e339118","type":"/Parts/Button","label":"Save","x":-77.1255445807002,"y":539.0806201319724,"parameters":{"Label":"Save","Margin Bottom":{"value":20,"unit":"px"}},"ports":[],"children":[]}]}]},{"id":"524acf1f-f107-40a9-ca9f-d6bb19623579","type":"PageStackNavigateBack","x":-377.8536376170447,"y":276.4973969970899,"parameters":{},"ports":[],"children":[]},{"id":"5621ce0b-d4eb-4627-634a-bcaf2f67a4ca","type":"DbModel","x":-377.0510202634721,"y":425.2504935647117,"parameters":{"$ndlCollectionName":"Tasks"},"ports":[],"children":[]},{"id":"4163ea1a-0200-d710-07b1-31b4421fc329","type":"Boolean","x":-379.8940457253206,"y":583.2489203796379,"parameters":{},"ports":[],"children":[]}],"connections":[{"fromId":"0cc2e328-1acb-a922-1cab-2e6d445626eb","fromProperty":"Close","toId":"524acf1f-f107-40a9-ca9f-d6bb19623579","toProperty":"navigate"},{"fromId":"62036bbf-2a01-1a60-a048-04bc01ae30b3","fromProperty":"onTextChanged","toId":"5621ce0b-d4eb-4627-634a-bcaf2f67a4ca","toProperty":"Text"},{"fromId":"4163ea1a-0200-d710-07b1-31b4421fc329","fromProperty":"savedValue","toId":"5621ce0b-d4eb-4627-634a-bcaf2f67a4ca","toProperty":"Completed"},{"fromId":"eba9b191-edc5-8eeb-eb58-611e0e339118","fromProperty":"Click","toId":"5621ce0b-d4eb-4627-634a-bcaf2f67a4ca","toProperty":"insert"},{"fromId":"5621ce0b-d4eb-4627-634a-bcaf2f67a4ca","fromProperty":"saved","toId":"524acf1f-f107-40a9-ca9f-d6bb19623579","toProperty":"navigate"}]})'></button>      
 </div>
 
-What happened here is that a new _Model_ was created and pushed to the cloud storage when the _Insert_ signal was received. But as you can see the _Task Items_ list does not update automatically to include the newly created model. New models that are created in cloud storage are not automatically sent to the client, instead we must query the collection again. This is a great place to use what we learned in the [events](/guides/events.md) guide.
+What happened here is that a new _Model_ was created and pushed to the cloud storage when the _Insert_ signal was received. When the model has been properly saved the *Saved* signal is emitted which is connected to a *Navigate Back* node that will take us back to the previous page.
 
-- In the _Tasks Screen_ component. Create a _Receive Event_ node that listens to the _Reload Tasks_ event channel.
-
-- Connect it to the _Fetch_ signal of the _Query Collection_ node.
-
-<div class="ndl-images">
-    <img src="/guides/models-and-collections/receive-reload.png" class="ndl-image large"></img>  
-</div>
-
-This will have the _Query Collection_ node fetch the models from the cloud storage and any newly created models will show up. Now make sure we send the event as well.
-
-- In the _New Task Screen_ component. Create a _Send Event_ node that will send on the _Reload Tasks_ channel.
-
-- Connect the _Saved_ signal from the _Model_ node to the _Send_ signal on the _Send Event_ node.
-
-<div class="ndl-images">
-    <img src="/guides/models-and-collections/send-reload.png" class="ndl-image large"></img>  
-</div>
-
-There you go, now you can create new task items and they will show up in the list. When the _Query Collection_ returns the new _Result_ that is passed to the _For Each_ node it will update to reflect the new models.
-
-?> You might wonder why the _Did mount_ signal is not sent when we navigate back to the _Tasks screen_ after creating a new model, thus forcing a _Fetch_ from the _Query Collection_. The reason is that the navigation module will keep pages alive so to be more performant when navigation. The _Did mount_ signal is only sent when a visual node is created and made visible.
+?> Note that when you add models to the cloud store they are not immediately added to the collection that is returned by *Query Collection*. You must explicitly *Fetch* the query again. As you can see when the *Did Mount* signal is emitted in the *Tasks screen* it is forwarded to the *Fetch* input so this is take care for us when we navigate back to that screen and it becomes visible again.
 
 Now let's move on to editing.
 
-First we need to look at the **Task Item** component, here you can see that there is a Navigation node that navigates to the **Edit Task Screen** when the item is clicked. The **Id** of the task item is also passed as a navigation parameter. Just like **Objects** the _Id_ of a Model uniquely identifies it, so to make sure we edit the right task that is passed and will be available as a component input in the **Edit Task Screen** component. To learn more about how navigation works take a look at the [navigation guide](/modules/mobile-web-app-nav/nav-guide).
+First we need to look at the **Task Item** component, here you can see that there is a Navigation node that navigates to the **Edit Task Screen** when the item is clicked. The **Id** of the task item is also passed as a navigation parameter. Just like **Objects** the _Id_ of a Model uniquely identifies it, so to make sure we edit the right task that is passed and will be available as a component input in the **Edit Task Screen** component. To learn more about how navigation works take a look at the [navigation guide](/modules/webappnavigation/nav-guide).
 
 <div class="ndl-images">
     <img src="/guides/models-and-collections/pass-task-id.png" class="ndl-image med"></img>  
