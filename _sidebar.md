@@ -12,6 +12,7 @@
 * [Variables and Objects](guides/variables-and-objects.md)
 * [Arrays](guides/arrays.md)
 * [Models and Collections](guides/models-and-collections.md)
+* [Actions and logic](guides/actions-and-logic.md)
 * [Javascript](guides/javascript.md)
   <br/>
 
