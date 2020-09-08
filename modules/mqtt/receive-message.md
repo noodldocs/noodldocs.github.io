@@ -1,4 +1,4 @@
-# Receive Message
+# Receive Message <!-- {docsify-ignore-all} -->
 
 **Receive Message** nodes are used to receive messages sent over MQTT, by a [**Send Message**](modules/MQTT/send-message.md) node for example. Messages can be sent across devices and
 be used for inter-device communication and IoT. The **Receive Message** node subscribes to an MQTT topic and receives any message and payload published to that topic.

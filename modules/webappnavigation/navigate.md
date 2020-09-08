@@ -68,6 +68,6 @@ These are the parameters that are passed to the new top component when the navig
 **Navigate**  
 A signal input. When a signal is received the navigation will be performed.
 
-## OUTPUTS
+## OUTPUTS <!-- {docsify-ignore} -->
 
 This node has no outputs.
