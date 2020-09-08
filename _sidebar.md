@@ -17,7 +17,7 @@
 
 * Modules
 
-<!---
+<!--- Old way
 - [Mobile Web App Navigation](modules/webappnavigation/README.md)
 - [MQTT](modules/mqtt/README.md)
 - [User Management](modules/cloud-services-user-management/README.md)
@@ -25,7 +25,7 @@
 - [WebRouter](modules/webrouter/README.md)
 - [WebSocket](modules/websocket/README.md)
 
-- [Mobile Navigation](modules/mobile-web-app-nav/menu.md)
+
 --->
 
 - [Mobile Web App Navigation](modules/webappnavigation/README.md)
@@ -80,12 +80,6 @@
   - [WebSocket](modules/websocket/websocket.md)
     <br/>
 
-<!---
-* [MQTT](modules/mqtt/README.md)
-* [WebCamera](modules/webcamera/README.md)
-* [WebRouter](modules/webrouter/README.md)
-* [WebSocket](modules/websocket/README.md)
---->
   <br/>
 
 - Javascript API
