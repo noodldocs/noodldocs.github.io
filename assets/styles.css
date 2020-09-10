@@ -39,7 +39,7 @@ a {
 }
 
 .sidebar ul li {
-  margin-left: 50px;
+  margin-left: 20px;
   font-size: 20px;
   line-height: 1.2;
 }
@@ -49,12 +49,44 @@ a {
   line-height: 1.2;
 }
 
-.sidebar ul li a:hover {
-  color: var(--theme-color);
+.sidebar ul li ul li a {
+  margin-left: -25px;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.modules-header {
+  margin-top: 15px;
+  margin-left: 0px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.modules-subheader {
+  margin-left: -25px;
+  margin-top: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.2;
 }
 
 .app-sub-sidebar li:before {
   display: none;
+}
+
+.sidebar ul li a:hover {
+  color: var(--theme-color);
+}
+
+.sidebar ul li a:active {
+  color: var(--theme-color);
+}
+
+.sidebar ul li.active > a {
+  border-right: 2px solid;
+  color: var(--theme-color);
+  font-weight: 600;
 }
 
 .sidebar .search .clear-button {
@@ -129,7 +161,7 @@ body .sidebar-toggle span:nth-child(3) {
 /****** Markdown General ******/
 .markdown-section {
   padding: 30px 30px 40px;
-  max-width: 600px;
+  max-width: 768px;
   font-size: 18px;
 }
 
@@ -313,4 +345,8 @@ body .sidebar-toggle span:nth-child(3) {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
+}
+
+.johan-test {
+  font-weight: bold;
 }

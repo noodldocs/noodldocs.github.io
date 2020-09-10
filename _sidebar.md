@@ -1,5 +1,4 @@
 - Getting Started
-
 - [Introduction](README.md)
 - [Video lessons](video-lessons.md)
   <br/>
@@ -17,12 +16,70 @@
   <br/>
 
 * Modules
+
+<!--- Old way
 - [Mobile Web App Navigation](modules/webappnavigation/README.md)
 - [MQTT](modules/mqtt/README.md)
 - [User Management](modules/cloud-services-user-management/README.md)
 - [WebCamera](modules/webcamera/README.md)
 - [WebRouter](modules/webrouter/README.md)
 - [WebSocket](modules/websocket/README.md)
+
+
+--->
+
+- [Mobile Web App Navigation](modules/webappnavigation/README.md)
+  - <div class="modules-subheader">Guides</div>
+  - [Using the Mobile Web App Navigation nodes](modules/webappnavigation/nav-guide.md)
+  - <div class="modules-subheader">Nodes</div>
+  - [Navigation Stack](modules/webappnavigation/navigation-stack.md)
+  - [Navigate](modules/webappnavigation/navigate.md)
+  - [Navigate Back](modules/webappnavigation/navigate-back.md)
+    </br>
+
+* [MQTT](modules/mqtt/README.md)
+  - <div class="modules-subheader">Guides</div>
+  - [Using the MQTT nodes](modules/mqtt/mqtt-guide.md)
+  - <div class="modules-subheader">Nodes</div>
+  - [Send Message](modules/mqtt/send-message.md)
+  - [Receive Message](modules/mqtt/receive-message.md)
+    <br/>
+
+- [User Management](modules/cloud-services-user-management/README.md)
+  - <div class="modules-subheader">Guides</div>
+  - [User managment guide](modules/cloud-services-user-management/user-management-guide.md)
+  - <div class="modules-subheader">Nodes</div>
+  - [Sign Up](modules/cloud-services-user-management/signup.md)
+  - [Log In](modules/cloud-services-user-management/login.md)
+  - [Log Out](modules/cloud-services-user-management/logout.md)
+  - [User](modules/cloud-services-user-management/user.md)
+    <br/>
+
+* [WebCamera](modules/webcamera/README.md)
+  - <div class="modules-subheader">Guides</div>
+  - [Using the WebCamera](modules/webcamera/webcamera-guide.md)
+  - <div class="modules-subheader">Nodes</div>
+  - [Web Camera](modules/webcamera/webcamera.md)
+    <br/>
+
+- [WebRouter](modules/webrouter/README.md)
+
+  - <div class="modules-subheader">Guides</div>
+  - [Using the WebRouter](modules/webrouter/webrouter-guide.md)
+  - <div class="modules-subheader">Nodes</div>
+  - [Web Router](modules/webrouter/web-router.md)
+  - [WebRouterNavigate](modules/webrouter/webrouternavigate.md)
+  - [WebRouterShowPopup](modules/webrouter/webroutershowpopup.md)
+  - [WebRouterClosePopup](modules/webrouter/webrouterclosepopup.md)
+    <br/>
+
+- [WebSocket](modules/websocket/README.md)
+  - <div class="modules-subheader">Guides</div>
+  - [Using the WebSocket](modules/websocket/websocket-guide.md)
+  - <div class="modules-subheader">Nodes</div>
+  - [WebSocket](modules/websocket/websocket.md)
+    <br/>
+
   <br/>
 
 - Javascript API

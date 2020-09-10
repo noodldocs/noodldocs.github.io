@@ -1,4 +1,4 @@
-# Send Message
+# Send Message <!-- {docsify-ignore-all} -->
 
 **Send Message** nodes are used to send a message over MQTT, to another device for example. All devices that connect to the editor will
 use the same MQTT broker and thus messages can be sent across devices. The **Send Message** node uses topics to specify which receivers should get the messages.
