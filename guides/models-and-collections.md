@@ -31,34 +31,45 @@ We are going to use collections to store the data in the cloud. But to make coll
     <img src="/guides/models-and-collections/enable-cloud-services.gif" class="ndl-image med"></img>  
 </div>
 
-Now you can open the collections panel from the toolbar to the left in the editor.
+Now you can open the dashboard for the cloud services that this project uses with the button in the cloud services popup. In the dashboard you will be able to view and edit the data in your models and collections.
 
 <div class="ndl-images">
-    <img src="/guides/models-and-collections/database-panel.png" class="ndl-image med"></img>   
+    <img src="/guides/models-and-collections/open-dashboard.png" class="ndl-image med"></img>   
 </div>
 
-At the bottom of the panel you can create a new **Collection** call it _Tasks_. The name you give your collection should specify what type of object it will contain so it's easier to read your Noodlings later. Also you cannot use spaces in your collection names, only alphanumeric characters and underscore.
+Now you can create a new **Collection** by first click the *Create a class* button. The term *Class* and *Collection* generally refer to the same thing, all models in a collection have the same *class* that is they model the same type of data.
 
 <div class="ndl-images">
-    <img src="/guides/models-and-collections/create-new-collection.png" class="ndl-image med"></img>   
+    <img src="/guides/models-and-collections/create-class.png" class="ndl-image med"></img>   
 </div>
 
-Now that we have our Collection we need to specify the schema for the models in the collection, a schema is simply a list of properties with types that all models in the collection share. Out _Tasks_ models will have two properties, a _Text_ with the task content and a _Completed_ that will store if the task is done or not. Open the collection by clicking on it and on the tab labeled _Schema_. Then create two properties.
-
-- _Text_ This property should be of type _String_, it will contain the text of the task.
-- _Completed_ This property should be of type _Boolean_ so it can be either _true_ for when a task has been marked completed, and _false_ if not.
+In this case we are going to create a *Tasks* model, so simply give it the name *Tasks*. You can use any name you want but typically choose one that is descriptive of the type of data you intend to store in the models. Finally click *Create class*.
 
 <div class="ndl-images">
-    <img src="/guides/models-and-collections/schema.gif" class="ndl-image large"></img>   
+    <img src="/guides/models-and-collections/create-class-2.png" class="ndl-image med"></img>   
 </div>
 
-With the schema in place we can add some test data to the collection, this is done in the other tab labeled _Data_. Create a Model with the attributes _Text_ and _Completed_. When you add models to a collection you use JSON which is great to [learn](https://www.w3schools.com/js/js_json_intro.asp) if you don't already know it.
+Now we have create our first Collection, you can think of a Collection as a spreadsheet and the models are the rows of the sheet. Now we need to specify the columns and for each column we must specify a type. The columns of the sheet will become the properties of the *Models*. Out _Tasks_ models will have two properties, a _Text_ with the task content and a _Completed_ that will store if the task is done or not. First find the *Add a new column* button and click it.
 
 <div class="ndl-images">
-    <img src="/guides/models-and-collections/add-model.gif" class="ndl-image large"></img>   
+    <img src="/guides/models-and-collections/add-column.png" class="ndl-image med"></img>   
 </div>
 
-Go ahead and add a few more models to the collection in the same way. Next up we will replace the static **Task Item** components with dynamically created ones, just like in the [For Each](/guides/for-each.md) guide. The setup below is what you want:
+You need to specify a type and a name for the column. The type should be **String** and the name should be **Text**. When completed hit the *Add column* button.
+
+<div class="ndl-images">
+    <img src="/guides/models-and-collections/add-column-2.png" class="ndl-image med"></img>   
+</div>
+
+Repeat this for the *Completed* column as well, this column should have the *Boolean* type. 
+
+With the two columns in place lets go ahead and add some test data. Use the *Add row* button to create a new row / model, or the small *plus* icon at the bottom under the last row. Go ahead and add a few more models to the collection in the same way.
+
+<div class="ndl-images">
+    <img src="/guides/models-and-collections/example-tasks.png" class="ndl-image large"></img>   
+</div>
+
+Next we are going to dive back into the **Tasks Screen** component. We will replace the static **Task Item** components with dynamically created ones, just like in the [For Each](/guides/for-each.md) guide. The setup below is what you want:
 
 <div class="ndl-images">
     <img src="/guides/models-and-collections/collection-and-for-each.png" class="ndl-image large"></img>  
@@ -68,29 +79,29 @@ Go ahead and add a few more models to the collection in the same way. Next up we
 - Create a **Query Collection** node and set the _Collection Name_ property to _Tasks_. This property is used to select which collection this node will access. If you create more collections they will show up here. This node is used to return all or some of the models in the collection.
 
 <div class="ndl-images">
-    <img src="/guides/models-and-collections/collection-name.png" class="ndl-image small"></img>   
+    <img src="/guides/models-and-collections/collection-name.png" class="ndl-image med"></img>   
 </div>
 
 - Next, create a **For Each** and replace the three **Task Item** components with that single node. Make sure you select the _Task Item_ component as the template component.
 
 <div class="ndl-images">
-    <img src="/guides/models-and-collections/for-each-template.png" class="ndl-image small"></img>   
+    <img src="/guides/models-and-collections/for-each-template.png" class="ndl-image med"></img>   
 </div>
 
 - Connect the **Did mount** output of the top group to the **Fetch** input of the _Query Collection_ node. The _Did mount_ signal is triggered when these nodes become visible and when that happens we want the _Query Collection_ to fetch all models of the collection from the cloud storage. We need to send the _Fetch_ signal when we want to retrieve the content of the collection it is not done automatically just by setting the collection name.
 
-- Finally connect the **Items** output of the Collection node to the **Items** input of the **For Each**. This will have the _For Each_ node replicate the _Task Item_ component once for every model in the Tasks collection.
+- Finally connect the **Result** output of the **Query Collection** node to the **Items** input of the **For Each**. This will have the _For Each_ node replicate the _Task Item_ component once for every model in the Tasks collection.
 
-You will need to refresh in order for the **Did mount** signal to be send so that the Collection node will fetch the models. This will result in one **Task Item** for every model in the collection, the _Text_ you put in your data items should show up in the list.
+You will need to refresh in order for the **Did mount** signal to be send so that the **Query Collection** node will fetch the models. This will result in one **Task Item** for every model in the collection, the _Text_ you put in your data items should show up in the list.
 
 <div class="ndl-images">
     <img src="/guides/models-and-collections/connected-tasks.png" class="ndl-image med"></img>   
 </div>
 
-Let's review what happened. Each item you create in the collection data panel will become one **Model** in Noodl containing all the attributes you entered. The _For Each_ node will duplicate the **Task Item** component for every model in the collection and the attribute _Text_ will be provided as a **Component Input** to the task items. In that component it is connected to the text node.
+Let's review what happened. Each row you created in the collection will become one **Model** in Noodl containing all the properties you entered. The _For Each_ node will duplicate the **Task Item** component for every model in the collection and the property _Text_ will be provided as a **Component Input** to the task items. In that component it is connected to the text node.
 
 <div class="ndl-images">
-    <img src="/guides/models-and-collections/text-attr-in-datapanel.png" class="ndl-image large"></img>   
+    <img src="/guides/models-and-collections/example-tasks-2.png" class="ndl-image large"></img>   
 </div>
 
 <div class="ndl-images">

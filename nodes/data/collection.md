@@ -21,7 +21,7 @@ Specifies the maximum number of **Models** that will be fetched from the cloud s
 Specifies a number of *Models* that will be skipped when returning the result of the query. This is typically used together with *limit* to achieve pagination.
 
 **Filter**  
-The type of filter to choose, can be *Simple* or *JSON*. See below for more details.
+The type of filter to choose, can be *Simple* or *Advanced*. See below for more details.
 
 ### Filter
 
@@ -51,61 +51,110 @@ The value used to test against in the filter operation.
 
 ![](collection-filter-2.png ':class=img-size-m')
 
-## JSON Filters
-If you choose *JSON* as filter type you will get the option to specify a filter in a JSON format. This is done using the following syntax:
+## Advanced filters
+If you choose *Advanced* as filter type you will get the option to specify a filter script. This is regular javascript code but you need to end the script by calling the *where* function with the filter definition provided. This is done using the following syntax:
 
 ```javascript
-filter( { Completed:{$eq:true} } )
+where({ 
+    Completed:{equalTo:true} 
+})
 ```
 
 The above filter will return all models in the collection that has the *Completed* property *true*. You can select from a number of operators:
 
-* **$lt**	Less Than
-* **$lte**	Less Than Or Equal To
-* **$gt**	Greater Than
-* **$gte**	Greater Than Or Equal To
-* **$ne**	Not Equal To
-* **$in**	Contained In
-* **$nin**	Not Contained in
-* **$exists**	A value is set for the key
+* **lessThan**	Less Than
+* **lessThanOrEqualTo**	Less Than Or Equal To
+* **greaterThan**	Greater Than
+* **greaterThanOrEqualTo**	Greater Than Or Equal To
+* **notEqualtTo**	Not Equal To
+* **containedIn**	Contained In
+* **notContainedIn**	Not Contained in
+* **exists**	A value is set for the key
 
 For instance, to filter on if a certain property (in this example Letter) is one of many possible values:
 
 ```javascript
-filter( { Letter:{$in:['A','B','C']} } )
+where({ 
+    Letter:{containedIn:['A','B','C']} 
+})
 ```
 
 Or to filter all models that have a value set for a specific property:
 
 ```javascript
-filter( { Letter:{$exists:true} } )
+where({ 
+    Letter:{exists:true}
+})
 ```
 
-You can also combine these filters into expressions using **$and** and **$or**, for instance:
+You can also combine these filters into expressions using **and** and **or**, for instance:
 
 ```javascript
-filter( { $and: [ {ZipCode:{$exists:true}}, {Score:{$gte:10}} ] } )
+where({ 
+    and: [ 
+        {ZipCode:{exists:true}}, 
+        {Score:{greaterThan:10}} 
+    ]
+})
 ```
 
-You can also use the **$regex** operator to filter by regular expression, this is generally slow and not recommended for large sets. Learn more [here](https://docs.mongodb.com/manual/reference/operator/query/regex/)
+You can also use the **matchesRegex** operator to filter by regular expression, this is generally slow and not recommended for large sets. Learn more [here](https://docs.mongodb.com/manual/reference/operator/query/regex/)
 
 ```javascript
-filter( { SomeString:{$regex:"pattern", $options:'i'} } )
+where({ 
+    SomeString:{matchesRegex:"pattern", options:'i'} 
+})
 ```
 
-The filter JSON is a javascript function so you can provide javascript code if you like:
+As mentioned above the filter script is a javascript function so you can provide javascript code if you like:
 
 ```javascript
-filter( { SomeDate:{$eq:(new Date()).toISOString()} } )
+where({ 
+    SomeDate:{equalTo:(new Date()).toISOString()} 
+})
 ```
 
-You can also specify variables instead of explicitly specifying the filter values, this will create an input port on the *Query Collection* node that can then be connected to. You specify variables using the same $ syntax, you cannot use any of the keyword and it must be a javascript compatile name. The filter below will create an input called MyStringInput.
+You can also specify variables instead of explicitly specifying the filter values, this will create an input port on the *Query Collection* node that can then be connected to. You specify variables using the $ syntax, it must be a javascript compatile name. The filter below will create an input called MyStringInput.
 
 ```javascript
-filter( { SomeString:{$eq:$MyStringInput} } )
+where({ 
+    SomeString:{equalTo:$MyStringInput} 
+})
+```
+
+If you need to match the *Id* of models in the collection you need to use the special operation:
+
+```javascript
+where({ 
+    idEqualTo:$TheModelId
+})
+```
+
+In the above filter you can connect a *Model Id* output to the *TheModelId* parameter to fetch just one specific object. You can also request a set of object based on their Id.
+
+```javascript
+where({ 
+    idContainedIn:[$FirstObjectId, $SecondObjectId]
+})
+```
+
+Some properties in your Models can be of *Pointer* type, that means that they reference another object with a specific *Id* and *Collection*. If you want to filter out models that point to a specific model, use this syntax. Let's say you have a collection of *Post* models, each have a set of *Comment* models where each *Comment* points back to it's owning *Post* via the *Owner* property. The filter below will find all *Comments* for a *Post* given that you provide the post id.
+
+```javascript
+where({ 
+    Owner:{pointsTo: $MyPostId }
+})
 ```
 
 Don't forget that you need to send a signal to *Fetch* to perform a new fetch with a new filter if any of the filter inputs have changed.
+
+Models also support many-to-many relationships via *Relations*, check out the guide [here](/guides/relations.md) for more information. You can filter our all models in the collection you are querying that are related to a specific model via a *Relation* with a given key using:
+
+```javascript
+where({ 
+    relatedTo:{id: $MyObjectWithARelation, key: "the-relation-key"}
+})
+```
 
 ### Sort
 
