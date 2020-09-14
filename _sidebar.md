@@ -118,6 +118,7 @@
 
 - [Array](/nodes/data/array.md)
 - [Array Filter](/nodes/data/array-filter.md)
+- [Array Map](/nodes/data/array-map.md)
 - [Boolean](/nodes/data/boolean.md)
 - [Query Collection](/nodes/data/collection.md)
 - [Color](/nodes/data/color.md)
