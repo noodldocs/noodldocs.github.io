@@ -12,6 +12,7 @@
 * [Arrays](guides/arrays.md)
 * [Models and Collections](guides/models-and-collections.md)
 * [Actions and logic](guides/actions-and-logic.md)
+* [Model relationships](guides/relations.md)
 * [Javascript](guides/javascript.md)
   <br/>
 
