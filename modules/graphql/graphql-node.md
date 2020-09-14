@@ -2,7 +2,11 @@
 
 This node enables you to connect to GraphQL based API:s in a quick and easy way.
 
-!> Note: To use the GraphQL node you first need to add the GraphQL module to your project.
+!> Note: To use the GraphQL node you first need to [add](modules/graphql/graphql-guide.md) the GraphQL module to your project.
+
+<div class="ndl-images">
+    <img src="/modules/graphql/graphql-guide-img/graphql-query-node.png" class="ndl-image medium"></img>  
+</div>
 
 ## INPUTS
 
