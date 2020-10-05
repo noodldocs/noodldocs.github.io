@@ -31,7 +31,7 @@
 
 - [Mobile Web App Navigation](modules/webappnavigation/README.md)
   - <div class="modules-subheader">Guides</div>
-  - [Using the Mobile Web App Navigation nodes](modules/webappnavigation/nav-guide.md)
+  - [Navigation](modules/webappnavigation/nav-guide.md)
   - <div class="modules-subheader">Nodes</div>
   - [Navigation Stack](modules/webappnavigation/navigation-stack.md)
   - [Navigate](modules/webappnavigation/navigate.md)

@@ -22,7 +22,7 @@ We have a short example that shows a simple Master / Detail navigation pattern, 
 
 <div class="ndl-images">
     <img src="/modules/webappnavigation/guide/park-demo.gif" class="ndl-image small"></img>   
-    <button class="ndl-import-button" onClick='importIntoNoodl("guides/navigation/project.zip")'></button>
+    <button class="ndl-import-button" onClick='importIntoNoodl("modules/webappnavigation/guide/project.zip")'></button>
 </div>
 
 Using the **Navigation** node is pretty straight forward. Look at the **Main** component in the example project. Here the navigation is peformed when one of the items in the list is clicked.
