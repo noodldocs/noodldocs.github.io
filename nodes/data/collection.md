@@ -51,6 +51,14 @@ The value used to test against in the filter operation.
 
 ![](collection-filter-2.png ':class=img-size-m')
 
+### Sort
+
+By default the **Query Collection** does not return the result of a fetch sorted. You can specify sorting. Like filters you add which properties you want to sort on.
+
+For each property you can choose the sorting order.
+
+![](collection-sort.png ':class=img-size-m')
+
 ## Advanced filters
 If you choose *Advanced* as filter type you will get the option to specify a filter script. This is regular javascript code but you need to end the script by calling the *where* function with the filter definition provided. This is done using the following syntax:
 
@@ -146,6 +154,14 @@ where({
 })
 ```
 
+You can also provide an array if you want to find *Comments* that are related to a set of *Post* models.
+
+```javascript
+where({ 
+    Owner:{pointsTo: [$MyFirstPostId, $MySecondPost] }
+})
+```
+
 Don't forget that you need to send a signal to *Fetch* to perform a new fetch with a new filter if any of the filter inputs have changed.
 
 Models also support many-to-many relationships via *Relations*, check out the guide [here](/guides/relations.md) for more information. You can filter our all models in the collection you are querying that are related to a specific model via a *Relation* with a given key using:
@@ -156,13 +172,22 @@ where({
 })
 ```
 
-### Sort
+### Sorting in advanced filters
+To specify the sort order when using advanced filter you run a function called *sort* in the filter script.
 
-By default the **Query Collection** does not return the result of a fetch sorted. You can specify sorting. Like filters you add which properties you want to sort on.
+```javascript
+where({ 
+    // You where filter here
+})
 
-For each property you can choose the sorting order.
+sort(['createdAt'])
+```
 
-![](collection-sort.png ':class=img-size-m')
+The sort function takes an array with strings specifying the names of the properties you want to sort by. You can prefix the property name with "-" to specify that you want to sort in descending order instead of the default ascending order.
+
+```javascript
+sort(['-Age','createdAt'])
+```
 
 ## OUTPUTS
 
@@ -176,9 +201,6 @@ An array of the items fetched from the cloud store.
 
 **Count**  
 The count of the retuned array from the cloud store.
-
-**First Item**  
-The first model in the result or *undefined* if there are no result. This is of *object* type, [Noodl.Object](/javascript-api/noodl-object.md)
 
 **First Item Id**  
 The *Id* of the first model or *undefined*.
