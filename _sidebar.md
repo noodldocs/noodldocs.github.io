@@ -66,19 +66,28 @@
 - [WebRouter](modules/webrouter/README.md)
 
   - <div class="modules-subheader">Guides</div>
-  - [Using the WebRouter](modules/webrouter/webrouter-guide.md)
+  - [Using the WebRouter](modules/webrouter/guide/webrouter-guide.md)
   - <div class="modules-subheader">Nodes</div>
-  - [Web Router](modules/webrouter/web-router.md)
-  - [WebRouterNavigate](modules/webrouter/webrouternavigate.md)
-  - [WebRouterShowPopup](modules/webrouter/webroutershowpopup.md)
-  - [WebRouterClosePopup](modules/webrouter/webrouterclosepopup.md)
+  - [Web Router](modules/webrouter/nodes/web-router.md)
+  - [WebRouterNavigate](modules/webrouter/nodes/webrouternavigate.md)
+  - [WebRouterShowPopup](modules/webrouter/nodes/webroutershowpopup.md)
+  - [WebRouterClosePopup](modules/webrouter/nodes/webrouterclosepopup.md)
     <br/>
 
 - [WebSocket](modules/websocket/README.md)
+
   - <div class="modules-subheader">Guides</div>
   - [Using the WebSocket](modules/websocket/websocket-guide.md)
   - <div class="modules-subheader">Nodes</div>
   - [WebSocket](modules/websocket/websocket.md)
+    <br/>
+
+- [GraphQL](modules/graphql/README.md)
+
+  - <div class="modules-subheader">Guides</div>
+  - [Using the GraphQL node](modules/graphql/graphql-guide.md)
+  - <div class="modules-subheader">Nodes</div>
+  - [GraphQL](modules/graphql/graphql-node.md.md)
     <br/>
 
   <br/>
