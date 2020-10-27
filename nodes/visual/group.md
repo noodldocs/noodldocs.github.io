@@ -162,6 +162,11 @@ Specifes the X position, within this node, that will be the center for rotation 
 **Transform Origin Y**  
 Specifes the Y position, within this node, that will be the center for rotation and scale. By default it is the center of the node (i.e. 50%) but you can specify an arbitrary value in either percentage of the node's height or explicitly in pixels.
 
+### Focus
+
+**Focus**  
+Focuses this group. Will trigger the _Focused_ output on this group, as well as _Focused Lost_ on other groups that now lost focus.
+
 ### Other
 
 **Position**  
@@ -250,3 +255,11 @@ Emitted when the mouse enters the node.
 
 **Hover End**  
 Emitted when the mouse leaves the node.
+
+### Focus
+
+**Focused**  
+Emitted when the group, or one if its descendants, is clicked, or if the _Focused_ input is triggered.
+
+**Focus Lost**  
+Emitted when this group had focus and another group gained focus. Focus is only lost if the new focused group is not a descendant.
