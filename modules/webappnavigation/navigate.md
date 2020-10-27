@@ -52,7 +52,7 @@ Adds a overlay to the current top with the color #000000. Only available for _Pu
 The maximum opacity of the overlay. It starts at `0` and animates to this value. `0` disables it, and `1` makes the overlay animate to 100% opacity. Only available for _Push_ transitions.
 
 **Fade In**  
-Available for _Popup_ transitions. This indicates if the new top component should fade in our not during the transition.
+Available for _Popup_ transitions. This indicates if the new top component should fade in ou not during the transition.
 
 **Timing**  
 This is a timing curve that controls the delay, duration and animation ease of the transition.
