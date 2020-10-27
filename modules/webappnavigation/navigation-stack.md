@@ -34,6 +34,12 @@ This property is used to completely remove the node from the DOM. If this proper
 
 ### Other
 
+**Top Page Name**  
+The name of the Page component that's currently on top of the stack. E.g. `/Pages/My Page`. Useful in combination with a [String Mapper](/nodes/utilities/string-mapper.md) to map to a title in a header, as well as for debugging or other logic.
+
+**Stack depth**  
+How many pages there currently are in the stack. The [Navigate](/modules/webappnavigation/navigate.md) node will add one page to the stack, and [Navigate Back](/modules/webappnavigation/navigate-back.md) removes the top page from the stack.
+
 **Child Index**  
 The place this node has in relation to its parent. E.g. if a **Group** has three children, then the first child will have _Child Index_ 0, the second child will have _Child Index_ 1, and so on.
 

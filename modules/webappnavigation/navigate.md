@@ -45,7 +45,13 @@ This is available if the _Direction_ is set to _In_ or _Out_ and specifies the a
 **Crossfade**  
 If enabled the target will fade in and the current top fade out. Only available for _Push_ transitions.
 
-**Face**  
+**Dark Overlay**  
+Adds a overlay to the current top with the color #000000. Only available for _Push_ transitions.
+
+**Dark Overlay Amount**  
+The maximum opacity of the overlay. It starts at `0` and animates to this value. `0` disables it, and `1` makes the overlay animate to 100% opacity. Only available for _Push_ transitions.
+
+**Fade In**  
 Available for _Popup_ transitions. This indicates if the new top component should fade in our not during the transition.
 
 **Timing**  
