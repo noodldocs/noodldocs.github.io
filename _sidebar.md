@@ -121,6 +121,8 @@
 - Component Utilities
 - [Component Inputs](nodes/componentutils/component-inputs.md)
 - [Component Outputs](nodes/componentutils/component-outputs.md)
+- [Component State](nodes/componentutils/component-state.md)
+- [Parent Component State](nodes/componentutils/parent-component-state.md)
   <br/>
 
 - Data

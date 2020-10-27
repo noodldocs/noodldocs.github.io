@@ -1,0 +1,7 @@
+# PARENT COMPONENT STATE
+
+![](parent-component-state.png ':class=img-size-m')
+
+Parent Component State is always used in combination with an [Component State](/nodes/componentutils/component-state.md). A Parent Component State will search upwards in the component tree until it finds a Component State node and mirror that node. Any change being done to one node will be reflected in the other nodes. Multiple Parent Component State nodes in the same component will always mirror the same Component State.
+
+The inputs and outputs are the same as [Component State](/nodes/componentutils/component-state.md), with the exception of the **Start Value** inputs that only exist on the Component State node.
