@@ -2,7 +2,7 @@
 
 **`Noodl.Array.get(id)`**  
 Returns the array with the specified Id. A newly created empty array will be
-returned if the Id is not previously used.
+returned if the Id is not previously used. If no id is provided, a new array with a unique id will be generated.
 
 **`Noodl.Array.exists(id)`**  
 Returns `true` if an array with the specified Id exists,
