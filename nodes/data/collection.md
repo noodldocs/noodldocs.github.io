@@ -130,6 +130,25 @@ where({
 })
 ```
 
+You can also do text search in strings. This will create an index in the database and text search only works on one property so you have to choose wisely. Also text search matches whole words and must be the first filter in an *and* or *or* sequence.
+
+```javascript
+where({ 
+    SomeString:{text:{search:$MyStringInput}}
+})
+```
+
+You can also toggle case sensitivity for text searches.
+
+```javascript
+where({ 
+    SomeString:{text:{search:{
+        term:$MyStringInput,
+        caseSensitive:true
+    }}}
+})
+```
+
 If you need to match the *Id* of models in the collection you need to use the special operation:
 
 ```javascript
