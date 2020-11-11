@@ -18,9 +18,6 @@ Holds a Color that can be changed via inputs.
 [Component Children](./component-children)
 Used in components to indicate where children will end up when this component is used in a visual tree.
 
-[Device Orientation](./device-orientation)
-Used to detect the device orientation, will output signals on orientation change.
-
 [Drag](./drag)
 This node can be used to create mouse and touch drag behaviours.
 

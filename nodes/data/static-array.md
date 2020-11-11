@@ -40,5 +40,5 @@ Example:
 ## OUTPUTS
 
 **Items**  
-A `Noodl.Array` object that can be connected to e.g. an [Array](nodes/data/array.md), [Javascript](nodes/standard/javascript.md) or [For Each](nodes/data/for-each.md).
+A `Noodl.Array` object that can be connected to e.g. an [Array](nodes/data/array.md), [Javascript](guides/javascript.md) or [For Each](nodes/data/for-each.md).
 

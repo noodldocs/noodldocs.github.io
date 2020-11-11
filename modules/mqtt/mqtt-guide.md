@@ -95,7 +95,7 @@ Each group gets its own topic which is dynamically created using a _{}_ construc
     <img src="/modules/mqtt/mqtt-guide-img/mqtt-guide10.png" class="ndl-image medium"></img>  
 </div>
 
-There is also a **Receive Message** node that each group uses to subscribe to only its group messages. When they receive a message a [**Transiton**](nodes/standard/transition.md) node triggers an animation of the opacity of the **Text** node, causing it to flash in the circle.
+There is also a **Receive Message** node that each group uses to subscribe to only its group messages. When they receive a message a [**Transiton**](nodes/animation/transition.md) node triggers an animation of the opacity of the **Text** node, causing it to flash in the circle.
 
  <div class="ndl-images">
     <img src="/modules/mqtt/mqtt-guide-img/mqtt-guide11.png" class="ndl-image large"></img>
