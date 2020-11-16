@@ -99,6 +99,12 @@
 - [Events](javascript-api/sending-and-receiving-events.md)
 - [Object](javascript-api/noodl-object.md)
   <br/>
+
+- Javascript Examples
+
+- [Pointer position](javascript-examples/pointer-position.md)
+  <br/>
+
 - Extending
 
 - [Introduction](extending/README.md)
