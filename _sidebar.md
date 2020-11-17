@@ -103,6 +103,7 @@
 - Javascript Examples
 
 - [Pointer position](javascript-examples/pointer-position.md)
+- [Get DOM element](javascript-examples/get-dom-element.md)
   <br/>
 
 - Extending
