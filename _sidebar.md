@@ -87,7 +87,15 @@
   - <div class="modules-subheader">Guides</div>
   - [Using the GraphQL node](modules/graphql/graphql-guide.md)
   - <div class="modules-subheader">Nodes</div>
-  - [GraphQL](modules/graphql/graphql-node.md.md)
+  - [GraphQL](modules/graphql/graphql-node.md)
+    <br/>
+
+- [Markdown](modules/markdown/README.md)
+
+  - <div class="modules-subheader">Guides</div>
+  - [Using the Markdown node](modules/markdown/markdown-guide.md)
+  - <div class="modules-subheader">Nodes</div>
+  - [Markdown](modules/markdown/markdown-node.md)
     <br/>
 
   <br/>
