@@ -31,6 +31,9 @@ An Component State can have any amount of properties. Each property will get one
 **Changed**  
 Signal when any of the properties have changed.
 
+**Stored**  
+Signal when the *Set* input has executed.
+
 ### Changed signals
 
 One changed signal output will be created for every property. They will emit a signal when the property changes value when this or some other **Component State** or [Parent Component State](/nodes/componentutils/parent-component-state.md) node triggers the _Set_ input.
