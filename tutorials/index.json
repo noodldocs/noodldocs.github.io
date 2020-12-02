@@ -3,12 +3,12 @@
         "label":"Getting started",
         "desc":"Learn how to do stuff",
         "thumb":"tutorials/tutorials-item-bg.png",
-        "url":"/"
+        "url":"/#/tutorials/getting-started"
     },
     { 
         "label":"For Each",
         "desc":"Learn how to for each",
         "thumb":"tutorials/tutorials-item-bg-2.png",
-        "url":"/#/guides/for-each"
+        "url":"/#/tutorials/getting-started"
     }
 ]
