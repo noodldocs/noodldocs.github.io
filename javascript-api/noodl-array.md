@@ -20,16 +20,16 @@ Supported events:
 Example usage:
 
 ```javascript
-myArray.on('change', function () {
-  // The items of myArray has changed, e.g. an object has been added or removed
+myArray.on('change', () => {
+  // The items of myArray has changed, e.g. an Noodl.Object has been added or removed.
   // will NOT be triggered if the properties of the objects have changed
 });
 
-myArray.on('add', function (args) {
+myArray.on('add', args => {
   // The object args.item have been added to this array
 });
 
-myArray.on('remove', function (args) {
+myArray.on('remove', args => {
   // The object args.item have been removed from this array
   // The object was removed from index args.index
 });
@@ -37,30 +37,33 @@ myArray.on('remove', function (args) {
 
 **`array.set(items)`**  
 This will replace all items of the array with the supplied items.
-The items argument can be an array with objects, in which case objects will automatically be created
-for the objects with the `Noodl.Object.create` function. The array can also include a mix of
-objects and objects. The items argument can also be another array.
+The items argument can be an array with regular Javascript `Object`s, in which case `Noodl.Object`s will automatically be created for the Javascript `Object`s with the `Noodl.Object.create` function. The array can also include a mix of Javascript `Object`s and `Noodl.Objects`.
 
-The id of the objects (or the id attribute of an object) will be used to determine if the object is
-part of the items of this arrays. Objects that are already contained in the array
-will be updated, objects that are not will be added (firing the appropriate events)
+The id of the objects (the `id` attribute of an object) will be used to determine if the object is part of the items of this array. Objects that are already contained in the array
+will be updated, objects that aren't will be added (firing the appropriate events)
 and objects that are no longer in the array will be removed.
 
 **`array.contains(item)`**  
-Returns `true` if the object `item` exists in the array.
+Returns `true` if the `Noodl.Object` `item` exists in the array.
 
 **`array.add(item)`**  
-Adds an object `item` to the end of the array.
+Adds an `Noodl.Object` `item` to the end of the array.
+
+**`array.addAtIndex(item, index)`**  
+Adds an `Noodl.Object` `item` to the array at the specified `index`.
 
 **`array.remove(item)`**  
-Removes an object `item` from the array.
+Removes an `Noodl.Object` `item` from the array.
+
+**`array.removeAtIndex(index)`**  
+Removes the `Noodl.Object` at the specified `index`.
 
 **`array.size()`**  
 Returns the size of the array, the number of objects in the array.
 
 **`array.get(index)`**  
-Returns the object `item` at the specified index, or `undefined` if out of bounds.
+Returns the `Noodl.Object` `item` at the specified index, or `undefined` if out of bounds.
 
 **`array.each(callback)`**  
-Iterates over all objects of the array and calls the callback function for each object
+Iterates over all objects in the array and calls the callback function for each object
 with `object` and `index` as arguments.
