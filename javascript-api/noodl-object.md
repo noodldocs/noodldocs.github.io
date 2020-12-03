@@ -71,6 +71,7 @@ e.g. `myProp3.anotherProp`. To enable this you must supply the options `{resolve
 **`object.setAll(data)`**  
 This function performs a set on all properties of the specified object.
 This is equal to calling set for all properties of the data object.
+Updating the `id` property is not supported, and will be ignored.
 
 **`object.get(name,options)`**  
 Returns the value of the property with the specified name.
