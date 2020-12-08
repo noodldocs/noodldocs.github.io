@@ -1,13 +1,22 @@
 [
     {
+        "category":"Noodl Basics",
         "label":"Getting started",
         "desc":"Learn how to do stuff",
         "thumb":"tutorials/tutorials-item-bg.png",
         "url":"/#/tutorials/getting-started"
     },
     { 
+        "category":"Noodl Basics",
         "label":"For Each",
         "desc":"Learn how to for each",
+        "thumb":"tutorials/tutorials-item-bg-2.png",
+        "url":"/#/tutorials/getting-started"
+    },
+    { 
+        "category":"Guides",
+        "label":"Models and Collections",
+        "desc":"Learn how to do databases",
         "thumb":"tutorials/tutorials-item-bg-2.png",
         "url":"/#/tutorials/getting-started"
     }
