@@ -108,7 +108,7 @@ You will find the access key by clicking _Show Access Key_ in the header, this w
 With the key in hand you can run the following command in the root of your library folder, e.g. the _my-noodl-lib_ folder in this example.
 
 ```bash
-noodl-cli push --workspace "your-workspace-name" --accessKey "the-access-key"
+noodl-cli push --accessKey "the-access-key"
 ```
 
 That's it. Now you will find your library in the library pane within the Noodl editor. Any user of your workspace will see all modules and it can be added to a project with the _Add_ button.
@@ -118,6 +118,12 @@ That's it. Now you will find your library in the library pane within the Noodl e
 If you make changes to the library module or project, you need to rebuild and then push the new module to your workspace.
 
 !> Currently you need to restart Noodl for the module to show up, also you need to restart to make sure you have the latest version of the library.
+
+If you want to remove your module from the workspace simply run:
+
+```bash
+noodl-cli remove --accessKey "the-access-key"
+```
 
 ## A tour of the code
 
