@@ -1,6 +1,6 @@
 # States
 
-The **States** node is used to represent logical states visually. You can define your own states and values, each state will then have unique settings for these values and the node will transition between these settings as the state is changed. To learn more take a look at the [States guide](/guides/switch.md).
+The **States** node is used to represent logical states visually. You can define your own states and values, each state will then have unique settings for these values and the node will transition between these settings as the state is changed. To learn more take a look at the [States guide](/guides/states.md).
 
 <div class="ndl-images">
     <img src="/nodes/animation/states.png" class="ndl-image med">
@@ -50,7 +50,7 @@ Here you specify if there should be a transition to the target state. When you s
     <img src="/guides/states/change-size-curve.gif" class="ndl-image med"></img>
 </div>
 
-To learn more take a look at the [States guide](/guides/switch.md).
+To learn more take a look at the [States guide](/guides/states.md).
 
 ## To state actions
 
