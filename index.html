@@ -58,14 +58,22 @@
       function copyJsonToClipboard(json) {
         copyTextToClipboard(JSON.stringify(json));
       }
-      function importIntoNoodl(path) {
-        window.location =
+      function importIntoNoodl(path,options) {
+        query = [];
+        if(options && options.name !== undefined) query.push('name=' + encodeURIComponent(options.name));
+        if(options && options.thumb !== undefined) query.push('thumb=' + encodeURIComponent(location.protocol + '//' + location.host + '/' + options.thumb));
+
+        var uri =
           'noodl:import/' +
           location.protocol +
           '//' +
           location.host +
           '/' +
-          path;
+          path +
+          ((query.length > 0)?('?' + query.join('&')):'');
+
+        console.log(uri);
+        window.location = uri;
       }
     </script>
   </head>
