@@ -6,6 +6,6 @@ Welcome to Noodl.
 </iframe></div>
 <br>
 <br>
-Noodl is a a low-code to no-code platform, built to empower developers and designers to significantly accelerate the development of web-based technologies and provide a workflow that better supports delivering great user experiences.
+Noodl is a software creation platform, built to empower developers and designers to significantly accelerate the development of web-based technologies and provide a workflow that better supports delivering great user experiences.
 
 Here you will find guides, examples and documentation for Noodl.
