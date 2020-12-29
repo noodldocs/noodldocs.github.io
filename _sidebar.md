@@ -155,6 +155,7 @@
 - [Object](/nodes/data/object.md)
 - [Static Array](/nodes/data/static-array.md)
 - [String](/nodes/data/string.md)
+- [REST](/nodes/data/rest.md)
 - [Variable](/nodes/data/variable.md)
   <br/>
 
