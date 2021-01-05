@@ -54,7 +54,7 @@ Specify the height of this node in pixels, percentage of parent height or the un
 ### Text
 
 **Text**  
-The text string of the Text Input node. Setting this will change the current text.
+The text string of the Text Input node. Setting this will change the current text, unless _Set_ is connected, then it will be updated when _Set_ receives a signal.
 
 **Type**  
 The type of the Text Input.
@@ -78,6 +78,8 @@ The placeholder text for when the Text Input is empty.
 Disables the Text Input so it cannot receive input from the user.
 
 ### Actions
+**Set**  
+Sets the text field value to the text in the _Text_ input.
 
 **Clear**  
 Clears the text
