@@ -46,6 +46,15 @@ Check out the small node graph below. Copy these nodes and paste them into an em
      <button class="ndl-copy-nodes-button" onClick='copyJsonToClipboard({"nodes":[{"id":"9f88e7d6-959c-7946-f66d-3db6257d522b","type":"Group","label":"Layout node","x":290,"y":395,"parameters":{"sizeMode":"explicit","backgroundColor":"#E6E6E6"},"ports":[],"children":[{"id":"8a0b2c8c-c534-bdcc-102d-2905b48d8885","type":"Group","x":310,"y":456,"parameters":{"marginTop":{"value":5,"unit":"px"},"marginLeft":{"value":5,"unit":"px"},"marginRight":{"value":5,"unit":"px"},"marginBottom":{"value":5,"unit":"px"},"backgroundColor":"#C2C2C2","width":{"value":100,"unit":"px"},"height":{"value":100,"unit":"px"}},"ports":[],"children":[]},{"id":"bcfa83ad-f05f-d7ff-13a4-f82ac19bd664","type":"Group","x":310,"y":502,"parameters":{"marginTop":{"value":5,"unit":"px"},"marginLeft":{"value":5,"unit":"px"},"marginRight":{"value":5,"unit":"px"},"marginBottom":{"value":5,"unit":"px"},"backgroundColor":"#C2C2C2","width":{"value":100,"unit":"px"},"height":{"value":100,"unit":"px"}},"ports":[],"children":[]},{"id":"35c2039f-5f12-3dab-bc94-a7c630aa9698","type":"Group","x":310,"y":548,"parameters":{"marginTop":{"value":5,"unit":"px"},"marginLeft":{"value":5,"unit":"px"},"marginRight":{"value":5,"unit":"px"},"marginBottom":{"value":5,"unit":"px"},"backgroundColor":"#C2C2C2","width":{"value":100,"unit":"px"},"height":{"value":100,"unit":"px"}},"ports":[],"children":[]}]}],"connections":[]})'></button>
 </div>
 
+You can also specify if you want a specific node to be part of the layout or be positioned absolut, that is independently of it's siblings and the layout of the parent. You can choose between.
+
+- **In Layout** This node is placed in the layout as dictated by its parent.
+- **Absolute** This node ignores the layout of it's parent and is placed absolute.
+
+<div class="ndl-images">
+    <img src="/guides/layouts/layout-absolute.png" class="ndl-image med"></img>  
+</div>
+
 ## Dimensions
 
 The dimensions section of the properties cover how the size of a **Group** is derived. The default is that both _Width_ and _Height_ is explicitly specified in either pixels (**px**), percentage of parent (**%**), or as a percentage of the viewport size (**vw** and **vh**).
@@ -106,11 +115,3 @@ You can choose any of these options:
 - **Off** The children will simply extend beyond the borders of the parent node (default).
 - **On** The children will wrap onto a new line when they extend beyond the border of their parent.
 - **On Reverse** The children will wrap but in the reverse direction.
-
-## Scrolling
-
-If you don't want the children to wrap but instead want scrolling you need to enable it via the **Enable Scroll** property of the **Group** node.
-
-<div class="ndl-images">
-    <img src="/guides/layouts/scroll-props.png" class="ndl-image med"></img>  
-</div>
