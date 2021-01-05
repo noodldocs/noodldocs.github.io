@@ -31,7 +31,7 @@ Request.content = {
 
 
 When the request is completed and we have a response the corresponding response function will be invoked. In
-the response function you can parse the respons and set the approprieate outputs of the REST node using the _Outputs_ map
+the response function you can parse the response and set the approprieate outputs of the REST node using the _Outputs_ map
 provided as an argument to _response_ function. In the function you will also have access to an object called _Response_ with the following content.
 
 * *status* - The status code of the response.
@@ -59,8 +59,11 @@ This is the method that will be used for the request. Supported methods are GET,
 **Request**  
 Here you can edit the request script.
 
-**Response**
+**Response**  
 Here you can edit the response script.
+
+### Request and response inputs
+Any variable of the **Inputs** object that you access in your scrips will automatically become an input of the node.
 
 ### Actions
 **Fetch**  
@@ -78,6 +81,9 @@ A signal will be emitted on this output if the request receives status code 200.
 
 **Failure**
 A signal will be emitted on this output on all other status codes of if another type of failure occurs.
+
+### Request and response outputs
+Any variable of the **Outputs** object that you access in your scrips will automatically become an output of the node.
 
 [0]: https://en.wikipedia.org/wiki/Representational_state_transfer
 [1]: ../nodes/javascript/javascript

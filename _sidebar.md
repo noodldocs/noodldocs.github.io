@@ -29,15 +29,6 @@
 
 --->
 
-- [Mobile Web App Navigation](modules/webappnavigation/README.md)
-  - <div class="modules-subheader">Guides</div>
-  - [Navigation](modules/webappnavigation/nav-guide.md)
-  - <div class="modules-subheader">Nodes</div>
-  - [Navigation Stack](modules/webappnavigation/navigation-stack.md)
-  - [Navigate](modules/webappnavigation/navigate.md)
-  - [Navigate Back](modules/webappnavigation/navigate-back.md)
-    </br>
-
 * [MQTT](modules/mqtt/README.md)
   - <div class="modules-subheader">Guides</div>
   - [Using the MQTT nodes](modules/mqtt/mqtt-guide.md)
@@ -61,17 +52,6 @@
   - [Using the WebCamera](modules/webcamera/webcamera-guide.md)
   - <div class="modules-subheader">Nodes</div>
   - [Web Camera](modules/webcamera/webcamera.md)
-    <br/>
-
-- [WebRouter](modules/webrouter/README.md)
-
-  - <div class="modules-subheader">Guides</div>
-  - [Using the WebRouter](modules/webrouter/guide/webrouter-guide.md)
-  - <div class="modules-subheader">Nodes</div>
-  - [Web Router](modules/webrouter/nodes/web-router.md)
-  - [WebRouterNavigate](modules/webrouter/nodes/webrouternavigate.md)
-  - [WebRouterShowPopup](modules/webrouter/nodes/webroutershowpopup.md)
-  - [WebRouterClosePopup](modules/webrouter/nodes/webrouterclosepopup.md)
     <br/>
 
 - [WebSocket](modules/websocket/README.md)
@@ -141,23 +121,24 @@
   <br/>
 
 - Data
-
 - [Array](/nodes/data/array.md)
 - [Array Filter](/nodes/data/array-filter.md)
 - [Array Map](/nodes/data/array-map.md)
-- [Boolean](/nodes/data/boolean.md)
 - [Query Collection](/nodes/data/collection.md)
-- [Color](/nodes/data/color.md)
-- [For Each](/nodes/data/for-each.md)
 - [For Each Item](/nodes/data/for-each-item.md)
 - [Model](/nodes/data/model.md)
-- [Number](/nodes/data/number.md)
 - [Object](/nodes/data/object.md)
 - [Static Array](/nodes/data/static-array.md)
-- [String](/nodes/data/string.md)
 - [REST](/nodes/data/rest.md)
 - [Variable](/nodes/data/variable.md)
+- [Cloud Function](/nodes/data/cloudfunction.md)
   <br/>
+
+- Variables
+- [String](/nodes/data/string.md)
+- [Color](/nodes/data/color.md)
+- [Boolean](/nodes/data/boolean.md)
+- [Number](/nodes/data/number.md)
 
 - Events
 - [Receive Event](nodes/events/receive-event.md)
@@ -219,4 +200,5 @@
 - [Text](nodes/visual/text.md)
 - [Text Input](nodes/visual/text-input.md)
 - [Video](nodes/visual/video.md)
+- [For Each](/nodes/data/for-each.md)
   <br/>

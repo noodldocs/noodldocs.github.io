@@ -1,1 +1,0 @@
-Contains a boolean value (true/false). This can be used to quickly store a boolean as a local static value.
