@@ -1,11 +1,21 @@
 # Navigate
 
-!> Note, this node is part of the _Mobile Web App Navigation_ module. You need to install that module to be able to use this node.
-
-This node is used to perform navigation on a **Navigation Stack**. Take a look at the [Navigation guide](/modules/webappnavigation/nav-guide.md) to learn more about navigation.
+This node is used to perform navigation on a **Navigation Stack**. Take a look at the [Navigation guide](/guides/navigation.md) to learn more about navigation.
 
 <div class="ndl-images">
-    <img src="/modules/webappnavigation/guide/main-navigate.png" class="ndl-image med"></img>   
+    <img src="/guides/navigation/main-navigate.png" class="ndl-image med"></img>   
+</div>
+
+Choose the target **Navigation Stack** where the navigation should occur and the **Target Page** that is the page that will be navigated to.
+
+<div class="ndl-images">
+    <img src="/nodes/navigation/navigate-1.png" class="ndl-image med"></img>   
+</div>
+
+The target page can have **Back Actions** and **Results** that are passed back and in that case are available as outputs of the **Navigate** node. See [Navigate Back](/nodes/navigation/navigate-back.md) for more details.
+
+<div class="ndl-images">
+    <img src="/nodes/navigation/back-actions-3.png" class="ndl-image med"></img>   
 </div>
 
 ## INPUTS
@@ -13,14 +23,20 @@ This node is used to perform navigation on a **Navigation Stack**. Take a look a
 ### General
 
 **Stack**  
-This is the identifier (name) of the stack where the navigation should be performed. _Default_ means the root screen stack. Otherwise it should be a name of a [Navigation Stack](/modules/webappnavigation/navigation-stack.md) node.
+This is the identifier (name) of the stack where the navigation should be performed. It should be a name of a [Navigation Stack](/nodes/navigation/navigation-stack.md) node.
 
 <div class="ndl-images">
-    <img src="/modules/webappnavigation/guide/choose-stack.png" class="ndl-image med"></img>   
+    <img src="/guides/navigation/choose-stack.png" class="ndl-image med"></img>   
 </div>
 
+**Mode**  
+This specifies the navigation mode, default is **Push**.
+
+- **Push** The target page will be added to the top of the stack.
+- **Replace** The target page will replace all content on the stack, so after the navigation it will be the only page on the stack.
+
 **Target**  
-This is a component that is the target for the navigation node, i.e. the component that should be created and put on top of the navigation stack. It must be a component with visual nodes.
+This is the page that is the target for the navigation node, i.e. the page which component should be created and put on top of the navigation stack. 
 
 ### Transition
 
@@ -63,17 +79,14 @@ This is a timing curve that controls the delay, duration and animation ease of t
 
 ### Parameters
 
-These are the parameters that are passed to the new top component when the navigation is performed. Parameters are passed through a **Component Inputs** node to the target component.
-
-<div class="ndl-images">
-    <img src="/modules/webappnavigation/guide/nav-params.png" class="ndl-image small"></img>   
-</div>
+The **Navigate** node will automatically get inputs for all **Component Inputs** of the target page component. You can use these to pass values to the new page that will be forwarded to the corresponding inputs at the time of navigation.
 
 ### Actions
 
 **Navigate**  
 A signal input. When a signal is received the navigation will be performed.
 
-## OUTPUTS <!-- {docsify-ignore} -->
+## OUTPUTS
 
-This node has no outputs.
+**Navigated**  
+Signaled when the navigation is performed.

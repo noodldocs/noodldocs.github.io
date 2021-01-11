@@ -8,6 +8,7 @@
 * [States](guides/states.md)
 * [Events](guides/events.md)
 * [For Each](guides/for-each.md)
+* [Navigation](guides/navigation.md)
 * [Variables and Objects](guides/variables-and-objects.md)
 * [Arrays](guides/arrays.md)
 * [Models and Collections](guides/models-and-collections.md)
@@ -139,7 +140,17 @@
 - [Color](/nodes/data/color.md)
 - [Boolean](/nodes/data/boolean.md)
 - [Number](/nodes/data/number.md)
+  <br/>
 
+- Navigation
+- [Navigation Stack](/nodes/navigation/navigation-stack.md)
+- [Navigate](/nodes/navigation/navigate.md)
+- [Navigate Back](/nodes/navigation/navigate-back.md)
+- [Navigate To Path](/nodes/navigation/navigate-to-path.md)
+- [Show Popup](/nodes/navigation/show-popup.md)
+- [Hide Popup](/nodes/navigation/hide-popup.md)
+  <br/>
+  
 - Events
 - [Receive Event](nodes/events/receive-event.md)
 - [Send Event](nodes/events/send-event.md)
