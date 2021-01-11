@@ -117,8 +117,8 @@
 - Component Utilities
 - [Component Inputs](nodes/componentutils/component-inputs.md)
 - [Component Outputs](nodes/componentutils/component-outputs.md)
-- [Component State](nodes/componentutils/component-state.md)
-- [Parent Component State](nodes/componentutils/parent-component-state.md)
+- [Component Object](nodes/componentutils/component-object.md)
+- [Parent Component Object](nodes/componentutils/parent-component-object.md)
   <br/>
 
 - Data
@@ -150,7 +150,7 @@
 - [Show Popup](/nodes/navigation/show-popup.md)
 - [Hide Popup](/nodes/navigation/hide-popup.md)
   <br/>
-  
+
 - Events
 - [Receive Event](nodes/events/receive-event.md)
 - [Send Event](nodes/events/send-event.md)
