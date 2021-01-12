@@ -163,6 +163,8 @@
 
 - JavaScript
 - [Script Downloader](nodes/javascript/script-downloader.md)
+- [Script](nodes/javascript/script.md)
+- [Function](nodes/javascript/function.md)
   <br/>
 
 - Logic
