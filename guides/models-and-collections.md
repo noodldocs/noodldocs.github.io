@@ -10,7 +10,7 @@ Let's take a closer look at Models and Collections with this example project. It
 
 <div class="ndl-images">
     <img src="/guides/models-and-collections/static-tasks-screen.png" class="ndl-image small"></img>   
-    <button class="ndl-import-button" onClick='importIntoNoodl("guides/models-and-collections/start-project-v3.zip")'></button>
+    <button class="ndl-import-button" onClick='importIntoNoodl("guides/models-and-collections/start-project-v3.zip",{name:"Models and collections guide",thumb:"guides/models-and-collections/static-tasks-screen.png"})'></button>
 </div>
 
 After importing you should have a number of components in your project. You should be able to see them in the canvas view, there should be the different screens we will conver as well as a number of parts that make them up.
