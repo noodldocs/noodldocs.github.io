@@ -1,6 +1,6 @@
 # Function
 
-This is the easiest way to add a bit of Javascript to your Noodl applications. You simply create a **Function** node and you can edit the source by opening the properties for the node and editing the **Script** property. Learn more about Javascript and Noodl in the [guide](/guides/javascript.md).
+This is the easiest way to add a bit of Javascript to your Noodl applications. You simply create a **Function** node and you can edit the source by opening the properties for the node and editing the **Script** property.
 
 ![](function-1.png ':class=img-size-l')
 
@@ -8,6 +8,7 @@ The most basic way to use the node is as an expression, any time the inputs are 
 
 ![](function-2.png ':class=img-size-l')
 
+### Inputs and outputs
 In your function script you can use the **Inputs** and **Outputs** object and any properties of these objects that you use in your script will automatically create input and outputs ports. So the following script:
 
 ```javascript
@@ -18,6 +19,21 @@ Will create the output **FullName** and the inputs **FirstName** and **LastName*
 
 ![](function-3.png ':class=img-size-m')
 
+### Signal outputs
+If you want to send a signal from your **Function** script you can use an output as a function instead of assigning it a value.
+
+```javascript
+if(Inputs.Test === true) {
+    Outputs.TestIsTrue()
+}
+else {
+    Outputs.TestIsFalse()
+}
+```
+
+The code above will automatically create two outputs **TestIsTrue** and **TestIsFalse** that are signals. Whenenever the inputs are changed and the code is run the node will send a signal on either depending on the content of the **Test** input.
+
+### Controlled execution
 Normally the script is run when any of the inputs change, i.e. receive new data via connections, but you can also control when the function is run with the **Run** signal input. If this input has a connection the script will only run when a signal is received.
 
 ![](function-4.png ':class=img-size-l')

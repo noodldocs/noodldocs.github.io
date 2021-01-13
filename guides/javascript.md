@@ -8,10 +8,16 @@ A **Script** node works as any other node in Noodl, in the sense that it has inp
 
 ## The Javascript source file
 
-You can either edit the Javascript code directly in the built-in editor in Noodl or you can use an external file with an external editor. While it's easy to write code snippets in the inline editor, the external file option might be better if you are working on larger files or even multiple files and modules. An external file needs to be located in your project folder for Noodl to find it. You can copy a file to your project folder by simply dragging the file into the Noodl window.
+You can either edit the Javascript code directly in the built-in editor in Noodl or you can use an external file with an external editor. While it's easy to write code snippets in the inline editor, the external file option might be better if you are working on larger files or even multiple files and modules. 
 
 <div class="ndl-images">
-    <img src="/guides/javascript/files.gif" class="ndl-image large"></img>  
+    <img src="/guides/javascript/script-inline-code.png" class="ndl-image large"></img>  
+</div>
+
+An external file needs to be located in your project folder for Noodl to find it. You can copy a file to your project folder by simply dragging the file into the Noodl window.
+
+<div class="ndl-images">
+    <img src="/guides/javascript/script-pick-file.png" class="ndl-image large"></img>  
 </div>
 
 The source code provided for the **Script** is executed as soon as the node is created. In order to specify inputs, outputs, to receive and send signals from the node the **Node** object must be used.
@@ -243,14 +249,27 @@ Connecting to the the inputs and outputs, the **Script** nodes can be used as an
 
 ## Debugging
 
-As with any coding, you will sooner or later make a mistake in your **Script** nodes. If Noodl cannot parse your Javascript source, or if a runtime error occurs, the **Script** node will be visually dashed and you can find the error in the debug section.
+As with any coding, you will sooner or later make a mistake in your **Script** nodes. If Noodl cannot parse your Javascript source, or if a runtime error occurs, the **Script** node will be visually dashed and you can find the error in the warnings popup.
 
 <div class="ndl-images">
-    <img src="/guides/javascript/Javascript_error.gif" class="ndl-image large"></img>  
+    <img src="/guides/javascript/script-error.png" class="ndl-image large"></img>  
 </div>
 
-You can also use logging functionality, for example `console.log("")` to log debug printouts. They will be found in the web inspector window of the viewer.
+As you can see the inputs and outputs of the node may also becomes invalid if there is a error in the script. The error might also happend during the executing of your application, if such a run-time error occurs it will also be shown in the warnings popup.
+
+To debug your javascript you can launch the web debugger from the viewer window, just hit the little bug icon.
 
 <div class="ndl-images">
-    <img src="/guides/javascript/Javascript_console.gif" class="ndl-image large"></img>  
+    <img src="/guides/javascript/open-debugger.png" class="ndl-image large"></img>  
 </div>
+
+In the web debugger you can find any external source files that your are using in your script nodes, but if you want to set a breakpoint in an internal file you can use the `debugger` command. So if you for instance wanted to set a breakpoint in the **Stop** signal function in the code above:
+
+```javascript
+Node.Signals.Stop = function () {
+  debugger // This will cause the debugger to break here when running
+  clearTimeout(timer);
+  timer = undefined;
+}
+```
+
