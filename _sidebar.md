@@ -11,6 +11,7 @@
 * [Navigation](guides/navigation.md)
 * [Variables and Objects](guides/variables-and-objects.md)
 * [Arrays](guides/arrays.md)
+* [Routes and Navigation](guides/routes.md)
 * [Models and Collections](guides/models-and-collections.md)
 * [Actions and logic](guides/actions-and-logic.md)
 * [Model relationships](guides/relations.md)
