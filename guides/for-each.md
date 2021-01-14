@@ -6,7 +6,7 @@ Let's look at an example of a list of National Parks. You can import the example
 
 <div class="ndl-images">
     <img src="/guides/for-each/screen.png" class="ndl-image small"></img>   
-    <button class="ndl-import-button" onClick='importIntoNoodl("guides/for-each/project-v2.zip",{name:"For Each Guide Part 1",thumb:"guides/for-each/screen.png"})'></button>
+    <button class="ndl-import-button" onClick='importIntoNoodl("guides/for-each/project-v2.zip",{name:"For Each Guide",thumb:"guides/for-each/screen.png"})'></button>
 </div>
 
 ## The For Each node
