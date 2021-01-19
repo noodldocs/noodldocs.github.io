@@ -1,6 +1,5 @@
 - Getting Started
 - [Introduction](README.md)
-- [Video lessons](video-lessons.md)
   <br/>
 
 * Guides
@@ -13,7 +12,7 @@
 * [Arrays](guides/arrays.md)
 * [Routes and Navigation](guides/routes.md)
 * [Models and Collections](guides/models-and-collections.md)
-* [Actions and logic](guides/actions-and-logic.md)
+* [Logic components](guides/actions-and-logic.md)
 * [Model relationships](guides/relations.md)
 * [Javascript](guides/javascript.md)
   <br/>
