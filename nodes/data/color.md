@@ -2,6 +2,10 @@
 
 Contains a color. Can be used to provide a static local color value.
 
+<div class="ndl-images">
+    <img src="/nodes/data/color-1.png" class="ndl-image large"></img>  
+</div>
+
 ## INPUTS
 
 **Value**  
