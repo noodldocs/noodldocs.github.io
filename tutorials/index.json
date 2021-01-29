@@ -1,5 +1,19 @@
 [
     {
+        "category":"Build Your First App",
+        "label":"01 Get started with your first web app",
+        "thumb":"tutorials/01_BuildFirstWebApp.png",
+        "url":"/#/tutorials/getting-started",
+        "icon":"play"
+    },
+    {
+        "category":"Build Your First App",
+        "label":"02 Build a login & signup flow",
+        "thumb":"tutorials/02_LoginSignupFlow.png",
+        "url":"/#/tutorials/getting-started",
+        "icon":"play"
+    },
+    {
         "category":"Noodl Basics",
         "label":"Getting started",
         "desc":"Learn how to do stuff",
