@@ -1,6 +1,7 @@
 - Getting Started
 - [Introduction](README.md)
 - [Build your first app](tutorials/getting-started.md)
+- [Quick Tips](tutorials/quick-tips.md)
   <br/>
 
 * Guides
