@@ -122,11 +122,11 @@ where({
 })
 ```
 
-You can also specify variables instead of explicitly specifying the filter values, this will create an input port on the *Query Collection* node that can then be connected to. You specify variables using the $ syntax, it must be a javascript compatile name. The filter below will create an input called MyStringInput.
+You can also specify variables instead of explicitly specifying the filter values, this will create an input port on the *Query Collection* node that can then be connected to. You specify variables simply by using the **Inputs** object. The filter below will create an input called MyStringInput.
 
 ```javascript
 where({ 
-    SomeString:{equalTo:$MyStringInput} 
+    SomeString:{equalTo:Inputs.MyStringInput} 
 })
 ```
 
@@ -134,7 +134,7 @@ You can also do text search in strings. This will create an index in the databas
 
 ```javascript
 where({ 
-    SomeString:{text:{search:$MyStringInput}}
+    SomeString:{text:{search:Inputs.MyStringInput}}
 })
 ```
 
@@ -143,7 +143,7 @@ You can also toggle case sensitivity for text searches.
 ```javascript
 where({ 
     SomeString:{text:{search:{
-        term:$MyStringInput,
+        term:Inputs.MyStringInput,
         caseSensitive:true
     }}}
 })
@@ -153,7 +153,7 @@ If you need to match the *Id* of models in the collection you need to use the sp
 
 ```javascript
 where({ 
-    idEqualTo:$TheModelId
+    idEqualTo:Inputs.TheModelId
 })
 ```
 
@@ -161,7 +161,7 @@ In the above filter you can connect a *Model Id* output to the *TheModelId* para
 
 ```javascript
 where({ 
-    idContainedIn:[$FirstObjectId, $SecondObjectId]
+    idContainedIn:[Inputs.FirstObjectId, Inputs.SecondObjectId]
 })
 ```
 
@@ -169,7 +169,7 @@ Some properties in your Models can be of *Pointer* type, that means that they re
 
 ```javascript
 where({ 
-    Owner:{pointsTo: $MyPostId }
+    Owner:{pointsTo: Inputs.MyPostId }
 })
 ```
 
@@ -177,7 +177,7 @@ You can also provide an array if you want to find *Comments* that are related to
 
 ```javascript
 where({ 
-    Owner:{pointsTo: [$MyFirstPostId, $MySecondPost] }
+    Owner:{pointsTo: [Inputs.MyFirstPostId, Inputs.MySecondPost] }
 })
 ```
 
@@ -187,7 +187,7 @@ Models also support many-to-many relationships via *Relations*, check out the gu
 
 ```javascript
 where({ 
-    relatedTo:{id: $MyObjectWithARelation, key: "the-relation-key"}
+    relatedTo:{id: Inputs.MyObjectWithARelation, key: "the-relation-key"}
 })
 ```
 

@@ -51,33 +51,10 @@ Specify the width of this node in pixels, percentage of parent width or the unit
 **Height**  
 Specify the height of this node in pixels, percentage of parent height or the unit _vw_ which is percentage of the browser window height.
 
-### Other
-
-**Text**
-The text string of the Text Input node. Setting this will change the current text.
-
-**Disabled**
-Disables the Text Input so it cannot receive input from the user.
-
-**Position**  
-Controls how this node is layouted in its parent group.
-
-- _In Layout_ - This node is part of the parent group layout, it will be stacked with its siblings depending on the parent group layout settings.
-- _Absolute_ - This node will not be part of the parent group layout, instead you are free to use the _Pos X_ and _Pos Y_ to place this node explicitly.
-
-**Pointer Events Mode**  
-This specifies how this node responds to pointer events.
-
-- _Inherit_ - This node will respond to pointer events in the same way as its parent.
-- _Explicit_ - This node will respond to pointer events as specified by _Pointer Events Enabled_
-
-**Pointer Events Enabled**  
-This property is only available if _Pointer Events Mode_ is set to _Explicit_. It will specify if this node responds to pointer events or not. If set to false this node will completely ignore pointer events.
-
-**Mounted**  
-This property is used to completely remove the node from the DOM. If this property is set to false the node is removed from the DOM. It differs from the _Visible_ property where the node is still part of the DOM but invisible.
-
 ### Text
+
+**Text**  
+The text string of the Text Input node. Setting this will change the current text, unless _Set_ is connected, then it will be updated when _Set_ receives a signal.
 
 **Type**  
 The type of the Text Input.
@@ -96,6 +73,44 @@ The size of the font in the Text Input, in pixels.
 
 **Placeholder**  
 The placeholder text for when the Text Input is empty.
+
+**Disabled**
+Disables the Text Input so it cannot receive input from the user.
+
+### Actions
+**Set**  
+Sets the text field value to the text in the _Text_ input.
+
+**Clear**  
+Clears the text
+
+**Focus**  
+Focuses the text field.
+
+_Note_: Some browsers, most notably Safari, only allow focus if it originates from a user event, like a click. So using a Timer or other method might not work. 
+
+**Blur**  
+Removes the keyboard focus.
+
+### Other
+
+**Position**  
+Controls how this node is layouted in its parent group.
+
+- _In Layout_ - This node is part of the parent group layout, it will be stacked with its siblings depending on the parent group layout settings.
+- _Absolute_ - This node will not be part of the parent group layout, instead you are free to use the _Pos X_ and _Pos Y_ to place this node explicitly.
+
+**Pointer Events Mode**  
+This specifies how this node responds to pointer events.
+
+- _Inherit_ - This node will respond to pointer events in the same way as its parent.
+- _Explicit_ - This node will respond to pointer events as specified by _Pointer Events Enabled_
+
+**Pointer Events Enabled**  
+This property is only available if _Pointer Events Mode_ is set to _Explicit_. It will specify if this node responds to pointer events or not. If set to false this node will completely ignore pointer events.
+
+**Mounted**  
+This property is used to completely remove the node from the DOM. If this property is set to false the node is removed from the DOM. It differs from the _Visible_ property where the node is still part of the DOM but invisible.
 
 ### Style
 

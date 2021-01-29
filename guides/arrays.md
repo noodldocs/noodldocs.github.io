@@ -2,7 +2,7 @@
 
 Before you read this guide you should know how *Variables* and *Objects* work, if you are not familiar with these concepts please read the [guide](/guides/variables-and-objects.md). It is also helpful if you are famaliar with some of the uses for arrays, take a look at this [guide](/guides/for-each.md) to learn more.
 
-Now are you might remember *Variables* are used to store single values and *Objects* are used to store a set of values as object properties. *Arrays* are used to store many *Objects* in a list. You can achieve this all through the **Array** node, which also has an *Id* property that specifies which array this particular node is reading from and writing to. 
+Now as you might remember *Variables* are used to store single values and *Objects* are used to store a set of values as object properties. *Arrays* are used to store many *Objects* in a list. You can achieve this all through the **Array** node, which also has an *Id* property that specifies which array this particular node is reading from and writing to. 
 
 <div class="ndl-images">
     <img src="/guides/arrays/array-id.png" class="ndl-image med"></img>  
@@ -12,7 +12,7 @@ Now are you might remember *Variables* are used to store single values and *Obje
 In the example above we have specified *Users* as the *Id* which then shows up on the array node in the editor. This will initially be an empty array. You can also make connections to the *Id* input, or if you don't specify any *Id* at all an empty array will be created with a unique id when you star doing operations using the node.
 
 ## Adding and removing objects
-The first thing to learn is how to add to and remove objects from an array. When you need to do is to provide the *Id* of the object you want to add to your array by connecting to the **Item Id** input of the **Array** node.
+The first thing to learn is how to add to and remove objects from an array. What you need to do is to provide the *Id* of the object you want to add to your array by connecting to the **Item Id** input of the **Array** node.
 
 Then you connect and send a signal on the **Add** input and the object referenced by current value on the **Item Id** input will be added to the array.
 

@@ -23,7 +23,7 @@ When you have a *Post* model and you want to query all *Comments* on the post yo
 
 ```javascript
 where({ 
-    {Owner:{pointsTo:$PostId}}
+    {Owner:{pointsTo:Inputs.PostId}}
 })
 ```
 
@@ -72,7 +72,7 @@ Finally you need to be able to query the relations. So let's say that we have a 
 
 ```javascript
 where({ 
-    {relatedTo: {id:$GroupId, key:'posts'}
+    {relatedTo: {id:Inputs.GroupId, key:'posts'}
 })
 ```
 

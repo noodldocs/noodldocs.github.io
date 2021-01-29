@@ -1,10 +1,10 @@
 # Events
 
-This guide covers an important concept in Noodl called Events. Events are used to send and recive signals with accompanying data. Signals are sent from one part of the node graph to one or many other locations in the graph. This is often useful when an user interaction occurs in one place of the app, such as the click of a button, that should trigger an action in a different place, e.g. a popup showing.
+This guide covers an important concept in Noodl called Events. Events are used to send and recive signals with accompanying data. Signals are sent from one part of the node graph to one or many other locations in the graph. This is often useful when a user interaction occurs in one place of the app, such as the click of a button, that should trigger an action in a different place, e.g. a popup showing.
 
 This concept includes two nodes, the **Send Event** node and the **Receive Event** node. As the name implies, the **Send Event** node is used when you want to send an event. Below is an example of an event being sent when a **Text** node is clicked.
 
-![](events/send-event.png ':class=img-size-m')
+![](events/send-event.png ':class=img-size-l')
 
 ## Sending and receiving events
 
@@ -12,11 +12,11 @@ In the example above, the **Click** signal of the **Text** node is connected to 
 
 An event is sent to a certain **Channel** which is specified in the properties of the **Send Event** node. In this case the name of the channel is **Show Popup**.
 
-![](events/channel-prop.png ':class=img-size-s')
+![](events/channel-prop.png ':class=img-size-m')
 
 The event signal is passed to all **Receive Event** nodes that share the same **Channel**. In the example below the event that was sent above is received.
 
-![](events/receive-event.png ':class=img-size-m')
+![](events/receive-event.png ':class=img-size-l')
 
 To illustrate this you can see below how when the click signal is sent via the **Send Event** node, it is passed to the **Received** output of the **Event Receiver** node.
 
@@ -30,11 +30,11 @@ So far we have seen the basic concept of the events mechanism in Noodl. Next, le
 
 Now you can connect data to the input ports that you created on the **Send Event** node. When the **Send** signal is received, the values on all inputs of the **Send Event** node will be captured and passed to the **Receive Event**.
 
-![](events/connect-to-port.png ':class=img-size-m')
+![](events/connect-to-port.png ':class=img-size-l')
 
 When the **Receive Event** node outputs the **Received** signal it will also update all other outputs. The payload ports added on the **Send Event** node will become available on all **Receive Event** nodes that share the same channel as the **Send Event** node.
 
-![](events/receiver-outputs.png ':class=img-size-m')
+![](events/receiver-outputs.png ':class=img-size-l')
 
 ## Propagation
 

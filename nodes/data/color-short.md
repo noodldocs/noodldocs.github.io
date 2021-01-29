@@ -1,1 +1,0 @@
-Contains a color. Can be used to provide a static local color value.

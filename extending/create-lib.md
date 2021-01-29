@@ -65,19 +65,21 @@ npm run dev
 
 Part of the development flow is to load the accompanying Noodl tests project that we can use to develop and test our module. First launch Noodl.
 
-Next choose **Import existing project** at the bottom of the page.
+Next choose **Import project** at the bottom of the page.
 
 ![](import-project.png ':class=img-size-l')
 
-This is **very important**: Make sure the “Save locally” checkbox is checked!
+On the next screen you will import the **tests** project.
+
+![](pick-project-folder.png ':class=img-size-l')
+
+!> This is **very important**: Make sure the “Local storage” checkbox is checked!
 
 This will ensure that the project you are importing is stored locally on your computer and is edited in the place where you import from. In this case you will edit the project in your workspace directory.
 
-![](save-locally.png ':class=img-size-l')
+Give your project a name (any name will do) and then hit the **Pick folder and create project** button.
 
-Give your project a name (any name will do) and then hit the **Pick project folder button**.
 
-![](pick-project-folder.png ':class=img-size-l')
 
 Find the **tests** directory of your newly created library and then hit Open. Noodl will now open the test project that contains your custom module code. In the project there is a simple test the uses the new node:
 
@@ -152,7 +154,7 @@ First you must import the Noodl SDK.
 const Noodl = require('@noodl/noodl-sdk');
 ```
 
-Next you will define the node specification. This works very similair to the Javascript node, you can review the documentation for that node [here](guides/javascript.md).
+Next you will define the code for the new node. 
 
 ```javascript
 const MyFullNameNode = Noodl.defineNode({
@@ -180,10 +182,8 @@ const MyFullNameNode = Noodl.defineNode({
 });
 ```
 
-There are a few differences worth noting.
-
 - You need to specify the **name** of the node, this is the name that shows up in the list when creating new nodes.
-- you can optionally specify a **category**, this will also be used in the new node popup list in Noodl.
+- you can optionally specify a **category**, this will also be used in the new node popup in Noodl.
 
 Finally you need to define the specification of your module.
 

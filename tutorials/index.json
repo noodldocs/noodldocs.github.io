@@ -1,23 +1,136 @@
 [
     {
-        "category":"Noodl Basics",
-        "label":"Getting started",
-        "desc":"Learn how to do stuff",
-        "thumb":"tutorials/tutorials-item-bg.png",
-        "url":"/#/tutorials/getting-started"
+        "category":"Build Your First App",
+        "label":"01 Get started with your first web app",
+        "thumb":"tutorials/01_BuildFirstWebApp.png",
+        "url":"/#/tutorials/getting-started?id=part-01-getting-started-with-your-first-web-app",
+        "icon":"play"
+    },
+    {
+        "category":"Build Your First App",
+        "label":"02 Build a login & signup flow",
+        "thumb":"tutorials/02_LoginSignupFlow.png",
+        "url":"/#/tutorials/getting-started?id=part-02-build-a-login-and-signup-flow",
+        "icon":"play"
+    },
+    {
+        "category":"Quick Tips",
+        "label":"Importing Font Files",
+        "desc":"Learn how to import new fonts",
+        "thumb":"tutorials/quicktips_bg.png",
+        "url":"/#/tutorials/quick-tips?id=importing-font-files",
+        "icon":"play"
+    },
+    {
+        "category":"Quick Tips",
+        "label":"Importing CSS Fonts",
+        "desc":"Learn how to import css fonts",
+        "thumb":"tutorials/quicktips_bg.png",
+        "url":"/#/tutorials/quick-tips?id=importing-css-fonts",
+        "icon":"play"
+    },
+    {
+        "category":"Quick Tips",
+        "label":"Horizontal list of cards",
+        "desc":"Learn how to import new fonts",
+        "thumb":"tutorials/quicktips_bg.png",
+        "url":"/#/tutorials/quick-tips?id=horizontal-list-of-cards-with-snapping",
+        "icon":"play"
     },
     { 
-        "category":"Noodl Basics",
+        "category":"Guides",
+        "label":"Layouting",
+        "desc":"Learn the Noodl layouting mechanics",
+        "thumb":"tutorials/guides_bg.png",
+        "url":"/#/guides/layouts.md",
+        "icon":"book"
+    },
+    { 
+        "category":"Guides",
+        "label":"States",
+        "desc":"Learn how to use a States node for handling transitions and interactions.",
+        "thumb":"tutorials/guides_bg.png",
+        "url":"/#/guides/states.md",
+        "icon":"book"
+    },
+    { 
+        "category":"Guides",
+        "label":"Events",
+        "desc":"Learn how to communicate between components.",
+        "thumb":"tutorials/guides_bg.png",
+        "url":"/#/guides/events.md",
+        "icon":"book"
+    },
+    { 
+        "category":"Guides",
         "label":"For Each",
-        "desc":"Learn how to for each",
-        "thumb":"tutorials/tutorials-item-bg-2.png",
-        "url":"/#/tutorials/getting-started"
+        "desc":"Learn how to dynamically create components.",
+        "thumb":"tutorials/guides_bg.png",
+        "url":"/#/guides/for-each.md",
+        "icon":"book"
+    },
+    { 
+        "category":"Guides",
+        "label":"Navigation",
+        "desc":"Learn how to navigate between screens.",
+        "thumb":"tutorials/guides_bg.png",
+        "url":"/#/guides/navigation.md",
+        "icon":"book"
+    },
+    { 
+        "category":"Guides",
+        "label":"Variables & Objects",
+        "desc":"Learn how to store simple data.",
+        "thumb":"tutorials/guides_bg.png",
+        "url":"/#/guides/variables-and-objects.md",
+        "icon":"book"
+    },
+    { 
+        "category":"Guides",
+        "label":"Arrays",
+        "desc":"Learn how to work with arrays of data.",
+        "thumb":"tutorials/guides_bg.png",
+        "url":"/#/guides/arrays.md",
+        "icon":"book"
+    },
+    { 
+        "category":"Guides",
+        "label":"Routes and Navigation",
+        "desc":"Learn how to do advanced navigation.",
+        "thumb":"tutorials/guides_bg.png",
+        "url":"/#/guides/routes.md",
+        "icon":"book"
     },
     { 
         "category":"Guides",
         "label":"Models and Collections",
         "desc":"Learn how to do databases",
-        "thumb":"tutorials/tutorials-item-bg-2.png",
-        "url":"/#/tutorials/getting-started"
+        "thumb":"tutorials/guides_bg.png",
+        "url":"/#/guides/models-and-collections.md",
+        "icon":"book"
+    },
+    { 
+        "category":"Guides",
+        "label":"Logic components",
+        "desc":"Learn how to separate visuals and logic with these helpful patterns and nodes.",
+        "thumb":"tutorials/guides_bg.png",
+        "url":"/#/guides/actions-and-logic.md",
+        "icon":"book"
+    },
+    { 
+        "category":"Guides",
+        "label":"Model relationships",
+        "desc":"Learn how to relationships between models work.",
+        "thumb":"tutorials/guides_bg.png",
+        "url":"/#/guides/relations.md",
+        "icon":"book"
+    },
+    { 
+        "category":"Guides",
+        "label":"Javascript",
+        "desc":"Learn how the Javascript nodes work.",
+        "thumb":"tutorials/guides_bg.png",
+        "url":"/#/guides/javascript.md",
+        "icon":"book"
     }
 ]

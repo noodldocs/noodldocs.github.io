@@ -1,1 +1,0 @@
-Store static data to populate an **Array** with items.

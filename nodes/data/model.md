@@ -2,7 +2,20 @@
 
 This node is used to access the data of a single item in the result from a [Query Collection](/nodes/data/collection.md), refered to as a Model. To learn more about Models and Collections check out the [guide](/guides/models-and-collections.md).
 
+### Creating new models
+To insert a new model into the cloud storage you need to send a signal to the **Insert** action. This will create a new model with the current values on the input properties.
+
 ![](model.png ':class=img-size-m')
+
+### Updating a model
+To update an existing model that have been either fetched via a [Query Collection](/nodes/data/collection.md) or by providing the **Id** and signaling **Fetch** to the model you will use the **Save** signal. The current values of all properties will be pushed to the cloud storage.
+
+![](model-1.png ':class=img-size-m')
+
+### Deleting a model
+You can delete a model by sending a signal to the **Delete** action.
+
+![](model-2.png ':class=img-size-m')
 
 ## INPUTS
 

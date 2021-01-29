@@ -1,16 +1,22 @@
-# Actions and logic
+# Logic components
 
-So far we have mostly looked at building user interfaces and handling user interactions. That is naturally a very big part of building applications but we also need to handle logic. Another important thing to keep in mind is that as your applications grow so does the node grapgh, and if we don't keep them in order things can get pretty messy and hard to follow.
+So far we have mostly looked at building user interfaces and handling user interactions. That is naturally a very big part of building applications but we also need to handle logic. Another important thing to keep in mind is that as your applications grow so does the node grapgh, and if we don't keep them in order things can get pretty messy and hard to get an overview.
 
-Actions is a good pattern to follow in order to create logical components and to keep your node graphs better structured and easier to understand. You are essentially free to structure your Noodl apps any way you want, but we usually try to stick with a folder structure like the one below:
+Logic components is a good pattern to follow in order to package pure logical components and to keep your node graphs better structured and easier to understand. You are essentially free to structure your Noodl apps any way you want, but we usually try to stick with a folder that contains our logic components:
 
 <div class="ndl-images">
-    <img src="/guides/actions-and-logic/structure-example.png" class="ndl-image med"></img>
+    <img src="/guides/actions-and-logic/structure-2.png" class="ndl-image large"></img>
 </div>
 
-Here you put the screens or pages of your app in the *Screens* folder, any reusable user interface components in *Parts*, and finally the folder we are going to look at in this guide, the *Actions* folder.
+You can quickly create new logic components directly in the folder:
 
-An actions is a regular component but instead of containing visual nodes it contains logic flows. An actions receives a signal that triggeres the action combined with an required inputs needed to perform the task. When the actions is completed it often results in one or more result signals and outputs. This is achieved via the *Component Inputs* and *Component Outputs*. 
+<div class="ndl-images">
+    <img src="/guides/actions-and-logic/structure-1.png" class="ndl-image large"></img>
+</div>
+
+A logic component is a regular component but instead of containing visual nodes it contains logic flows. The component receives a signal that typically triggeres an action combined with any required inputs needed to perform the task. When the actions is completed it often results in one or more result signals and outputs. This is achieved via the *Component Inputs* and *Component Outputs*. These *Logic Components* are sometimes also referred to as *Actions*.
+
+Logic components don't show up in the *Canvas View* as the don't have a visual representation. 
 
 ## A simple action
 Here is an example of very simple action.
@@ -19,9 +25,9 @@ Here is an example of very simple action.
     <img src="/guides/actions-and-logic/simple-example.png" class="ndl-image large"></img>
 </div>
 
-The above action is taken from the Tasks app example in the [Models and Collections](/guides/models-and-collections.md) guide. Simple actions like these can generally be kept in the same component as the visuals but for the sake of learning lets make it into an action.
+The above action is taken from the Tasks app example in the [Models and Collections](/guides/models-and-collections.md) guide. Simple logic components like these can generally be kept in the same component as the visuals but for the sake of learning lets package it into it's own logic component.
 
-* The action has a *Do* signal input that triggers the action along with the *Text* input that is needed to complete the action.
+* The component has a *Do* signal input that triggers the action along with the *Text* input that is needed to complete the action.
 
 * It has a *Done* signal when it is completed, but also a *Failure* if signal if something went wrong.
 
@@ -32,7 +38,7 @@ If the node graph above is put in a component that we label *Create New Task*, t
 </div>
 
 ## Conditions in actions
-This is the gist of the pattern that we call *Actions* in Noodl. Now lets take a look at a slighly more advanced action example. This time we are going to extend the example from the [Arrays](/guides/arrays.md) guide where new objects (Users) are added to an array. A common pattern is that we need to check if a user with the same name already exists before adding, this is done with the *Action* below. 
+This is the gist of the pattern that we call *Logic components* or *Actions* in Noodl. Now lets take a look at a slighly more advanced action example. This time we are going to extend the example from the [Arrays](/guides/arrays.md) guide where new objects (Users) are added to an array. A common pattern is that we need to check if a user with the same name already exists before adding, this is done with the *Action* below. 
 
 <div class="ndl-images">
     <img src="/guides/actions-and-logic/new-user-example.png" class="ndl-image large"></img>

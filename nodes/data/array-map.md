@@ -1,5 +1,5 @@
 # Array Map
-This node takes an input array, runs a small map script on each item, and outputs the resulting mapped array.
+This node takes an input array, runs a small map script on each item, and outputs the resulting mapped array. That is an array with new objects, each created in the mapping script.
 
 ![](array-map.png ':class=img-size-l')
 
@@ -13,9 +13,7 @@ The mapping script used to map the objects in the input array to new objects in 
 
 ```javascript
 map({
-	FullName:function(object) {
-	    return object.get('first_name') + ' ' + object.get('last_name')
-	},
+	FullName:() => object.first_name + object.last_name,
 	Age:'years_old'
 })
 ```
@@ -39,6 +37,6 @@ The number of items in the mapped array (this will be the same as the input arra
 
 ### Events
 
-**Modified**  
+**Changed**  
 A signal is emitted here when the input array has been modified which will trigger the *Array Map* node to remap the input and produce a new output *Items*.
 

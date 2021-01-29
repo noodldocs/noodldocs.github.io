@@ -1,8 +1,10 @@
 # Array
 
-An array of objects. See the guide on arrays [here](/guides/arrays) for more information.
+Arrays are ordered lists of [Object](/nodes/data/object.md)s. See the guide on arrays [here](/guides/arrays) for a more detailed introduction.
 
 ![](array.png ':class=ndl-image large')
+
+Add an object to the array by sending a signal on the **Add** input and providing the Id of the object to add on the **Item Id** input. Same goes fore **Remove** to remove an object from the array.
 
 ## INPUTS
 
@@ -52,7 +54,10 @@ The number of items in the **Array**.
 ### Events
 
 **Modified**  
-A signal triggered when any of the actions above is completed.
+A signal triggered when any of the Add, Remove, Clear actions above is completed.
+
+**Changed**  
+This signal is triggered when the content of the array is changed, either by an action on this node or by some other node in the graph that operates on the same array Id.
 
 **Fetched**  
 Triggered when a _Fetch_ action has been performed and the data is ready.
