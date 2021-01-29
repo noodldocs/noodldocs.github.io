@@ -23,15 +23,15 @@
     },
     {
         "category":"Quick Tips",
-        "label":"Horizontal list of cards with snapping",
-        "desc":"Learn how to import new fonts",
+        "label":"Importing CSS Fonts",
+        "desc":"Learn how to import css fonts",
         "thumb":"tutorials/quicktips_bg.png",
         "url":"/#/tutorials/quick-tips?id=importing-css-fonts",
         "icon":"play"
     },
     {
         "category":"Quick Tips",
-        "label":"Importing Font Files",
+        "label":"Horizontal list of cards",
         "desc":"Learn how to import new fonts",
         "thumb":"tutorials/quicktips_bg.png",
         "url":"/#/tutorials/quick-tips?id=horizontal-list-of-cards-with-snapping",

@@ -15,10 +15,3 @@ Welcome to Noodl. Here you will find a video series for building your first Nood
 </iframe></div>
 <br>
 <br>
-
-This is the getting started tutorial. You can start by importing the project below.
-
-<div class="ndl-images">
-    <img src="/guides/for-each/screen.png" class="ndl-image small"></img>   
-    <button class="ndl-import-button" onClick='importIntoNoodl("guides/for-each/project.zip",{name:"Getting Started",thumb:"guides/for-each/screen.png"})'></button>
-</div>
