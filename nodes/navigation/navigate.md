@@ -74,7 +74,7 @@ Available for _Popup_ transitions. This indicates if the new top component shoul
 This is a timing curve that controls the delay, duration and animation ease of the transition.
 
 <div class="ndl-images">
-    <img src="/modules/webappnavigation/guide/transition-params.png" class="ndl-image med"></img>   
+    <img src="/guides/navigation/transition-params.png" class="ndl-image large"></img>   
 </div>
 
 ### Parameters
