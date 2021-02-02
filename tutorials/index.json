@@ -14,6 +14,13 @@
         "icon":"play"
     },
     {
+        "category":"Build Your First App",
+        "label":"03 Work with visual nodes",
+        "thumb":"tutorials/03_VisualNodes.png",
+        "url":"/#/tutorials/getting-started?id=part-03-work-with-visual-nodes",
+        "icon":"play"
+    },
+    {
         "category":"Quick Tips",
         "label":"Importing Font Files",
         "desc":"Learn how to import new fonts",
