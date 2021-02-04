@@ -72,7 +72,7 @@ Finally you need to be able to query the relations. So let's say that we have a 
 
 ```javascript
 where({ 
-    {relatedTo: {id:Inputs.GroupId, key:'posts'}
+    relatedTo: {id:Inputs.GroupId, key:'posts'}
 })
 ```
 
