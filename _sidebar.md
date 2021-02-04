@@ -1,7 +1,7 @@
 - Getting Started
 - [Introduction](README.md)
 - [Build your first app](tutorials/getting-started.md)
-- [Quick Tips](tutorials/quick-tips.md)
+- [Snippets](snippets/snippets.md)
   <br/>
 
 * Guides
@@ -89,12 +89,6 @@
 * [Array](javascript-api/noodl-array.md)
 * [Events](javascript-api/sending-and-receiving-events.md)
 * [Object](javascript-api/noodl-object.md)
-  <br/>
-
-* Javascript Examples
-
-* [Pointer position](javascript-examples/pointer-position.md)
-* [Get DOM element](javascript-examples/get-dom-element.md)
   <br/>
 
 * Extending
