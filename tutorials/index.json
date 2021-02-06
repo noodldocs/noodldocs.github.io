@@ -20,6 +20,13 @@
         "url":"/#/tutorials/getting-started?id=part-03-work-with-visual-nodes",
         "icon":"play"
     },
+    {
+        "category":"Build Your First App",
+        "label":"04 Make the design interactive",
+        "thumb":"tutorials/04_Interactive.png",
+        "url":"/#/tutorials/getting-started?id=part-04-make-the-design-interactive",
+        "icon":"play"
+    },
     { 
         "category":"Guides",
         "label":"Layouting",
