@@ -76,7 +76,7 @@ This property is used to completely remove the node from the DOM. If this proper
 ### Other
 
 **Top Page Name**  
-The name of the Page component that's currently on top of the stack. E.g. `Details`. 
+The name of the Page that's currently on top of the stack. E.g. `Details`. This is the name of the page that is given when creating pages via the properties.
 
 **Stack depth**  
 How many pages there currently are in the stack. The [Navigate](/modules/webappnavigation/navigate.md) node will add one page to the stack, and [Navigate Back](/modules/webappnavigation/navigate-back.md) removes the top page from the stack.
