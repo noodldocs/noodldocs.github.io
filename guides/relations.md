@@ -81,3 +81,13 @@ The above filter will make sure to only return the *Post* models that are relate
 <div class="ndl-images">
     <img src="/guides/relations/query-posts-in-group.png" class="ndl-image large"></img>
 </div>
+
+If you want to make the inverse query, that is you have a *Post* model (you have the *Id* of a *Post* model) and you want to find all *Group*s that it belongs to you would use this advanced query in a *Query Collection* that is set to the *Group* collection.
+
+```javascript
+where({ 
+    posts: {pointsTo:Inputs.PostId}
+})
+```
+
+As you can see above you must also make sure that you use the correct relation field, in this case *posts* on the *Group* collection.
