@@ -1,10 +1,13 @@
-- Getting Started
+* Getting Started
+
 - [Introduction](README.md)
 - [Build your first app](tutorials/getting-started.md)
 - [Snippets](snippets/snippets.md)
+- [Modules](modules/modules.md)
   <br/>
 
 * Guides
+
 * [Layouting](guides/layouts.md)
 * [States](guides/states.md)
 * [Events](guides/events.md)
@@ -19,7 +22,9 @@
 * [Javascript](guides/javascript.md)
   <br/>
 
+<!--
 * Modules
+-->
 
 <!--- Old way
 - [Mobile Web App Navigation](modules/webappnavigation/README.md)
@@ -32,6 +37,7 @@
 
 --->
 
+<!--
 - [MQTT](modules/mqtt/README.md)
   - <div class="modules-subheader">Guides</div>
   - [Using the MQTT nodes](modules/mqtt/mqtt-guide.md)
@@ -82,6 +88,7 @@
     <br/>
 
   <br/>
+  -->
 
 * Javascript API
 
