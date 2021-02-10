@@ -1,7 +1,5 @@
 # User
 
-!> Note, this node is part of the _Cloud Services - User Management_ module. You need to install that module to be able to use this node.
-
 Retreive and store user data for the currently logged in user. Supports custom data fields for storing application specific data.
 
 <div class="ndl-images">
