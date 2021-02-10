@@ -4,7 +4,7 @@
         "desc": "A simple but solid UI kit to use as a starting point for your applications.",
         "project":"sds/ds-module-1-0-6.zip",
         "icon":"sds/ds-icon.png",
-        "docs":"sds"
+        "docs":"sds/"
     },    
     {
         "label":"User Management",
