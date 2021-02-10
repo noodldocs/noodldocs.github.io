@@ -121,7 +121,10 @@
 * [Query Collection](/nodes/cloud-services/collection.md)
 * [Model](/nodes/cloud-services/model.md)
 * [Cloud Function](/nodes/cloud-services/cloudfunction.md)
-
+* [Cloud File](/nodes/cloud-services/cloud-file.md)
+* [Upload File](/nodes/cloud-services/upload-file.md)
+  <br/>
+  
 * Component Utilities
 * [Component Inputs](nodes/componentutils/component-inputs.md)
 * [Component Outputs](nodes/componentutils/component-outputs.md)
@@ -207,6 +210,7 @@
 - [Screen Resolution](nodes/utilities/screen-resolution.md)
 - [String Mapper](nodes/utilities/string-mapper.md)
 - [Timer](nodes/utilities/timer.md)
+* [File Picker](/nodes/utilities/file-picker.md)
   <br/>
 
 * Visual

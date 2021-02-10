@@ -48,7 +48,7 @@ A signal on this input will create a new Model with a fresh new unique _Id_. The
 
 The node will have any properties from the Models in the Collection that it can find in the cloud store schema as well as any properties that the are specified directly on the Model, just like for [Objects](/nodes/data/object.md).
 
-![](object-props.png ':class=img-size-s')
+![](../data/object-props.png ':class=img-size-s')
 
 ### Scripts
 
