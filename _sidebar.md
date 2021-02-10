@@ -210,7 +210,7 @@
 - [Screen Resolution](nodes/utilities/screen-resolution.md)
 - [String Mapper](nodes/utilities/string-mapper.md)
 - [Timer](nodes/utilities/timer.md)
-* [File Picker](/nodes/utilities/file-picker.md)
+* [Open File Picker](/nodes/utilities/open-file-picker.md)
   <br/>
 
 * Visual

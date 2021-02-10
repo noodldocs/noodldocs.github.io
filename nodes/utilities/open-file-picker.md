@@ -1,4 +1,4 @@
-# FILE PICKER
+# OPEN FILE PICKER
 
 Opens a file picker. Noodl uses the system file picker dialog, which will look different across different operating systems.
 
