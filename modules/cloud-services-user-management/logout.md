@@ -1,7 +1,5 @@
 # Log In
 
-!> Note, this node is part of the _Cloud Services - User Management_ module. You need to install that module to be able to use this node.
-
 Log out a signed in user.
 
 <div class="ndl-images">

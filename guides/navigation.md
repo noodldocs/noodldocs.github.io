@@ -34,7 +34,7 @@ When this happens you can also define a navigation transition. There are a few b
 Try playing around with the different transitions and parameters. You can create lots of different effects using the built in transitions. Later we will also look at creating your own custom transitions.
 
 <div class="ndl-images">
-    <img src="/guides/navigation/transition-params.png" class="ndl-image med"></img>   
+    <img src="/guides/navigation/transition-params.png" class="ndl-image large"></img>   
 </div>
 
 Here is an example of the above customized transition:
@@ -56,7 +56,7 @@ In this example the _Id_ is passed to the target screen (the **Details** compone
 The **Details** screen uses the **Navigate Back** node to return to the screen that started the navigation. This essentially pops the stack, i.e. removes the current top component, to reveal the one underneath.
 
 <div class="ndl-images">
-    <img src="/guides/navigation/navigate-back.png" class="ndl-image med"></img>   
+    <img src="/guides/navigation/navigate-back.png" class="ndl-image large"></img>   
 </div>
 
 The same transition used when navigating to the target screen is used to go back. All transitions have forward and back animations.

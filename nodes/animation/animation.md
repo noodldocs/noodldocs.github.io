@@ -1,8 +1,14 @@
 # Animation
 
-Use this node to create animations in your Noodl projects.
+There are several ways to create animations in your Noodl apps. They all work by changing outputs continiously over time that you in turn can connect to the inputs that you want to animate. For most state based animations take a look at the [States](/nodes/animation/states.md) node, for transitions where you want to move smoothly from one value to another check out [Transition](/nodes/animation/transition.md). The animation node can be used to create simple *from* *to* animations.
 
-![](animation.gif)
+![](animation.gif ':class=img-size-l')
+
+First you need to create animation outputs, you can name them whatever you like. These will all be of **number** type.
+
+![](animation-1.png ':class=img-size-m')
+
+After that you will have outputs on the node with corresponding names. Now you can use the properties to setup the animations, and use signals as described below to trigger the animation.
 
 <div class = "node-inputs">
 

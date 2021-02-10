@@ -1,0 +1,51 @@
+[
+    {
+        "label":"Simple Design System",
+        "desc": "A simple but solid UI kit to use as a starting point for your applications.",
+        "project":"sds/ds-module-1-0-6.zip",
+        "icon":"sds/ds-icon.png",
+        "docs":"sds/"
+    },
+    {
+        "label":"Material Icon Set",
+        "desc": "A module to include icons from the Material UI icon set in your apps.",
+        "project":"mui-icons/mui-icons-module-0-2.zip",
+        "icon":"mui-icons/mui-icon.png",
+        "docs":"mui-icons/"
+    },     
+    {
+        "label":"User Management",
+        "desc": "Adds log in, sign up, persistent user data, and more. Make sure you enable cloud services.",
+        "project":"cloud-services-user-management/cloud-services-user-management-1-0-2.zip",
+        "icon":"cloud-services-user-management/cloud-services-user-management-icon.png",
+        "docs": "cloud-services-user-management/"
+    },
+    {
+        "label":"GraphQL",
+        "desc": "A module to help quering data using GraphQL.",
+        "project":"graphql/graphql-module-1-0-0.zip",
+        "icon":"graphql/graphql-module.png",
+        "docs": "graphql/"
+    },             
+    {
+        "label":"Web Camera",
+        "desc":"Support for accessing the camera in web apps.",
+        "project":"webcamera/webcamera-1-0-0.zip",
+        "icon":"webcamera/webcamera.png",
+        "docs":"webcamera/"
+    },
+    {
+        "label":"Markdown",
+        "desc": "Use Markdown in Noodl and style it with CSS.",
+        "project":"markdown/noodl-markdown-1.0.0.zip",
+        "icon":"markdown/noodl-markdown.png",
+        "docs":"markdown-guide"
+    },
+    {
+        "label":"MQTT Module",
+        "desc":"This module contains nodes for sending and receiving messages over MQTT in web apps.",
+        "project":"mqtt/mqtt-module-1-0-1.zip",
+        "icon":"mqtt/mqtt-module-icon.png",
+        "docs":"mqtt/"
+    }         
+]

@@ -1,7 +1,5 @@
 # Log In
 
-!> Note, this node is part of the _Cloud Services - User Management_ module. You need to install that module to be able to use this node.
-
 Log in an existing user. Once a user is logged in, all the relevant data is handled by the [User](modules/cloud-services-user-management/user.md) node.
 
 A successful login will be cached, and users will still be logged in after reloading the page. To log out, use the [Log Out](modules/cloud-services-user-management/logout.md) node.

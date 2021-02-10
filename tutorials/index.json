@@ -14,27 +14,17 @@
         "icon":"play"
     },
     {
-        "category":"Quick Tips",
-        "label":"Importing Font Files",
-        "desc":"Learn how to import new fonts",
-        "thumb":"tutorials/quicktips_bg.png",
-        "url":"/#/tutorials/quick-tips?id=importing-font-files",
+        "category":"Build Your First App",
+        "label":"03 Work with visual nodes",
+        "thumb":"tutorials/03_VisualNodes.png",
+        "url":"/#/tutorials/getting-started?id=part-03-work-with-visual-nodes",
         "icon":"play"
     },
     {
-        "category":"Quick Tips",
-        "label":"Importing CSS Fonts",
-        "desc":"Learn how to import css fonts",
-        "thumb":"tutorials/quicktips_bg.png",
-        "url":"/#/tutorials/quick-tips?id=importing-css-fonts",
-        "icon":"play"
-    },
-    {
-        "category":"Quick Tips",
-        "label":"Horizontal list of cards",
-        "desc":"Learn how to import new fonts",
-        "thumb":"tutorials/quicktips_bg.png",
-        "url":"/#/tutorials/quick-tips?id=horizontal-list-of-cards-with-snapping",
+        "category":"Build Your First App",
+        "label":"04 Make the design interactive",
+        "thumb":"tutorials/04_Interactive.png",
+        "url":"/#/tutorials/getting-started?id=part-04-make-the-design-interactive",
         "icon":"play"
     },
     { 
@@ -132,5 +122,29 @@
         "thumb":"tutorials/guides_bg.png",
         "url":"/#/guides/javascript.md",
         "icon":"book"
-    }
+    },
+    {
+        "category":"Snippets",
+        "label":"Importing Font Files",
+        "desc":"Learn how to import new fonts",
+        "thumb":"tutorials/quicktips_bg.png",
+        "url":"/#/snippets/ui/importing-font-files",
+        "icon":"play"
+    },
+    {
+        "category":"Snippets",
+        "label":"Importing CSS Fonts",
+        "desc":"Learn how to import css fonts",
+        "thumb":"tutorials/quicktips_bg.png",
+        "url":"/#/snippets/ui/importing-css-fonts",
+        "icon":"play"
+    },
+    {
+        "category":"Snippets",
+        "label":"Horizontal list of cards",
+        "desc":"Learn how to import new fonts",
+        "thumb":"tutorials/quicktips_bg.png",
+        "url":"/#/snippets/ui/horizontal-cards-list",
+        "icon":"play"
+    }    
 ]

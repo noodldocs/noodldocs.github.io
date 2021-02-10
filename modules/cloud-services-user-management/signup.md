@@ -1,7 +1,5 @@
 # Sign Up
 
-!> Note, this node is part of the _Cloud Services - User Management_ module. You need to install that module to be able to use this node.
-
 Create new users in Noodl's cloud services.
 
 <div class="ndl-images">
