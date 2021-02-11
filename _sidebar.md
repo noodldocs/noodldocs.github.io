@@ -117,6 +117,14 @@
 * [Transition](nodes/animation/transition.md)
   <br/>
 
+* Cloud Services
+* [Query Collection](/nodes/cloud-services/collection.md)
+* [Model](/nodes/cloud-services/model.md)
+* [Cloud Function](/nodes/cloud-services/cloudfunction.md)
+* [Cloud File](/nodes/cloud-services/cloud-file.md)
+* [Upload File](/nodes/cloud-services/upload-file.md)
+  <br/>
+  
 * Component Utilities
 * [Component Inputs](nodes/componentutils/component-inputs.md)
 * [Component Outputs](nodes/componentutils/component-outputs.md)
@@ -128,14 +136,12 @@
 * [Array](/nodes/data/array.md)
 * [Array Filter](/nodes/data/array-filter.md)
 * [Array Map](/nodes/data/array-map.md)
-* [Query Collection](/nodes/data/collection.md)
 * [For Each Item](/nodes/data/for-each-item.md)
-* [Model](/nodes/data/model.md)
 * [Object](/nodes/data/object.md)
 * [Static Array](/nodes/data/static-array.md)
 * [REST](/nodes/data/rest.md)
 * [Variable](/nodes/data/variable.md)
-* [Cloud Function](/nodes/data/cloudfunction.md)
+
   <br/>
 
 * Variables
@@ -204,6 +210,7 @@
 - [Screen Resolution](nodes/utilities/screen-resolution.md)
 - [String Mapper](nodes/utilities/string-mapper.md)
 - [Timer](nodes/utilities/timer.md)
+* [Open File Picker](/nodes/utilities/open-file-picker.md)
   <br/>
 
 * Visual

@@ -1,6 +1,6 @@
 # Model
 
-This node is used to access the data of a single item in the result from a [Query Collection](/nodes/data/collection.md), refered to as a Model. To learn more about Models and Collections check out the [guide](/guides/models-and-collections.md).
+This node is used to access the data of a single item in the result from a [Query Collection](/nodes/cloud-services/collection.md), refered to as a Model. To learn more about Models and Collections check out the [guide](/guides/models-and-collections.md).
 
 ### Creating new models
 To insert a new model into the cloud storage you need to send a signal to the **Insert** action. This will create a new model with the current values on the input properties.
@@ -8,7 +8,7 @@ To insert a new model into the cloud storage you need to send a signal to the **
 ![](model.png ':class=img-size-m')
 
 ### Updating a model
-To update an existing model that have been either fetched via a [Query Collection](/nodes/data/collection.md) or by providing the **Id** and signaling **Fetch** to the model you will use the **Save** signal. The current values of all properties will be pushed to the cloud storage.
+To update an existing model that have been either fetched via a [Query Collection](/nodes/cloud-services/collection.md) or by providing the **Id** and signaling **Fetch** to the model you will use the **Save** signal. The current values of all properties will be pushed to the cloud storage.
 
 ![](model-1.png ':class=img-size-m')
 
@@ -48,7 +48,7 @@ A signal on this input will create a new Model with a fresh new unique _Id_. The
 
 The node will have any properties from the Models in the Collection that it can find in the cloud store schema as well as any properties that the are specified directly on the Model, just like for [Objects](/nodes/data/object.md).
 
-![](object-props.png ':class=img-size-s')
+![](../data/object-props.png ':class=img-size-s')
 
 ### Scripts
 
