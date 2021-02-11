@@ -23,7 +23,7 @@
     {
         "label":"GraphQL",
         "desc": "A module to help quering data using GraphQL.",
-        "project":"graphql/graphql-module-1-0-0.zip",
+        "project":"graphql/graphql-module-1-0-1.zip",
         "icon":"graphql/graphql-module.png",
         "docs": "graphql/"
     },             

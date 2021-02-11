@@ -1,5 +1,5 @@
 
 - GraphQL
-- [Guide](modules/graphql/graphql-guide.md)
-- [GraphQL](modules/graphql/graphql-node.md)
+- [Intorduction](modules/graphql/)
+- [GraphQL Query](modules/graphql/graphql-node.md)
 <br/>
