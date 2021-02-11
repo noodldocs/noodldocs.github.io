@@ -37,7 +37,7 @@
     {
         "label":"MQTT Module",
         "desc":"This module contains nodes for sending and receiving messages over MQTT in web apps.",
-        "project":"mqtt/mqtt-module-1-0-1.zip",
+        "project":"mqtt/mqtt-module-1-0-2.zip",
         "icon":"mqtt/mqtt-module-icon.png",
         "docs":"mqtt/"
     },              
