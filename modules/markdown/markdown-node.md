@@ -2,8 +2,6 @@
 
 This node enables you to use Markdown in Noodl.
 
-!> Note: To use the GraphQL node you first need to [add](modules/markdown/markdown-guide.md) the Markdown module to your project.
-
 <div class="ndl-images">
     <img src="/modules/markdown/markdown-nodes.png" class="ndl-image med"></img>  
 </div>

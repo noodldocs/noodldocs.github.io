@@ -2,8 +2,6 @@
 
 This node enables you to connect to GraphQL based API:s in a quick and easy way.
 
-!> Note: To use the GraphQL node you first need to [add](modules/graphql/graphql-guide.md) the GraphQL module to your project.
-
 <div class="ndl-images">
     <img src="/modules/graphql/graphql-guide-img/graphql-query-node.png" class="ndl-image medium"></img>  
 </div>
@@ -22,7 +20,9 @@ Click the plus button to define the name of the results array you want to receiv
 **Request Headers**  
 Use this field to add any headers the GraphQL service requires.  
 Example:  
-`headers({ 'Content-Type': 'application/json', 'Accept': 'application/json', 'Authorization': 'Bearer f60e2ea4dcd07fbcdaef8c8cd8418e', })`.
+```javascript
+headers({ 'Content-Type': 'application/json', 'Accept': 'application/json', 'Authorization': 'Bearer f60e2ea4dcd07fbcdaef8c8cd8418e', })
+```
 
 **Fetch**  
 Send a signal to this input to execute your GraphQL query.

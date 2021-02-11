@@ -16,36 +16,36 @@
     {
         "label":"User Management",
         "desc": "Adds log in, sign up, persistent user data, and more. Make sure you enable cloud services.",
-        "project":"cloud-services-user-management/cloud-services-user-management-1-0-2.zip",
+        "project":"cloud-services-user-management/cloud-services-user-management-1-0-3.zip",
         "icon":"cloud-services-user-management/cloud-services-user-management-icon.png",
         "docs": "cloud-services-user-management/"
     },
     {
         "label":"GraphQL",
         "desc": "A module to help quering data using GraphQL.",
-        "project":"graphql/graphql-module-1-0-0.zip",
+        "project":"graphql/graphql-module-1-0-1.zip",
         "icon":"graphql/graphql-module.png",
         "docs": "graphql/"
-    },             
+    }, 
+    {
+        "label":"Markdown",
+        "desc": "Use Markdown in Noodl and style it with CSS.",
+        "project":"markdown/noodl-markdown-1-0-1.zip",
+        "icon":"markdown/noodl-markdown.png",
+        "docs":"markdown/"
+    },  
+    {
+        "label":"MQTT Module",
+        "desc":"This module contains nodes for sending and receiving messages over MQTT in web apps.",
+        "project":"mqtt/mqtt-module-1-0-2.zip",
+        "icon":"mqtt/mqtt-module-icon.png",
+        "docs":"mqtt/"
+    },              
     {
         "label":"Web Camera",
         "desc":"Support for accessing the camera in web apps.",
         "project":"webcamera/webcamera-1-0-0.zip",
         "icon":"webcamera/webcamera.png",
         "docs":"webcamera/"
-    },
-    {
-        "label":"Markdown",
-        "desc": "Use Markdown in Noodl and style it with CSS.",
-        "project":"markdown/noodl-markdown-1.0.0.zip",
-        "icon":"markdown/noodl-markdown.png",
-        "docs":"markdown-guide"
-    },
-    {
-        "label":"MQTT Module",
-        "desc":"This module contains nodes for sending and receiving messages over MQTT in web apps.",
-        "project":"mqtt/mqtt-module-1-0-1.zip",
-        "icon":"mqtt/mqtt-module-icon.png",
-        "docs":"mqtt/"
-    }         
+    }       
 ]
