@@ -16,7 +16,7 @@
     {
         "label":"User Management",
         "desc": "Adds log in, sign up, persistent user data, and more. Make sure you enable cloud services.",
-        "project":"cloud-services-user-management/cloud-services-user-management-1-0-2.zip",
+        "project":"cloud-services-user-management/cloud-services-user-management-1-0-3.zip",
         "icon":"cloud-services-user-management/cloud-services-user-management-icon.png",
         "docs": "cloud-services-user-management/"
     },

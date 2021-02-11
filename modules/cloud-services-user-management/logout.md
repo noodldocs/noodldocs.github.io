@@ -1,4 +1,4 @@
-# Log In
+# Log Out
 
 Log out a signed in user.
 
