@@ -2,7 +2,7 @@
 
 Opens a file picker. Noodl uses the system file picker dialog, which will look different across different operating systems.
 
-![](file-picker.png ':class=img-size-l')
+![](open-file-picker.png ':class=img-size-l')
 
 ## INPUTS
 
