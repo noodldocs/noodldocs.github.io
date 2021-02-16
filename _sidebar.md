@@ -203,13 +203,13 @@
 * [Unique Id](nodes/string-manipulation/unique-id.md)
   <br/>
 
-- Utilities
-- [Boolean To String](nodes/utilities/boolean-to-string.md)
-- [Index To String](nodes/utilities/index-to-string.md)
-- [Reload](nodes/utilities/reload.md)
-- [Screen Resolution](nodes/utilities/screen-resolution.md)
-- [String Mapper](nodes/utilities/string-mapper.md)
-- [Timer](nodes/utilities/timer.md)
+* Utilities
+* [Boolean To String](nodes/utilities/boolean-to-string.md)
+* [Index To String](nodes/utilities/index-to-string.md)
+* [Reload](nodes/utilities/reload.md)
+* [Screen Resolution](nodes/utilities/screen-resolution.md)
+* [String Mapper](nodes/utilities/string-mapper.md)
+* [Timer](nodes/utilities/timer.md)
 * [Open File Picker](/nodes/utilities/open-file-picker.md)
   <br/>
 
