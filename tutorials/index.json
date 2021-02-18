@@ -34,6 +34,13 @@
         "url":"/#/tutorials/getting-started?id=part-05-connect-to-the-cloud",
         "icon":"play"
     },
+    {
+        "category":"Build Your First App",
+        "label":"06 Deploy your first web app",
+        "thumb":"tutorials/06_deploy.png",
+        "url":"/#/tutorials/getting-started?id=part-06-deploy-your-first-web-app",
+        "icon":"play"
+    },
     { 
         "category":"Guides",
         "label":"Layouting",

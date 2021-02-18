@@ -36,3 +36,10 @@ Welcome to Noodl. Here you will find a video series for building your first Nood
 </iframe></div>
 <br>
 <br>
+
+## Part 06 - Deploy your first web app
+
+<div style="padding:62.5% 0 0 0;position:relative;"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/sKr7ydMEnfo" style="position:absolute;top:0;left:0; frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</iframe></div>
+<br>
+<br>
