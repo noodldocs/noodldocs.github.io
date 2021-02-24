@@ -41,6 +41,13 @@
         "url":"/#/tutorials/getting-started?id=part-06-deploy-your-first-web-app",
         "icon":"play"
     },
+    {
+        "category":"Build Your First App",
+        "label":"Bonus - Make it scroll",
+        "thumb":"tutorials/07_bonus.png",
+        "url":"/#/tutorials/getting-started?id=bonus-make-it-scroll",
+        "icon":"play"
+    },
     { 
         "category":"Guides",
         "label":"Layouting",
