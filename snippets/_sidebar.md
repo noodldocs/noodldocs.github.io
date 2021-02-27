@@ -4,10 +4,14 @@
   <br/>
 
 - UI
-
 - [Importing font files](snippets/ui/importing-font-files.md)
 - [Importing CSS fonts](snippets/ui/importing-css-fonts.md)
 - [Horizontal list of cards with snapping](snippets/ui/horizontal-cards-list.md)
+<br/>
+
+- Responsive design
+- [Media Queries](snippets/responsive/media-query.md)
+
   <br/>
 
 <!-- - [Autocomplete text input](ui/autocomplete-text-input.md)
