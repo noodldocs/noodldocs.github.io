@@ -2,7 +2,7 @@
     {
         "label":"Simple Design System",
         "desc": "A simple but solid UI kit to use as a starting point for your applications.",
-        "project":"sds-v3/ds-module-2-0.zip",
+        "project":"sds-v3/ds-module-2-1.zip",
         "icon":"sds-v3/ds-icon.png",
         "docs":"sds-v3/"
     },
@@ -12,7 +12,14 @@
         "project":"mui-icons/mui-icons-module-0-2.zip",
         "icon":"mui-icons/mui-icon.png",
         "docs":"mui-icons/"
-    },     
+    },
+    {
+        "label":"Date Picker Button",
+        "desc": "Contains a simple button that launches a date picker, for both desktop and mobile.",
+        "project":"datepicker-button/datepicker-button-1-1.zip",
+        "icon":"datepicker-button/icon.png",
+        "docs":"datepicker-button/"
+    },      
     {
         "label":"User Management",
         "desc": "Adds log in, sign up, persistent user data, and more. Make sure you enable cloud services.",
