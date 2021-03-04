@@ -6,15 +6,15 @@ It also has a **For** input that can be used to connect the **Control Id** from 
 
 ## INPUTS
 
-[filename](../margin-only.md ':include')
+[filename](./margin-only.md ':include')
 
-[filename](../alignment.md ':include')
+[filename](./alignment.md ':include')
 
-[filename](../size-mode-and-dimensions.md ':include')
+[filename](./size-mode-and-dimensions.md ':include')
 
 ### Layout
 
-[filename](../position.md ':include')
+[filename](./position.md ':include')
 
 ### Text
 
@@ -32,26 +32,26 @@ The color of the text to be displayed.
 
 ### Style
 
-[filename](../visibility-styles.md ':include')
+[filename](./visibility-styles.md ':include')
 
 ## Placement  
 
-[filename](../placement-styles.md ':include')
+[filename](./placement-styles.md ':include')
 
-[filename](../dimension-constraints.md ':include')
+[filename](./dimension-constraints.md ':include')
 
 ### Other
 
-[filename](../pointer-events-and-mounted.md ':include')
+[filename](./pointer-events-and-mounted.md ':include')
 
-[filename](../../advanced-style.md ':include')
+[filename](../advanced-style.md ':include')
 
 ### Other  
-[filename](../child-index-and-this-outputs.md ':include')
+[filename](./child-index-and-this-outputs.md ':include')
 
-[filename](../bounding-box-outputs.md ':include')
+[filename](./bounding-box-outputs.md ':include')
 
-[filename](../mounted-outputs.md ':include')
+[filename](./mounted-outputs.md ':include')
 
 
 

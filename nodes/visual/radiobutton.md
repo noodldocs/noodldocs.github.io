@@ -3,7 +3,7 @@
 This node places a simple core radio button in the visual tree. Radio buttons must be placed in a [Radio Button Group](/nodes/visual/controls/radiobuttongroup.md) to function properly. Just one button in a radio button group can be selected at once.
 
 <div class="ndl-images">
-    <img src="/nodes/visual/controls/radiobutton.png" class="ndl-image large"></img>  
+    <img src="/nodes/visual/radiobutton.png" class="ndl-image large"></img>  
 </div>
 
 Each radion button must have a string **Value** specified, the value for the selected radio button is passed as the **Value** output of the radio button group. All radio buttons in a group should have unique values.
@@ -11,12 +11,12 @@ Each radion button must have a string **Value** specified, the value for the sel
 The core radio button has a very simple visual appearance and is most often used in other components as part of a design system. This control contains all logic such as accessibility etc. It can be styled in via it's properties, or you can use it only for the logic and create your own radio button component in your own design system, see the [Simple Design System](/modules/sds-v3/) for inspiration.
 
 <div class="ndl-images">
-    <img src="/nodes/visual/controls/radiobutton.gif" class="ndl-image small"></img>  
+    <img src="/nodes/visual/radiobutton.gif" class="ndl-image small"></img>  
 </div>
 
 ## INPUTS
 
-[filename](../margin-only.md ':include')
+[filename](./margin-only.md ':include')
 
 ### General
 
@@ -26,7 +26,7 @@ Sets the checkbox in enabled or disabled mode. A disable checkbox will not respo
 **Value**  
 The value for this radio button. The value of the selected radio button in a radio button group will be passed as the **Value** output of the radio button group. All radio buttons in a group should have unique values.
 
-[filename](../alignment.md ':include')
+[filename](./alignment.md ':include')
 
 ### Dimensions
 
@@ -38,7 +38,7 @@ Specify the height of the checkbox in pixels, percentage of parent height or the
 
 ### Layout
 
-[filename](../position.md ':include')
+[filename](./position.md ':include')
 
 ### Checked Style
 
@@ -47,35 +47,35 @@ The background color when the checkbox is "checked".
 
 ### Style
 
-[filename](../visibility-styles.md ':include')
+[filename](./visibility-styles.md ':include')
 
-[filename](../bg-and-border-styles.md ':include')
+[filename](./bg-and-border-styles.md ':include')
 
 ## Box Shadow
 
-[filename](../box-shadow-styles.md ':include')
+[filename](./box-shadow-styles.md ':include')
 
 ## Placement  
 
-[filename](../placement-styles.md ':include')
+[filename](./placement-styles.md ':include')
 
 
 ### Other
 
-[filename](../pointer-events-and-mounted.md ':include')
+[filename](./pointer-events-and-mounted.md ':include')
 
 
-[filename](../../advanced-style.md ':include')
+[filename](../advanced-style.md ':include')
 
 
 ## OUTPUTS
 
 ### Other  
-[filename](../child-index-and-this-outputs.md ':include')
+[filename](./child-index-and-this-outputs.md ':include')
 
-[filename](../bounding-box-outputs.md ':include')
+[filename](./bounding-box-outputs.md ':include')
 
-[filename](../mounted-outputs.md ':include')
+[filename](./mounted-outputs.md ':include')
 
 ### General  
 [filename](./control-id-output.md ':include')

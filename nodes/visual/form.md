@@ -4,11 +4,11 @@ The form is a non visual component that is used to group other controls. It has 
 
 ## INPUTS
 
-[filename](../margin-and-padding.md ':include')
+[filename](./margin-and-padding.md ':include')
 
-[filename](../alignment.md ':include')
+[filename](./alignment.md ':include')
 
-[filename](../size-mode-and-dimensions.md ':include')
+[filename](./size-mode-and-dimensions.md ':include')
 
 ### Layout
 
@@ -18,32 +18,32 @@ By default children are stacked and this property specifies which direction they
 - _Vertical_ - Children are stacked vertically.
 - _Horizontal_ - Children are stacked horizontally.
 
-[filename](../position.md ':include')
+[filename](./position.md ':include')
 
 ### Style
 
-[filename](../visibility-styles.md ':include')
+[filename](./visibility-styles.md ':include')
 
 ## Placement  
 
-[filename](../placement-styles.md ':include')
+[filename](./placement-styles.md ':include')
 
-[filename](../dimension-constraints.md ':include')
+[filename](./dimension-constraints.md ':include')
 
 ### Other
 
-[filename](../pointer-events-and-mounted.md ':include')
+[filename](./pointer-events-and-mounted.md ':include')
 
-[filename](../../advanced-style.md ':include')
+[filename](../advanced-style.md ':include')
 
 ## OUTPUTS
 
 ### Other  
-[filename](../child-index-and-this-outputs.md ':include')
+[filename](./child-index-and-this-outputs.md ':include')
 
-[filename](../bounding-box-outputs.md ':include')
+[filename](./bounding-box-outputs.md ':include')
 
-[filename](../mounted-outputs.md ':include')
+[filename](./mounted-outputs.md ':include')
 
 ### Events
 

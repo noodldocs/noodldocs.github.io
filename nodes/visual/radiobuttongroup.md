@@ -3,18 +3,18 @@
 The radio button group is a non visual control used to group [Radio Button](/nodes/visual/controls/radiobutton.md) controls. Just one button in a radio button group can be selected at once.
 
 <div class="ndl-images">
-    <img src="/nodes/visual/controls/radiobutton.png" class="ndl-image large"></img>  
+    <img src="/nodes/visual/radiobutton.png" class="ndl-image large"></img>  
 </div>
 
 Each radion button must have a string **Value** specified, the value for the selected radio button is passed as the **Value** output of the radio button group. All radio buttons in a group should have unique values.
 
 ## INPUTS
 
-[filename](../margin-and-padding.md ':include')
+[filename](./margin-and-padding.md ':include')
 
-[filename](../alignment.md ':include')
+[filename](./alignment.md ':include')
 
-[filename](../size-mode-and-dimensions.md ':include')
+[filename](./size-mode-and-dimensions.md ':include')
 
 ### General
 
@@ -29,32 +29,32 @@ By default children are stacked and this property specifies which direction they
 - _Vertical_ - Children are stacked vertically.
 - _Horizontal_ - Children are stacked horizontally.
 
-[filename](../position.md ':include')
+[filename](./position.md ':include')
 
 ### Style
 
-[filename](../visibility-styles.md ':include')
+[filename](./visibility-styles.md ':include')
 
 ## Placement  
 
-[filename](../placement-styles.md ':include')
+[filename](./placement-styles.md ':include')
 
-[filename](../dimension-constraints.md ':include')
+[filename](./dimension-constraints.md ':include')
 
 ### Other
 
-[filename](../pointer-events-and-mounted.md ':include')
+[filename](./pointer-events-and-mounted.md ':include')
 
-[filename](../../advanced-style.md ':include')
+[filename](../advanced-style.md ':include')
 
 ## OUTPUTS
 
 ### Other  
-[filename](../child-index-and-this-outputs.md ':include')
+[filename](./child-index-and-this-outputs.md ':include')
 
-[filename](../bounding-box-outputs.md ':include')
+[filename](./bounding-box-outputs.md ':include')
 
-[filename](../mounted-outputs.md ':include')
+[filename](./mounted-outputs.md ':include')
 
 ### States
 

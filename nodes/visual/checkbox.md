@@ -3,20 +3,20 @@
 This node places a simple core checkbox in the visual tree. You can connect the checkbox **Checked** property to a data source, such as a variable or object.
 
 <div class="ndl-images">
-    <img src="/nodes/visual/controls/checkbox.png" class="ndl-image large"></img>  
+    <img src="/nodes/visual/checkbox.png" class="ndl-image large"></img>  
 </div>
 
 The core checkbox has a very simple visual appearance and is most often used in other components as part of a design system. This control contains all logic such as accessibility etc. It can be styled in via it's properties, or you can use it only for the logic and create your own checkbox component in your own design system, see the [Simple Design System](/modules/sds-v3/) for inspiration.
 
 <div class="ndl-images">
-    <img src="/nodes/visual/controls/checkbox.gif" class="ndl-image small"></img>  
+    <img src="/nodes/visual/checkbox.gif" class="ndl-image small"></img>  
 </div>
 
 ## INPUTS
 
-[filename](../margin-only.md ':include')
+[filename](./margin-only.md ':include')
 
-[filename](../alignment.md ':include')
+[filename](./alignment.md ':include')
 
 ### Dimensions
 
@@ -36,7 +36,7 @@ A boolean setting the checkbox in "checked" or "unchecked" state. This is the va
 
 ### Layout
 
-[filename](../position.md ':include')
+[filename](./position.md ':include')
 
 ### Checked Style
 
@@ -45,35 +45,35 @@ The background color when the checkbox is "checked".
 
 ### Style
 
-[filename](../visibility-styles.md ':include')
+[filename](./visibility-styles.md ':include')
 
-[filename](../bg-and-border-styles.md ':include')
+[filename](./bg-and-border-styles.md ':include')
 
 ## Box Shadow
 
-[filename](../box-shadow-styles.md ':include')
+[filename](./box-shadow-styles.md ':include')
 
 ## Placement  
 
-[filename](../placement-styles.md ':include')
+[filename](./placement-styles.md ':include')
 
 
 ### Other
 
-[filename](../pointer-events-and-mounted.md ':include')
+[filename](./pointer-events-and-mounted.md ':include')
 
 
-[filename](../../advanced-style.md ':include')
+[filename](../advanced-style.md ':include')
 
 
 ## OUTPUTS
 
 ### Other  
-[filename](../child-index-and-this-outputs.md ':include')
+[filename](./child-index-and-this-outputs.md ':include')
 
-[filename](../bounding-box-outputs.md ':include')
+[filename](./bounding-box-outputs.md ':include')
 
-[filename](../mounted-outputs.md ':include')
+[filename](./mounted-outputs.md ':include')
 
 ### General  
 [filename](./control-id-output.md ':include')

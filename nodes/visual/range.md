@@ -3,7 +3,7 @@
 The range control is used to select a number between a **Min** and **Max** value using a slide style interaction.
 
 <div class="ndl-images">
-    <img src="/nodes/visual/controls/range.png" class="ndl-image large"></img>  
+    <img src="/nodes/visual/range.png" class="ndl-image large"></img>  
 </div>
 
 The range control have **Min**, **Max** and **Step** inputs that control the numeric range and individual steps that can be selected. The current value of the range is outputted on the **Value** output, and the **Changed** signal is send when the value has changed due to user interaction. Use these inputs and outputs to hook the control up to data, e.g. a variable.
@@ -11,12 +11,12 @@ The range control have **Min**, **Max** and **Step** inputs that control the num
 The core range has a very simple visual appearance and is most often used in other components as part of a design system. This control contains all logic such as accessibility etc. It can be styled in via it's properties, or you can use it only for the logic and create your own range component in your own design system, see the [Simple Design System](/modules/sds-v3/) for inspiration.
 
 <div class="ndl-images">
-    <img src="/nodes/visual/controls/range.gif" class="ndl-image med"></img>  
+    <img src="/nodes/visual/range.gif" class="ndl-image med"></img>  
 </div>
 
 ## INPUTS
 
-[filename](../margin-only.md ':include')
+[filename](./margin-only.md ':include')
 
 ### General
 
@@ -35,7 +35,7 @@ Sets the numeric maximum value that can be selected using this range control. De
 **Step**  
 Sets the numeric step value for this range control. Values can only be selected in the specified steps. Default is 1.
 
-[filename](../alignment.md ':include')
+[filename](./alignment.md ':include')
 
 ### Dimensions
 
@@ -47,7 +47,7 @@ Specify the height of the checkbox in pixels, percentage of parent height or the
 
 ### Layout
 
-[filename](../position.md ':include')
+[filename](./position.md ':include')
 
 ### Thumb Style
 
@@ -73,30 +73,30 @@ The color of the track of the range control.
 
 ### Style
 
-[filename](../visibility-styles.md ':include')
+[filename](./visibility-styles.md ':include')
 
-[filename](../bg-and-border-styles.md ':include')
+[filename](./bg-and-border-styles.md ':include')
 
 ## Placement  
 
-[filename](../placement-styles.md ':include')
+[filename](./placement-styles.md ':include')
 
 
 ### Other
 
-[filename](../pointer-events-and-mounted.md ':include')
+[filename](./pointer-events-and-mounted.md ':include')
 
 
-[filename](../../advanced-style.md ':include')
+[filename](../advanced-style.md ':include')
 
 ## OUTPUTS
 
 ### Other  
-[filename](../child-index-and-this-outputs.md ':include')
+[filename](./child-index-and-this-outputs.md ':include')
 
-[filename](../bounding-box-outputs.md ':include')
+[filename](./bounding-box-outputs.md ':include')
 
-[filename](../mounted-outputs.md ':include')
+[filename](./mounted-outputs.md ':include')
 
 ### General  
 [filename](./control-id-output.md ':include')

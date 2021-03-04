@@ -157,7 +157,7 @@
 * [Navigate Back](/nodes/navigation/navigate-back.md)
 * [Navigate To Path](/nodes/navigation/navigate-to-path.md)
 * [Show Popup](/nodes/navigation/show-popup.md)
-* [Hide Popup](/nodes/navigation/hide-popup.md)
+* [Close Popup](/nodes/navigation/close-popup.md)
   <br/>
 
 * Events
@@ -224,4 +224,13 @@
 * [Text Input](nodes/visual/text-input.md)
 * [Video](nodes/visual/video.md)
 * [For Each](/nodes/data/for-each.md)
+* [Button](/nodes/visual/button.md)
+* [Checkbox](/nodes/visual/checkbox.md)
+* [Field Set](/nodes/visual/fieldset.md)
+* [Form](/nodes/visual/form.md)
+* [Label](/nodes/visual/label.md)
+* [Options](/nodes/visual/options.md)
+* [Radio Button](/nodes/visual/radiobutton.md)
+* [Radio Button Group](/nodes/visual/radiobuttongroup.md)
+* [Range](/nodes/visual/range.md)
   <br/>
