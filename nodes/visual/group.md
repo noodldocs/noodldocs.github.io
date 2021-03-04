@@ -47,7 +47,7 @@ Controls how the width and height of a **Group** is specified.
 Specify the width of this node in pixels, percentage of parent's width or the unit _vw_ which is percentage of the browser window width.
 
 **Height**  
-Specify the height of this node in pixels, percentage of parent's height or the unit _vw_ which is percentage of the browser window height.
+Specify the height of this node in pixels, percentage of parent's height or the unit _vh_ which is percentage of the browser window height.
 
 ### Layout
 
@@ -161,6 +161,10 @@ Specifes the X position, within this node, that will be the center for rotation 
 
 **Transform Origin Y**  
 Specifes the Y position, within this node, that will be the center for rotation and scale. By default it is the center of the node (i.e. 50%) but you can specify an arbitrary value in either percentage of the node's height or explicitly in pixels.
+
+[filename](./dimension-constraints.md ':include')
+
+**Max Width**
 
 ### Focus
 
