@@ -6,7 +6,7 @@ This node places a simple core checkbox in the visual tree. You can connect the 
     <img src="/nodes/visual/controls/checkbox.png" class="ndl-image large"></img>  
 </div>
 
-The core checkbox has a very simple visual appearance and is most often used in other components as part of a design system. This control contains all logic such as accessibility etc.
+The core checkbox has a very simple visual appearance and is most often used in other components as part of a design system. This control contains all logic such as accessibility etc. It can be styled in via it's properties, or you can use it only for the logic and create your own checkbox component in your own design system, see the [Simple Design System](/modules/sds-v3/) for inspiration.
 
 <div class="ndl-images">
     <img src="/nodes/visual/controls/checkbox.gif" class="ndl-image small"></img>  

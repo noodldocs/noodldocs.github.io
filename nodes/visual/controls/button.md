@@ -6,7 +6,7 @@ This node places a simple core button in the visual tree. The button has a **Cli
     <img src="/nodes/visual/controls/button.png" class="ndl-image large"></img>  
 </div>
 
-The core button has a very simple visual appearance and is most often used in other components as part of a design system, where it is styled or simply used as the control logic. This control contains all logic such as accessibility etc.
+The core button has a very simple visual appearance and is most often used in other components as part of a design system, where it is styled or simply used as the control logic. This control contains all logic such as accessibility etc. It can be styled in via it's properties, or you can use it only for the logic and create your own button component in your own design system, see the [Simple Design System](/modules/sds-v3/) for inspiration.
 
 <div class="ndl-images">
     <img src="/nodes/visual/controls/button-1.png" class="ndl-image small"></img>  

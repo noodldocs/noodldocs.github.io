@@ -14,7 +14,7 @@ Each object in the array can have the following properties:
 
 When an option is selected the corresponding value will be sent on the **Value** output and the **Changed** signal will be sent. Use this to connect to data sources as shown above.
 
-The core options control has a very simple visual appearance and is most often used in other components as part of a design system, where it is styled or simply used as the control logic. This control contains all logic such as accessibility etc.
+The core options control has a very simple visual appearance and is most often used in other components as part of a design system, where it is styled or simply used as the control logic. This control contains all logic such as accessibility etc. It can be styled in via it's properties, or you can use it only for the logic and create your own options component in your own design system, see the [Simple Design System](/modules/sds-v3/) for inspiration.
 
 <div class="ndl-images">
     <img src="/nodes/visual/controls/options-1.png" class="ndl-image med"></img>  
@@ -28,6 +28,9 @@ The core options control has a very simple visual appearance and is most often u
 
 **Enabled**  
 Specifies if the control is **Enabled** (true) or **Disabled** (false). A disabled control will not respond to any user interaction.
+
+**Value**  
+The current selected value of the options control. By changing this the control will show the label corresponding to the value.
 
 [filename](../size-mode-and-dimensions.md ':include')
 
@@ -89,8 +92,8 @@ The background color of the options control.
 
 ### States   
 
-**Checked**  
-A boolean output that is true when this checkbox control is checked and false if not. This is useful when using this control as a base for your own component that will represent visually that it is pressed.
+**Value**  
+The currently choosen value 
 
 [filename](./control-states-outputs.md ':include')
 

@@ -16,6 +16,11 @@ Each radion button must have a string **Value** specified, the value for the sel
 
 [filename](../size-mode-and-dimensions.md ':include')
 
+### General
+
+**Value**  
+The value of the current selected radio button. By changing this value will change which radio button is currently selected.
+
 ### Layout
 
 **Layout**  
