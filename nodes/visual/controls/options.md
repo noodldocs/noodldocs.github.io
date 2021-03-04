@@ -1,0 +1,100 @@
+# Options
+
+This node places a simple core select / options (dropdown) in the visual tree. The options has a **Items** input that need to be provided with an **Array** containing the options.
+
+<div class="ndl-images">
+    <img src="/nodes/visual/controls/options.png" class="ndl-image large"></img>  
+</div>
+
+Each object in the array can have the following properties:
+
+- **Label**  The label that will be shown in the options popup / dropdown.
+- **Value**  (required) The value for the option that will be outputted on the **Value** output.
+- **Disabled** Set this to "true" to disable an option.
+
+When an option is selected the corresponding value will be sent on the **Value** output and the **Changed** signal will be sent. Use this to connect to data sources as shown above.
+
+The core options control has a very simple visual appearance and is most often used in other components as part of a design system, where it is styled or simply used as the control logic. This control contains all logic such as accessibility etc.
+
+<div class="ndl-images">
+    <img src="/nodes/visual/controls/options-1.png" class="ndl-image med"></img>  
+</div>
+
+## INPUTS
+
+[filename](../margin-and-padding.md ':include')
+
+### General
+
+**Enabled**  
+Specifies if the control is **Enabled** (true) or **Disabled** (false). A disabled control will not respond to any user interaction.
+
+[filename](../size-mode-and-dimensions.md ':include')
+
+### Layout
+
+[filename](../position.md ':include')
+
+### Text
+
+**Text**  
+The text string to display.
+
+**Font Family**  
+The font family of the text to display. Choose a font in the project folder or type font name.
+
+**Font Size**  
+The size of the font of the text to be displayed, in pixels.
+
+**Color**  
+The color of the text to be displayed.
+
+### Style
+
+**Background Color**  
+The background color of the options control.
+
+[filename](../visibility-styles.md ':include')
+
+[filename](../bg-and-border-styles.md ':include')
+
+## Box Shadow
+
+[filename](../box-shadow-styles.md ':include')
+
+## Placement  
+
+[filename](../placement-styles.md ':include')
+
+[filename](../dimension-constraints.md ':include')
+
+### Other
+
+[filename](../pointer-events-and-mounted.md ':include')
+
+
+[filename](../../advanced-style.md ':include')
+
+## OUTPUTS
+
+### Other  
+[filename](../child-index-and-this-outputs.md ':include')
+
+[filename](../bounding-box-outputs.md ':include')
+
+[filename](../mounted-outputs.md ':include')
+
+### General  
+[filename](./control-id-output.md ':include')
+
+### States   
+
+**Checked**  
+A boolean output that is true when this checkbox control is checked and false if not. This is useful when using this control as a base for your own component that will represent visually that it is pressed.
+
+[filename](./control-states-outputs.md ':include')
+
+### Events
+
+[filename](./control-events-outputs.md ':include')
+

@@ -28,7 +28,7 @@ By default children are stacked and this property specifies which direction they
 
 [filename](../placement-styles.md ':include')
 
-[filename](./dimension-constraints.md ':include')
+[filename](../dimension-constraints.md ':include')
 
 ### Other
 

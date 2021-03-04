@@ -81,7 +81,7 @@ The background color when the checkbox is "checked".
 ### States   
 
 **Checked**  
-A boolean output that is true when this checkbox control is checked and false if not. This is useful when using this control as a base for your own component that will represent visually that it is pressed.
+A boolean output that is true when this checkbox control is checked and false if not. This is useful when using this control as a base for your own component that will represent visually that it is checked.
 
 [filename](./control-states-outputs.md ':include')
 
