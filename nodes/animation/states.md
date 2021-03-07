@@ -26,6 +26,11 @@ This is the starting state for the **States** node when it is created. You can a
 **Toggle**  
 Will animate to the next state, or the first state if the current state is the last one.
 
+### General
+
+**Use Transitions**  
+This property can be used to enabled and disable transitions between states for the specified values. By default it is *enabled*, this means that any color or number values will transition smoothely between states.
+
 ## Value types
 
 For each value you can specify the type. Default is _Number_.
