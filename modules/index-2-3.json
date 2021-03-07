@@ -16,7 +16,7 @@
     {
         "label":"Date Picker Button",
         "desc": "Contains a simple button that launches a date picker, for both desktop and mobile.",
-        "project":"datepicker-button/datepicker-button-1-1.zip",
+        "project":"datepicker-button/datepicker-button-1-3.zip",
         "icon":"datepicker-button/icon.png",
         "docs":"datepicker-button/"
     },      
