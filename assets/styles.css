@@ -350,3 +350,8 @@ body .sidebar-toggle span:nth-child(3) {
 .johan-test {
   font-weight: bold;
 }
+
+/* Modules table */
+.modules-table img {
+  width: 150px;
+}
