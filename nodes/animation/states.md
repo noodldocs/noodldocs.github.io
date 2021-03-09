@@ -61,9 +61,6 @@ To learn more take a look at the [States guide](/guides/states.md).
 
 Each state will have a signal input called _To_ followed by the state name. This can be used to connect a signal that will take the states node to that state when the signal is triggered.
 
-</div>
-
-<div class = "node-outputs">
 
 ## OUTPUTS
 
@@ -81,5 +78,3 @@ True when the currently selected state is X.
 
 **Has Reached "State X"**  
 Signal sent when the state animation to state X is complete.
-
-</div>
