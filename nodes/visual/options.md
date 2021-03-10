@@ -14,6 +14,8 @@ Each object in the array can have the following properties:
 
 When an option is selected the corresponding value will be sent on the **Value** output and the **Changed** signal will be sent. Use this to connect to data sources as shown above.
 
+If there is no option selected and if there is no value provided on the **Value** input, or if the value provided on the **Value** input doesn't match any of the items in the **Items** array, the options control will be empty. Also setting the input **Value** to an empty string will clear the selected option.
+
 The core options control has a very simple visual appearance and is most often used in other components as part of a design system, where it is styled or simply used as the control logic. This control contains all logic such as accessibility etc. It can be styled in via it's properties, or you can use it only for the logic and create your own options component in your own design system, see the [Simple Design System](/modules/sds-v3/) for inspiration.
 
 <div class="ndl-images">
