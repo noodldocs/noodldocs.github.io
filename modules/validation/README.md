@@ -61,6 +61,16 @@ schema({
 
 This can be used to validate that a password is formatted correctly and you can also use this module to make sure that two input fields match.
 
+```javascript
+schema({
+    "Due Date":date().min(new Date(),'Must be a date in the future')
+})
+```
+
+If you want to use spaces in your property names, make sure they are provided as strings i.e. in quatation marks. This example above tests a date and make sure that it is a date in the future.
+
+
+
 
 
 
