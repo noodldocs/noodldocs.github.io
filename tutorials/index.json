@@ -1,5 +1,34 @@
 [
     {
+        "category":"Highlights",
+        "label":"Overview of Noodl features",
+        "thumb":"tutorials/FeaturesOverview.png",
+        "url":"/#/?id=overview-of-noodl-features",
+        "icon":"play"
+    },
+    {
+        "category":"Highlights",
+        "label":"The Complete Editor Tour",
+        "thumb":"tutorials/EditorWalk.png",
+        "url":"/#/?id=the-complete-editor-tour",
+        "icon":"play"
+    },
+    {
+        "category":"Highlights",
+        "label":"Routes and Navigation",
+        "desc":"Learn how to do advanced navigation.",
+        "thumb":"tutorials/guides_bg.png",
+        "url":"/#/guides/routes.md",
+        "icon":"book"
+    },
+    {
+        "category":"Highlights",
+        "label":"01 Get started with your first web app",
+        "thumb":"tutorials/01_BuildFirstWebApp.png",
+        "url":"/#/tutorials/getting-started?id=part-01-getting-started-with-your-first-web-app",
+        "icon":"play"
+    },
+    {
         "category":"Build Your First App",
         "label":"01 Get started with your first web app",
         "thumb":"tutorials/01_BuildFirstWebApp.png",
