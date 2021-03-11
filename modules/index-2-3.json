@@ -28,6 +28,13 @@
         "docs": "cloud-services-user-management/"
     },
     {
+        "label":"Form Validation",
+        "desc": "This module adds a utility node that makes different kind of form validation easier.",
+        "project":"validation/validation-1-2.zip",
+        "icon":"validation/icon.png",
+        "docs": "validation/"
+    },    
+    {
         "label":"GraphQL",
         "desc": "A module to help quering data using GraphQL.",
         "project":"graphql/graphql-module-1-0-1.zip",

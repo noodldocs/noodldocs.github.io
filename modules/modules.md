@@ -27,6 +27,10 @@ Below you will find a list of the build in Noodl modules:
         <td><a href="#/modules/cloud-services-user-management/">User Management</a><br>A module that adds log in, sign up, persistent user data, and more. Make sure you enable cloud services.</td>
     </tr>
     <tr>
+    <td><img src="/modules/validation/icon.png"></img></td>
+        <td><a href="#/modules/validation/">Form Validation</a><br>This module adds a utility node that makes different kind of form validation easier.</td>
+    </tr>    
+    <tr>
         <td><img src="/modules/graphql/graphql-module.png"></img></td>
         <td><a href="#/modules/graphql/">GraphQL</a><br>A module to help quering data using GraphQL.</td>
     </tr>
