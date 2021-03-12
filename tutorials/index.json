@@ -175,6 +175,22 @@
     },
     {
         "category":"Snippets",
+        "label":"Javascript Pointer Position",
+        "desc":"Learn how to import new fonts",
+        "thumb":"tutorials/quicktips_bg.png",
+        "url":"/#/snippets/javascript/pointer-position",
+        "icon":"book"
+    },
+    {
+        "category":"Snippets",
+        "label":"Javascript Get DOM Element",
+        "desc":"Learn how to import new fonts",
+        "thumb":"tutorials/quicktips_bg.png",
+        "url":"/#/snippets/javascript/get-dom-element",
+        "icon":"book"
+    },
+    {
+        "category":"Snippets",
         "label":"Importing Font Files",
         "desc":"Learn how to import new fonts",
         "thumb":"tutorials/quicktips_bg.png",
@@ -196,5 +212,13 @@
         "thumb":"tutorials/quicktips_bg.png",
         "url":"/#/snippets/ui/horizontal-cards-list",
         "icon":"play"
-    }    
+    },
+    {
+        "category":"Snippets",
+        "label":"Media Queries",
+        "desc":"Learn how to import new fonts",
+        "thumb":"tutorials/quicktips_bg.png",
+        "url":"/#/snippets/responsive/media-query",
+        "icon":"book"
+    }   
 ]
