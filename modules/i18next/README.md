@@ -1,0 +1,3 @@
+# i18next Translation
+
+Documentation coming soon...
