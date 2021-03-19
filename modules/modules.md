@@ -1,4 +1,5 @@
 # Importing Modules
+
 You can import modules into your Noodl project that contain additional functionality. These can be public modules, or private modules that you have added to your workspace. See the [extending](/extending/README) guide for more details on private modules.
 
 ![](modules-1.png ':class=img-size-m')
@@ -7,7 +8,7 @@ To add a module you will first open the **Library panel**, here you can find pub
 
 When you want to add a module to your workspace you simply click the **Add** button. Modules may add components to your project, and they can add core nodes. To learn how to use a module make sure you check out the documentation by clicking the **Docs** button.
 
-Below you will find a list of the build in Noodl modules:    
+Below you will find a list of the build in Noodl modules:
 
 <table class="modules-table">
     <tr>
@@ -15,7 +16,7 @@ Below you will find a list of the build in Noodl modules:
         <td><a href="#/modules/sds-v3/">Simple Design System</a><br>This module contains a simple but solid UI kit to use as a starting point for your applications.</td>
     </tr>
     <tr>
-        <td><img src="/modules/datepicker-button/icon.png"></img></td>
+        <td><img src="/modules/datepicker-button/DatePickerModule.png"></img></td>
         <td><a href="#/modules/datepicker-button/">Date Picker Button</a><br>This module contains a simple button that launches a date picker, for both desktop and mobile.</td>
     </tr>
     <tr>
@@ -46,18 +47,18 @@ Below you will find a list of the build in Noodl modules:
         <td><img src="/modules/mqtt/MQTTModule.png"></img></td>
         <td><a href="#/modules/mqtt/">MQTT Module</a><br>This module contains nodes for sending and receiving messages over MQTT in web apps.</td>
     </tr> 
-    <tr>
+    <!--<tr>
         <td><img src="/modules/mapbox/MapboxModule.png"></img></td>
         <td><a href="#/modules/mapbox/">Mapbox</a><br>This module adds support for maps and location technology through Mapbox.</td>
-    </tr>  
+    </tr>  -->
     <tr>
         <td><img src="/modules/lottie/LottieModule.png"></img></td>
         <td><a href="#/modules/lottie/">Lottie</a><br>This module adds support for Lottie animations in Noodl.</td>
     </tr>
-    <tr>
+    <!--<tr>
         <td><img src="/modules/chartjs/ChartJSModule.png"></img></td>
         <td><a href="#/modules/chartjs/">Chart.js</a><br>A simple and flexible way to do charts and visualizations in Noodl.</td>
-    </tr>  
+    </tr>  -->
     <tr>
         <td><img src="/modules/i18next/i8nextModule.png"></img></td>
         <td><a href="#/modules/i18next/">i18next Translation</a><br>Module for using i18next in Noodl.</td>
