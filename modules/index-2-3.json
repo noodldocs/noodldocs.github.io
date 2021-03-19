@@ -26,6 +26,13 @@
         "project":"i18next/i18next-1-0-1.zip",
         "icon":"i18next/i8nextModule.png",
         "docs": "i18next/"
+    },
+    {
+        "label":"Lottie",
+        "desc": "A module for using Lottie in Noodl.",
+        "project":"lottie/lottie-1-0-0.zip",
+        "icon":"lottie/LottieModule.png",
+        "docs": "lottie/"
     }, 
     {
         "label":"Markdown",
