@@ -3,7 +3,6 @@
 **Send Message** nodes are used to send a message over MQTT, to another device for example. All devices that connect to the editor will
 use the same MQTT broker and thus messages can be sent across devices. The **Send Message** node uses topics to specify which receivers should get the messages.
 
-!> The **Send Message** node is part of the MQTT module which needs to be added to your project before it becomes available. Also note that you have to configure an MQTT broker for it to work. See [MQTT Guide](guides/mqtt.md)
 
 ![](send-message.gif)
 
