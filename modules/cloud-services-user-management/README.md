@@ -2,6 +2,14 @@
 
 This module contains nodes for handling user sign up, log in, log out, and cloud backed user data with Noodl's cloud services. You can find the details for the different nodes via the reference documentation to the left.
 
+## Adding the module to your project
+
+To install this module, open the Noodl project in which you want to add the module, and import it from the sidebar.
+
+<div class="ndl-images">
+    <img src="/modules/cloud-services-user-management/userman-add-module.png" class="ndl-image med"></img>
+</div>
+
 Once you have installed the module, you will find the new nodes under **Cloud Services** in the node picker.
 
 ![](user-nodes.png ':class=img-size-l')
@@ -12,4 +20,3 @@ If you want a good introduction to user management we recommend taking a look at
 </iframe></div>
 <br>
 <br>
-
