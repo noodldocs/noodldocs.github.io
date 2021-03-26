@@ -205,10 +205,13 @@ body .sidebar-toggle span:nth-child(3) {
   background-color: transparent;
 }
 
+.modules-table img {
+  max-width: 100px;
+}
+
 .markdown-section table td,
 .markdown-section table th {
   border: none;
-  padding: 1.1rem 0.5rem;
   text-align: left;
 }
 
