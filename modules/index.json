@@ -44,7 +44,7 @@
     {
         "label":"Web Camera",
         "desc":"Support for accessing the camera in web apps.",
-        "project":"webcamera/webcamera-1-0-0.zip",
+        "project":"webcamera/webcamera-1-0-1.zip",
         "icon":"webcamera/webcamera.png",
         "docs":"webcamera/"
     }       
