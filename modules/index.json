@@ -1,51 +1,79 @@
 [
     {
-        "label":"Simple Design System",
-        "desc": "A simple but solid UI kit to use as a starting point for your applications.",
-        "project":"sds/ds-module-1-0-6.zip",
-        "icon":"sds/ds-icon.png",
-        "docs":"sds/"
+        "label":"Date Picker Button",
+        "desc": "Contains a simple button that launches a date picker, for both desktop and mobile.",
+        "project":"datepicker-button/datepicker-button-1-3.zip",
+        "icon":"datepicker-button/DatePickerModule.png",
+        "docs":"datepicker-button/"
+    },     
+    {
+        "label":"Form Validation",
+        "desc": "This module adds a utility node that makes different kind of form validation easier.",
+        "project":"validation/validation-1-2.zip",
+        "icon":"validation/FormValidationModule.png",
+        "docs": "validation/"
+    },
+    {
+        "label":"GraphQL",
+        "desc": "A module to help quering data using GraphQL.",
+        "project":"graphql/graphql-module-1-0-0.zip",
+        "icon":"graphql/GraphQLModule.png",
+        "docs": "graphql/"
+    },
+    {
+        "label":"i18next Translation",
+        "desc": "A module for using i18next in Noodl.",
+        "project":"i18next/i18next-1-0-1.zip",
+        "icon":"i18next/i8nextModule.png",
+        "docs": "i18next/"
+    },
+    {
+        "label":"Lottie",
+        "desc": "A module for using Lottie in Noodl.",
+        "project":"lottie/lottie-1-0-0.zip",
+        "icon":"lottie/LottieModule.png",
+        "docs": "lottie/"
+    },
+    {
+        "label":"Markdown",
+        "desc": "Use Markdown in Noodl and style it with CSS.",
+        "project":"markdown/noodl-markdown-1.0.0.zip",
+        "icon":"markdown/MarkdownModule.png",
+        "docs":"markdown/"
     },
     {
         "label":"Material Icon Set",
         "desc": "A module to include icons from the Material UI icon set in your apps.",
         "project":"mui-icons/mui-icons-module-0-2.zip",
-        "icon":"mui-icons/mui-icon.png",
+        "icon":"mui-icons/MaterialIconModule.png",
         "docs":"mui-icons/"
+    },
+    {
+        "label":"MQTT Module",
+        "desc":"This module contains nodes for sending and receiving messages over MQTT in web apps.",
+        "project":"mqtt/mqtt-module-1-0-1.zip",
+        "icon":"mqtt/MQTTModule.png",
+        "docs":"mqtt/"
+    },
+    {
+        "label":"Simple Design System",
+        "desc": "A simple but solid UI kit to use as a starting point for your applications.",
+        "project":"sds/ds-module-1-0-6.zip",
+        "icon":"sds/SDSModule.png",
+        "docs":"sds/"
     },     
     {
         "label":"User Management",
         "desc": "Adds log in, sign up, persistent user data, and more. Make sure you enable cloud services.",
-        "project":"cloud-services-user-management/cloud-services-user-management-1-0-3.zip",
-        "icon":"cloud-services-user-management/cloud-services-user-management-icon.png",
+        "project":"cloud-services-user-management/cloud-services-user-management-1-0-2.zip",
+        "icon":"cloud-services-user-management/UserManagementModule.png",
         "docs": "cloud-services-user-management/"
-    },
-    {
-        "label":"GraphQL",
-        "desc": "A module to help quering data using GraphQL.",
-        "project":"graphql/graphql-module-1-0-1.zip",
-        "icon":"graphql/graphql-module.png",
-        "docs": "graphql/"
-    }, 
-    {
-        "label":"Markdown",
-        "desc": "Use Markdown in Noodl and style it with CSS.",
-        "project":"markdown/noodl-markdown-1-0-1.zip",
-        "icon":"markdown/noodl-markdown.png",
-        "docs":"markdown/"
-    },  
-    {
-        "label":"MQTT Module",
-        "desc":"This module contains nodes for sending and receiving messages over MQTT in web apps.",
-        "project":"mqtt/mqtt-module-1-0-2.zip",
-        "icon":"mqtt/mqtt-module-icon.png",
-        "docs":"mqtt/"
     },              
     {
         "label":"Web Camera",
         "desc":"Support for accessing the camera in web apps.",
         "project":"webcamera/webcamera-1-0-1.zip",
-        "icon":"webcamera/webcamera.png",
+        "icon":"webcamera/WebcameraModule.png",
         "docs":"webcamera/"
-    }       
+    }         
 ]

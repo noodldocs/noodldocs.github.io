@@ -1,9 +1,9 @@
 - WebCamera
 
-- [Using the WebCamera](modules/webcamera/webcamera-guide.md)
+- [Guide](modules/webcamera/)
   <br/>
 
 - Nodes
 
 - [Web Camera](modules/webcamera/webcamera.md)
-  <br/>  
+  <br/>

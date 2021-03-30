@@ -1,5 +1,7 @@
-
 - GraphQL
-- [Intorduction](modules/graphql/)
+- [Introduction](modules/graphql/)
+  <br/>
+
+- Nodes
 - [GraphQL Query](modules/graphql/graphql-node.md)
-<br/>
+  <br/>
