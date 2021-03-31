@@ -7,6 +7,7 @@
 - [Importing font files](snippets/ui/importing-font-files.md)
 - [Importing CSS fonts](snippets/ui/importing-css-fonts.md)
 - [Horizontal list of cards with snapping](snippets/ui/horizontal-cards-list.md)
+- [Rotary knob](snippets/rotary-knob/rotary-knob.md)
 <br/>
 
 - Responsive design
