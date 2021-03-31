@@ -6,7 +6,7 @@ The knob has start and stop angles, and is not "endless".
 
 <div class="ndl-images">
     <img src="/snippets/rotary-knob/rotary-knob.png" class="ndl-image med">
-<button class="ndl-import-button" onClick='importIntoNoodl("/snippets/rotary-knob/rotary-knob-1.0.0.zip")'></button>
+<button class="ndl-import-button" onClick='importIntoNoodl("/snippets/rotary-knob/rotary-knob-1.0.1.zip")'></button>
 </div>
 
 ## Inputs
