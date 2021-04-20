@@ -1,0 +1,360 @@
+:root {
+  --theme-color: #f5bd41;
+  --theme-color-dark: rgb(168, 127, 38);
+
+  --text-color-base: #2e2e46;
+  --text-color-secondary: #646473;
+  --text-color-tertiary: #81818e;
+}
+
+body {
+  font-size: 100%;
+  line-height: 1.5;
+  color: var(--text-color-base);
+}
+
+* {
+  text-decoration: none !important;
+}
+
+a {
+  transition: all 0.3s linear;
+}
+
+.github-corner {
+  z-index: 5;
+}
+
+/****** Sidebar ******/
+.sidebar .app-name-link img {
+  margin-left: -50px;
+  width: 100px;
+}
+
+.sidebar ul li h1 {
+  margin-left: -20px;
+  margin-bottom: 0px;
+  font-size: 32px;
+  line-height: 1;
+}
+
+.sidebar ul li {
+  margin-left: 20px;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.sidebar ul li a {
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.sidebar ul li ul li a {
+  margin-left: -25px;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.modules-header {
+  margin-top: 15px;
+  margin-left: 0px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.modules-subheader {
+  margin-left: -25px;
+  margin-top: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.app-sub-sidebar li:before {
+  display: none;
+}
+
+.sidebar ul li a:hover {
+  color: var(--theme-color);
+}
+
+.sidebar ul li a:active {
+  color: var(--theme-color);
+}
+
+.sidebar ul li.active > a {
+  border-right: 2px solid;
+  color: var(--theme-color);
+  font-weight: 600;
+}
+
+.sidebar .search .clear-button {
+  cursor: pointer;
+}
+
+/****** Sidebar Toggle ******/
+.sidebar-toggle {
+  cursor: pointer;
+}
+
+body .sidebar-toggle {
+  background: none;
+  top: 1.5rem;
+  left: calc(300px + 1.5rem);
+  cursor: pointer;
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 0;
+  transition: left 0.25s ease-out;
+}
+
+body .sidebar-toggle span {
+  background-color: var(--theme-color);
+  height: 0.2rem;
+  width: 1.5rem;
+  position: absolute;
+  left: 0;
+  margin: 0;
+  transform-origin: 0;
+  border-radius: 1px;
+}
+
+body.close .sidebar-toggle {
+  transition: left 0.25s ease-out;
+  width: 1.5rem;
+  height: 1.5rem;
+  left: 1.5rem;
+}
+
+body.close .sidebar-toggle span {
+  transform-origin: center;
+}
+
+body .sidebar-toggle span:nth-child(1) {
+  top: 0;
+}
+body .sidebar-toggle span:nth-child(2) {
+  top: 0.5rem;
+}
+body .sidebar-toggle span:nth-child(3) {
+  top: 1rem;
+}
+
+.sidebar-toggle:hover {
+  opacity: 0.8;
+}
+.sidebar-toggle .sidebar-toggle-button:hover {
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  body .sidebar-toggle {
+    left: 1rem;
+  }
+
+  body.close .sidebar-toggle {
+    left: calc(300px + 1.5rem);
+  }
+}
+
+/****** Markdown General ******/
+.markdown-section {
+  padding: 30px 30px 40px;
+  max-width: 768px;
+  font-size: 18px;
+}
+
+.markdown-section a {
+  text-decoration: none;
+  border-bottom: 0.1rem solid var(--theme-color);
+  transition: all 0.3s ease;
+}
+
+.markdown-section a:hover {
+  border-color: var(--theme-color-dark);
+  color: var(--theme-color-dark);
+}
+
+.markdown-section a.anchor {
+  border: none;
+}
+
+/****** Markdown Table ******/
+.markdown-section table {
+  display: table;
+}
+
+.markdown-section table tr {
+  border-width: 0.15rem 0;
+  border-style: solid;
+  border-color: #f1f1f2;
+}
+
+.markdown-section table thead tr {
+  text-transform: uppercase;
+  font-size: 90%;
+  border-top: none;
+}
+
+.markdown-section table tbody tr:last-of-type {
+  border-bottom: none;
+}
+
+.markdown-section table tr:nth-child(2n) {
+  background-color: transparent;
+}
+
+.modules-table img {
+  max-width: 100px;
+}
+
+.markdown-section table td,
+.markdown-section table th {
+  border: none;
+  text-align: left;
+}
+
+.markdown-section table td p {
+  margin: 0;
+}
+
+.markdown-section blockquote {
+  margin: 1em 0;
+}
+
+.markdown-section blockquote > p {
+  font-weight: 500;
+}
+
+.markdown-section em,
+.markdown-section blockquote {
+  color: var(--text-color-tertiary);
+}
+
+/****** CODE HIGHLIGHTING ******/
+.token.string {
+  color: #42b983;
+}
+
+.token.boolean,
+.token.number {
+  color: var(--theme-color);
+}
+
+.lang-bash .token.function,
+.lang-json .token.property {
+  color: #e96900;
+}
+
+/****** COPY TO CLIPBOARD ******/
+.docsify-copy-code-button {
+  font-size: 0.7em !important;
+}
+
+/****** IMAGES ******/
+.ndl-images {
+  position: relative;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.ndl-image {
+  height: auto;
+  margin: 5px;
+  align-self: flex-start;
+}
+
+.ndl-image.small {
+  width: 30%;
+}
+
+.ndl-image.med {
+  width: 50%;
+}
+
+.ndl-image.large {
+  width: 100%;
+}
+
+/****** COPY NODES BUTTON ******/
+.ndl-copy-nodes-button {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  overflow: visible;
+  padding: 0.65em 0.8em;
+  border: 0;
+  border-radius: 0;
+  outline: 0;
+  font-size: 10px;
+  background: #808080;
+  background: var(--theme-color, #808080);
+  color: #fff;
+  cursor: pointer;
+}
+
+.ndl-copy-nodes-button::after {
+  content: 'COPY NODES';
+}
+
+.ndl-copy-nodes-button:active {
+  background: var(--theme-color-dark, #808080);
+}
+
+.ndl-import-button {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  overflow: visible;
+  padding: 0.65em 0.8em;
+  border: 0;
+  border-radius: 0;
+  outline: 0;
+  font-size: 10px;
+  background: #808080;
+  background: var(--theme-color, #808080);
+  color: #fff;
+  cursor: pointer;
+}
+
+.ndl-import-button::after {
+  content: 'IMPORT';
+}
+
+.ndl-import-button:active {
+  background: var(--theme-color-dark, #808080);
+}
+
+.img-size-s {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+.img-size-m {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.img-size-l {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.johan-test {
+  font-weight: bold;
+}
+
+/* Modules table */
+.modules-table img {
+  width: 150px;
+}

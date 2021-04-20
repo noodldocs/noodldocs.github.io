@@ -1,0 +1,1 @@
+This node represents an image.
