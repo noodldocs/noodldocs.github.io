@@ -1,19 +1,19 @@
 # i18next
 
-This is used to register bundles and to set and get language.
+This is used to register bundles and to set and get the current language.
 
-## Inputs
+## INPUTS
 
-### Language (string)
+**Language**  
+This is a string input that is used to specify the current language. It should be a language code that matches a langugage in the bundle.
 
-### ChangeLanguage (signal)
+**ChangeLanguage**  
+This signal is used in combination with **Language** to set a new current language. The **Language** string should be a language code, and is matched to a language bundle. For example `en` for English.
 
-These two are used in combination to set a new language. The Language string should be a language code, and is matched to a language bundle. For example `en` for English.
+## OUTPUTS
 
-## Outputs
+**LanguageChanged**  
+This is triggered when the current language is changed, as a result of a signal received on **ChangeLanguage**. This is useful if your application needs to take action when the language is changed.
 
-### LanguageChanged (signal)
-
-### CurrentLanguage (string)
-
-**LanguageChanged** is triggered whenever the language is changed, for example when using the **ChangeLanguage** signal. If, for example, your Noodl project needs to take action when the language is changed, you can use this signal. **CurrentLanguage** contains the language code of the currently set language.
+**CurrentLanguage**  
+Contains the language code of the currently set language.

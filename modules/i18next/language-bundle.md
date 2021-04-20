@@ -22,32 +22,30 @@ Note that i18next supports various dynamic features in the texts, e.g. plurals, 
 
 There are typically two ways to use Language Bundles. For static texts, for example UI texts, you edit the bundle object directly in Noodl (pressing the "Edit" button on the property panel). As you build the UI you add new texts to the bundle. You have one bundle per language. For dynamic texts, for example loaded during execution from a database, you programatically create bundle objects and load them into the **LanguageBundle** when available and using the AddBundleObject input.
 
-## Inputs
+## INPUTS
 
-### Language (string)
+**Language**  
+The language that this bundle applies to. Typically a language code string, e.g. `en`.
 
-The language that this bundle applies to. Typically a language code, e.g. `en`.
-
-### Namespace (string)
-
+**Namespace**  
 The name of the Namespace. Can by any string.
 
-### AddResource (signal)
+**AddResource**  
+A signal to add a specific resource to the bundle. This is used for dynamic language string, e.g. when reading content from a database.
 
-### ResourceKey (string)
+**ResourceKey**  
+The resource key that will be added when the **AddResource** signal is received.
 
-### ResourceValue (string)
+**ResourceValue**  
+The resource value that will be associated with the **ResourceKey** when the **AddResource** signal is received.
 
-These three inputs are used in combination to add a single new key/string to the bundle.
+**AddBundleObject**  
+This signal is used to add a complete bundle object to the language bundle. This is typically used to dynamically add language resources to a bundle e.g. when fetching from a database.
 
-### AddBundleObject (signal)
+**Resource Bundle Object**  
+The object (a javascript object) that will be added to the language bundle when the **AddBundleObject** signal is received.
 
-### Resource Bundle Object (javascript object)
+## OUTPUTS
 
-These two inputs are used in combination to add a complete Bundle object to the bundle.
-
-# Outputs
-
-## BundleLoaded (signal)
-
+**BundleLoaded**  
 Triggered when a new bundle object has been loaded.
