@@ -2,9 +2,7 @@
 
 This node places a simple core select / options (dropdown) in the visual tree. The options has a **Items** input that need to be provided with an **Array** containing the options.
 
-<div class="ndl-images">
-    <img src="/nodes/visual/options.png" class="ndl-image large"></img>  
-</div>
+![](./options.png ':class=img-size-l')
 
 Each object in the array can have the following properties:
 
@@ -18,9 +16,7 @@ If there is no option selected and if there is no value provided on the **Value*
 
 The core options control has a very simple visual appearance and is most often used in other components as part of a design system, where it is styled or simply used as the control logic. This control contains all logic such as accessibility etc. It can be styled in via it's properties, or you can use it only for the logic and create your own options component in your own design system, see the [Simple Design System](/modules/sds-v3/) for inspiration.
 
-<div class="ndl-images">
-    <img src="/nodes/visual/options-1.png" class="ndl-image med"></img>  
-</div>
+![](./options-1.png ':class=img-size-m')
 
 ## INPUTS
 

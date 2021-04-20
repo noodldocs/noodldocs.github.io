@@ -2,17 +2,13 @@
 
 The range control is used to select a number between a **Min** and **Max** value using a slide style interaction.
 
-<div class="ndl-images">
-    <img src="/nodes/visual/range.png" class="ndl-image large"></img>  
-</div>
+![](./range.png ':class=img-size-l')
 
 The range control have **Min**, **Max** and **Step** inputs that control the numeric range and individual steps that can be selected. The current value of the range is outputted on the **Value** output, and the **Changed** signal is send when the value has changed due to user interaction. Use these inputs and outputs to hook the control up to data, e.g. a variable.
 
 The core range has a very simple visual appearance and is most often used in other components as part of a design system. This control contains all logic such as accessibility etc. It can be styled in via it's properties, or you can use it only for the logic and create your own range component in your own design system, see the [Simple Design System](/modules/sds-v3/) for inspiration.
 
-<div class="ndl-images">
-    <img src="/nodes/visual/range.gif" class="ndl-image med"></img>  
-</div>
+![](./range.gif ':class=img-size-m')
 
 ## INPUTS
 

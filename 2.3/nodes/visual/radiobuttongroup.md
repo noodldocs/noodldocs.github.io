@@ -2,9 +2,7 @@
 
 The radio button group is a non visual control used to group [Radio Button](/nodes/visual/controls/radiobutton.md) controls. Just one button in a radio button group can be selected at once.
 
-<div class="ndl-images">
-    <img src="/nodes/visual/radiobutton.png" class="ndl-image large"></img>  
-</div>
+![](./radiobutton.png ':class=img-size-l')
 
 Each radion button must have a string **Value** specified, the value for the selected radio button is passed as the **Value** output of the radio button group. All radio buttons in a group should have unique values.
 
