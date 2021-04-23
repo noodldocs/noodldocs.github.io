@@ -1,6 +1,6 @@
 ## CRUD Template
 
-The CRUD (Create, read, update, delete) template gives a starting point for working with data from a database and display it in a classic table view. You can import this template to build on top of, or just learn how to create some of the basic patterns for creating, displaying, updating, and deleting data from a database. 
+The CRUD (Create, read, update, delete) template gives a starting point for working with data from a database and display it in a classic table view. You can import this template to build on top of, or just learn how to create some of the basic patterns for creating, displaying, updating, and deleting data from a database. We use 
 
 <div class="ndl-images">
     <img src="templates/crud_template/images/crud_interface.png" class=".ndl-image.large ">

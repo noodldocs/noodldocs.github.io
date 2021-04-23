@@ -5,3 +5,5 @@ Browse the available templates from the left sidebar menu.
 ### Importing Templates
 
 Follow these instructions to see how to import a template.
+
+
