@@ -4,6 +4,7 @@
 - [Build your first app](tutorials/getting-started.md)
 - [Snippets](snippets/snippets.md)
 - [Modules](modules/modules.md)
+- [Templates](templates/templates.md)
   <br/>
 
 * Guides
