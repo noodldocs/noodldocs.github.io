@@ -62,6 +62,7 @@
         query = [];
         if(options && options.name !== undefined) query.push('name=' + encodeURIComponent(options.name));
         if(options && options.thumb !== undefined) query.push('thumb=' + encodeURIComponent(location.protocol + '//' + location.host + '/' + options.thumb));
+        if(options && options.cf !== undefined) query.push('thumb=' + encodeURIComponent(location.protocol + '//' + location.host + '/' + options.cf));
 
         var uri =
           'noodl:import/' +
