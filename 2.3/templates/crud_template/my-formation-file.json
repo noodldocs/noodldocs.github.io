@@ -1,0 +1,19 @@
+{
+    "formation":[
+      {
+        "type":"collection",
+        "name":"Tasks",
+        "properties":{
+          "PhotoDate":{"type":"Date"},
+          "Size":{"type":"String"},
+          "Public":{"type":"Boolean"},
+          "selectedDate":{"type":"String"},
+          "Title": {"type": "String"},
+          "Tags": {"type": "Array"},
+          "Image": {"type":"File"},
+          "Rating": {"type": "Number"},
+          "Category": {"type": "String"}
+        }
+      }
+    ]
+  }
