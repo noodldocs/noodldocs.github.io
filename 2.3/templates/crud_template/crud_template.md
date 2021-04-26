@@ -4,7 +4,7 @@ The CRUD (Create, read, update, delete) template gives a starting point for work
 
 <div class="ndl-images">
     <img src="templates/crud_template/images/crud_interface.png" class=".ndl-image.large ">
-    <button class="ndl-import-button" onClick='importIntoNoodl("templates/crud_template/crud_template.zip", {name: "CRUD Template", cf:"templates/crud_template/my-formation-file.json"})'></button>
+    <button class="ndl-import-button" onClick='importIntoNoodl("2.3/templates/crud_template/crud_template-1-0.zip", {name: "CRUD Template", cf:"2.3./templates/crud_template/crud-template-cs-formation.json", thumb:"2.3/templates/crud_template/images/crud_interface.png"})'></button>
 </div>
 
 ### Import & Setup
