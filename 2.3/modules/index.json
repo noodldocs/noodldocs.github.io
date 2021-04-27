@@ -12,11 +12,11 @@
         "project":"validation/validation-1-2.zip",
         "icon":"validation/FormValidationModule.png",
         "docs": "validation/"
-    },
+    },    
     {
         "label":"GraphQL",
         "desc": "A module to help quering data using GraphQL.",
-        "project":"graphql/graphql-module-1-0-0.zip",
+        "project":"graphql/graphql-module-1-0-1.zip",
         "icon":"graphql/GraphQLModule.png",
         "docs": "graphql/"
     },
@@ -33,11 +33,11 @@
         "project":"lottie/lottie-1-0-0.zip",
         "icon":"lottie/LottieModule.png",
         "docs": "lottie/"
-    },
+    }, 
     {
         "label":"Markdown",
         "desc": "Use Markdown in Noodl and style it with CSS.",
-        "project":"markdown/noodl-markdown-1.0.0.zip",
+        "project":"markdown/noodl-markdown-1-0-1.zip",
         "icon":"markdown/MarkdownModule.png",
         "docs":"markdown/"
     },
@@ -47,33 +47,33 @@
         "project":"mui-icons/mui-icons-module-0-2.zip",
         "icon":"mui-icons/MaterialIconModule.png",
         "docs":"mui-icons/"
-    },
+    },  
     {
         "label":"MQTT Module",
         "desc":"This module contains nodes for sending and receiving messages over MQTT in web apps.",
-        "project":"mqtt/mqtt-module-1-0-1.zip",
+        "project":"mqtt/mqtt-module-1-0-2.zip",
         "icon":"mqtt/MQTTModule.png",
         "docs":"mqtt/"
     },
     {
         "label":"Simple Design System",
         "desc": "A simple but solid UI kit to use as a starting point for your applications.",
-        "project":"sds/ds-module-1-0-6.zip",
-        "icon":"sds/SDSModule.png",
-        "docs":"sds/"
-    },     
+        "project":"sds-v3/ds-module-3-1.zip",
+        "icon":"sds-v3/SDSModule.png",
+        "docs":"sds-v3/"
+    },
     {
         "label":"User Management",
         "desc": "Adds log in, sign up, persistent user data, and more. Make sure you enable cloud services.",
-        "project":"cloud-services-user-management/cloud-services-user-management-1-0-2.zip",
+        "project":"cloud-services-user-management/cloud-services-user-management-1-0-3.zip",
         "icon":"cloud-services-user-management/UserManagementModule.png",
         "docs": "cloud-services-user-management/"
     },              
     {
         "label":"Web Camera",
         "desc":"Support for accessing the camera in web apps.",
-        "project":"webcamera/webcamera-1-0-1.zip",
         "icon":"webcamera/WebcameraModule.png",
+        "project":"webcamera/webcamera-1-0-1.zip",
         "docs":"webcamera/"
-    }         
+    }       
 ]
