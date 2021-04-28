@@ -1,16 +1,24 @@
+
+
+
 ## CRUD Template
 
-The CRUD (Create, read, update, delete) template gives a starting point for working with data from a database and display it in a classic table view. You can import this template to build on top of, or just learn how to create some of the basic patterns for creating, displaying, updating, and deleting data from a database. We use 
+The CRUD (Create, read, update, delete) template gives a starting point for working with data from a database and display it in a classic table view. You can import this template to build on top of, or just learn how to create some of the basic patterns for creating, displaying, updating, and deleting data from a database.
+
+<div style="padding:62.5% 0 0 0;position:relative;"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/AUaUlncVzQI" style="position:absolute;top:0;left:0; frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</iframe></div>
+
+<br>
 
 <div class="ndl-images">
-    <img src="templates/crud_template/images/crud_interface.png" class=".ndl-image.large ">
-    <button class="ndl-import-button" onClick='importIntoNoodl("2.3/templates/crud_template/crud_template-1-0.zip", {name: "CRUD Template", cf:"2.3/templates/crud_template/crud-template-cs-formation.json", thumb:"2.3/templates/crud_template/images/crud_interface.png"})'></button>
+    <!--<img src="templates/crud_template/images/crud_interface.png" class=".ndl-image.large "> -->
+    <button class="ndl-import-button no-content" onClick='importIntoNoodl("2.3/templates/crud_template/crud_template-1-0.zip", {name: "CRUD Template", cf:"2.3/templates/crud_template/crud-template-cs-formation.json", thumb:"2.3/templates/crud_template/images/crud_interface.png"})'>OPEN IN NOODL</button>
 </div>
 
 ### Import & Setup
-Open the template in Noodl by Clicking the "Import" button above.  
-The browser whole project in your clipboard.
-Enable Noodl's backend service, to attach a database to the project
+1. Open the template in Noodl by Clicking the "OPEN IN NOODL" button above.  
+2. The browser will ask you to open Noodl, so confirm an a modal will open inside Noodl, to setup the Template.
+3. Give your project a Name, and choose to use a new backend.
 
 ### Get Started 
 Models and Collections are essential nodes in this project, so we recommend you to see our guide to learn how to work with these nodes and Noodl's backend services: 
