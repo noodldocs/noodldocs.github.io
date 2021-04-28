@@ -16,13 +16,22 @@ The CRUD (Create, read, update, delete) template gives a starting point for work
 </div>
 
 ### Import & Setup
-1. Open the template in Noodl by Clicking the "OPEN IN NOODL" button above.  
-2. The browser will ask you to open Noodl, so confirm an a modal will open inside Noodl, to setup the Template.
-3. Give your project a Name, and choose to use a new backend.
+1. Make sure Noodl is running in the background, and no existing projects are open.
+2. Click the "OPEN IN NOODL" button above, to launch the template. 
+3. Confirm the the browser messeage that asks to open Noodl. This will open a modal inside Noodl to setup the template.
+4. Give your project a name, and choose to create a new cloud service.
 
 ### Get Started 
-Models and Collections are essential nodes in this project, so we recommend you to see our guide to learn how to work with these nodes and Noodl's backend services: 
-https://docs.noodl.net/#/guides/models-and-collections
+
+Watch the video bellow to get a walkthrough of the project and how the different parts are structured. The main parts of this template is a **table** to display data, a **form component** to edit data from the table as well as creating new items for the table, and a **sidebar menu** for navigation that easily can be expanded. 
+
+Before you start working with the template we recommend you to take a look at the following resources: 
+
+[Models, Collections](guides/models-and-collections.md) are essential nodes in this project, so we recommend you to see our guide to learn how to work with these nodes together with Noodl's backend service. These are used to both set and extract data from the backend, and display it in the table. 
+
+[Navigation Stack]
+
+
 
 This template is mainly built around the two following parts: A table that gets populated with data from the backend, and a form component used to fill in data when creating and editing data items in the table. 
 
