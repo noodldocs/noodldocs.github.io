@@ -56,6 +56,12 @@ If enabled the stack will change the URL when navigation is performed, and if th
 **Start Page**  
 The page that is shown when the stack is created and no navigation has been performed.
 
+### Layout
+**Clip content**  
+Controls if the Navigation Stack size should expand to fit all of it's children. This is useful when placing things like footers after a navigation stack.
+
+If content inside the Navigation Stack should be able to scroll, Clip content should be enabled so the Navigation Stack doesn't grow with it's content since, not allowing the Pages inside to get a scroll bar.
+
 ### Pages
 Create and manage pages as shown above.
 

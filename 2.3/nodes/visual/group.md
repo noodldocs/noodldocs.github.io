@@ -8,15 +8,11 @@ This node represents a group that can have other visual nodes as children. **Gro
 
 Using the margin and padding gadget you can specify the top, bottom, left and right margins and padding for this node. You can specify them in either pixels or percentage of the corrensponding parent's dimension. Margins are the distance between this node and its siblings. Padding is the distance from the borders of this node to its children.
 
-<div class="ndl-images">
-    <img src="/nodes/visual/margin-and-padding.png" class="ndl-image small"></img>  
-</div>
+![](margin-and-padding.png ':class=img-size-s')
 
 ### Alignment
 
-<div class="ndl-images">
-    <img src="/nodes/visual/align-props.png" class="ndl-image small"></img>  
-</div>
+![](align-props.png ':class=img-size-s')
 
 Use the alignment gadget to specify how this node is aligned to its parent. Important to note is that the horizontal alignment options won't have any effect if the parent's layout is set to _Horizontal_, and similarly the vertical alignments have no effect if the parent's layout is set to _Vertical_.
 
@@ -34,9 +30,7 @@ From left to right, the alignment options are:
 **Size Mode**  
 Controls how the width and height of a **Group** is specified.
 
-<div class="ndl-images">
-    <img src="/nodes/visual/dims-1.png" class="ndl-image small"></img>  
-</div>
+![](dims-1.png ':class=img-size-s')
 
 - _Explicit width and height_ - Set the width and height directly in pixels or percentage. Percentage is in relation to the parent, so 100% is the same size as the parent.
 - _Explicit height, Content Width_ - The node will calculate the width to fit all of its children. The height is explicitly set.
@@ -49,7 +43,19 @@ Specify the width of this node in pixels, percentage of parent's width or the un
 **Height**  
 Specify the height of this node in pixels, percentage of parent's height or the unit _vh_ which is percentage of the browser window height.
 
+**Fixed**  
+Controls if an element will try to resize and share space with siblings without going outside of the bounds of the parent.
+
+- _Enabled_: Elements will be the exact size set
+- _Disabled_: Element will resize to fill up empty space, or shrink to make space for siblings. Use the dimension constraints, min and max size, to control the boundaries
+
 ### Layout
+**Position**  
+Controls how this node is positioned in relation to siblings and if it affects the size of its parent.
+
+- _In Layout_ - This node is part of the parent node's layout. It will be stacked with its siblings depending on the parent node's layout settings.
+- _Absolute_ - This node will not be part of the parent node's layout, instead you are free to use the _Pos X_ and _Pos Y_ to place this node explicitly.
+- _Sticky_ - Behaves like _In Layout_, except when the node is about the be scrolled outside the parent. It'll stick to an edge of the parent istead of scrolling away. What edge can be controlled with the **Alignment** input.
 
 **Layout**  
 By default children are stacked and this property specifies which direction they should be stacked.
@@ -64,6 +70,30 @@ This property specifies what happens with children that are stacked outside of t
 - _Off_ - Children are stacked beyond the boundaries of the node. If _Clip_ is enabled they will not be visible.
 - _On_ - Children are wrapped to the next row or column (depending on layout direction).
 - _On Reverse_ - Same as _On_ but opposite layout direction.
+
+**Clip content**  
+Controls if elements that are too big to fit inside the parent will be clipped.
+
+If disabled, a group will always expand to contain all of its children. So if the children are taller than the size of the group, the group will expand and be larger than its specified size.
+
+**Align and justify content**  
+
+![](group-align-and-justify.png ':class=img-size-m')
+Control how children are aligned and justified by default. Children can override these settings with their **Alignement** input.
+
+The following values control cross-axis alignment, meaning vertical alignment for horizontal layouts, and horizontal alignment for vertical layouts.
+- _Align items start_: Children are stacked at the start of the parent.
+- _Align items center_: Children are stacked at the center of the parent.
+- _Align items end_: Children are stacked at the end of the parent.
+
+The following values control alignment in the same direction as the layout.
+- _Justify content start_: Children are stacked at the start of the parent.
+- _Justify content center_: Children are stacked at the center of the parent.
+- _Justify content end_: Children are stacked at the end of the parent.
+- _Justify content space between_: Children are evenly distributed. No space is added between the parent and the first and last child.
+- _Justify content space around_: Children are evenly distributed. Space is added between the parent and the first and last child.
+- _Justify content space evenly_: Children are evenly distributed with equal space between them.
+
 
 ### Scroll
 
@@ -86,9 +116,6 @@ Only available if _Native Platform Scroll_ is disabled. Toggles if scrolling bou
 When enabled, uses the web's native scrolling dependent on the platform. Uses custom Noodl scrolling when disabled. The custom Noodl scrolling is platform independent and has both touch and mouse support.
 
 ### Style
-
-**Clip**  
-Specifies whether this node should clip any part of its children that are outside of its borders.
 
 **Opacity**  
 The opacity of this node. 0 is completely transparent and invisible. 1 is completely solid and opaque.
@@ -172,12 +199,6 @@ Specifes the Y position, within this node, that will be the center for rotation 
 Focuses this group. Will trigger the _Focused_ output on this group, as well as _Focused Lost_ on other groups that now lost focus.
 
 ### Other
-
-**Position**  
-Controls how this node is layouted in its parent node.
-
-- _In Layout_ - This node is part of the parent node's layout. It will be stacked with its siblings depending on the parent node's layout settings.
-- _Absolute_ - This node will not be part of the parent node's layout, instead you are free to use the _Pos X_ and _Pos Y_ to place this node explicitly.
 
 **Pointer Events Mode**  
 This specifies how this node responds to pointer events.
