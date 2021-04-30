@@ -5,7 +5,9 @@
 - [Snippets](snippets/snippets.md)
 - [Modules](modules/modules.md)
 - [Templates](templates/templates.md)
-  <br/>
+  - [CRUD Template](templates/crud_template/crud_template.md) 
+
+<br/>
 
 * Guides
 

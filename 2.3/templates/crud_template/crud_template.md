@@ -5,8 +5,9 @@
 
 The CRUD (Create, read, update, delete) template gives a starting point for working with data from a database and display it in a classic table view. You can import this template to build on top of, or just learn how to create some of the basic patterns for creating, displaying, updating, and deleting data from a database.
 
-<div style="padding:62.5% 0 0 0;position:relative;"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/AUaUlncVzQI" style="position:absolute;top:0;left:0; frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</iframe></div>
+<div style="padding:62.5% 0 0 0;position:relative;"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/It3xuo-np0c" style="position:absolute;top:0;left:0; frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</iframe>
+</div>
 
 <br>
 
@@ -23,27 +24,18 @@ The CRUD (Create, read, update, delete) template gives a starting point for work
 
 ### Get Started 
 
-Watch the video bellow to get a walkthrough of the project and how the different parts are structured. The main parts of this template is a **table** to display data, a **form component** to edit data from the table as well as creating new items for the table, and a **sidebar menu** for navigation that easily can be expanded. 
+This template is mainly built around three parts; A **table** that gets populated with data from Noodl's cloud service. A **form component** used to fill in data when creating and editing data items in the table. And a **Sidebar menu** used to create the navigation. 
+Watch the video bellow to get a walkthrough of the project and how the different parts are structured. 
 
+<div style="padding:62.5% 0 0 0;position:relative;"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/zRgttswG9vY" style="position:absolute;top:0;left:0; frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</iframe>
+</div>
+<br>
+<br>
 Before you start working with the template we recommend you to take a look at the following resources: 
 
-[Models, Collections](guides/models-and-collections.md) are essential nodes in this project, so we recommend you to see our guide to learn how to work with these nodes together with Noodl's backend service. These are used to both set and extract data from the backend, and display it in the table. 
+[Models and Collections](guides/models-and-collections.md) are essential nodes in this project, so we recommend you to see our guide to learn how to work with these nodes together with Noodl's backend service. These are used to both set and extract data from the backend, and display it in the table. 
 
-[Navigation Stack]
+[The Navigation Stack](nodes/navigation/navigation-stack.md) is used to create navigation and setup different pages, which is used to make the sidebar panel. 
 
-
-
-This template is mainly built around the two following parts: A table that gets populated with data from the backend, and a form component used to fill in data when creating and editing data items in the table. 
-
-Watch the walkthrough video below to get introduced to the project and its structure:
-
-
-### The Table
-The table is mainly made out of Table Header Item, Table Body Item, and Table Cell. The Table Cell component is a simple group with an input control to adjust the Min-width property. This is a way to easily adjust the size and design of a cell across the whole table. Some data points might require more space than others, and here we can adjust the min-width on each cell accordingly.
-
-The Table Body Item Component is an entire row in the table, and uses the Table Cell component to divide the data into sections. 
-
-
-The Table Header component holds all the Table Header Items, wh
-
-The important detail here is that the amount of table cell components and their sizes are equal between the Table Header component and the Table Body component. 
+[The Validation module](modules/validation/validate.md), which is used to set up form validation rules for different inputs in the form component.
