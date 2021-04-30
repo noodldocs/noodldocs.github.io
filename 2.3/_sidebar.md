@@ -3,6 +3,13 @@
 - [Introduction](README.md)
 - [Build your first app](tutorials/getting-started.md)
 - [Snippets](snippets/snippets.md)
+  - [Pointer Position](snippets/javascript/pointer-position.md)
+  - [Get DOM Element](snippets/javascript/get-dom-element.md)
+  - [Importing font files](snippets/ui/importing-font-files.md)
+  - [Importing CSS fonts](snippets/ui/importing-css-fonts.md)
+  - [Horizontal list of cards with snapping](snippets/ui/horizontal-cards-list.md)
+  - [Rotary knob](snippets/rotary-knob/rotary-knob.md)
+  - [Media Queries](snippets/responsive/media-query.md)
 - [Modules](modules/modules.md)
   <br/>
 
