@@ -27,6 +27,7 @@
 * [Logic components](guides/actions-and-logic.md)
 * [Model relationships](guides/relations.md)
 * [Javascript](guides/javascript.md)
+* [Version control](guides/version-control/version-control.md)
   <br/>
 
 <!--
