@@ -79,6 +79,12 @@ Changes you push will now belong to the new branch, and won't affect the other b
 
 ![](branch-push.png ':class=img-size-l')
 
+### Switching branches
+
+Switch between branches by clicking on a branch. If there are local changes they will stay in the branch in which they were done, and won't move between branches.
+
+![](switch-branch.gif ':class=img-size-l')
+
 ### Merging branches
 
 Changes from one branch can be merged into another branch. In this example the "my-new-feature" branch is being merged into the "main" branch.
