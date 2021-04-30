@@ -11,7 +11,10 @@
   - [Rotary knob](snippets/rotary-knob/rotary-knob.md)
   - [Media Queries](snippets/responsive/media-query.md)
 - [Modules](modules/modules.md)
-  <br/>
+- [Templates](templates/templates.md)
+  - [CRUD Template](templates/crud_template/crud_template.md) 
+
+<br/>
 
 * Guides
 

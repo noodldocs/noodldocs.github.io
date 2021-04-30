@@ -1,0 +1,18 @@
+{
+    "formation":[
+      {
+        "type":"collection",
+        "name":"Photo",
+        "properties":{
+          "PhotoDate":{"type":"Date"},
+          "Size":{"type":"String"},
+          "Public":{"type":"Boolean"},
+          "Title": {"type": "String"},
+          "Tags": {"type": "Array"},
+          "Image": {"type":"File"},
+          "Rating": {"type": "Number"},
+          "Category": {"type": "String"}
+        }
+      }
+    ]
+  }
