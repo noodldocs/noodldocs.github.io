@@ -18,7 +18,7 @@
 
 * Guides
 
-* [Layouting](guides/layouts.md)
+* [Layout](guides/layouts.md)
 * [States](guides/states.md)
 * [Events](guides/events.md)
 * [For Each](guides/for-each.md)
@@ -32,74 +32,6 @@
 * [Javascript](guides/javascript.md)
 * [Version control](guides/version-control/version-control.md)
   <br/>
-
-<!--
-* Modules
--->
-
-<!--- Old way
-- [Mobile Web App Navigation](modules/webappnavigation/README.md)
-- [MQTT](modules/mqtt/README.md)
-- [User Management](modules/cloud-services-user-management/README.md)
-- [WebCamera](modules/webcamera/README.md)
-- [WebRouter](modules/webrouter/README.md)
-- [WebSocket](modules/websocket/README.md)
-
-
---->
-
-<!--
-- [MQTT](modules/mqtt/README.md)
-  - <div class="modules-subheader">Guides</div>
-  - [Using the MQTT nodes](modules/mqtt/mqtt-guide.md)
-  - <div class="modules-subheader">Nodes</div>
-  - [Send Message](modules/mqtt/send-message.md)
-  - [Receive Message](modules/mqtt/receive-message.md)
-    <br/>
-
-* [User Management](modules/cloud-services-user-management/README.md)
-  - <div class="modules-subheader">Guides</div>
-  - [User managment guide](modules/cloud-services-user-management/user-management-guide.md)
-  - <div class="modules-subheader">Nodes</div>
-  - [Sign Up](modules/cloud-services-user-management/signup.md)
-  - [Log In](modules/cloud-services-user-management/login.md)
-  - [Log Out](modules/cloud-services-user-management/logout.md)
-  - [User](modules/cloud-services-user-management/user.md)
-    <br/>
-
-- [WebCamera](modules/webcamera/README.md)
-  - <div class="modules-subheader">Guides</div>
-  - [Using the WebCamera](modules/webcamera/webcamera-guide.md)
-  - <div class="modules-subheader">Nodes</div>
-  - [Web Camera](modules/webcamera/webcamera.md)
-    <br/>
-
-* [WebSocket](modules/websocket/README.md)
-
-  - <div class="modules-subheader">Guides</div>
-  - [Using the WebSocket](modules/websocket/websocket-guide.md)
-  - <div class="modules-subheader">Nodes</div>
-  - [WebSocket](modules/websocket/websocket.md)
-    <br/>
-
-* [GraphQL](modules/graphql/README.md)
-
-  - <div class="modules-subheader">Guides</div>
-  - [Using the GraphQL node](modules/graphql/graphql-guide.md)
-  - <div class="modules-subheader">Nodes</div>
-  - [GraphQL](modules/graphql/graphql-node.md)
-    <br/>
-
-* [Markdown](modules/markdown/README.md)
-
-  - <div class="modules-subheader">Guides</div>
-  - [Using the Markdown node](modules/markdown/markdown-guide.md)
-  - <div class="modules-subheader">Nodes</div>
-  - [Markdown](modules/markdown/markdown-node.md)
-    <br/>
-
-  <br/>
-  -->
 
 * Javascript API
 

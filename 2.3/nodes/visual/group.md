@@ -54,8 +54,8 @@ Controls if an element will try to resize and share space with siblings without 
 Controls how this node is positioned in relation to siblings and if it affects the size of its parent.
 
 - _In Layout_ - This node is part of the parent node's layout. It will be stacked with its siblings depending on the parent node's layout settings.
-- _Absolute_ - This node will not be part of the parent node's layout, instead you are free to use the _Pos X_ and _Pos Y_ to place this node explicitly.
-- _Sticky_ - Behaves like _In Layout_, except when the node is about the be scrolled outside the parent. It'll stick to an edge of the parent istead of scrolling away. What edge can be controlled with the **Alignment** input.
+- _Absolute_ - Removes this node from the flow of the parent's layout. Use margins and alignment to set the position.
+- _Sticky_ - Behaves like _In Layout_, except when the node is about the be scrolled outside the parent. It'll stick to an edge of the parent instead of scrolling away. Which edge can be controlled with the **Alignment** input.
 
 **Layout**  
 By default children are stacked and this property specifies which direction they should be stacked.
