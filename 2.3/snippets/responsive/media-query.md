@@ -1,4 +1,4 @@
-## Media Queries
+# Media Queries
 
 You can access media queries directly through a script. Here's an example you can import and use in your own applications.
 

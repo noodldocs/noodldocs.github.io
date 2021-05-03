@@ -22,7 +22,7 @@ Note that i18next supports various dynamic features in the texts, e.g. plurals, 
 
 There are typically two ways to use Language Bundles. For static texts, for example UI texts, you edit the bundle object directly in Noodl (pressing the "Edit" button on the property panel). As you build the UI you add new texts to the bundle. You have one bundle per language. For dynamic texts, for example loaded during execution from a database, you programatically create bundle objects and load them into the **LanguageBundle** when available and using the AddBundleObject input.
 
-## INPUTS
+## Inputs
 
 **Language**  
 The language that this bundle applies to. Typically a language code string, e.g. `en`.
@@ -45,7 +45,7 @@ This signal is used to add a complete bundle object to the language bundle. This
 **Resource Bundle Object**  
 The object (a javascript object) that will be added to the language bundle when the **AddBundleObject** signal is received.
 
-## OUTPUTS
+## Outputs
 
 **BundleLoaded**  
 Triggered when a new bundle object has been loaded.

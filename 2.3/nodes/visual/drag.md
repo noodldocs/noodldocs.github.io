@@ -8,7 +8,7 @@ The drag node is used to make visual nodes draggable with the mouse or touch. Al
 
 <div class = "node-inputs">
 
-## INPUTS
+## Inputs
 
 ### Snap To Position X
 
@@ -60,7 +60,7 @@ This property is used to completely remove the node from the DOM. If this proper
 
 [filename](../advanced-style.md ':include')
 
-## OUTPUTS
+## Outputs
 
 ### Other
 

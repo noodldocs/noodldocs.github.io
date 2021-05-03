@@ -17,7 +17,7 @@ Once data is stored in an object you can use it anywhere in your application.
 
 ![](object-3.png ':class=img-size-l')
 
-## INPUTS
+## Inputs
 
 ### General
 
@@ -44,7 +44,7 @@ Normally when an **Object** _Id_ is set, the property outputs are immediately up
 **New**  
 Sending a signal to this input will generate a new object with a unique *Id* and any properties connected to this node will be *Set* just like the *Set* signal above. This will result in both a *Stored* and *Created* signal output.
 
-## OUTPUTS
+## Outputs
 
 ### General
 

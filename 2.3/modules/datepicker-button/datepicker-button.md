@@ -18,7 +18,7 @@ When clicked the button will open a date picker popup that can be used to select
     <img src="/modules/datepicker-button/datepicker-button-2.png" class="ndl-image med"></img>  
 </div>
 
-## INPUTS
+## Inputs
 
 [filename](../../nodes/visual/margin-only.md ':include')
 
@@ -62,7 +62,7 @@ Specify the height of the checkbox in pixels, percentage of parent height or the
 
 [filename](../../nodes/advanced-style.md ':include')
 
-## OUTPUTS
+## Outputs
 
 ### Other
 

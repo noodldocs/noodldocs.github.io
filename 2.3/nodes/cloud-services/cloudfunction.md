@@ -12,7 +12,7 @@ Next you can provide parameters that you want to be passed to the cloud function
 
 ![](cloudfunction-params.png ':class=img-size-m')
 
-## INPUTS
+## Inputs
 
 ### General
 
@@ -27,7 +27,7 @@ Send a signal on this input to issue the request to the backend.
 ### Parameters
 Here you can add parameters that will be passed to the function. Any parameters you add will become available as inputs on the node.
 
-## OUTPUTS
+## Outputs
 
 ### Output
 

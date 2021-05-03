@@ -5,7 +5,7 @@ Computes a result output based on blending (linearly interpolating) between the 
 
 <div class = "node-inputs">
 
-## INPUTS
+## Inputs
 **Number 0..N**  
 These inputs will be used to compute the result output port. When a value is specified new _Number_ input is created.
 These ports are numbered as _Number 0_,_Number 1_ etc.
@@ -24,7 +24,7 @@ If _Clamp_ is set to _Yes_ then the result will get limited to the lowest or hig
 
 <div class = "node-outputs">
 
-## OUTPUTS
+## Outputs
 
 **Result**  
 The blended value computed from the inputs above.

@@ -13,7 +13,7 @@ You specify that destination URL and you can optionally provide Query parameters
 
 Send a signal to the **Navigate** input to perform the actual navigation.
 
-## INPUTS
+## Inputs
 
 ### General
 
@@ -28,6 +28,6 @@ Send a signal there to perform the navigation.
 ### Query
 You can add query attributes and these will become inputs to the node where you can provide values via connections. These will be added to the query of the URL when the navigation is performed.
 
-## OUPUTS
+## Outputs
 
 This node does not have any outputs.

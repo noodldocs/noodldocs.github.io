@@ -2,7 +2,7 @@
 
 The field set is a non visual component that is used to group other controls. It has a function in accessibility to assist tools such as screen readers.
 
-## INPUTS
+## Inputs
 
 [filename](./margin-and-padding.md ':include')
 
@@ -36,7 +36,7 @@ By default children are stacked and this property specifies which direction they
 
 [filename](../advanced-style.md ':include')
 
-## OUTPUTS
+## Outputs
 
 ### Other  
 [filename](./child-index-and-this-outputs.md ':include')

@@ -4,7 +4,7 @@ This node is used to access a collection of **Models** in the cloud store. To le
 
 ![](collection.png ':class=img-size-l')
 
-## INPUTS
+## Inputs
 
 ### General
 
@@ -208,7 +208,7 @@ The sort function takes an array with strings specifying the names of the proper
 sort(['-Age','createdAt'])
 ```
 
-## OUTPUTS
+## Outputs
 
 ### General
 

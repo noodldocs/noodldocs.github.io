@@ -3,7 +3,7 @@ This node takes an input array, runs a small map script on each item, and output
 
 ![](array-map.png ':class=img-size-l')
 
-## INPUTS
+## Inputs
 
 ### General
 
@@ -25,7 +25,7 @@ Or you can provide a mapping function that takes the object (of the type [Noodl.
 **Items**  
 The array that should be mapped.
 
-## OUTPUTS
+## Outputs
 
 ### General
 

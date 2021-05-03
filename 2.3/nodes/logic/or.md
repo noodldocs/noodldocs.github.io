@@ -17,7 +17,7 @@ you will never run out of inputs.
 
 <div class = "node-outputs">
 
-## OUTPUTS
+## Outputs
 
 **Result**  
 The result of a logic OR operation on all of the inputs. `True` if any one of the inputs is `true`, `false` if all inputs are `false`.

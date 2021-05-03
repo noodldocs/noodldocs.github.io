@@ -11,7 +11,7 @@ A sign up will also log in the user, so there's no need to use the [Log In](modu
 After a successful sign up the user data is available through the [User](modules/cloud-services-user-management/user.md) node.
 
 
-## INPUTS
+## Inputs
 
 ### User Data
 **Email**  _Optional_  
@@ -30,7 +30,7 @@ A signal to create the user in the cloud services. Once a user is created the us
 
 Use the outputs to determine if the operation was successful or not.
 
-## OUTPUTS
+## Outputs
 
 **Success**  
 A signal indicating that the sign up was successful, and a new user has been created.

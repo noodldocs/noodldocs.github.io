@@ -6,12 +6,12 @@ Log out a signed in user.
     <img src="/modules/cloud-services-user-management/logout.png" class="ndl-image med"></img>   
 </div>
 
-## INPUTS
+## Inputs
 
 **Log Out**  
 A signal for logging out the currently signed in user. Use the output signals to determine if the operation was successful or not.
 
-## OUTPUTS
+## Outputs
 
 **Success**  
 A signal indicating that the log out was successful. 

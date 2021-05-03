@@ -6,7 +6,7 @@ Arrays are ordered lists of [Object](/nodes/data/object.md)s. See the guide on a
 
 Add an object to the array by sending a signal on the **Add** input and providing the Id of the object to add on the **Item Id** input. Same goes fore **Remove** to remove an object from the array.
 
-## INPUTS
+## Inputs
 
 ### General
 
@@ -38,7 +38,7 @@ Normally when _Id_ is set, the items and count outputs are immediately updated w
 **New**  
 Sending a signal to this input will generate a new empty array with a unique *Id* and the *Created* output signal will be emitted. If there is a connection to the *Items* input the content of that array will be copied.
 
-## OUTPUTS
+## Outputs
 
 ### General
 

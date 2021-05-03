@@ -4,7 +4,7 @@ This node will take an array of items as input and output a filtered version of 
 
 ![](array-filter.png ':class=img-size-l')
 
-## INPUTS
+## Inputs
 
 ### General
 
@@ -65,7 +65,7 @@ For each property you can choose the sorting order.
 
 ![](collection-sort.png ':class=img-size-m')
 
-## OUPUTS
+## Outputs
 
 ### General
 

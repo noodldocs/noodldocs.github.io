@@ -18,7 +18,7 @@ The target page can have **Back Actions** and **Results** that are passed back a
     <img src="/nodes/navigation/back-actions-3.png" class="ndl-image med"></img>   
 </div>
 
-## INPUTS
+## Inputs
 
 ### General
 
@@ -86,7 +86,7 @@ The **Navigate** node will automatically get inputs for all **Component Inputs**
 **Navigate**  
 A signal input. When a signal is received the navigation will be performed.
 
-## OUTPUTS
+## Outputs
 
 **Navigated**  
 Signaled when the navigation is performed.

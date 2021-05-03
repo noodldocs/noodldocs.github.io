@@ -10,7 +10,7 @@ The core radio button has a very simple visual appearance and is most often used
 
 ![](./radiobutton.gif ':class=img-size-s')
 
-## INPUTS
+## Inputs
 
 [filename](./margin-only.md ':include')
 
@@ -47,11 +47,11 @@ The background color when the checkbox is "checked".
 
 [filename](./bg-and-border-styles.md ':include')
 
-## Box Shadow
+### Box Shadow
 
 [filename](./box-shadow-styles.md ':include')
 
-## Placement  
+### Placement  
 
 [filename](./placement-styles.md ':include')
 
@@ -64,7 +64,7 @@ The background color when the checkbox is "checked".
 [filename](../advanced-style.md ':include')
 
 
-## OUTPUTS
+## Outputs
 
 ### Other  
 [filename](./child-index-and-this-outputs.md ':include')

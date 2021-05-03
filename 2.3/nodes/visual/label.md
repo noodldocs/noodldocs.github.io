@@ -4,7 +4,7 @@ The Label is used to provide text labels to controls and it has a function in ac
 
 It also has a **For** input that can be used to connect the **Control Id** from the associated control. Besides helping interaction this will also allow the label to be used for interacting with the control.
 
-## INPUTS
+## Inputs
 
 [filename](./margin-only.md ':include')
 
@@ -34,7 +34,7 @@ The color of the text to be displayed.
 
 [filename](./visibility-styles.md ':include')
 
-## Placement  
+### Placement  
 
 [filename](./placement-styles.md ':include')
 

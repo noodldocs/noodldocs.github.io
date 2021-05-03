@@ -3,7 +3,7 @@ Bidirectional communication via a websocket. Works with flat JSON objects
 
 !> Note: To use the Websocket node you first need to add the WebSocket module to your project.
 
-## INPUTS
+## Inputs
 **Ip Address:Port**  
 The address to connect to. `ws://` is automatically prepended
 

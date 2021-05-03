@@ -8,7 +8,7 @@ You simply specify the path to the script that are to be loaded. When they are l
 
 ![](script-downloader-2.png ':class=img-size-m')
 
-## INPUTS
+## Inputs
 
 ### General
 
@@ -25,7 +25,7 @@ The scripts to be loaded. They are loaded in order so scripts can use definition
 **Load**  
 If **Load on start** is disabled you need to explicitly send a signal here to load the scripts.
 
-## OUPUTS
+## Outputs
 
 **Loaded**  
 A signal that is sent when all scripts are loaded.

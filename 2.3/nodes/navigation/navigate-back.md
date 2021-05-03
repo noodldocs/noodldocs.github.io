@@ -25,7 +25,7 @@ The **Result** values specified also becomes inputs and you can use those to pas
     <img src="/nodes/navigation/back-actions-3.png" class="ndl-image med"></img>   
 </div>
 
-## INPUTS
+## Inputs
 
 **Results**  
 Specify result values that can be passed to the **Navigate** node that performed the navigation, see above for details.
@@ -38,6 +38,6 @@ Specify back actions that can be passed as output signals to the **Navigate** no
 **Navigate**  
 A signal input. Wshen a signal is received the navigation will be performed. This is used if there are no **Back Actions** specified.
 
-## OUTPUTS
+## Outputs
 
 This node has no outputs.

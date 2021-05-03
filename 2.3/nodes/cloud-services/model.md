@@ -17,7 +17,7 @@ You can delete a model by sending a signal to the **Delete** action.
 
 ![](model-2.png ':class=img-size-m')
 
-## INPUTS
+## Inputs
 
 ### General
 
@@ -71,7 +71,7 @@ initialize({
 });
 ```
 
-## OUTPUTS
+## Outputs
 
 ### General
 

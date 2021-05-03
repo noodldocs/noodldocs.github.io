@@ -4,7 +4,7 @@ The **Validate** node is used to validate data provided as inputs to the node ba
 
 ![](simple-validate.png ':class=img-size-l')
 
-## INPUTS
+## Inputs
 
 ### General
 
@@ -32,7 +32,7 @@ For each property there will be one boolean that specifies if that particular pr
 ### Actions
 This category consist of two signal inputs for each property, one to enable the validation for the corresponding property and one to disable it. All property validations are enabled by default, if disabled that particular property will not generate any errors.
 
-## OUTPUTS
+## Outputs
 
 ### General
 

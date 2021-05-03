@@ -6,7 +6,7 @@ This node enables you to use Markdown in Noodl.
     <img src="/modules/markdown/markdown-nodes.png" class="ndl-image med"></img>  
 </div>
 
-## INPUTS
+## Inputs
 
 **CSS Class**  
 The class name that'll be set on a wrapper `<div>` around the resulting HTML output. This is important for styling the Markdown with CSS.

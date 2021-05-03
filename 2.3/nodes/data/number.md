@@ -13,7 +13,7 @@ You can also use variables nodes to connect to component inputs, this will make 
     <img src="/nodes/data/number-2.png" class="ndl-image large"></img>  
 </div>
 
-## INPUTS
+## Inputs
 **Value**  
 The value to store in the node. The output value will equal this value, unless *Set* is connected, then the value will be updated when a signal is received at the *Set* input.
 
@@ -21,7 +21,7 @@ The value to store in the node. The output value will equal this value, unless *
 This is used to only update the output when a signal is sent to *Set*.
 
 
-## OUTPUTS
+## Outputs
 **Value**  
 The number stored in the node
 

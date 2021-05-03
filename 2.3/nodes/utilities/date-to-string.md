@@ -19,7 +19,7 @@ The default format is this:
 {year}-{month}-{date}
 ```
 
-## INPUTS
+## Inputs
 
 **Format**  
 This is where the format string is specified, see above for details.
@@ -27,7 +27,7 @@ This is where the format string is specified, see above for details.
 **Date**  
 The date input to format.
 
-## OUTPUTS
+## Outputs
 
 **Date String**  
 The formatted date string.

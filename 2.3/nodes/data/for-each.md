@@ -4,7 +4,7 @@ Used to dynamically create components based on data. More details can be found i
 
 ![](for-each.png ':class=img-size-m')
 
-## INPUTS
+## Inputs
 
 ### Appearance
 
@@ -62,7 +62,7 @@ else {
 
 In the example above the script looks at the property "type" of each object, and either choses to component "#My Sheet/ListItems/HeaderItem" or "#My Sheet/ListItems/StandardItem" depending on the value.
 
-## OUTPUTS
+## Outputs
 
 An output is created for every signal output of the _Template_ component.
 

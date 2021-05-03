@@ -2,7 +2,7 @@
 
 This is a text input node.
 
-## INPUTS
+## Inputs
 
 ### Margin and padding
 
@@ -161,7 +161,7 @@ Specifes the Y position, within this node, that will be the center for rotation 
 
 <div class = "node-outputs">
 
-## OUTPUTS
+## Outputs
 
 ### Other
 

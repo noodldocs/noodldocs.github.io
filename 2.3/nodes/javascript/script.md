@@ -4,11 +4,11 @@ The **Script** node is used when you need to create more complex Javascript code
 
 ![](script.png ':class=img-size-m')
 
-## INPUTS
+## Inputs
 
 The inputs are defined by the content of the script or by explicitly specifying inputs in the properties. See the javascript [guide](/guides/javascript.md) for more details.
 
-## OUTPUS
+## Outputs
 
 The outputs are defined by the content of the script or by explicitly specifying outputs in the properties. See the javascript [guide](/guides/javascript.md) for more details.
 

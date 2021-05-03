@@ -1,4 +1,4 @@
-## Horizontal list of cards with snapping
+# Horizontal list of cards with snapping
 
 Here you will find a short guide on how to create a horizontal list of cards with snapping.
 

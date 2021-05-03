@@ -10,7 +10,7 @@ The core range has a very simple visual appearance and is most often used in oth
 
 ![](./range.gif ':class=img-size-m')
 
-## INPUTS
+## Inputs
 
 [filename](./margin-only.md ':include')
 
@@ -73,7 +73,7 @@ The color of the track of the range control.
 
 [filename](./bg-and-border-styles.md ':include')
 
-## Placement  
+### Placement  
 
 [filename](./placement-styles.md ':include')
 
@@ -85,7 +85,7 @@ The color of the track of the range control.
 
 [filename](../advanced-style.md ':include')
 
-## OUTPUTS
+## Outputs
 
 ### Other  
 [filename](./child-index-and-this-outputs.md ':include')

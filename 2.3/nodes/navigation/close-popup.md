@@ -25,7 +25,7 @@ These **Result** values and **Close Actions** will also become available as outp
     <img src="/nodes/navigation/show-popup-3.png" class="ndl-image large"></img>   
 </div>
 
-## INPUTS
+## Inputs
 
 ### Actions
 
@@ -39,6 +39,6 @@ All result values specified on this node will become available as inputs. See ab
 All close actions specified on this node will become available as signal inputs. See above for more details.
 
 
-## OUTPUTS
+## Outputs
 
 This node has no outputs.

@@ -2,7 +2,7 @@
 
 This node represents an image.
 
-## INPUTS
+## Inputs
 
 ### Margin
 
@@ -134,7 +134,7 @@ Specifes the Y position, within this node, that will be the center for rotation 
 
 [filename](../advanced-style.md ':include')
 
-## OUTPUTS
+## Outputs
 
 ### Other
 

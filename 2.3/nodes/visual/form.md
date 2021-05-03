@@ -2,7 +2,7 @@
 
 The form is a non visual component that is used to group other controls. It has a function in accessibility to assist tools such as screen readers. It also has a **Submit** output signal that is triggered if a button of type **Submit** that is a child of the form is clicked. This is also important for accessibility reasons. When building forms it's a good idea to use this pattern and connect the **Submit** signal to any data operation when submitting the form.
 
-## INPUTS
+## Inputs
 
 [filename](./margin-and-padding.md ':include')
 
@@ -24,7 +24,7 @@ By default children are stacked and this property specifies which direction they
 
 [filename](./visibility-styles.md ':include')
 
-## Placement  
+### Placement  
 
 [filename](./placement-styles.md ':include')
 
@@ -36,7 +36,7 @@ By default children are stacked and this property specifies which direction they
 
 [filename](../advanced-style.md ':include')
 
-## OUTPUTS
+## Outputs
 
 ### Other  
 [filename](./child-index-and-this-outputs.md ':include')

@@ -17,7 +17,7 @@ By connecting to **Set** you can control when the value is stored to the variabl
 
 ![](variable-2.png ':class=img-size-m')
 
-## INPUTS
+## Inputs
 
 **Name**  
 The name of the **Variable**. All **Variable** nodes with the same name will share the same data.
@@ -31,7 +31,7 @@ A signal input. When this input has a connection and a signal is received on thi
 **Fetch**  
 Normally the value output of the node is updated once the _Name_ input is set and if there is a change in the data from somewhere in the graph. However, if this signal has a connection it will wait until it gets a signal on fetch before it updates.
 
-## OUTPUTS
+## Outputs
 
 **Value**  
 The current value of this Variable node. This will only update when the _Set_ signal is triggered on this or any other **Variable** node with the same _Name_.

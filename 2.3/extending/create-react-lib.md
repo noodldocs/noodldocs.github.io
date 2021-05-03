@@ -2,6 +2,8 @@
 
 Noodl is based on the popular React front end library which makes it easy for you to add custom or community React components to your workspace. This guide will help you create a React library from scratch and push it to your Noodl workspace.
 
+## Setup
+
 In order to complete this guide you must install the *Noodl CLI* and learn how to push the module to your workspace. Please review [this guide](extending/create-lib.md) first.
 
 With the CLI tool you can easily create a new react library module from a template:

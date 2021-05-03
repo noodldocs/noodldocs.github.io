@@ -48,7 +48,7 @@ Outputs.Items = result;
 
 The REST node looks at the `Content-Type` header to determine how to parse the response from the server. If the type is JSON it will use `JSON.parse` and for XML it'll convert it to a JavaScript object.
 
-## INPUTS
+## Inputs
 ### Request
 **Resource**  
 This is the resource endpoint that the REST request will use, i.e. the url.
@@ -73,7 +73,7 @@ Connect a signal to this input to trigger a request.
 Send a signal to this input to cancel an ongoing request.
 
 
-## OUTPUTS
+## Outputs
 
 ### Events
 **Success**

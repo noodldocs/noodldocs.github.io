@@ -2,7 +2,7 @@
 
 This node represents a text.
 
-## INPUTS
+## Inputs
 
 ### Margin
 
@@ -150,7 +150,7 @@ This property is used to completely remove the node from the DOM. If this proper
 
 [filename](../advanced-style.md ':include')
 
-## OUTPUTS
+## Outputs
 
 ### Other
 

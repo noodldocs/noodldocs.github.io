@@ -4,7 +4,7 @@ This node takes a boolean input and outputs one of two strings. One string for a
 
 ![](boolean-to-string.png ':class=img-size-m')
 
-## INPUTS
+## Inputs
 
 **Selector**  
 This is the boolean value that will select which string to output.
@@ -17,7 +17,7 @@ The string to output if the selecor is false.
 
 ![](boolean-to-string-props.png ':class=img-size-m')
 
-## OUTPUTS
+## Outputs
 
 **Current Value**  
 The selected string.

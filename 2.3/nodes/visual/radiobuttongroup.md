@@ -6,7 +6,7 @@ The radio button group is a non visual control used to group [Radio Button](/nod
 
 Each radion button must have a string **Value** specified, the value for the selected radio button is passed as the **Value** output of the radio button group. All radio buttons in a group should have unique values.
 
-## INPUTS
+## Inputs
 
 [filename](./margin-and-padding.md ':include')
 
@@ -33,7 +33,7 @@ By default children are stacked and this property specifies which direction they
 
 [filename](./visibility-styles.md ':include')
 
-## Placement  
+### Placement  
 
 [filename](./placement-styles.md ':include')
 
@@ -45,7 +45,7 @@ By default children are stacked and this property specifies which direction they
 
 [filename](../advanced-style.md ':include')
 
-## OUTPUTS
+## Outputs
 
 ### Other  
 [filename](./child-index-and-this-outputs.md ':include')

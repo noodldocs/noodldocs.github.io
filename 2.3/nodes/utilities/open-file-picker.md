@@ -4,7 +4,7 @@ Opens a file picker. Noodl uses the system file picker dialog, which will look d
 
 ![](open-file-picker.png ':class=img-size-l')
 
-## INPUTS
+## Inputs
 
 **Open**  
 A signal that opens the file picker.
@@ -17,7 +17,7 @@ The file type can be specified as a filename extension, starting with a period. 
 The type can also be specified as a [MIME type](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Common_types). E.g. `image/*`, `image/png` or `video/mp4`.
 
 
-## OUTPUTS
+## Outputs
 
 ### File
 **File**  

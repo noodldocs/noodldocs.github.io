@@ -6,7 +6,7 @@ This node enables you to connect to GraphQL based API:s in a quick and easy way.
     <img src="/modules/graphql/graphql-guide-img/graphql-query-node.png" class="ndl-image medium"></img>  
 </div>
 
-## INPUTS
+## Inputs
 
 **Query**  
 Input your GraphQL query in this field. Example: `{ hero { name } }`

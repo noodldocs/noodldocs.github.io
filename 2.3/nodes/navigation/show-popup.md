@@ -18,7 +18,7 @@ When a popup is closed with the [Close Popup](/nodes/navigation/close-popup.md) 
     <img src="/nodes/navigation/show-popup-3.png" class="ndl-image large"></img>   
 </div>
 
-## INPUTS
+## Inputs
 
 ### General
 
@@ -33,7 +33,7 @@ Send a signal here to show the popup.
 ### Params
 Any **Component Inputs** that the popup component have will be available as inputs.
 
-## OUTPUTS
+## Outputs
 
 ### Actions
 

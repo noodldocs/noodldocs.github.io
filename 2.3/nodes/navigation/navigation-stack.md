@@ -43,7 +43,7 @@ This will allow you to specify the URL slug for each page in the **Pages** list.
 If the page is navigated to, the URL in the browser will be updated. And if the URL in the browser is changed manually, or if a link is followed to your application that **Navigaton Stack** will show the matching page.
 
 
-## INPUTS
+## Inputs
 
 ### General
 
@@ -77,7 +77,7 @@ This property is used to completely remove the node from the DOM. If this proper
 
 [filename](../../../nodes/advanced-style.md ':include')
 
-## OUTPUTS
+## Outputs
 
 ### Other
 

@@ -6,7 +6,7 @@ Store static data to populate an [Array](nodes/data/array.md) with items. The St
 
 You can provide the data in either **CSV** format or, **JSON** format. The **items** output is of **Noodl.Array** format. The content of the array is reset whenever the application is refreshed.
 
-## INPUTS
+## Inputs
 **Type**  
 Choose what format the data will be in.
 
@@ -41,7 +41,7 @@ Example:
         }
     ]
 
-## OUTPUTS
+## Outputs
 
 **Items**  
 A `Noodl.Array` object that can be connected to e.g. an [Array](nodes/data/array.md), [Javascript](guides/javascript.md) or [For Each](nodes/data/for-each.md).

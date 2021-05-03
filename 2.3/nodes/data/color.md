@@ -6,7 +6,7 @@ Contains a color. Can be used to provide a static local color value.
     <img src="/nodes/data/color-1.png" class="ndl-image large"></img>  
 </div>
 
-## INPUTS
+## Inputs
 
 **Value**  
 The value to store in the node. The output value will equal this value, unless _Set_ is connected, then the value will be updated when a signal is received at the _Set_ input.
@@ -14,7 +14,7 @@ The value to store in the node. The output value will equal this value, unless _
 **Set**  
 This is used to only update the output when a signal is sent to _Set_.
 
-## OUTPUTS
+## Outputs
 
 **Value**  
 The color stored in the node

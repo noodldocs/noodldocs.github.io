@@ -8,9 +8,9 @@ use the same MQTT broker and thus messages can be sent across devices. The **Sen
 
 <div class = "node-inputs">
 
-## INPUTS
+## Inputs
 
-### GENERAL
+### General
 
 **Topic**  
 The MQTT topic this **Send Message** will publish messages to. Most commonly the topics are specified as a hierarchy with **/** as delimiters, e.g. _/Foo/Bar/1_. Sometimes the topic needs to be dynamic, this can be achieved by encapsulating a topic component with curly brackets, e.g. _/Foo/{Bar}/1_. In this case a port called _Bar_ will show up.
@@ -40,7 +40,7 @@ If _Rate Limit_ is set, this defines how many messages per second this node will
 
 <div class = "node-inputs">
 
-## OUTPUTS
+## Outputs
 
 This node doesn't have any outputs.
 

@@ -18,7 +18,7 @@ The core options control has a very simple visual appearance and is most often u
 
 ![](./options-1.png ':class=img-size-m')
 
-## INPUTS
+## Inputs
 
 [filename](./margin-and-padding.md ':include')
 
@@ -59,11 +59,11 @@ The background color of the options control.
 
 [filename](./bg-and-border-styles.md ':include')
 
-## Box Shadow
+### Box Shadow
 
 [filename](./box-shadow-styles.md ':include')
 
-## Placement  
+### Placement  
 
 [filename](./placement-styles.md ':include')
 
@@ -76,7 +76,7 @@ The background color of the options control.
 
 [filename](../advanced-style.md ':include')
 
-## OUTPUTS
+## Outputs
 
 ### Other  
 [filename](./child-index-and-this-outputs.md ':include')

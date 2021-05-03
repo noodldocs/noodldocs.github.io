@@ -2,7 +2,7 @@
 
 This node represents a group that can have other visual nodes as children. **Group** nodes are typically used to layout children by stacking (the default), but can also be used to simply provide margins and padding to a group of visual nodes. To learn more about **Group** nodes check out the [Layouting guide](/guides/layouts.md).
 
-## INPUTS
+## Inputs
 
 ### Margin and padding
 
@@ -146,7 +146,7 @@ Toggle the visibility of the node on and off.
 **zIndex**  
 The depth index for this node, this can be any number.
 
-## Box Shadow
+### Box Shadow
 
 **Shadow Enabled**  
 Enables and disables shadow below the Group.
@@ -218,7 +218,7 @@ This property is used to completely remove the node from the DOM. If this proper
 
 [filename](../advanced-style.md ':include').
 
-## OUTPUTS
+## Outputs
 
 ### Other
 

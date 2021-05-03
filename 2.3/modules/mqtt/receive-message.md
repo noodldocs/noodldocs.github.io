@@ -8,7 +8,7 @@ be used for inter-device communication and IoT. The **Receive Message** node sub
 
 <div class = "node-inputs">
 
-## INPUTS
+## Inputs
 
 ### Other
 
@@ -25,7 +25,7 @@ Enable and disable the **Receive Message** node.
 
 <div class = "node-outputs">
 
-## OUTPUTS
+## Outputs
 
 ### PAYLOAD
 

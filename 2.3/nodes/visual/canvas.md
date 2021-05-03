@@ -4,7 +4,7 @@ This node represents an HTML Canvas. It can be placed in the visual tree and the
 
 <div class = "node-inputs">
 
-## INPUTS
+## Inputs
 
 ### Margin
 
@@ -129,7 +129,7 @@ Specifes the Y position, within this node, that will be the center for rotation 
 
 <div class = "node-outputs">
 
-## OUTPUTS
+## Outputs
 
 ### Other
 

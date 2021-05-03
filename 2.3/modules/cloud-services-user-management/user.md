@@ -6,7 +6,7 @@ Retreive and store user data for the currently logged in user. Supports custom d
     <img src="/modules/cloud-services-user-management/user.png" class="ndl-image med"></img>   
 </div>
 
-## INPUTS
+## Inputs
 
 ### Actions
 **Save**  
@@ -29,7 +29,7 @@ Change the email. Use the _Save_ signal to send the update to cloud services. If
 ### Custom User Data
 Additional inputs created by adding custom properties to a user node.
 
-## OUTPUTS
+## Outputs
 
 ### User Data
 **Id**  

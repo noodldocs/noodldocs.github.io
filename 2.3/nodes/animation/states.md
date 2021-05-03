@@ -8,7 +8,7 @@ The **States** node is used to represent logical states visually. You can define
 
 <div class = "node-inputs">
 
-## INPUTS
+## Inputs
 
 **States**  
 A **States** node can have as many states as is necessary. Add a new state by clicking on the plus button.
@@ -62,7 +62,7 @@ To learn more take a look at the [States guide](/guides/states.md).
 Each state will have a signal input called _To_ followed by the state name. This can be used to connect a signal that will take the states node to that state when the signal is triggered.
 
 
-## OUTPUTS
+## Outputs
 
 **State**  
 The name of the current state.

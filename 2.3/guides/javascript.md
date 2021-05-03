@@ -49,7 +49,7 @@ Node.Outputs = {
 
 Lets use the two inputs `RangeLow` and `RangeHigh` and use them to generate a random number on the `RandomNumber` output. To execute the code, we will introduce a signal, `Generate`.
 
-## Input Signals
+## Input signals
 
 Input signals are mapped to functions in the `Node.Signals` object in the Javascript node. A signal function is called when the signal with the same name is triggered. Here's the implementation of the `Generate` signal. You can copy this code and add it to the **Script** source code.
 
@@ -238,7 +238,7 @@ Node.Setters.Lambda = function (value) {
 }
 ```
 
-## Using Script nodes
+## Using script nodes
 
 Connecting to the the inputs and outputs, the **Script** nodes can be used as any other nodes in Noodl. As an example, the Random Generator **Script** node has been combined with a simple UI to control the inputs. The output of the random generator is used to move a circle on the screen and trigger state changes. We have also copy/pasted the **Script** node and use it two times. This works great, but remember that the Javascript code is cloned if you are using an inline source so changing the code in one **Script** node does not affect the other. Hence, it's often a good idea to encapsulate a reusable **Script** node in a Noodl component.
 

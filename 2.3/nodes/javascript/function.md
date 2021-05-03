@@ -8,7 +8,7 @@ The most basic way to use the node is as an expression, any time the inputs are 
 
 ![](function-2.png ':class=img-size-l')
 
-### Inputs and outputs
+## Custom inputs and outputs
 In your function script you can use the **Inputs** and **Outputs** object and any properties of these objects that you use in your script will automatically create input and outputs ports. So the following script:
 
 ```javascript
@@ -19,7 +19,7 @@ Will create the output **FullName** and the inputs **FirstName** and **LastName*
 
 ![](function-3.png ':class=img-size-m')
 
-### Signal outputs
+## Signal outputs
 If you want to send a signal from your **Function** script you can use an output as a function instead of assigning it a value.
 
 ```javascript
@@ -31,14 +31,14 @@ else {
 }
 ```
 
-The code above will automatically create two outputs **TestIsTrue** and **TestIsFalse** that are signals. Whenenever the inputs are changed and the code is run the node will send a signal on either depending on the content of the **Test** input.
+The code above will automatically create two outputs **TestIsTrue** and **TestIsFalse** that are signals. When the inputs are changed and the code is run the node will send a signal on either depending on the content of the **Test** input.
 
-### Controlled execution
+## Controlled execution
 Normally the script is run when any of the inputs change, i.e. receive new data via connections, but you can also control when the function is run with the **Run** signal input. If this input has a connection the script will only run when a signal is received.
 
 ![](function-4.png ':class=img-size-l')
 
-## INPUTS
+## Inputs
 
 ### Script Inputs
 Here you can list inputs to the function and specify types for the inputs as described above. For each input specified or simply used in the function code an input to the node will be created.
@@ -51,7 +51,7 @@ Here you can list outputs to the function and specify types for the outputs as d
 **Run**  
 Send a signal here to run the function. If this input has a connection the function script will not run when inputs are changed.
 
-## OUTPUTS
+## Outputs
 
 The outputs from the function script.
 

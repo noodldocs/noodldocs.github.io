@@ -128,7 +128,7 @@ Here you can specify the _margin_, i.e. the distance between this node and its s
 
 A good way to learn these concepts is to adjust and tweak the three nodes in this simple hierarchy. Try modifying the padding and margins and note the difference between them.
 
-## Layouts with multiple lines
+## Multiple lines
 
 If the child nodes extend beyond the border of the parent you have a couple of options to control the behavior, wrapping or scrolling. This section will explain the wrapping options that are available.
 

@@ -4,7 +4,7 @@ This node represents a video surface.
 
 <div class = "node-inputs">
 
-## INPUTS
+## Inputs
 
 ### Margin
 
@@ -179,7 +179,7 @@ This property is used to completely remove the node from the DOM. If this proper
 
 <div class = "node-outputs">
 
-## OUTPUTS
+## Outputs
 
 ### Other
 

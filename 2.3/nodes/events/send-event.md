@@ -9,7 +9,7 @@ It also has a _Channel_ input port that can be used to specify a name that recei
 
 <div class = "node-inputs">
 
-## INPUTS
+## Inputs
 
 **Send Event** nodes can have arbitrary input ports that will be passed on to the
 [Receive Event][0] nodes when the _Send_ signal is triggered. These ports can be added by

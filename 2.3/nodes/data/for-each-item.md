@@ -4,12 +4,12 @@ Contains a set of useful utilities for components that have been dynamically cre
 
 ![](for-each-item.png ':class=img-size-m')
 
-## INPUTS
+## Inputs
 
 **Remove Completed**  
 Send a signal, after _Try Remove_ has been sent and any remove animation is completed. This will remove the component from its parent. See _Try Remove_ below to learn more.
 
-## OUTPUTS
+## Outputs
 
 **Added**  
 When a new object is added to an array, any connected [For Each](/nodes/data/for-each.md) node will create a new component. This component will get the _Added_ signal. Useful for playing animations or changing states.

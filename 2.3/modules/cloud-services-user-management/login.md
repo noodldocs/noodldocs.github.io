@@ -10,7 +10,7 @@ To determine if a user is already logged in, see the _Authenticated_ output of t
     <img src="/modules/cloud-services-user-management/login.png" class="ndl-image med"></img>   
 </div>
 
-## INPUTS
+## Inputs
 
 ### User Data
 **Username**  _Required_  
@@ -25,7 +25,7 @@ The password for the user. For security purposes the password will be encrypted 
 A signal to log in the user.
 Use the outputs to determine if the operation was successful or not.
 
-## OUTPUTS
+## Outputs
 
 **Success**  
 A signal indicating that the log in was successful, and the data is now available through the [User](modules/cloud-services-user-management/user.md?id=outputs) node.

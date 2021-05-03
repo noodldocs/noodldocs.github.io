@@ -14,7 +14,7 @@ You can also use variables nodes to connect to component inputs, this will make 
     <img src="/nodes/data/boolean-2.png" class="ndl-image large"></img>  
 </div>
 
-## INPUTS
+## Inputs
 
 **Value**  
 The value to store in the node. The output value will equal this value, unless _Set_ is connected, then it will be updated when **Set** receives a signal.
@@ -22,7 +22,7 @@ The value to store in the node. The output value will equal this value, unless _
 **Set**  
 This is used to only update the output when _Save Value_ is set to true. This will allow you to freeze the stored value and only allow it to update under certain conditions, e.g. on a Tap.
 
-## OUTPUTS
+## Outputs
 
 **Value**  
 The boolean stored in the node

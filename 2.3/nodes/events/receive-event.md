@@ -6,7 +6,7 @@ This node is used to receive events triggered by an [Send Event][0] node. To lea
 
 <div class = "node-inputs">
 
-## INPUTS
+## Inputs
 
 **Enabled**  
 This port is used to disable/enable this node. If disabled the receiver node will not
@@ -20,7 +20,7 @@ node of that channel is triggered all **Receive Event** nodes with the same chan
 
 <div class = "node-outputs">
 
-## OUTPUTS
+## Outputs
 
 The **Receive Event** node will automatically get outputs from all [Send Event][0] nodes connected
 to the same channel. See the [Send Event][0] documentation for more details on adding ports for sending values with events.
