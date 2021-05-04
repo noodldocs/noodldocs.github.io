@@ -1,6 +1,6 @@
 # Javascript
 
-This guide will cover the functionality of the **Script** node. The **Script** node is a great way to implement logic and calculations that are easier to express in code than in nodes and connections. It's also a great way to get access to useful Javascript APIs in the browser, for example Date for date functionality or Math for advanced math-functionality.
+This guide will cover the functionality of the **Script** node. The **Script** node is a great way to implement logic and calculations that are easier to express in code than in nodes and connections. It's also a great way to get access to useful Javascript APIs in the browser, for example `Date` for date functionality or `Math` for advanced math-functionality.
 
 ## Overview
 
@@ -14,25 +14,35 @@ You can either edit the Javascript code directly in the built-in editor in Noodl
     <img src="/guides/javascript/script-inline-code.png" class="ndl-image large"></img>  
 </div>
 
-An external file needs to be located in your project folder for Noodl to find it. You can copy a file to your project folder by simply dragging the file into the Noodl window.
+An external file needs to be located in your project folder for Noodl to find it. You can copy a file to your project folder by dragging the file onto the Noodl window.
 
 <div class="ndl-images">
     <img src="/guides/javascript/script-pick-file.png" class="ndl-image large"></img>  
 </div>
 
-The source code provided for the **Script** is executed as soon as the node is created. In order to specify inputs, outputs, to receive and send signals from the node the **Node** object must be used.
+The source code provided for the **Script** is executed as soon as the node is created. In order to specify inputs, outputs and receive and send signals from the node the `Node` object must be used.
 
 ## Inputs and outputs
 
-There are a number of ways to specify the inputs and outputs of the **Script** node. One way is to use the property panel and explicitly add them there, you can also provide the type.
+There are a number of ways to specify the inputs and outputs of the **Script** node. One way is to use the property panel and explicitly add them there. You can also provide the type.
 
 <div class="ndl-images">
     <img src="/nodes/javascript/function-3.png" class="ndl-image med"></img>  
 </div>
 
-Another way is to specify them programmatically in the source code. The inputs are defined in the `Node.Inputs` object. Each input also specifies what type it is. The available types are `number`, `string`, `boolean`, `color`, `object` and `array`. Note that there is no signal type for inputs, as the signals are handled user the `Node.Signals` object (more on that later).
+Another way is to specify them programmatically in the source code. The inputs are defined in the `Node.Inputs` object. Each input also specifies what type it is. The available types are:
+- `number`
+- `string`
+- `boolean`
+- `color`
+- `object`
+- `array`. This is for Noodl Arrays, not Javascript arrays.
+- `reference`. A reference to a Noodl node, accessible through the _This_ output of visual nodes.
+- `cloudfile`
 
-The outputs work in the same way as the inputs with the only difference that you have one more type you can use: `signal`. The signal type is used for triggering a pulse on an output rather than outputting a specific value. Below we have added outputs to a **Script** node.
+Note that there is no signal type for inputs, as the signals are handled by using the `Node.Signals` object (more on that later).
+
+The outputs work in the same way as the inputs except that there's one more type you can use: `signal`. The signal type is used for triggering a pulse on an output rather than outputting a specific value. Below we have added outputs to a **Script** node.
 
 Since the inputs and outputs are members of an object, they should be separated by a comma. Below is an example of a **Script** node with two inputs and one output.
 
@@ -47,7 +57,7 @@ Node.Outputs = {
 }
 ```
 
-Lets use the two inputs `RangeLow` and `RangeHigh` and use them to generate a random number on the `RandomNumber` output. To execute the code, we will introduce a signal, `Generate`.
+Lets use the two inputs `RangeLow` and `RangeHigh`  to generate a random number on the `RandomNumber` output. To execute the code, we will introduce a signal, `Generate`.
 
 ## Input signals
 
@@ -69,15 +79,15 @@ Let's connect the the inputs, outputs and signals to some nodes.
 
 ## Reading inputs and setting outputs
 
-In the Javascript code, the you can read the inputs directly through the members of the `Node.Inputs` object, typically `Node.Inputs.AnInput`. 
+You can read the inputs directly through the members of the `Node.Inputs` object, typically `Node.Inputs.AnInput`. 
 
-There are two ways to set the outputs, either you simply set the value by setting the appropriate property of the `Node.Outputs` object.
+There are two ways to set the outputs. Set the value by setting the appropriate property of the `Node.Outputs` object:
 
 ```javascript
 Node.Outputs.RandomNumber = randomNumber;
 ```
 
-You can also set many outputs at the same time using the `Node.setOutputs` function. Somethimes this is handy since you can simply pass an object to the function.
+Set many outputs at the same time using the `Node.setOutputs` function: 
 
 ```javascript
 Node.setOutputs({
@@ -86,16 +96,22 @@ Node.setOutputs({
 })
 ```
 
-Finally if you want to send a signal on an output you will use the output as a function, calling it when you want to send the signal.
+This is useful when you have an object that contains multiple values you want to send at once.
+
+Finally if you want to send a signal on an output you need to use the output as a function, calling it when you want to send the signal.
 
 ```javascript
 Node.Outputs.MySignalOutput()
 ```
 
-Now let's add a bit more code to our Javascript example. Instead of the `Generate` signal we will implement a `Start` and `Stop` signal and have the **Javascript** node generate new numbers continuously. We will start a timer in `Start`, that will trigger after a random time, influenced by the `Lambda` input. The higher the `Lambda` the shorter the time and the higher the rate of generated numbers. See the <a href="https://en.wikipedia.org/wiki/Poisson_point_process" target="_blank">Poisson process</a> for the math behind generating a random number using a Poisson distribution. When the timer is triggered, a random number is generated based on the ranges provided to the node. Finally a signal to notify that a new number has been generated is sent and the timer is restarted with a new timeout.
+Now let's add a bit more code to our Javascript example. Instead of the `Generate` signal we will implement `Start` and `Stop` signals and have the **Javascript** node generate new numbers continuously. We will start a timer in `Start` that will trigger after a random time, influenced by the `Lambda` input. The higher the `Lambda` the shorter the time and the higher the rate of generated numbers. 
+
+?> See the <a href="https://en.wikipedia.org/wiki/Poisson_point_process" target="_blank">Poisson process</a> for the math behind generating a random number using a Poisson distribution.
+
+When the timer is triggered, a random number is generated based on the ranges provided to the node. Finally a signal to notify that a new number has been generated is sent and the timer is restarted with a new timeout.
 When the `Stop` signal is triggered the timer is stopped.
 
-Below is some simple code that generates the random numbers with a Poisson distributed time in between them.
+Here's the code that generates the random numbers with a Poisson distributed time in between them.
 
 ```javascript
 Node.Inputs = {
@@ -154,7 +170,7 @@ Node.Signals.Stop = function () {
 
 ## Changed inputs
 
-In some cases you may need to react in your Javascript when an input is changed. In this particular case, when the `Lambda` input of the random number generator is changed, the timer interval should be immediately updated to avoid that you have to wait for the next timer to time out for the change to take effect. To handle a case like this, a function with the same name as the input, `Lambda`, is added in the `Node.Setters` object. An additional state variable, `started`, is added to make sure that changing the value when the timer is stopped won't cause it to start.
+You can run code whenever an input is changed. In this particular case, when the `Lambda` input of the random number generator is changed, the timer interval should be updated to avoid waiting for the next timer to time out for the change to take effect. To handle a case like this, a function with the same name as the input, `Lambda`, is added in the `Node.Setters` object. An additional state variable, `started`, is added to make sure that changing the value when the timer is stopped won't cause it to start.
 
 ```javascript
 var started = false;
@@ -240,7 +256,7 @@ Node.Setters.Lambda = function (value) {
 
 ## Using script nodes
 
-Connecting to the the inputs and outputs, the **Script** nodes can be used as any other nodes in Noodl. As an example, the Random Generator **Script** node has been combined with a simple UI to control the inputs. The output of the random generator is used to move a circle on the screen and trigger state changes. We have also copy/pasted the **Script** node and use it two times. This works great, but remember that the Javascript code is cloned if you are using an inline source so changing the code in one **Script** node does not affect the other. Hence, it's often a good idea to encapsulate a reusable **Script** node in a Noodl component.
+Connecting to the the inputs and outputs, the **Script** nodes can be used as any other nodes in Noodl. As an example, the Random Generator **Script** node has been combined with a simple UI to control the inputs. The output of the random generator is used to move a circle on the screen and trigger state changes. We have also copy & pasted the **Script** node and use it two times. This works great, but remember that the Javascript code is cloned if you are using an inline source so changing the code in one **Script** node does not affect the other. It's often a good idea to encapsulate a reusable **Script** node in a Noodl component.
 
 <div class="ndl-images">
     <img src="/guides/javascript/random3.gif" class="ndl-image large"></img>
@@ -249,21 +265,21 @@ Connecting to the the inputs and outputs, the **Script** nodes can be used as an
 
 ## Debugging
 
-As with any coding, you will sooner or later make a mistake in your **Script** nodes. If Noodl cannot parse your Javascript source, or if a runtime error occurs, the **Script** node will be visually dashed and you can find the error in the warnings popup.
+As with any coding, you will sooner or later make a mistake in your code. Noodl will catch both syntax errors and runtime errors and highlight the **Script** node causing the error. You can also find errors in the warnings popup.
 
 <div class="ndl-images">
-    <img src="/guides/javascript/script-error.png" class="ndl-image large"></img>  
+    <img src="/guides/javascript/script-error.png" class="ndl-image large" />
 </div>
 
-As you can see the inputs and outputs of the node may also becomes invalid if there is a error in the script. The error might also happend during the executing of your application, if such a run-time error occurs it will also be shown in the warnings popup.
+As seen in the image above, syntax errors in the code can cause inputs and outputs of the node to becomes invalid. Fixing the syntax error will restore the connections.
 
-To debug your javascript you can launch the web debugger from the viewer window, just hit the little bug icon.
+To debug your javascript you can launch the web debugger from the viewer window by clicking the bug icon.
 
 <div class="ndl-images">
-    <img src="/guides/javascript/open-debugger.png" class="ndl-image large"></img>  
+    <img src="/guides/javascript/open-debugger.png" class="ndl-image large" />
 </div>
 
-In the web debugger you can find any external source files that your are using in your script nodes, but if you want to set a breakpoint in an internal file you can use the `debugger` command. So if you for instance wanted to set a breakpoint in the **Stop** signal function in the code above:
+In the web debugger you can find any external source files that your are using in your script nodes, but if you want to set a breakpoint in an internal file you can use the `debugger` command. Here's an example:
 
 ```javascript
 Node.Signals.Stop = function () {
@@ -273,3 +289,26 @@ Node.Signals.Stop = function () {
 }
 ```
 
+### Running code when a Script node is created or destroyed
+A Script node is created when the Noodl component that it belongs to is created. Components are created when the app is first launched, when navigation happens, and when a [For Each](/nodes/data/for-each.md) node creates items. The `Node.OnInit` function is automatically called by Noodl when the Script node is created.
+
+Components can be destroyed when doing navigation or when removing items from a list used by a For Each node. This will run the `Node.OnDestroy` function.
+
+Here's an example that sets up an event listener on the `body` element and removes it when the node is destroyed to avoid memory leaks.
+
+```js
+function setPosition(e) {
+    Node.Outputs.PointerX = e.clientX;
+    Node.Outputs.PointerY = e.clientY;
+}
+
+Node.OnInit = function() {
+    document.body.addEventListener("mousemove", setPosition);
+	  document.body.addEventListener("mousedown", setPosition);
+}
+
+Node.OnDestroy = function() {
+	  document.body.removeEventListener("mousedown", setPosition);
+	  document.body.removeEventListener("mousemove", setPosition);    
+}
+```
