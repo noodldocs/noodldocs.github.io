@@ -18,7 +18,16 @@ map({
 })
 ```
 
-You can either provide a string with the name of the property that should be mapped with the syntax *to:'from'* which will simply rename a property taking the value directly from the input model.
+You can either provide a string with the name of the property that should be mapped with the syntax *to:'from'* which will simply rename a property taking the value directly from the input object.
+
+Sometimes you need to extract the **Id** of the objects you are mapping, this can be done in the following way:
+
+```javascript
+map({
+	ObjectId:() => object.getId(),
+	Label:'PhotoName'
+})
+```
 
 Or you can provide a mapping function that takes the object (of the type [Noodl.Object](/javascript-api/noodl-object.md)) and the function should return the mapped value.
 
