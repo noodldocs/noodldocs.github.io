@@ -1,0 +1,97 @@
+# Design Systems
+
+Design systems is an important concept for working smart and componentized when creating your application, or even better when creating many applications that should look a feel similar. There is much interesting in depth material on design systems but basically it is a collection of fonts, colors and UI components that are reused within you application. This guide will take you through a set of best practice patterns when creating design systems in Noodl.
+
+First off it is a good idea to keep a separate sheet for your design system, one example is the [Simple Design System](/modules/sds-v3/) that you can import as a module into your own project. You can use that as a basis for your own design system, or you can create one from scratch.
+
+We have created another design system for this guide. You can import it into your existing project or create a new project from this design system template using the import button below. This will make it easier to follow along in this guide.
+
+![](design-systems/design-system-screen.png ':class=img-size-l')
+
+<div class="ndl-images">
+    <button class="ndl-import-button no-content" onClick='importIntoNoodl("2.3/guides/design-systems/ds-project-1-0.zip", {name: "Design System Guide", thumb:"2.3/guides/design-systems/ds-project-thumb.png"})'>OPEN IN NOODL</button>
+</div>
+
+## Colors & Typography
+
+A common place to start is to align the colors and typography (fonts and sizes) that you intend to use in your application. In Noodl this is done by specifying **Color styles** and **Text styles**. You find the styles for the project in the styles panel. First you can create colors styles for the important colors that you will use throughout your application.
+
+![](design-systems/color-styles.png ':class=img-size-m')
+
+Same goes for **Text Styles** here you create a style by giving it a name and providing the font, size and line height.
+
+![](design-systems/text-styles.png ':class=img-size-m')
+
+Finally it's a good idea to provide overview components that showcase your colors and fonts in a nice way. This is good to get an overview of your design system, it also makes it easier to copy and paste when working on your app. Here is an example of a colors overview.
+
+![](design-systems/colors-overview.png ':class=img-size-l')
+
+A similar overview for the typography, simply showcasing all the **Text Styles**. This makes it easier to select which one to use, and you can also use the overview to copy and paste when building your application.
+
+![](design-systems/typography-overview.png ':class=img-size-l')
+
+Let's dive into the meat of building the UI controls of the design system. Most UI controls follow the same pattern, you will use one of the built in controls ([Button](/nodes/visual/button), [Text Input](/nodes/visual/text-input), [Checkbox](/nodes/visual/checkbox), [Radio Button](/nodes/visual/radiobutton), [Range](/nodes/visual/range) or [Options](/nodes/visual/options)) and you will add styling, chrome and states.
+
+## Input Fields
+
+First let's take a look at the input field. Input fields may have more requirements than simply letting the user type text, passwords and numbers. They may need to indicate statuses such as warnings and errors, and handle states such as focused / blurred.
+
+![](design-systems/input-field.png ':class=img-size-s')
+
+![](design-systems/input-field-typed.png ':class=img-size-s')
+
+The input field in this guide looks as shown in the images above. It has one appearance for when it is empty and one for when it contains text. Let's take a look at the basics first. Bring up the component **Input Field** in the **Design System** sheet if you want to follow along. As you can see it has a **Text Input** node, this is the critical part that let's the user input text. Please refer to the [Text Input](/nodes/visual/text-input) reference documentation for more details.
+
+![](design-systems/input-field-nodes-1.png ':class=img-size-l')
+
+You also need to provide **Component Inputs** so the component can be used to connect to logic in your application. As a bare minimum it is a good idea to expose **Text** both as an input and output. Inputs such as **Type** is also nice to have, as well as outputs like the events **Blurred** and **On Enter**. It's really up to you to decide what needs to be exposed and you can always add new stuff when it's required. 
+
+![](design-systems/input-field-nodes-2.png ':class=img-size-l')
+
+As mentioned before this input field has two states, one when it is focused or has content and one when it is empty. This is achieved with the two nodes highlighted above. 
+
+All UI control nodes such as the **Text Input** have state outputs both as events when states are changed and as values for the current state. In this case we are using the **Focused** state (true or false) combined with the current content of the **Text Input** to select a state, this is done in the **Function** node with the following small script, it outputs the string **"High"** if focused is *true* of if there is something in the *Text* input.
+
+```javascript
+if((Inputs.Text !== undefined && Inputs.Text !== "") || Inputs.Focused)
+    Outputs.State = "High"
+else
+    Outputs.State = "Low"
+```
+
+This is forwarded to a **States** node that then provides a **Size** for the label font and a setting for the **Margin Top** of the text input based on the state. This is a common pattern when creating UI controls like this, you will use the state outputs of the UI control nodes and hook them up to state nodes that alter the appearance of your control.
+
+Another important node is the **Label** node, this should be used for labels where you can. This is important for accessibility tools such as screen readers. 
+
+![](design-systems/input-field-nodes-3.png ':class=img-size-l')
+
+It is also important that you connect the **Control Id** output of the UI Control node to the **For** input of the label, this will make sure the label is connected to the control it is referring to. Besides this the **Label** node will work just like a normal **Text** node.
+
+![](design-systems/input-field-nodes-4.png ':class=img-size-l')
+
+The same pattern where we use the **Focused** state output from the **Text Input** UI Control node to drive a **States** node is reused for making sure the line at the bottom of the input field changes color when the input field is focused. This time a simple expression will suffice.
+
+![](design-systems/input-field-nodes-5.png ':class=img-size-l')
+
+The last little feature in the Input Field is the possibility to set it's status to **Normal**, **Warning** and **Error**. This will change the color of the bottom line. Again we use a **States** node to manage the different states and we simply expose the state input as an input of the component. Finally we make sure that the bottom line with the status indicator is not shown when it is in the **Normal** state.
+
+## Selectors
+
+Next up we will take a look at a Selector component, this component will look very much like the Input Field component above. It will have a little *chevron* icon to indicate that it is a selector component and when clicked it will bring up the default selector input mechanism of the browser.
+
+![](design-systems/selector.png ':class=img-size-s')
+
+![](design-systems/selector-selected.png ':class=img-size-s')
+
+We will not cover all the details so please take a look at the section above for Input Fields as much is the same. Also for details on the **Options** node please refer to the reference documentation for [Options](/nodes/visual/options).
+
+![](design-systems/selector-nodes-1.png ':class=img-size-l')
+
+The core UI Control node for selectors is the **Options** node. Make sure to expose the **Value** and **Items** as **Component Inputs**, and at the very least the **Value** and **Changed** as outputs. In this component we also expose the label and margins.
+
+The same patter as in the Input Field is seen here, the **Options** node is surrounded by a **Label** and a bottom line, it also has an **Image** with the small *chevron* icon indicating that it is a selector. It also uses the **Focused** state and the **Value** of the **Options** via **Function** and **Expression** nodes and **States** nodes to visually present the component in different states.
+
+## Checkboxes
+
+
+
