@@ -74,10 +74,17 @@ The above filter will return all models in the collection that has the *Complete
 * **lessThanOrEqualTo**	Less Than Or Equal To
 * **greaterThan**	Greater Than
 * **greaterThanOrEqualTo**	Greater Than Or Equal To
+* **equaltTo**   Not Equal To
 * **notEqualtTo**	Not Equal To
 * **containedIn**	Contained In
 * **notContainedIn**	Not Contained in
 * **exists**	A value is set for the key
+* **matchesRegex**    Check if a value matches a regex pattern
+* **text**    Text search in one or several columns using a text index
+* **idEqualTo**    Match the id of the item to a specific id
+* **idContainedIn**    Check if the id of the item matches an id in an array of ids
+* **pointsTo**    Check if the id of the item matches an id in an array of ids
+* **relatedTo**    Checks if the item is related to another item, through a *relation*
 
 For instance, to filter on if a certain property (in this example Letter) is one of many possible values:
 
