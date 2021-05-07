@@ -10,6 +10,7 @@
   - [Horizontal list of cards with snapping](snippets/ui/horizontal-cards-list.md)
   - [Rotary knob](snippets/rotary-knob/rotary-knob.md)
   - [Media Queries](snippets/responsive/media-query.md)
+  - [P5.js Intergration](snippets/p5-canvas/p5-canvas.md)
 - [Modules](modules/modules.md)
 - [Templates](templates/templates.md)
   - [CRUD Template](templates/crud_template/crud_template.md) 

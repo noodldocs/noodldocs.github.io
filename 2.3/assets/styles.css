@@ -208,6 +208,9 @@ body .sidebar-toggle span:nth-child(3) {
 .modules-table img {
   max-width: 100px;
 }
+.shortcut_list img {
+  max-width: 280px;
+}
 
 .markdown-section table td,
 .markdown-section table th {

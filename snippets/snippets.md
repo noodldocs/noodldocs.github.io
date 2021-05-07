@@ -1,11 +1,11 @@
 # Snippets
 Here you will find small and useful guides on how to solve a specific task in Noodl, we call them **Snippets**. 
 
-These snippets can include small Noodl node graphs that you can copy and paste into your project. If you see this button:
+These snippets can include small Noodl node graphs that you can copy and paste into your project. If you see button bellow, You can click it to copy the nodes shown on the accompanying image to your clipboard, and then paste them into your project in Noodl.
 
 ![](copy-nodes-button.png ':class=img-size-s')
 
-You can click it to copy the nodes shown on the accompanying image and then paste them into your project in Noodl. If you come across this buttun:
+If you come across this button:
 
 ![](import-button.png ':class=img-size-s')
 
