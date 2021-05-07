@@ -44,8 +44,8 @@ Below you will find a list of the built in Noodl modules:
         <td><a href="#/modules/mqtt/">MQTT Module</a><br>This module contains nodes for sending and receiving messages over MQTT in web apps.</td>
     </tr>
     <tr>
-        <td><img src="/modules/sds/SDSModule.png"></img></td>
-        <td><a href="#/modules/sds/">Simple Design System</a><br>This module contains a simple but solid UI kit to use as a starting point for your applications.</td>
+        <td><img src="/modules/sds-v3/SDSModule.png"></img></td>
+        <td><a href="#/modules/sds-v3/">Simple Design System</a><br>This module contains a simple but solid UI kit to use as a starting point for your applications.</td>
     </tr>
     <tr>
         <td><img src="/modules/cloud-services-user-management/UserManagementModule.png"></img></td>
