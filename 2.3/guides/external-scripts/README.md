@@ -220,7 +220,7 @@ service.getDistanceMatrix(options, (response, status) => {
 
 The `destinations` option is using `map()` on the Destination array to loop over all the Objects and extract the destination.
 
-The result is saved to the array with all the destinations (which is connected to `Inputs.Items`). This is how the result as passed back to the Noodl component from the previous step, where it's connected to a Text input.
+The result is saved to the array with all the destinations (which is connected to `Inputs.Items`). This is how the result is passed back to the Noodl component from the previous step, where it's connected to a Text input.
 
 ![](result-text.png ':class=img-size-m')
 
