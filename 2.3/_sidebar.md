@@ -33,7 +33,7 @@
 * [Javascript](guides/javascript.md)
 * [Version control](guides/version-control/version-control.md)
 * [Design Systems](guides/design-systems.md)
-* [External scripts](guides/external-scripts.md)
+* [External scripts](guides/external-scripts/)
   <br/>
 
 * Javascript API

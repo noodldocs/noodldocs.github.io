@@ -35,13 +35,13 @@ https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY
 ```
 This can be added to a Script Downloader node. Make sure to use your own API key.
 
-![](external-scripts/script-downloader-params.png ':class=img-size-l')
+![](script-downloader-params.png ':class=img-size-l')
 
 ## Step 3 - Using the Distance API
 
 The Script Downloader node has an output named _Loaded_, which triggers when the script(s) has been loaded. This can be connected to a Function node:
 
-![](external-scripts/function.png ':class=img-size-l')
+![](function.png ':class=img-size-l')
 
 This enables the same functionality as the the global callback function that Google's example was using, and runs code directly after the library has loaded.
 
@@ -68,10 +68,10 @@ We're asking the service for the distance between Malmö and Copenhagen, and pri
 ## Step 4 - The developer console
 
 `console.log()` prints to the developer console. The developer tools are opened by clicking the bug icon in the preview window's toolbar:
-![](external-scripts/debugger.png ':class=img-size-m')
+![](debugger.png ':class=img-size-m')
 
 Now we can see the result from the code above:
-![](external-scripts/devtools-1.png ':class=img-size-l')
+![](devtools-1.png ':class=img-size-l')
 
 The results consist of:
 - `destinationAddresses`: The actual address of the location that Google inferred from our destination string
@@ -80,7 +80,7 @@ The results consist of:
 
 This might look a bit complicated for our needs, but keep in mind that the service support more advanced use cases using multiple origins and destinations. We'll leverage that later in this guide.
 
-?> If you'd rather use your browser of choice you can open up the URL from the address in the preview window's title bar. Here's an example using Safari: ![](external-scripts/browser-devtools.png ':class=img-size-l')
+?> If you'd rather use your browser of choice you can open up the URL from the address in the preview window's title bar. Here's an example using Safari: ![](browser-devtools.png ':class=img-size-l')
 
 ## Step 5 - Showing the result in a Text node
 
@@ -95,7 +95,7 @@ This is doing two things:
 2. Creating an output signal called `Changed`. Calling a signal is required when setting outputs from a callback since Noodl won't update any outputs until a signal is sent. This is also good practice in general since it allows the Function to trigger additional things, like showing a popup, animate a result, trigger a navigation, and much more.
 
 Now we can connect the result to a text node:
-![](external-scripts/result-1.png ':class=img-size-l')
+![](result-1.png ':class=img-size-l')
 
 ## Step 6 - Using text inputs for origin and destination
 
@@ -109,7 +109,7 @@ Noodl will create two new inputs, `Origin` and `Destination`, that we can use to
 
 Let's add a button and a few input fields from the [SDS](modules/sds-v3/) module.
 
-![](external-scripts/with-sds.png ':class=img-size-l')
+![](with-sds.png ':class=img-size-l')
 
 - We don't want the Function node to run immediately on load anymore. It's triggered by the user pressing the Enter key when one of the input fields are focused, or when clicking the "Go" button.
 - Origin and destination is now read from input fields
@@ -120,7 +120,7 @@ Now we have a simple app where the user can enter any origin and destination and
 
 If the user enters an incorrect value, our code won't output anything. Let's look at what we get from Google's library when non-existing cities or locations are used:
 
-![](external-scripts/devtools-2.png ':class=img-size-l')
+![](devtools-2.png ':class=img-size-l')
 
 So we get `status: "OK"` when a call was successful, and `status: "NOT_FOUND"` when either the origin or destination wasn't found.
 
@@ -153,7 +153,7 @@ service.getDistanceMatrix(options, (response, status) => {
 
 Just before the `getDistanceMatrix()` call is made, we set the `Distance` output to an empty string. This erases the previous result when the user starts a new request, and the result will be empty while we're waiting for a new response.
 
-![](external-scripts/not-found.png ':class=img-size-m')
+![](not-found.png ':class=img-size-m')
 
 It's not the most elegant error handling solution, but it's a foundation that can be extended to implement better designs.
 
@@ -161,12 +161,12 @@ It's not the most elegant error handling solution, but it's a foundation that ca
 
 Let's take a look at a more advanced scenarios. We'll create a user interface where a user can enter multiple destinations and get the distance to all of them in one single request.
 
-![](external-scripts/result-2.png ':class=img-size-m')
+![](result-2.png ':class=img-size-m')
 *Apparently you can't drive all the way from the US to Sweden. Maybe Google doesn't include the [Sherp](https://sherp.eu/en/home/) amphibious all-terrain vehicle when finding potential routes*
 
 ## Step 8 - Making the number of destinations dynamic
 
-![](external-scripts/multi-dest-app.png ':class=img-size-l')
+![](multi-dest-app.png ':class=img-size-l')
 
 The application has now been expanded to include:
 - A button to add new destinations. An empty [Object](nodes/data/object.md) is created and added to an [Array](nodes/data/array.md) with the id *Destinations*. See the [Arrays guide](guides/arrays.md) for more information.
@@ -175,14 +175,14 @@ The application has now been expanded to include:
 - A [For Each](nodes/data/for-each.md) node is using a new component that includes a delete icon, input field, and text showing the result
 
 ## Step 9 - The component in the For Each node
-![](external-scripts/multi-dest-item.png ':class=img-size-l')
+![](multi-dest-item.png ':class=img-size-l')
 
 This item sets the destination and shows the result. For completeness there's also an icon that deletes a destination.
 
 Note that this example has created two identical **Component Input** nodes for getting the Id. This can be useful to separate nodes into independent clusters, which can make a component easier to understand. Another approach would be to only have one **Component Inputs** and do all the connections from there, but it can quickly cause connections that fan out all over the component, making it harder to see what's connected to what.
 
 ## Step 10 - Final update to the code
-![](external-scripts/final-function.png ':class=img-size-l')
+![](final-function.png ':class=img-size-l')
 
 The Function now has three inputs:
 - `Origin`: A single origin
@@ -222,7 +222,7 @@ The `destinations` option is using `map()` on the Destination array to loop over
 
 The result is saved to the array with all the destinations (which is connected to `Inputs.Items`). This is how the result as passed back to the Noodl component from the previous step, where it's connected to a Text input.
 
-![](external-scripts/result-text.png ':class=img-size-m')
+![](result-text.png ':class=img-size-m')
 
 ?> The **For Each** node adds all properties of an Object to the **Component Inputs** of all components it creates
 
