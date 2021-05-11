@@ -157,7 +157,7 @@
 * [Navigate Back](/nodes/navigation/navigate-back.md)
 * [Navigate To Path](/nodes/navigation/navigate-to-path.md)
 * [Show Popup](/nodes/navigation/show-popup.md)
-* [Hide Popup](/nodes/navigation/hide-popup.md)
+* [Close Popup](/nodes/navigation/close-popup.md)
   <br/>
 
 * Events
