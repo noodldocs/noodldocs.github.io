@@ -77,6 +77,13 @@
         window.location = uri;
       }
     </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D19FJBKRP1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-D19FJBKRP1');
+    </script>
   </head>
 
   <body>
@@ -100,19 +107,18 @@
           paths: 'auto',
           placeholder: 'Search',
           noData: 'No Results.',
-        },
-        ga: 'UA-171407696-3'
+        }
       };
     </script>
     <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
     <script src="//unpkg.com/prismjs/components/prism-bash.min.js"></script>
     <script src="//unpkg.com/prismjs/components/prism-json.min.js"></script>
-    <script src="//unpkg.com/docsify/lib/plugins/ga.min.js"></script>
     <script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>
     <script src="//unpkg.com/docsify/lib/plugins/external-script.min.js"></script>
     <script src="//unpkg.com/docsify-copy-code@2"></script>
     <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
     <script src="//unpkg.com/docsify-sidebar-collapse@1.1.2/dist/docsify-sidebar-collapse.min.js"></script>
+    <script src="/ga4-analytics-plugin.js"></script>
     <!--  
    
       <script src="//unpkg.com/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
