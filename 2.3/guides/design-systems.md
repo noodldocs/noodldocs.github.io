@@ -9,7 +9,7 @@ We have created another design system for this guide. You can import it into you
 ![](design-systems/design-system-screen.png ':class=img-size-l')
 
 <div class="ndl-images">
-    <button class="ndl-import-button no-content" onClick='importIntoNoodl("2.3/guides/design-systems/ds-project-1-0.zip", {name: "Design System Guide", thumb:"2.3/guides/design-systems/ds-project-thumb.png"})'>OPEN IN NOODL</button>
+    <button class="ndl-import-button no-content" onClick='importIntoNoodl("2.3/guides/design-systems/ds-project-1-1.zip", {name: "Design System Guide", thumb:"2.3/guides/design-systems/ds-project-thumb.png"})'>OPEN IN NOODL</button>
 </div>
 
 ## Colors & Typography
@@ -36,9 +36,9 @@ Let's dive into the meat of building the UI controls of the design system. Most 
 
 First let's take a look at the input field. Input fields may have more requirements than simply letting the user type text, passwords and numbers. They may need to indicate statuses such as warnings and errors, and handle states such as focused / blurred.
 
-![](design-systems/input-field.png ':class=img-size-s')
+![](design-systems/input-field.png ':class=img-size-m')
 
-![](design-systems/input-field-typed.png ':class=img-size-s')
+![](design-systems/input-field-typed.png ':class=img-size-m')
 
 The input field in this guide looks as shown in the images above. It has one appearance for when it is empty and one for when it contains text. Let's take a look at the basics first. Bring up the component **Input Field** in the **Design System** sheet if you want to follow along. As you can see it has a **Text Input** node, this is the critical part that let's the user input text. Please refer to the [Text Input](/nodes/visual/text-input) reference documentation for more details.
 
@@ -79,9 +79,9 @@ The last little feature in the Input Field is the possibility to set it's status
 
 Next up we will take a look at a Selector component, this component will look very much like the Input Field component above. It will have a little *chevron* icon to indicate that it is a selector component and when clicked it will bring up the default selector input mechanism of the browser.
 
-![](design-systems/selector.png ':class=img-size-s')
+![](design-systems/selector.png ':class=img-size-m')
 
-![](design-systems/selector-selected.png ':class=img-size-s')
+![](design-systems/selector-selected.png ':class=img-size-m')
 
 We will not cover all the details so please take a look at the section above for Input Fields as much is the same. Also for details on the **Options** node please refer to the reference documentation for [Options](/nodes/visual/options).
 
@@ -93,5 +93,55 @@ The same patter as in the Input Field is seen here, the **Options** node is surr
 
 ## Checkboxes
 
+Checkboxes can have many different forms but they all work in the same very simple way, you click/tap it to check / uncheck it.
 
+![](design-systems/checkbox.png ':class=img-size-xs')
+
+![](design-systems/checkbox-checked.png ':class=img-size-xs')
+
+The core Noodl node used for checkboxes are not surprisingly the [Checkbox](/nodes/visual/checkbox) node. Just like the other control nodes the **Checkbox** can be styled and the logic can be used to control other visual nodes. In the example below the **Checked** status output (true/false) is used to drive a **States** node to control the color, and to show/hide an image containing the check mark.
+
+![](design-systems/checkbox-nodes.png ':class=img-size-l')
+
+Also, don't forget to provide inputs and outputs to your component. A bare minimum is the **Checked** input and output, also the **Changed** output is very useful.
+
+The **Label** node is used in the same way here as the previous controls we covered. You might wonder why you would need a special control node for something as simple as a checkbox. One reason is that accessibility tools such as screen readers and keyboards will work with these controls out of the box.
+
+Checkboxes can take many different forms. Another common pattern when using the Noodl control nodes is to hide them completely, for instance by setting **Opacity** to zero and just using the logic to drive other visual nodes. An example is the *Toggle* button bellow.
+
+![](design-systems/toggle.png ':class=img-size-xs')
+
+![](design-systems/toggled.png ':class=img-size-xs')
+
+## Radio Buttons
+
+Radio buttons work very much like checkboxes, except that they are grouped and only one radio button in a group can be checked. There are two nodes used when creating radio buttons, the [Radio Button Group](/nodes/visual/radiobuttongroup) is used to, as the name implies, group a set of radio buttons. This node also has the value for the currently selected radio button as an input / output.
+
+Here we will take a closer look at how to use the [Radio Button](/nodes/visual/radiobutton) in your own components in your design system.
+
+![](design-systems/radiobutton.png ':class=img-size-xs')
+
+![](design-systems/radiobutton-checked.png ':class=img-size-xs')
+
+These are also very simple, you can either use the **Radio Button** node by styling it as you please or if you cannot achieve the look you want you can simply use the node logic to drive other visual nodes. In the example below the **Radio Button** is styled, but also the **Checked** property is used to choose a **Border Color** using a **States** node.
+
+![](design-systems/radiobutton-nodes.png ':class=img-size-l')
+
+## Sliders
+
+Sliders are commonly used to choose a numeric value on a range. For this you will use the [Range](/nodes/visual/range) node that in itself is a simple slider, but it also contains logic and accessability features that you can use when designing your own. Here is the slider we created for this design system.
+
+![](design-systems/slider.gif ':class=img-size-m')
+
+Besides the visual cues like shading the range track the slider is also presenting the currently selected value while the user is manipulating the slider. We start off with the [Range](/nodes/visual/range) node as the core and make sure we provide component inputs for **Value**, **Min** and **Max** as well as **Step**. For component outputs we will stick with the basic ones **Value** and **Changed**. 
+
+![](design-systems/range-nodes.png ':class=img-size-l')
+
+We have removed the track that comes with the **Range** node and replaced if with two **Groups**, a light grey background and a dark grey used as visual cue for the range. The **Value Percent** output of the **Range** node is useful for things like this, it can be connected to a node with **Width** unit set to **%**.
+
+![](design-systems/range-nodes-track.png ':class=img-size-l')
+
+Finally we have the visual nodes that make up the small *badge* showing the current value while the user is manipulating the slider. It is using the **Pressed** state output of the **Range** node to control the visibility and the **Value** connected to a **Text** node. It is also using an **Expression** using the **Width** of the slider component and the current **Value** to compute the position of the **Group** containing the badge.
+
+![](design-systems/range-nodes-badge.png ':class=img-size-l')
 
