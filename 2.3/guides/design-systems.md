@@ -9,7 +9,7 @@ We have created another design system for this guide. You can import it into you
 ![](design-systems/design-system-screen.png ':class=img-size-l')
 
 <div class="ndl-images">
-    <button class="ndl-import-button no-content" onClick='importIntoNoodl("2.3/guides/design-systems/ds-project-1-1.zip", {name: "Design System Guide", thumb:"2.3/guides/design-systems/ds-project-thumb.png"})'>OPEN IN NOODL</button>
+    <button class="ndl-import-button no-content" onClick='importIntoNoodl("2.3/guides/design-systems/ds-project-1-2.zip", {name: "Design System Guide", thumb:"2.3/guides/design-systems/ds-project-thumb.png"})'>OPEN IN NOODL</button>
 </div>
 
 ## Colors & Typography
@@ -144,4 +144,38 @@ We have removed the track that comes with the **Range** node and replaced if wit
 Finally we have the visual nodes that make up the small *badge* showing the current value while the user is manipulating the slider. It is using the **Pressed** state output of the **Range** node to control the visibility and the **Value** connected to a **Text** node. It is also using an **Expression** using the **Width** of the slider component and the current **Value** to compute the position of the **Group** containing the badge.
 
 ![](design-systems/range-nodes-badge.png ':class=img-size-l')
+
+## Buttons
+
+Next up let's take a look at buttons. These generally come in a couple of different forms, styles and types depending on what the needs are for your design system.
+
+![](design-systems/buttons.png ':class=img-size-l')
+
+But they all use the same basic pattern. It includes the [Button](/nodes/visual/button) control node. Most basic buttons can contain only that node, which can be styled. 
+
+![](design-systems/button-nodes.png ':class=img-size-l')
+
+The button in this example design system also supports a few other common features on UI Control. The first one we will take a look at is **Enabled**, by setting enabled to *false* the control node will not respond to any user input. The following nodes is used to make sure we get a different look for disabled buttons.
+
+![](design-systems/button-nodes-disabled.png ':class=img-size-l')
+
+The **Enabled** state output of the button (which simply mirrors the **Enabled** input) is used to drive the state of a **States** node that will use different background colors depending on if the state is **Yes** (enabled) or **No** (disabled). In the disabled state it uses a fixed grey color, in the enabled state it gets it's color from a **Color Blend** node. 
+
+Let's take a closer look at that part, first this component provides the option to choose between a few predefined styles and this is achieved by exposing a **States** node as component input. The states node contains a color for each "state" which corresponds to the chosen style.
+
+![](design-systems/button-nodes-styles.png ':class=img-size-l')
+
+Now we have a base color to use for the button. The next set of nodes handles the **Hover** state of the button, this also drives a **States** node that in turn connects to a **Color Blend** node. This is a useful pattern if you want use a base color and make it lighter/darker, the **Color Blend** node will blend between the provided base color and white and the hover **States** node is providing the different blend values based on the hover state.
+
+![](design-systems/button-nodes-hover.png ':class=img-size-l')
+
+As you might have realized the [States](/nodes/animation/states) node is a very versatile node that is used in many patterns, it's a good idea to get to know it. There is a dedicated guide to just the **States** node, find it [here](/guides/states)
+
+Some buttons needs other content than the simple text label provided in the button control. You can use buttons as containers just like a **Group** node. So you could create an icon button using an image and exposing the **Source** of the image via the component inputs.
+
+![](design-systems/button-nodes-icon.png ':class=img-size-l')
+
+
+
+
 
