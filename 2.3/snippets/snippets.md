@@ -23,15 +23,15 @@ Remember, if you have questions that aren't covered here, you can always join th
         <td><a href="#/snippets/javascript/get-dom-element.md">Get DOM Element</a><br>Get access to the underlying DOM element and use the browser APIs directly.</td>
     </tr>
     <tr>
-        <td><img src=""></img></td>
+        <td><img src="snippets/ui/font.png"></img></td>
         <td><a href="#/snippets/ui/importing-font-files.md">Importing font files</a><br>A quick guide for how you can import font files locally stored on your computer.</td>
     </tr>
      <tr>
-        <td><img src=""></img></td>
+        <td><img src="snippets/ui/cssfont.png"></img></td>
         <td><a href="#/snippets/ui/importing-css-fonts.md">Importing CSS fonts</a><br>a quick guide on how to use fonts via CSS.</td>
     </tr>
      <tr>
-        <td><img src=""></img></td>
+        <td><img src="snippets/ui/cards.png"></img></td>
         <td><a href="#/snippets/ui/horizontal-cards-list.md">Horizontal list of cards</a><br>A guide on how to create a horizontal list of cards with snapping.</td>
     </tr>
      <tr>
