@@ -336,6 +336,13 @@ body .sidebar-toggle span:nth-child(3) {
   background: var(--theme-color-dark, #808080);
 }
 
+.img-size-xs {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15%;
+}
+
 .img-size-s {
   display: block;
   margin-left: auto;

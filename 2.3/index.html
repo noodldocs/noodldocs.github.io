@@ -77,6 +77,13 @@
         window.location = uri;
       }
     </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D19FJBKRP1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-D19FJBKRP1');
+    </script>
   </head>
 
   <body>
@@ -100,7 +107,7 @@
           paths: 'auto',
           placeholder: 'Search',
           noData: 'No Results.',
-        },
+        }
       };
     </script>
     <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
@@ -111,6 +118,7 @@
     <script src="//unpkg.com/docsify-copy-code@2"></script>
     <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
     <script src="//unpkg.com/docsify-sidebar-collapse@1.1.2/dist/docsify-sidebar-collapse.min.js"></script>
+    <script src="/ga4-analytics-plugin.js"></script>
     <!--  
    
       <script src="//unpkg.com/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
