@@ -9,7 +9,7 @@ We have created another design system for this guide. You can import it into you
 ![](design-systems/design-system-screen.png ':class=img-size-l')
 
 <div class="ndl-images">
-    <button class="ndl-import-button no-content" onClick='importIntoNoodl("2.3/guides/design-systems/ds-project-1-2.zip", {name: "Design System Guide", thumb:"2.3/guides/design-systems/ds-project-thumb.png"})'>OPEN IN NOODL</button>
+    <button class="ndl-import-button no-content" onClick='importIntoNoodl("2.3/guides/design-systems/ds-project-1-3.zip", {name: "Design System Guide", thumb:"2.3/guides/design-systems/ds-project-thumb.png"})'>OPEN IN NOODL</button>
 </div>
 
 ## Colors & Typography
