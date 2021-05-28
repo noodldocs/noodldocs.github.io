@@ -20,10 +20,10 @@ The array that should be filtered.
 Enables or disables limiting the number of objects in the outputted items array.
 
 **Limit**  
-Specift the maximum number of objects in the filtered output.
+Specify the maximum number of objects in the filtered output.
 
 **Skip**  
-Specift the number of objects to skip from the beginning of the filtered output.
+Specify the number of objects to skip from the beginning of the filtered output.
 
 
 ### Actions
@@ -35,7 +35,7 @@ By default the node will filter as soon as there is a new array on the _Items_ i
 
 By default the **Array Filter** node will pass through all objects of the input array. You can filter on **Object** properties. Add which properties you want to filter on.
 
-![](collection-filter.png ':class=img-size-m')
+![](../cloud-services/collection-filter.png ':class=img-size-m')
 
 For each filter property you can specify:
 
@@ -55,7 +55,7 @@ The available operations of the filter depend on the type that is set.
 **Value**  
 The value used to test against in the filter operation.
 
-![](collection-filter-2.png ':class=img-size-m')
+![](../cloud-services/collection-filter-2.png ':class=img-size-m')
 
 ### Sort
 
@@ -63,9 +63,9 @@ By default the **Array Filter** node does not sort the output, it will be in the
 
 For each property you can choose the sorting order.
 
-![](collection-sort.png ':class=img-size-m')
+![](../cloud-services/collection-sort.png ':class=img-size-m')
 
-## OUPUTS
+## OUTPUTS
 
 ### General
 
