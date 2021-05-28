@@ -51,6 +51,9 @@ The available operations of the filter depend on the type that is set.
 - _Less than_ Include in filter if the property is less than the provided value. Only available if type is _Number_.
 - _Greater than or equal_ Include in filter if the property is greater than or equal to the provided value. Only available if type is _Number_.
 - _Less than or equal_ Include in filter if the property is less than or equal to the provided value. Only available if type is _Number_.
+- _Matches Regexp_ Match a regexp to the provided value. Available if type is _String_
+
+?> To perform a free text search on strings, use the _Matches Regexp_ operation and set the _Value_ to the partial string you want to search for.
 
 **Value**  
 The value used to test against in the filter operation.
