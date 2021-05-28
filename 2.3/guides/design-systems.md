@@ -1,10 +1,12 @@
 # Design Systems
 
-Design systems is an important concept for working smart and componentized when creating your application, or even better when creating many applications that should look a feel similar. There is much interesting in depth material on design systems but basically it is a collection of fonts, colors and UI components that are reused within you application. This guide will take you through a set of best practice patterns when creating design systems in Noodl.
+This guide will take you through a set of best practice patterns when creating design systems in Noodl. Design systems include many important concepts for working smart and componentized. They collect fonts, colors and UI components that work well together to construct building blocks for the UI in your applications.
 
-First off it is a good idea to keep a separate sheet for your design system, one example is the [Simple Design System](/modules/sds-v3/) that you can import as a module into your own project. You can use that as a basis for your own design system, or you can create one from scratch.
+They're useful when building single application and are even more important when creating many applications that should look and feel similar. 
 
-We have created another design system for this guide. You can import it into your existing project or create a new project from this design system template using the import button below. This will make it easier to follow along in this guide.
+It's a good idea to keep a separate sheet for your design system. One example is the [Simple Design System](/modules/sds-v3/) that you can import as a module into your own project. You can use that as a basis for your own design system, or you can create one from scratch.
+
+We have created another design system for this guide. You can import it into your existing project or create a new project from this template using the import button below. This will make it easier to follow along in this guide.
 
 ![](design-systems/design-system-screen.png ':class=img-size-l')
 
