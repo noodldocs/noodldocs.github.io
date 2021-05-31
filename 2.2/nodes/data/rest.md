@@ -76,10 +76,10 @@ Send a signal to this input to cancel an ongoing request.
 ## OUTPUTS
 
 ### Events
-**Success**
-A signal will be emitted on this output if the request receives status code 200.
+**Success**  
+A signal will be emitted on this output if the request receives a successful status code (2XX).
 
-**Failure**
+**Failure**  
 A signal will be emitted on this output on all other status codes of if another type of failure occurs.
 
 ### Request and response outputs
