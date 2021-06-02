@@ -94,6 +94,11 @@ The distance between letters in the string to be displayed. Uses pixels as the u
 **Line Height**  
 The line height of the string, if the string is on multiple lines. Uses pixels as the unit.
 
+**Word break**  
+Control where line breaks are allowed
+- Normal: Break on spaces and other whitespace characters
+- Break all: Allow line breaks between any two characters, including inside words
+
 ### Style
 
 **Opacity**  
