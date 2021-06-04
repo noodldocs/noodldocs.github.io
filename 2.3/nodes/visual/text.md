@@ -97,7 +97,7 @@ The line height of the string, if the string is on multiple lines. Uses pixels a
 **Word Break**  
 Control where line breaks are allowed
 - Normal: Break on spaces and other whitespace characters
-- Break all: Allow line breaks between any two characters, including inside words
+- Break All: Allow line breaks between any two characters, including inside words
 
 ### Style
 
