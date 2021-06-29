@@ -141,6 +141,25 @@ After you have created the backend, now you can make it the default backend for 
 
 Now it will work just like the built in Noodl backends, you can open the dashboard and manage the data in the backend just like you are used to.
 
+## Static frontend hosting
+Now with the backend in place and connected to your application the last step is to deploy the frontend of the application. Here you have two options:
+
+**Deploy to a \*.noodl.app domain**  
+You can deploy your application to a **noodl.app** domain for free. You deploy your application from the deploy popup in the editor (under the deploy to cloud section).
+
+![](deploy-noodl-apps/noodl-deploy-to-cloud.png ':class=img-size-l')
+
+You need to pick your domain prefix, this must be unique among all Noodl users. Then enter a short description and hit **Deploy**. Once the deploy is completed you will be able to access the application at the new URL.
+
+**Deploy to your own hosting**  
+If you want to use your own custom domain, or if you want features like faster globalized delivery via CDNs etc, you may want to host your frontend somewhere else. For this you will first deploy it locally and then upload it to your hosting provider of choice.
+
+![](deploy-noodl-apps/noodl-deploy-to-folder.png ':class=img-size-l')
+
+By using the *deploy to folder* section Noodl will save a version of your frontend to a folder on your local machine, this folder will contain everything needed and you can simply upload the content to your hosting service.
+
+If you would like to keep using GCP to host the frontend you can follow this [guide](https://cloud.google.com/storage/docs/hosting-static-website).
+
 
 
 
