@@ -34,6 +34,7 @@
 * [Version control](guides/version-control/version-control.md)
 * [Design Systems](guides/design-systems.md)
 * [External scripts](guides/external-scripts/)
+* [Figma Plugin](guides/figma.md)
 * [Deploying Noodl apps](guides/deploy-noodl-apps.md)
   <br/>
 
