@@ -5,7 +5,14 @@
         "project":"datepicker-button/datepicker-button-1-3.zip",
         "icon":"datepicker-button/DatePickerModule.png",
         "docs":"datepicker-button/"
-    },     
+    },   
+    {
+        "label":"Experience Insights",
+        "desc":"Add this module to your project to enabled Noodl experience insights.",
+        "icon":"xi/icon.png",
+        "project":"xi/xi-module-0-1.zip",
+        "docs":"xi/"
+    },
     {
         "label":"Form Validation",
         "desc": "This module adds a utility node that makes different kind of form validation easier.",
