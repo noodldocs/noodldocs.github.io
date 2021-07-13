@@ -28,7 +28,7 @@ Remember, if you have questions that aren't covered here, you can always join th
     </tr>
      <tr>
         <td><img src="snippets/ui/cssfont.png"></img></td>
-        <td><a href="#/snippets/ui/importing-css-fonts.md">Importing CSS fonts</a><br>a quick guide on how to use fonts via CSS.</td>
+        <td><a href="#/snippets/ui/importing-css-fonts.md">Importing CSS fonts</a><br>A quick guide on how to use fonts via CSS.</td>
     </tr>
      <tr>
         <td><img src="snippets/ui/cards.png"></img></td>
@@ -36,7 +36,7 @@ Remember, if you have questions that aren't covered here, you can always join th
     </tr>
      <tr>
         <td><img src="snippets/rotary-knob/rotary-knob.png"></img></td>
-        <td><a href="#/snippets/rotary-knob/rotary-knob.md">Rotary Knob</a><br>an example of how to use the Script node to implement a simple rotary knob.</td>
+        <td><a href="#/snippets/rotary-knob/rotary-knob.md">Rotary Knob</a><br>An example of how to use the Script node to implement a simple rotary knob.</td>
     </tr>
     <tr>
         <td><img src="snippets/responsive/media-query.png"></img></td>
@@ -44,6 +44,10 @@ Remember, if you have questions that aren't covered here, you can always join th
     </tr>
     <tr>
         <td><img src="snippets/p5-canvas/preview.png"></img></td>
-        <td><a href="#/snippets/p5-canvas/p5-canvas.md">P5.js Canvas Intergration</a><br>An example on how to set up a p5.js sketch inside of Noodl</td>
+        <td><a href="#/snippets/p5-canvas/p5-canvas.md">P5.js Canvas Intergration</a><br>An example on how to set up a p5.js sketch inside of Noodl.</td>
+    </tr>
+     <tr>
+        <td><img src="snippets/image-from-video/thumbnail.png"></img></td>
+        <td><a href="#/snippets/image-from-video/image-from-video.md">Image from Video</a><br>An example on how to capture images from a video stream.</td>
     </tr>
 </table>

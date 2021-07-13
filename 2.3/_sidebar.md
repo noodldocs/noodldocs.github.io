@@ -11,6 +11,7 @@
   - [Rotary knob](snippets/rotary-knob/rotary-knob.md)
   - [Media Queries](snippets/responsive/media-query.md)
   - [P5.js Intergration](snippets/p5-canvas/p5-canvas.md)
+  - [Image from video](snippets/image-from-video/image-from-video.md)
 - [Modules](modules/modules.md)
 - [Templates](templates/templates.md)
   - [CRUD Template](templates/crud_template/crud_template.md) 
