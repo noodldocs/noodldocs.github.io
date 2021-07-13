@@ -12,17 +12,17 @@ Once that's done you'll be able to create the **Validate** node.
 
 ## Guide
 
-Validating user inputted data in forms and other input fields are a recurring and often tedious process. This module provides a [Validate](/modules/validation/validate) node with a set of neat tools to make this easier.
+Validating user inputted data in forms and other input fields is a recurring and often tedious process. This module provides a [Validate](/modules/validation/validate) node with a set of neat tools to make this easier.
 
 First let's take a look at a very basic example. These examples are using the [Simple Design System](/modules/sds-v3/).
 
 ![](simple-validate.png ':class=img-size-l')
 
-Here we introduce the **Validate** node and we will use it to validate a simple input field. Using the **Validate** node you create a _schema_ for the inputs that you want to validate, this schema is a property of the **Validate** node.
+In this example we introduce the **Validate** node and we use it to validate a simple input field. To use the **Validate** node you create a _schema_ for the inputs that you want to validate. This schema is a property of the **Validate** node.
 
 ![](schema-property.png ':class=img-size-m')
 
-You edit the schema script by clicking the editor button. The simple schema for this example looks something like this:
+You edit the schema script by clicking the editor button. In this example we use a simple schema like this:
 
 ```javascript
 schema({
@@ -30,13 +30,13 @@ schema({
 });
 ```
 
-This schema has one property **Name** that must be a string and it is required. Each property in the schema will create an input on the **Validate** node. The error message can be provided, so if the validation fails that error message is sent on the **Name Error** output.
+This schema has one property **Name** that must be a string and it is required. Each property in the schema will create an input on the **Validate** node. An error message can be provided, so if the validation fails that error message is sent on the **Name Error** output.
 
-This will result in the following. If there is no _non empty_ string provided on the **Name** input the **Name Error** will output "Must provide name."
+When this schema executes it will check that there is a non-empty string provided on the **Name** input. If the provided string is empty then the **Name Error** will output "Must provide name."
 
 ![](simple-validate-1.png ':class=img-size-l')
 
-So that's a very basic example. Now let's take a look at one a little bit more involved.
+So that's a very basic example. Now let's take a look at a slightly more complex example.
 
 ![](sign-up-example.png ':class=img-size-l')
 
@@ -49,15 +49,15 @@ schema({
 });
 ```
 
-It's not much more complicated, it has an additional property **Email** that is both require and needs to be a valid email, with provided error messages.
+We have an additional property **Email** that is both required and needs to be a valid email, with provided error messages.
 
 A few notes on this example:
 
-- The **Validate** nodes **Enabled** input can be used to control if the validation should run or not. If it doesn't run it will not emit any error messages. This is connected to a **Switch** node that is false by default and when the save button is clicked it enables the validation. This a common wanted behavior to not show the error messages while the user is first inputting.
+- The **Validate** node's **Enabled** input can be used to control if the validation should run or not. If it doesn't run it will not emit any error messages. In this example the **Enabled** input is connected to a **Switch** node that is false by default, and when the save button is clicked it enables the validation. Not showing the the error message until the user is done with the input is a common pattern.
 
-- The **Is Valid** output is used to determin if the form is valid and thus if the submit action should be performed. In this case the **Save User** action is not performed unless the _Only save if valid_ condition is true.
+- The **Is Valid** output is used to determine if the form is valid and thus if the submit action can be performed. In this case the **Save User** action is not performed unless the _Only save if valid_ condition is true.
 
-- The **Name** and **Email** outputs from the **Validate** node are the ones that are sent to the action. The validation node can also perform modifiers on the property, such as trimming etc and the modified propertys are provided as outputs of the **Validate** node.
+- The **Name** and **Email** outputs from the **Validate** node are the ones that are sent to the action. The validation node can also perform modifiers on the properties, such as trimming etc and the modified properties are provided as outputs of the **Validate** node.
 
 The **Validate** node is based on the open source library [Yup](https://github.com/jquense/yup) and in the documentation you can find many more examples. Here are a few others that can be useful:
 
@@ -75,7 +75,7 @@ schema({
 });
 ```
 
-This can be used to validate that a password is formatted correctly and you can also use this module to make sure that two input fields match.
+The example above validates that a password is formatted correctly and that the **Password** and **ConfirmPassword** input fields match.
 
 ```javascript
 schema({
@@ -83,4 +83,4 @@ schema({
 });
 ```
 
-If you want to use spaces in your property names, make sure they are provided as strings i.e. in quatation marks. This example above tests a date and make sure that it is a date in the future.
+If you want to use spaces in your property names, make sure they are provided as strings i.e. in quotation marks. The example above tests a date and makes sure that it is a date in the future.
