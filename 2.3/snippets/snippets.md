@@ -1,5 +1,6 @@
 # Snippets
-Here you will find small and useful guides on how to solve a specific task in Noodl, we call them **Snippets**. 
+
+Here you will find small and useful guides on how to solve a specific task in Noodl, we call them **Snippets**.
 
 These snippets can include small Noodl node graphs that you can copy and paste into your project. If you see button bellow, You can click it to copy the nodes shown on the accompanying image to your clipboard, and then paste them into your project in Noodl.
 
@@ -8,8 +9,6 @@ These snippets can include small Noodl node graphs that you can copy and paste i
 Some snippets might be to big for copy/pasting, so if you encounter the "Import" button shown bellow, click it to import a module and/or components into Noodl. You can either do this into an existing project or create a new project. (it's often specific if the import is something you should put in your existing project).
 
 ![](import-button.png ':class=img-size-s')
-
-
 
 Remember, if you have questions that aren't covered here, you can always join the conversation on [Discord](https://discord.gg/umRupsc2f5).
 
@@ -21,6 +20,10 @@ Remember, if you have questions that aren't covered here, you can always join th
     <tr>
         <td><img src="snippets/javascript/get-dom-element.png"></img></td>
         <td><a href="#/snippets/javascript/get-dom-element.md">Get DOM Element</a><br>Get access to the underlying DOM element and use the browser APIs directly.</td>
+    </tr>
+    <tr>
+        <td><img src="snippets/ui/importing_components.png"></img></td>
+        <td><a href="#/snippets/ui/importing-components.md">Importing Components</a><br>A quick guide on how to import components from one project to another.</td>
     </tr>
     <tr>
         <td><img src="snippets/ui/font.png"></img></td>
