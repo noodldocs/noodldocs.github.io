@@ -73,4 +73,4 @@ This output will be updated every time a signal is sent on any of the component 
 This group contains component output signals from the component template of the *For Each* node. When any of the component instances triggers an output signal, these will be relayed by the *For Each* node along with the corresponding *Item Id*.
 
 ### Item Outputs
-This group comtains component outputs other than signals for the component template of the *For Each* node. When a signal is triggered by one of the component instances the outputs will be replayed along with the *Item Id* of the corrensponding item. This can be used to store component specific outputs in e.g. objects and variables.
+This group comtains component outputs other than signals for the component template of the *For Each* node. When a signal is triggered by one of the component instances the outputs will be replayed along with the *Item Id* of the corresponding item. This can be used to store component specific outputs in e.g. objects and variables.

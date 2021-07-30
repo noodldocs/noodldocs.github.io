@@ -13,7 +13,7 @@ The drag node is used to make visual nodes draggable with the mouse or touch. Al
 ### Snap To Position X
 
 **Do**  
-Send a signal here to trigger a snap to the position specified by _Value_ and with the transtion duration specified by _Duration_.
+Send a signal here to trigger a snap to the position specified by _Value_ and with the transition duration specified by _Duration_.
 
 **Value**  
 This is the X value the the snap action will have as destination when triggered.
@@ -24,7 +24,7 @@ The snap transition duration.
 ### Snap To Position Y
 
 **Do**  
-Send a signal here to trigger a snap to the position specified by _Value_ and with the transtion duration specified by _Duration_.
+Send a signal here to trigger a snap to the position specified by _Value_ and with the transition duration specified by _Duration_.
 
 **Value**  
 This is the X value the the snap action will have as destination when triggered.

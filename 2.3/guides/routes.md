@@ -42,7 +42,7 @@ If you take a look at the **Park Details** component you can see that the **Park
 
 ![](routes/park-id-input.png ':class=img-size-l')
 
-Now let's take a look at the **Main** component, here the navigation to the **Details** page is performed with the **Navigate** node. It is triggered when a **Park Item** is clicked and the corrensponding **Item Id** is passed with the navigation. The **Navigate** node will automatically expose all **Component Inputs** of the target page, in this case the **Park Id** input, and as **{Park Id}** is used in the path of the target page the provided value will be insterted there as well. 
+Now let's take a look at the **Main** component, here the navigation to the **Details** page is performed with the **Navigate** node. It is triggered when a **Park Item** is clicked and the corresponding **Item Id** is passed with the navigation. The **Navigate** node will automatically expose all **Component Inputs** of the target page, in this case the **Park Id** input, and as **{Park Id}** is used in the path of the target page the provided value will be insterted there as well. 
 
 ![](routes/main-navigate.png ':class=img-size-l')
 
