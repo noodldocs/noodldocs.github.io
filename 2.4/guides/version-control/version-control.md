@@ -35,6 +35,12 @@ After the changes are pushed you can see the new version in the version list.
 ![](after-first-push.png ':class=img-size-m')
 
 ## Pulling down changes
+Noodl automatically checks if there are any changes to pull down when the version control panel is opened.
+
+
+You can also manually check for updates by clicking the update icon
+
+![](update.png ':class=img-size-m')
 
 New version will show be displayed as dimmed items in the version list. These are versions that you haven't pulled down yet.
 

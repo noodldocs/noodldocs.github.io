@@ -117,8 +117,7 @@ When enabled, uses the web's native scrolling dependent on the platform. Uses cu
 
 ### Style
 
-**Opacity**  
-The opacity of this node. 0 is completely transparent and invisible. 1 is completely solid and opaque.
+[filename](./visibility-styles.md ':include')
 
 **Background Color**  
 Specifies the background color for this node.
@@ -139,12 +138,6 @@ The width of the border. Only available it **Border Style** is set to have a bor
 
 **Border Color**  
 The color of the border. Only available it **Border Style** is set to have a border.
-
-**Visible**  
-Toggle the visibility of the node on and off.
-
-**zIndex**  
-The depth index for this node, this can be any number.
 
 ### Box Shadow
 
