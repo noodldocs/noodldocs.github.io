@@ -100,14 +100,7 @@ Specifies what kind of cap there will be on the circle stroke.
 
 ### Style
 
-**Opacity**  
-The opacity of this node. 0 is completely transparent and invisible. 1 is completely solid and opaque.
-
-**Visible**  
-Toggle the visibility of this node on and off.
-
-**zIndex**  
-The depth index for this node, this can be any number.
+[filename](./visibility-styles.md ':include')
 
 ### Placement
 

@@ -80,14 +80,24 @@ Use this property to specify different image sources for different resolutions m
 
 ### Style
 
-**Opacity**  
-The opacity of the node. 0 is completely transparent and invisible. 1 is completely solid and opaque.
+[filename](./visibility-styles.md ':include')
 
-**Visible**  
-Toggle the visibility of this node on and off.
+**Border Radius**  
+Specifies the border radius if this node is set to have a border.
 
-**zIndex**  
-The depth index for this node, this can be any number.
+**Border Style**  
+Specifies whether this node should have a border and what it should look like.
+
+- _None_ - No border.
+- _Solid_ - Solid border.
+- _Dotted_ - Dotted border.
+- _Dashed_ - Dashed border.
+
+**Border Width**  
+The width of the border. Only available it **Border Style** is set to have a border.
+
+**Border Color**  
+The color of the border. Only available it **Border Style** is set to have a border.
 
 ### Other
 

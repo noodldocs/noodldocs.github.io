@@ -89,26 +89,31 @@ The size of the font of the text to be displayed, in pixels.
 The color of the text to be displayed.
 
 **Letter Spacing**  
-The distance between letters in the string to be displayed. Uses pixels as the unit.
+The distance between letters in the string to be displayed. Can be specified in the following units:
+- `px`: Pixels. This is CSS pixels, so one pixel will be two physical pixels on a retina display
+- `em`: Relative to the font size. 1em is the same as the current font size
 
 **Line Height**  
-The line height of the string, if the string is on multiple lines. Uses pixels as the unit.
+The line height of the string, if the string is on multiple lines. Can be specified in the following units:
+- No unit: Relative to the current font size. Preferred way to set line height
+- `px`: Pixels. This is CSS pixels, so one pixel will be two physical pixels on a retina display
+- `%`: Percentage
 
 **Word Break**  
 Control where line breaks are allowed
 - Normal: Break on spaces and other whitespace characters
 - Break All: Allow line breaks between any two characters, including inside words
 
+**Case**  
+Control how to capitalize the text
+- _None_ - Characters are unmodified 
+- _Uppercase_ - All characters will be uppercase
+- _Lowercase_ - All characters will be lowercase
+- _Capitalize_ - The first letter of each word will be converted to uppercase
+
 ### Style
 
-**Opacity**  
-The opacity of the node. 0 is completely transparent and invisible. 1 is completely solid and opaque.
-
-**Visible**  
-Toggle the visibility of this node on and off.
-
-**zIndex**  
-The depth index for this node, this can be any number.
+[filename](./visibility-styles.md ':include')
 
 ### Placement
 
