@@ -1,6 +1,6 @@
 # Script Downloader
 
-Script Downloader allows you load external Javascript libraries. This is useful for integrating third party libraries in your Javascript nodes. More details can be found in [this guide](guides/external-scripts).
+Script Downloader allows you load external Javascript libraries. This is useful for integrating third party libraries in your Javascript nodes. More details can be found in [this guide](guides/external-scripts/).
 
 ![](script-downloader-1.png ':class=img-size-m')
 
