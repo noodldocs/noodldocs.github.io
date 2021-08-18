@@ -41,8 +41,8 @@ provided as an argument to _response_ function. In the function you will also ha
 The following example assumes the response content is an array of objects. It is convert to a Noodl Array with Noodl Objects and provided via the output **Items**.
 
 ```javascript
-var result = Noodl.Array.get();
-result.set(Response.content.map((o) => Noodl.Object.create(o));
+const result = Noodl.Array.get();
+result.set(Response.content.map(o => Noodl.Object.create(o)));
 Outputs.Items = result;
 ```
 
