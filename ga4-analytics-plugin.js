@@ -1,8 +1,12 @@
 (function () {
 
   function trackPageViews(hook) {
-    hook.beforeEach(() => {
-      gtag('config', 'G-D19FJBKRP1', {'page_path': location.hash});
+    hook.doneEach(() => {
+      window.dataLayer.push({
+        'event': 'virtualPageview',
+        'pageUrl': window.location.href,
+        'pageTitle': document.title
+        });
     });
   };
   
