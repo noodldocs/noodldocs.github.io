@@ -1,6 +1,6 @@
 # Figma plugin
 
-!> The plugin is currently in closed beta and will be available through the Figma community page soon. Once it's ready there'll be a link here.
+?> Download the plugin here: https://www.figma.com/community/plugin/1006908263044642341/Noodl
 
 If you're a Figma user you can use Figma documents to create nodes in Noodl. 
 
