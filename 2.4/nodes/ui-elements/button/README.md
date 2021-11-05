@@ -28,12 +28,12 @@ A text string that will be shown as the label on the button.
 **Type**  
 The type of button, can be one of:
 
-- **Button** A default button, when clicked it emitts the **Click** output signal.
+- **Button** A default button, when clicked it emits the **Click** output signal.
 - **Submit** A submit button, when placed in a form it will trigger the **Submit** signal on the form when clicked. This is also important for accessibility.
 
 [filename](../shared-props/inputs/alignment/README.md ':include')
 
-[filename](../shared-props/inputs/size-mode-and-dimensions/README.md ':include')
+[filename](../shared-props/inputs/dimensions-and-size-mode/README.md ':include')
 
 ### Layout
 
@@ -46,22 +46,13 @@ The text string to display.
 
 [filename](../shared-props/inputs/text-styles/README.md ':include')
 
-### Style
-
 [filename](../shared-props/inputs/visibility-styles/README.md ':include')
 
 [filename](../shared-props/inputs/border-and-corner-styles/README.md ':include')
 
-### Box Shadow
-
 [filename](../shared-props/inputs/box-shadow-styles/README.md ':include')
 
-### Placement  
-
 [filename](../shared-props/inputs/placement-styles/README.md ':include')
-
-
-### Other
 
 [filename](../shared-props/inputs/other/README.md ':include')
 

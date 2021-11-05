@@ -1,7 +1,7 @@
 <##head##>
 # Text Input
 
-This node places a Text Input which can be used to capture information from a user. 
+This node places a Text Input field which can be used to capture information from a user. 
 
 ![](/textinput_visual.png ':class=img-size-l')
 
@@ -15,12 +15,9 @@ The captured value can easily be connected to other nodes in a project.
 
 [filename](../shared-props/inputs/margin-only/README.md ':include')
 
-### Alignment
 [filename](../shared-props/inputs/alignment/README.md ':include')
 
-### Size Mode and Dimensions
-
-[filename](../shared-props/inputs/size-mode-and-dimensions/README.md ':include')
+[filename](../shared-props/inputs/dimensions-and-size-mode/README.md ':include')
 
 ### Text
 
@@ -39,9 +36,11 @@ The type of the Text Input.
 **Placeholder**  
 The placeholder text for when the Text Input is empty.
 
-**Disabled**
-Disables the Text Input so it cannot receive input from the user.
+**Placeholder Opacity**  
+The opacity of the placeholder text. 0 is completely transparent and invisible. 1 is completely solid and opaque.
 
+
+### Text Style
 [filename](../shared-props/inputs/text-styles/README.md ':include')
 
 ### Actions
@@ -63,27 +62,13 @@ Removes the keyboard focus.
 
 [filename](../shared-props/inputs/position/README.md ':include')
 
-### Style
-
-**Font Color**  
-The color of the text.
-
-**Background Color**  
-The background color of the Text Input.
-
-**Border Color**  
-The color of the border around the Text Input node. Only valid if _Border Width_ is more than 0.
-
-**Border Width**  
-The width of the border around the Text Input.
-
 [filename](../shared-props/inputs/visibility-styles/README.md ':include')
 
-### Placement  
+[filename](../shared-props/inputs/border-and-corner-styles/README.md ':include')
+
+[filename](../shared-props/inputs/box-shadow-styles/README.md ':include')
 
 [filename](../shared-props/inputs/placement-styles/README.md ':include')
-
-### Other
 
 [filename](../shared-props/inputs/other/README.md ':include')
 
@@ -103,11 +88,7 @@ The place this node has in relation to its parent. E.g. if a **Group** has three
 **This**  
 A reference to this node. Used in custom **Javascript** nodes and more.
 
-### Bounding Box
-
 [filename](../shared-props/outputs/bounding-box/README.md ':include')
-
-### Mounted
 
 [filename](../shared-props/outputs/mounted/README.md ':include')
 

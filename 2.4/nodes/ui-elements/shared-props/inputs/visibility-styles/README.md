@@ -1,3 +1,5 @@
+### Style
+
 **Opacity**  
 The opacity of the node. 0 is completely transparent and invisible. 1 is completely solid and opaque.
 

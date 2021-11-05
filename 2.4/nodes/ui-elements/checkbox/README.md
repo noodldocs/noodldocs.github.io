@@ -21,13 +21,7 @@ This control contains all logic such as accessibility etc. It can be styled in v
 
 [filename](../shared-props/inputs/alignment/README.md ':include')
 
-### Dimensions
-
-**Width**  
-Specify the width of the checkbox in pixels, percentage of parent width or the unit _vw_ which is percentage of the browser window width.
-
-**Height**  
-Specify the height of the checkbox in pixels, percentage of parent height or the unit _vw_ which is percentage of the browser window height.
+[filename](../shared-props/inputs/dimensions-only/README.md ':include')
 
 ### General
 
@@ -46,22 +40,13 @@ A boolean setting the checkbox in "checked" or "unchecked" state. This is the va
 **Background Color**  
 The background color when the checkbox is "checked".
 
-### Style
-
 [filename](../shared-props/inputs/visibility-styles/README.md ':include')
 
 [filename](../shared-props/inputs/border-and-corner-styles/README.md ':include')
 
-### Box Shadow
-
 [filename](../shared-props/inputs/box-shadow-styles/README.md ':include')
 
-### Placement  
-
 [filename](../shared-props/inputs/placement-styles/README.md ':include')
-
-
-### Other
 
 [filename](../shared-props/inputs/other/README.md ':include')
 

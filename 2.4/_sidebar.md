@@ -73,10 +73,10 @@
   <br/>
   
 * Component Utilities
-* [Component Inputs](nodes/componentutils/component-inputs.md)
-* [Component Outputs](nodes/componentutils/component-outputs.md)
-* [Component Object](nodes/componentutils/component-object.md)
-* [Parent Component Object](nodes/componentutils/parent-component-object.md)
+* [Component Inputs](nodes/componentutils/component-inputs/)
+* [Component Outputs](nodes/componentutils/component-outputs/)
+* [Component Object](nodes/componentutils/component-object/)
+* [Parent Component Object](nodes/componentutils/parent-component-object/)
   <br/>
 
 * Data
@@ -88,6 +88,24 @@
 * [Static Array](/nodes/data/static-array.md)
 * [REST](/nodes/data/rest.md)
 * [Variable](/nodes/data/variable.md)
+
+  <br/>
+
+* Cloud Data
+* [Create New Record](nodes/data/cloud-data/create-new-record/)
+* [Delete Record](nodes/data/cloud-data/delete-record/)
+* [Filter Records](nodes/data/cloud-data/filter-records/)
+* [Record](nodes/data/cloud-data/record/)
+* [Set Record Properties](nodes/data/cloud-data/set-record-properties/)
+* [Query Class](nodes/data/cloud-data/query-class/)
+
+  <br/>
+
+* User Management 
+* [User](nodes/data/user-management/user/)
+* [Sign Up](nodes/data/user-management/sign-up/)
+* [Log in](nodes/data/user-management/log-in/)
+* [Log out](nodes/data/user-management/log-out/)
 
   <br/>
 
@@ -151,6 +169,10 @@
   <br/>
 
 * Utilities
+* [States](nodes/utilities/logic/states/)
+* [Condition](nodes/utilities/logic/condition/)
+* [String](nodes/utilities/logic/string/)
+* [String Format](nodes/utilities/logic/string-format/)
 * [Date To String](nodes/utilities/date-to-string.md)
 * [Boolean To String](nodes/utilities/boolean-to-string.md)
 * [Index To String](nodes/utilities/index-to-string.md)

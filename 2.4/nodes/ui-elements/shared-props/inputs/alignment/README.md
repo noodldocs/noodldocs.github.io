@@ -1,3 +1,5 @@
+### Alignment
+
 Use the alignment gadget to specify how this node is aligned to its parent. Important to note is that the horizontal alignment options won't have any effect if the parent's layout is set to _Horizontal_, and similarly the vertical alignments have no effect if the parent's layout is set to _Vertical_.
 
 <div class="ndl-images">

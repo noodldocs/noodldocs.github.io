@@ -1,10 +1,10 @@
 <##head##>
 # Repeater
-This node is used to dynamically insert ui elements based on data.
+This node is used to dynamically insert visual components based on array data.
 
 ![](/repeater_visual.png ':class=img-size-l')
 
-Connect the items output of a Noodl array to the items input on a Repeater node, and select with visual component to create for each item in the array. 
+The Repeater node takes data from a Noodl array and generates an existing visual component for each item in the array. 
 
 ![](/repeater_node.png ':class=img-size-l')
 <##head##>

@@ -1,4 +1,15 @@
+<##head##>
 # Component Outputs
+
+This node is used to create outputs for reusable components. 
+
+![](./co_node1.png ':class=img-size-l')
+
+A Component Output node can have as many ports as needed and can make output properties from the nodes available on the custom component.
+
+![](./co_node2.png ':class=img-size-l')
+
+<##head##>
 
 A very powerful feature of Noodl is the ability to create **components** that act as reusable nodes in your application. A core concept of components is that they can have inputs and outputs like any of the built in nodes.
 

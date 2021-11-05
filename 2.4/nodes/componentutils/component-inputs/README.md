@@ -1,4 +1,16 @@
+<##head##>
 # Component Inputs
+
+This node is used to create inputs for reusable components. 
+
+![](./ci_node.png ':class=img-size-l')
+
+A Component Input node can have multiple ports connected to inputs on the nodes inside of the component.  
+
+![](./ci_node2.png ':class=img-size-l')
+
+<##head##>
+
 
 A very powerful feature of Noodl is the ability to create **components** that act as reusable nodes in your application.
 

@@ -1,3 +1,5 @@
+### Dimensions
+
 **Size Mode**  
 Controls how the width and height of a **Group** is specified.
 

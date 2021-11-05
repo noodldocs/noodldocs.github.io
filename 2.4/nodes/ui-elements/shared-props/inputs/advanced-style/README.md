@@ -1,4 +1,5 @@
 ### Advanced Style
+
 Here you can add custom CSS styles that will be added to this node. 
 
 **Style Type**

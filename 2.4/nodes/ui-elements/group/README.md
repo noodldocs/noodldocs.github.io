@@ -1,11 +1,11 @@
 <##head##>
 # Group
 
-The Group node works as a styleable container, that can have other visual nodes nested inside of it.
+This node works as a styleable container, that can have other visual nodes nested inside of it.
 
 ![](/group_visual.png ':class=img-size-l')
 
-The Group is the most essential node when it comes to creating layouts and arranging of visual elements.
+The Group is the most essential node when it comes to creating layouts and arranging visual elements.
 
 ![](/group_node.png ':class=img-size-l')
 
@@ -16,13 +16,9 @@ The Group is the most essential node when it comes to creating layouts and arran
 ## Inputs
 [filename](../shared-props/inputs/margin-and-padding/README.md ':include')
 
-### Alignment
-
 [filename](../shared-props/inputs/alignment/README.md ':include')
 
-### Dimensions
-
-[filename](../shared-props/inputs/size-mode-and-dimensions/README.md ':include')
+[filename](../shared-props/inputs/dimensions-and-size-mode/README.md ':include')
 
 ### Layout
 
@@ -87,19 +83,11 @@ Only available if _Native Platform Scroll_ is disabled. Toggles if scrolling bou
 **Native Platform Scroll**  
 When enabled, uses the web's native scrolling dependent on the platform. Uses custom Noodl scrolling when disabled. The custom Noodl scrolling is platform independent and has both touch and mouse support.
 
-### Style
-
 [filename](../shared-props/inputs/visibility-styles/README.md ':include')
 
 [filename](../shared-props/inputs/border-and-corner-styles/README.md ':include')
 
-
-### Box Shadow
-
 [filename](../shared-props/inputs/box-shadow-styles/README.md ':include')
-
-
-### Placement
 
 [filename](../shared-props/inputs/placement-styles/README.md ':include')
 
@@ -111,11 +99,10 @@ When enabled, uses the web's native scrolling dependent on the platform. Uses cu
 **Focus**  
 Focuses this group. Will trigger the _Focused_ output on this group, as well as _Focused Lost_ on other groups that now lost focus.
 
-
 [filename](../shared-props/inputs/other/README.md ':include')
 
-
 [filename](../shared-props/inputs/advanced-style/README.md ':include').
+
 
 ## Outputs
 
@@ -132,11 +119,7 @@ Signal emitted when scrolling starts.
 **Scroll End**  
 Signal emitted when scrolling ends.
 
-### Bounding Box
-
 [filename](../shared-props/outputs/bounding-box/README.md ':include')
-
-### Mounted
 
 [filename](../shared-props/outputs/mounted/README.md ':include')
 

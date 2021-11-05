@@ -1,11 +1,11 @@
 <##head##>
 # Text
 
-The Text node represents a text elements, and is used for both single words as well as paragraphs of text. 
+This node represents a text element, and is used for both single words as well as paragraphs of text.  
 
 ![](/text_visual.png ':class=img-size-l')
 
-Text can be styled with font family, color, size, and much more. 
+The Text node can be styled with font family, color, size, and much more. 
 
 ![](/text_node.png ':class=img-size-l')
 
@@ -14,8 +14,6 @@ Text can be styled with font family, color, size, and much more.
 ## Inputs
 
 [filename](../shared-props/inputs/margin-only/README.md ':include')
-
-### Alignment
 
 [filename](../shared-props/inputs/alignment/README.md ':include')
 
@@ -32,8 +30,7 @@ The alignment of the text string within the Text node's bounding box.
 - _Center_ - The text is centered on each line.
 - _Right_ - The text is right aligned.
 
-### Size Mode and Dimensions
-[filename](../shared-props/inputs/size-mode-and-dimensions/README.md ':include')
+[filename](../shared-props/inputs/dimensions-and-size-mode/README.md ':include')
 
 ### Text
 
@@ -48,11 +45,7 @@ Control where line breaks are allowed
 - Break All: Allow line breaks between any two characters, including inside words
 
 
-### Style
-
 [filename](../shared-props/inputs/visibility-styles/README.md ':include')
-
-### Placement
 
 [filename](../shared-props/inputs/placement-styles/README.md ':include')
 
@@ -73,11 +66,7 @@ The place this node has in relation to its parent. E.g. if a **Group** has three
 **This**  
 A reference to this node. Used in custom **Javascript** nodes and more.
 
-### Bounding Box
-
 [filename](../shared-props/outputs/bounding-box/README.md ':include')
-
-### Mounted
 
 [filename](../shared-props/outputs/mounted/README.md ':include')
 
