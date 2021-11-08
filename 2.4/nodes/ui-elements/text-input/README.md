@@ -3,11 +3,11 @@
 
 This node places a Text Input field which can be used to capture information from a user. 
 
-![](/textinput_visual.png ':class=img-size-l')
+![](./textinput_visual.png ':class=img-size-l')
 
 The captured value can easily be connected to other nodes in a project. 
 
-![](/textinput_node.png ':class=img-size-l')
+![](./textinput_node.png ':class=img-size-l')
 
 <##head##>
 

@@ -3,11 +3,11 @@
 
 This node represents a text element, and is used for both single words as well as paragraphs of text.  
 
-![](/text_visual.png ':class=img-size-l')
+![](./text_visual.png ':class=img-size-l')
 
 The Text node can be styled with font family, color, size, and much more. 
 
-![](/text_node.png ':class=img-size-l')
+![](./text_node.png ':class=img-size-l')
 
 <##head##>
 

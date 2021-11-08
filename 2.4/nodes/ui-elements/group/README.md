@@ -3,11 +3,11 @@
 
 This node works as a styleable container, that can have other visual nodes nested inside of it.
 
-![](/group_visual.png ':class=img-size-l')
+![](./group_visual.png ':class=img-size-l')
 
 The Group is the most essential node when it comes to creating layouts and arranging visual elements.
 
-![](/group_node.png ':class=img-size-l')
+![](./group_node.png ':class=img-size-l')
 
 <##head##>
 
