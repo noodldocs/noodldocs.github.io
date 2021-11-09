@@ -1,8 +1,8 @@
 <##head##>
 # Create New Record
-This node will create and insert a new record in a Class on a Noodl Cloud Service instance. 
+This node is used to create a new record of a given class. You specify the class of record to be created in the property panel. Sending a signal to **Do** will perform the action.
 
 ![](./create-new-record.png ':class=img-size-l')
 
-The Create New Record node is used to save information in the cloud that needs to persist.  
+You can also provide values for the properties of the record either via connections or by typing the values in the property panel.
 <##head##>
