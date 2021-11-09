@@ -1,11 +1,11 @@
 <##head##>
 # States
 
-This node is used to switch between logical states that each can hold values to transition between. You can define as many states and values as needed.
+This node is used to switch between logical states. Each state holds values that can be transitioned between. You can define as many states and values as needed.
 
 ![](./states_visual.gif ':class=img-size-l')
 
-The state node is often used to create animations on user interactions, and create state machines. Learn more in the States node guide 
+The state node is often used to create animations on user interactions, and create state machines. Learn more in the States node guide
 
 ![](./states_node.gif ':class=img-size-l')
 
@@ -15,25 +15,25 @@ To learn more take a look at the [States guide](/guides/states.md).
 
 ## Inputs
 
-**States**  
+**States**
 A **States** node can have as many states as is necessary. Add a new state by clicking on the plus button.
 
-**Values**  
+**Values**
 Every state will have its own set of values. All values need to be set for every state that is added.
 
 <div class="ndl-images">
     <img src="/nodes/animation/states-example.png" class="ndl-image small"></img>
 </div>
 
-**State**  
+**State**
 This is the starting state for the **States** node when it is created. You can also connect to the input to force the state.
 
-**Toggle**  
+**Toggle**
 Will animate to the next state, or the first state if the current state is the last one.
 
 ### General
 
-**Use Transitions**  
+**Use Transitions**
 This property can be used to enabled and disable transitions between states for the specified values. By default it is *enabled*, this means that any color or number values will transition smoothely between states.
 
 ## Value types
@@ -69,17 +69,17 @@ Each state will have a signal input called _To_ followed by the state name. This
 
 ## Outputs
 
-**State**  
+**State**
 The name of the current state.
 
-**State Changed**  
+**State Changed**
 A signal that is sent when the current state is changed.
 
-**Values**  
+**Values**
 All of the values for the current state.
 
-**At "State X"**  
+**At "State X"**
 True when the currently selected state is X.
 
-**Has Reached "State X"**  
+**Has Reached "State X"**
 Signal sent when the state animation to state X is complete.

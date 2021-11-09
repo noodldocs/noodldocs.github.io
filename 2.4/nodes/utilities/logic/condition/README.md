@@ -4,8 +4,7 @@ This node evaluates a condition and sends one of two signals depending on if the
 
 ![](./condition_node.png ':class=img-size-l')
 
-The input condition will be treated as a boolean, and the evaluation happens when the input changes, unless an explicit signal is connected to the Evaluate input
-
+The input condition will be treated as a boolean, and the evaluation happens when the input changes, unless an explict signal is connected to the Evaluate input
 
 <##head##>
 
@@ -15,19 +14,19 @@ The input condition will be treated as a boolean, and the evaluation happens whe
 
 ## Inputs
 
-**Condition**  
+**Condition**
 A boolean that decides which output signal (*On true* or *On false*) that should be triggered when the *Evaluate* signal is triggered.
 
-**Evaluate**  
+**Evaluate**
 Evaluates the *Condition* input and triggers the respective output signal. If no Signal is connected to Evaluate, the node will evaluate the input everytime the input changes.
 
 
 
 ## Outputs
-**On true**  
+**On true**
 Triggered when *Evaluate* is triggered and *Condition* is true.
 
-**On false**  
+**On false**
 Triggered when *Evaluate* is triggered and *Condition* is false.
 
 </div>

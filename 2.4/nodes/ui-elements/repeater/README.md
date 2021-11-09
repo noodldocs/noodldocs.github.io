@@ -4,7 +4,7 @@ This node is used to dynamically insert visual components based on array data.
 
 ![](./repeater_visual.png ':class=img-size-l')
 
-The Repeater node takes data from a Noodl array and generates an existing visual component for each item in the array. 
+The Repeater node takes data from a Noodl array and generates an existing visual component for each item in the array.
 
 ![](./repeater_node.png ':class=img-size-l')
 <##head##>
@@ -18,27 +18,27 @@ More details can be found in the [guide](/guides/for-each.md).
 
 ### Appearance
 
-**Template Type**  
+**Template Type**
 May be used to enable dynamic templates. Can be:
 
 - _Explicit_ - The same _Component_ will be used for all items.
 - _Dynamic_ - Use code to choose what _Component_ to create for each item. In this case you will have to set the _Script_ input.
 
-**Script**  
+**Script**
 Visible when _Template Type_ is set to _Dynamic_ or after chosing a _Component_ for a _Explicit_ template type . Write a script to map input or choose what Component to create for every item (see below).
 
-**Component**  
+**Component**
 Only visible when _Template Type_ is set to _Explicit_. Choose a component from your project that will be used as template to dynamically create component instances for each object in the Items array.
 
-**Items**  
+**Items**
 An array of objects that will ne used to dynamically create components.
 
-**Refresh**  
+**Refresh**
 A signal that will trigger a remove of all created components and recreate them.
 
 ### Script
 
-**Script**  
+**Script**
 Here you can put an script that will do one of two things. Either the script
 a) Maps the properties of the objects in the *Items* array to component inputs of the template component instances created by the *For Each* node. This is only available if _template type_ is set to _Explicit. (see _Mapping Inputs_ below), or b) Chooses which template component to use for each item in the item array provided to the _For Each_ node. This is only available (and mandatory) if the _Template type_ is set to Dynamic. (see _Dynamic Template Types_ below).
 
@@ -74,10 +74,10 @@ In the example above the script looks at the property "type" of each object, and
 
 An output is created for every signal output of the _Template_ component.
 
-**Item Id**  
+**Item Id**
 This output will be updated every time a signal is sent on any of the component output signals to reflect the _Id_ of the object that triggered the signal.
 
-### Item Signals  
+### Item Signals
 This group contains component output signals from the component template of the *For Each* node. When any of the component instances triggers an output signal, these will be relayed by the *For Each* node along with the corresponding *Item Id*.
 
 ### Item Outputs

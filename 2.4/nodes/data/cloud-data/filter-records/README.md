@@ -4,7 +4,7 @@ This node is used to filter an array of Records based on custom filter condition
 
 ![](./filter-records-node.png ':class=img-size-l')
 
-The Create New Record node is used to save information in the cloud that needs to persist.
+The Filter Record node comes with a visual filter builder.
 
 ![](./filter-records-visual.png ':class=img-size-l')
 <##head##>

@@ -1,11 +1,11 @@
 <##head##>
 # Text Input
 
-This node places a Text Input field which can be used to capture information from a user. 
+This node places a Text Input field which can be used to capture information from a user.
 
 ![](./textinput_visual.png ':class=img-size-l')
 
-The captured value can easily be connected to other nodes in a project. 
+The captured value can easily be connected to other nodes in a project.
 
 ![](./textinput_node.png ':class=img-size-l')
 
@@ -21,10 +21,10 @@ The captured value can easily be connected to other nodes in a project.
 
 ### Text
 
-**Text**  
+**Text**
 The text string of the Text Input node. Setting this will change the current text, unless _Set_ is connected, then it will be updated when _Set_ receives a signal.
 
-**Type**  
+**Type**
 The type of the Text Input.
 
 - _Text_ - A single line text input (default).
@@ -33,10 +33,10 @@ The type of the Text Input.
 - _Number_ - A single line number input.
 - _Password_ - A single line password input, will mask password by default.
 
-**Placeholder**  
+**Placeholder**
 The placeholder text for when the Text Input is empty.
 
-**Placeholder Opacity**  
+**Placeholder Opacity**
 The opacity of the placeholder text. 0 is completely transparent and invisible. 1 is completely solid and opaque.
 
 
@@ -44,18 +44,18 @@ The opacity of the placeholder text. 0 is completely transparent and invisible. 
 [filename](../shared-props/inputs/text-styles/README.md ':include')
 
 ### Actions
-**Set**  
+**Set**
 Sets the text field value to the text in the _Text_ input.
 
-**Clear**  
+**Clear**
 Clears the text
 
-**Focus**  
+**Focus**
 Focuses the text field.
 
-_Note_: Some browsers, most notably Safari, only allow focus if it originates from a user event, like a click. So using a Timer or other method might not work. 
+_Note_: Some browsers, most notably Safari, only allow focus if it originates from a user event, like a click. So using a Timer or other method might not work.
 
-**Blur**  
+**Blur**
 Removes the keyboard focus.
 
 ### Layout
@@ -82,10 +82,10 @@ Removes the keyboard focus.
 
 ### Other
 
-**Child Index**  
+**Child Index**
 The place this node has in relation to its parent. E.g. if a **Group** has three children, then the first child will have _Child Index_ 0, the second child will have _Child Index_ 1, and so on.
 
-**This**  
+**This**
 A reference to this node. Used in custom **Javascript** nodes and more.
 
 [filename](../shared-props/outputs/bounding-box/README.md ':include')
@@ -94,20 +94,20 @@ A reference to this node. Used in custom **Javascript** nodes and more.
 
 ### Value
 
-**Text**  
+**Text**
 The current text string.
 
 ### Focus
 
-**Focused**  
+**Focused**
 Signal that is emitted when the Text Input node gets input focus.
 
-**Blurred**  
+**Blurred**
 Signal that is emitted when the Text Input node loses input focus.
 
 ### Actions
 
-**On Enter**  
+**On Enter**
 Signal emitted when Enter/Return key is pressed.
 
 </div>
