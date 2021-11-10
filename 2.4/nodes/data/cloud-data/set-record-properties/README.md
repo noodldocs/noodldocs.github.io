@@ -11,17 +11,24 @@ Send a signal to **Do** to perform the action.
 
 ## INPUTS
 
-**Property inputs**  
-<##input:prop-*##>The value to set this property to when the action is triggered.<##input##> For each property in the specified class there will be an input of the correct type. You can provide the values for the inputs either through connections or by specifying them in the property panel.
+**Class**  
+The class of record for this node. Choosing the class will determine which property inputs that become available on the node.
 
 **Store to**  
 <##input:store to##>Specifies if this node should store both to the cloud and locally, or only locally.<##input##>
 
+[filename](../id-source.md ':include')
+
 **Id**  
-<##input:id##>Specify the **Id** of the record that you want to set the properties on.<##input##> This input is only valid if **Record Id** is set to **Specify explicitly**.
+<##input:id##>Specify the **Id** of the record that you want to set the properties on.<##input##> This input is only valid if **Id Source** is set to **Specify explicitly**.
 
 **Do**  
 <##input:do##>When a signal is received on this input the properties will be set on the record.<##input##>
+
+**Property inputs**  
+<##input:prop-*##>The value to set this property to when the action is triggered.<##input##> For each property in the specified class there will be an input of the correct type. You can provide the values for the inputs either through connections or by specifying them in the property panel.
+
+
 
 ## OUTPUTS
 
