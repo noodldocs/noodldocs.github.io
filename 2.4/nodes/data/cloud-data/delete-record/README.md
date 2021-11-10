@@ -4,7 +4,9 @@ This node will delete a **Record** of a given **Class** from the Noodl backend.
 
 ![](./delete-record-node.png ':class=img-size-l')
 
+You will need to provide the **Id** of the record to be deleted, there are multiple ways to do this, see the **Id Source** property for details.
 
+Then send a signal on the **Do** input to perform the action.
 
 <##head##>
 
@@ -31,7 +33,7 @@ You need to select the **Class** of records that this node will act on.
 <##output:success##>A signal is sent on this output when the record have been successfully deleted in the backend.<##output##>
 
 **Failure**  
-<##output:failure##>A signal is sent on this output if something went wrong when attempting to delete the recrod in the backend.<##output##>
+<##output:failure##>A signal is sent on this output if something went wrong when attempting to delete the record in the backend.<##output##>
 
 **Error**  
 <##output:error##>If something went wrong when deleting the record in the backend, this output will contain the error message.<##output##>
