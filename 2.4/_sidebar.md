@@ -81,6 +81,9 @@
 
 * Data
 * [Array](/nodes/data/array/array/)
+* [Create New Array](/nodes/data/array/create-new-array/)
+* [Insert Object Into Array](/nodes/data/array/insert-into-array/)
+* [Remove Object From Array](/nodes/data/array/remove-from-array/)
 * [Array Filter](/nodes/data/array/array-filter/)
 * [Array Map](/nodes/data/array/array-map/)
 * [For Each Item](/nodes/data/for-each-item.md)
