@@ -1,7 +1,6 @@
 <##head##>
 # Static Array
-
-Store static data to populate an [Array](nodes/data/array.md) with items. The Static Array node is great for providing static local data for lists etc. You can use it e.g. as an input to a **For Each** node.
+Store static data to populate an [Array](nodes/data/array/array/) with items. The Static Array node is great for providing static local data for lists etc. You can use it e.g. as an input to a **For Each** node.
 
 ![](static-array-1.png ':class=img-size-m')
 
@@ -46,5 +45,5 @@ Example:
 ## Outputs
 
 **Items**
-<##output:items##>A `Noodl.Array` object that can be connected to e.g. an [Array](nodes/data/array.md), [Javascript](guides/javascript.md) or [For Each](nodes/data/for-each.md).<##output##>
+<##output:items##>A `Noodl.Array` object that can be connected to e.g. an [Array](nodes/data/array/array/), [Javascript](guides/javascript.md) or [For Each](nodes/data/for-each.md).<##output##>
 

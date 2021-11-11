@@ -80,12 +80,12 @@
   <br/>
 
 * Data
-* [Array](/nodes/data/array.md)
-* [Array Filter](/nodes/data/array-filter.md)
-* [Array Map](/nodes/data/array-map.md)
+* [Array](/nodes/data/array/array/)
+* [Array Filter](/nodes/data/array/array-filter/)
+* [Array Map](/nodes/data/array/array-map/)
 * [For Each Item](/nodes/data/for-each-item.md)
 * [Object](/nodes/data/object.md)
-* [Static Array](/nodes/data/static-array.md)
+* [Static Array](/nodes/data/array/static-array/)
 * [REST](/nodes/data/rest.md)
 * [Variable](/nodes/data/variable.md)
 
