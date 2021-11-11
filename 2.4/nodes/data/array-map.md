@@ -1,8 +1,9 @@
+<##head##>
 # Array Map
 This node takes an input array, runs a small map script on each item, and outputs the resulting mapped array. That is an array with new objects, each created in the mapping script.
 
 ![](array-map.png ':class=img-size-l')
-
+<##head##>
 ## Inputs
 
 ### General
@@ -32,20 +33,19 @@ map({
 Note that the objects that are created when mapping are new objects so they will have their own Id as well.
 
 **Items**  
-The array that should be mapped.
-
+<##input:items##>The array that should be mapped.<##input##>
 ## Outputs
 
 ### General
 
-**Items**  
-The mapped array.
+**Items**
+<##output:items##>The mapped array.<##output##>
 
 **Count**  
-The number of items in the mapped array (this will be the same as the input array)
+<##output:count##>The number of items in the mapped array (this will be the same as the input array)<##output##>
 
 ### Events
 
 **Changed**  
-A signal is emitted here when the input array has been modified which will trigger the *Array Map* node to remap the input and produce a new output *Items*.
+<##output:changed##>A signal is emitted here when the input array has been modified which will trigger the *Array Map* node to remap the input and produce a new output *Items*.<##output##>
 
