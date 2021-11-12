@@ -1,12 +1,12 @@
 
 <##head##>
-# STRING
+# String
 
-This node contains a string value (text). It can be provided with static data or be dynamically set from other nodes.
+This node contains a <span class="ndl-data">string</span> value (text). It can be provided with static data or be dynamically set from other nodes. The <span class="ndl-node">String</span> node is often used to convert other data types to a <span class="ndl-data">string</span> or to hold string values.
 
 ![](./string_node.png ':class=img-size-l')
 
-The String node is often used to convert other data types to a string, and to hold string values.
+You can also use the String node connected to a <span class="ndl-node">Component Inputs</span> node. This will make sure the input shows up as a <span class="ndl-data">string</span> input in the Property Panel for instances of this component.
 
 <##head##>
 

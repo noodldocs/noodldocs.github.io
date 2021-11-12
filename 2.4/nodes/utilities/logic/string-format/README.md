@@ -1,12 +1,12 @@
 
 <##head##>
-# String Mapper
+# String Format
 
-This node is used to construct a new text string from multiple other text strings.
+This node is used to construct a new text <span class="ndl-data">string</span> from multiple other text <span class="ndl-data">strings</span>.
 
 ![](./stringformat-node.png ':class=img-size-l')
 
-The String Format node needs a format input where the outputted string and string variables are defined.
+The <span class="ndl-node">String Format</span> node needs a format input where the output <span class="ndl-data">string</span> and string variables are defined.
 
 ![](./stringformat-visual.png ':class=img-size-l')
 

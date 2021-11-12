@@ -1,11 +1,12 @@
-# SEND EVENT
+
 <##head##>
-**Send Event** nodes are used to send a signal to another place in your design without having to connect the nodes directly. To learn more about **Events** check out the [guide](/guides/events.md).
+# Send Event
+
+This node sends a <span class="ndl-signal">signal</span> to another place in your app without having to connect the nodes directly. To learn more about **Events** check out the [Events Guide](/guides/events.md).
 
 ![](send-event.png)
 
-Each **Send Event** has a _Send_ input that can be connected to a signal.
-It also has a _Channel_ input port that can be used to specify a name that receiving nodes can reference to receive the signal.
+The <span class="ndl-node">Send Event</span> node lets you specify a channel to broadcast to. When this node is triggered with a <span class="ndl-signal">Send signal</span> all <span class="ndl-node">Receive Event</span> nodes set to that channel will be triggered.
 <##head##>
 
 
@@ -18,13 +19,13 @@ inspecting the node and clicking the _Add port_ button.
 There may be multiple **Send Event** nodes with the same channel. In that case the receiving nodes
 listening to the channel will get a merged set of ports from all **Send Event** nodes.
 
-**Channel name**  
+**Channel name**
 The channel name can be any identifier and is used on the [Receive Event][0] nodes to connect a sender and receiver node.
 
-**Send**  
+**Send**
 <##input:sendEvent##>Trigger this action to send the event.<##input##> This is a signal port and when triggered the corresponding [Receive Event][0] nodes will be triggered as well.
 
-**Send To**  
+**Send To**
 <##input:propagation##>Controls what components the event will be sent to.<##input##>
 
 - _Global_ - Send to all components

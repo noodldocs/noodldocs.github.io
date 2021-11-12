@@ -1,11 +1,11 @@
 <##head##>
 # Text
 
-This node represents a text element, and is used for both single words as well as paragraphs of text.
+This node places a text element in the visual tree. You can use it for both single words as well as paragraphs of text.
 
 ![](./text_visual.png ':class=img-size-l')
 
-The Text node can be styled with font family, color, size, and much more.
+The <span class="ndl-node">Text</span> node can be styled with font family, color, size, and much more.
 
 ![](./text_node.png ':class=img-size-l')
 
