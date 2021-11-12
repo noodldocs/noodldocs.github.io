@@ -1,8 +1,13 @@
+<##head##>
 # Script
 
-The **Script** node is used when you need to create more complex Javascript code and it provides a few more capabilities over the [Function](/nodes/javascript/function.md) node which can be used for simpler scripts. There is an extensive description of the node in the Javascript [guide](/guides/javascript.md).
+This node allows you to add complex JavaScript to your application. Please refer to the [Script Guide](/guides/javascript.md) to learn more about the API. But remember - with great power comes great responsibility.
 
 ![](script.png ':class=img-size-m')
+
+In most cases you are better off using the simpler <span class="ndl-node">[Function](/nodes/javascript/function.md)</span> node for your custom JavaScript.
+
+<##head##>
 
 ## Inputs
 
