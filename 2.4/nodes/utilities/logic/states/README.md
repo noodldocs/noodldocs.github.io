@@ -5,7 +5,7 @@ This node is used to switch between logical states. Each state holds values that
 
 ![](./states_visual.gif ':class=img-size-l')
 
-The state node is often used to create animations on user interactions, and create state machines. Learn more in the States node guide
+The <span class="ndl-node">State</span> node is often used to create animations on user interactions, and create state machines. Learn more in the State Node Guide.
 
 ![](./states_node.gif ':class=img-size-l')
 

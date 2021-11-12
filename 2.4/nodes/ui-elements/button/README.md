@@ -1,17 +1,17 @@
 <##head##>
 # Button
 
-This node places a customizable button in the visual tree.   
+This node places a customizable button in the visual tree.
 
 ![](./button_visual.png ':class=img-size-l')
 
-The button has a **Click** signal that you can trigger actions with.
+The button has a <span class="ndl-signal">Click</span> signal that you can use to trigger actions.
 
 ![](./button_node.png ':class=img-size-l')
 <##head##>
 
-This control contains all logic such as accessibility etc. It can be styled in via it's properties. 
-Use variations to create different types of buttons 
+This control contains all logic such as accessibility etc. It can be styled in via it's properties.
+Use variations to create different types of buttons
 
 ## Inputs
 
@@ -19,13 +19,13 @@ Use variations to create different types of buttons
 
 ### General
 
-**Enabled**  
+**Enabled**
 Specifies if the control is **Enabled** (true) or **Disabled** (false). A disabled control will not respond to any user interaction.
 
-**Label**  
+**Label**
 A text string that will be shown as the label on the button.
 
-**Type**  
+**Type**
 The type of button, can be one of:
 
 - **Button** A default button, when clicked it emits the **Click** output signal.
@@ -41,7 +41,7 @@ The type of button, can be one of:
 
 ### Text
 
-**Text**  
+**Text**
 The text string to display.
 
 [filename](../shared-props/inputs/text-styles/README.md ':include')
@@ -62,23 +62,23 @@ The text string to display.
 
 ## Outputs
 
-### Other  
+### Other
 [filename](../shared-props/outputs/other/README.md ':include')
 
 [filename](../shared-props/outputs/bounding-box/README.md ':include')
 
 [filename](../shared-props/outputs/mounted/README.md ':include')
 
-### General  
+### General
 [filename](../shared-props/outputs/control-id/README.md ':include')
 
-### States   
+### States
 
 [filename](../shared-props/outputs/control-states/README.md ':include')
 
 ### Events
 
-**Click**  
+**Click**
 A signal is sent on this output when the button is clicked.
 
 [filename](../shared-props/outputs/control-events/README.md ':include')

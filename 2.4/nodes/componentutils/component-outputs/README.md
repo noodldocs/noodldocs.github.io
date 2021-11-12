@@ -1,11 +1,11 @@
 <##head##>
 # Component Outputs
 
-This node is used to create outputs for reusable components. 
+This node is used to create outputs for reusable components.
 
 ![](./co_node1.png ':class=img-size-l')
 
-A Component Output node can have as many ports as needed and can make output properties from the nodes available on the custom component.
+A <span class="ndl-node">Component Output</span> node can have as many ports as needed and can make output properties from the nodes available on the custom component.
 
 ![](./co_node2.png ':class=img-size-l')
 

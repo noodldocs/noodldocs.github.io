@@ -1,10 +1,10 @@
 <##head##>
 # Repeater
-This node is used to dynamically insert visual components based on array data.
+This node is used to dynamically insert visual components based on <span class="ndl-data">array</span> data.
 
 ![](./repeater_visual.png ':class=img-size-l')
 
-The Repeater node takes data from a Noodl array and generates an existing visual component for each item in the array.
+The <span class="ndl-node">Repeater</span> node takes data from a Noodl <span class="ndl-data">array</span> and generates an existing visual component for each item in the <span class="ndl-data">array</span>.
 
 ![](./repeater_node.png ':class=img-size-l')
 <##head##>

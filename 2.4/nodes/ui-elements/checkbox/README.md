@@ -1,11 +1,11 @@
 <##head##>
 # Checkbox
 
-This node places a customizable checkbox in the visual tree. 
+This node places a customizable checkbox in the visual tree.
 
 ![](./checkbox_visual.png ':class=img-size-l')
 
-The checkbox will flip its state when clicked and its **Checked** property can be connected to a data source, such as a variable or object.
+The checkbox will flip its state when clicked and its <span class="ndl-data">Checked</span> property can be connected to a data source, such as a <span class="ndl-data">variable</span> or <span class="ndl-data">object</span>.
 
 ![](./checkbox_node.png ':class=img-size-l')
 
@@ -25,10 +25,10 @@ This control contains all logic such as accessibility etc. It can be styled in v
 
 ### General
 
-**Enabled**  
+**Enabled**
 Sets the checkbox in enabled or disabled mode. A disable checkbox will not respond to user interaction.
 
-**Checked**  
+**Checked**
 A boolean setting the checkbox in "checked" or "unchecked" state. This is the value of the checkbox and can be connected to a data source.
 
 ### Layout
@@ -37,7 +37,7 @@ A boolean setting the checkbox in "checked" or "unchecked" state. This is the va
 
 ### Checked Style
 
-**Background Color**  
+**Background Color**
 The background color when the checkbox is "checked".
 
 [filename](../shared-props/inputs/visibility-styles/README.md ':include')
@@ -55,19 +55,19 @@ The background color when the checkbox is "checked".
 
 ## Outputs
 
-### Other  
+### Other
 [filename](../shared-props/outputs/other/README.md ':include')
 
 [filename](../shared-props/outputs/bounding-box/README.md ':include')
 
 [filename](../shared-props/outputs/mounted/README.md ':include')
 
-### General  
+### General
 [filename](../shared-props/outputs/control-id/README.md ':include')
 
-### States   
+### States
 
-**Checked**  
+**Checked**
 A boolean output that is true when this checkbox control is checked and false if not. This is useful when using this control as a base for your own component that will represent visually that it is checked.
 
 [filename](../shared-props/outputs/control-states/README.md ':include')

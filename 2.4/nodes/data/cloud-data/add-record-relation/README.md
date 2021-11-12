@@ -1,14 +1,15 @@
 <##head##>
 # Add Record Relation
+
 This action node is used to create a relation between two records, the owning record and the target record.
 
 ![](./add-relation.png ':class=img-size-l')
 
 One record is the owning record (in this case **Group** records that can have a relation to many **Post** records), it should have a **Relation** type property.
 
-You need to provide the **Id** of the owning record. You also need to provide the Id of the record that you want to add a relation to, this is the **Target Record Id** input.
+You need to provide the <span class="ndl-data">Id</span> of the owning record. You also need to provide the <span class="ndl-data">Id</span> of the record that you want to add a relation to, this is the Target Record Id input.
 
-Finally, send a signal to **Do** to perform the action.
+Finally, send a <span class="ndl-signal">signal</span> to <span class="ndl-signal">Do</span> to perform the action.
 
 <##head##>
 

@@ -1,7 +1,7 @@
 <##head##>
 # Text Input
 
-This node places a Text Input field which can be used to capture information from a user.
+This node places a text input field in the visual tree. The input can be used to capture information from a user.
 
 ![](./textinput_visual.png ':class=img-size-l')
 
