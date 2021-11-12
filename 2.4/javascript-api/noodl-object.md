@@ -1,6 +1,6 @@
 # Noodl.Object
 
-Allows access to [Object](nodes/data/object.md) features from Javascript.
+Allows access to [Object](nodes/data/object/object/) features from Javascript.
 
 **`Noodl.Object.get(id)`**  
 Returns the object with the specified id. This function will return a new empty object if the id is

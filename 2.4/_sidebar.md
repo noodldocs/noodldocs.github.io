@@ -87,7 +87,7 @@
 * [Array Filter](/nodes/data/array/array-filter/)
 * [Array Map](/nodes/data/array/array-map/)
 * [For Each Item](/nodes/data/for-each-item.md)
-* [Object](/nodes/data/object.md)
+* [Object](/nodes/data/object/object/)
 * [Static Array](/nodes/data/array/static-array/)
 * [REST](/nodes/data/rest.md)
 * [Variable](/nodes/data/variable.md)

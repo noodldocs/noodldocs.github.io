@@ -1,7 +1,7 @@
 <##head##>
 # Create New Object
 
-The node can be used to create a fresh new Object.
+The node can be used to create a fresh new [Object](nodes/data/object/object/).
 
 ![](./create-new-object.png ':class=img-size-l')
 

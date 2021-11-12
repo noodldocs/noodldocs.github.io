@@ -1,7 +1,7 @@
 <##head##>
 # Array
 
-Arrays are ordered lists of [Object](/nodes/data/object.md)s. See the guide on arrays [here](/guides/arrays) for a more detailed introduction.
+Arrays are ordered lists of [Object](/nodes/data/object/object/)s. See the guide on arrays [here](/guides/arrays) for a more detailed introduction.
 
 ![](array.png ':class=ndl-image large')
 
@@ -30,7 +30,7 @@ You can create and modify the array using the [Create new Array](/nodes/data/arr
 <##output:id##>The _Id_ for this **Array**.<##output##>
 
 **Items**  
-<##output:items##>This is an output that can be connected to others that can take **Array** inputs, such as the [For Each](/nodes/data/for-each.md) node. It will hold an `Noodl.Array` type.<##output##>
+<##output:items##>This is an output that can be connected to others that can take **Array** inputs, such as the [Repeater](/nodes/ui-elements/repeater/) node. It will hold an `Noodl.Array` type.<##output##>
 
 **Count**  
 <##output:count##>The number of items in the **Array**.<##output##>

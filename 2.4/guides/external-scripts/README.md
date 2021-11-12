@@ -169,7 +169,7 @@ Let's take a look at a more advanced scenarios. We'll create a user interface wh
 ![](multi-dest-app.png ':class=img-size-l')
 
 The application has now been expanded to include:
-- A button to add new destinations. An empty [Object](nodes/data/object.md) is created and added to an [Array](nodes/data/array.md) with the id *Destinations*. See the [Arrays guide](guides/arrays.md) for more information.
+- A button to add new destinations. An empty [Object](nodes/data/object/object/) is created and added to an [Array](nodes/data/array/array/) with the id *Destinations*. See the [Arrays guide](guides/arrays.md) for more information.
 - To trigger the request the user has to press the "Go" button
 - The destinations Array is connected to the Function node. 
 - A [For Each](nodes/data/for-each.md) node is using a new component that includes a delete icon, input field, and text showing the result

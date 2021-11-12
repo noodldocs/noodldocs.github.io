@@ -4,7 +4,7 @@ Parent Component Object is always used in combination with a [Component Object](
 
 ![](parent-component-object.png ':class=img-size-m')
 
-The node is used much like an [Object](/nodes/data/object.md) where you can **Set** properties on the node. The node does not have an **Id** instead the data is shared with the parent component. This node is very useful in patterns such as radio groups where child components may need to access the **Component Object** of its parent.
+The node is used much like an [Object](/nodes/data/object/object/) where you can **Set** properties on the node. The node does not have an **Id** instead the data is shared with the parent component. This node is very useful in patterns such as radio groups where child components may need to access the **Component Object** of its parent.
 
 
 ### Properties
@@ -13,7 +13,7 @@ The properties to read from the [Component Object](/nodes/componentutils/compone
 ### Actions
 
 **Set**  
-Stores any properties that are connected to the bound [Component Object](/nodes/componentutils/component-object.md). Just like with the [Object](/nodes/data/object.md) node, if there are no connection to the **Set** input any updates on the connection to properties will be stored automatically.
+Stores any properties that are connected to the bound [Component Object](/nodes/componentutils/component-object.md). Just like with the [Object](/nodes/data/object/object/) node, if there are no connection to the **Set** input any updates on the connection to properties will be stored automatically.
 
 **Fetch**  
 Normally when a **Parent Component State** is created, the property outputs are immediately updated. If you want to control how the data is updated you can connect to the _Fetch_ signal input. Then you need to explictly send a signal to fetch the data.

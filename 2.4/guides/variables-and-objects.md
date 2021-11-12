@@ -45,7 +45,7 @@ Connect to the properties you specify and use the node with **Set**, **Fetch** a
     <img src="/guides/variables-and-objects/object-node.png" class="ndl-image large"></img>  
 </div>
 
-The **Object** node has a few more inputs and outputs to detect changes on individual properties etc. Take a look at the [Object](/nodes/data/object.md) reference documentation for more details.
+The **Object** node has a few more inputs and outputs to detect changes on individual properties etc. Take a look at the [Object](/nodes/data/object/object/) reference documentation for more details.
 
 Another difference between **Object** and **Variable** nodes, is that the **Object** node identifier is called **Id** instead of **Name** as in the **Variable** node. **Id** is used in the same way though as the **Name**.
 

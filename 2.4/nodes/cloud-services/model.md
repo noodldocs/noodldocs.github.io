@@ -33,7 +33,7 @@ The Id of this model that uniquely identifiers it. All model nodes that share th
 When a signal is sent to _Fetch_ the model will get the most recent data from the cloud store.
 
 **Set**  
-When a signal is sent to _Set_ the values on the property inputs of this node will be set on the object referenced by the _Id_. This is the same as for [Object](/nodes/data/object.md).
+When a signal is sent to _Set_ the values on the property inputs of this node will be set on the object referenced by the _Id_. This is the same as for [Object](/nodes/data/object/object/).
 
 **Save**  
 When triggered will save the data on the property inputs to the cloud store. This will also issue a _Set_ so other Models and Objects with the same _Id_ will be updated. If it completed successfully a _Saved_ signal will be outputed, otherwise a _Failure_ signal will be send and the error can be found on the _Error_ output.
@@ -46,9 +46,9 @@ A signal on this input will create a new Model with a fresh new unique _Id_. The
 
 ### Properties
 
-The node will have any properties from the Models in the Collection that it can find in the cloud store schema as well as any properties that the are specified directly on the Model, just like for [Objects](/nodes/data/object.md).
+The node will have any properties from the Models in the Collection that it can find in the cloud store schema as well as any properties that the are specified directly on the Model, just like for [Objects](/nodes/data/object/object/).
 
-![](../data/object-props.png ':class=img-size-s')
+![](../data/object/object/object-props.png ':class=img-size-s')
 
 ### Scripts
 
@@ -93,7 +93,7 @@ Signal sent when a Model is succesfully created via _Insert_.
 Signal sent when a Model is succesfully fetched via _Fetch_.
 
 **Changed**  
-Sent when any property of the Model is changed, same as for [Object](/nodes/data/object.md).
+Sent when any property of the Model is changed, same as for [Object](/nodes/data/object/object/).
 
 **Deleted**  
 Sent when a Model with this _Id_ is successfully deleted from the cloud store.
