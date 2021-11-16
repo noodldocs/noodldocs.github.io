@@ -11,7 +11,7 @@ A <span class="ndl-node">Component Output</span> node can have as many ports as 
 
 <##head##>
 
-A very powerful feature of Noodl is the ability to create **components** that act as reusable nodes in your application. A core concept of components is that they can have inputs and outputs like any of the built in nodes.
+A very powerful feature of Noodl is the ability to create **Components** that act as reusable nodes in your application. A core concept of components is that they can have inputs and outputs like any of the built in nodes.
 
 ![](component-outputs.png ':class=img-size-m')
 
