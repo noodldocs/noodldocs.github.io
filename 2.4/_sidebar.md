@@ -90,7 +90,8 @@
 * [Object](/nodes/data/object/object/)
 * [Static Array](/nodes/data/array/static-array/)
 * [REST](/nodes/data/rest.md)
-* [Variable](/nodes/data/variable.md)
+* [Variable](/nodes/data/variable/variable/)
+* [Set Variable](/nodes/data/variable/set-variable/)
 
   <br/>
 

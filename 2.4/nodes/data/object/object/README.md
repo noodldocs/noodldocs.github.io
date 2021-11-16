@@ -1,7 +1,7 @@
 <##head##>
 # Object
 
-An **Object** is a basic data object in Noodl that stores any amount of properties. It can be used standalone or together with [Array](nodes/data/array/array/) and [Repeater](nodes/ui-elements/repeater/) nodes to create lists. An **Object** works much like a [Variable](nodes/data/variable.md) but it can store many properties in one object. 
+An **Object** is a basic data object in Noodl that stores any amount of properties. It can be used standalone or together with [Array](nodes/data/array/array/) and [Repeater](nodes/ui-elements/repeater/) nodes to create lists. An **Object** works much like a [Variable](nodes/data/variable/variable/) but it can store many properties in one object. 
 
 
 ![](object-3.png ':class=img-size-l')
@@ -14,7 +14,7 @@ You can also create and refer to an object statically (i.e. not using a [Create 
 
 ## Similarities between Objects and Records
 **Object** and [Record](nodes/data/cloud-data/record/) nodes are very similar. A **Record** can be seen as an **Object** that is backed by a database entry and hence have actions to **Fetch** from and **Store** it in the database. A **Record** also has a database defined schema based on its **Class** which enables Noodl to detect its available properties from its database Class. **Objects** does not have a schema.
-If needed, you can use the **Id** of a record as the **Id** of an **Object** to access its properties, but obviously cannot use the **Object** to store or fetch the data from the database.
+If needed, you can use the **Id** of a **Record** as the **Id** of an **Object** to access its properties, but obviously cannot use the **Object** to store or fetch the data from the database.
 
 Generally you use **Objects** as data holder for data that does not need to be stored in a database.
 <##head##>
