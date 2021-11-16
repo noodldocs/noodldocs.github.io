@@ -1,20 +1,24 @@
+<##head##>
+
 # Screen Resolution
 
-The resolution of the display area in CSS pixels.
+This node outputs the <span class="ndl-data">width</span>, <span class="ndl-data">height</span> and <span class="ndl-data">aspect ratio</span> of the display area in CSS pixels.
 
 ![](screen-resolution.png)
+
+<##head##>
 
 <div class = "node-outputs">
 
 ## Outputs
 
-**Width**  
+**Width**
 The width of the display area in pixels.
 
-**Height**  
+**Height**
 The height of the display area in pixels.
 
-**Aspect Ratio**  
+**Aspect Ratio**
 The width divided by the height.
 
 </div>

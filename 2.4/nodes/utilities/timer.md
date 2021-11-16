@@ -1,26 +1,30 @@
-# Timer
+<##head##>
 
-A timer that can be used to delay actions.
+# Delay
+
+This node lets you delay <span class="ndl-signal">signals</span> by the specified amount of milliseconds.
 
 ![](timer.png)
+
+<##head##>
 
 <div class = "node-inputs">
 
 ## Inputs
 
-**Start**  
+**Start**
 Starts the timer. Does nothing if the timer is already running.
 
-**Restart**  
+**Restart**
 Starts the timer. Restarts the timer if the timer is already running.
 
-**Duration**  
+**Duration**
 The duration of the timer in milliseconds.
 
-**Start Delay**  
+**Start Delay**
 The delay before the timer starts after the _Start_ input is triggered. Specified in milliseconds.
 
-**Stop**  
+**Stop**
 Stops the timer if it's running. Does nothing otherwise.
 
 </div>
@@ -29,10 +33,10 @@ Stops the timer if it's running. Does nothing otherwise.
 
 ## Outputs
 
-**Started**  
+**Started**
 Signal emitted when the timer starts.
 
-**Finished**  
+**Finished**
 Signal emitted when the timer is finished.
 
 </div>

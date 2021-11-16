@@ -1,20 +1,24 @@
+<##head##>
+
 # Substring
 
-This node can be used to extract a part of a string given a start and end character position.
+This node lets you extract a part of a <span class="ndl-data">string</span> given a start and end character position.
 
 ![](substring.png)
+
+<##head##>
 
 <div class = "node-inputs">
 
 ## Inputs
 
-**String**  
+**String**
 The source string where the substring should be extracted from.
 
-**Start**  
+**Start**
 The character index of the start of the substring.
 
-**End**  
+**End**
 The character index of the end of the substring.
 
 </div>
@@ -23,7 +27,7 @@ The character index of the end of the substring.
 
 ## Outputs
 
-**Result**  
+**Result**
 The extracted substring.
 
 </div>
