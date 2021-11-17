@@ -12,7 +12,7 @@ A <span class="ndl-node">Component Input</span> node can have multiple ports con
 <##head##>
 
 
-A very powerful feature of Noodl is the ability to create **components** that act as reusable nodes in your application.
+A very powerful feature of Noodl is the ability to create **Components** that act as reusable nodes in your application.
 
 ![](component-inputs.png ':class=img-size-m')
 

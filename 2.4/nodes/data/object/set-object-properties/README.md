@@ -1,7 +1,7 @@
 <##head##>
 # Set Object Properties
 
-You can use this node to set properties on an [Object](nodes/data/object/object/). You must identify the Object with it's **Id** (see full docs for details)
+You can use this node to set properties on an [Object](/nodes/data/object/object/). You must identify the **Object** with it's **Id** (see full docs for details)
 
 ![](./set-object-properties.png ':class=img-size-l')
 
