@@ -54,7 +54,7 @@ For each value you can specify the type. Default is **Number**.
 
 For every state you can specify each of the values. This is the value that they will have when you are at that specific state. You can also set the values for each state by connecting them to other nodes.
 
-<span style="display:none"><##input:value-*##>The value of a property for a specific state.<##input##></span>
+<span style="display:none"><##input:.*##>The value of a property for a specific state.<##input##></span>
 
 <div class="ndl-images">
     <img src="/nodes/animation/state-values.png" class="ndl-image small"></img>
@@ -84,7 +84,7 @@ Each state will have a signal input called **To** followed by the state name. Th
 **Values**
 All of the values for the current state and for any transitions that is active.
 
-<span style="display:none"><##output:value-*##>The value of the property, given the current state and transition.<##output##></span>
+<span style="display:none"><##output:.*##>The value of the property, given the current state and transition.<##output##></span>
 
 ### Events
 **State Changed**
