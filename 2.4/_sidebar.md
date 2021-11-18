@@ -86,10 +86,9 @@
 * [Remove Object From Array](/nodes/data/array/remove-from-array/)
 * [Array Filter](/nodes/data/array/array-filter/)
 * [Array Map](/nodes/data/array/array-map/)
-* [For Each Item](/nodes/data/for-each-item.md)
 * [Object](/nodes/data/object/object/)
 * [Static Array](/nodes/data/array/static-array/)
-* [REST](/nodes/data/rest.md)
+* [REST](/nodes/data/rest/)
 * [Variable](/nodes/data/variable/variable/)
 * [Set Variable](/nodes/data/variable/set-variable/)
 
@@ -114,10 +113,10 @@
   <br/>
 
 * Variables
-* [String](/nodes/data/string.md)
-* [Color](/nodes/data/color.md)
-* [Boolean](/nodes/data/boolean.md)
-* [Number](/nodes/data/number.md)
+* [String](/nodes/data/string/)
+* [Color](/nodes/data/color/)
+* [Boolean](/nodes/data/boolean/)
+* [Number](/nodes/data/number/)
   <br/>
 
 * Navigation
@@ -131,8 +130,8 @@
   <br/>
 
 * Events
-* [Receive Event](nodes/events/receive-event.md)
-* [Send Event](nodes/events/send-event.md)
+* [Receive Event](nodes/events/receive-event/)
+* [Send Event](nodes/events/send-event/)
   <br/>
 
 * Interpolation
@@ -141,43 +140,34 @@
   <br/>
 
 * JavaScript
-* [Script Downloader](nodes/javascript/script-downloader.md)
-* [Script](nodes/javascript/script.md)
-* [Function](nodes/javascript/function.md)
+* [Script](nodes/javascript/script/)
+* [Function](nodes/javascript/function/)
   <br/>
 
 * Logic
-* [And](nodes/logic/and.md)
-* [Condition](nodes/logic/condition.md)
-* [Inverter](nodes/logic/inverter.md)
-* [Or](nodes/logic/or.md)
-* [Signal To Index](nodes/logic/signal-to-index.md)
-* [Switch](nodes/logic/switch.md)
-* [Value Changed](nodes/logic/value-changed.md)
+* [And](nodes/logic/and/)
+* [Condition](nodes/logic/condition/)
+* [Inverter](nodes/logic/inverter/)
+* [Or](nodes/logic/or/)
+* [Switch](nodes/logic/switch/)
+* [Value Changed](nodes/logic/value-changed/)
   <br/>
 
 * Math
-* [Counter](nodes/math/counter.md)
-* [Expression](nodes/math/expression.md)
-* [Number Remapper](nodes/math/number-remapper.md)
-* [Velocity](nodes/math/velocity.md)
-  <br/>
-
-* Sensors
-* [Device Orientation](nodes/sensors/device-orientation.md)
+* [Counter](nodes/math/counter/)
+* [Expression](nodes/math/expression/)
+* [Number Remapper](nodes/math/number-remapper/)
   <br/>
 
 * String Manipulation
 * [String Format](nodes/string-manipulation/string-format.md)
 * [Substring](nodes/string-manipulation/substring.md)
-* [Unique Id](nodes/string-manipulation/unique-id.md)
+* [String Format](nodes/string-manipulation/string-format/)
   <br/>
 
 * Utilities
 * [States](nodes/utilities/logic/states/)
 * [Condition](nodes/utilities/logic/condition/)
-* [String](nodes/utilities/logic/string/)
-* [String Format](nodes/utilities/logic/string-format/)
 * [Date To String](nodes/utilities/date-to-string.md)
 * [Boolean To String](nodes/utilities/boolean-to-string.md)
 * [Index To String](nodes/utilities/index-to-string.md)
@@ -186,6 +176,7 @@
 * [String Mapper](nodes/utilities/string-mapper.md)
 * [Timer](nodes/utilities/timer.md)
 * [Open File Picker](/nodes/utilities/open-file-picker.md)
+* [Unique Id](nodes/utilities/unique-id/)
   <br/>
 
 * Visual
@@ -198,6 +189,7 @@
 * [Text Input](nodes/ui-elements/text-input/)
 * [Video](nodes/ui-elements/video/)
 * [Repeater](nodes/ui-elements/repeater/)
+* [Repeater Item](/nodes/ui-elements/repeater-item/)
 * [Button](nodes/ui-elements/button/)
 * [Checkbox](nodes/ui-elements/checkbox/)
 * [Field Set](/nodes/visual/fieldset.md)
