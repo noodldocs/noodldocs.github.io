@@ -1,1 +1,0 @@
-A circle or circle segment.

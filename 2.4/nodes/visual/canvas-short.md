@@ -1,1 +1,0 @@
-This node represents an HTML Canvas. It can be placed in the visual tree and then accessed via the **Javascript** node.

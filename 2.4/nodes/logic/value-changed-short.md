@@ -1,1 +1,0 @@
-Sends a signal when the input value is changed.

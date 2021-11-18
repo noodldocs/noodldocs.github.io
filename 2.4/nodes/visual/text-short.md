@@ -1,1 +1,0 @@
-This node represents a text.

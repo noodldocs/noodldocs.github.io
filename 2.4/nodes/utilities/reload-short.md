@@ -1,1 +1,0 @@
-Reloads the application.
