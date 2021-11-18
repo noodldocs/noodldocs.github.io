@@ -5,13 +5,13 @@
 This node holds a <span class="ndl-data">number</span> value. It is local to the component and cannot be accessed elsewhere in the app.
 
 <div class="ndl-images">
-    <img src="/nodes/data/number-1.png" class="ndl-image large"></img>
+    <img src="/nodes/data/number/number-1.png" class="ndl-image large"></img>
 </div>
 
 You can also use the <span class="ndl-node">Number</span> node connected to a <span class="ndl-node">Component Inputs</span> node. This will make sure the input shows up as a <span class="ndl-data">number</span> input in the Property Panel for instances of this component.
 
 <div class="ndl-images">
-    <img src="/nodes/data/number-2.png" class="ndl-image large"></img>
+    <img src="/nodes/data/number/number-2.png" class="ndl-image large"></img>
 </div>
 
 <##head##>

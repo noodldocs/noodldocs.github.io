@@ -189,7 +189,6 @@
   <br/>
 
 * Visual
-* [Canvas](nodes/visual/canvas.md)
 * [Circle](nodes/ui-elements/circle/)
 * [Component Children](nodes/visual/component-children.md)
 * [Drag](nodes/visual/drag.md)
