@@ -140,11 +140,6 @@
 * [Send Event](nodes/events/send-event/)
   <br/>
 
-* Interpolation
-* [Number Blend](nodes/interpolation/number-blend.md)
-* [Color Blend](nodes/interpolation/color-blend.md)
-  <br/>
-
 * JavaScript
 * [Script](nodes/javascript/script/)
 * [Function](nodes/javascript/function/)
@@ -166,22 +161,19 @@
   <br/>
 
 * String Manipulation
-* [String Format](nodes/string-manipulation/string-format.md)
-* [Substring](nodes/string-manipulation/substring.md)
 * [String Format](nodes/string-manipulation/string-format/)
+* [Substring](nodes/string-manipulation/substring/)
+* [String Mapper](nodes/string-manipulation/string-mapper)
   <br/>
 
 * Utilities
 * [States](nodes/utilities/logic/states/)
 * [Condition](nodes/utilities/logic/condition/)
-* [Date To String](nodes/utilities/date-to-string.md)
-* [Boolean To String](nodes/utilities/boolean-to-string.md)
-* [Index To String](nodes/utilities/index-to-string.md)
-* [Reload](nodes/utilities/reload.md)
-* [Screen Resolution](nodes/utilities/screen-resolution.md)
-* [String Mapper](nodes/utilities/string-mapper.md)
-* [Timer](nodes/utilities/timer.md)
-* [Open File Picker](/nodes/utilities/open-file-picker.md)
+* [Date To String](nodes/utilities/date-to-string/)
+* [Boolean To String](nodes/utilities/boolean-to-string/)
+* [Screen Resolution](nodes/utilities/screen-resolution/)
+* [Delay](nodes/utilities/delay/)
+* [Open File Picker](/nodes/utilities/open-file-picker/)
 * [Unique Id](nodes/utilities/unique-id/)
   <br/>
 
