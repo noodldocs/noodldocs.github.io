@@ -127,7 +127,7 @@ Specifies how the video will behave when scaled to other size than the default s
 
 ### Style
 
-[filename](./visibility-styles.md ':include')
+[filename](../shared-props/inputs/visibility-styles/README.md ':include')
 
 ### Placement
 
@@ -172,7 +172,7 @@ This property is only available if _Pointer Events Mode_ is set to _Explicit_. I
 **Mounted**
 This property is used to completely remove the node from the DOM. If this property is set to false the node is removed from the DOM. It differs from the _Visible_ property where the node is still part of the DOM but invisible.
 
-[filename](../advanced-style.md ':include').
+[filename](../../advanced-style.md ':include').
 
 </div>
 

@@ -86,7 +86,7 @@ Use this property to specify different image sources for different resolutions m
 
 ### Style
 
-[filename](../../visual/visibility-styles.md ':include')
+[filename](../shared-props/inputs/visibility-styles/README.md ':include')
 
 **Border Radius**
 Specifies the border radius if this node is set to have a border.
@@ -148,7 +148,7 @@ Specifies the X position, within this node, that will be the center for rotation
 **Transform Origin Y**
 Specifies the Y position, within this node, that will be the center for rotation and scale. By default it is the center of the node (i.e. 50%) but you can specify an arbitrary value in either percentage of the node's height or explicitly in pixels.
 
-[filename](../advanced-style.md ':include')
+[filename](../../advanced-style.md ':include')
 
 ## Outputs
 
