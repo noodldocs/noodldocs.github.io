@@ -69,9 +69,6 @@ The text string to display.
 
 [filename](../shared-props/outputs/mounted/README.md ':include')
 
-### General
-[filename](../shared-props/outputs/control-id/README.md ':include')
-
 ### States
 
 [filename](../shared-props/outputs/control-states/README.md ':include')
@@ -79,7 +76,7 @@ The text string to display.
 ### Events
 
 **Click**
-A signal is sent on this output when the button is clicked.
+<##output:onClick##>A signal is sent on this output when the button is clicked.<##output##>
 
 [filename](../shared-props/outputs/control-events/README.md ':include')
 
