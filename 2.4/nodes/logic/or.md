@@ -1,3 +1,5 @@
+<##head##>
+
 # Or
 
 This node performs a logic OR operation on its inputs. If any input is <span class="ndl-data">true</span> the node will output <span class="ndl-data">true</span>. If all inputs are <span class="ndl-data">false</span> the node will output <span class="ndl-data">tfalse</span>.
@@ -5,6 +7,8 @@ This node performs a logic OR operation on its inputs. If any input is <span cla
 ![](or.png)
 
 Any number of inputs can be used. When an input is connected a new one will be created automatically.
+
+<##head##>
 
 <div class = "node-inputs">
 
