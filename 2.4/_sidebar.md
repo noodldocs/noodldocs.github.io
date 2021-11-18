@@ -121,12 +121,18 @@
   <br/>
 
 * Navigation
+* [Page Router](/nodes/navigation/page-router/)
+* [Navigate](/nodes/navigation/navigate/)
+* [Page Inputs](/nodes/navigation/page-inputs/)
+* [Page](/nodes/navigation/page/)
+* [External Link](/nodes/navigation/external-link/)
+<!--
 * [Navigation Stack](/nodes/navigation/navigation-stack.md)
 * [Navigate](/nodes/navigation/navigate.md)
 * [Navigate Back](/nodes/navigation/navigate-back.md)
 * [Navigate To Path](/nodes/navigation/navigate-to-path.md)
 * [Show Popup](/nodes/navigation/show-popup.md)
-* [Close Popup](/nodes/navigation/close-popup.md)
+* [Close Popup](/nodes/navigation/close-popup.md) -->
   <br/>
 
 * Events
