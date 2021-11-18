@@ -189,14 +189,14 @@
 
 * Visual
 * [Canvas](nodes/visual/canvas.md)
-* [Circle](nodes/visual/circle.md)
+* [Circle](nodes/ui-elements/circle/)
 * [Component Children](nodes/visual/component-children.md)
 * [Drag](nodes/visual/drag.md)
 * [Group](nodes/ui-elements/group/)
-* [Image](nodes/visual/image.md)
+* [Image](nodes/ui-elements/image/)
 * [Text](nodes/ui-elements/text/)
 * [Text Input](nodes/ui-elements/text-input/)
-* [Video](nodes/visual/video.md)
+* [Video](nodes/ui-elements/video/)
 * [Repeater](nodes/ui-elements/repeater/)
 * [Button](nodes/ui-elements/button/)
 * [Checkbox](nodes/ui-elements/checkbox/)
@@ -204,7 +204,7 @@
 * [Form](/nodes/visual/form.md)
 * [Label](/nodes/visual/label.md)
 * [Options](/nodes/visual/options.md)
-* [Radio Button](/nodes/visual/radiobutton.md)
-* [Radio Button Group](/nodes/visual/radiobuttongroup.md)
-* [Range](/nodes/visual/range.md)
+* [Radio Button](/nodes/ui-elements/radio-button/)
+* [Radio Button Group](/nodes/ui-elements/radio-button-group/)
+* [Slider](/nodes/ui-elements/slider/)
   <br/>

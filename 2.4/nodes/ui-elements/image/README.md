@@ -86,7 +86,7 @@ Use this property to specify different image sources for different resolutions m
 
 ### Style
 
-[filename](./visibility-styles.md ':include')
+[filename](../../visual/visibility-styles.md ':include')
 
 **Border Radius**
 Specifies the border radius if this node is set to have a border.

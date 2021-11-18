@@ -16,7 +16,7 @@ The core radio button has a very simple visual appearance and is most often used
 
 ## Inputs
 
-[filename](./margin-only.md ':include')
+[filename](../../visual/margin-only.md ':include')
 
 ### General
 
@@ -26,7 +26,7 @@ Sets the checkbox in enabled or disabled mode. A disable checkbox will not respo
 **Value**
 The value for this radio button. The value of the selected radio button in a radio button group will be passed as the **Value** output of the radio button group. All radio buttons in a group should have unique values.
 
-[filename](./alignment.md ':include')
+[filename](../../visual/alignment.md ':include')
 
 ### Dimensions
 
@@ -38,7 +38,7 @@ Specify the height of the checkbox in pixels, percentage of parent height or the
 
 ### Layout
 
-[filename](./position.md ':include')
+[filename](../../visual/position.md ':include')
 
 ### Checked Style
 
@@ -47,45 +47,45 @@ The background color when the checkbox is "checked".
 
 ### Style
 
-[filename](./visibility-styles.md ':include')
+[filename](../../visual/visibility-styles.md ':include')
 
-[filename](./bg-and-border-styles.md ':include')
+[filename](../../visual/bg-and-border-styles.md ':include')
 
 ### Box Shadow
 
-[filename](./box-shadow-styles.md ':include')
+[filename](../../visual/box-shadow-styles.md ':include')
 
 ### Placement
 
-[filename](./placement-styles.md ':include')
+[filename](../../visual/placement-styles.md ':include')
 
 ### Other
 
-[filename](./pointer-events-and-mounted.md ':include')
+[filename](../../visual/pointer-events-and-mounted.md ':include')
 
-[filename](../advanced-style.md ':include')
+[filename](../../advanced-style.md ':include')
 
 ## Outputs
 
 ### Other
 
-[filename](./child-index-and-this-outputs.md ':include')
+[filename](../../visual/child-index-and-this-outputs.md ':include')
 
-[filename](./bounding-box-outputs.md ':include')
+[filename](../../visual/bounding-box-outputs.md ':include')
 
-[filename](./mounted-outputs.md ':include')
+[filename](../../visual/mounted-outputs.md ':include')
 
 ### General
 
-[filename](./control-id-output.md ':include')
+[filename](../../visual/control-id-output.md ':include')
 
 ### States
 
 **Checked**
 A boolean output that is true when this radion button control is checked and false if not. This is useful when using this control as a base for your own component that will represent visually that it is checked.
 
-[filename](./control-states-outputs.md ':include')
+[filename](../../visual/control-states-outputs.md ':include')
 
 ### Events
 
-[filename](./control-events-outputs.md ':include')
+[filename](../../visual/control-events-outputs.md ':include')

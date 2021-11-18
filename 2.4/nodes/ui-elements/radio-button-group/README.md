@@ -4,7 +4,7 @@
 
 This node is a non visual control used to group <span class="ndl-node">Radio Button</span> nodes. The <span class="ndl-node">Radio Button</span> must be placed in a <span class="ndl-node">Radio Button Group</span> node to function properly.
 
-![](./radiobutton.png ':class=img-size-l')
+![](../radio-button/radiobutton.png ':class=img-size-l')
 
 The output of the <span class="ndl-node">Radio Button Group</span> node is the <span class="ndl-data">Value</span> of the selected <span class="ndl-node">Radio Button</span>. Only one <span class="ndl-node">Radio Button</span> in a <span class="ndl-node">Radio Button Group</span> can be selected at the same time.
 
@@ -12,11 +12,11 @@ The output of the <span class="ndl-node">Radio Button Group</span> node is the <
 
 ## Inputs
 
-[filename](./margin-and-padding.md ':include')
+[filename](../../visual/margin-and-padding.md ':include')
 
-[filename](./alignment.md ':include')
+[filename](../../visual/alignment.md ':include')
 
-[filename](./size-mode-and-dimensions.md ':include')
+[filename](../../visual/size-mode-and-dimensions.md ':include')
 
 ### General
 
@@ -31,33 +31,33 @@ By default children are stacked and this property specifies which direction they
 -   _Vertical_ - Children are stacked vertically.
 -   _Horizontal_ - Children are stacked horizontally.
 
-[filename](./position.md ':include')
+[filename](../../visual/position.md ':include')
 
 ### Style
 
-[filename](./visibility-styles.md ':include')
+[filename](../../visual/visibility-styles.md ':include')
 
 ### Placement
 
-[filename](./placement-styles.md ':include')
+[filename](../../visual/placement-styles.md ':include')
 
-[filename](./dimension-constraints.md ':include')
+[filename](../../visual/dimension-constraints.md ':include')
 
 ### Other
 
-[filename](./pointer-events-and-mounted.md ':include')
+[filename](../../visual/pointer-events-and-mounted.md ':include')
 
-[filename](../advanced-style.md ':include')
+[filename](../../advanced-style.md ':include')
 
 ## Outputs
 
 ### Other
 
-[filename](./child-index-and-this-outputs.md ':include')
+[filename](../../visual/child-index-and-this-outputs.md ':include')
 
-[filename](./bounding-box-outputs.md ':include')
+[filename](../../visual/bounding-box-outputs.md ':include')
 
-[filename](./mounted-outputs.md ':include')
+[filename](../../visual/mounted-outputs.md ':include')
 
 ### States
 
