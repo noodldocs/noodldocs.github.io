@@ -73,10 +73,10 @@
   <br/>
   
 * Component Utilities
-* [Component Inputs](nodes/componentutils/component-inputs/)
-* [Component Outputs](nodes/componentutils/component-outputs/)
-* [Component Object](nodes/componentutils/component-object/)
-* [Parent Component Object](nodes/componentutils/parent-component-object/)
+* [Component Inputs](nodes/component-utilities/component-inputs/)
+* [Component Outputs](nodes/component-utilities/component-outputs/)
+* [Component Object](nodes/component-utilities/component-object/)
+* [Parent Component Object](nodes/component-utilities/parent-component-object/)
   <br/>
 
 * Data
