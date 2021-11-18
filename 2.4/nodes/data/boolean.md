@@ -8,7 +8,7 @@ This node holds a <span class="ndl-data">boolean</span> (true/false) value. You 
     <img src="/nodes/data/boolean-1.png" class="ndl-image large"></img>
 </div>
 
-You can connect the <span class="ndl-node">Boolean</span> node to a <span class="ndl-node">Component Inputs</span> node. This will make sure the input shows up as a <span class="ndl-data">boolean</span> (checkbox) in the Property Panel for instances of this component.
+You can connect the <span class="ndl-node">Boolean</span> node to a <span class="ndl-node">Component Inputs</span> node. This will make the input shows up as a <span class="ndl-data">boolean</span> (checkbox) in the Property Panel for instances of this component.
 
 <div class="ndl-images">
     <img src="/nodes/data/boolean-2.png" class="ndl-image large"></img>

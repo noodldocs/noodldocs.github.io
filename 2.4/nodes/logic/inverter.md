@@ -1,14 +1,20 @@
+<##head##>
+
 # Inverter
 
-A logic NOT. Changes values that would be interpreted as _True_ to be _False_ and vice versa, _False_ values to _True_.
+This node changes <span class="ndl-data">true</span> values to be <span class="ndl-data">false</span>, and <span class="ndl-data">false</span> values to be <span class="ndl-data">true</span>. It is identical to a logic NOT operation.
 
 ![](inverter.png)
+
+The <span class="ndl-node">Inverter</span> node runs JavaScript in the background and interprets truthy and falsy values in the same fashion. It is equal to creating an <span class="ndl-node">Expression</span> node with the expression `!value`.
+
+<##head##>
 
 <div class = "node-inputs">
 
 ## Inputs
 
-**Value**  
+**Value**
 The value to invert.
 
 </div>
@@ -17,7 +23,7 @@ The value to invert.
 
 ## Outputs
 
-**Result**  
+**Result**
 The result of inverting the input _Value_. This is equal to either _True_ or _False_
 
 </div>

@@ -1,29 +1,33 @@
-# NUMBER
-A variable that can contain a number. It is local to the component and cannot be accessed elsewhere in the graph.
+<##head##>
 
-Here you can see how to use a number variable node to set a global **Variable** to a certain number when it's **Set** signal is received.
+# Number
 
-<div class="ndl-images">
-    <img src="/nodes/data/number-1.png" class="ndl-image large"></img>  
-</div>
-
-You can also use variables nodes to connect to component inputs, this will make sure the input shows up as a number input in the property panel for instances of this component.
+This node holds a <span class="ndl-data">number</span> value. It is local to the component and cannot be accessed elsewhere in the app.
 
 <div class="ndl-images">
-    <img src="/nodes/data/number-2.png" class="ndl-image large"></img>  
+    <img src="/nodes/data/number-1.png" class="ndl-image large"></img>
 </div>
+
+You can also use the <span class="ndl-node">Number</span> node connected to a <span class="ndl-node">Component Inputs</span> node. This will make sure the input shows up as a <span class="ndl-data">number</span> input in the Property Panel for instances of this component.
+
+<div class="ndl-images">
+    <img src="/nodes/data/number-2.png" class="ndl-image large"></img>
+</div>
+
+<##head##>
 
 ## Inputs
-**Value**  
-The value to store in the node. The output value will equal this value, unless *Set* is connected, then the value will be updated when a signal is received at the *Set* input.
 
-**Set**  
-This is used to only update the output when a signal is sent to *Set*.
+**Value**
+The value to store in the node. The output value will equal this value, unless _Set_ is connected, then the value will be updated when a signal is received at the _Set_ input.
 
+**Set**
+This is used to only update the output when a signal is sent to _Set_.
 
 ## Outputs
-**Value**  
+
+**Value**
 The number stored in the node
 
-**Stored**  
-A signal is outputted here when the value is updated as a result of the *Set* signal being received.
+**Stored**
+A signal is outputted here when the value is updated as a result of the _Set_ signal being received.
