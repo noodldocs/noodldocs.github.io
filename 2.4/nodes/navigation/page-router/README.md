@@ -56,10 +56,65 @@ There are two types of parameters **Path Parameters** and **Query Parameters**. 
 
 ### Path Parameter
 
-A **Path Parameter** is added to the route of the page, for example a **Page** with **URL Path** `mypage` with a path parameter defined, will expect the next part of the route to be the value of that parameter. For example `mypage/monkey` will result in the **Path Parameter** of the **Page** to get the value `monkey`. Using **Path Parameter** is a nice way to for example encode a specific data entry to be prepopulated in a **Page**. Then the **Path Parameter** could be the **Id** of a **Record**.
+A **Path Parameter** is added to the route of the page at the end. For example a **Page** with **URL Path** `mypage` with a path parameter defined, will expect the next part of the route to be the value of that parameter. The route `mypage/monkey` will result in the **Path Parameter** of the **Page** to get the value `monkey`. Using **Path Parameter** is a convenient way to encode a specific data entry to be prepopulated in a **Page**. As an example the **Path Parameter** could be the **Id** of a **Record**.
 
 ### Query Parameter
 
-A **Query Parameter**
+A **Query Parameter** are encoded using `?parameter=value;` notation in the URL. You can have any number of **Query Parameters**.
+
+## Visual Appearance
+
+The **Page Router** is a visual node. It will automatically expand to take all space available in the current layout, unless its **Clipping Behavior** is set to **Expand To Content Size** in which case it will have the same size as the **Page** its showing (if available).
+
+## Inputs
+
+### General
+
+**Name**
+<##input:name##>The name of the **Page Router**. If you have multiple **Page Routers** the name will be used to identify them.<##input##>
+
+**URL path**
+<##input:urlPath##>An optional path of the **Page Router** when routing a URL towards it.<##input##>
+
+### Layout ###
+
+**Clip Behavior**
+
+<##input:clip##>This property controls the size and clipping behavior of the **Page Router**. It has three possible values: **Expand To Content Size**, **Scroll** or **Clip Content**.<##input##>
+
+- **Expand To Content Size** will change the size of the **Page Router** to fit the size of the **Page** it's currently showing.
+
+- **Scroll** will make the **Page Router** take as much space as it can. Any **Page** inside it will be scrollable if it cannot fit inside the **Page Router**.
+
+- **Clip Content** will make the **Page Router** take as much space as it can. Any **Page** inside it will be clipped if it cannot fit inside the **Page Router**.
+
+### Style
+
+**Background Color**
+<##input:backgroundColor##>The color that will be shown when there is no **Page** covering the **Page Router** or when the **Page** is transparent.<##input##>
+
+### Other
+
+**Mounted**
+
+<##input:mounted##>This property is used to completely remove the node from the DOM. If this property is set to false the node is removed from the DOM. It differs from the _Visible_ property where the node is still part of the DOM but invisible.<##input##>
+
+### Advanced Style
+
+**CSS Class**
+<##input:cssClass##>Specify a CSS class this node will have.<##input##>
+
+### Actions
+**Reset**
+<##input:reset##>Triggering this action will reset the **Page Router** making it show the start page.<##input##>
+
+## Outputs
+
+### Other
+[filename](../../ui-elements/shared-props/outputs/other/README.md ':include')
+
+[filename](../../ui-elements/shared-props/outputs/bounding-box/README.md ':include')
+
+[filename](../../ui-elements/shared-props/outputs/mounted/README.md ':include')
 
 

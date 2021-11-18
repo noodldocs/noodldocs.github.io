@@ -1,13 +1,13 @@
 ### Bounding Box
 
 **Screen Position X**  
-Where this node is on the screen's X-axis, in pixels.
+<##output:screenPositionX##>Where this node is on the screen's X-axis, in pixels.<##output##>
 
 **Screen Position Y**  
-Where this node is on the screen's Y-axis, in pixels.
+<##output:screenPositionY##>Where this node is on the screen's Y-axis, in pixels.<##output##>
 
 **Width**  
-Current width of this node.
+<##output:width##>Current width of this node.<##output##>
 
 **Height**  
-Current height of this node.
+<##output:height##>Current height of this node.<##output##>
