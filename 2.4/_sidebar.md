@@ -120,9 +120,8 @@
   <br/>
 
 * Navigation
-* [Navigation Stack](/nodes/navigation/navigation-stack.md)
-* [Navigate](/nodes/navigation/navigate.md)
-* [Navigate Back](/nodes/navigation/navigate-back.md)
+* [Page Router](/nodes/navigation/page-router/)
+* [Navigate](/nodes/navigation/navigate/)
 * [Navigate To Path](/nodes/navigation/navigate-to-path.md)
 * [Show Popup](/nodes/navigation/show-popup.md)
 * [Close Popup](/nodes/navigation/close-popup.md)
