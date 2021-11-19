@@ -2,6 +2,9 @@
 
 Here you can add custom CSS styles that will be added to this node. 
 
+**CSS Class**
+<##input:cssClass##>Specify a CSS class this node will have.<##input##>
+
 **Style Type**
 - _JavaScript_ - The style is formatted as a JavaScript object.
 ```javascript

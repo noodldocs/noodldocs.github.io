@@ -99,10 +99,7 @@ The **Page Router** is a visual node. It will automatically expand to take all s
 
 <##input:mounted##>This property is used to completely remove the node from the DOM. If this property is set to false the node is removed from the DOM. It differs from the _Visible_ property where the node is still part of the DOM but invisible.<##input##>
 
-### Advanced Style
-
-**CSS Class**
-<##input:cssClass##>Specify a CSS class this node will have.<##input##>
+[filename](../../ui-elements/shared-props/inputs/advanced-style/README.md ':include')
 
 ### Actions
 **Reset**
