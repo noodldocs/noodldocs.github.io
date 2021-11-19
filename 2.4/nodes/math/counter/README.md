@@ -4,11 +4,13 @@
 
 This node holds a <span class="ndl-data">number</span> that can be increased or decreased with <span class="ndl-signal">signals</span>.
 
-![](counter.gif)
+![](counter_node.png)
 
 The Counter node can be limited to a `min` and a `max` value, and the limit can be turned on and off.
 
 <##head##>
+
+![](counter.gif)
 
 <div class = "node-inputs">
 
