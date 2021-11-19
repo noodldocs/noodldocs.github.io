@@ -175,7 +175,6 @@
 * Visual
 * [Circle](nodes/ui-elements/circle/)
 * [Component Children](nodes/visual/component-children.md)
-* [Drag](nodes/visual/drag.md)
 * [Group](nodes/ui-elements/group/)
 * [Image](nodes/ui-elements/image/)
 * [Text](nodes/ui-elements/text/)
@@ -185,10 +184,6 @@
 * [Repeater Item](/nodes/ui-elements/repeater-item/)
 * [Button](nodes/ui-elements/button/)
 * [Checkbox](nodes/ui-elements/checkbox/)
-* [Field Set](/nodes/visual/fieldset.md)
-* [Form](/nodes/visual/form.md)
-* [Label](/nodes/visual/label.md)
-* [Options](/nodes/visual/options.md)
 * [Radio Button](/nodes/ui-elements/radio-button/)
 * [Radio Button Group](/nodes/ui-elements/radio-button-group/)
 * [Slider](/nodes/ui-elements/slider/)
