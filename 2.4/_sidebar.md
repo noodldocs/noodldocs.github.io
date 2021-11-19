@@ -124,7 +124,7 @@
 * [Navigate](/nodes/navigation/navigate/)
 * [Page](/nodes/navigation/page/)
 * [Page Inputs](/nodes/navigation/page-inputs/)
-* [Navigate To Path](/nodes/navigation/navigate-to-path.md)
+* [Navigate To Path](/nodes/navigation/navigate-to-path/)
 * [Show Popup](/nodes/navigation/show-popup.md)
 * [Close Popup](/nodes/navigation/close-popup.md)
 * [External Link](/nodes/navigation/external-link/)
