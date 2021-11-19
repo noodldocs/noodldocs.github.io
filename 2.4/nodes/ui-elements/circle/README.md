@@ -2,7 +2,9 @@
 
 # Cirle
 
-This node places a cricle (or a circle segment) in the visual tree. It features a wide range of design options.
+This node places a circle (or a circle segment) in the visual tree. It features a wide range of design options.
+
+![](./circle_visual.png ':class=img-size-l')
 
 <##head##>
 
