@@ -1,11 +1,10 @@
 <##head##>
 # Navigate
-You use **Navigate** to navigate between [Pages](/nodes/navigation/page/) in a [Page Router](/nodes/navigation/page-router/). For more information about web style navigation, look at the [Page Router](/nodes/navigation/page-router/) documentation.
-
-## Page Parameters
-Using a [Pages Inputs](/nodes/navigation/page-inputs/) node you can pass parameters to the **Page** you are navigating to. Any **Path Parameters** or **Query Paramaters** you add to a **Pages Inputs** node will come up as inputs on the **Navigation** node if you select that **Page** as the **Target Page**.
+This node is used to navigate between <span class="ndl-node">[Page](/nodes/navigation/page/)</span> nodes set up in a <span class="ndl-node">[Page Router](/nodes/navigation/page-router/)</span>. 
 
 ![](./navigate-page-inputs.png ':class=img-size-l')
+
+You can use a [Page Inputs](/nodes/navigation/page-inputs/) node to pass parameters to the <span class="ndl-node">Page</span> you are navigating to. Any <span class="ndl-data">Path Parameters</span> or <span class="ndl-data">Query Parameters</span> you add to a <span class="ndl-node">Page Inputs</span> node will show up as inputs on the <span class="ndl-node">Navigation</span> node if you select that <span class="ndl-node">Page</span> as the <span class="ndl-data">Target Page</span>.
 
 <##head##>
 

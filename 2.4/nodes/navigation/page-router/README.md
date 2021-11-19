@@ -1,10 +1,14 @@
 <##head##>
 # Page Router
-The **Page Router** node helps you create navigation scenarios in Noodl using the native browser navigation. 
+
+This node lets you navigate between your <span class="ndl-node">[Page](/nodes/navigation/page/)</span> nodes using the <span class="ndl-node">[Navigate](/nodes/navigation/navigate/)</span> or <span class="ndl-node">[Navigate To Path](/nodes/navigation/navigate-to-path/)</span> nodes. You can also use the <span class="ndl-node">[External Link](/nodes/navigation/external-link/)</span> node to navigate to a page outside your app.
 
 ![](./page-router-1.png ':class=img-size-m')
 
-Fundamentally it navigates between [Pages](/nodes/navigation/page/) with different URLs using the [Navigation](/nodes/navigation/navigation/) or [Navigate To Path](/nodes/navigation/navigate-to-path/) node. You can also use the [External Link](/nodes/navigation/external-link/) node to navigate to a page outside Noodl.
+Every <span class="ndl-node">Page Router</span> has a <span class="ndl-data">Start Page</span>. The pages are rendered inside of the <span class="ndl-node">Page Router</span>. You can use the <span class="ndl-data">Clip Behavior</span> option to decide how the <span class="ndl-node">Page Router</span> should wrap its content. 
+
+<##head##>
+## Implementation
 
 The **Page Router** uses standard browser navigation which means that the user can use the browser __Back__ button to navigate back in the **Page Router** history.
 
@@ -22,7 +26,6 @@ When creating and adding pages to your **Page Router** you will have to make one
 
 ![](./make-start-page.png ':class=img-size-m')
 
-<##head##>
 ## Navigating
 
 ### URLs to Page Routers and Pages
