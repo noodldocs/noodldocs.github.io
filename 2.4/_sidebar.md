@@ -122,6 +122,8 @@
 * Navigation
 * [Page Router](/nodes/navigation/page-router/)
 * [Navigate](/nodes/navigation/navigate/)
+* [Page](/nodes/navigation/page/)
+* [Page Inputs](/nodes/navigation/page-inputs/)
 * [Navigate To Path](/nodes/navigation/navigate-to-path.md)
 * [Show Popup](/nodes/navigation/show-popup.md)
 * [Close Popup](/nodes/navigation/close-popup.md)
