@@ -4,9 +4,11 @@
 
 This node places a radio button in the visual tree. The <span class="ndl-node">Radio Button</span> must be placed in a <span class="ndl-node">Radio Button Group</span> node to function properly.
 
-![](./radiobutton.png ':class=img-size-l')
+![](./radio_button_visual.png ':class=img-size-l')
 
 You must specify a unique <span class="ndl-data">Value</span> for each <span class="ndl-node">Radio Button</span> node. Only one <span class="ndl-node">Radio Button</span> in a <span class="ndl-node">Radio Button Group</span> can be selected at once.
+
+![](./radio_button_node.png ':class=img-size-l')
 
 <##head##>
 

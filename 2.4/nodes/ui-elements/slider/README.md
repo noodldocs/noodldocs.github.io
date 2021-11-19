@@ -4,13 +4,15 @@
 
 This node places a range slider in the visual tree. It is used to select a <span class="ndl-data">number</span> between a `min` and a `max` value.
 
-![](./slider.png ':class=img-size-l')
+![](./slider_visual.png ':class=img-size-l')
 
 The <span class="ndl-node">Slider</span> node allows you to set a <span class="ndl-data">Step</span> value. This controls in what intervals the slider can be incremented or decremented.
 
+![](./slider_node.png ':class=img-size-l')
+
+
 <##head##>
 
-![](./slider.gif ':class=img-size-m')
 
 ## Inputs
 
