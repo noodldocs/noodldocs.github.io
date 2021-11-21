@@ -4,9 +4,7 @@
 
 This node holds a <span class="ndl-data">color</span> value.
 
-<div class="ndl-images">
-    <img src="/nodes/data/color/color-1.png" class="ndl-image large"></img>
-</div>
+![](color_node.png)
 
 The <span class="ndl-data">color</span> value can either be static or dynamic using the <span class="ndl-data">Value</span> and <span class="ndl-signal">Set</span> inputs.
 

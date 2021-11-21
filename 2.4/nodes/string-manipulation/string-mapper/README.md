@@ -2,10 +2,9 @@
 # String Mapper
 
 This node receives an input <span class="ndl-data">string</span>, looks it up in a mapping table, and outputs the correct output <span class="ndl-data">string</span>.
-
-![](stringmapper.png)
-
 You define your own string mappings. You can also define a default value to output if the <span class="ndl-node">String Mapper</span> node receives an unspecified input <span class="ndl-data">string</span>.
+
+![](string_mapper_node.png)
 
 <##head##>
 
