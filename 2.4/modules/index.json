@@ -7,13 +7,6 @@
         "docs":"datepicker-button/"
     },   
     {
-        "label":"Experience Insights",
-        "desc":"Add this module to your project to enabled Noodl experience insights.",
-        "icon":"xi/icon.png",
-        "project":"xi/xi-module-0-1.zip",
-        "docs":"xi/"
-    },
-    {
         "label":"Form Validation",
         "desc": "This module adds a utility node that makes different kind of form validation easier.",
         "project":"validation/validation-1-2.zip",
@@ -49,33 +42,12 @@
         "docs":"markdown/"
     },
     {
-        "label":"Material Icon Set",
-        "desc": "A module to include icons from the Material UI icon set in your apps.",
-        "project":"mui-icons/mui-icons-module-0-2.zip",
-        "icon":"mui-icons/MaterialIconModule.png",
-        "docs":"mui-icons/"
-    },  
-    {
         "label":"MQTT Module",
         "desc":"This module contains nodes for sending and receiving messages over MQTT in web apps.",
         "project":"mqtt/mqtt-module-1-0-2.zip",
         "icon":"mqtt/MQTTModule.png",
         "docs":"mqtt/"
-    },
-    {
-        "label":"Simple Design System",
-        "desc": "A simple but solid UI kit to use as a starting point for your applications.",
-        "project":"sds-v3/ds-module-3-2.zip",
-        "icon":"sds-v3/SDSModule.png",
-        "docs":"sds-v3/"
-    },
-    {
-        "label":"User Management",
-        "desc": "Adds log in, sign up, persistent user data, and more. Make sure you enable cloud services.",
-        "project":"cloud-services-user-management/cloud-services-user-management-1-0-4.zip",
-        "icon":"cloud-services-user-management/UserManagementModule.png",
-        "docs": "cloud-services-user-management/"
-    },              
+    },             
     {
         "label":"Web Camera",
         "desc":"Support for accessing the camera in web apps.",
