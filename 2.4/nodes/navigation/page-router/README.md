@@ -3,6 +3,8 @@
 
 This node lets you navigate between your <span class="ndl-node">[Page](/nodes/navigation/page/)</span> nodes using the <span class="ndl-node">[Navigate](/nodes/navigation/navigate/)</span> or <span class="ndl-node">[Navigate To Path](/nodes/navigation/navigate-to-path/)</span> nodes. You can also use the <span class="ndl-node">[External Link](/nodes/navigation/external-link/)</span> node to navigate to a page outside your app.
 
+Unlike the somewhat similar [Component Stack](/nodes/component-stack/component-stack/) the **Page Router** is optimized for web type navigation (in contrast to app type) and uses URLs and routing as part of the navigation as well as the browser history.
+
 ![](./page-router-1.png ':class=img-size-m')
 
 Every <span class="ndl-node">Page Router</span> has a <span class="ndl-data">Start Page</span>. The pages are rendered inside of the <span class="ndl-node">Page Router</span>. You can use the <span class="ndl-data">Clip Behavior</span> option to decide how the <span class="ndl-node">Page Router</span> should wrap its content. 

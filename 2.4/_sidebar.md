@@ -127,10 +127,20 @@
 * [Page](/nodes/navigation/page/)
 * [Page Inputs](/nodes/navigation/page-inputs/)
 * [Navigate To Path](/nodes/navigation/navigate-to-path/)
-* [Show Popup](/nodes/navigation/show-popup.md)
-* [Close Popup](/nodes/navigation/close-popup.md)
 * [External Link](/nodes/navigation/external-link/)
   <br/>
+
+* Popups
+* [Show Popup](/nodes/popups/show-popup/)
+* [Close Popup](/nodes/popups/close-popup/)
+  <br/>
+
+* Component Stack
+* [Component Stack](/nodes/component-stack/component-stack/)
+* [Push Component To Stack](/nodes/component-stack/push-component/)
+* [Pop Component From Stack](/nodes/component-stack/pop-component/)
+  <br/>
+
 
 * Component Stack
 * [Component Stack](/nodes/component-stack/component-stack/)
