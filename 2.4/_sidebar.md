@@ -130,6 +130,17 @@
 * [External Link](/nodes/navigation/external-link/)
   <br/>
 
+* Component Stack
+* [Component Stack](/nodes/component-stack/component-stack/)
+* [Push Component To Stack](/nodes/component-stack/push-component/)
+* [Pop Component From Stack](/nodes/component-stack/pop-component/)
+ <br/>
+
+* Popups
+* [Show Popup](/nodes/popups/show-popup/)
+* [Close Popup](/nodes/popups/close-popup/)
+ <br/>
+
 * Events
 * [Receive Event](nodes/events/receive-event/)
 * [Send Event](nodes/events/send-event/)
