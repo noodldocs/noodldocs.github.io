@@ -22,28 +22,31 @@ When a popup is closed with the [Close Popup](/nodes/popups/close-popup/) node i
 ### General
 
 **Target**
-A component that will be cloned and put on top of the entire window when the **Show** signals is received.
+<##input:target##>A component that will be cloned and put on top of the entire window when the **Show** signals is received.<##input##>
 
 ### Actions
 
 **Show**
-Send a signal here to show the popup.
+<##input:show##>Send a signal here to show the popup.<##input##>
 
 ### Params
 
 Any **Component Inputs** that the popup component have will be available as inputs.
+<span style="display:none"><##input:popupParam-*##>A parameter input originating from a **Component Input** in the **Target** component. It's value will be forwarded to the component.<##input##></span>
 
 ## Outputs
 
 ### Actions
 
 **Closed**
-A signal is sent here when the popup is closed with a **Close Popup** node. See [Close Popup](/nodes/popups/close-popup/) for more information.
+<##output:closed##>A signal is sent here when the popup is closed with a **Close Popup** node.<##output##> See [Close Popup](/nodes/popups/close-popup/) for more information.
 
 ### Close Results
 
 Any result values provided via the [Close Popup](/nodes/popups/close-popup/) node from the target popup component will become available here.
-
+<span style="display:none"><##output:closeResult-*##>A result output originating from the **Target** components **Close Popup** node.<##output##></span>
 ### Close actions
 
 Any close action signals provided via the [Close Popup](/nodes/popups/close-popup/) node from the target popup component will become available here.
+
+<span style="display:none"><##output:closeAction-*##>A result signal originating from the **Target** components **Close Popup** node.<##output##></span>

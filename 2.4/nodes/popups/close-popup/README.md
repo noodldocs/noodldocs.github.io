@@ -29,15 +29,19 @@ These **Result** values and **Close Actions** will also become available as outp
 ### Actions
 
 **Close**
-Send a signal here to close the popup. If no close actions are specified this should be used.
+<##input:close##>Send a signal here to close the popup. If no close actions are specified this should be used.<##input##>
 
 ### Results
 
 All result values specified on this node will become available as inputs. See above for more details.
 
+<span style="display:none"><##input:result-*##>When the **Popup** is closed, this result parameter will be forwarded as an output on the **Show Popup** node that was used to open the **Popup**.<##input##></span>
+
 ### Close Actions
 
 All close actions specified on this node will become available as signal inputs. See above for more details.
+
+<span style="display:none"><##input:closeAction-*##>When the **Popup** is closed using this custom **Close Action**, the same signal be triggered on the **Show Popup** node that was used to open the **Popup**.<##input##></span>
 
 ## Outputs
 
