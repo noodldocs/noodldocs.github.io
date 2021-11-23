@@ -1,4 +1,4 @@
-* Getting Started
+* **Getting Started**
 
 - [Introduction](README.md)
 - [Basic concepts](guides/basic-concepts/)
