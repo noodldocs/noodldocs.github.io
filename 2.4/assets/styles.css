@@ -40,6 +40,11 @@ a {
 .sidebar a:not(:hover) {
   color: #dadada;
 }
+.sidebar p.active a:not(:hover) {
+  border-right: 2px solid;
+  color: var(--theme-color);
+  font-weight: 600;
+}
 
 .sidebar .input-wrap input {
   background: #1f1f1f;
