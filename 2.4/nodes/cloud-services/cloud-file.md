@@ -1,7 +1,7 @@
 <##head##>
-# CLOUD FILE
+# Cloud File
 
-Represents a file that has been uploaded to Noodl's cloud services and stored as a reference in the database.
+Represents a file that has been uploaded to the Noodl Cloud Services and stored as a file property in a **Record**.
 
 ![](cloud-file.png ':class=img-size-l')
 
@@ -9,12 +9,13 @@ Represents a file that has been uploaded to Noodl's cloud services and stored as
 
 ![](/upload-file.png ':class=img-size-l')
 <##head##>
-## Inputs
 
-**File**  
-<##input:file##>A file that has been stored in the cloud services. Often used in combination with a [Model](/nodes/cloud-services/model.md) to retrieve the **name** and **URL** of a file.<##input##>
+## INPUTS
 
-## Outputs
+**Cloud File**  
+<##input:cloud file##>A file that has been stored in the Noodl Cloud Services. Often used in combination with a **Record** to retrieve the **Name** and **URL** of a file.<##input##>
+
+## OUTPUTS
 
 **URL**  
 <##output:url##>The URL of the file.<##output##>

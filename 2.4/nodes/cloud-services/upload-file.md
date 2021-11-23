@@ -1,11 +1,12 @@
 <##head##>
-# UPLOAD FILE
+# Upload File
 
-This node Uploads a file to cloud services. Can be used in combination with a [Model](/nodes/cloud-services/model.md) to link the file to a property of a Model. When retrieving the file reference you can get the **URL** to the file and **Name** of file using a [Cloud File](/nodes/cloud-services/cloud-file.md) node.
+This node uploads a file to the Noodl Cloud Services. Can be used in combination with a **Record** to link the file to a property. When retrieving the file reference you can get the **URL** to the file and **Name** of file using a [Cloud File](/nodes/cloud-services/cloud-file.md) node.
 
 ![](upload-file.png ':class=img-size-l')
 <##head##>
-## Inputs
+
+## INPUTS
 
 **File**  
 <##input:file##>An HTML5 [File](https://developer.mozilla.org/en-US/docs/Web/API/File). The [File Picker](/nodes/utilities/file-picker.md) can be used to open a file dialog picker and generate the **File** from a local file. It's also possible to retrieve the File from external sources, or generate it by code. <##input##>
@@ -17,7 +18,7 @@ This node Uploads a file to cloud services. Can be used in combination with a [M
 
 ### Results
 **Cloud File**  
-<##output:cloudFile##>A [Cloud File](/nodes/cloud-services/cloud-file.md), which consists of an URL and a file name. Can be connected to a property of a [Model](/nodes/cloud-services/model.md) if the property type is specified as 'File'.<##output##>
+<##output:cloudFile##>A [Cloud File](/nodes/cloud-services/cloud-file.md), which consists of an URL and a file name. Can be connected to a property of a [Record](/nodes/cloud-services/model.md) if the property type is specified as 'File'.<##output##>
 
 ### Events
 
