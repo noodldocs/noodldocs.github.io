@@ -32,6 +32,24 @@ a {
   margin-bottom: 30px;
 }
 
+.sidebar {
+  background-color: #1f1f1f;
+  color: #eaeaea;
+}
+
+.sidebar a:not(:hover) {
+  color: #dadada;
+}
+
+.sidebar .input-wrap input {
+  background: #1f1f1f;
+  color: #eaeaea;
+}
+
+.sidebar .search {
+  border-color:rgb(90,90,90);
+}
+
 .sidebar .app-name-link img {
   width: 150px;
 }
