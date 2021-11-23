@@ -1,6 +1,7 @@
 * Getting Started
 
 - [Introduction](README.md)
+- [Basic concepts](guides/basic-concepts/)
 - [Build your first app](tutorials/getting-started.md)
 - [Snippets](snippets/snippets.md)
   - [Pointer Position](snippets/javascript/pointer-position.md)

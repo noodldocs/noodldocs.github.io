@@ -26,9 +26,14 @@ a {
 }
 
 /****** Sidebar ******/
+.sidebar .app-name {
+  text-align: left;
+  padding-left: 35px;
+  margin-bottom: 30px;
+}
+
 .sidebar .app-name-link img {
-  margin-left: -50px;
-  width: 100px;
+  width: 150px;
 }
 
 .sidebar ul li h1 {
@@ -159,6 +164,38 @@ body .sidebar-toggle span:nth-child(3) {
 }
 
 /****** Markdown General ******/
+
+.markdown-section h2 {
+  position: relative;
+  margin-top: 100px;
+  margin-bottom: -10px;
+}
+
+.markdown-section h2:after {
+  content: '';
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  top: 54%;
+  background: #34495e;
+  left: 0;
+}
+
+.markdown-section h2 a {
+  position: relative;
+  background-color: white;
+  z-index: 1;
+  padding-right: 10px;
+}
+
+.markdown-section h3 {
+  margin-bottom: -15px;
+}
+
+.markdown-section h4 {
+  margin-bottom: -15px;
+}
+
 .markdown-section {
   padding: 30px 30px 40px;
   max-width: 768px;
@@ -372,3 +409,12 @@ body .sidebar-toggle span:nth-child(3) {
 .modules-table img {
   width: 150px;
 }
+
+.ndl-data {
+  color: #D49517;
+}
+
+.ndl-signal {
+  color: #578A8B;
+}
+
