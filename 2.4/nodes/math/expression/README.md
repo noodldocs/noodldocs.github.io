@@ -17,8 +17,10 @@ The <span class="ndl-node">Expression</span> node runs JavaScript under the hood
 Inputs are automatically derived from the expression. An expression set to `a + someName + 1` will
 get two inputs, one for `a` and one for `someName`.
 
+As soon as any of the input values changes, the expression is reevaluated.
+
 **Expression**
-The expression to be calculated
+The expression to be calculated.
 
 </div>
 
@@ -27,7 +29,7 @@ The expression to be calculated
 ## Outputs
 
 **Result**
-The result of running the expression
+<##output:result##>This output contains the result when evaluating the expression<##output##>
 
 </div>
 
