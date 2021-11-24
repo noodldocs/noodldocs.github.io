@@ -99,6 +99,9 @@ The **Page Router** is a visual node. It will automatically expand to take all s
 
 ## Outputs
 
+**Current Page Title**  
+<##output:current page title##>The title of the page that is currently showing in this **Page Router**.<##output##>
+
 [filename](../../ui-elements/shared-props/outputs/other/README.md ':include')
 
 [filename](../../ui-elements/shared-props/outputs/bounding-box/README.md ':include')
