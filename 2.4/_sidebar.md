@@ -195,6 +195,7 @@
 * [Open File Picker](/nodes/utilities/open-file-picker/)
 * [Unique Id](nodes/utilities/unique-id/)
 * [CSS Definition](nodes/utilities/css-definition)
+* [Color Blend](nodes/utilities/color-blend)
   <br/>
 
 * Visual
