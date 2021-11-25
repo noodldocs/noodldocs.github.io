@@ -2,7 +2,7 @@
 
 # Log In
 
-This node is used to log in users that exist in the Noodl Cloud Service. You need to provide a <span class="ndl-data">Username</span> and a <span class="ndl-data">Password<span> and then send a signal to the <span class="ndl-signal">Do</span> action.
+This node is used to log in users that exist in the Noodl Cloud Service. You need to provide a <span class="ndl-data">Username</span> and a <span class="ndl-data">Password</span> and then send a signal to the <span class="ndl-signal">Do</span> action.
 
 ![](./login_visual.png ':class=img-size-l')
 
