@@ -6,17 +6,21 @@ Noodl is a node based app builder. It’s a way of visually building an applicat
 
 The main building blocks of Noodl are nodes. Every node has its own specific purpose and is very simple in itself, but together they become really powerful.
 
+![](nodes.png)
+
 ### Inputs and outputs
 
 All nodes have inputs and outputs. Connecting two nodes is as easy as clicking one node, dragging the connection to another node and selecting what output should be connected to what input. You can visually see the data flow in the Node Editor, and clicking a connection allows you to see what data is being passed.
+
+![](connecting-nodes.gif)
 
 ### Connection types
 
 Noodl has two different connection types, Data and Signals.
 
--   **Data**: We use Data connections when passing along information from one node to another. This can be anything from a value from an input field to data from an API or the result of a calculation.
+-   `Data`: We use Data connections when passing along information from one node to another. This can be anything from a value from an input field to data from an API or the result of a calculation.
 
--   **Signal**: Whenever we want our app to do something we use a Signal connection. When a Signal input receives a Signal it triggers an Action. This could be anything from submitting form data when clicking a button to showing a popup when the API has returned any data or whenever the user's screen size changes.
+-   `Signal`: Whenever we want our app to do something we use a Signal connection. When a Signal input receives a Signal it triggers an Action. This could be anything from submitting form data when clicking a button to showing a popup when the API has returned any data or whenever the user's screen size changes.
 
 ### Type conversion
 
@@ -30,15 +34,17 @@ The best way to use nodes is to combine them into Components. These Components a
 
 There are three types of components: Page, Visual and Logic.
 
--   **Page**: Page components are your app’s screens and can be navigated to using Page Router nodes.
+-   `Page`: Page components are your app’s screens and can be navigated to using Page Router nodes.
 
--   **Visual**: Visual components are made to group and render your UI elements on the screen. They can contain logic, but the main output is always something visible.
+-   `Visual`: Visual components are made to group and render your UI elements on the screen. They can contain logic, but the main output is always something visible.
 
--   **Logic**: Logic components are the brains of your app. They are used to group nodes that don’t render anything on screen. It can be as simple as a couple of nodes that do data transformation to something more complex, like routing signals to different outputs based on passed values.
+-   `Logic`: Logic components are the brains of your app. They are used to group nodes that don’t render anything on screen. It can be as simple as a couple of nodes that do data transformation to something more complex, like routing signals to different outputs based on passed values.
 
 ### Update everywhere
 
 One very practical thing with Components is that they are global, meaning that whenever you update a component's internals, these changes will be updated everywhere this component is used in the app.
+
+![](components.gif)
 
 ## Extendability
 
