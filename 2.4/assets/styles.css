@@ -61,11 +61,21 @@ a {
   width: 150px;
 }
 
-.sidebar ul li h1 {
-  margin-left: -20px;
+.sidebar ul li h2 {
   margin-bottom: 0px;
   font-size: 32px;
   line-height: 1;
+}
+
+.sidebar .sub-category {
+  margin: 0 40px -5px;
+  font-size: 12px;
+  line-height: 1;
+  color: #dadada;
+  letter-spacing: 1px;
+  font-weight: bold;
+  display: block;
+  text-align: right;
 }
 
 .sidebar ul li {
