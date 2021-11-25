@@ -16,7 +16,7 @@ Make sure you select everything, all components and files, from the import popup
 
 ![](import-button.png ':class=img-size-l')
 
-That's it, now you can start using all of the neat new version control features. You will find them in the **Version control panel** in the toolbar to the left. And you can learn more about how to work with version control in the [guide](/guides/version-control.md).
+That's it, now you can start using all of the neat new version control features. You will find them in the **Version control panel** in the toolbar to the left. And you can learn more about how to work with version control in the [guide](guides/version-control/).
 
 
 

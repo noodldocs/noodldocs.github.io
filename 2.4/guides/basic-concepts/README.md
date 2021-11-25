@@ -16,7 +16,7 @@ All nodes have inputs and outputs. Connecting two nodes is as easy as clicking o
 
 ### Connection types
 
-Noodl has two different connection types, Data and Signals.
+Noodl has two different connection types, <span class="ndl-data">Data</span> and <span class="ndl-signal">Signals</span>.
 
 -   `Data`: We use Data connections when passing along information from one node to another. This can be anything from a value from an input field to data from an API or the result of a calculation.
 
@@ -24,7 +24,7 @@ Noodl has two different connection types, Data and Signals.
 
 ### Type conversion
 
-You can not connect Data and Signals directly to one another, but there are nodes that can convert the connection types, for example if you want to trigger a signal whenever a value changes.
+You can not connect <span class="ndl-data">Data</span> and <span class="ndl-signal">Signals</span> directly to one another, but there are nodes that can convert the connection types, for example if you want to trigger a signal whenever a value changes.
 
 ## Components
 
@@ -48,11 +48,11 @@ One very practical thing with Components is that they are global, meaning that w
 
 ## Extendability
 
-Noodl has enough abstracted, high level nodes to keep you productive while providing you with enough low level nodes to make it flexible enough to granularly solve any problem in the way you see fit. Sometimes though, specific problems require specific solutions. If you would happen to find yourself wanting to expand beyond the built in nodes you can use the [Function](nodes/javascript/function/) node, [Script](nodes/javascript/script/) node or the Noodl SDK.
+Noodl has enough abstracted, high level nodes to keep you productive while providing you with enough low level nodes to make it flexible enough to granularly solve any problem in the way you see fit. Sometimes though, specific problems require specific solutions. If you would happen to find yourself wanting to expand beyond the built in nodes you can use the [Function](nodes/javascript/function/) and [Script](nodes/javascript/script/) nodes or build your own [Module](extending/) using the Noodl SDK.
 
 ## Version control
 
-Noodl also features built-in version control powered by Git, letting you keep track of your changes, and easily collaborate even as your team scales.
+Noodl also features built-in [version control](guides/version-control/) powered by Git, letting you keep track of your changes, and easily collaborate even as your team scales.
 
 ## Get Noodling!
 

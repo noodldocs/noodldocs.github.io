@@ -445,10 +445,12 @@ body .sidebar-toggle span:nth-child(3) {
 }
 
 .ndl-data {
+  font-weight: bold;
   color: #D49517;
 }
 
 .ndl-signal {
+  font-weight: bold;
   color: #578A8B;
 }
 

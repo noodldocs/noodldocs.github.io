@@ -22,7 +22,7 @@
 
 * [Layout](guides/layouts.md)
 * [Javascript](guides/javascript.md)
-* [Version control](guides/version-control/version-control.md)
+* [Version control](guides/version-control/)
 * [Deploying Noodl apps](guides/deploy-noodl-apps.md)
 
 <!-- * [States](guides/states.md)
