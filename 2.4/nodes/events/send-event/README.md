@@ -9,7 +9,7 @@ This node sends a <span class="ndl-signal">signal</span> to another place in you
 The <span class="ndl-node">Send Event</span> node lets you specify a channel to broadcast to. When this node is triggered with a <span class="ndl-signal">Send signal</span> all <span class="ndl-node">Receive Event</span> nodes set to that channel will be triggered.
 <##head##>
 
-## INPUTS
+## Inputs
 
 **Send Event** nodes can have arbitrary input ports that will be passed on to the
 [Receive Event][0] nodes when the _Send_ signal is triggered. These ports can be added by

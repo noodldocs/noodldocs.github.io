@@ -4,15 +4,11 @@
 
 This node holds a <span class="ndl-data">boolean</span> (true/false) value. You can use it to quickly store a <span class="ndl-data">boolean</span> using the <span class="ndl-signal">Set</span> input. It can also be used to hold a static value in logical operations.
 
-<div class="ndl-images">
-    <img src="/nodes/data/boolean/boolean-1.png" class="ndl-image large"></img>
-</div>
+![](boolean-1.png ':class=img-size-l')
 
 You can connect the <span class="ndl-node">Boolean</span> node to a <span class="ndl-node">Component Inputs</span> node. This will make the input shows up as a <span class="ndl-data">boolean</span> (checkbox) in the Property Panel for instances of this component.
 
-<div class="ndl-images">
-    <img src="/nodes/data/boolean/boolean-2.png" class="ndl-image large"></img>
-</div>
+![](boolean-2.png ':class=img-size-l')
 
 <##head##>
 

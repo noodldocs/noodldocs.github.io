@@ -1,5 +1,7 @@
 <##head##>
+
 # Repeater
+
 This node is used to dynamically insert visual components based on <span class="ndl-data">array</span> data.
 
 ![](./repeater_visual.png ':class=img-size-l')
@@ -11,8 +13,7 @@ The <span class="ndl-node">Repeater</span> node takes data from a Noodl <span cl
 
 More details can be found in the [guide](/guides/for-each.md).
 
-
-## INPUTS
+## Inputs
 
 ### Appearance
 
@@ -20,8 +21,8 @@ More details can be found in the [guide](/guides/for-each.md).
 
 This input is used to enable or disable dynamic templates. The input can be:
 
-- **Explicit** - The same _Component_ will be used for all items.
-- **Dynamic** - Use code to choose what _Component_ to create for each item. In this case you will have to set the **Script** input.
+-   **Explicit** - The same _Component_ will be used for all items.
+-   **Dynamic** - Use code to choose what _Component_ to create for each item. In this case you will have to set the **Script** input.
 
 **Script**
 
@@ -46,36 +47,35 @@ Only available when **Template Type** is set to **Explicit**. Choose a component
 Here you can put an script that will do one of two things. Either the script
 a) Maps the properties of the objects in the **Items** array to component inputs of the template component instances created by the **Repeater** node. This is only available if **Template Type** is set to **Explicit**. (see _Mapping Inputs_ below), or b) Chooses which template component to use for each item in the item array provided to the **Repeater** node. This is only available (and mandatory) if the **Template Type** is set to **Dynamic**. (see _Dynamic Template Types_ below).
 
-***Mapping Inputs***
+**_Mapping Inputs_**
 
 ```javascript
 map({
-	Label:'Full Name',
-	State:() => object.get('Married') === 'Yes'
+    Label: 'Full Name',
+    State: () => object.get('Married') === 'Yes',
 })
 ```
 
-By default the mapping is simply directly from object properties to component inputs. But you can use the script to change that mapping, in the example above the *Full Name* property of the incoming object is mapped to the *Label* component input. You can also use the script to do conversions of types by providing a function.
+By default the mapping is simply directly from object properties to component inputs. But you can use the script to change that mapping, in the example above the _Full Name_ property of the incoming object is mapped to the _Label_ component input. You can also use the script to do conversions of types by providing a function.
 This could for example be useful when having a generic list item, that's used with various types of data arrays with different data models and properties.
 
-***Dynamic Template Types***
+**_Dynamic Template Types_**
 
 By setting **Template type** to **Dynamic** you can use a script to determine which component that should be used for each item in the object **Array**. This could for example be useful if different items should have different visual representation and functionality tied to them.
 You have to provide a script that determines which template to be used. The script will be called once for each object in the item array provided to the **Repeater** node. The script has has one input variable _item_ which is the current item. This can be used to get properties from the object. The script should set the variable _component_ to the path to the component to use as a template for the item. Note, this is a string containing the path, beginning with a "/", to the component in the Noodl project.
 
 ```javascript
-let basePath = "/#My Sheet/ListItems";
-if (item.type === "header") {
-	component = basePath + "/HeaderItem";
-}
-else {
-	component = basePath + "/StandardItem"
+let basePath = '/#My Sheet/ListItems'
+if (item.type === 'header') {
+    component = basePath + '/HeaderItem'
+} else {
+    component = basePath + '/StandardItem'
 }
 ```
 
 In the example above the script looks at the property "type" of each object, and either choses to component "#My Sheet/ListItems/HeaderItem" or "#My Sheet/ListItems/StandardItem" depending on the value.
 
-## OUTPUTS
+## Outputs
 
 An output is created for every signal output of the _Template_ component.
 
@@ -87,9 +87,10 @@ An output is created for every signal output of the _Template_ component.
 
 This group contains component output signals from the component template of the **Repeater** node. When any of the component instances triggers an output signal, these will be relayed by the **Repeater** node along with the corresponding **Item Id**.
 
-<span style="display:none"><##output:itemOutputSignal-*##>An output signal coming from the list item.<##output##></span>
+<span style="display:none"><##output:itemOutputSignal-\*##>An output signal coming from the list item.<##output##></span>
 
 ### Item Outputs
-This group comtains component outputs other than signals for the component template of the **Repeater** node. When a signal is triggered by one of the component instances the outputs will be replayed along with the *Item Id* of the corresponding item. This can be used to store component specific outputs in e.g. objects and variables.
 
-<##output:itemOutput-*##>An output value coming from the list item.<##output##>
+This group comtains component outputs other than signals for the component template of the **Repeater** node. When a signal is triggered by one of the component instances the outputs will be replayed along with the _Item Id_ of the corresponding item. This can be used to store component specific outputs in e.g. objects and variables.
+
+<##output:itemOutput-\*##>An output value coming from the list item.<##output##>

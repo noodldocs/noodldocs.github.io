@@ -1,5 +1,7 @@
 <##head##>
+
 # Set Record Properties
+
 This action node will set property values of a record.
 
 ![](./set-record-properties-node.png ':class=img-size-l')
@@ -9,7 +11,7 @@ You need specify the class of the record in the property panel. Then you can eit
 Send a <span class="ndl-signal">signal</span> to <span class="ndl-signal">Do</span> to perform the action.
 <##head##>
 
-## INPUTS
+## Inputs
 
 **Class**
 The class of record for this node. Choosing the class will determine which property inputs that become available on the node.
@@ -26,11 +28,9 @@ The class of record for this node. Choosing the class will determine which prope
 <##input:do##>When a signal is received on this input the properties will be set on the record.<##input##>
 
 **Property inputs**
-<##input:prop-*##>The value to set this property to when the action is triggered.<##input##> For each property in the specified class there will be an input of the correct type. You can provide the values for the inputs either through connections or by specifying them in the property panel.
+<##input:prop-\*##>The value to set this property to when the action is triggered.<##input##> For each property in the specified class there will be an input of the correct type. You can provide the values for the inputs either through connections or by specifying them in the property panel.
 
-
-
-## OUTPUTS
+## Outputs
 
 **Id**
 <##output:id##>The **Id** of the record where the properties will be updated by this node.<##output##>
@@ -43,7 +43,3 @@ The class of record for this node. Choosing the class will determine which prope
 
 **Error**
 <##output:error##>The specific error message in case something went wrong when updating the record.<##output##>
-
-
-
-

@@ -4,7 +4,7 @@
 
 This node takes a <span class="ndl-data">boolean</span> input and converts it into the strings <span class="ndl-data">true</span> or <span class="ndl-data">false</span>.
 
-![](boolean-to-string.png ':class=img-size-m')
+![](boolean-to-string.png ':class=img-size-l')
 
 <##head##>
 

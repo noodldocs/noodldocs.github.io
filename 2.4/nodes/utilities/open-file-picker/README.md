@@ -10,7 +10,7 @@ You can define what file types are allowed to be uploaded. This is done by enter
 
 <##head##>
 
-## INPUTS
+## Inputs
 
 **Open**  
 <##input:open##>An action that opens the file picker.<##input##>
@@ -22,7 +22,7 @@ The file type can be specified as a filename extension, starting with a period. 
 
 The type can also be specified as a [MIME type](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Common_types). E.g. `image/*`, `image/png` or `video/mp4`.
 
-## OUTPUTS
+## Outputs
 
 **File**  
 <##output:file##>A web file API Object.<##output##> A [File](https://developer.mozilla.org/en-US/docs/Web/API/File) object. This can be used uploaded via [Upload File](/nodes/cloud-services/upload-file.md), sent as a part of a [REST](/nodes/data/rest.md) call, processed in a [Function](/nodes/javascript/function.md) node, used together with modules, or other tasks.

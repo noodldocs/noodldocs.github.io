@@ -6,7 +6,7 @@ This node uploads a file to the Noodl Cloud Services. Can be used in combination
 ![](upload-file.png ':class=img-size-l')
 <##head##>
 
-## INPUTS
+## Inputs
 
 **File**  
 <##input:file##>An HTML5 [File](https://developer.mozilla.org/en-US/docs/Web/API/File). The [File Picker](/nodes/utilities/file-picker.md) can be used to open a file dialog picker and generate the **File** from a local file. It's also possible to retrieve the File from external sources, or generate it by code. <##input##>

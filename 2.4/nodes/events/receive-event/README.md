@@ -9,7 +9,7 @@ The <span class="ndl-node">Send Event</span> node lets you specify a channel to 
 <##head##>
 
 
-## INPUTS
+## Inputs
 
 **Enabled**
 <##input:enabled##>This port is used to disable/enable this node.<##input##> If disabled the receiver node will not
@@ -24,7 +24,7 @@ node of that channel is triggered all **Receive Event** nodes with the same chan
 
 
 
-## OUTPUTS
+## Outputs
 
 The **Receive Event** node will automatically get outputs from all [Send Event][0] nodes connected
 to the same channel. See the [Send Event][0] documentation for more details on adding ports for sending values with events.

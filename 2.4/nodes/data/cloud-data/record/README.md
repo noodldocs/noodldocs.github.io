@@ -1,5 +1,7 @@
 <##head##>
+
 # Record
+
 This node is used to read data from a **Record**. A **Record** is an **Object** with a **Class**, with predefined properties of specific types and that can be stored in the Noodl backend.
 
 ![](./record-node.png ':class=img-size-l')
@@ -9,41 +11,40 @@ You have to choose the class for the **Record** node in the property panel and y
 Then you can access the properties of the specific **Record** through the property outputs.
 <##head##>
 
-## INPUTS
+## Inputs
 
-**Class**  
+**Class**
 Select the **Class** for this Records that this node will get data from. Choosing the **Class** will make the node get all properties of the class as outputs.
 
 [filename](../id-source.md ':include')
 
-**Id**  
+**Id**
 <##input:id##>The Id of the **Record** that this node should read data from.<##input##>
 
-**Fetch**  
+**Fetch**
 <##input:fetch##>Send a signal on this input to fetch the data for this **Record** from the backend. All **Record** nodes that share the **Id** with this node (i.e. are reading data from the same record) will be updated.<##input##>
 
-## OUTPUTS
+## Outputs
 
-**Id**  
+**Id**
 <##output:id##>The Id of the **Record** this node is accessing the properties for.<##output##>
 
-**Fetched**  
+**Fetched**
 <##output:fetched##>A signal is sent on this output when a **Fetch** has been completed successfully. This is as a result of triggering a fetch by sending a signal to the **Fetch** input.<##output##>
 
-**Failure**  
+**Failure**
 <##output:failure##>A signal is sent on this output if a fetch action has failed. This is a potential result of triggering a fetch by sending a signal to the **Fetch** input.<##output##>
 
-**Changed**  
+**Changed**
 <##output:changed##>A signal is sent on this output if the record that this node is reading data from has changed locally.<##output##>
 
-**Error**  
+**Error**
 <##output:error##>This will contain the error message if a fetch action failed and the **Failure** signal was emitted.<##output##>
 
 ## Property outputs
-<##output:prop-*##>The value of this property in the record that the node reads from.<##output##> This node will have an output for each property in the **Class** that have been selected on the node.
+
+<##output:prop-\*##>The value of this property in the record that the node reads from.<##output##> This node will have an output for each property in the **Class** that have been selected on the node.
 
 ## Property changed outputs
-<##output:changed-*##>A signal is sent here if the value of the property on the record this node is reading data from has changed locally.<##output##>
 
-
-
+<##output:changed-\*##>A signal is sent here if the value of the property on the record this node is reading data from has changed locally.<##output##>

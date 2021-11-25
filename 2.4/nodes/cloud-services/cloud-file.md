@@ -10,12 +10,12 @@ Represents a file that has been uploaded to the Noodl Cloud Services and stored 
 ![](/upload-file.png ':class=img-size-l')
 <##head##>
 
-## INPUTS
+## Inputs
 
 **Cloud File**  
 <##input:cloud file##>A file that has been stored in the Noodl Cloud Services. Often used in combination with a **Record** to retrieve the **Name** and **URL** of a file.<##input##>
 
-## OUTPUTS
+## Outputs
 
 **URL**  
 <##output:url##>The URL of the file.<##output##>

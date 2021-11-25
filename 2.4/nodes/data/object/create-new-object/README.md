@@ -1,4 +1,5 @@
 <##head##>
+
 # Create New Object
 
 The node can be used to create a fresh new [Object](nodes/data/object/object/).
@@ -9,18 +10,17 @@ You can provide any number of properties with values for your new Object. When t
 
 <##head##>
 
-## INPUTS
+## Inputs
 
 [filename](../properties.md ':include')
 
-**Do**  
+**Do**
 <##input:do##>Send a signal in this input to create the new Object with the provided properties.<##input##>
 
+## Outputs
 
-## OUTPUTS
-
-**Done**  
+**Done**
 <##output:done##>A signal is sent on this output when the Object have been created.<##output##>
 
-**Id**  
+**Id**
 <##output:id##>The **Id** of the newly created object, this output is valid only when the **Done** signal has been sent.<##output##>
