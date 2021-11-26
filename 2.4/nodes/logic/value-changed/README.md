@@ -15,7 +15,7 @@ The <span class="ndl-node">Value Changed</span> node is useful to trigger action
 ## Inputs
 
 **Input**
-The value that this node should observe.
+<##input:input##>The value that this node should observe. When this value changes the **Value Changed** signal will be triggered.<##input##>
 
 </div>
 
@@ -24,6 +24,6 @@ The value that this node should observe.
 ## Outputs
 
 **Value Changed**
-This signal is sent when the input value is changed.
+<##output:valueChanged##>This signal is sent when the input value is changed.<##output##>
 
 </div>

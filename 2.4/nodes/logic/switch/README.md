@@ -15,13 +15,13 @@ This node holds a <span class="ndl-data">boolean</span> state. It is either <spa
 ### Change state
 
 **On**
-Sets the state of the **Switch** to _On_
+<##input:on##>Triggering this signal sets the state of the **Switch** to _On_.<##input##>
 
 **Off**
-Sets the state of the **Switch** to _Off_
+<##input:off##>Triggering this signal sets the state of the **Switch** to _Off_.<##input##>
 
 **Flip**
-Set the **Switch** to the opposite state. If it's _On_ flip will set it to _Off_ and vice versa
+<##input:flip##>Triggering this signal sets the **Switch** to the opposite of its current state. If it is _On_ flip will set it to _Off_ and vice versa.<##input##>
 
 ### Start State
 
@@ -35,12 +35,12 @@ The starting state of the **Switch**. If the _Start State_ is set to _On_ then t
 ## Outputs
 
 **Current State**
-Outputs _True_ or _False_ depending on if the **Switch** is _On_ or _Off_
+<##output:state##>This output is either _True_ or _False_ depending on if the **Switch** is _On_ or _Off_.<##output##>
 
 **Switched To On**
-This signal is triggered when the **Switch** goes from _Off_ to _On_
+<##output:switchedToOn##>This signal is triggered when the **Switch** goes from _Off_ to _On_.<##output##>
 
 **Switched To Off**
-This signal is triggered when the **Switch** goes from _On_ to _Off_
+<##output:switchedToOff##>This signal is triggered when the **Switch** goes from _On_ to _Off_.<##output##>
 
 </div>

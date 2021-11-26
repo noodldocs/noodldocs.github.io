@@ -11,20 +11,20 @@ This node takes a <span class="ndl-data">boolean</span> input and converts it in
 ## Inputs
 
 **Selector**
-This is the boolean value that will select which string to output.
+<##input:selector##>This is the boolean value that will select which string to output.<##input##>
 
 **String for true**
-The string to output if the selector is true.
+<##input:trueString##>The string to output if the selector is true.<##input##>
 
 **String for false**
-The string to output if the selecor is false.
+<##input:falseString##>The string to output if the selecor is false.<##input##>
 
 ![](boolean-to-string-props.png ':class=img-size-m')
 
 ## Outputs
 
 **Current Value**
-The selected string.
+<##output:currentValue##>The selected string, i.e. either **String for true** or **String for false** depending on the **Selector**.<##output##>
 
 **Selector Changed**
-A signal that is sent out when the input and string have changed.
+<##output:inputChanged##>This signal is triggered when the **Selector** changes value.<##output##>
