@@ -264,6 +264,8 @@ body .sidebar-toggle span:nth-child(3) {
 /****** Markdown Table ******/
 .markdown-section table {
   display: table;
+  margin-top: 2rem;
+  border: 2px solid #f1f1f2;
 }
 
 .markdown-section table tr {

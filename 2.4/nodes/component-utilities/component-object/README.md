@@ -2,41 +2,41 @@
 
 # Component Object
 
-![](component-object.png ':class=img-size-m')
+This node a shared set of properties that can be accessed from a component as well as from any child components. It can be used to implement things such as radio groups, tabs, accordion lists and other visual elements that need to coordinate. It is also a useful general tool for any kind communication between a set of components.
 
-Component Object is a shared set of properties that can be accessed from a component as well as from any child components. It can be used to implement things such as radio groups, tabs, accordion lists and other visual elements that need to coordinate, but is also a useful general tool for any kind communication between a set of components.
+![](component-object.png ':class=img-size-l')
+
+The <span class="ndl-node">Component Object</span> node works much like the <span class="ndl-node">[Object](/nodes/data/object/object/)</span> node where you add properties that become inputs or outputs to the node.
+
 <##head##>
 
-The **Component Object** node works much like the [Object](/nodes/data/object/object/) node where you add properties that become inputs / outputs of the node.
+![](component-object-props.png ':class=img-size-l')
 
-![](component-object-props.png ':class=img-size-m')
-
-Unlike the **Object** node it does not have an **Id** instead all **Component Object** nodes within the same component share the same data.
+Unlike the <span class="ndl-node">[Object](/nodes/data/object/object/)</span> node it does not have an <span class="ndl-data">Id</span>. Instead all <span class="ndl-node">Component Object</span> nodes within the same component share the same data.
 
 ## Inputs
 
-### Properties
+| Data | Description |
+| ---- | ----------- |
+| <span class="ndl-data">Property name</span> | <##input:value-\*##>The value of a specific property of the Component Object. A Component Object node can have any amount of properties. They must be named in the property panel. When this input is changed all other Component Object nodes in the same component are updated.<##input##> Each property will get one input and output to set/get their current value. See below for more details. |
 
-<##input:value-\*##>The value of a specific property of the Component Object. A Component Object node can have any amount of properties that must be named in the property panel. When this input is changed all other Component Object nodes in the same component are updated.<##input##> Each property will get one input and output to set/get their current value. See below for more details.
 
-### Actions
-
-**Fetch**
-<##input:fetch##>The fetch signal input can be used to explicitly signal when the data of a **Component Object** should be fetched. If a connection is made to this input the node will not automatically receive changes on it's properties, it will only get the new data when the fetch signal is triggered.<##input##>
+| Signal | Description |
+| ---- | ----------- |
+| <span class="ndl-signal">Fetch</span> | <##input:fetch##>The fetch signal input can be used to explicitly signal when the data of a **Component Object** should be fetched. If a connection is made to this input the node will not automatically receive changes on it's properties, it will only get the new data when the fetch signal is triggered.<##input##> |
 
 ## Outputs
 
-### Properties
 
-<##output:value-\*##>An Component Object can have any amount of properties. Each property will get one output to get the current value.<##output##>
+| Data |
+| ---- |
+| <##output:value-\*##>A Component Object node can have any amount of properties. Each property will get one output to get the current value.<##output##> |
 
-### Events
 
-**Changed**
-<##output:changed##>An event is triggered when any of the properties have changed.<##output##>
-
-**Fetched**
-<##output:fetched##>An event is triggered on this output when a fetch is completed as a result of a **Fetch** sent on to the node.<##output##>
+| Signal | Description |
+| ---- | ----------- |
+| <span class="ndl-signal">Changed</span> | <##output:changed##>An event is triggered when any of the properties have changed.<##output##> |
+| <span class="ndl-signal">Fetched</span> | <##output:fetched##>An event is triggered on this output when a fetch is completed as a result of a **Fetch** sent on to the node.<##output##> |
 
 ### Changed signals
 
