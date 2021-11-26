@@ -18,7 +18,7 @@ Unlike the <span class="ndl-node">[Object](/nodes/data/object/object/)</span> no
 
 | Data | Description |
 | ---- | ----------- |
-| <span class="ndl-data">Property name</span> | <##input:value-\*##>The value of a specific property of the Component Object. A Component Object node can have any amount of properties. They must be named in the property panel. When this input is changed all other Component Object nodes in the same component are updated.<##input##> Each property will get one input and output to set/get their current value. See below for more details. |
+| <span class="ndl-data">Property name</span> | <##input:value-\*##>The value of a specific property of the Component Object. A Component Object node can have any amount of properties. They must be named in the Property Panel. When this input is changed all other Component Object nodes in the same component are updated.<##input##> Each property will get one input and output to set/get their current value. See below for more details. |
 
 
 | Signal | Description |

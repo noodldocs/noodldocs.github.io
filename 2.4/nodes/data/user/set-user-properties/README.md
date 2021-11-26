@@ -11,23 +11,24 @@ A user needs to be logged in via either the <span class="ndl-node">Sign Up</span
 
 ## Inputs
 
-**Email**
-<##input:email##>This input is used to set the **Email** property.<##input##>
+| Data | Description |
+| ---- | ----------- |
+| <span class="ndl-data">Email</span> | <##input:email##>This input is used to set the **Email** property.<##input##> |
+| <span class="ndl-data">Your custom properties</span> | <##input:prop-\*##>A property of the **User** class. You can add additional properties to the **User** class in the Noodl Cloud Services dashboard. <##input##> These will show up as inputs on the **Set User Properties** node. |
 
-**Do**
-<##input:do##>Send a signal to this action to store the properties in the user record in the Noodl Cloud Services. Once completed the **Success** or **Failure** event will be triggered.<##input##>
-
-### Properties
-
-<##input:prop-\*##>A property of the **User** class. You can add additional properties to the **User** class in the Noodl Cloud Services dashboard. <##input##> These will show up as inputs on the **Set User Properties** node.
+| Signal | Description |
+| ---- | ----------- |
+| <span class="ndl-signal">Do</span> | <##input:do##>Send a signal to this input to store the properties in the user record in the Noodl Cloud Services. Once completed the **Success** or **Failure** action will be triggered.<##input##> |
 
 ## Outputs
 
-**Success**
-<##output:success##>This event will be triggered if the properties was succesfully stored.<##output##>
+| Signal | Description |
+| ---- | ----------- |
+| <span class="ndl-signal">Success</span> | <##output:success##>This event will be triggered if the properties was succesfully stored.<##output##> |
+| <span class="ndl-signal">Failure</span> | <##output:failure##>This event will be triggered if something went wrong while trying to store the properties on the **User** record in the Noodl Cloud Services. The error message can be found in the **Error** output.<##output##> |
 
-**Failure**
-<##output:failure##>This event will be triggered if something went wrong while trying to store the properties on the **User** record in the Noodl Cloud Services. The error message can be found in the **Error** output.<##output##>
+| Data | Description |
+| ---- | ----------- |
+| <span class="ndl-data">Error</span> | <##output:error##>This output will contain the error message if the action failed.<##output##> |
 
-**Error**
-<##output:error##>This output will contain the error message if the action failed.<##output##>
+

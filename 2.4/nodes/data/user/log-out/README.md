@@ -10,16 +10,17 @@ This node is used to log out a user from the current session. That means that th
 
 ## Inputs
 
-**Do**
-<##input:do##>Send a signal to this action to logout the user. The user session will be removed from the browser.<##input##>
+| Signal | Description |
+| ------ | ----------- |
+| <span class="ndl-signal">Do</span> | <##input:do##>Send a signal to this action to logout the user. The user session will be removed from the browser.<##input##> |
 
 ## Outputs
 
-**Success**
-<##output:success##>This event will be triggered if the logout was succesful.<##output##>
+| Signal | Description |
+| ------ | ----------- |
+| <span class="ndl-signal">Success</span> | <##output:success##>This event will be triggered if the logout was succesful.<##output##> |
+| <span class="ndl-signal">Failure</span> | <##output:failure##>This event will be triggered if something went wrong while trying to logout the user. The error message can be found in the **Error** output.<##output##> |
 
-**Failure**
-<##output:failure##>This event will be triggered if something went wrong while trying to logout the user. The error message can be found in the **Error** output.<##output##>
-
-**Error**
-<##output:error##>This output will contain the error message if the log out failed.<##output##>
+| Data | Description |
+| ------ | ----------- |
+| <span class="ndl-data">Error</span> | <##output:error##>This output will contain the error message if the log out failed.<##output##> |
