@@ -18,9 +18,9 @@ All nodes have inputs and outputs. Connecting two nodes is as easy as clicking o
 
 Noodl has two different connection types, <span class="ndl-data">Data</span> and <span class="ndl-signal">Signals</span>.
 
--   `Data`: We use Data connections when passing along information from one node to another. This can be anything from a value from an input field to data from an API or the result of a calculation.
+-   <span class="ndl-data">Data</span>: We use Data connections when passing along information from one node to another. This can be anything from a value from an input field to data from an API or the result of a calculation.
 
--   `Signal`: Whenever we want our app to do something we use a Signal connection. When a Signal input receives a Signal it triggers an Action. This could be anything from submitting form data when clicking a button to showing a popup when the API has returned any data or whenever the user's screen size changes.
+-   <span class="ndl-signal">Signal</span>: Whenever we want our app to do something we use a Signal connection. When a Signal input receives a Signal it triggers an Action. This could be anything from submitting form data when clicking a button to showing a popup when the API has returned any data or whenever the user's screen size changes.
 
 ### Type conversion
 

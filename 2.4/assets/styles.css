@@ -248,17 +248,29 @@ body .sidebar-toggle span:nth-child(3) {
 
 .markdown-section a {
   text-decoration: none;
-  border-bottom: 0.1rem solid var(--theme-color);
+  border-bottom: 0.1rem solid #5836F5;
   transition: all 0.3s ease;
+  color: #5836F5;
 }
 
 .markdown-section a:hover {
-  border-color: var(--theme-color-dark);
-  color: var(--theme-color-dark);
+  border-color: #3F22B8;
+  color: #3F22B8;
 }
 
 .markdown-section a.anchor {
   border: none;
+}
+
+.markdown-section > *:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) code {
+  break-inside: avoid;
+  display: inline-block;
+  color: var(--theme-black);
+  letter-spacing: 0.05em;
+  font-size: 14px;
+  background-color: #eee;
+  padding-top: 1px;
+  padding-bottom: 2px;
 }
 
 /****** Markdown Table ******/
@@ -362,6 +374,19 @@ body .sidebar-toggle span:nth-child(3) {
 
 .ndl-image.large {
   width: 100%;
+}
+
+.ndl-image-with-background {
+  background: linear-gradient(-45deg, #E1BB4E, #36A8AA);
+  text-align: center;
+}
+
+.ndl-image-with-background img {
+  height: auto;
+  width: 50%;
+  margin: 50px;
+  border-radius: 4px;
+  box-shadow: -5px 5px 30px -5px #38341caa, 5px -5px 30px -5px #203c2caa;
 }
 
 /****** COPY NODES BUTTON ******/
