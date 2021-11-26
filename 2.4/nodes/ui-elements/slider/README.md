@@ -20,8 +20,7 @@ The <span class="ndl-node">Slider</span> node allows you to set a <span class="n
 
 ### General
 
-**Enabled**
-Sets the range control in enabled or disabled mode. A disabled control will not respond to user interaction.
+[filename](../shared-props/inputs/general/enabled.md ':include')
 
 **Value**
 Sets the numeric value of the control.

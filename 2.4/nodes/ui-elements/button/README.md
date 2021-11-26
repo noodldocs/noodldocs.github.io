@@ -19,8 +19,7 @@ Use variations to create different types of buttons
 
 ### General
 
-**Enabled**
-Specifies if the control is **Enabled** (true) or **Disabled** (false). A disabled control will not respond to any user interaction.
+[filename](../shared-props/inputs/general/enabled.md ':include')
 
 **Label**
 A text string that will be shown as the label on the button.
