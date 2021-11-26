@@ -17,27 +17,27 @@ The Counter node can be limited to a `min` and a `max` value, and the limit can 
 ## Inputs
 
 **Increase Count**
-Increases the count by one
+<##input:increase##>Triggering this action will increases the count by one.<##input##>
 
 **Decrease Count**
-Decreases the count by one
+<##input:decrease##>Triggering this action will decrease the count by one.<##input##>
 
 **Reset To Start**
-Resets to count to the _Start Value_
+<##input:reset##>Triggering this action will reset the counter to its _Start Value_.<##input##>
 
 **Start Value**
-The start value of the count. Defaults to zero.
+<##input:startValue##>The start value of the count. Defaults to zero.<##input##>
 
 ### Limits
 
 **Min Value**
-The counter will never decrease below this value
+<##input:limitsMin##>The minimum value of the counter. The counter will never decrease below this value. Note that **Limits Enabled** need to be set to `true` for this to be in effect.<##input##>
 
 **Max Value**
-The counter will never increase above this value
+<##input:limitsMax##>The maximum value of the counter. The counter will never increase above this value. Note that **Limits Enabled** need to be set to `true` for this to be in effect.<##input##>
 
 **Limits Enabled**
-Controls if the limits above are active or disabled
+<##input:limitsEnabled##>This input controls if the limits (**Min Value** and **Max Value**) are active or disabled.<##input##>
 
 </div>
 
@@ -46,6 +46,8 @@ Controls if the limits above are active or disabled
 ## Outputs
 
 **Current Count**
-The current count
+<##output:currentCount##>This output contains the current count.<##output##>
 
+**Count Changed**
+<##output:countChanged##>This signal will be triggered whenever the **Current Count** changes.<##output##>
 </div>

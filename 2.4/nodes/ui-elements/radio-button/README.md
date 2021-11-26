@@ -22,8 +22,7 @@ The core radio button has a very simple visual appearance and is most often used
 
 ### General
 
-**Enabled**
-Sets the checkbox in enabled or disabled mode. A disable checkbox will not respond to user interaction.
+[filename](../shared-props/inputs/general/enabled.md ':include')
 
 **Value**
 The value for this radio button. The value of the selected radio button in a radio button group will be passed as the **Value** output of the radio button group. All radio buttons in a group should have unique values.
