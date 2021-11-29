@@ -1,4 +1,5 @@
 <##head##>
+
 # Text
 
 This node places a text element in the visual tree. You can use it for both single words as well as paragraphs of text.
@@ -13,81 +14,39 @@ The <span class="ndl-node">Text</span> node can be styled with font family, colo
 
 ## Inputs
 
-[filename](../shared-props/inputs/margin-only/README.md ':include')
+| Data                                     | Description                                                                                                                                                                                        |
+| ---------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <span class="ndl-data">Text</span>       | The text string to display.                                                                                                                                                                        |
+| <span class="ndl-data">Text Align</span> | The alignment of the text string within the Text node's bounding box.                                                                                                                              |
+| <span class="ndl-data">Word Break</span> | Control where line breaks are allowed. <br/><br/> `Normal`: Break on spaces and other whitespace characters <br/>`Break All`: Allow line breaks between any two characters, including inside words |
 
-[filename](../shared-props/inputs/alignment/README.md ':include')
+The Text node also features the following [Visual Input Properties](nodes/ui-elements/visual-input-properties/).
 
-### Text Alignment
-
-<div class="ndl-images">
-    <img src="/nodes/visual/text-align.png" class="ndl-image small"></img>
-</div>
-
-**Text Align**
-The alignment of the text string within the Text node's bounding box.
-
-- _Left_ - The text is left aligned.
-- _Center_ - The text is centered on each line.
-- _Right_ - The text is right aligned.
-
-[filename](../shared-props/inputs/dimensions-and-size-mode/README.md ':include')
-
-### Text
-
-**Text**
-The text string to display.
-
-[filename](../shared-props/inputs/text-styles/README.md ':include')
-
-**Word Break**
-Control where line breaks are allowed
-- Normal: Break on spaces and other whitespace characters
-- Break All: Allow line breaks between any two characters, including inside words
-
-
-[filename](../shared-props/inputs/visibility-styles/README.md ':include')
-
-[filename](../shared-props/inputs/placement-styles/README.md ':include')
-
-### Layout
-[filename](../shared-props/inputs/position/README.md ':include')
-
-[filename](../shared-props/inputs/other/README.md ':include')
-
-[filename](../shared-props/inputs/advanced-style/README.md ':include')
+-   [Margin](nodes/ui-elements/visual-input-properties/#margin)
+-   [Alignment](nodes/ui-elements/visual-input-properties/#alignment)
+-   [Dimensions](nodes/ui-elements/visual-input-properties/#dimensions)
+-   [Text Styles](nodes/ui-elements/visual-input-properties/#text-styles)
+-   [Style](nodes/ui-elements/visual-input-properties/#style)
+-   [Placement](nodes/ui-elements/visual-input-properties/#placement)
+-   [Layout, Position](nodes/ui-elements/visual-input-properties/#-position)
+-   [Other](nodes/ui-elements/visual-input-properties/#other)
+-   [Advanced Style](nodes/ui-elements/visual-input-properties/#advanced-style)
 
 ## Outputs
 
-### Other
+Many of the UI nodes share the same outputs. Please refer to the [Visual Output Properties](nodes/ui-elements/visual-output-properties/) documentation.
 
-**Child Index**
-The place this node has in relation to its parent. E.g. if a **Group** has three children, then the first child will have _Child Index_ 0, the second child will have _Child Index_ 1, and so on.
+This node supports the following outputs:
 
-**This**
-A reference to this node. Used in custom **Javascript** nodes and more.
+-   [Bounding Box](nodes/ui-elements/visual-output-properties/#bounding-box)
+-   [Mounted](nodes/ui-elements/visual-output-properties/#mounted)
+-   [Pointer Events](nodes/ui-elements/visual-output-properties/#pointer-events)
+-   [Hover Events](nodes/ui-elements/visual-output-properties/#hover-events)
+-   [Other](nodes/ui-elements/visual-output-properties/#other)
 
-[filename](../shared-props/outputs/bounding-box/README.md ':include')
+<div class="hidden-props-for-editor">
 
-[filename](../shared-props/outputs/mounted/README.md ':include')
+[filename](../visual-input-properties/README.md ':include')
+[filename](../visual-output-properties/README.md ':include')
 
-### Pointer Events
-
-**Click**
-Emitted when the node is clicked or tapped.
-
-**Pointer Down**
-Emitted when the mouse is pressed or finger is down on the node.
-
-**Pointer Up**
-Emitted when the mouse is released or finger is lifted on the node.
-
-**Pointer Enter**
-Emitted when the mouse enters the node.
-
-### Hover Events
-
-**Hover Start**
-Emitted when the mouse enters the node.
-
-**Hover End**
-Emitted when the mouse leaves the node.
+</div>

@@ -1,4 +1,4 @@
-# Visual Properties
+# Visual Input Properties
 
 All visual nodes feature a plethora of visual properties that can be accessed both in the Property Panel and through inputs. These are documented below. Plese refer to the individual node documentation pages to see which nodes feature what visual properties.
 
@@ -12,7 +12,7 @@ Margins are the spacings around the node, outside of the borders. The margins fo
 
 </div>
 
-| Property                                    | Description                                             |
+| Data                                        | Description                                             |
 | ------------------------------------------- | ------------------------------------------------------- |
 | <span class="ndl-data">Margin Left</span>   | The left margin in `px`, or `%` of the parents width.   |
 | <span class="ndl-data">Margin Right</span>  | The right margin in `px`, or `%` of the parents width.  |
@@ -29,7 +29,7 @@ Paddings are the spacings around the nodes content, inside of the borders. The m
 
 </div>
 
-| Property                                     | Description                                              |
+| Data                                         | Description                                              |
 | -------------------------------------------- | -------------------------------------------------------- |
 | <span class="ndl-data">Padding Left</span>   | The left padding in `px`, or `%` of the parents width.   |
 | <span class="ndl-data">Padding Right</span>  | The right padding in `px`, or `%` of the parents width.  |
@@ -48,7 +48,7 @@ To specify how the node is aligned to its parent you can use the Alignment Gadge
 
 From left to right, the alignment options are:
 
-| Property                                              | Description                                             |
+| Data                                                  | Description                                             |
 | ----------------------------------------------------- | ------------------------------------------------------- |
 | <span class="ndl-data">Align Bottom</span>            | Align this node to the bottom of its parent.            |
 | <span class="ndl-data">Align Vertical Center</span>   | Align this node to the bottom of its parent.            |
@@ -69,16 +69,16 @@ Controling the width and height of the node is done with the Dimension Gadget.
 
 The first four controls the **Size Mode** of the node. It decides how the width and height of the node is specified. From left to right, the options are:
 
-| Size Mode                                                    | Description                                                                                                                                 |
+| Data                                                         | Description                                                                                                                                 |
 | ------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------- |
 | <span class="ndl-data">Explicit width and height</span>      | Set the width and height directly in pixels or percentage. Percentage is in relation to the parent, so 100% is the same size as the parent. |
 | <span class="ndl-data">Explicit height, Content Width</span> | The node will calculate the width to fit all of its children. The height is explicitly set.                                                 |
 | <span class="ndl-data">Explicit width, Content Height</span> | The node will calculate the height to fit all of its children. The width is explicitly set.                                                 |
 | <span class="ndl-data">Content Size</span>                   | Both the width and the height is calculated to fit all of the node's children.                                                              |
 
-The other paroperties are:
+The other properties are:
 
-| Property                             | Description                                                                                                                                                                                                                                                                                                         |
+| Data                                 | Description                                                                                                                                                                                                                                                                                                         |
 | ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <span class="ndl-data">Width</span>  | Specify the width of this node in pixels, percentage of parent's width or the unit `vw` which is percentage of the browser window width.                                                                                                                                                                            |
 | <span class="ndl-data">Height</span> | Specify the height of this node in pixels, percentage of parent's height or the unit `vw` which is percentage of the browser window height.                                                                                                                                                                         |
@@ -104,7 +104,7 @@ Controls the layout of this node is in its parent group.
 
 By default all children are stacked. This property specifies the stacking direction.
 
-| Option                                   | Description                        |
+| Data                                     | Description                        |
 | ---------------------------------------- | ---------------------------------- |
 | <span class="ndl-data">Vertical</span>   | Children are stacked vertically.   |
 | <span class="ndl-data">Horizontal</span> | Children are stacked horizontally. |
@@ -114,7 +114,7 @@ By default all children are stacked. This property specifies the stacking direct
 
 This property specifies what happens with children that are stacked outside of the border of the node.
 
-| Option                                   | Description                                                                                            |
+| Data                                     | Description                                                                                            |
 | ---------------------------------------- | ------------------------------------------------------------------------------------------------------ |
 | <span class="ndl-data">Off</span>        | Children are stacked beyond the boundaries of the node. If _Clip_ is enabled they will not be visible. |
 | <span class="ndl-data">On</span>         | Children are wrapped to the next row or column (depending on layout direction).                        |
@@ -159,11 +159,11 @@ The second set of options control alignment in the same direction as the layout.
 
 This Gadget controls how scrolling should be handled within the node.
 
-| Property                                    | Description                                                                                                                                                                                                                                              |
+| Data                                        | Description                                                                                                                                                                                                                                              |
 | ------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <span class="ndl-data">Enable Scroll</span> | This specifies if the node should have scrolling enabled for children that overflow outside of the nodes boundaries. Scrolling direction is determined by the nodes [Layout](#layout) direction. Enabling this will show the scrolling properties below. |
 
-| Property                                             | Description                                                                                                                                                                                                  |
+| Data                                                 | Description                                                                                                                                                                                                  |
 | ---------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | <span class="ndl-data">Native Platform Scroll</span> | When enabled, uses the web's native scrolling dependent on the platform. Uses custom Noodl scrolling when disabled. The custom Noodl scrolling is platform independent and has both touch and mouse support. |
 | <span class="ndl-data">Show Scrollbar</span>         | Only available if _Native Platform Scroll_ is disabled. Toggles the visibility of the scrollbar.                                                                                                             |
@@ -171,11 +171,23 @@ This Gadget controls how scrolling should be handled within the node.
 | <span class="ndl-data">Snap</span>                   | Only available if _Native Platform Scroll_ is disabled. Enabling this will snap the scrolling between every screen.                                                                                          |
 | <span class="ndl-data">Snap To Every Item</span>     | Only available if _Snap_ is enabled. Enabling this will force the scrolling to snap to individual items.                                                                                                     |
 
+## Text Style
+
+| Data                                         | Description                                                                                                                                                                                                                                                                                                                    |
+| -------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| <span class="ndl-data">Text Style</span>     | Set an existing text style to this node, or create a new text style from the current properties.                                                                                                                                                                                                                               |
+| <span class="ndl-data">Font Family</span>    | The font family of the text to display. Choose a font in the project folder or type font name.                                                                                                                                                                                                                                 |
+| <span class="ndl-data">Font Size</span>      | The size of the font of the text to be displayed, in `px`.                                                                                                                                                                                                                                                                     |
+| <span class="ndl-data">Color</span>          | The color of the text to be displayed.                                                                                                                                                                                                                                                                                         |
+| <span class="ndl-data">Letter spacing</span> | The distance between letters in the string to be displayed. Can be specified in the following units: <br/><br/>`px`: Pixels. This is CSS pixels, so one pixel will be two physical pixels on a retina display<br/>`em`: Relative to the font size. 1em is the same as the current font size                                    |
+| <span class="ndl-data">Line height</span>    | The line height of the string, if the string is on multiple lines. Can be specified in the following units: <br/><br/> `No unit`: Relative to the current font size. Preferred way to set line height <br/>`px`: Pixels. This is CSS pixels, so one pixel will be two physical pixels on a retina display <br/>`%`: Percentage |
+| <span class="ndl-data">Case</span>           | Control how to capitalize the text: <br/><br/>`None`: Characters are unmodified<br/>`Uppercase`: All characters will be uppercase<br/>`Lowercase`: All characters will be lowercase<br/>`Capitalize`: The first letter of each word will be converted to uppercase                                                             |
+
 ## Style
 
 This Gadget controls basic styling of the node.
 
-| Property                                       | Description                                                                                                                                                                                                                                                                                            |
+| Data                                           | Description                                                                                                                                                                                                                                                                                            |
 | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | <span class="ndl-data">Opacity</span>          | The opacity of the node. 0 is completely transparent and invisible. 1 is completely solid and opaque.                                                                                                                                                                                                  |
 | <span class="ndl-data">Background Color</span> | Specifies the background color for this node.                                                                                                                                                                                                                                                          |
@@ -189,7 +201,7 @@ The Border Style Gadget is used to style the borders.
 
 You can select to style all borders at once, or only style individual borders. The styling for the individual borders will override the all-borders option.
 
-| Property                                   | Description                                                                                                                            |
+| Data                                       | Description                                                                                                                            |
 | ------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------- |
 | <span class="ndl-data">Border Style</span> | Specifies whether this node should have a border and what it should look like. The options are `None`, `Solid`, `Dotted` and `Dashed`. |
 | <span class="ndl-data">Border Width</span> | The width of the border. Only available if _Border Style_ is set to have a border.                                                     |
@@ -207,7 +219,7 @@ The corner radius is specified in `px` or `%` of the nodes width.
 
 You use the Box Shadow Gadget to set the shadow behind or inside of the node.
 
-| Property                                     | Description                                                                                                                                                         |
+| Data                                         | Description                                                                                                                                                         |
 | -------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <span class="ndl-data">Shadow Enabled</span> | Enables and disables the shadow.                                                                                                                                    |
 | <span class="ndl-data">Offset X</span>       | The horizontal offset of the shadow. A positive value puts the shadow on the right side of the node, a negative value puts the shadow on the left side of the node. |
@@ -221,7 +233,7 @@ You use the Box Shadow Gadget to set the shadow behind or inside of the node.
 
 The Placement Gadget lets you offset, rotate and scale the node. It uses CSS Transforms under the hood, meaning that the nod will still take up the original size and position in the visual tree.
 
-| Property                                         | Description                                                                                                                                                                                                                                              |
+| Data                                             | Description                                                                                                                                                                                                                                              |
 | ------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <span class="ndl-data">Pos X</span>              | The X position of the node. Either relative to its parent top left corner or relative to its layout position depending on the _Position_ property. Can be specified in pixels or as a percentage of its parent's width.                                  |
 | <span class="ndl-data">Pos Y</span>              | The Y position of the node either relative to its parent's top left corner or relative to its layout position depending on the _Position_ property. Can be specified in pixels or as a percentage of its parent's height.                                |
@@ -234,16 +246,22 @@ The Placement Gadget lets you offset, rotate and scale the node. It uses CSS Tra
 
 The Dimension Constraints Gadget allows you to clamp the values of the [Dimensions Gadget](#dimensions).
 
-| Property                                 | Description                                                                                                                                               |
+| Data                                     | Description                                                                                                                                               |
 | ---------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <span class="ndl-data">Min Width</span>  | The minimum width that can be assumed by growing with children or parent. Can be specified in % or pixels, or _vw_ which is percentage of window width.   |
 | <span class="ndl-data">Max Width</span>  | The maximum width that can be assumed by growing with children or parent. Can be specified in % or pixels, or _vw_ which is percentage of window width.   |
 | <span class="ndl-data">Min Height</span> | The minimum height that can be assumed by growing with children or parent. Can be specified in % or pixels, or _vh_ which is percentage of window height. |
 | <span class="ndl-data">Max Height</span> | The maximum height that can be assumed by growing with children or parent. Can be specified in % or pixels, or _vh_ which is percentage of window height. |
 
+## Focus
+
+| Signal                                | Description                                                                                                                             |
+| ------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| <span class="ndl-signal">Focus</span> | Focuses this node. Will trigger the _Focused_ signal output on this node, as well as _Focused Lost_ on other nodes that now lost focus. |
+
 ## Other
 
-| Property                                             | Description                                                                                                                                                                                                                                               |
+| Data                                                 | Description                                                                                                                                                                                                                                               |
 | ---------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <span class="ndl-data">Pointer Events Mode</span>    | This specifies how this node responds to pointer events.<br/><br/>`Inherit` sets the node to respond to pointer events in the same way as its parent.<br/>`Explicit` sets the node to respond to pointer events as specified by _Pointer Events Enabled_. |
 | <span class="ndl-data">Pointer Events Enabled</span> | This property is only available if _Pointer Events Mode_ is set to _Explicit_. It will specify if this node responds to pointer events or not. If set to false this node will completely ignore pointer events.                                           |
@@ -252,7 +270,7 @@ The Dimension Constraints Gadget allows you to clamp the values of the [Dimensio
 
 ## Advanced Style
 
-| Property                                | Description                                                             |
+| Data                                    | Description                                                             |
 | --------------------------------------- | ----------------------------------------------------------------------- |
 | <span class="ndl-data">CSS Class</span> | <##input:cssClass##>Specify a CSS class this node will have.<##input##> |
 | **CSS Style**                           | Use this property to specify your custom CSS.                           |

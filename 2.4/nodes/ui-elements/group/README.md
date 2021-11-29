@@ -16,76 +16,44 @@ The <span class="ndl-node">Group</span> is the most essential node when it comes
 
 ## Inputs
 
-Many of the UI Elements share the same inputs. Please refer to the [Visual Properties](nodes/ui-elements/visual-properties/) documentation.
+Many of the UI nodes share the same inputs. Please refer to the [Visual Input Properties](nodes/ui-elements/visual-input-properties/) documentation.
 
-This node supports the following gadgets:
+This node supports the following properties:
 
--   [Margin](nodes/ui-elements/visual-properties/#margin)
--   [Padding](nodes/ui-elements/visual-properties/#padding)
--   [Dimensions](nodes/ui-elements/visual-properties/#dimensions)
--   [Layout](nodes/ui-elements/visual-properties/#layout)
--   [Margin](nodes/ui-elements/visual-properties/#margin)
--   [Align and justify content](nodes/ui-elements/visual-properties/#align-and-justify-content)
--   [Scroll](nodes/ui-elements/visual-properties/#scroll)
--   [Style](nodes/ui-elements/visual-properties/#style)
--   [Border Style](nodes/ui-elements/visual-properties/#border-style)
--   [Corner Radius](nodes/ui-elements/visual-properties/#corner-radius)
--   [Box Shadow](nodes/ui-elements/visual-properties/#box-shadow)
--   [Placement](nodes/ui-elements/visual-properties/#placement)
--   [Dimension Constraints](nodes/ui-elements/visual-properties/#dimension-constraints)
--   [Other](nodes/ui-elements/visual-properties/#other)
--   [Advanced Style](nodes/ui-elements/visual-properties/#advanced-style)
-
-## Focus
-
-**Focus**
-Focuses this group. Will trigger the _Focused_ output on this group, as well as _Focused Lost_ on other groups that now lost focus.
+-   [Margin](nodes/ui-elements/visual-input-properties/#margin)
+-   [Padding](nodes/ui-elements/visual-input-properties/#padding)
+-   [Alignment](nodes/ui-elements/visual-input-properties/#alignment)
+-   [Dimensions](nodes/ui-elements/visual-input-properties/#dimensions)
+-   [Layout](nodes/ui-elements/visual-input-properties/#layout)
+-   [Align and justify content](nodes/ui-elements/visual-input-properties/#align-and-justify-content)
+-   [Scroll](nodes/ui-elements/visual-input-properties/#scroll)
+-   [Style](nodes/ui-elements/visual-input-properties/#style)
+-   [Border Style](nodes/ui-elements/visual-input-properties/#border-style)
+-   [Corner Radius](nodes/ui-elements/visual-input-properties/#corner-radius)
+-   [Box Shadow](nodes/ui-elements/visual-input-properties/#box-shadow)
+-   [Placement](nodes/ui-elements/visual-input-properties/#placement)
+-   [Dimension Constraints](nodes/ui-elements/visual-input-properties/#dimension-constraints)
+-   [Focus](nodes/ui-elements/visual-input-properties/#focus)
+-   [Other](nodes/ui-elements/visual-input-properties/#other)
+-   [Advanced Style](nodes/ui-elements/visual-input-properties/#advanced-style)
 
 ## Outputs
 
-### Other
+Many of the UI nodes share the same outputs. Please refer to the [Visual Output Properties](nodes/ui-elements/visual-output-properties/) documentation.
 
-[filename](../shared-props/outputs/other/README.md ':include')
+This node supports the following properties:
 
-**Scroll Position**
-The current position of scrolling in pixels.
+-   [Scrolling](nodes/ui-elements/visual-output-properties/#scrolling)
+-   [Bounding Box](nodes/ui-elements/visual-output-properties/#bounding-box)
+-   [Mounted](nodes/ui-elements/visual-output-properties/#mounted)
+-   [Pointer Events](nodes/ui-elements/visual-output-properties/#pointer-events)
+-   [Hover Events](nodes/ui-elements/visual-output-properties/#hover-events)
+-   [Focus](nodes/ui-elements/visual-output-properties/#focus)
+-   [Other](nodes/ui-elements/visual-output-properties/#other)
 
-**Scroll Start**
-Signal emitted when scrolling starts.
+<div class="hidden-props-for-editor">
 
-**Scroll End**
-Signal emitted when scrolling ends.
+[filename](../visual-input-properties/README.md ':include')
+[filename](../visual-output-properties/README.md ':include')
 
-[filename](../shared-props/outputs/bounding-box/README.md ':include')
-
-[filename](../shared-props/outputs/mounted/README.md ':include')
-
-### Pointer Events
-
-**Click**
-Emitted when the node is clicked or tapped.
-
-**Pointer Down**
-Emitted when the mouse is pressed or finger is down on the node.
-
-**Pointer Up**
-Emitted when the mouse is released or finger is lifted on the node.
-
-**Pointer Enter**
-Emitted when the mouse enters the node.
-
-### Hover Events
-
-**Hover Start**
-Emitted when the mouse enters the node.
-
-**Hover End**
-Emitted when the mouse leaves the node.
-
-### Focus
-
-**Focused**
-Emitted when the group, or one if its descendants, is clicked, or if the _Focused_ input is triggered.
-
-**Focus Lost**
-Emitted when this group had focus and another group gained focus. Focus is only lost if the new focused group is not a descendant.
+</div>
