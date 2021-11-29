@@ -84,7 +84,7 @@ The other properties are:
 | <span class="ndl-data">Height</span> | Specify the height of this node in pixels, percentage of parent's height or the unit `vw` which is percentage of the browser window height.                                                                                                                                                                         |
 | <span class="ndl-data">Fixed</span>  | Controls if an element will try to resize and share space with siblings without going outside of the bounds of the parent. <br/> <br/>If _Fixed_ is enabled, the element will be the exact specified size. If it is disabled, the element will resize to fill up empty space, or shrink to make space for siblings. |
 
-You can use the [Dimenson Contstraints Gadget](#dimension-constraints) to set a min and/or a max size for the node.
+You can use the [Dimension Contstraints Gadget](#dimension-constraints) to set a min and/or a max size for the node.
 
 ## Layout
 

@@ -1,4 +1,5 @@
 <##head##>
+
 # Dropdown
 
 This node places a dropdown input field in the visual tree. The input can for example be used to capture information from a user.
@@ -25,116 +26,65 @@ Depending on how you original data looks, it may be necessary to use the [Array 
 
 ## Inputs
 
-### General
+| Data                                | Description                                                                                                                                                                                                                                             |
+| ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <span class="ndl-data">Items</span> | <##input:item##>This input takes an **Array** of **Objects** that will populate the **Dropdown**. You should make sure that they have the two properties `Label` and `Value` set as they are used to represent the item in the **Dropdown**.<##input##> |
+| <span class="ndl-data">Value</span> | <##input:value##>Setting this input will force the **Dropdown** to select the item with the same value set in its `Value` property.<##input##>                                                                                                          |
+
+User interaction can be enabled and disabled:
 
 [filename](../shared-props/inputs/general/enabled.md ':include')
 
-**Items**
+### Visual
 
-<##input:item##>This input takes an **Array** of **Objects** that will populate the **Dropdown**. You should make sure that they have the two properties `Label` and `Value` set as they are used to represent the item in the **Dropdown**.<##input##>
+This node supports the following [Visual Input Properties](nodes/ui-elements/visual-input-properties/):
 
-<##input:value##>Setting this input will force the **Dropdown** to select the item with the same value set in its `Value` property.<##input##>
-
-[filename](../shared-props/inputs/margin-only/README.md ':include')
-
-[filename](../shared-props/inputs/alignment/README.md ':include')
-
-[filename](../shared-props/inputs/dimensions-and-size-mode/README.md ':include')
-
-### Text
-
-### Text Style
-[filename](../shared-props/inputs/text-styles/README.md ':include')
-
-### Actions
-**Set**
-Sets the text field value to the text in the _Text_ input.
-
-**Clear**
-Clears the text
-
-**Focus**
-Focuses the text field.
-
-_Note_: Some browsers, most notably Safari, only allow focus if it originates from a user event, like a click. So using a Timer or other method might not work.
-
-**Blur**
-Removes the keyboard focus.
-
-### Layout
-
-[filename](../shared-props/inputs/position/README.md ':include')
-
-[filename](../shared-props/inputs/visibility-styles/README.md ':include')
-
-[filename](../shared-props/inputs/border-and-corner-styles/README.md ':include')
-
-[filename](../shared-props/inputs/box-shadow-styles/README.md ':include')
-
-[filename](../shared-props/inputs/placement-styles/README.md ':include')
-
-[filename](../shared-props/inputs/other/README.md ':include')
-
-[filename](../shared-props/inputs/advanced-style/README.md ':include')
-
-</div>
-
-<div class = "node-outputs">
+-   [Margin](nodes/ui-elements/visual-input-properties/#margin)
+-   [Alignment](nodes/ui-elements/visual-input-properties/#alignment)
+-   [Dimensions](nodes/ui-elements/visual-input-properties/#dimensions)
+-   [Layout, Position](nodes/ui-elements/visual-input-properties/#-position)
+-   [Text Style](nodes/ui-elements/visual-input-properties/#text-style)
+-   [Style](nodes/ui-elements/visual-input-properties/#style)
+-   [Border Style](nodes/ui-elements/visual-input-properties/#border-style)
+-   [Corner Radius](nodes/ui-elements/visual-input-properties/#corner-radius)
+-   [Box Shadow](nodes/ui-elements/visual-input-properties/#box-shadow)
+-   [Placement](nodes/ui-elements/visual-input-properties/#placement)
+-   [Other](nodes/ui-elements/visual-input-properties/#other)
+-   [Advanced Style](nodes/ui-elements/visual-input-properties/#advanced-style)
 
 ## Outputs
 
-### Other
+The main output is the following:
 
-**Child Index**
-<##output:childIndex##>The place this node has in relation to its parent. E.g. if a **Group** has three children, then the first child will have _Child Index_ 0, the second child will have _Child Index_ 1, and so on.<##output##>
+| Data                                | Description                                                                                                                                           |
+| ----------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <span class="ndl-data">Value</span> | <##output:value##>This output holds the value, i.e. what is in the property `Value` in the currently selected **Object** in the Dropdown.<##output##> |
 
-**This**
-<##output:this##>A reference to this node. Used in custom **Javascript** nodes and more.<##output##>
+| Signal                                | Description                                                                                                   |
+| ------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| <span class="ndl-data">Changed</span> | <##output:changed##>This signal signal is emitted when the selection of the **Dropdown** changes.<##output##> |
 
-[filename](../shared-props/outputs/bounding-box/README.md ':include')
+It also features a set of more in depth <span class="ndl-signal">signals</span>:
 
-[filename](../shared-props/outputs/mounted/README.md ':include')
-
-[filename](../shared-props/inputs/text-styles/README.md ':include')
-
-[filename](../shared-props/inputs/visibility-styles/README.md ':include')
-
-[filename](../shared-props/inputs/border-and-corner-styles/README.md ':include')
-
-[filename](../shared-props/inputs/box-shadow-styles/README.md ':include')
-
-[filename](../shared-props/inputs/placement-styles/README.md ':include')
-
-[filename](../shared-props/inputs/other/README.md ':include')
+[filename](../shared-props/outputs/control-events/README.md ':include')
 
 ### States
 
-**Value**
-
-<##output:value##>This output holds the value, i.e. what is in the property `Value` in the currently selected **Object** in the Dropdown.<##output##>
+Apart from triggering <span class="ndl-signal">signals</span> the Dropdown node also notifies of its state through <span class="ndl-data">data</span> outputs:
 
 [filename](../shared-props/outputs/control-states/README.md ':include')
 
-### Value
+### Visual
 
-**Text**
-<##output:text##>The current text string.
+This node supports the following [Visual Output Properties](nodes/ui-elements/visual-output-properties/):
 
+-   [Bounding Box](nodes/ui-elements/visual-output-properties/#bounding-box)
+-   [Mounted](nodes/ui-elements/visual-output-properties/#mounted)
+-   [Other](nodes/ui-elements/visual-output-properties/#other)
 
+<div class="hidden-props-for-editor">
 
-### Focus
-
-**Focused**
-Signal that is emitted when the Text Input node gets input focus.
-
-**Blurred**
-Signal that is emitted when the Text Input node loses input focus.
-
-### Actions
-
-**Changed**
-<##output:changed##>This signal signal is emitted when the selection of the **Dropdown** changes.<##output##>
-
-[filename](../shared-props/outputs/control-events/README.md ':include')
+[filename](../visual-input-properties/README.md ':include')
+[filename](../visual-output-properties/README.md ':include')
 
 </div>

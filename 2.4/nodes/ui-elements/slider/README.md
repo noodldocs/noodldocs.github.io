@@ -10,106 +10,65 @@ The <span class="ndl-node">Slider</span> node allows you to set a <span class="n
 
 ![](./slider_node.png ':class=img-size-l')
 
-
 <##head##>
-
 
 ## Inputs
 
-[filename](../../visual/margin-only.md ':include')
+| Data                                | Description                                                                                                           |
+| ----------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| <span class="ndl-data">Value</span> | Sets the numeric value of the control.                                                                                |
+| <span class="ndl-data">Min</span>   | Sets the numeric minumum value that can be selected using this range control. Default is 0.                           |
+| <span class="ndl-data">Max</span>   | Sets the numeric maximum value that can be selected using this range control. Default is 100.                         |
+| <span class="ndl-data">Step</span>  | Sets the numeric step value for this range control. Values can only be selected in the specified steps. Default is 1. |
 
-### General
+It can be enabled and disabled using the <span class="ndl-data">Enabled</span> input:
 
 [filename](../shared-props/inputs/general/enabled.md ':include')
 
-**Value**
-Sets the numeric value of the control.
+### Thumb and track
 
-**Min**
-Sets the numeric minumum value that can be selected using this range control. Default is 0.
+The Property Panel features editing popouts for the Slider Thumb and Track. These are styled separately using modified versions of the [Dimensions](nodes/ui-elements/visual-input-properties/#dimensions), [Border Style](nodes/ui-elements/visual-input-properties/#border-style), [Corner Radius](nodes/ui-elements/visual-input-properties/#corner-radius) and [Box Shadow](nodes/ui-elements/visual-input-properties/#box-shadow) gadgets.
 
-**Max**
-Sets the numeric maximum value that can be selected using this range control. Default is 100.
+### Visual
 
-**Step**
-Sets the numeric step value for this range control. Values can only be selected in the specified steps. Default is 1.
+This node supports the following [Visual Input Properties](nodes/ui-elements/visual-input-properties/):
 
-[filename](../../visual/alignment.md ':include')
-
-### Dimensions
-
-**Width**
-Specify the width of the checkbox in pixels, percentage of parent width or the unit _vw_ which is percentage of the browser window width.
-
-**Height**
-Specify the height of the checkbox in pixels, percentage of parent height or the unit _vw_ which is percentage of the browser window height.
-
-### Layout
-
-[filename](../../visual/position.md ':include')
-
-### Thumb Style
-
-**Width**
-The width of the thumb or the range control, can be specified in pixels, % or parent or in _vw_ units that is percent of window width.
-
-**Height**
-The height of the thumb or the rangecontrol, can be specified in pixels, % or parent or in _vh_ units that is percent of window height.
-
-**Radius**
-The radius of the thumb or the rangecontrol, can be specified in pixels, % or parent or in _vh_ units that is percent of window height.
-
-**Color**
-The color of the thumb of the range control.
-
-### Track Style
-
-**Height**
-The height of the track of the range control, can be specified in pixels, % or parent or in _vh_ units that is percent of window height.
-
-**Color**
-The color of the track of the range control.
-
-### Style
-
-[filename](../../visual/visibility-styles.md ':include')
-
-[filename](../../visual/bg-and-border-styles.md ':include')
-
-### Placement
-
-[filename](../../visual/placement-styles.md ':include')
-
-### Other
-
-[filename](../../visual/pointer-events-and-mounted.md ':include')
-
-[filename](../../advanced-style.md ':include')
+-   [Margin](nodes/ui-elements/visual-input-properties/#margin)
+-   [Padding](nodes/ui-elements/visual-input-properties/#padding)
+-   [Alignment](nodes/ui-elements/visual-input-properties/#alignment)
+-   [Dimensions](nodes/ui-elements/visual-input-properties/#dimensions)
+-   [Layout, Position](nodes/ui-elements/visual-input-properties/#-position)
+-   [Style](nodes/ui-elements/visual-input-properties/#style)
+-   [Placement](nodes/ui-elements/visual-input-properties/#placement)
+-   [Other](nodes/ui-elements/visual-input-properties/#other)
+-   [Advanced Style](nodes/ui-elements/visual-input-properties/#advanced-style)
 
 ## Outputs
 
-### Other
+| Data                                        | Description                                                                                                                             |
+| ------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| <span class="ndl-data">Value</span>         | The current selected numeric value of the range control.                                                                                |
+| <span class="ndl-data">Value Percent</span> | The current selected numeric value of the range control adjusted to be between `0` and `100`, so the value of the range control in `%`. |
 
-[filename](../../visual/child-index-and-this-outputs.md ':include')
-
-[filename](../../visual/bounding-box-outputs.md ':include')
-
-[filename](../../visual/mounted-outputs.md ':include')
-
-### General
-
-[filename](../../visual/control-id-output.md ':include')
+[filename](../shared-props/outputs/control-events/README.md ':include')
 
 ### States
 
-**Value**
-The current selected numeric value of the range control.
+The Slider
 
-**Value Percent**
-The current selected numeric value of the range control adjusted to be between 0 and 100, so the value of the range control in %.
+[filename](../shared-props/outputs/control-states/README.md ':include')
 
-[filename](../../visual/control-states-outputs.md ':include')
+### Visual
 
-### Events
+This node supports the following [Visual Output Properties](nodes/ui-elements/visual-output-properties/):
 
-[filename](../../visual/control-events-outputs.md ':include')
+-   [Bounding Box](nodes/ui-elements/visual-output-properties/#bounding-box)
+-   [Mounted](nodes/ui-elements/visual-output-properties/#mounted)
+-   [Other](nodes/ui-elements/visual-output-properties/#other)
+
+<div class="hidden-props-for-editor">
+
+[filename](../visual-input-properties/README.md ':include')
+[filename](../visual-output-properties/README.md ':include')
+
+</div>

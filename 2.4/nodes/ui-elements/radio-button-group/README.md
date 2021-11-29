@@ -14,59 +14,50 @@ The output of the <span class="ndl-node">Radio Button Group</span> node is the <
 
 ## Inputs
 
-[filename](../../visual/margin-and-padding.md ':include')
+| Data                                | Description                                                                                                                  |
+| ----------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| <span class="ndl-data">Value</span> | The value of the current selected radio button. By changing this value will change which radio button is currently selected. |
 
-[filename](../../visual/alignment.md ':include')
+It can be enabled and disabled using the <span class="ndl-data">Enabled</span> input:
 
-[filename](../../visual/size-mode-and-dimensions.md ':include')
+[filename](../shared-props/inputs/general/enabled.md ':include')
 
-### General
+### Visual
 
-**Value**
-The value of the current selected radio button. By changing this value will change which radio button is currently selected.
+This node supports the following [Visual Input Properties](nodes/ui-elements/visual-input-properties/):
 
-### Layout
-
-**Layout**
-By default children are stacked and this property specifies which direction they should be stacked.
-
--   _Vertical_ - Children are stacked vertically.
--   _Horizontal_ - Children are stacked horizontally.
-
-[filename](../../visual/position.md ':include')
-
-### Style
-
-[filename](../../visual/visibility-styles.md ':include')
-
-### Placement
-
-[filename](../../visual/placement-styles.md ':include')
-
-[filename](../../visual/dimension-constraints.md ':include')
-
-### Other
-
-[filename](../../visual/pointer-events-and-mounted.md ':include')
-
-[filename](../../advanced-style.md ':include')
+-   [Margin](nodes/ui-elements/visual-input-properties/#margin)
+-   [Padding](nodes/ui-elements/visual-input-properties/#padding)
+-   [Alignment](nodes/ui-elements/visual-input-properties/#alignment)
+-   [Dimensions](nodes/ui-elements/visual-input-properties/#dimensions)
+-   [Layout](nodes/ui-elements/visual-input-properties/)
+-   [Style](nodes/ui-elements/visual-input-properties/#style)
+-   [Placement](nodes/ui-elements/visual-input-properties/#placement)
+-   [Dimension Constraints](nodes/ui-elements/visual-input-properties/#dimension-constraints)
+-   [Other](nodes/ui-elements/visual-input-properties/#other)
+-   [Advanced Style](nodes/ui-elements/visual-input-properties/#advanced-style)
 
 ## Outputs
 
-### Other
+| Data                                | Description                                                  |
+| ----------------------------------- | ------------------------------------------------------------ |
+| <span class="ndl-data">Value</span> | The current selected radio button value will be output here. |
 
-[filename](../../visual/child-index-and-this-outputs.md ':include')
+| Signal                                  | Description                                                                                              |
+| --------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| <span class="ndl-signal">Changed</span> | This event is triggered when the **Value** of the radio button group is changed due to user interaction. |
 
-[filename](../../visual/bounding-box-outputs.md ':include')
+### Visual
 
-[filename](../../visual/mounted-outputs.md ':include')
+This node supports the following [Visual Output Properties](nodes/ui-elements/visual-output-properties/):
 
-### States
+-   [Bounding Box](nodes/ui-elements/visual-output-properties/#bounding-box)
+-   [Mounted](nodes/ui-elements/visual-output-properties/#mounted)
+-   [Other](nodes/ui-elements/visual-output-properties/#other)
 
-**Value**
-The current selected radion button value will be outputted here.
+<div class="hidden-props-for-editor">
 
-### Events
+[filename](../visual-input-properties/README.md ':include')
+[filename](../visual-output-properties/README.md ':include')
 
-**Changed**
-This event is triggered when the **Value** of the radio button group is changed due to user interaction.
+</div>

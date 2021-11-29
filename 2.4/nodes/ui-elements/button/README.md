@@ -16,6 +16,10 @@ Use variations to create different types of buttons
 
 ## Inputs
 
+The Button can be enabled and disabled using the Enabled input:
+
+[filename](../shared-props/general/enabled.md ':include')
+
 The Button node has a set of label properties that can be set:
 
 | Data                                       | Description                                                                                      |
@@ -36,7 +40,9 @@ Similarly, it has a set of icon properties:
 | <span class="ndl-data">Size</span>        | The width of the icon in `px`.                                                                      |
 | <span class="ndl-data">Color</span>       | Sets the color of the icon. Only visible if _Type_ is set to `icon`.                                |
 
-This node also supports the following [Visual Input Properties](nodes/ui-elements/visual-input-properties/):
+### Visual
+
+This node supports the following [Visual Input Properties](nodes/ui-elements/visual-input-properties/):
 
 -   [Margin](nodes/ui-elements/visual-input-properties/#margin)
 -   [Padding](nodes/ui-elements/visual-input-properties/#padding)
@@ -70,6 +76,8 @@ It also features a set of more in depth <span class="ndl-signal">signals</span>:
 Apart from triggering <span class="ndl-signal">signals</span> the Button node also notifies of its state through <span class="ndl-data">data</span> outputs:
 
 [filename](../shared-props/outputs/control-states/README.md ':include')
+
+### Visual
 
 This node supports the following [Visual Output Properties](nodes/ui-elements/visual-output-properties/):
 
