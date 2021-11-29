@@ -2,9 +2,9 @@
 
 ## Scrolling
 
-| Data                                      | Description                                  |
-| ----------------------------------------- | -------------------------------------------- |
-| <span class="ndl-data">Child Index</span> | The current position of scrolling in pixels. |
+| Data                                          | Description                                  |
+| --------------------------------------------- | -------------------------------------------- |
+| <span class="ndl-data">Scroll Position</span> | The current position of scrolling in pixels. |
 
 | Signal                                       | Description                           |
 | -------------------------------------------- | ------------------------------------- |
@@ -38,17 +38,17 @@
 
 ## Hover Events
 
-| Signal                                      | Description                             |
-| ------------------------------------------- | --------------------------------------- |
-| <span class="ndl-signal">Hover Start</span> | Emitted when the mouse enters the node. |
-| <span class="ndl-signal">Hover End</span>   | Emitted when the mouse leaves the node. |
+| Signal                                      | Description                               |
+| ------------------------------------------- | ----------------------------------------- |
+| <span class="ndl-signal">Hover Start</span> | Triggered when the mouse enters the node. |
+| <span class="ndl-signal">Hover End</span>   | Triggered when the mouse leaves the node. |
 
 ## Focus
 
-| Signal                                     | Description                                                                                                                     |
-| ------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------- |
-| <span class="ndl-signal">Focused</span>    | Emitted when the node, or one if its descendants, is clicked, or if the _Focused_ input is triggered.                           |
-| <span class="ndl-signal">Focus Lost</span> | Emitted when this node had focus and another node gained focus. Focus is only lost if the new focused node is not a descendant. |
+| Signal                                  | Description                                                                                                                       |
+| --------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| <span class="ndl-signal">Focused</span> | Triggered when the node, or one if its descendants, is clicked, or if the _Focused_ input is triggered.                           |
+| <span class="ndl-signal">Blurred</span> | Triggered when this node had focus and another node gained focus. Focus is only lost if the new focused node is not a descendant. |
 
 ## Other
 
