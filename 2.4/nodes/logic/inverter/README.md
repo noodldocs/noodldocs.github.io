@@ -10,23 +10,17 @@ The <span class="ndl-node">Inverter</span> node runs JavaScript in the backgroun
 
 <##head##>
 
-<div class = "node-inputs">
-
 ## Inputs
 
-**Value**
-The value to invert.
-
-</div>
-
-<div class = "node-outputs">
+| Data                                | Description          |
+| ----------------------------------- | -------------------- |
+| <span class="ndl-data">Value</span> | The value to invert. |
 
 ## Outputs
 
-**Result**
-The result of inverting the input _Value_. This is equal to either _True_ or _False_
-
-</div>
+| Data                                 | Description                                                                          |
+| ------------------------------------ | ------------------------------------------------------------------------------------ |
+| <span class="ndl-data">Result</span> | The result of inverting the input _Value_. This is equal to either _True_ or _False_ |
 
 ## Advanced
 

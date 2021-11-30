@@ -11,25 +11,15 @@ The <span class="ndl-node">Send Event</span> node lets you specify a channel to 
 
 ## Inputs
 
-**Send Event** nodes can have arbitrary input ports that will be passed on to the
-[Receive Event][0] nodes when the _Send_ signal is triggered. These ports can be added by
-inspecting the node and clicking the _Add port_ button.
+| Mixed             | Description                                                                                                                                                                                                                         |
+| ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Custom Inputs** | **Send Event** nodes can have arbitrary input ports that will be passed on to the [Receive Event][0] nodes when the _Send_ signal is triggered. These ports can be added by inspecting the node and clicking the _Add port_ button. |
 
-There may be multiple **Send Event** nodes with the same channel. In that case the receiving nodes
-listening to the channel will get a merged set of ports from all **Send Event** nodes.
+| Data                                       | Description                                                                                                                                                                                                                                                                                                                                                                                    |
+| ------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <span class="ndl-data">Channel Name</span> | The channel name can be any identifier and is used on the [Receive Event][0] nodes to connect a sender and receiver node.<br/><br/>There may be multiple **Send Event** nodes with the same channel. In that case the receiving nodes listening to the channel will get a merged set of ports from all **Send Event** nodes.                                                                   |
+| <span class="ndl-data">Send To</span>      | <##input:propagation##>Controls what components the event will be sent to.<##input##><br/><br/>`Global`: Send to all components<br/>`Parent`: Send the event up the visual hierarchy to parent components.<br/>`Children`: Send the events to all children of this component, and their descendants.<br/>`Siblings`: Send the event to all siblings of this component in the visual hierarchy. |
 
-**Channel name**
-The channel name can be any identifier and is used on the [Receive Event][0] nodes to connect a sender and receiver node.
-
-**Send**
-<##input:sendEvent##>Trigger this action to send the event.<##input##> This is a signal port and when triggered the corresponding [Receive Event][0] nodes will be triggered as well.
-
-**Send To**
-<##input:propagation##>Controls what components the event will be sent to.<##input##>
-
--   _Global_ - Send to all components
--   _Parent_ - Send the event up the visual hierarchy to parent components.
--   _Children_ - Send the events to all children of this component, and their descendants.
--   _Siblings_ - Send the event to all siblings of this component in the visual hierarchy.
-
-[0]: /nodes/standard/receive-event.md
+| Signal                                     | Description                                                                                                                                                                                   |
+| ------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <span class="ndl-signal">Send Event</span> | <##input:sendEvent##>Send a signal to this input to send the event.<##input##> This is a signal port and when triggered the corresponding [Receive Event][0] nodes will be triggered as well. |

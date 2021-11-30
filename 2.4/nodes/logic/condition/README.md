@@ -1,25 +1,22 @@
 # Condition
+
 Evaluates a condition when triggered and sends a pulse to one of two signal outputs depending on if the condition is true or false.
 
 ![](condition_node.png)
 
-<div class = "node-inputs">
-
 ## Inputs
 
-**Condition**  
-A boolean that decides which output signal (*On true* or *On false*) that should be triggered when the *Evaluate* signal is triggered.
+| Data                                    | Description                                                                                                                            |
+| --------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| <span class="ndl-data">Condition</span> | A boolean that decides which output signal (_On true_ or _On false_) that should be triggered when the _Evaluate_ signal is triggered. |
 
-**Evaluate**  
-Evaluates the *Condition* input and triggers the respective output signal.
-
-
+| Signal                                   | Description                                                                                               |
+| ---------------------------------------- | --------------------------------------------------------------------------------------------------------- |
+| <span class="ndl-signal">Evaluate</span> | Sending a signal to this input evaluates the _Condition_ input and triggers the respective output signal. |
 
 ## Outputs
-**On true**  
-Triggered when *Evaluate* is triggered and *Condition* is true.
 
-**On false**  
-Triggered when *Evaluate* is triggered and *Condition* is false.
-
-</div>
+| Signal                                  | Description                                                      |
+| --------------------------------------- | ---------------------------------------------------------------- |
+| <span class="ndl-signal">On true</span> | Triggered when _Evaluate_ is triggered and _Condition_ is true.  |
+| <span class="ndl-signal"></span>        | Triggered when _Evaluate_ is triggered and _Condition_ is false. |

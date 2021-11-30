@@ -8,39 +8,27 @@ This node holds a <span class="ndl-data">boolean</span> state. It is either <spa
 
 <##head##>
 
-<div class = "node-inputs">
-
 ## Inputs
 
 ### Change state
 
-**On**
-<##input:on##>Triggering this signal sets the state of the **Switch** to _On_.<##input##>
+| Signal                               | Description                                                                                                                                                                 |
+| ------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <span class="ndl-signal">On</span>   | <##input:on##>Sending a signal to this input sets the state of the **Switch** to _On_.<##input##>                                                                           |
+| <span class="ndl-signal">Off</span>  | <##input:on##>Sending a signal to this input sets the state of the **Switch** to _Off_.<##input##>                                                                          |
+| <span class="ndl-signal">Flip</span> | <##input:flip##>Sending a signal to this input sets the **Switch** to the opposite of its current state. If it is _On_ flip will set it to _Off_ and vice versa.<##input##> |
 
-**Off**
-<##input:off##>Triggering this signal sets the state of the **Switch** to _Off_.<##input##>
-
-**Flip**
-<##input:flip##>Triggering this signal sets the **Switch** to the opposite of its current state. If it is _On_ flip will set it to _Off_ and vice versa.<##input##>
-
-### Start State
-
-**Start State**
-The starting state of the **Switch**. If the _Start State_ is set to _On_ then the _Switched To On_ output signal will trigger instantly when applications starts, or when a component is created dynamically.
-
-</div>
-
-<div class = "node-outputs">
+| Data                                      | Description                                                                                                                                                                                                    |
+| ----------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <span class="ndl-data">Start State</span> | The starting state of the **Switch**. If the _Start State_ is set to _On_ then the _Switched To On_ output signal will trigger instantly when applications starts, or when a component is created dynamically. |
 
 ## Outputs
 
-**Current State**
-<##output:state##>This output is either _True_ or _False_ depending on if the **Switch** is _On_ or _Off_.<##output##>
+| Data                                        | Description                                                                                                            |
+| ------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| <span class="ndl-data">Current State</span> | <##output:state##>This output is either _True_ or _False_ depending on if the **Switch** is _On_ or _Off_.<##output##> |
 
-**Switched To On**
-<##output:switchedToOn##>This signal is triggered when the **Switch** goes from _Off_ to _On_.<##output##>
-
-**Switched To Off**
-<##output:switchedToOff##>This signal is triggered when the **Switch** goes from _On_ to _Off_.<##output##>
-
-</div>
+| Signal                                          | Description                                                                                            |
+| ----------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
+| <span class="ndl-signal">Switched To On</span>  | <##output:switchedToOn##>This signal is sent when the **Switch** goes from _Off_ to _On_.<##output##>  |
+| <span class="ndl-signal">Switched To Off</span> | <##output:switchedToOff##>This signal is sent when the **Switch** goes from _On_ to _Off_.<##output##> |
