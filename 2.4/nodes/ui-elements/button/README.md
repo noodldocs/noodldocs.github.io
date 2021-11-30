@@ -18,7 +18,7 @@ Use variations to create different types of buttons
 
 The Button can be enabled and disabled using the Enabled input:
 
-[filename](../shared-props/general/enabled.md ':include')
+[filename](../shared-props/inputs/general/enabled.md ':include')
 
 The Button node has a set of label properties that can be set:
 
