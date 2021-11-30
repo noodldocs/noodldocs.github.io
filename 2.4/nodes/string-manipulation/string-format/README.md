@@ -1,5 +1,5 @@
-
 <##head##>
+
 # String Format
 
 This node is used to construct a new text <span class="ndl-data">string</span> from multiple other text <span class="ndl-data">strings</span>.
@@ -12,32 +12,16 @@ The <span class="ndl-node">String Format</span> node needs a format input where 
 
 <##head##>
 
-This node will map an input string to another string, given a set of input and mapping strings.
-
-![](stringmapper.png)
-
-<div class = "node-inputs">
-
 ## Inputs
 
-**Input 0..N**
-The input strings, any string that matches one of these values will be mapped.
-
-**Mapping 0..N**
-The mapped strings, for each of the input strings there can be a corresponding mapped string.
-
-**Input String**
-The string that will be used to look up mapping, e.g. if the string matches _Input 2_ then the _Mapped String_ output
-will be the value of _Mapping 2_.
-
-</div>
-
-<div class = "node-outputs">
+| Data                                           | Description                                                                                                                                                                                                                                                                                  |
+| ---------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <span class="ndl-data">Format</span>           | This input contains the format string, that is the template that will be used to generated the output. Any part of the template that is encapsulated in bracets will generate an input port. E.g. setting the string format to _{Hours} hours ago_ will create an input port called _Hours_. |
+| <span class="ndl-data">Your `{strings}`</span> | The input ports generated from the **Format** input.                                                                                                                                                                                                                                         |
 
 ## Outputs
 
-**Mapped String**
-The mapped string that corresponds to the value of _Input String_, e.g. if the _Input String_ value matches _Input 2_ then this output
-will be the value of _Mapping 2_.
-
-</div>
+| Data                                    | Description                                                                                                                     |
+| --------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| <span class="ndl-data">Formatted</span> | The formatted string, e.g. if the string format is _{Hours} hours ago_ and the _Hours_ input is connected to a value of _9_ the |
+| formatted string will be _9 hours ago_. |

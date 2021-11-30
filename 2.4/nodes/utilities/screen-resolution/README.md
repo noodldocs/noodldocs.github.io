@@ -8,17 +8,10 @@ This node outputs the <span class="ndl-data">width</span>, <span class="ndl-data
 
 <##head##>
 
-<div class = "node-outputs">
-
 ## Outputs
 
-**Width**
-The width of the display area in pixels.
-
-**Height**
-The height of the display area in pixels.
-
-**Aspect Ratio**
-The width divided by the height.
-
-</div>
+| Data                                       | Description                               |
+| ------------------------------------------ | ----------------------------------------- |
+| <span class="ndl-data">Width</span>        | The width of the display area in pixels.  |
+| <span class="ndl-data">Height</span>       | The height of the display area in pixels. |
+| <span class="ndl-data">Aspect Ratio</span> | The width divided by the height.          |

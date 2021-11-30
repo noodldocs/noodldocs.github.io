@@ -8,26 +8,16 @@ This node lets you extract a part of a <span class="ndl-data">string</span> give
 
 <##head##>
 
-<div class = "node-inputs">
-
 ## Inputs
 
-**String**
-The source string where the substring should be extracted from.
-
-**Start**
-The character index of the start of the substring.
-
-**End**
-The character index of the end of the substring.
-
-</div>
-
-<div class = "node-outputs">
+| Data                                 | Description                                                     |
+| ------------------------------------ | --------------------------------------------------------------- |
+| <span class="ndl-data">String</span> | The source string where the substring should be extracted from. |
+| <span class="ndl-data">Start</span>  | The character index of the start of the substring.              |
+| <span class="ndl-data">End</span>    | The character index of the end of the substring.                |
 
 ## Outputs
 
-**Result**
-The extracted substring.
-
-</div>
+| Data                                 | Description              |
+| ------------------------------------ | ------------------------ |
+| <span class="ndl-data">Result</span> | The extracted substring. |

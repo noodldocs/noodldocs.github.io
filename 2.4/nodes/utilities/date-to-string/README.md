@@ -1,4 +1,5 @@
 <##head##>
+
 # Date To String
 
 This node translates a <span class="ndl-data">date</span> type input and outputs a <span class="ndl-data">string</span> based on your specified format.
@@ -9,13 +10,12 @@ The format is specified as a <span class="ndl-data">string</span> that can inclu
 
 <##head##>
 
-
-* **{date}** The numeric date part.
-* **{month}** The numeric month 1 = January, 12 = December.
-* **{year}** The numeric year.
-* **{hour}** The numeric hour, between 0..23
-* **{minute}** The numeric minute, between 0..60
-* **{second}** The numeric second, between 0..60
+-   **{date}** The numeric date part.
+-   **{month}** The numeric month 1 = January, 12 = December.
+-   **{year}** The numeric year.
+-   **{hour}** The numeric hour, between 0..23
+-   **{minute}** The numeric minute, between 0..60
+-   **{second}** The numeric second, between 0..60
 
 The default format is this:
 
@@ -25,17 +25,17 @@ The default format is this:
 
 ## Inputs
 
-**Format**
-This is where the format string is specified, see above for details.
-
-**Date**
-The date input to format.
+| Data                                 | Description                                                          |
+| ------------------------------------ | -------------------------------------------------------------------- |
+| <span class="ndl-data">Format</span> | This is where the format string is specified, see above for details. |
+| <span class="ndl-data">Date</span>   | The date input to format.                                            |
 
 ## Outputs
 
-**Date String**
-The formatted date string.
+| Data                                        | Description                |
+| ------------------------------------------- | -------------------------- |
+| <span class="ndl-data">\*Date String</span> | The formatted date string. |
 
-**Date Changed**
-A signal is sent here when the formatted date string changed.
-
+| Signal                                       | Description                                            |
+| -------------------------------------------- | ------------------------------------------------------ |
+| <span class="ndl-signal">Date Changed</span> | Sends a signal when the formatted date string changed. |
