@@ -70,6 +70,7 @@
 * [Image](nodes/ui-elements/image/)
 * [Video](nodes/ui-elements/video/)
 * [Circle](nodes/ui-elements/circle/)
+* [Icon](nodes/ui-elements/icon/)
 
 <br/>
 
