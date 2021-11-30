@@ -20,7 +20,9 @@ The <span class="ndl-node">Text</span> node can be styled with font family, colo
 | <span class="ndl-data">Text Align</span> | The alignment of the text string within the Text node's bounding box.                                                                                                                              |
 | <span class="ndl-data">Word Break</span> | Control where line breaks are allowed. <br/><br/> `Normal`: Break on spaces and other whitespace characters <br/>`Break All`: Allow line breaks between any two characters, including inside words |
 
-The Text node also features the following [Visual Input Properties](nodes/ui-elements/visual-input-properties/).
+### Visual
+
+The Text node features the following [Visual Input Properties](nodes/ui-elements/visual-input-properties/).
 
 -   [Margin](nodes/ui-elements/visual-input-properties/#margin)
 -   [Alignment](nodes/ui-elements/visual-input-properties/#alignment)

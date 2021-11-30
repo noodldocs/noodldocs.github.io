@@ -22,7 +22,9 @@ This node places a circle (or a circle segment) in the visual tree. It features 
 | <span class="ndl-data">Stroke Color</span> | Sets the stroke color of the Circle stroke.                                                                                                                                        |
 | <span class="ndl-data">Line Cap</span>     | Specifies what kind of cap there will be on the circle stroke.<br/><br/>`Butt`: A direct cut, not rounded end of the circle stroke.<br/>`Round`: A round end to the circle stroke. |
 
-This node also supports the following [Visual Input Properties](nodes/ui-elements/visual-input-properties/):
+### Visual
+
+This node supports the following [Visual Input Properties](nodes/ui-elements/visual-input-properties/):
 
 -   [Margin](nodes/ui-elements/visual-input-properties/#margin)
 -   [Alignment](nodes/ui-elements/visual-input-properties/#alignment)

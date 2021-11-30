@@ -33,7 +33,9 @@ The Video node also has some special Video Layout properties:
 | <span class="ndl-data">Video Position Y</span> | The video's Y position within the **Video** node's bounding box.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | <span class="ndl-data">Object Fit</span>       | Specifies how the video will behave when scaled to other size than the default size.<br/><br/>`Contain`: The video will be scaled by keeping aspect ratio and making sure the video fits in the bounding box. This may introduce transparent areas within the **Video** node's bounding box.<br/>`Cover`: The video will be scaled by keeping aspect ratio and making sure the video fills the entire bounding box. Portions of the video may be clipped.<br/>`Fill`: The video will fill the bounding box by scaling without keeping aspect ratio.<br/>`None`: The video will not be scaled. May be clipped. |
 
-This node also supports the following [Visual Input Properties](nodes/ui-elements/visual-input-properties/):
+### Visual
+
+This node supports the following [Visual Input Properties](nodes/ui-elements/visual-input-properties/):
 
 -   [Margin](nodes/ui-elements/visual-input-properties/#margin)
 -   [Alignment](nodes/ui-elements/visual-input-properties/#alignment)
@@ -61,7 +63,9 @@ This node also supports the following [Visual Input Properties](nodes/ui-element
 | <span class="ndl-data">videoWidth</span>  | The width of the video source.                                |
 | <span class="ndl-data">videoHeight</span> | The height of the video source.                               |
 
-This node also supports the following [Visual Output Properties](nodes/ui-elements/visual-output-properties/).
+### Visual
+
+This node supports the following [Visual Output Properties](nodes/ui-elements/visual-output-properties/).
 
 -   [Bounding Box](nodes/ui-elements/visual-output-properties/#bounding-box)
 -   [Mounted](nodes/ui-elements/visual-output-properties/#mounted)

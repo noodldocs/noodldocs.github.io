@@ -15,7 +15,9 @@ The <span class="ndl-data">source</span> can be set from a URL or a file. You ca
 | <span class="ndl-data">Source</span>     | The image source path. Choose an image in your project or point to a valid URL that can be accessed.                                                                                                                         |
 | <span class="ndl-data">Source Set</span> | Use this property to specify different image sources for different resolutions making it more responsive. Learn more [here](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images). |
 
-This node also supports the following [Visual Input Properties](nodes/ui-elements/visual-input-properties/):
+### Visual
+
+This node supports the following [Visual Input Properties](nodes/ui-elements/visual-input-properties/):
 
 -   [Margin](nodes/ui-elements/visual-input-properties/#margin)
 -   [Alignment](nodes/ui-elements/visual-input-properties/#alignment)
