@@ -1,8 +1,8 @@
 [
   {
-    "iconURL":"hello.png",
-    "title":"Simple web app",
-    "desc":"A simple web application template with a header, footer and router.",
-    "projectURL":"hello-1-6.zip"
+    "iconURL": "helloWorld.png",
+    "title": "Hello World app",
+    "desc": "A simple application template with just a Group and a Text node.",
+    "projectURL": "hello-1-6.zip"
   }
 ]
