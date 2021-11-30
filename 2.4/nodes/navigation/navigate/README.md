@@ -1,6 +1,8 @@
 <##head##>
+
 # Navigate
-This node is used to navigate between <span class="ndl-node">[Page](/nodes/navigation/page/)</span> nodes set up in a <span class="ndl-node">[Page Router](/nodes/navigation/page-router/)</span>. 
+
+This node is used to navigate between <span class="ndl-node">[Page](/nodes/navigation/page/)</span> nodes set up in a <span class="ndl-node">[Page Router](/nodes/navigation/page-router/)</span>.
 
 ![](./navigate-page-inputs.png ':class=img-size-l')
 
@@ -10,32 +12,23 @@ You can use a [Page Inputs](/nodes/navigation/page-inputs/) node to pass paramet
 
 ## Inputs
 
-### General
+| Data                                      | Description                                                                                                                                                          |
+| ----------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <span class="ndl-data">Router</span>      | Here you select which **Page Router** that this **Navigation** node will act on. This input is only available if there are multiple **Page Routers** in the project. |
+| <span class="ndl-data">Target Page</span> | Here you select the **Page** to navigate to. The pages available are based on which **Page Router** this **Navigation** node is associated with.                     |
 
-**Router**
+| Signal                                   | Description                                                                                                       |
+| ---------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| <span class="ndl-signal">Navigate</span> | <##input:navigate##>Sending a signal to this input will perform the navigation to the **Target Page**.<##input##> |
 
-Here you select which **Page Router** that this **Navigation** node will act on. This input is only available if there are multiple **Page Routers** in the project.
+| Mixed               | Description                                                                                                                                              |
+| ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Page Parameters** | Any page parameters set in the [Pages Inputs](/nodes/navigation/page-inputs/) used by the **Page** will be available as inputs on the **Navigate** node. |
 
-**Target Page**
-
-Her you select the **Page** to navigate to. The pages available are based on which **Page Router** this **Navigation** node is associated with.
-
-### Page Paramaters
-
-Any page parameters set in the [Pages Inputs](/nodes/navigation/page-inputs/) used by the **Page** will be available as inputs on the **Navigate** node.
-<span style="display:none"><##input:pm-*##> An input parameter originating from the **Page Inputs** node of the **Target Page**.<##input##></span>
-
-### Actions
-
-**Navigate**
-
-<##input:navigate##>Triggering this action will perform the navigation to the **Target Page**.<##input##>
+<span style="display:none"><##input:pm-\*##> An input parameter originating from the **Page Inputs** node of the **Target Page**.<##input##></span>
 
 ## Outputs
 
-**Navigated**
-
-<##output:navigated##>This event is triggered when a navigation as been performed.<##output##>
-
-
-
+| Signal                                    | Description                                                                                    |
+| ----------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| <span class="ndl-signal">Navigated</span> | <##output:navigated##>This event is triggered when a navigation as been performed.<##output##> |

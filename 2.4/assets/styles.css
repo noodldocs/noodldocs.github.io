@@ -266,11 +266,11 @@ body .sidebar-toggle span:nth-child(3) {
   break-inside: avoid;
   display: inline-block;
   color: var(--theme-black);
-  letter-spacing: 0.05em;
   font-size: 14px;
   background-color: #eee;
   padding-top: 1px;
   padding-bottom: 2px;
+  font-weight: 400;
 }
 
 /****** Markdown Table ******/
@@ -489,6 +489,11 @@ body .sidebar-toggle span:nth-child(3) {
 .ndl-signal {
   font-weight: bold;
   color: #578A8B;
+}
+
+.ndl-deprecated {
+  font-weight: bold;
+  color: rgb(228, 57, 57);
 }
 
 .hidden-props-for-editor {

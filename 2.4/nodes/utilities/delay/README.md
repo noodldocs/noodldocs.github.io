@@ -8,35 +8,22 @@ This node lets you delay <span class="ndl-signal">signals</span> by the specifie
 
 <##head##>
 
-<div class = "node-inputs">
-
 ## Inputs
 
-**Start**
-Starts the timer. Does nothing if the timer is already running.
+| Signal                                  | Description                                                           |
+| --------------------------------------- | --------------------------------------------------------------------- |
+| <span class="ndl-signal">Start</span>   | Starts the timer. Does nothing if the timer is already running.       |
+| <span class="ndl-signal">Restart</span> | Starts the timer. Restarts the timer if the timer is already running. |
+| <span class="ndl-signal">Stop</span>    | Stops the timer if it's running. Does nothing otherwise.              |
 
-**Restart**
-Starts the timer. Restarts the timer if the timer is already running.
-
-**Duration**
-The duration of the timer in milliseconds.
-
-**Start Delay**
-The delay before the timer starts after the _Start_ input is triggered. Specified in milliseconds.
-
-**Stop**
-Stops the timer if it's running. Does nothing otherwise.
-
-</div>
-
-<div class = "node-outputs">
+| Data                                      | Description                                                                                        |
+| ----------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| <span class="ndl-data">Duration</span>    | The duration of the timer in milliseconds.                                                         |
+| <span class="ndl-data">Start Delay</span> | The delay before the timer starts after the _Start_ input is triggered. Specified in milliseconds. |
 
 ## Outputs
 
-**Started**
-Signal emitted when the timer starts.
-
-**Finished**
-Signal emitted when the timer is finished.
-
-</div>
+| Signal                                   | Description                                |
+| ---------------------------------------- | ------------------------------------------ |
+| <span class="ndl-signal">Started</span>  | Signal emitted when the timer starts.      |
+| <span class="ndl-signal">Finished</span> | Signal emitted when the timer is finished. |

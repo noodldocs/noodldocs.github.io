@@ -26,23 +26,15 @@ These **Result** values and **Close Actions** will also become available as outp
 
 ## Inputs
 
-### Actions
+| Signal                                        | Description                                                                                                               |
+| --------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| <span class="ndl-signal">Close</span>         | <##input:close##>Send a signal here to close the popup. If no close actions are specified this should be used.<##input##> |
+| <span class="ndl-signal">Close Actions</span> | All close actions specified on this node will become available as signal inputs. See above for more details.              |
 
-**Close**
-<##input:close##>Send a signal here to close the popup. If no close actions are specified this should be used.<##input##>
+<span style="display:none"><##input:closeAction-\*##>When the **Popup** is closed using this custom **Close Action**, the same signal be triggered on the **Show Popup** node that was used to open the **Popup**.<##input##></span>
 
-### Results
+| Data                                        | Description                                                                                           |
+| ------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| <span class="ndl-data">Result Values</span> | All result values specified on this node will become available as inputs. See above for more details. |
 
-All result values specified on this node will become available as inputs. See above for more details.
-
-<span style="display:none"><##input:result-*##>When the **Popup** is closed, this result parameter will be forwarded as an output on the **Show Popup** node that was used to open the **Popup**.<##input##></span>
-
-### Close Actions
-
-All close actions specified on this node will become available as signal inputs. See above for more details.
-
-<span style="display:none"><##input:closeAction-*##>When the **Popup** is closed using this custom **Close Action**, the same signal be triggered on the **Show Popup** node that was used to open the **Popup**.<##input##></span>
-
-## Outputs
-
-This node has no outputs.
+<span style="display:none"><##input:result-\*##>When the **Popup** is closed, this result parameter will be forwarded as an output on the **Show Popup** node that was used to open the **Popup**.<##input##></span>
