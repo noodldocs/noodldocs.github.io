@@ -23,7 +23,7 @@
 - [Working With Cloud Data]()
   - [Creating a Backend](guides/working-with-data/cloud-data/creating-backend/)
   - [Creating a Class](guides/working-with-data/cloud-data/creating-class/)
-  - [Fetching and Storing data](guides/working-with-data/cloud-data/fetching-storing-in-db/)
+  - [Creating new database entries](guides/working-with-data/cloud-data/creating-records/)
 - [Working With Local Data]()
 
 * [Layout](guides/layouts.md)
