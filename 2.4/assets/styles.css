@@ -389,6 +389,10 @@ body .sidebar-toggle span:nth-child(3) {
   box-shadow: -5px 5px 30px -5px #38341caa, 5px -5px 30px -5px #203c2caa;
 }
 
+.ndl-image-with-background.l img {
+  width: 80%;
+}
+
 /****** COPY NODES BUTTON ******/
 .ndl-copy-nodes-button {
   position: absolute;

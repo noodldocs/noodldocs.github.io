@@ -24,19 +24,31 @@ In Noodl there are two types of **Backends**, __Internal__ and __External__. The
 ## Enabling Cloud Services
 The first thing you need to do is to enable cloud services in your project. You do that by clicking the cloud icon in the top right corner and then click the `Enable Cloud Services` button.
 
-![](cloud-services.png ':class=img-size-m')
+<div class="ndl-image-with-background">
+
+![](cloud-services.png)
+
+</div>
 
 ## Use the default **Backend**
 Once Cloud Services is enabled, Noodl will create a Default Backend for your workspace, unless there already is a **Backend** in this workspace. This Default Backend is an **Internal Backend** and is often all you need in your App.
 
 Open the "Cloud Services Popup" and make sure you have a **Default Backend** called `Default Cloud Service` selected as Project Backend as shown below.
 
-![](default-cloud-services.png ':class=img-size-l')
+<div class="ndl-image-with-background l">
+
+![](default-cloud-services.png)
+
+</div>
 
 ## Inspect the Backend using the Dashboard
 Now your project is connected to a **Backend** with a **Database**. The best way to get an overview of the database is to open the **Dashboard**. You open it by clicking the `Dashboard` button under Cloud Services.
 
-![](dashboard-1.png ':class=img-size-l')
+<div class="ndl-image-with-background l">
+
+![](dashboard-1.png)
+
+</div>
 
 No you can see the contents of your **Database** in the menu to the left, under `Browser`. Right now, the Database contains two _classes_: `User` and `Role`. These two classes are created automatically. These classes are used to manage login and credentials in your app but we will not care about them in this guide.
 
@@ -46,9 +58,17 @@ A **Class** in the database is a collection of **Records** of the same type. In 
 ## Creating and switching to a new backend
 Now you can create a second backend, by clicking `Create New Backend`. Give it a name, for example `Second Backend` and a short description: `My second backend`. You now have a second backend in the list, that you can switch to by clicking `Set as Project Backend`.
 
-![](second-backend.png ':class=img-size-l')
+<div class="ndl-image-with-background l">
 
-![](second-backend-2.png ':class=img-size-l')
+![](second-backend.png)
+
+</div>
+
+<div class="ndl-image-with-background l">
+
+![](second-backend-2.png)
+
+</div>
 
 If you now open the **Dashboard** again, you can see that the **Dashboard** is now showing the contents of the Database in "My second backend". The content looks the same as the **Default Backend**, containing the `User` and `Role` classes with no entries yet. But they are pointing to two different databases.
 
