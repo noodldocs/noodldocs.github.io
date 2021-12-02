@@ -23,32 +23,57 @@ It's simple to update **Records** in the database using the [Set Record Properti
 
 To try it out, make sure you have a backend enabled for your project. Set up a **Class** in the Database with some **Records** in. Finally Query some items from the **Database**. If you follow the previous "Working With Cloud Data" guides you can use the simple Task list created there. It looks something like this:
 
-![](../querying-records/items-2.png ':class=img-size-m')
+<div class="ndl-image-with-background">
+
+![](../querying-records/items-2.png)
+
+</div>
 
 The app has two components, the main component called "App" and a List Item called "Task Item".
 
 The main component that looks like this:
 
-![](orig-app.png ':class=img-size-l')
+<div class="ndl-image-with-background l">
+
+![](orig-app.png)
+
+</div>
 
 And the list item like this
 
-![](../querying-records/record-3.png ':class=img-size-l')
+<div class="ndl-image-with-background l">
+
+![](../querying-records/record-3.png)
+
+</div>
 
 A clear shortcoming of this small app is that when you complete a task and check its checkbox the database wont actually update. The `isDone` property will not change.
 
 You can double check that by clicking a few items and reload the app. The changes are only visual, the underlying data is not changed.
 
-![](checkbox-anim.gif ':class=img-size-l')
+<div class="ndl-image-with-background l">
+
+![](checkbox-anim.gif)
+
+</div>
 
 ### The Set Record Properties node
 To update a **Record** you use the [Set Record Properties](/nodes/data/cloud-data/set-record-properties/) node.
 
 Add the node to your List Item. Click it and make sure it points to the correct **Class**.
 
-![](list-item-1.png ':class=img-size-l')
+<div class="ndl-image-with-background l">
 
-![](set-record-prop-1.png ':class=img-size-m')
+![](list-item-1.png)
+
+</div>
+
+
+<div class="ndl-image-with-background">
+
+![](set-record-prop-1.png)
+
+</div>
 
 Also note the option `Store to`. You can chose to store changes either locally and in the cloud, or only locally. Let it be set to `Cloud and locally` as we our changes to be stored directly in the database.
 
@@ -56,10 +81,18 @@ Sometimes it makes sense to only store the changes locally at first. For example
 
 Now we need to make sure the **Id** of the **Set Record Properties** are set correctly to the **Id** that the **Repeater** provides.
 
-![](set-record-prop-2.png ':class=img-size-m')
+<div class="ndl-image-with-background">
+
+![](set-record-prop-2.png)
+
+</div>
 
 Now the only two things left to do is to connect the **Checkbox** to the `isDone` property and trigger the **Do** signal of the **Set Record Properties**. We want to save whenever the state of the **Checkbox** is updated, so lets connect the **Changed** signal coming out of the **Checkbox** to **Do**.
 
-![](list-item-2.png ':class=img-size-l')
+<div class="ndl-image-with-background l">
+
+![](list-item-2.png)
+
+</div>
 
 We're done! Click on your different tasks and double check that they are correctly saved by bringing up your **Dashboard** inspect the `isDone` properties. Don't forget to press  `Refresh` in the **Dashboard** to update the view. 

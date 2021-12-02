@@ -27,17 +27,29 @@ Lets start with an empty project. You can for example use the "Hello World" temp
 
 Then create a [Query Records](/nodes/data/cloud-data/query-records/) node.
 
-![](query-1.png ':class=img-size-l')
+<div class="ndl-image-with-background l">
+
+![](query-1.png)
+
+</div>
 
 First we need to select which **Class** this **Query Records** node should be applied to. You do that by clicking the node and select a **Class** from the Class dropdown. You should expect to see all **Classes** you created in this dropdown. If you for some reason don't see them, you probably havent connected to the right backend.
 
-![](query-2.png ':class=img-size-m')
+<div class="ndl-image-with-background">
+
+![](query-2.png)
+
+</div>
 
 Leave the other settings for now. Since we don't add any conditions ("filters" as they are called in Noodl) this query will return all **Records** in the `Task` Class. Or actually not always all, since Noodl will have a default limit on 100 **Records** for a Query, to avoid flooding the network if the **Class** contains a large amount of items. You can change the limit, by checking the `Use Limit` checkbox, but we will not touch that right now.
 
 To get a first look at we get back from the Query, create an [Array](/nodes/data/array/array/) node to store the results in. Then connect **Items** from the **Query Records** node to the **Items** input on the **Array**. You should immediately see the result of the query if you hover over the connection between the two nodes to see the debug info.
 
-![](query-running.png ':class=img-size-l')
+<div class="ndl-image-with-background l">
+
+![](query-running.png)
+
+</div>
 
 Noodl automatically runs **Query Records** as soon as they are created _unless_ the input signal **Do** is connected. Since queries and the result of queries are sent over network its sometimes important to control exactly when the query should be performed. In those cases connecting the **Do** signal to control when the query is performed is important. However, in this simple example we don't care about that so leaving it unconnected is fine.
 
@@ -46,27 +58,47 @@ To visualize the results we need to do a little bit of Noodling. We need to crea
 
 Create a new visual component by clicking the "+" icon under components and then selecting `Visual Component`. Give the new component a good name, we will call our item "Task Item" as it will represent one task.
 
-![](new-component.png ':class=img-size-m')
+<div class="ndl-image-with-background">
+
+![](new-component.png)
+
+</div>
 
 In the visual component add two nodes under the existing **Group** node, one [Checkbox](/nodes/ui-elements/checkbox/) and one [Text](/nodes/ui-elements/text/) node. The **Checkbox** will represent the `isDone` property, while the **Text** node holds the description of the task. Also clean up the layout by setting the **layout** of the **Group** to **Horizontal** and add som padding and margins. Also the label of the **Checkbox** was removed.
 
-![](task-item.png ':class=img-size-m')
+<div class="ndl-image-with-background">
+
+![](task-item.png)
+
+</div>
 
 The looks don't matter right now and if you work with different kind of data your list item will look a little different.
 
 Next we go back to our main App and set the **Template** of the **Repeater** node to use our newly created Task Item.
 
-![](repeater-template.png ':class=img-size-m')
+<div class="ndl-image-with-background l">
+
+![](repeater-template.png)
+
+</div>
 
 Finally, we delete the **Array** node we created earlier and feed the result of the query results directly into the **Repeater** node by connecting **Items** in the **Query Records** node to the **Items** input in the **Repeater**.
 
-![](query-to-repeater.png ':class=img-size-l')
+<div class="ndl-image-with-background l">
+
+![](query-to-repeater.png)
+
+</div>
 
 After the connection is done you should see that your list now contains a bunch of items, in fact, it should contain as many items as your **Class** has.
 
 The **Repeater** node has created one instance of the list item per **Record**.
 
-![](items-1.png ':class=img-size-m')
+<div class="ndl-image-with-background">
+
+![](items-1.png)
+
+</div>
 
 The only problem is that the items does not show the content of the **Record**. To fix that we need to understand how the **Repeater** node deals with an **Array** of **Records**.
 
@@ -74,26 +106,49 @@ The only problem is that the items does not show the content of the **Record**. 
 
 To get the items to show the right data, we need to get hold of the **Record** holding the right data. We do this by using the [Record](/nodes/data/cloud-data/record/) node. Add a **Record** node to the previously created list item. Click the node and make sure its **Class** is set to the class you want to display, in this guide we will point it to the `Task` Class.
 
-![](record-1.png ':class=img-size-m')
+<div class="ndl-image-with-background l">
+
+![](record-1.png)
+
+</div>
 
 Now the **Id** of the **Record** comes into play - we need to set it to the **Id** corresponding to the **Record** that the list item represent. It will obviously be different for each list item. Luckily, the **Repeater** node solves this. It will assign the right **Id** to the right list item. See image below.
 
-![](records-database-illustration.png ':class=img-size-l')
+<div class="ndl-image-with-background l">
+
+![](records-database-illustration.png)
+
+</div>
 
 The only thing we need to do is to tell the **Record** node to pick up its **Id** from the right place. Click the **Record** node again and change the **Id Source** to `From repeater`.
 
-![](id-source.png ':class=img-size-m')
+<div class="ndl-image-with-background">
+
+![](id-source.png)
+
+</div>
 
 Now if you hover on the **Repeater** you should see that its filled with data for one of the list items.
 
-![](record-2.png ':class=img-size-m')
+<div class="ndl-image-with-background l">
 
+![](record-2.png)
+
+</div>
 ### Connecting the Record properties
 
 Finally, lets connect the data of the record - its properties - to our **Text** node and **Checkbox**.
 
-![](record-3.png ':class=img-size-m')
+<div class="ndl-image-with-background l">
+
+![](record-3.png)
+
+</div>
 
 You should now be able to see your **Records** in your app.
 
-![](items-2.png ':class=img-size-m')
+<div class="ndl-image-with-background">
+
+![](items-2.png)
+
+</div>

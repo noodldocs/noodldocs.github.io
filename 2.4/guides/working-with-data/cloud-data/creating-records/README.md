@@ -25,14 +25,23 @@ Again, make sure you have **Cloud Services** enabled and a **Backend** set up wi
 
 Now open the Node Picker by right clicking in the Node window. Create a **Create New Record** node.
 
-![](node-picker-1.png ':class=img-size-l')
+<div class="ndl-image-with-background l">
 
-![](create-new-record-1.png ':class=img-size-l')
+![](node-picker-1.png)
+
+
+![](create-new-record-1.png)
+
+</div>
 
 ### The Create New Record Node
 As it name states, this node is used to create and insert new **Records** in a **Class** in the Database. First we need to set up which **Class** it should insert **Records** into. Click the node and select one of you **Classes** that you set up in your Backend. In this example, we select the **Class** __Task__.
 
-![](create-new-record-2.png ':class=img-size-m')
+<div class="ndl-image-with-background">
+
+![](create-new-record-2.png)
+
+</div>
 
 ### Initial Values
 As you can see, when selecting a **Class** for your **Create New Records** node you immedieatly get new Properties on your node, namely the **Columns** you added to your **Class** when creating it. The `Task` class created in the previous guides have the `task` and the `isComplete` property.
@@ -41,22 +50,38 @@ You can add or remove **Columns** at any time in the **Dashboard** and all nodes
 
 As you probably already have figured out, by setting these properties on the node, you can control the initial values of the **Record** when creating it. So let's fill out the properties with some values, for example as below.
 
-![](create-new-record-3.png ':class=img-size-m')
+<div class="ndl-image-with-background">
+
+![](create-new-record-3.png)
+
+</div>
 
 ### Creating The Record
 Actually creating the **Record** is easy. You need to trigger the **Do** input signal on the **Create New Record** node. So lets add a [Button](/nodes/ui-elements/button/) for that purpose. Add it somewhere on your screen. In this example we add it after the **Text** node and center it and change its label.
 
-![](app1.png ':class=img-size-l')
+<div class="ndl-image-with-background l">
+
+![](app1.png)
+
+</div>
 
 Now connect the **Click** output signal from the **Button** to the **Do** signal of the **Create New Record** by dragging from the **Button** to the **Create New Record** node.
 
-![](connecting-1.png ':class=img-size-l')
+<div class="ndl-image-with-background l">
+
+![](connecting-1.png)
+
+</div>
 
 When the two nodes are connected you are ready to try your app. Click the button in the app a couple of times. You should see the **Clicked** to **Do** connection light up. If everything works as expected, a new **Record** should be created in the database each time you click. You can double check it by opening the **Dashboard** and look in your **Class**. Note: You may have to click the **Refresh** button in the **Dashboard** to see the items.
 
-![](create-record.gif ':class=img-size-l')
+<div class="ndl-image-with-background l">
 
-![](dashboard-1.png ':class=img-size-l')
+![](create-record.gif)
+
+![](dashboard-1.png)
+
+</div>
 
 ## Retrieving the id of the newly created Record
 As you can see, the **Create New Record** node is kind of a **Record** creating factory. Each time **Do** is triggered a new **Record** is created. So how do you keep track of them?
@@ -67,16 +92,24 @@ Lets connect the output **Id** of the **Create New Record** node to a **String**
 
 The **Id** is a special property of the **Record**. You will first notice that the **Id** of the newly created **Record** matches the **objectId** in the **Dashboard**.
 
-![](inspect-id.png ':class=img-size-l')
+<div class="ndl-image-with-background l">
 
-![](inspect-2.png ':class=img-size-l')
+![](inspect-id.png)
+
+![](inspect-2.png)
+
+</div>
 
 The **Id** is used to refer to this specific **Record**. For example, if you want to change a property of a specific **Record** you use a [Set Record Properties](/nodes/data/cloud-data/set-record-properties/) node and make sure it's **Id** is referring to the correct **Record**. Same goes for the [Record](/nodes/data/cloud-data/record/) node or the [Delete Record](/nodes/data/cloud-data/remove-record/). So keeping track of you **Ids** is important.
 
 ## Setting initial values of a Record
 Now lets add some UI so each new Task **Record** can have a different task text, and can have `isDone` set to `true` or `false`. Add a [Text Input](/nodes/ui-elements/text-input/) and a [Checkbox](/nodes/ui-elements/checkbox/) and connect them to the `Create New Record` node. As you can see, the two properties coming from the **Columns** of the **Class** are available as inputs on the **Create New Record** node.
 
-![](initial-props.png ':class=img-size-l')
+<div class="ndl-image-with-background l">
+
+![](initial-props.png)
+
+</div>
 
 Try out your app, write some random task descriptions and check / uncheck. See that it works correctly by looking at the data in your **Dashboard**.
 
