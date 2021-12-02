@@ -8,7 +8,7 @@ Margins are the spacings around the node, outside of the borders. The margins fo
 
 <div class="ndl-image-with-background">
 
-![](margin-only.png)
+![](margin.png)
 
 </div>
 
@@ -25,7 +25,7 @@ Paddings are the spacings around the nodes content, inside of the borders. The m
 
 <div class="ndl-image-with-background">
 
-![](margin-only.png)
+![](padding.png)
 
 </div>
 
@@ -42,7 +42,7 @@ To specify how the node is aligned to its parent you can use the Alignment Gadge
 
 <div class="ndl-image-with-background">
 
-![](align-props.png)
+![](alignment.png)
 
 </div>
 
@@ -63,7 +63,7 @@ Controling the width and height of the node is done with the Dimension Gadget.
 
 <div class="ndl-image-with-background">
 
-![](dims-1.png)
+![](dimensions.png)
 
 </div>
 
@@ -89,6 +89,12 @@ You can use the [Dimension Contstraints Gadget](#dimension-constraints) to set a
 ## Layout
 
 The supported properties of the Layout Gadget can be very different depending on the node. All possible properties are listed below.
+
+<div class="ndl-image-with-background">
+
+![](layout.png)
+
+</div>
 
 ### • Position
 
@@ -132,7 +138,7 @@ This Gadget controls how children are aligned and justified by default. Children
 
 <div class="ndl-image-with-background">
 
-![](group-align-and-justify.png)
+![](align_and_justify.png)
 
 </div>
 
@@ -158,6 +164,12 @@ The second set of options control alignment in the same direction as the layout.
 ## Scroll
 
 This Gadget controls how scrolling should be handled within the node.
+
+<div class="ndl-image-with-background">
+
+![](scroll.png)
+
+</div>
 
 | Data                                        | Description                                                                                                                                                                                                                                              |
 | ------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -187,6 +199,12 @@ This Gadget controls how scrolling should be handled within the node.
 
 This Gadget controls basic styling of the node.
 
+<div class="ndl-image-with-background">
+
+![](style.png)
+
+</div>
+
 | Data                                           | Description                                                                                                                                                                                                                                                                                            |
 | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | <span class="ndl-data">Opacity</span>          | The opacity of the node. 0 is completely transparent and invisible. 1 is completely solid and opaque.                                                                                                                                                                                                  |
@@ -198,6 +216,12 @@ This Gadget controls basic styling of the node.
 ## Border Style
 
 The Border Style Gadget is used to style the borders.
+
+<div class="ndl-image-with-background">
+
+![](border_style.png)
+
+</div>
 
 You can select to style all borders at once, or only style individual borders. The styling for the individual borders will override the all-borders option.
 
@@ -211,6 +235,12 @@ You can select to style all borders at once, or only style individual borders. T
 
 The Corner Radius Gadget is used to round the corners of the node.
 
+<div class="ndl-image-with-background">
+
+![](corner_radius.png)
+
+</div>
+
 You can select to set the corner radius all corners at once, or only style individual corners. The styling for the individual corners will override the all-corners option.
 
 The corner radius is specified in `px` or `%` of the nodes width.
@@ -218,6 +248,12 @@ The corner radius is specified in `px` or `%` of the nodes width.
 ## Box Shadow
 
 You use the Box Shadow Gadget to set the shadow behind or inside of the node.
+
+<div class="ndl-image-with-background">
+
+![](box_shadow.png)
+
+</div>
 
 | Data                                         | Description                                                                                                                                                         |
 | -------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -233,6 +269,12 @@ You use the Box Shadow Gadget to set the shadow behind or inside of the node.
 
 The Placement Gadget lets you offset, rotate and scale the node. It uses CSS Transforms under the hood, meaning that the nod will still take up the original size and position in the visual tree.
 
+<div class="ndl-image-with-background">
+
+![](placement.png)
+
+</div>
+
 | Data                                             | Description                                                                                                                                                                                                                                              |
 | ------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <span class="ndl-data">Pos X</span>              | The X position of the node. Either relative to its parent top left corner or relative to its layout position depending on the _Position_ property. Can be specified in pixels or as a percentage of its parent's width.                                  |
@@ -245,6 +287,12 @@ The Placement Gadget lets you offset, rotate and scale the node. It uses CSS Tra
 ## Dimension Constraints
 
 The Dimension Constraints Gadget allows you to clamp the values of the [Dimensions Gadget](#dimensions).
+
+<div class="ndl-image-with-background">
+
+![](dimension_constraints.png)
+
+</div>
 
 | Data                                     | Description                                                                                                                                               |
 | ---------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
