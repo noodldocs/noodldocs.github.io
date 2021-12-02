@@ -25,6 +25,7 @@
   - [Creating a Class](guides/working-with-data/cloud-data/creating-class/)
   - [Creating new database entries](guides/working-with-data/cloud-data/creating-records/)
   - [Querying Records from database](guides/working-with-data/cloud-data/querying-records/)
+  - [Updating Records](guides/working-with-data/cloud-data/updating-records/)
 - [Working With Local Data]()
 
 * [Layout](guides/layouts.md)
