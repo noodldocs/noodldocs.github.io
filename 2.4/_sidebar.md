@@ -24,6 +24,7 @@
   - [Creating a Backend](guides/working-with-data/cloud-data/creating-backend/)
   - [Creating a Class](guides/working-with-data/cloud-data/creating-class/)
   - [Creating new database entries](guides/working-with-data/cloud-data/creating-records/)
+  - [Querying Records from database](guides/working-with-data/cloud-data/querying-records/)
 - [Working With Local Data]()
 
 * [Layout](guides/layouts.md)
