@@ -1,0 +1,88 @@
+# Filtering Database Queries
+
+## What you will learn in this guide
+
+In this guide you will learn how to let your database make a filtered query of your **Records**. This is a very common task in apps. For example if you want to see all comments related only to one specific post, or all messages that are unread. This is achieved by querying the database and ask it to filter out only the selected results.
+
+In Noodl you use the [Query Records](/nodes/data/cloud-data/query-records/) node to make a filtered query.
+
+## Overview
+
+We will go through the following steps in this guide
+
+* Query the Database for **Records** with a property equal to a specified value
+* Make a dynamic filter, i.e. where the Qurey filter can change dynamically
+
+To get most out of this guide, it's best that you are already familiar with how to set up a cloud backend, create **Classes** and **Records** and make basic queries. You can quickly learn that by going through the following guides:
+
+* [Creating a Backend](/guides/working-with-data/cloud-data/creating-backend/)
+* [Creating a Class](/guides/working-with-data/cloud-data/creating-class/)
+* [Creating Records](/guides/working-with-data/cloud-data/creating-records/)
+* [Query Records](/guides/working-with-data/cloud-data/querying-records/)
+* [Update Records](/guides/working-with-data/cloud-data/updating-records/)
+
+## Filtering Records in the Cloud vs Locally
+This guide is focusing in on filtering Queries in the Cloud Database. This means that **Records** and filtered before they are sent to your app over the network. This is what the [Query Records](/nodes/data/cloud-data/query-records/) node does.
+
+There is also another node, [Filter Records](/nodes/data/cloud-data/filter-records/), that filters data _that is already in the app_, i.e. it filters locally.
+
+Both of these have their advantages and disadvantages and in a good app you often mix them.
+
+Filtering in a Query in the Database (using **Query Records**) have the following advantages
+* You only send the filtered out **Records** over the network. This is incredibly important if you are working with large data sets. If you have thousands of products in a database, you only want to send the products that the user is searching for or your app will be slow.
+
+* You can make use of optimized indexes in the Database if you for example are sorting or filtering out only certain objects. Again, if you work with large data sets with thousands or millions of **Records** this is key to make your app fast.
+
+Filtering a Query locally (using **Filter Records**) have these main advantages
+* Once the **Records** are in the app, you don't need to send **Records** over the network which makes your app much faster.
+
+* If you have many users of your app, by not Querying the Cloud Database, you put less stress on it.
+
+Often, the most optimal solution is to combine the two methods. Make a Filtered Query towards the database that filters down the amount of **Records** to be sent to the app to a reasonable number, then use **Filter Records** for additional filtering and sorting locally.
+
+In this guide, we will specifically look at filtering using the **Query Records** node. The **Filter Records** node works in a very similar fashion but only works on **Arrays** of **Records** that are already in the App, typically coming from a **Query Records** node.
+
+## Using the Query Records node for filtering
+This guide assumes that you already have a Backend up and running, with at least one Class containing a number of **Records**. You can follow the previous "Working With Cloud Data" guides if you need help with that. As an example we will use a simple Task app created in the previous guides. It has one **Class** called `Task`. It has two properties, `task` which is a description of the task, and `isDone` a boolean that keeps track of if the task is completed or not.
+
+![](../updating-records/checkbox-anim.gif ':class=img-size-l')
+
+The App consists of a main screen as below:
+
+![](../updating-records/orig-app.png ':class=img-size-l')
+
+Each todo **Record** is represented by a list item constructed as below:
+
+![](../updating-records/list-item-2.png ':class=img-size-l')
+
+Now we want to add a filter to only see the uncompleted tasks. Click on the **Query Records** node in the main screen. Then click the `Add Filter Rule` button.
+
+![](add-filter-rule-1.png ':class=img-size-m')
+
+A new popup will appear where you can construct your filter. Feel free to play around a little with it.
+
+![](add-filter-rule-2.png ':class=img-size-m')
+
+It basically has three parts:
+
+``<property> <operator> <value or input>``
+
+The `<property>` is a property of your **Record**, for example `isDone` in our Task example.
+
+The `<operator>` is a logical operator for the condition. There are a number of different operators and not all operators are available for all types of properties.
+For the case of `isDone` - a **boolean** there are for operators available: `equal to`, `not equal to`, `exists` and `not exists`. While the `equal to` / `not equal to` are pretty self explanatory, the  `exists` / `not exists` operators work in the following way: They check whether there is a value set at all for the property, or if it's undefined.
+
+Finally the `<value or input>` is the value that the operator should be applied to. The `<input>` option we will look at later, so let's use `<value>` for now.
+
+In our case we want to filter out only the tasks that are not yet completed, i.e with `isDone = false`. So our filter will be:
+
+``<isDone> <equal to> <false>``
+
+Let's select that. You can see that the somewhat cryptic format of the filter is spelled out in natural language below the filter.
+
+![](add-filter-rule-3.png ':class=img-size-m')
+
+You should already now see the list in your app changing to only show tasks that are uncompleted (if you have any). If you check the tasks they will start disappearing one by one as they are being filtered out. If you want them back, you will have to go into the **Dashboard** and change the `isDone` value to false again, and refresh your app.
+
+![](completing-tasks.gif ':class=img-size-l')
+
