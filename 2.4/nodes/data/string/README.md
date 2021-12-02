@@ -1,5 +1,5 @@
-
 <##head##>
+
 # String
 
 This node contains a <span class="ndl-data">string</span> value (text). It can be provided with static data or be dynamically set from other nodes. The <span class="ndl-node">String</span> node is often used to convert other data types to a <span class="ndl-data">string</span> or to hold string values.
@@ -32,23 +32,21 @@ You can also use the **Set** input to control when the value of the variable nod
 
 ## Inputs
 
-**Value**
-The value to store in the node. The output value will equal this value, unless _Set_
-is connected, then the value will be passed to the output when a signal is sent to _Set_.
+| Data                                | Description                                                                                                                                                                    |
+| ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| <span class="ndl-data">Value</span> | The value to store in the node. The output value will equal this value, unless _Set_ is connected, then the value will be passed to the output when a signal is sent to _Set_. |
 
-**Set**
-This is used to only update the output when a signal is sent. This will allow you to freeze
-the stored value and only allow it to update under certain conditions, e.g. on a Tap.
+| Signal                              | Description                                                                                                                                                                           |
+| ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <span class="ndl-signal">Set</span> | This is used to only update the output when a signal is received. This will allow you to freeze the stored value and only allow it to update under certain conditions, e.g. on a Tap. |
 
 ## Outputs
 
-**Value**
-The string (text) stored in the node.
+| Data                                 | Description                                                                                   |
+| ------------------------------------ | --------------------------------------------------------------------------------------------- |
+| <span class="ndl-data">Value</span>  | The string (text) stored in the node.                                                         |
+| <span class="ndl-data">Length</span> | The length of the string (text) stored in the node, i.e. the number of characters and spaces. |
 
-**Length**
-The length of the string (text) stored in the node, i.e. the number of characters and spaces.
-
-**Stored**
-A signal send when the value is updated via the _Set_ input.
-
-</div>
+| Signal                                 | Description                                                             |
+| -------------------------------------- | ----------------------------------------------------------------------- |
+| <span class="ndl-signal">Stored</span> | This port sends a signal when the value is updated via the _Set_ input. |

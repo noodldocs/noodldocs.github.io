@@ -14,16 +14,20 @@ You can connect the <span class="ndl-node">Boolean</span> node to a <span class=
 
 ## Inputs
 
-**Value**
-The value to store in the node. The output value will equal this value, unless _Set_ is connected, then it will be updated when **Set** receives a signal.
+| Data                                | Description                                                                                                                                                |
+| ----------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <span class="ndl-data">Value</span> | The value to store in the node. The output value will equal this value, unless _Set_ is connected, then it will be updated when **Set** receives a signal. |
 
-**Set**
-This is used to only update the output when _Save Value_ is set to true. This will allow you to freeze the stored value and only allow it to update under certain conditions, e.g. on a Tap.
+| Signal                              | Description                                                                                                                                                                                  |
+| ----------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <span class="ndl-signal">Set</span> | This is used to only update the output when _Save Value_ is set to true. This will allow you to freeze the stored value and only allow it to update under certain conditions, e.g. on a Tap. |
 
 ## Outputs
 
-**Value**
-The boolean stored in the node
+| Data                                | Description                    |
+| ----------------------------------- | ------------------------------ |
+| <span class="ndl-data">Value</span> | The boolean stored in the node |
 
-**Stored**
-A signal when the value is stored via the _Set_ input signal.
+| Signal                                 | Description                                                                   |
+| -------------------------------------- | ----------------------------------------------------------------------------- |
+| <span class="ndl-signal">Stored</span> | This port sends a signal when the value is stored via the _Set_ input signal. |

@@ -1,4 +1,5 @@
 <##head##>
+
 # Cloud File
 
 Represents a file that has been uploaded to the Noodl Cloud Services and stored as a file property in a **Record**.
@@ -12,13 +13,13 @@ Represents a file that has been uploaded to the Noodl Cloud Services and stored 
 
 ## Inputs
 
-**Cloud File**  
-<##input:cloud file##>A file that has been stored in the Noodl Cloud Services. Often used in combination with a **Record** to retrieve the **Name** and **URL** of a file.<##input##>
+| Data                                     | Description                                                                                                                                                                           |
+| ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <span class="ndl-data">Cloud File</span> | <##input:cloud file##>A file that has been stored in the Noodl Cloud Services. Often used in combination with a **Record** to retrieve the **Name** and **URL** of a file.<##input##> |
 
 ## Outputs
 
-**URL**  
-<##output:url##>The URL of the file.<##output##>
-
-**Name**  
-<##output:name##>The Name of the file.<##output##>
+| Data                               | Description                                        |
+| ---------------------------------- | -------------------------------------------------- |
+| <span class="ndl-data">URL</span>  | <##output:url##>The URL of the file.<##output##>   |
+| <span class="ndl-data">Name</span> | <##output:name##>The Name of the file.<##output##> |

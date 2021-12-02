@@ -14,13 +14,16 @@ You can provide any number of properties with values for your new Object. When t
 
 [filename](../properties.md ':include')
 
-**Do**
-<##input:do##>Send a signal in this input to create the new Object with the provided properties.<##input##>
+| Signal                             | Description                                                                                                 |
+| ---------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| <span class="ndl-signal">Do</span> | <##input:do##>Send a signal in this input to create the new Object with the provided properties.<##input##> |
 
 ## Outputs
 
-**Done**
-<##output:done##>A signal is sent on this output when the Object have been created.<##output##>
+| Data                             | Description                                                                                                                          |
+| -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| <span class="ndl-data">Id</span> | <##output:id##>The **Id** of the newly created object, this output is valid only when the **Done** signal has been sent.<##output##> |
 
-**Id**
-<##output:id##>The **Id** of the newly created object, this output is valid only when the **Done** signal has been sent.<##output##>
+| Signal                               | Description                                                                                     |
+| ------------------------------------ | ----------------------------------------------------------------------------------------------- |
+| <span class="ndl-signal">Done</span> | <##output:done##>A signal is sent on this output when the Object have been created.<##output##> |

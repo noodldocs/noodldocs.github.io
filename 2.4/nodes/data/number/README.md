@@ -14,16 +14,20 @@ You can also use the <span class="ndl-node">Number</span> node connected to a <s
 
 ## Inputs
 
-**Value**
-The value to store in the node. The output value will equal this value, unless _Set_ is connected, then the value will be updated when a signal is received at the _Set_ input.
+| Data                                | Description                                                                                                                                                                     |
+| ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <span class="ndl-data">Value</span> | The value to store in the node. The output value will equal this value, unless _Set_ is connected, then the value will be updated when a signal is received at the _Set_ input. |
 
-**Set**
-This is used to only update the output when a signal is sent to _Set_.
+| Signal                              | Description                                                            |
+| ----------------------------------- | ---------------------------------------------------------------------- |
+| <span class="ndl-signal">Set</span> | This is used to only update the output when a signal is sent to _Set_. |
 
 ## Outputs
 
-**Value**
-The number stored in the node
+| Data                                | Description                   |
+| ----------------------------------- | ----------------------------- |
+| <span class="ndl-data">Value</span> | The number stored in the node |
 
-**Stored**
-A signal is outputted here when the value is updated as a result of the _Set_ signal being received.
+| Signal                                 | Description                                                                                          |
+| -------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| <span class="ndl-signal">Stored</span> | A signal is outputted here when the value is updated as a result of the _Set_ signal being received. |

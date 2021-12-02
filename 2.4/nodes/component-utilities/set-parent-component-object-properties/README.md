@@ -10,14 +10,16 @@ With this node you can set properties on the closed parent **Component Object**.
 
 ## Inputs
 
-**Do**
-<##input:do##>Stores any properties that are typed in the property panel or connected. All **Component Object** nodes in the same component, as well as any [Parent Component Object](/nodes/component-utilities/parent-component-object/) nodes, will be updated. <##input##>
+| Signal                             | Description                                                                                                                                                                                                                                                                    |
+| ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| <span class="ndl-signal">Do</span> | <##input:do##>Stores any properties that are typed in the property panel or connected. All **Component Object** nodes in the same component, as well as any [Parent Component Object](/nodes/component-utilities/parent-component-object/) nodes, will be updated. <##input##> |
 
-### Properties
-
-<##input:prop-\*##>A property to set in the **Component Object**. You can list the properties you want to set in the property panel.<##input##>
+| Data                                            | Description                                                                                                                                     |
+| ----------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| <span class="ndl-data">Custom Properties</span> | <##input:prop-\*##>A property to set in the **Component Object**. You can list the properties you want to set in the property panel.<##input##> |
 
 ## Outputs
 
-**Done**
-<##output:done##>An event is triggered on this output when the set action is completed.<##output##>
+| Signal                               | Description                                                                                    |
+| ------------------------------------ | ---------------------------------------------------------------------------------------------- |
+| <span class="ndl-signal">Done</span> | <##output:done##>A signal is sent on this output when the set action is completed.<##output##> |

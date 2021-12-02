@@ -48,19 +48,17 @@ Normally the script is run when any of the inputs change, i.e. receive new data 
 
 ## Inputs
 
-### Script Inputs
+| Data                                         | Description                                                                                                                                                                                         |
+| -------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <span class="ndl-data">Script Inputs</span>  | Here you can list inputs to the function and specify types for the inputs as described above. For each input specified or simply used in the function code an input to the node will be created.    |
+| <span class="ndl-data">Script Outputs</span> | Here you can list outputs to the function and specify types for the outputs as described above. For each output specified or simply used in the function code an input to the node will be created. |
 
-Here you can list inputs to the function and specify types for the inputs as described above. For each input specified or simply used in the function code an input to the node will be created.
-
-### Script Oputputs
-
-Here you can list outputs to the function and specify types for the outputs as described above. For each output specified or simply used in the function code an input to the node will be created.
-
-### Actions
-
-**Run**
-Send a signal here to run the function. If this input has a connection the function script will not run when inputs are changed.
+| Signal                              | Description                                                                                                                      |
+| ----------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| <span class="ndl-signal">Run</span> | Send a signal here to run the function. If this input has a connection the function script will not run when inputs are changed. |
 
 ## Outputs
 
-The outputs from the function script.
+| Data                                  | Description                                 |
+| ------------------------------------- | ------------------------------------------- |
+| <span class="ndl-data">Outputs</span> | The outputs defined in the function script. |

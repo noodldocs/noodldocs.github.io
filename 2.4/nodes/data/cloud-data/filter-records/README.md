@@ -1,5 +1,7 @@
 <##head##>
+
 # Filter Record
+
 This node is used to filter an <span class="ndl-data">array</span> that is assumed to contain Records of a given class based on custom filter conditions.
 
 ![](./filter-records-node.png ':class=img-size-l')
@@ -11,42 +13,28 @@ You can specify both filter and sorting visually.
 
 ## Inputs
 
-**Enabled**
-<##input:enabled##>If disabled the node will simply pass the input array through without change, if enabled the input array will be filtered and sorted.<##input##>
+| Data                                                  | Description                                                                                                                                                         |
+| ----------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <span class="ndl-data">Enabled</span>                 | <##input:enabled##>If disabled the node will simply pass the input array through without change, if enabled the input array will be filtered and sorted.<##input##> |
+| <span class="ndl-data">Class</span>                   | The **Class** of records that the input array is assumed to contain.                                                                                                |
+| <span class="ndl-data">Use Limit</span>               | <##input:use limit##>Enabled or disable limiting of the input array to a specific number of maximum records.<##input##>                                             |
+| <span class="ndl-data">Limit</span>                   | <##input:limit##>The number of maximum records to limit the output filtered array to contain.<##input##>                                                            |
+| <span class="ndl-data">Skip</span>                    | <##input:skip##>The number of records in the beginning of the output filtered array to skip.<##input##>                                                             |
+| <span class="ndl-data">Items</span>                   | <##input:items##>The input array of records that should be filtered by this node.<##input##>                                                                        |
+| <span class="ndl-data">Filter Parameter Inputs</span> | <##input:fp-\*##>Each filter parameter get an input where a connection can be made to provide the value for the paramter.<##input##>                                |
 
-**Class**
-The **Class** of records that the input array is assumed to contain.
-
-**Use Limit**
-<##input:use limit##>Enabled or disable limiting of the input array to a specific number of maximum records.<##input##>
-
-**Limit**
-<##input:limit##>The number of maximum records to limit the output filtered array to contain.<##input##>
-
-**Skip**
-<##input:skip##>The number of records in the beginning of the output filtered array to skip.<##input##>
-
-**Items**
-<##input:items##>The input array of records that should be filtered by this node.<##input##>
-
-**Filter**
-<##input:filter##>Send a signal on this input to perform the filtering, this will produce a new filtered array on the **Items** output. If this input does not have a connection, the input array will be filtered every time it is updated.<##input##>
-
-## Filter parameter inputs
-<##input:fp-*##>Each filter parameter get an input where a connection can be made to provide the value for the paramter.<##input##>
-
+| Signal                                 | Description                                                                                                                                                                                                                                             |
+| -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <span class="ndl-signal">Filter</span> | <##input:filter##>Send a signal on this input to perform the filtering, this will produce a new filtered array on the **Items** output. If this input does not have a connection, the input array will be filtered every time it is updated.<##input##> |
 
 ## Outputs
 
-**Items**
-<##output:items##>This output will contain the filtered array of records.<##output##>
+| Data                                          | Description                                                                                          |
+| --------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| <span class="ndl-data">Items</span>           | <##output:items##>This output will contain the filtered array of records.<##output##>                |
+| <span class="ndl-data">Count</span>           | <##output:count##>The number of records in the filtered output array.<##output##>                    |
+| <span class="ndl-data">First Record Id</span> | <##output:first record id##>The **Id** of the first record in the filtered output array.<##output##> |
 
-**Filtered**
-<##output:filtered##>A signal will be sent on this output when the input array have been successfully filtered.<##output##>
-
-**Count**
-<##output:count##>The number of records in the filtered output array.<##output##>
-
-**First Record Id**
-<##output:first record id##>The **Id** of the first record in the filtered output array.<##output##>
-
+| Signal                                   | Description                                                                                                                 |
+| ---------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| <span class="ndl-signal">Filtered</span> | <##output:filtered##>A signal will be sent on this output when the input array have been successfully filtered.<##output##> |

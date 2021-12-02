@@ -13,29 +13,24 @@ The node is used much like an [Object](/nodes/data/object/object/) where you can
 
 ### Properties
 
-<##input:value-\*##>The properties to set on the closest parent [Component Object](/nodes/component-utilities/component-object/). When this input is changed via a connection the parent **Component Object** will be updated.<##input##>
+| Data                                     | Description                                                                                                                                                                                                                               |
+| ---------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <span class="ndl-data">Properties</span> | <##input:value-\*##>The properties to set on the closest parent [Component Object](/nodes/component-utilities/component-object/). When this input is changed via a connection the parent **Component Object** will be updated.<##input##> |
 
-### Actions
-
-**Fetch**
-<##input:fetch##>Normally when a **Parent Component State** is created, the property outputs are immediately updated. If you want to control how the data is updated you can connect to the _Fetch_ signal input. Then you need to explictly send a signal to fetch the data.<##input##>
-
-With **Fetch** connected the output data won't change until **Fetch** is explicitly triggered again.
+| Signal                                | Description                                                                                                                                                                                                                                                                                                                                                                                            |
+| ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| <span class="ndl-signal">Fetch</span> | <##input:fetch##>Normally when a **Parent Component State** is created, the property outputs are immediately updated. If you want to control how the data is updated you can connect to the _Fetch_ signal input. Then you need to explictly send a signal to fetch the data.<##input##><br/><br/>With **Fetch** connected the output data won't change until **Fetch** is explicitly triggered again. |
 
 ## Outputs
 
 ### Properties
 
-<##output:value-\*##>The values of the properties of the closest parent [Component Object](/nodes/component-utilities/component-object/).<##output##>
+| Data                                            | Description                                                                                                                                           |
+| ----------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <span class="ndl-data">Parent Properties</span> | <##output:value-\*##>The values of the properties of the closest parent [Component Object](/nodes/component-utilities/component-object/).<##output##> |
 
-### Events
-
-**Changed**
-<##output:changed##>This event is triggered when any of the properties have changed.<##output##>
-
-**Fetched**
-<##output:fetched##>Signal when this node has bound itself to a [Component Object](/nodes/componentutils/component-object.md). Triggers immediately if the **Fetch** inputs isn't connected, and will otherwise trigger when the **Fetch** input is signaled.<##output##>
-
-### Changed signals
-
-<##output:changed-\*##>One changed event output will be created for every property. They will emit a signal when the property changes value.<##output##>
+| Signal                                                   | Description                                                                                                                                                                                                                                                               |
+| -------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <span class="ndl-signal">Changed</span>                  | <##output:changed##>This event is triggered when any of the properties have changed.<##output##>                                                                                                                                                                          |
+| <span class="ndl-signal">Fetched</span>                  | <##output:fetched##>Signal when this node has bound itself to a [Component Object](/nodes/componentutils/component-object.md). Triggers immediately if the **Fetch** inputs isn't connected, and will otherwise trigger when the **Fetch** input is signaled.<##output##> |
+| <span class="ndl-signal">Changed Property Signals</span> | <##output:changed-\*##>One changed signal output will be created for every property. They will emit a signal when the property changes value.<##output##>                                                                                                                 |

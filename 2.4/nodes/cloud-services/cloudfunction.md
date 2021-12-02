@@ -1,4 +1,5 @@
 <##head##>
+
 # Cloud Function
 
 This node is used to make calls to backend cloud functions. To use cloud functions you need to have an external [Parse](https://parseplatform.org) backend up and running and have attached cloud functions.
@@ -18,33 +19,25 @@ The only exception is if the returned array is an array of Javascript primitives
 
 ![](cloudfunction-result-example.png ':class=img-size-l')
 <##head##>
+
 ## Inputs
 
-### General
+| Data                                            | Description                                                                                                                                      |
+| ----------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| <span class="ndl-data">Function Name</span>     | <##input:functionName##>The name of the cloud function to call.<##input##>                                                                       |
+| <span class="ndl-data">Custom Parameters</span> | <##input:pm-\*##>A parameter that will be passed to the function. Any parameters you add will become available as inputs on the node.<##input##> |
 
-**Function Name**  
-<##input:functionName##>The name of the cloud function to call.<##input##>
-
-### Actions
-
-**Call**  
-<##input:call##>Send a signal on this input to issue the request to the backend.<##input##>
-
-### Parameters
-<##input:pm-*##>A parameter that will be passed to the function. Any parameters you add will become available as inputs on the node.<##input##>
+| Signal                               | Description                                                                                 |
+| ------------------------------------ | ------------------------------------------------------------------------------------------- |
+| <span class="ndl-signal">Call</span> | <##input:call##>Send a signal on this input to issue the request to the backend.<##input##> |
 
 ## Outputs
 
-### Output
+| Data                                 | Description                                                                                                                                                                                                                                                                                                                |
+| ------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <span class="ndl-data">Result</span> | <##output:result##>This output will contain the result that the **Cloud Function** returns upon completion. Depending on the type returned from the function this will either be a [Noodl.Object](/javascript-api/noodl-object.md), [Noodl.Array](/javascript-api/noodl-array.md) or a simple javascript type.<##output##> |
 
-**Result**  
-<##output:result##>This output will contain the result that the **Cloud Function** returns upon completion. Depending on the type returned from the function this will either be a [Noodl.Object](/javascript-api/noodl-object.md), [Noodl.Array](/javascript-api/noodl-array.md) or a simple javascript type.<##output##>
-
-### Signals
-
-**Success**  
-<##output:success##>This is sent if the function returns a success code and a result object.<##output##>
-
-**Failure**  
-<##output:failure##>This is sent if the function returns a fail code.<##output##>
-
+| Signal                                  | Description                                                                                              |
+| --------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| <span class="ndl-signal">Success</span> | <##output:success##>This is sent if the function returns a success code and a result object.<##output##> |
+| <span class="ndl-signal">Failure</span> | <##output:failure##>This is sent if the function returns a fail code.<##output##>                        |

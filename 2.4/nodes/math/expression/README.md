@@ -10,29 +10,6 @@ The <span class="ndl-node">Expression</span> node runs JavaScript under the hood
 
 <##head##>
 
-<div class = "node-inputs">
-
-## Inputs
-
-Inputs are automatically derived from the expression. An expression set to `a + someName + 1` will
-get two inputs, one for `a` and one for `someName`.
-
-As soon as any of the input values changes, the expression is reevaluated.
-
-**Expression**
-The expression to be calculated.
-
-</div>
-
-<div class = "node-outputs">
-
-## Outputs
-
-**Result**
-<##output:result##>This output contains the result when evaluating the expression<##output##>
-
-</div>
-
 ## Built in math functions
 
 Expressions support the following funcitons:
@@ -55,3 +32,16 @@ Expressions support the following funcitons:
 The _Expression_ node is running Javascript under the hood so in addition to the above functions any standard
 Javascript functions will also be valid. The _Expression_ node will add a `return` statement before the
 expression is executed. `1+2` will be evaluated as `return (1+2)`
+
+## Inputs
+
+| Data                                     | Description                                                                                                                                                                                                                                |
+| ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| <span class="ndl-data">Inputs</span>     | Inputs are automatically derived from the expression. An expression set to `a + someName + 1` will get two inputs, one for `a` and one for `someName`.<br/><br/>As soon as any of the input values changes, the expression is reevaluated. |
+| <span class="ndl-data">Expression</span> | The expression to be calculated.                                                                                                                                                                                                           |
+
+## Outputs
+
+| Data                                 | Description                                                                                   |
+| ------------------------------------ | --------------------------------------------------------------------------------------------- |
+| <span class="ndl-data">Result</span> | <##output:result##>This output contains the result when evaluating the expression<##output##> |

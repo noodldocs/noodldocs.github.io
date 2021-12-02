@@ -1,5 +1,7 @@
 <##head##>
+
 # Static Array
+
 Store static data to populate an [Array](nodes/data/array/array/) with items. The Static Array node is great for providing static local data for lists etc. You can use it e.g. as an input to a **For Each** node.
 
 ![](static-array-1.png ':class=img-size-m')
@@ -8,13 +10,13 @@ You can provide the data in either **CSV** format or, **JSON** format. The **ite
 <##head##>
 
 ## Inputs
-**Type**  
-Choose what format the data will be in.
 
-* **CSV** - Comma-separated values
-* **JSON** - Javascript Object Notation
+| Data                               | Description                                                                                                           |
+| ---------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| <span class="ndl-data">Type</span> | Choose what format the data will be in.<br/><br/>`CSV`: Comma-separated values<br/>`JSON`: JavaScript Object Notation |
 
-**CSV**  
+### CSV
+
 The first row defines the name of all properties. Subsequent rows defines the data values.
 Example:
 
@@ -23,7 +25,8 @@ Example:
     Office Lamp,/lamps/2
     Office Lamp 2,/lamps/4
 
-**JSON**  
+### JSON
+
 Define the name of the properties, and the data, using a JSON array.
 Example:
 
@@ -44,6 +47,6 @@ Example:
 
 ## Outputs
 
-**Items**
-<##output:items##>A `Noodl.Array` object that can be connected to e.g. an [Array](nodes/data/array/array/), [Javascript](guides/javascript.md) or [For Each](nodes/data/for-each.md).<##output##>
-
+| Data                                | Description                                                                                                                                                                                       |
+| ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <span class="ndl-data">Items</span> | <##output:items##>A `Noodl.Array` object that can be connected to e.g. an [Array](nodes/data/array/array/), [Javascript](guides/javascript.md) or [For Each](nodes/data/for-each.md).<##output##> |

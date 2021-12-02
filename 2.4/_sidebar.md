@@ -202,6 +202,7 @@
 
 * [Array](/nodes/data/array/array/)
 * [Create New Array](/nodes/data/array/create-new-array/)
+* [Clear Array](/nodes/data/array/clear-array/)
 * [Remove Object From Array](/nodes/data/array/remove-from-array/)
 * [Insert Object Into Array](/nodes/data/array/insert-into-array/)
 * [Array Filter](/nodes/data/array/array-filter/)
@@ -218,7 +219,6 @@
 * [Filter Records](nodes/data/cloud-data/filter-records/)
 * [Set Record Properties](nodes/data/cloud-data/set-record-properties/)
 * [Query Records](nodes/data/cloud-data/query-records/)
-* [Add Record Relation](nodes/data/cloud-data/add-record-relation/)
 * [Add Record Relation](nodes/data/cloud-data/add-record-relation/)
 * [Remove Record Relation](nodes/data/cloud-data/remove-record-relation/)
 * [Cloud File](nodes/cloud-services/cloud-file.md)

@@ -1,31 +1,26 @@
 <##head##>
+
 # Remove Object From Array
-This node is used to remove an *Object* from an *Array*. Both the Array and the Object are referred to through their *Id*. The removal happens when the *Do* action is triggered.
-If the *Object* to be removed is not in the array, nothing will happen.
+
+This node is used to remove an _Object_ from an _Array_. Both the Array and the Object are referred to through their _Id_. The removal happens when the _Do_ action is triggered.
+If the _Object_ to be removed is not in the array, nothing will happen.
 
 ![](remove-object-from-array.png ':class=ndl-image large')
 <##head##>
 
 ## Inputs
 
-### General
-**Array Id**
+| Data                                    | Description                                                                                     |
+| --------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| <span class="ndl-data">Array Id</span>  | <##input:collectionId##>The _Id_ of the Array from which the Object will be removed.<##input##> |
+| <span class="ndl-data">Object Id</span> | <##input:modifyId##>The _Id_ of the Object to remove from the Array.<##input##>                 |
 
-<##input:collectionId##>The *Id* of the Array from which the Object will be removed.<##input##>
-
-### Modify
-**Object Id**
-
-<##input:modifyId##>The *Id* of the Object to remove from the Array.<##input##>
-
-### Actions
-**Do**
-
-<##input:do##>This actions removes the Object with the *Id* set on the input *Object Id* from the Array with the *Id* set on the input *Array Id*.<##input##>
+| Signal                             | Description                                                                                                                                                   |
+| ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <span class="ndl-signal">Do</span> | <##input:do##>This actions removes the Object with the _Id_ set on the input _Object Id_ from the Array with the _Id_ set on the input _Array Id_.<##input##> |
 
 ## Outputs
 
-### Events
-**Done**
-
-<##output:done##>This event is sent when the removal is done.<##output##>
+| Signal                               | Description                                                                |
+| ------------------------------------ | -------------------------------------------------------------------------- |
+| <span class="ndl-signal">Done</span> | <##output:done##>This signal is sent when the removal is done.<##output##> |

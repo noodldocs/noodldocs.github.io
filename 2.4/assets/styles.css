@@ -262,7 +262,7 @@ body .sidebar-toggle span:nth-child(3) {
   border: none;
 }
 
-.markdown-section > *:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) code {
+.markdown-section > *:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6):not(pre) code {
   break-inside: avoid;
   display: inline-block;
   color: var(--theme-black);
