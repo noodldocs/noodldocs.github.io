@@ -1,14 +1,28 @@
-# Importing Modules
+# Modules
 
-You can import modules into your Noodl project that contain additional functionality. These can be public modules, or private modules that you have added to your workspace. See the [extending](/extending/README) guide for more details on private modules.
+The base nodes bundled with Noodl feature all functionality needed to build most apps, but sometimes an app requires a little more. One very powerful feature of Noodl are **modules**. These are small, external node libraries with additional functionality that can be imported into your project. Modules can be downloaded from the public **Noodl Module Repository**, or custom built using the Noodl SDK.
 
-![](modules-1.png ':class=img-size-m')
+## Build your own private modules
 
-To add a module you will first open the **Library panel**, here you can find public modules, private modules and you can also import from your local and cloud projects.
+One of the most powerful features of Noodl is its extendability. Using the Noodl SDK you can build your own nodes as if they where official Noodl nodes. See the [extending](/extending/README) guide for more details on private modules.
 
-When you want to add a module to your workspace you simply click the **Add** button. Modules may add components to your project, and they can add core nodes. To learn how to use a module make sure you check out the documentation by clicking the **Docs** button.
+?>**Sharing is caring**<br/>Really happy with your private module? Do you think it can make someone else happy as well? Feel free to reach out on our [Discord](https://discord.gg/23xU2hYrSJ) or [Forum](https://forum.noodl.net/) and we'll make sure to look for an official place in the Noodl Module Repository for it!
 
-Below you will find a list of the built in Noodl modules:
+## Importing modules
+
+To add a module you will first open the **Library Panel**. Here you can find modues from the Noodl Module Repository and your private modules. You can also import from your local and cloud projects.
+
+<div class="ndl-image-with-background">
+
+![](modules-1.png)
+
+</div>
+
+When you want to add a module to your workspace you simply click the **Add** button. This will download and add the Modules included components or nodes to your projects Node Picker. To learn how to use a module make sure you check out the documentation by clicking the **Docs** button.
+
+## Noodl Module Repository
+
+Below you will find a list of the modules in the Noodl Module Repository:
 
 <table class="modules-table">
     <tr>
@@ -34,7 +48,7 @@ Below you will find a list of the built in Noodl modules:
     <tr>
         <td><img src="/modules/markdown/MarkdownModule.png"></img></td>
         <td><a href="#/modules/markdown/">Markdown</a><br>A module that enables you to use Markdown in Noodl and style it with CSS.</td>
-    </tr>    
+    </tr>
     <tr>
         <td><img src="/modules/mqtt/MQTTModule.png"></img></td>
         <td><a href="#/modules/mqtt/">MQTT Module</a><br>This module contains nodes for sending and receiving messages over MQTT in web apps.</td>
@@ -51,5 +65,5 @@ Below you will find a list of the built in Noodl modules:
         <td><img src="/modules/chartjs/ChartJSModule.png"></img></td>
         <td><a href="#/modules/chartjs/">Chart.js</a><br>A simple and flexible way to do charts and visualizations in Noodl.</td>
     </tr>  -->
-        
+
 </table>
