@@ -2,6 +2,7 @@
 
 - [Introduction](README.md)
 - [Basic concepts](guides/basic-concepts/)
+- [Editor tour](guides/editor-tour/)
 - [Build your first app](tutorials/getting-started.md)
 - [Snippets](snippets/snippets.md)
   - [Pointer Position](snippets/javascript/pointer-position.md)
