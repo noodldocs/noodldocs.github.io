@@ -126,16 +126,16 @@
         },
         plugins: [
           function(hook, vm) {
-            hook.afterEach(function(html, next) {
-              const data = html.match(/&lt;##meta##&gt;\n([\s\S]*?)\n&lt;##meta##&gt;/)[1]
+            hook.beforeEach(function(content) {
+              const data = content.match(/<##meta##>([\s\S]*?)<##meta##>/)[1]
               const txt = document.createElement('textarea');
               txt.innerHTML = '{' + data + '}';
 
               const meta = JSON.parse(txt.value)
 
-              const descriptionElement = document.querySelector('.ndl-head-description').content = meta.description || 'Node based app builder with flexibility, scalability and quick iterations.'
+              console.log(meta);
 
-              next(html)
+              const descriptionElement = document.querySelector('.ndl-head-description').content = meta.description || 'Node based app builder with flexibility, scalability and quick iterations.'
             })
           },
 
