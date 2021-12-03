@@ -273,6 +273,11 @@ body .sidebar-toggle span:nth-child(3) {
   font-weight: 400;
 }
 
+.markdown-section h2 code {
+  font-size: 20px;
+  color: black;
+}
+
 /****** Markdown Table ******/
 .markdown-section table {
   display: table;

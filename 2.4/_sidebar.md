@@ -53,7 +53,7 @@
 
 * JavaScript API
 
-* [Introduction](javascript-api/README.md)
+* [Introduction](javascript-api/)
 * [Array](javascript-api/noodl-array.md)
 * [Events](javascript-api/sending-and-receiving-events.md)
 * [Object](javascript-api/noodl-object.md)
@@ -62,7 +62,7 @@
 
 * Extending
 
-* [Introduction](extending/README.md)
+* [Introduction](extending/)
 * [Simple node](extending/create-lib.md)
 * [React component](extending/create-react-lib.md)
 
@@ -70,7 +70,7 @@
 
 * <h2>Node Reference</h2>
 
-  <!-- - [Nodes](nodes/README.md)-->
+  <!-- - [Nodes](nodes/)-->
 <br/>
 
 * Basic Elements
