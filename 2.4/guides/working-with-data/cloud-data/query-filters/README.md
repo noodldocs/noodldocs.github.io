@@ -36,7 +36,7 @@ Filtering in a Query in the Database (using **Query Records**) have the followin
 Filtering a Query locally (using **Filter Records**) have these main advantages
 * Once the **Records** are in the app, you don't need to send **Records** over the network which makes your app much faster.
 
-* If you have many users of your app, by not Querying the Cloud Database, you put less stress on it.
+* If you have many users of your app your Backend and Database may be congested. By avoiding Querying the Cloud Database too often, for example by handling data locally, you put less stress on it.
 
 Often, the most optimal solution is to combine the two methods. Make a Filtered Query towards the database that filters down the amount of **Records** to be sent to the app to a reasonable number, then use **Filter Records** for additional filtering and sorting locally.
 
@@ -85,4 +85,32 @@ Let's select that. You can see that the somewhat cryptic format of the filter is
 You should already now see the list in your app changing to only show tasks that are uncompleted (if you have any). If you check the tasks they will start disappearing one by one as they are being filtered out. If you want them back, you will have to go into the **Dashboard** and change the `isDone` value to false again, and refresh your app.
 
 ![](completing-tasks.gif ':class=img-size-l')
+
+## Dynamic filtering
+
+The current state of the app is obviously flawed - when you finish all your tasks you see nothing. We need to be able to switch views between the completed and the uncompleted tasks.
+
+Lets add a [Radio Button Group](/nodes/ui-elements/radio-button-group/) with two [Radio Buttons](/nodes/ui-elements/radio-button/). With this, we can control wether we want to show the uncomplete tasks or the completed tasks.
+
+![](radiobutton-1.png ':class=img-size-l')
+
+![](radiobutton-2.png ':class=img-size-m')
+
+Make sure the label for the buttons are set correctly ("Show Uncompleted"/"Show Completed") and that their value is set to "Uncompleted"/"Completed" respectively. Also, the **Value** of the **Radio Button Group** should be "Uncompleted". That will be the default state. We will use the **Value** output of the **Radio Button Group** to control the filter settings of the **Query Records**.
+
+Now lets update the **Query Records** node so we can control its filter using inputs. Click the **Query Records** node and change the last part of the filter to not take a value, but an __input__.
+
+![](add-filter-rule-4.png ':class=img-size-l')
+
+Name the input "isDoneFilter". Now the **Query Records** have a new input that we can use! If the input is set to ``true`` we will filter out all completed tasks (``isDone = true``) and vice versa for ``false``.
+
+Finally we need to convert the two Radio Button values "Uncompleted" and "Completed" to ``true`` or ``false``. We do that by creating an [Expression](/nodes/math/expression/) node and setting the expression to
+
+``filterState === "Completed"``
+
+The **Expression** node will output ``true`` if the input is "Completed", otherwise ``false``. Finally connect the output of the **Expression** to the **Query Records** and - voila! - our filtering will change when clicking the radio buttons.
+
+![](radiobutton-3.png ':class=img-size-l')
+
+![](radiobutton-ui.gif ':class=img-size-l')
 
