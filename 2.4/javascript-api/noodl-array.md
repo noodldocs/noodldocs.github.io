@@ -38,7 +38,7 @@ myArray.on('remove', args => {
 **`array.set(items)`**  
 This will replace all items of the array with the supplied items.
 
-The `items` argument can be an array with regular Javascript objects, `Noodl.Object` items, or a mix. Regular Javascript objects will be passed through `Noodl.Object.create` since `Noodl.Array` can only contain objects with the type `Noodl.Object`.
+The `items` argument can be an array with regular JavaScript objects, `Noodl.Object` items, or a mix. Regular JavaScript objects will be passed through `Noodl.Object.create` since `Noodl.Array` can only contain objects with the type `Noodl.Object`.
 
 The id of the objects (the `id` attribute of an object) will be used to determine if the object is part of the items of this array. Objects that are already contained in the array
 will be updated, objects that aren't will be added (firing the appropriate events)

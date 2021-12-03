@@ -12,7 +12,7 @@ You initiate the request by sending a <span class="ndl-signal">signal</span> to 
 
 ## Request and response script
 
-The REST node uses a script much like the [Javascript][1] node to prepare the request and parse the response.
+The REST node uses a script much like the [JavaScript][1] node to prepare the request and parse the response.
 Any variables with the prefix **Inputs.** and **Outputs.** will be exposed as inputs and outputs to the node. So you can use these inputs in the request script to prepare the REST call, and the outputs in the response script to parse the response into outputs.
 
 The first script is used to prepare the request before it is send of to the REST endpoint.

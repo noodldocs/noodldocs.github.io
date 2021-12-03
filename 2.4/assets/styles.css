@@ -379,6 +379,7 @@ body .sidebar-toggle span:nth-child(3) {
 .ndl-image-with-background {
   background: linear-gradient(-45deg, #E1BB4E, #36A8AA);
   text-align: center;
+  position: relative;
 }
 
 .ndl-image-with-background img {
@@ -397,6 +398,14 @@ body .sidebar-toggle span:nth-child(3) {
   width: 30%;
 }
 
+.ndl-image-with-background .ndl-copy-nodes-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: black;
+  box-shadow: 0px 0px 10px 0px #38341ceaa;
+}
+
 /****** COPY NODES BUTTON ******/
 .ndl-copy-nodes-button {
   position: absolute;
@@ -413,6 +422,11 @@ body .sidebar-toggle span:nth-child(3) {
   background: var(--theme-color, #808080);
   color: #fff;
   cursor: pointer;
+  transition: transform 200ms ease-in-out;
+}
+
+.ndl-copy-nodes-button:hover {
+  transform: scale(1.05);
 }
 
 .ndl-copy-nodes-button::after {

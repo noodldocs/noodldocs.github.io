@@ -32,7 +32,7 @@
 
 * [Layout](guides/layouts.md)
 * [States](guides/states.md)
-* [Javascript](guides/javascript.md)
+* [JavaScript](guides/javascript.md)
 * [Version control](guides/version-control/)
 * [Deploying Noodl apps](guides/deploy-noodl-apps.md)
 
@@ -51,7 +51,7 @@
 * [External scripts](guides/external-scripts/) -->
 <br/>
 
-* Javascript API
+* JavaScript API
 
 * [Introduction](javascript-api/README.md)
 * [Array](javascript-api/noodl-array.md)

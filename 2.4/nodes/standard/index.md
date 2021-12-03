@@ -22,7 +22,7 @@ Receive events that are sent by Event Senders.
 Used to send an event to some other place in the node graph.
 
 [Expression](./expression)
-Contains a short Javascript expression that takes number inputs and produces a single number output.
+Contains a short JavaScript expression that takes number inputs and produces a single number output.
 
 [Globals](./globals)
 A container to hold numbers with inputs and outputs that can be accessed anywhere in the node graph.
@@ -30,8 +30,8 @@ A container to hold numbers with inputs and outputs that can be accessed anywher
 [Inverter](./inverter)
 Used to invert a boolean input.
 
-[Javascript](./javascript)
-Use this node to write your own custom Javascript.
+[JavaScript](./javascript)
+Use this node to write your own custom JavaScript.
 
 [Number Blend](./number-blend)
 Interpolate between two numbers.

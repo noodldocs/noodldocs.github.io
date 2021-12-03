@@ -1,4 +1,4 @@
-This is the reference documentation for the Javascript API that you can use within **Javascript** nodes.
+This is the reference documentation for the JavaScript API that you can use within **JavaScript** nodes.
 
 [Object](/javascript-api/noodl-object)
 Accessing an Object programmatically.

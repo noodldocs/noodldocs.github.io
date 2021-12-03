@@ -15,7 +15,7 @@ You can also provide parameters that you want to be passed to the cloud function
 ![](cloudfunction-params.png ':class=img-size-m')
 
 The cloud function can return a value, an object or an array when finished. The return value will be available on the **Result** output. The result value will be converted to a Noodl type, for example an [Object](/nodes/data/object/object/) or an [Array](/nodes/data/array/array/) containing **Objects**.
-The only exception is if the returned array is an array of Javascript primitives (strings, numbers, booleans), i.e. _not_ objects. Then Noodl cannot convert the array to a Noodl **Array** with **Objects**. Instead the returned array will be a Javascript array with primitives that need to be handed in Javascript by a [Function](/nodes/javascript/function.md) or [Script](/nodes/javascript/script.md) node.
+The only exception is if the returned array is an array of JavaScript primitives (strings, numbers, booleans), i.e. _not_ objects. Then Noodl cannot convert the array to a Noodl **Array** with **Objects**. Instead the returned array will be a JavaScript array with primitives that need to be handed in JavaScript by a [Function](/nodes/javascript/function.md) or [Script](/nodes/javascript/script.md) node.
 
 ![](cloudfunction-result-example.png ':class=img-size-l')
 <##head##>

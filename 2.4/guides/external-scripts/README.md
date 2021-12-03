@@ -7,7 +7,7 @@
 - Using Noodl Arrays together with the For Each node to create dynamic user interfaces
 
 ## Google Maps API
-The Google maps Javascript API collect many of Google's location and map services into a single library. We'll use it to access the [Distance Matrix Service](https://developers.google.com/maps/documentation/javascript/distancematrix) that can calculate the distance between locations when travelled by car.
+The Google maps JavaScript API collect many of Google's location and map services into a single library. We'll use it to access the [Distance Matrix Service](https://developers.google.com/maps/documentation/javascript/distancematrix) that can calculate the distance between locations when travelled by car.
 
 ## Step 1 - API Key
 Most libraries and APIs that access web services require an API Key. These allow the API provider to track how many requests are made, for billing purposes, as well as preventing bots and denial of service attacks.

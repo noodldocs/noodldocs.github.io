@@ -72,8 +72,8 @@ There are 11 different data types available:
 * **Boolean** - a boolean value (can be `true` or `false`)
 * **Number** - a number value
 * **Date** - a date (stored in iso format)
-* **Object** - a Javascript object
-* **Array** - a Javascript array
+* **Object** - a JavaScript object
+* **Array** - a JavasSript array
 * **Geopoint** - A Geopoint, i.e. a location on the surface of the earth
 * **Polygon** - a GEOJSon polygon object
 * **File** - a reference to a file

@@ -19,7 +19,7 @@
 * [Models and Collections](guides/models-and-collections.md)
 * [Logic components](guides/actions-and-logic.md)
 * [Model relationships](guides/relations.md)
-* [Javascript](guides/javascript.md)
+* [JavaScript](guides/javascript.md)
   <br/>
 
 <!--

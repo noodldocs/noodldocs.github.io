@@ -49,4 +49,4 @@ Example:
 
 | Data                                | Description                                                                                                                                                                                       |
 | ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <span class="ndl-data">Items</span> | <##output:items##>A `Noodl.Array` object that can be connected to e.g. an [Array](nodes/data/array/array/), [Javascript](guides/javascript.md) or [For Each](nodes/data/for-each.md).<##output##> |
+| <span class="ndl-data">Items</span> | <##output:items##>A `Noodl.Array` object that can be connected to e.g. an [Array](nodes/data/array/array/), [JavaScript](guides/javascript.md) or [For Each](nodes/data/for-each.md).<##output##> |

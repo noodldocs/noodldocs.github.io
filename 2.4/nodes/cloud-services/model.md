@@ -53,7 +53,7 @@ The node will have any properties from the Models in the Collection that it can 
 ### Scripts
 
 **Initialize**  
-Here you can provide a small Javascript snippet that is run when a new model is created via the _Insert_ signal.
+Here you can provide a small JavaScript snippet that is run when a new model is created via the _Insert_ signal.
 
 ```javascript
 initialize({

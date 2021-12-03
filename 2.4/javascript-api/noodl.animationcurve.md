@@ -1,6 +1,6 @@
 # Noodl.AnimationCurve
 
-Access Noodls built in animation curve functions from Javascript. These are useful for interpolating values e.g when animating.
+Access Noodls built in animation curve functions from JavaScript. These are useful for interpolating values e.g when animating.
 
 The easing functions use the following pattern:
 `function(startValue, endValue, t)`, where `t` is assumed to be [0:1].
