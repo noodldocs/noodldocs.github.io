@@ -29,8 +29,8 @@ Expressions support the following funcitons:
 
 ## Advanced
 
-The _Expression_ node is running Javascript under the hood so in addition to the above functions any standard
-Javascript functions will also be valid. The _Expression_ node will add a `return` statement before the
+The _Expression_ node is running JavaScript under the hood so in addition to the above functions any standard
+JavaScript functions will also be valid. The _Expression_ node will add a `return` statement before the
 expression is executed. `1+2` will be evaluated as `return (1+2)`
 
 ## Inputs
