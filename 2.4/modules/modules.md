@@ -1,11 +1,3 @@
-<span style="display: none">
-<!-- <##meta##>
-"description": "Extend Noodl with custom Modules"
-<##meta##> -->
-
-<meta property="og:description" content="Extend Noodl with custom Modules">
-</span>
-
 # Modules
 
 The base nodes bundled with Noodl feature all functionality needed to build most apps, but sometimes an app requires a little more. One very powerful feature of Noodl are **modules**. These are small, external node libraries with additional functionality that can be imported into your project. Modules can be downloaded from the public **Noodl Module Repository**, or custom built using the Noodl SDK.
