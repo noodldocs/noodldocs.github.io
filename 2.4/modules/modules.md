@@ -1,6 +1,8 @@
+<span style="display: none">
 <##meta##>
 "description": "Extend Noodl with custom Modules"
 <##meta##>
+</span>
 
 # Modules
 
