@@ -1,8 +1,8 @@
 # Build your first app
 
-Welcome to Noodl. Here you will find a video series for building your first Noodl web app. It will take around half an hour to watch the whole series and at the end you will have build a fully functional Todo list app, connected to a database and cloud services.
+Here you will find a video series showing how to build a Task List app. It will take around half an hour to watch all of the (two) videos and at the end you will have built a fully functional app, connected to a database and cloud services.
 
-If you're new to node based programming it is helpful to read the [Basic Concepts](guides/basic-concepts/) guide first.
+If you are new to node based programming, or want to learn more about the editor, you may look through the [Basic Concepts](guides/basic-concepts/) guide or the [Editor Tour](/guides/editor-tour/), but it is **not** a requirement to follow along in the Task List videos below.
 
 ## Build the UI for a Task List app
 

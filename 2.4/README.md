@@ -4,7 +4,7 @@ Noodl is a node based app builder. It’s a way of visually building an applicat
 
 ## Getting started
 
--   If you're **new to node based editors**, it is recommended to at least glance through the [Basic Concepts](/guides/basic-concepts/) page to get an overview of the essentials.
+-   If you're **new to node based programming**, it is recommended to at least glance through the [Basic Concepts](/guides/basic-concepts/) page to get an overview of the essentials.
 
 -   If you just want to **get more familiar** with the editor you can watch the [Editor Tour](/guides/editor-tour/), a 15 minute long video taking you through the tool.
 
