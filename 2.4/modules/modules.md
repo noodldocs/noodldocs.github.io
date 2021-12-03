@@ -1,7 +1,9 @@
 <span style="display: none">
-<##meta##>
+<!-- <##meta##>
 "description": "Extend Noodl with custom Modules"
-<##meta##>
+<##meta##> -->
+
+<meta property="og:description" content="Extend Noodl with custom Modules">
 </span>
 
 # Modules
