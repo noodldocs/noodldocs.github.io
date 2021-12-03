@@ -1,10 +1,10 @@
-# Create a React component
+# Create a Visual node with React
 
-Noodl is based on the popular React front end library which makes it easy for you to add custom or community React components to your workspace. This guide will help you create a React library from scratch and push it to your Noodl workspace.
+Noodl is built with React which makes it easy for you to add custom or community React components to your workspace. This guide will help you create a React library from scratch and push it to your Noodl workspace.
 
 ## Setup
 
-In order to complete this guide you must install the *Noodl CLI* and learn how to push the module to your workspace. Please review [this guide](extending/create-lib.md) first.
+In order to complete this guide you must install the _Noodl CLI_ and learn how to push the module to your workspace. Please review [this guide](extending/create-lib.md) first.
 
 With the CLI tool you can easily create a new react library module from a template:
 
@@ -27,7 +27,7 @@ my-react-lib/
 
 Just like in the introductory [guide](extending/create-lib.md) the folder contains the **project** and **tests** subfolders that you may to import into Noodl. Especially the **tests** folder is a good place to play around with your library and create tests to make sure the component is working as expected.
 
-!> It is important that you do now change the name of the **project** and **tests** folders. The build scripts in the *module* folder is dependent on these names or it till not build the module properly and you cannot push to your workspace.
+!> It is important that you do now change the name of the **project** and **tests** folders. The build scripts in the _module_ folder is dependent on these names or it till not build the module properly and you cannot push to your workspace.
 
 ## A tour of the code
 
@@ -54,15 +54,19 @@ First a simple React component:
 
 ```javascript
 function MyCustomReactComponent(props) {
-	const style = {
-		color: props.textColor,
-		backgroundColor: props.backgroundColor,
-		borderRadius: '10px',
-		padding: '20px',
-		marginBottom: props.marginBottom
-	};
+    const style = {
+        color: props.textColor,
+        backgroundColor: props.backgroundColor,
+        borderRadius: '10px',
+        padding: '20px',
+        marginBottom: props.marginBottom,
+    }
 
-	return <div style={style} onClick={props.onClick} >{props.children}</div>
+    return (
+        <div style={style} onClick={props.onClick}>
+            {props.children}
+        </div>
+    )
 }
 ```
 
@@ -70,36 +74,36 @@ Next the export of the component to Noodl:
 
 ```javascript
 const MyCustomReactComponentNode = Noodl.defineReactNode({
-	name: 'Custom React Component',
-	category: 'Tutorial',
-	getReactComponent() {
-		return MyCustomReactComponent;
-	},
-	inputProps: {
-		backgroundColor: {type: 'color', default: 'white'},
-		marginBottom: {type: {name: 'number', units: ['px'], defaultUnit: 'px'}, default: 10}
-	},
-	outputProps: {
-		onClick: {type: 'signal', displayName: 'Click'}
-	}
+    name: 'Custom React Component',
+    category: 'Tutorial',
+    getReactComponent() {
+        return MyCustomReactComponent
+    },
+    inputProps: {
+        backgroundColor: { type: 'color', default: 'white' },
+        marginBottom: {
+            type: { name: 'number', units: ['px'], defaultUnit: 'px' },
+            default: 10,
+        },
+    },
+    outputProps: {
+        onClick: { type: 'signal', displayName: 'Click' },
+    },
 })
 ```
 
-In addition to how you would specify a simple Noodl node, as in the introductory [guide](extending/create-lib.md), you must provide the *getReactComponent* function that retuns the React component. You may also specify _inputProps_ and _outputProps_ that map to the properties of the React node and will become inputs and outputs of your Noodl node.
+In addition to how you would specify a simple Noodl node, as in the introductory [guide](extending/create-lib.md), you must provide the _getReactComponent_ function that retuns the React component. You may also specify _inputProps_ and _outputProps_ that map to the properties of the React node and will become inputs and outputs of your Noodl node.
 
 Outputs in React are typically done via callbacks. You can capture these callbacks and deliver them as outputs in Noodl.
 
-Finally the component is provided as part of your module declaration. Here you need to put it under the *reactNodes* section to make sure Noodl recognises it as a visual node.
+Finally the component is provided as part of your module declaration. Here you need to put it under the _reactNodes_ section to make sure Noodl recognises it as a visual node.
 
 ```javascript
 Noodl.defineModule({
-    reactNodes: [
-    	MyCustomReactComponentNode
-    ],
-    nodes:[
-    ],
+    reactNodes: [MyCustomReactComponentNode],
+    nodes: [],
     setup() {
-    	//this is called once on startup
-    }
-});
+        //this is called once on startup
+    },
+})
 ```

@@ -63,8 +63,8 @@
 * Extending
 
 * [Introduction](extending/)
-* [Simple node](extending/create-lib.md)
-* [React component](extending/create-react-lib.md)
+* [Simple Logic node](extending/create-lib.md)
+* [Visual node with React](extending/create-react-lib.md)
 
 <br/>
 
