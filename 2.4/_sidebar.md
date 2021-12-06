@@ -21,6 +21,11 @@
 
 * **Guides**
 
+* [Layout](guides/layouts.md)
+- [UI states and variants](guides/states-and-variants/)
+  - [Working with Visual States](guides/visual-states/)
+  - [The States node](guides/states/states-node/)
+* [JavaScript](guides/javascript.md)
 - [Working With Cloud Data]()
   - [Creating a Backend](guides/working-with-data/cloud-data/creating-backend/)
   - [Creating a Class](guides/working-with-data/cloud-data/creating-class/)
@@ -29,10 +34,6 @@
   - [Updating Records](guides/working-with-data/cloud-data/updating-records/)
   - [Filtering Database Queries](guides/working-with-data/cloud-data/query-filters/)
 - [Working With Local Data]()
-
-* [Layout](guides/layouts.md)
-* [States](guides/states.md)
-* [JavaScript](guides/javascript.md)
 * [Version control](guides/version-control/)
 * [Deploying Noodl apps](guides/deploy-noodl-apps.md)
 
