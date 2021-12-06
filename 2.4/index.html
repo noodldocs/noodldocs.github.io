@@ -121,9 +121,23 @@
         },
         plugins: [
           function(hook, vm) {
+
+
+            hook.beforeEach(function(content) {
+              var contentContainer = document.querySelector('.content')
+              contentContainer.style.opacity = '0'
+
+              return content
+            })
+
             hook.afterEach(function(html, next) {
               // Purge all html comments
               next(html.replace(/(&lt;|<)\#\#.*?\#\#(&gt;|>)/g, ""))
+            })
+
+            hook.doneEach(function() {
+              var contentContainer = document.querySelector('.content')
+              contentContainer.style.opacity = '1'
             })
           }
         ]
