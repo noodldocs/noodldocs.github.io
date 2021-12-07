@@ -4,7 +4,7 @@ A common concept in Noodl is the use of different visual states. In this guide w
 
 <div class="ndl-image-with-background s">
 
-![](states/switch.gif)
+![](switch.gif)
 
 </div>
 
