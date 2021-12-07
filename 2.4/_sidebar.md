@@ -37,7 +37,6 @@
 <!-- - [Working With Local Data]() -->
 - [Web Style Navigation](guides/navigation/web-navigation/basic-navigation/)
   - [Basic Navigation](guides/navigation/web-navigation/basic-navigation/)
-  - [Basic Navigation](guides/navigation/web-navigation/basic-navigation/)
 
 * [Layout](guides/layouts.md)
 * [States](guides/states.md)
