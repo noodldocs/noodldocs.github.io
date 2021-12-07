@@ -23,8 +23,8 @@
 
 * [Layout](guides/layouts.md)
 - [UI states and variants](guides/states-and-variants/)
-  - [Working with Visual States](guides/visual-states/)
-  - [The States node](guides/states/states-node/)
+  - [Working with Visual States](guides/states-and-variants/visual-states/)
+  - [The States node](guides/states-and-variants/states-node/)
 * [JavaScript](guides/javascript.md)
 - [Working With Cloud Data]()
   - [Creating a Backend](guides/working-with-data/cloud-data/creating-backend/)
