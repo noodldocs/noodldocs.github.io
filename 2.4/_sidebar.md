@@ -34,6 +34,14 @@
   - [Updating Records](guides/working-with-data/cloud-data/updating-records/)
   - [Filtering Database Queries](guides/working-with-data/cloud-data/query-filters/)
 - [Working With Local Data]()
+<!-- - [Working With Local Data]() -->
+- [Web Style Navigation](guides/navigation/web-navigation/basic-navigation/)
+  - [Basic Navigation](guides/navigation/web-navigation/basic-navigation/)
+  - [Basic Navigation](guides/navigation/web-navigation/basic-navigation/)
+
+* [Layout](guides/layouts.md)
+* [States](guides/states.md)
+* [JavaScript](guides/javascript.md)
 * [Version control](guides/version-control/)
 * [Deploying Noodl apps](guides/deploy-noodl-apps.md)
 
