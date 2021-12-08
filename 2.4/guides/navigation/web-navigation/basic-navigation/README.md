@@ -1,7 +1,7 @@
 # Basic Web Style Navigation
 
 ## What you will learn in this guide
-In this guide you will be introducded to the [Page Router](/nodes/navigation/page-router/), the [Page](/nodes/navigation/page/) and the [Navigate](/nodes/navigation/navigate/) node to create a simple UI where you can navigate between pages. You will learn how to navigate both by interacting with the App or by entering URLs directly in the browser.
+In this guide you will be introduced to the [Page Router](/nodes/navigation/page-router/), the [Page](/nodes/navigation/page/) and the [Navigate](/nodes/navigation/navigate/) node to create a simple UI where you can navigate between pages. You will learn how to navigate both by interacting with the App or by entering URLs directly in the browser.
 
 ## Overview
 We will go through the following steps in the tutorial
@@ -104,7 +104,7 @@ Finally we are going to connect this buttons to a [Navigate](/nodes/navigation/n
 
 ![](./navigate-1.png ':class=img-size-m')
 
-Make sure the three **Navigate** nodes points to the right target, and then connect the **Click** signal from the button to the **Do** signal on the **Navigate** nodes. Make sure the the correct button is connected to the correct **Navigate** node.
+Make sure the three **Navigate** nodes points to the right target, and then connect the **Click** signal from the button to the **Navigate** signal on the **Navigate** nodes. Make sure the the correct button is connected to the correct **Navigate** node.
 
 ![](./signal-1.png ':class=img-size-l')
 
