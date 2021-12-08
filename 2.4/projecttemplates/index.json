@@ -3,21 +3,21 @@
     "iconURL": "helloWorld.png",
     "title": "Hello World",
     "desc": "A simple application template with just a Group and a Text node.",
-    "projectURL": "hello-1-6.zip",
+    "projectURL": "hello-1-7.zip",
     "category":"Basic"
   },
   {
     "iconURL": "helloWorld.png",
     "title": "Navigation example",
     "desc": "An application containing simple page navigation.",
-    "projectURL": "hello-1-6.zip",
+    "projectURL": "hello-1-7.zip",
     "category":"Basic"
   },
   {
     "iconURL": "travel_app_thumbnail.png",
     "title": "Travel app",
     "desc": "Multi page web app with list items and page navigation.",
-    "projectURL": "hello-1-6.zip",
+    "projectURL": "hello-1-7.zip",
     "category":"Tutorial"
   },
   {
@@ -33,7 +33,7 @@
     "iconURL": "survey_thumbnail.png",
     "title": "Custon survey",
     "desc": "A template with a few fancy custom components.",
-    "projectURL": "hello-1-6.zip",
+    "projectURL": "hello-1-7.zip",
     "category":"Tutorial"
   }
 ]
