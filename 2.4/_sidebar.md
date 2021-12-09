@@ -33,7 +33,7 @@
   - [Querying Records from database](guides/working-with-data/cloud-data/querying-records/)
   - [Updating Records](guides/working-with-data/cloud-data/updating-records/)
   - [Filtering Database Queries](guides/working-with-data/cloud-data/query-filters/)
-- [Web Style Navigation](guides/navigation/web-navigation/basic-navigation/)
+- <span class="hoverable">Pages and navigation</span>
   - [Basic Navigation](guides/navigation/web-navigation/basic-navigation/)
   - [Multi Level Navigation](guides/navigation/web-navigation/multi-level-navigation/)
 - [JavaScript](guides/javascript.md)
