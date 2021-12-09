@@ -112,13 +112,13 @@
 * [Page Inputs](/nodes/navigation/page-inputs/)
 * [Navigate](/nodes/navigation/navigate/)
 * [External Link](/nodes/navigation/external-link/)
+* [Navigate To Path](/nodes/navigation/navigate-to-path/)
 
 <br/>
 
 * Component Stack
 
 * [Component Stack](/nodes/component-stack/component-stack/)
-* [Navigate To Path](/nodes/navigation/navigate-to-path/)
 * [Push Component To Stack](/nodes/component-stack/push-component/)
 * [Pop Component Stack](/nodes/component-stack/pop-component/)
 
