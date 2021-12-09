@@ -1,23 +1,44 @@
 [
     {
         "category": "New for 2.4",
-        "label": "Basic Concepts",
-        "thumb": "tutorials/FeaturesOverview.png",
+        "label": "",
+        "thumb": "tutorials/01_noodl_basics.png",
         "url": "/#/guides/basic-concepts/",
-        "icon": "book"
+        "icon": ""
     },
     {
         "category": "New for 2.4",
-        "label": "Build a UI for a Task List app",
-        "thumb": "tutorials/FeaturesOverview.png",
+        "label": "",
+        "thumb": "tutorials/01_survey_app.png",
         "url": "/#/tutorials/getting-started?id=build-the-ui-for-a-task-list-app",
-        "icon": "play"
+        "icon": ""
     },
     {
         "category": "New for 2.4",
-        "label": "Build a backend for a Task List app",
-        "thumb": "tutorials/FeaturesOverview.png",
+        "label": "",
+        "thumb": "tutorials/02_survey_app.png",
+        "url": "/#/tutorials/getting-started?id=build-the-ui-for-a-task-list-app",
+        "icon": ""
+    },
+    {
+        "category": "New for 2.4",
+        "label": "",
+        "thumb": "tutorials/03_survey_app.png",
+        "url": "/#/tutorials/getting-started?id=build-the-ui-for-a-task-list-app",
+        "icon": ""
+    },
+    {
+        "category": "New for 2.4",
+        "label": "",
+        "thumb": "tutorials/01_tasklist_app.png",
+        "url": "/#/tutorials/getting-started?id=build-the-ui-for-a-task-list-app",
+        "icon": ""
+    },
+    {
+        "category": "New for 2.4",
+        "label": "",
+        "thumb": "tutorials/02_tasklist_app.png",
         "url": "/#/tutorials/getting-started?id=build-a-backend-for-a-task-list-app",
-        "icon": "play"
+        "icon": ""
     }
 ]
