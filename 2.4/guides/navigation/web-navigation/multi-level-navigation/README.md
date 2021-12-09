@@ -1,18 +1,25 @@
 # Multi Level Navigation
 
 ## What you will learn in this guide
-In this guide we will look at using multiple [Page Routers](/nodes/navigation/page-router/) to achieve multiple levels of navigation hierarchies. We will use the [Navigate](/nodes/navigation/navigate/) and [Navigate To Path](/nodes/navigation/navigate-to-path/) nodes to move between the different **Pages** of the App.
+In this guide we will look at using multiple [Page Routers](/nodes/navigation/page-router/) to achieve navigation hierarchies with multiple levels. We will use the [Navigate](/nodes/navigation/navigate/) and [Navigate To Path](/nodes/navigation/navigate-to-path/) nodes to move between the different **Pages** of the App.
 
-This is used when your **Pages** are routed to URLs where each subroute managed their own routes. For example you may have a section of your app, "Products", that you reach through the URL "https://mydomain.com/products", which in turn has subsections, "https://mydomain.com/products/steel", "https://mydomain.com/products/wood", "https://mydomain.com/products/plastics". Then you have another section "Settings", with URL "https://mydomain.com/settings" which have two sections "https://mydomain.com/settings/company", "https://mydomain.com/settings/user".
+This is used when your **Pages** are routed to URLs where each subroute manages their own routes. For example you may have a section of your app, "Products", that you reach through the URL `https://mydomain.com/products`, which in turn has three subsections:
+* `/products/steel`
+* `/products/wood`
+* `/products/plastics`
+
+There's another section, "Settings", with the URL `https://mydomain.com/settings`. It has two subsections:
+* `/settings/company`
+* `/settings/user`
 
 ## Overview
-We will go through the following steps in the tutorial
+We will go through the following steps:
 
-* Add and configure multiple layers of **Page Routers**.
-* Use the **Navigate** node to move between pages within each **Page Router**.
-* Use the **Navigate To Path** to navigate in multiple **Page Routers** in one go.
+1. Add and configure multiple layers of **Page Routers**.
+2. Use the **Navigate** node to move between pages within each **Page Router**.
+3. Use the **Navigate To Path** to navigate in multiple **Page Routers** in one go.
 
-If you are new to Web Type Navigation you should go through the - [Basic Navigation](/guides/navigation/web-navigation/basic-navigation/) guide first.
+If you are new to Web Type Navigation you should go through the [Basic Navigation](/guides/navigation/web-navigation/basic-navigation/) guide first.
 We will build upon the example built in that guide. If needed you can first import the base project by clicking the "import" button below.
 
 <div class="ndl-images">
@@ -24,9 +31,9 @@ We will build upon the example built in that guide. If needed you can first impo
 
 The first thing we want to add to our app is three categories under our "Product" page. We want three categories
 
-* Steel Products - with the path "products/steel"
-* Wood Products - with the path "products/wood"
-* Plastic Products - with the path "product/plastic"
+* Steel Products - with the path `/products/steel`
+* Wood Products - with the path `/products/wood`
+* Plastic Products - with the path `/product/plastic`
 
 We also want a Top Bar Menu, only available in the Products Page, to navigate between them.
 
