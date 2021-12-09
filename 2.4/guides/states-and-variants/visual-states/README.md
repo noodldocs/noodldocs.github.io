@@ -1,6 +1,20 @@
 # Working with Visual States
 
-When working with Visual nodes we often find ourselves in situations where we want to style the node differently based on the user interaction. We might want to have a different background color when hovering a button, or indicating that a checkbox has been checked. This is done using Visual States in the nodes settings in the Property Panel.
+## What you will learn in this guide
+
+This guide will teach you how to style **Visual nodes** differently based on user interaction.
+
+## Overview
+
+We will go through the following steps in this guide:
+
+-   Create a button
+-   Style its `neutral` state
+-   Style it differently in its `hover` state
+
+## Let's go!
+
+When working with Visual nodes we often find ourselves in situations where we want to style the node differently based on the user interaction. We might want to have a different background color when hovering a button, or indicating that a checkbox has been checked. This is done using **Visual States** in the nodes settings in the **Property Panel**.
 
 Let’s create a button in our node tree, and give it a quick styling.
 

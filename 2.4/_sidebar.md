@@ -1,6 +1,6 @@
 * **Getting Started**
 
-- [Introduction](README.md)
+- [Introduction](/)
 - [Basic concepts](guides/basic-concepts/)
 - [Editor tour](guides/editor-tour/)
 - [Build your first app](tutorials/getting-started.md)
