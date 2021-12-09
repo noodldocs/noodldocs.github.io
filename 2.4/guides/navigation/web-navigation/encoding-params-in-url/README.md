@@ -11,7 +11,7 @@ The main reason to encode data needed by a **Page Component** in URLs rather tha
 ## Overview
 The guide will cover the following
 - Pass data to a **Page Component** as a **Path Parameter**
-- Navigate to a path that is dynamically constructed
+- Navigate to a path and set the **Path Parameter**
 - Pass data to a **Page Component** using a **Query Parameter**
 
 The guide assumes that you are familiar with basic Web Navigation concepts and it's suggested that you have already gone through the [Basic Navigation](/guides/navigation/web-navigation/basic-navigation/) and [Multi Level Navigation](/guides/navigation/web-navigation/multi-level-navigatio/) guides before you go through this guide.
@@ -99,3 +99,46 @@ Now your Steel Page should look something like the one below.
 Quickly copy-and-paste the **Array**+**Array Filter**+**Repeater** construction to the "Wood" and "Plastic" page, make sure to update the filter, and we are done with listing the products.
 
 ![](sorting.gif ':class=img-size-l')
+
+### Adding the Show Product Page
+Next step is to add a new **Page Component** to the main **Page Router**. We want to have it mapped to the URL `/showproduct`. Click the main **Page Router** (in the App component), the click **Add New Page** and **Create New Page**.
+
+![](create-new-page-1.png ':class=img-size-m')
+
+![](create-new-page-2.png ':class=img-size-m')
+
+Lets first go to the new page and make sure the path is "showproduct" by clicking the **Page** node and updating the path.
+
+So how do we know which of the Melee Weapon Products to show here? Well, that's where the **Path Parameter** comes in.
+
+### Using a Path Parameter
+
+We want to send the `identifyer` value of the a clicked product as a **Path Parameter** and use that to look up the correct product. I.e. we want to Navigate to this page with the path `/showproduct/<identifyer>`.
+
+We achieve that by clicking the **Page Inputs** node and add a **Path Parameter** called "productIdentifyer". The name doesnt matter except that becomes the name of the output of the **Page Inputs** node that will contain whatever is sent in the last part of the path.
+
+![](path-param-1.png ':class=img-size-m')
+
+For test purposes, add a **Text** node to the **Page** node and connect the "productIdentifyer" output to the **Text** input of the **Text** node.
+
+![](connect-text.png ':class=img-size-l')
+
+## Set the Path Parameter when Navigating
+
+Ok, we are almost ready to try the "showproduct" Page. We just need to do the actual navigation.
+
+So lets go back to the "Product Item" component we build earlier. We want to navigate when we click these items.
+
+Add a **Navigate** node and make sure the associated **Page Router** is "Main". Then pick the "Show Product Page" as the target.
+
+![](navigate-1.png ':class=img-size-m')
+
+As soon as you select it, you will see that there is a new input called "productIdentifyer". This is the one we added on the **Page Inputs** earlier!
+
+We want to set it to the "identifyer" value from our product so lets add the property "identifyer" on our **Object** and connect it to the "productIdentifyer" input of our **Navigate** node. Also, connect the **Click** signal from the **Group** node to the **Navigate** signal on the **Navigate** node.
+
+![](list-item-2.png ':class=img-size-l')
+
+Now try clicking on different products under the different Products pages. You should see the "Show Product Page" with the corresponding identifyer printed on the screen. Also try it in a regular browser to see how the URL looks.
+
+![](browser-1.png ':class=img-size-l')
