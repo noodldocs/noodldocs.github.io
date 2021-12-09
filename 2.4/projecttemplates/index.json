@@ -1,39 +1,39 @@
 [
   {
-    "iconURL": "helloWorld.png",
+    "iconURL": "hello_world/helloWorld.png",
     "title": "Hello World",
     "desc": "A simple application template with just a Group and a Text node.",
-    "projectURL": "hello-1-7.zip",
+    "projectURL": "hello_world/hello-1-7.zip",
     "category":"Basic"
   },
   {
-    "iconURL": "helloWorld.png",
+    "iconURL": "navigation_template/navigation.png",
     "title": "Navigation example",
-    "desc": "An application containing simple page navigation.",
-    "projectURL": "hello-1-7.zip",
+    "desc": "A simple project containing a menu navigation.",
+    "projectURL": "navigation_template/navigation_example_1-0.zip",
     "category":"Basic"
   },
   {
-    "iconURL": "travel_app_thumbnail.png",
-    "title": "Travel app",
-    "desc": "Multi page web app with list items and page navigation.",
-    "projectURL": "hello-1-7.zip",
+    "iconURL": "tasklist_app/task_list_thumbnail.png",
+    "title": "Task list",
+    "desc": "A simple task list template with a connected backend for storing and reading data.",
+    "projectURL": "tasklist_app/task-app-1-0.zip",
+    "category":"Tutorial",
+    "useCloudServices":true,
+    "cloudServicesTemplateURL":"tasklist_app/task-app-cf.json"
+  },
+  {
+    "iconURL": "survey_app/survey_thumbnail2.png",
+    "title": "Custom survey",
+    "desc": "A multi-step survey template with custom UI components.",
+    "projectURL": "survey_app/survey_app_1-0.zip",
     "category":"Tutorial"
   },
   {
-    "iconURL": "task_list_thumbnail.png",
-    "title": "Task list",
-    "desc": "A simple task list template with a connected backend for storing and reading data.",
-    "projectURL": "task-app-1-0.zip",
-    "category":"Tutorial",
-    "useCloudServices":true,
-    "cloudServicesTemplateURL":"task-app-cf.json"
-  },
-  {
-    "iconURL": "survey_thumbnail.png",
-    "title": "Custon survey",
-    "desc": "A template with a few fancy custom components.",
-    "projectURL": "hello-1-7.zip",
+    "iconURL": "travel_app/travel_app_thumbnail_mobile.png",
+    "title": "Travel app",
+    "desc": "Multi page template with list items and page navigation.",
+    "projectURL": "travel_app/travel_app_1-0.zip",
     "category":"Tutorial"
   }
 ]
