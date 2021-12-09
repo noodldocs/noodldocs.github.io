@@ -1,3 +1,4 @@
+<##head##>
 # Drag
 
 The drag node is used to make visual nodes draggable with the mouse or touch. All children of a **Drag** node automatically become draggable.
@@ -6,6 +7,7 @@ The drag node is used to make visual nodes draggable with the mouse or touch. Al
     <img src="/nodes/visual/drag.png" class="ndl-image"></img>
 </div>
 
+<##head##>
 ## Inputs
 
 ### Snap To Position X
