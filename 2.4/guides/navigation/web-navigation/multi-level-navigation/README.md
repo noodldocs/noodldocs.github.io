@@ -24,7 +24,7 @@ We will build upon the example built in that guide. If needed you can first impo
 
 <div class="ndl-images">
     <img src="/2.4/guides/navigation/web-navigation/basic-navigation/final.gif" class="ndl-image large"></img> 
-<button class="ndl-import-button" onClick='importIntoNoodl("/2.4/guides/navigation/web-navigation/multi-level-navigation/basic-navigation.zip",{name:"Multi Level Navigation",thumb:"guides/for-each/screen.png"})'></button>
+<button class="ndl-import-button" onClick='importIntoNoodl("/2.4/guides/navigation/web-navigation/multi-level-navigation/basic-navigation.zip",{name:"Multi Level Navigation",thumb:"/2.4/guides/navigation/web-navigation/basic-navigation/ui-2.png"})'></button>
 </div>
 
 ## Multiple Page Routers
