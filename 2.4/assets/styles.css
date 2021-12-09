@@ -80,7 +80,7 @@ a {
 
 .sidebar ul li {
   margin-left: 20px;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1.2;
 }
 
@@ -115,6 +115,11 @@ a {
   display: none;
 }
 
+.sidebar-nav .folder {
+  cursor: pointer;
+}
+
+.hoverable:hover,
 .sidebar ul li a:hover {
   color: var(--theme-color);
 }
