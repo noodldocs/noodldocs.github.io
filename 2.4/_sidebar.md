@@ -21,29 +21,25 @@
 
 * **Guides**
 
-* [Layout](guides/layouts.md)
+- [Layout](guides/layouts.md)
 - [UI states and variants](guides/states-and-variants/)
   - [Working with Visual States](guides/states-and-variants/visual-states/)
   - [The States node](guides/states-and-variants/states-node/)
-* [JavaScript](guides/javascript.md)
-- [Working With Cloud Data]()
+- [JavaScript](guides/javascript.md)
+- <span class="hoverable">Working With Cloud Data</span>
   - [Creating a Backend](guides/working-with-data/cloud-data/creating-backend/)
   - [Creating a Class](guides/working-with-data/cloud-data/creating-class/)
   - [Creating new database entries](guides/working-with-data/cloud-data/creating-records/)
   - [Querying Records from database](guides/working-with-data/cloud-data/querying-records/)
   - [Updating Records](guides/working-with-data/cloud-data/updating-records/)
   - [Filtering Database Queries](guides/working-with-data/cloud-data/query-filters/)
-- [Working With Local Data]()
-<!-- - [Working With Local Data]() -->
-- [Web Style Navigation](guides/navigation/web-navigation/basic-navigation/)
+- <span class="hoverable">Pages and navigation</span>
   - [Basic Navigation](guides/navigation/web-navigation/basic-navigation/)
   - [Multi Level Navigation](guides/navigation/web-navigation/multi-level-navigation/)
-
-* [Layout](guides/layouts.md)
-* [States](guides/states.md)
-* [JavaScript](guides/javascript.md)
-* [Version control](guides/version-control/)
-* [Deploying Noodl apps](guides/deploy-noodl-apps.md)
+  - [Encoding Parameters In URLs](guides/navigation/web-navigation/encoding-params-in-url/)
+- [JavaScript](guides/javascript.md)
+- [Version control](guides/version-control/)
+- [Deploying Noodl apps](guides/deploy-noodl-apps.md)
 
 <!-- 
 * [Events](guides/events.md)
