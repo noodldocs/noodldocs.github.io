@@ -36,6 +36,7 @@
 - <span class="hoverable">Pages and navigation</span>
   - [Basic Navigation](guides/navigation/web-navigation/basic-navigation/)
   - [Multi Level Navigation](guides/navigation/web-navigation/multi-level-navigation/)
+  - [Encoding Parameters In URLs](guides/navigation/web-navigation/encoding-params-in-url/)
 - [JavaScript](guides/javascript.md)
 - [Version control](guides/version-control/)
 - [Deploying Noodl apps](guides/deploy-noodl-apps.md)
