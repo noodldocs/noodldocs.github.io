@@ -140,6 +140,7 @@
 * [Number Remapper](nodes/math/number-remapper/)
 * [Counter](nodes/math/counter/)
 * [Unique Id](nodes/utilities/unique-id/)
+* [Drag](nodes/utilities/drag/)
 
 <br/>
 
