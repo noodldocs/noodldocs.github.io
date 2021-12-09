@@ -4,11 +4,19 @@
 
 This node places a customizable button in the visual tree.
 
-![](./button_visual.png ':class=img-size-l')
+<div class="ndl-image-with-background l">
+
+![](./button_visual.png)
+
+</div>
 
 The button has a <span class="ndl-signal">Click</span> signal that you can use to trigger actions.
 
-![](./button_node.png ':class=img-size-l')
+<div class="ndl-image-with-background l">
+
+![](./button_node.png)
+
+</div>
 <##head##>
 
 This control contains all logic such as accessibility etc. It can be styled in via it's properties.

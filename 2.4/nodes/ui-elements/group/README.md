@@ -4,11 +4,19 @@
 
 This node is a styleable container. It can have other visual nodes nested inside of it.
 
-![](./group_visual.png ':class=img-size-l')
+<div class="ndl-image-with-background l">
+
+![](./group_visual.png)
+
+</div>
 
 The <span class="ndl-node">Group</span> is the most essential node when it comes to creating layouts and arranging visual elements.
 
-![](./group_node.png ':class=img-size-l')
+<div class="ndl-image-with-background l">
+
+![](./group_node.png)
+
+</div>
 
 <##head##>
 

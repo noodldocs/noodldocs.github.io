@@ -6,7 +6,11 @@ This node is used to trigger a navigation to a page outside of your app.
 
 It also supports common URL schemes, like `mailto:` and `tel:`.
 
-![](./external-link.png ':class=img-size-l')
+<div class="ndl-image-with-background l">
+
+![](./external-link.png)
+
+</div>
 
 Note that **External Link** does not work in the Noodl Viewer. You need to run the app in a browser for it to work.
 

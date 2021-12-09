@@ -4,7 +4,11 @@
 
 **Component Object** is a shared set of properties that can be accessed from a component as well as from any child components. This node is used to set properties on the **Component Object** these properties can be accessed via the [Component Object](/nodes/component-utilities/component-object/) or the [Parent Component Object](/nodes/component-utilities/parent-component-object/).
 
-![](set-component-object-properties.png ':class=img-size-m')
+<div class="ndl-image-with-background l">
+
+![](set-component-object-properties.png)
+
+</div>
 
 <##head##>
 

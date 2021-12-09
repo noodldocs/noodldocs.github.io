@@ -4,11 +4,19 @@
 
 This node is used to switch between logical states. Each state holds values that can be transitioned between. You can define as many states and values as needed.
 
-![](./states_visual.gif ':class=img-size-l')
+<div class="ndl-image-with-background l">
+
+![](./states_visual.gif)
+
+</div>
 
 The <span class="ndl-node">State</span> node is often used to create animations on user interactions, and create state machines. Learn more in the State Node Guide.
 
-![](./states_node.gif ':class=img-size-l')
+<div class="ndl-image-with-background l">
+
+![](./states_node.gif)
+
+</div>
 
 <##head##>
 

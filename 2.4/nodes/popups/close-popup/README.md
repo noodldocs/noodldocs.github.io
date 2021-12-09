@@ -4,7 +4,11 @@
 
 This node is used to close a popup that have previously been shown with the <span class="ndl-node">Show Popup</span> node. Sending a signal to the <span class="ndl-signal">Close</span> input will close the popup and remove the component instance.
 
-![](./close-popup-1.png ':class=img-size-l')
+<div class="ndl-image-with-background l">
+
+![](./close-popup-1.png)
+
+</div>
 
 You can also pass data back to the component that triggered the popup by adding <span class="ndl-data">Result</span> values and <span class="ndl-signal">Close Action</span> signals. This is typically used for popups that propmt the user for some kind of input or action, like **Name**, **Confirm** or **Cancel**.
 
@@ -14,15 +18,27 @@ You can also pass data back to the component that triggered the popup by adding 
 
 Sending data back to the triggering component is done by adding **Result** values and **Close Action** signals. The result values become inputs where you can pass data back, and the actions become signal inputs that can be used to send signals back. This is typically useful for popups that take some sort of input, e.g. **Name** and where the user can perform different actions, e.g. **Confirm** or **Cancel**.
 
-![](./close-popup-2.png ':class=img-size-m')
+<div class="ndl-image-with-background">
+
+![](./close-popup-2.png)
+
+</div>
 
 After specifying results and close actions in the properties the corresponding inputs become available on the **Close Popup** node.
 
-![](./close-popup-3.png ':class=img-size-l')
+<div class="ndl-image-with-background l">
+
+![](./close-popup-3.png)
+
+</div>
 
 These **Result** values and **Close Actions** will also become available as outputs on the [Show Popup](/nodes/popups/show-popup/) nodes that have the component containing the **Close Popup** node as target.
 
-![](../show-popup/show-popup-3.png ':class=img-size-l')
+<div class="ndl-image-with-background l">
+
+![](../show-popup/show-popup-3.png)
+
+</div>
 
 ## Inputs
 

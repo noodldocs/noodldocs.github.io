@@ -4,7 +4,11 @@
 
 This node sends a <span class="ndl-signal">signal</span> when the input value changes.
 
+<div class="ndl-image-with-background l">
+
 ![](valuechanged_node.png)
+
+</div>
 
 The <span class="ndl-node">Value Changed</span> node is useful to trigger actions in your web app based on changes in your data.
 

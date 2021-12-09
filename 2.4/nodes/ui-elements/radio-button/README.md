@@ -4,17 +4,29 @@
 
 This node places a radio button in the visual tree. The <span class="ndl-node">Radio Button</span> must be placed in a <span class="ndl-node">Radio Button Group</span> node to function properly.
 
-![](./radio_button_visual.png ':class=img-size-l')
+<div class="ndl-image-with-background l">
+
+![](./radio_button_visual.png)
+
+</div>
 
 You must specify a unique <span class="ndl-data">Value</span> for each <span class="ndl-node">Radio Button</span> node. Only one <span class="ndl-node">Radio Button</span> in a <span class="ndl-node">Radio Button Group</span> can be selected at once.
 
-![](./radio_button_node.png ':class=img-size-l')
+<div class="ndl-image-with-background l">
+
+![](./radio_button_node.png)
+
+</div>
 
 <##head##>
 
 The core radio button has a very simple visual appearance and is most often used in other components as part of a design system. This control contains all logic such as accessibility etc. It can be styled in via it's properties, or you can use it only for the logic and create your own radio button component in your own design system, see the [Simple Design System](/modules/sds-v3/) for inspiration.
 
-![](./radiobutton.gif ':class=img-size-s')
+<div class="ndl-image-with-background s">
+
+![](./radiobutton.gif)
+
+</div>
 
 ## Inputs
 

@@ -4,20 +4,36 @@
 
 This node is used to make calls to backend cloud functions. To use cloud functions you need to have an external [Parse](https://parseplatform.org) backend up and running and have attached cloud functions.
 
-![](cloudfunction.png ':class=img-size-m')
+<div class="ndl-image-with-background l">
+
+![](cloudfunction.png)
+
+</div>
 
 You need to specify the name of the cloud function you want to call. This is done via the **Function Name** property.
 
-![](cloudfunction-name.png ':class=img-size-m')
+<div class="ndl-image-with-background">
+
+![](cloudfunction-name.png)
+
+</div>
 
 You can also provide parameters that you want to be passed to the cloud function by adding them using the **Parameters** property. Once a parameter is added the corresponding input is available on the node. You provide the input values via regular Noodl connections.
 
-![](cloudfunction-params.png ':class=img-size-m')
+<div class="ndl-image-with-background">
+
+![](cloudfunction-params.png)
+
+</div>
 
 The cloud function can return a value, an object or an array when finished. The return value will be available on the **Result** output. The result value will be converted to a Noodl type, for example an [Object](/nodes/data/object/object/) or an [Array](/nodes/data/array/array/) containing **Objects**.
 The only exception is if the returned array is an array of JavaScript primitives (strings, numbers, booleans), i.e. _not_ objects. Then Noodl cannot convert the array to a Noodl **Array** with **Objects**. Instead the returned array will be a JavaScript array with primitives that need to be handed in JavaScript by a [Function](/nodes/javascript/function.md) or [Script](/nodes/javascript/script.md) node.
 
-![](cloudfunction-result-example.png ':class=img-size-l')
+<div class="ndl-image-with-background l">
+
+![](cloudfunction-result-example.png)
+
+</div>
 <##head##>
 
 ## Inputs

@@ -4,7 +4,11 @@
 
 This node enables you to add simpler custom JavaScript to your application. Any time the inputs are changed the function is run and the outputs are updated.
 
-![](function-1.png ':class=img-size-l')
+<div class="ndl-image-with-background l">
+
+![](function-1.png)
+
+</div>
 
 The code runs from top to bottom. For more complex custom JavaScript with multiple executon paths and extended control you should use the <span class="ndl-node">Script</span> node.
 
@@ -12,7 +16,11 @@ The code runs from top to bottom. For more complex custom JavaScript with multip
 
 The most basic way to use the node is as an expression, any time the inputs are changed the script is run and the outputs are updated. E.g. the example above can be used as shown below.
 
-![](function-2.png ':class=img-size-l')
+<div class="ndl-image-with-background l">
+
+![](function-2.png)
+
+</div>
 
 ## Custom inputs and outputs
 
@@ -24,7 +32,11 @@ Outputs.FullName = Inputs.FirstName + ' ' + Inputs.LastName
 
 Will create the output **FullName** and the inputs **FirstName** and **LastName**. Another option is to explicitly specify the inputs and outputs in the properties of the node. This will allow you to explicitly specify the types of the inputs and outputs. This can be especially useful if the node is connected to **Component Inputs** or **Component Outputs**.
 
-![](function-3.png ':class=img-size-m')
+<div class="ndl-image-with-background">
+
+![](function-3.png)
+
+</div>
 
 ## Signal outputs
 
@@ -44,7 +56,11 @@ The code above will automatically create two outputs **TestIsTrue** and **TestIs
 
 Normally the script is run when any of the inputs change, i.e. receive new data via connections, but you can also control when the function is run with the **Run** signal input. If this input has a connection the script will only run when a signal is received.
 
-![](function-4.png ':class=img-size-l')
+<div class="ndl-image-with-background l">
+
+![](function-4.png)
+
+</div>
 
 ## Inputs
 

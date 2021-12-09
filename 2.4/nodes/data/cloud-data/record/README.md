@@ -4,7 +4,11 @@
 
 This node is used to read data from a **Record**. A **Record** is an **Object** with a **Class**, with predefined properties of specific types and that can be stored in the Noodl backend.
 
-![](./record-node.png ':class=img-size-l')
+<div class="ndl-image-with-background l">
+
+![](./record-node.png)
+
+</div>
 
 You have to choose the class for the **Record** node in the property panel and you must make sure that the node has the Id of the record it should access (there are multiple ways to do this, see full docs for details).
 

@@ -4,11 +4,20 @@
 
 This node is used to dynamically insert visual components based on <span class="ndl-data">array</span> data.
 
-![](./repeater_visual.png ':class=img-size-l')
+<div class="ndl-image-with-background l">
+
+![](./repeater_visual.png)
+
+</div>
 
 The <span class="ndl-node">Repeater</span> node takes data from a Noodl <span class="ndl-data">Array</span> and generates an existing visual component for each item in the <span class="ndl-data">Array</span>. The [Object](/nodes/data/object/object/) or [Record](/nodes/data/cloud-data/record/) associated with the visual component can then be used to populate the component with data.
 
-![](./repeater_node.png ':class=img-size-l')
+<div class="ndl-image-with-background l">
+
+![](./repeater_node.png)
+
+</div>
+
 <##head##>
 
 More details can be found in the [guide](/guides/for-each.md).

@@ -4,7 +4,11 @@
 
 This node performs a logic OR operation on its inputs. If any input is <span class="ndl-data">true</span> the node will output <span class="ndl-data">true</span>. If all inputs are <span class="ndl-data">false</span> the node will output <span class="ndl-data">false</span>.
 
+<div class="ndl-image-with-background l">
+
 ![](or_node.png)
+
+</div>
 
 Any number of inputs can be used. When an input is connected a new one will be created automatically.
 

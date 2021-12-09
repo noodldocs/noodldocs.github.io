@@ -4,7 +4,11 @@
 
 This node holds a <span class="ndl-data">boolean</span> state. It is either <span class="ndl-data">true</span> (on) or <span class="ndl-data">false</span> (off).
 
+<div class="ndl-image-with-background l">
+
 ![](switch.gif)
+
+</div>
 
 <##head##>
 

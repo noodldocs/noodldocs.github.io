@@ -4,7 +4,12 @@
 
 This node is used to remove all _Objects_ from an _Array_. The Array is referred to through their _Id_. Use the _Do_ action to remove all _Objects_ in the Array.
 
-![](clear-array.png ':class=ndl-image large')
+<div class="ndl-image-with-background l">
+
+![](clear-array.png)
+
+</div>
+
 <##head##>
 
 ## Inputs

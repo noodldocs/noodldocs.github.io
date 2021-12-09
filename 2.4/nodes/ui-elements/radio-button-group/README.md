@@ -4,11 +4,19 @@
 
 This node is a non visual control used to group <span class="ndl-node">Radio Button</span> nodes. The <span class="ndl-node">Radio Button</span> must be placed in a <span class="ndl-node">Radio Button Group</span> node to function properly.
 
-![](./radio_button_visual.png ':class=img-size-l')
+<div class="ndl-image-with-background l">
+
+![](./radio_button_visual.png)
+
+</div>
 
 The output of the <span class="ndl-node">Radio Button Group</span> node is the <span class="ndl-data">Value</span> of the selected <span class="ndl-node">Radio Button</span>. Only one <span class="ndl-node">Radio Button</span> in a <span class="ndl-node">Radio Button Group</span> can be selected at the same time.
 
-![](./radio_button_node.png ':class=img-size-l')
+<div class="ndl-image-with-background l">
+
+![](./radio_button_node.png)
+
+</div>
 
 <##head##>
 

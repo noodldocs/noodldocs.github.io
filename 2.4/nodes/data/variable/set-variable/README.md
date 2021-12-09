@@ -4,7 +4,12 @@
 
 This node sets the **Value** of a [Variable](/nodes/data/variable/variable/). You provide the new value on the **Value** input and trigger the <span class=”ndl-signal”>Do</span> action.
 
-![](../variable/variable-1.png ':class=img-size-l')
+<div class="ndl-image-with-background l">
+
+![](../variable/variable-1.png)
+
+</div>
+
 <##head##>
 
 ## Inputs

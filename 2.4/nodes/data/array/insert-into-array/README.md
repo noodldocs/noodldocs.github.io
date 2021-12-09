@@ -4,7 +4,12 @@
 
 This node is used to insert an _Object_ into an _Array_. Both the Array and the Object are referred to through their _Id_. The insert happens when the _Do_ action is triggered.
 
-![](insert-object-into-array.png ':class=ndl-image large')
+<div class="ndl-image-with-background l">
+
+![](insert-object-into-array.png)
+
+</div>
+
 <##head##>
 
 ## Inputs

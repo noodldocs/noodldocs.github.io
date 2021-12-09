@@ -4,7 +4,11 @@
 
 This node contains a set of useful utilities for components that have been dynamically created by a <span class="ndl-node">Repeater</span> node.
 
-![](repeater-item.png ':class=img-size-m')
+<div class="ndl-image-with-background l">
+
+![](repeater-item.png)
+
+</div>
 
 <##head##>
 

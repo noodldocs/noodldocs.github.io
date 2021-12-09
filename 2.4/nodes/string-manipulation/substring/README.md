@@ -4,7 +4,11 @@
 
 This node lets you extract a part of a <span class="ndl-data">string</span> given a start and end character position.
 
+<div class="ndl-image-with-background l">
+
 ![](substring_node.png)
+
+</div>
 
 <##head##>
 

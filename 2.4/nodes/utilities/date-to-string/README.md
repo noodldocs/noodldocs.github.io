@@ -4,7 +4,11 @@
 
 This node translates a <span class="ndl-data">date</span> type input and outputs a <span class="ndl-data">string</span> based on your specified format.
 
-![](date-to-string.png ':class=img-size-l')
+<div class="ndl-image-with-background l">
+
+![](date-to-string.png)
+
+</div>
 
 The format is specified as a <span class="ndl-data">string</span> that can include the following special syntax: `{date}`, `{month}`, `{year}`, `{hour}`, `{minute}` and `{second}`.
 

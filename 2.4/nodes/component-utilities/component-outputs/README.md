@@ -1,19 +1,32 @@
 <##head##>
+
 # Component Outputs
 
 This node is used to create outputs for reusable components.
 
-![](./co_node1.png ':class=img-size-l')
+<div class="ndl-image-with-background l">
+
+![](./co_node1.png)
+
+</div>
 
 A <span class="ndl-node">Component Output</span> node can have as many ports as needed and can make output properties from the nodes available on the custom component.
 
-![](./co_node2.png ':class=img-size-l')
+<div class="ndl-image-with-background l">
+
+![](./co_node2.png)
+
+</div>
 
 <##head##>
 
 A very powerful feature of Noodl is the ability to create **Components** that act as reusable nodes in your application. A core concept of components is that they can have inputs and outputs like any of the built in nodes.
 
-![](component-outputs.png ':class=img-size-m')
+<div class="ndl-image-with-background">
+
+![](component-outputs.png)
+
+</div>
 
 The outputs of a component are derived from a **Component Outputs** node and are
 connected to any other node in the component.
@@ -21,7 +34,11 @@ connected to any other node in the component.
 When a **Component Outputs** node is created, it doesn't have any ports. The ports must be added by inspecting the node (left clicking it) and then clicking the **+Port** button.
 You can create and name ports as you wish.
 
-![](component-output-ports.png ':class=img-size-m')
+<div class="ndl-image-with-background">
+
+![](component-output-ports.png)
+
+</div>
 
 Once you have created your output ports on the **Component Outputs** node, you can connect any port from any node in your component node graph to the **Component Outputs**. These connected ports will now be available as outputs from the component when it is used in other places in your Noodl application.
 

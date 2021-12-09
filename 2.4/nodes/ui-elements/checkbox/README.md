@@ -4,17 +4,29 @@
 
 This node places a customizable checkbox in the visual tree.
 
-![](./checkbox_visual.png ':class=img-size-l')
+<div class="ndl-image-with-background l">
+
+![](./checkbox_visual.png)
+
+</div>
 
 The checkbox will flip its state when clicked and its <span class="ndl-data">Checked</span> property can be connected to a data source, such as a <span class="ndl-data">variable</span> or <span class="ndl-data">object</span>.
 
-![](./checkbox_node.png ':class=img-size-l')
+<div class="ndl-image-with-background l">
+
+![](./checkbox_node.png)
+
+</div>
 
 <##head##>
 
 This control contains all logic such as accessibility etc. It can be styled in via it's properties, or you can use it only for the logic and create your own checkbox component in your own design system.
 
-![](./checkbox.gif ':class=img-size-s')
+<div class="ndl-image-with-background s">
+
+![](./checkbox.gif)
+
+</div>
 
 ## Inputs
 

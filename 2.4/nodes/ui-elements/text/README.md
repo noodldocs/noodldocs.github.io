@@ -4,11 +4,19 @@
 
 This node places a text element in the visual tree. You can use it for both single words as well as paragraphs of text.
 
-![](./text_visual.png ':class=img-size-l')
+<div class="ndl-image-with-background l">
+
+![](./text_visual.png)
+
+</div>
 
 The <span class="ndl-node">Text</span> node can be styled with font family, color, size, and much more.
 
-![](./text_node.png ':class=img-size-l')
+<div class="ndl-image-with-background l">
+
+![](./text_node.png)
+
+</div>
 
 <##head##>
 

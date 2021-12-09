@@ -5,7 +5,12 @@
 This node is used to remove an _Object_ from an _Array_. Both the Array and the Object are referred to through their _Id_. The removal happens when the _Do_ action is triggered.
 If the _Object_ to be removed is not in the array, nothing will happen.
 
-![](remove-object-from-array.png ':class=ndl-image large')
+<div class="ndl-image-with-background">
+
+![](remove-object-from-array.png)
+
+</div>
+
 <##head##>
 
 ## Inputs

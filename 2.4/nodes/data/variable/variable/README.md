@@ -4,16 +4,23 @@
 
 Use this node to store a single data variable that will be globally accessible throughout the application. **Variable** works in a similar way as [Object](/nodes/data/object/object/) but can only store one value.
 
+<div class="ndl-image-with-background l">
+
+![](variable-1.png)
+
+</div>
+
+The value can be dynamically stored, either by passing it a new value or by sending <span class="ndl-signal">signals</span> to the <span class="ndl-node">[Set Variable](/nodes/data/variable/set-variable/)</span> node.
+
+<##head##>
+
 ## Storing a value
 
 Give the Variable a name with the **Name** input and simply connect to **Value**, whenever the input connection is updated the value will be stored in the variable. You can also use the [Set Variable](/nodes/data/variable/set-variable/) node to update tha value of a **Variable**. In this case, you control when the value is stored by sending a signal to the <span class=”ndl-signal”>Do</span> action.
 
-![](variable-1.png ':class=img-size-m')
-
 ## Use a stored value
 
 When a value is stored in a variable you can use it somewhere else in your application simply be creating a new node and giving it the same **Name** and connecting the **Value** property.
-<##head##>
 
 ## Inputs
 

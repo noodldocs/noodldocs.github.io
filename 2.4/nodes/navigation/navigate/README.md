@@ -4,7 +4,11 @@
 
 This node is used to navigate between <span class="ndl-node">[Page](/nodes/navigation/page/)</span> nodes set up in a <span class="ndl-node">[Page Router](/nodes/navigation/page-router/)</span>.
 
-![](./navigate-page-inputs.png ':class=img-size-l')
+<div class="ndl-image-with-background l">
+
+![](./navigate-page-inputs.png)
+
+</div>
 
 You can use a [Page Inputs](/nodes/navigation/page-inputs/) node to pass parameters to the <span class="ndl-node">Page</span> you are navigating to. Any <span class="ndl-data">Path Parameters</span> or <span class="ndl-data">Query Parameters</span> you add will show up as inputs to the <span class="ndl-node">Navigate</span> node if you select that <span class="ndl-node">Page</span> as the <span class="ndl-data">Target Page</span>.
 

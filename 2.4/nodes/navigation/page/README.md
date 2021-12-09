@@ -6,7 +6,11 @@ The **Page** node is a basic building block when creating web type navigation us
 
 **Pages** are typically used together with a [Page Inputs](/nodes/navigation/page-inputs/) node to be able to provide parameters to the **Page**.
 
-![](../page-router/create-page.png ':class=img-size-m')
+<div class="ndl-image-with-background">
+
+![](../page-router/create-page.png)
+
+</div>
 
 <##head##>
 

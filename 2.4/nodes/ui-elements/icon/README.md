@@ -4,7 +4,11 @@
 
 This node places an icon in the visual tree.
 
-![](./icon.png ':class=img-size-l')
+<div class="ndl-image-with-background l">
+
+![](./icon.png)
+
+</div>
 
 You can use an icon from the built in library, or provide your own image source.
 <##head##>

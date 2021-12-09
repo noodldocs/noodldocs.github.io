@@ -4,7 +4,11 @@
 
 This node maps a range of input <span class="ndl-data">numbers</span> to a range of output <span class="ndl-data">numbers</span>. It translates the relative position of the input <span class="ndl-data">number</span> to its corresponding <span class="ndl-data">number</span> in the output range.
 
+<div class="ndl-image-with-background l">
+
 ![](number_remapper_node.png)
+
+</div>
 
 If the input range is `0 to 360`, the output range is `0 to 1` and the input <span class="ndl-data">number</span> is `180` the output <span class="ndl-data">number</span> will be `0.5`.
 

@@ -4,7 +4,11 @@
 
 This node will delete a **Record** of a given **Class** from the Noodl Cloud Services backend.
 
-![](./delete-record-node.png ':class=img-size-l')
+<div class="ndl-image-with-background l">
+
+![](./delete-record-node.png)
+
+</div>
 
 You will need to provide the **Id** of the record to be deleted, there are multiple ways to do this, see the **Id Source** property for details.
 

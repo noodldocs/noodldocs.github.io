@@ -4,7 +4,11 @@
 
 This node opens a file picker dialog. Noodl uses the system file picker dialog, meaning it works seamlessly with the users native device experience.
 
-![](open-file-picker.png ':class=img-size-l')
+<div class="ndl-image-with-background l">
+
+![](open-file-picker.png)
+
+</div>
 
 You can define what file types are allowed to be uploaded. This is done by entering a <span class="ndl-data">string</span> of file types: each item needs to start with a period (`.`) and be separated by a comma (`,`). Leave the list blank if you want to accept any file type.
 

@@ -4,7 +4,11 @@
 
 This node uploads a file to the Noodl Cloud Services. Can be used in combination with a **Record** to link the file to a property. When retrieving the file reference you can get the **URL** to the file and **Name** of file using a [Cloud File](/nodes/cloud-services/cloud-file.md) node.
 
-![](upload-file.png ':class=img-size-l')
+<div class="ndl-image-with-background l">
+
+![](upload-file.png)
+
+</div>
 <##head##>
 
 ## Inputs

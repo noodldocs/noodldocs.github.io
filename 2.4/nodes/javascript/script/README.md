@@ -4,7 +4,11 @@
 
 This node allows you to add complex JavaScript to your application. Please refer to the [Script Guide](/guides/javascript.md) to learn more about the API. But remember - with great power comes great responsibility.
 
+<div class="ndl-image-with-background l">
+
 ![](script.png)
+
+</div>
 
 In most cases you are better off using the simpler <span class="ndl-node">[Function](/nodes/javascript/function.md)</span> node for your custom JavaScript.
 

@@ -4,11 +4,19 @@
 
 This node holds a <span class="ndl-data">number</span> value. It is local to the component and cannot be accessed elsewhere in the app.
 
-![](number-1.png ':class=img-size-l')
+<div class="ndl-image-with-background l">
+
+![](number-1.png)
+
+</div>
 
 You can also use the <span class="ndl-node">Number</span> node connected to a <span class="ndl-node">Component Inputs</span> node. This will make sure the input shows up as a <span class="ndl-data">number</span> input in the Property Panel for instances of this component.
 
-![](number-2.png ':class=img-size-l')
+<div class="ndl-image-with-background l">
+
+![](number-2.png)
+
+</div>
 
 <##head##>
 

@@ -4,7 +4,11 @@
 
 This node lets you delay <span class="ndl-signal">signals</span> by the specified amount of milliseconds.
 
+<div class="ndl-image-with-background l">
+
 ![](delay_node.png)
+
+</div>
 
 <##head##>
 

@@ -4,7 +4,11 @@
 
 This node generates a unique ID, something that is very useful when storing data in a backend like Noodl Cloud Services.
 
+<div class="ndl-image-with-background l">
+
 ![](unique-id.png)
+
+</div>
 
 Generating a unique ID for every entity in the database means that it can easily be retrieved and referenced, no matter what the content is.
 

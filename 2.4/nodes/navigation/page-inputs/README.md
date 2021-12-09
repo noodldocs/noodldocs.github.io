@@ -4,7 +4,11 @@
 
 This node is used to pass parameters in the URL when navigating between pages in a [Page Router](/nodes/navigation/page-router/).
 
-![](./page-inputs.png ':class=img-size-m')
+<div class="ndl-image-with-background l">
+
+![](./page-inputs.png)
+
+</div>
 
 One common use for this is when you want certain input parameters to be available in sharable links.
 

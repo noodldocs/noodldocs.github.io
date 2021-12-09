@@ -4,7 +4,11 @@
 
 This node is used to connect to external [REST][0] endpoints to make requests and expose data. It supports request content in **JSON** format.
 
-![](rest-1.png ':class=img-size-m')
+<div class="ndl-image-with-background l">
+
+![](rest-1.png)
+
+</div>
 
 You initiate the request by sending a <span class="ndl-signal">signal</span> to the <span class="ndl-signal">Fetch</span> input. Any inputs and outputs to the node are specified in the `request` and `response` scripts.
 
@@ -54,26 +58,27 @@ The REST node looks at the `Content-Type` header to determine how to parse the r
 
 ## Inputs
 
-| Signal | Description |
-| ------ | ----------- |
-| <span class="ndl-signal">Fetch</span> | Connect a signal to this input to trigger a request. |
+| Signal                                 | Description                                               |
+| -------------------------------------- | --------------------------------------------------------- |
+| <span class="ndl-signal">Fetch</span>  | Connect a signal to this input to trigger a request.      |
 | <span class="ndl-signal">Cancel</span> | Send a signal to this input to cancel an ongoing request. |
 
-| Data | Description |
-| ---- | ----------- |
-| <span class="ndl-data">Resource</span> | This is the resource endpoint that the REST request will use, i.e. the url. |
-| <span class="ndl-data">Method</span> | This is the method that will be used for the request. Supported methods are GET, PUT, POST, PATCH and DELETE. |
-| <span class="ndl-data">Request</span> | Here you can edit the request script. |
-| <span class="ndl-data">Response</span> | Here you can edit the response script. |
+| Data                                   | Description                                                                                                   |
+| -------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| <span class="ndl-data">Resource</span> | This is the resource endpoint that the REST request will use, i.e. the url.                                   |
+| <span class="ndl-data">Method</span>   | This is the method that will be used for the request. Supported methods are GET, PUT, POST, PATCH and DELETE. |
+| <span class="ndl-data">Request</span>  | Here you can edit the request script.                                                                         |
+| <span class="ndl-data">Response</span> | Here you can edit the response script.                                                                        |
+
 ### Request and response inputs
 
 Any variable of the **Inputs** object that you access in your scrips will automatically become an input of the node.
 
 ## Outputs
 
-| Signal | Description |
-| ------ | ----------- |
-| <span class="ndl-signal">Success</span> | A signal will be emitted on this output if the request receives a successful status code (2XX). |
+| Signal                                  | Description                                                                                             |
+| --------------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| <span class="ndl-signal">Success</span> | A signal will be emitted on this output if the request receives a successful status code (2XX).         |
 | <span class="ndl-signal">Failure</span> | A signal will be emitted on this output on all other status codes of if another type of failure occurs. |
 
 ### Request and response outputs

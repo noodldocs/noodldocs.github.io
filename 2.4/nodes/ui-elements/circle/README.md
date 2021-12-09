@@ -4,7 +4,11 @@
 
 This node places a circle (or a circle segment) in the visual tree. It features a wide range of design options.
 
-![](./circle_visual.png ':class=img-size-l')
+<div class="ndl-image-with-background l">
+
+![](./circle_visual.png)
+
+</div>
 
 <##head##>
 

@@ -4,13 +4,21 @@
 
 This node a shared set of properties that can be accessed from a component as well as from any child components. It can be used to implement things such as radio groups, tabs, accordion lists and other visual elements that need to coordinate. It is also a useful general tool for any kind communication between a set of components.
 
-![](component-object.png ':class=img-size-l')
+<div class="ndl-image-with-background l">
+
+![](component-object.png)
+
+</div>
 
 The <span class="ndl-node">Component Object</span> node works much like the <span class="ndl-node">[Object](/nodes/data/object/object/)</span> node where you add properties that become inputs or outputs to the node.
 
 <##head##>
 
-![](component-object-props.png ':class=img-size-l')
+<div class="ndl-image-with-background">
+
+![](component-object-props.png)
+
+</div>
 
 Unlike the <span class="ndl-node">[Object](/nodes/data/object/object/)</span> node it does not have an <span class="ndl-data">Id</span>. Instead all <span class="ndl-node">Component Object</span> nodes within the same component share the same data.
 

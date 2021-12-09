@@ -4,11 +4,19 @@
 
 This node is used to construct a new text <span class="ndl-data">string</span> from multiple other text <span class="ndl-data">strings</span>.
 
-![](./stringformat-node.png ':class=img-size-l')
+<div class="ndl-image-with-background l">
+
+![](./stringformat-node.png)
+
+</div>
 
 The <span class="ndl-node">String Format</span> node needs a format input where the output <span class="ndl-data">string</span> and string variables are defined.
 
-![](./stringformat-visual.png ':class=img-size-l')
+<div class="ndl-image-with-background l">
+
+![](./stringformat-visual.png)
+
+</div>
 
 <##head##>
 

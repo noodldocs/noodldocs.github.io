@@ -4,7 +4,11 @@
 
 This node lets you blend between color values.
 
+<div class="ndl-image-with-background">
+
 ![](color-blend.png)
+
+</div>
 
 <##head##>
 

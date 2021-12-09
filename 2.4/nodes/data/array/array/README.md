@@ -4,7 +4,11 @@
 
 Arrays are ordered lists of [Object](/nodes/data/object/object/)s. See the guide on arrays [here](/guides/arrays) for a more detailed introduction.
 
-![](array.png ':class=ndl-image large')
+<div class="ndl-image-with-background l">
+
+![](array.png)
+
+</div>
 
 You can create and modify the array using the [Create new Array](/nodes/data/array/create-new-array/), [Insert Object Into Array](/nodes/data/array/insert-into-array/) and [Remove Object From Array](/nodes/data/array/remove-from-array/).
 <##head##>

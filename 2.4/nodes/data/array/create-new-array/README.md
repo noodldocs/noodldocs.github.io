@@ -4,7 +4,13 @@
 
 Creates a new Array. The outgoing property _Id_ is the id of the newly created array. This can for example be connected to an [Array node](nodes/data/array/array/) or [Insert Object Into Array Node](nodes/data/array/insert-into-array/).
 
-![](create-new-array.png ':class=ndl-image large')<##head##>
+<div class="ndl-image-with-background l">
+
+![](create-new-array.png)
+
+</div>
+
+<##head##>
 
 ## Inputs
 

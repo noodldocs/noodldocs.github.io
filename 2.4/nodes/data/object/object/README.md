@@ -4,11 +4,21 @@
 
 An **Object** is a basic data object in Noodl that stores any amount of properties. It can be used standalone or together with [Array](nodes/data/array/array/) and [Repeater](nodes/ui-elements/repeater/) nodes to create lists. An **Object** works much like a [Variable](nodes/data/variable/variable/) but it can store many properties in one object.
 
-![](object-3.png ':class=img-size-l')
+<div class="ndl-image-with-background l">
+
+![](object-3.png)
+
+</div>
 
 The **Object** node is typically used together with the [Create New Object](nodes/data/object/create-new-object/) node and the [Set Object Properties](nodes/data/object/set-object-properties/) node to create a complete object lifecycle, creating and updating object properties.
 
-![](object-lifecycle.png ':class=img-size-l')
+<div class="ndl-image-with-background l">
+
+![](object-lifecycle.png)
+
+</div>
+
+<##head##>
 
 You can also create and refer to an object statically (i.e. not using a [Create New Object](nodes/data/object/create-new-object/) by settings its **Id**. Generally, the **Id** is a global identifyer of the **Object** meaning that any **Object** nodes with the same idea will refer to the same data. If you change the properties in one **Object** node the values of all **Object** nodes with the same **Id** will be changed immediately, unless if you connect the **Fetch** signal.
 
@@ -18,7 +28,6 @@ You can also create and refer to an object statically (i.e. not using a [Create 
 If needed, you can use the **Id** of a **Record** as the **Id** of an **Object** to access its properties, but obviously cannot use the **Object** to store or fetch the data from the database.
 
 Generally you use **Objects** as data holder for data that does not need to be stored in a database.
-<##head##>
 
 ## Inputs
 

@@ -4,7 +4,12 @@
 
 The **Pop Component Stack** node is used together with a [Component Stack](/nodes/component-stack/component-stack/) to navigate back ("pop"). It is typically used when creating app style navigation. For more information on how **Component Stack** navigation work, check out the [Component Stack](/nodes/component-stack/component-stack/) documentation.
 
-![](pop-component-stack.png ':class=img-size-m')
+<div class="ndl-image-with-background l">
+
+![](pop-component-stack.png)
+
+</div>
+
 <##head##>
 
 ## Inputs

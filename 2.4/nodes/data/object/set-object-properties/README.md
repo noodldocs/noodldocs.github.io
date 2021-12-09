@@ -4,11 +4,19 @@
 
 You can use this node to set properties on an [Object](/nodes/data/object/object/). You must identify the **Object** with it's **Id** (see full docs for details)
 
-![](./set-object-properties.png ':class=img-size-l')
+<div class="ndl-image-with-background l">
+
+![](./set-object-properties.png)
+
+</div>
 
 You can then specify which properties you want to set on the Object in the property panel.
 
-![](./prop-panel.png ':class=ndl-image small')
+<div class="ndl-image-with-background">
+
+![](./prop-panel.png)
+
+</div>
 
 Finally, send a signal to **Do** to perform the action.
 

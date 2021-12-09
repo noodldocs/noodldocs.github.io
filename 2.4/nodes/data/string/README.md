@@ -4,7 +4,11 @@
 
 This node contains a <span class="ndl-data">string</span> value (text). It can be provided with static data or be dynamically set from other nodes. The <span class="ndl-node">String</span> node is often used to convert other data types to a <span class="ndl-data">string</span> or to hold string values.
 
-![](./string_node.png ':class=img-size-l')
+<div class="ndl-image-with-background l">
+
+![](./string_node.png)
+
+</div>
 
 You can also use the String node connected to a <span class="ndl-node">Component Inputs</span> node. This will make sure the input shows up as a <span class="ndl-data">string</span> input in the Property Panel for instances of this component.
 
@@ -12,22 +16,22 @@ You can also use the String node connected to a <span class="ndl-node">Component
 
 You can use it to provide a static value for input to other nodes. It is local to the component and cannot be accessed anywhere else in the graph.
 
-<div class="ndl-images">
-    <img src="/guides/variables-and-objects/local-string.png" class="ndl-image large"></img>
+<div class="ndl-image-with-background l">
+    <img src="/guides/variables-and-objects/local-string.png"></img>
 </div>
 
 You can simply connect to the **Value** input to set the value of the node when the connection is updated.
 
-<div class="ndl-images">
-    <img src="/nodes/data/string-1.png" class="ndl-image large"></img>
+<div class="ndl-image-with-background l">
+    <img src="/nodes/data/string-1.png"></img>
 </div>
 
 Using a variable node like above will make the **Text** component input show up as a string in the property editor of all instances of this component.
 
 You can also use the **Set** input to control when the value of the variable node is updated. In the setup below the value is only updated when the **Text Input** node is blurred.
 
-<div class="ndl-images">
-    <img src="/nodes/data/string-2.png" class="ndl-image large"></img>
+<div class="ndl-image-with-background l">
+    <img src="/nodes/data/string-2.png"></img>
 </div>
 
 ## Inputs

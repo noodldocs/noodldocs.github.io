@@ -4,7 +4,11 @@
 
 With this node you can set properties on the closed parent **Component Object**. You can access properties of the closet parent **Component Object** with the [Parent Component Object](/nodes/component-utilities/parent-component-object/) node.
 
-![](set-parent-component-object-properties.png ':class=img-size-m')
+<div class="ndl-image-with-background l">
+
+![](set-parent-component-object-properties.png)
+
+</div>
 
 <##head##>
 

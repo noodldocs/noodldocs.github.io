@@ -4,13 +4,21 @@
 
 This node evaluates a condition and sends one of two <span class="ndl-signal">signals</span> depending on if the condition is <span class="ndl-data">true</span> or <span class="ndl-data">false</span>.
 
-![](./condition_node.png ':class=img-size-l')
+<div class="ndl-image-with-background l">
+
+![](./condition_node.png)
+
+</div>
 
 The input <span class="ndl-data">Condition</span> will be treated as a <span class="ndl-data">boolean</span>, and the evaluation happens when the input changes, unless an explict <span class="ndl-signal">signal</span> is connected to the <span class="ndl-signal">Evaluate</span> input.
 
 <##head##>
 
-![](condition.gif ':class=img-size-l')
+<div class="ndl-image-with-background l">
+
+![](condition.gif)
+
+</div>
 
 ## Inputs
 

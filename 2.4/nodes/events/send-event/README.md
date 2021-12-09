@@ -4,7 +4,11 @@
 
 This node sends a <span class="ndl-signal">signal</span> to another place in your app without having to connect the nodes directly. To learn more about **Events** check out the [Events Guide](/guides/events.md).
 
+<div class="ndl-image-with-background l">
+
 ![](send-event.png)
+
+</div>
 
 The <span class="ndl-node">Send Event</span> node lets you specify a channel to broadcast to. When this node is triggered with a <span class="ndl-signal">Send signal</span> all <span class="ndl-node">Receive Event</span> nodes set to that channel will be triggered.
 <##head##>

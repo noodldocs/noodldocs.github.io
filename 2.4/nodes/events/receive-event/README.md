@@ -4,7 +4,11 @@
 
 This node is used to receive a signal triggered by a <span class="ndl-node">Send Event</span> node. To learn more about **Events** check out the [Events Guide](/guides/events.md).
 
+<div class="ndl-image-with-background l">
+
 ![](receive-event.png)
+
+</div>
 
 The <span class="ndl-node">Send Event</span> node lets you specify a channel to broadcast to. All <span class="ndl-node">Receive Event</span> nodes set to that channel will be triggered simultaneously.
 <##head##>

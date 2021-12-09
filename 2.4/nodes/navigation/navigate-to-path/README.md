@@ -4,7 +4,11 @@
 
 This node lets you navigate to a specific <span class="ndl-node">[Page](/nodes/navigation/page/)</span> node in a <span class="ndl-node">[Page Router](/nodes/navigation/page-router/)</span>.
 
-![](./navigate-to-path.png ':class=img-size-l')
+<div class="ndl-image-with-background l">
+
+![](./navigate-to-path.png)
+
+</div>
 
 In most cases you will want to use the <span class="ndl-node">[Navigate](/nodes/navigation/navigate/)</span> or <span class="ndl-node">[External Link](/nodes/navigation/external-link/)</span> nodes for your navigation. The <span class="ndl-node">Navigate To Path</span> node is a low level implementation suitable for more advanced and specific use cases.
 

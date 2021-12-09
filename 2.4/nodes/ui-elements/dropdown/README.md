@@ -4,11 +4,19 @@
 
 This node places a dropdown input field in the visual tree. The input can for example be used to capture information from a user.
 
-![](./dropdown_visual.png ':class=img-size-l')
+<div class="ndl-image-with-background l">
+
+![](./dropdown_visual.png)
+
+</div>
 
 The dropdown takes an array of options as an input, which will be shown in the dropdown for the user to pick from.
 
-![](./dropdown_node.png ':class=img-size-l')
+<div class="ndl-image-with-background l">
+
+![](./dropdown_node.png)
+
+</div>
 
 ## The Incoming Items Format
 
@@ -16,11 +24,19 @@ The incoming items should be an [Array](/nodes/data/array/array/) of [Objects](/
 
 The **Object** should have two mandatory properties: `Label`, `Value` (note that the case matters, `value` would not work). The `Label` property should contain the string to be shown in the **Dropdown**. The `Value` property will be set on the output **Value** on the **Dropdown**.
 
-![](./dropdown-2.png ':class=img-size-l')
+<div class="ndl-image-with-background l">
+
+![](./dropdown-2.png)
+
+</div>
 
 Depending on how you original data looks, it may be necessary to use the [Array Map](/nodes/data/array/array-map/) node to re-map values in the original data towards `Label` and `Value`. One useful pattern is to map the `id` of an **Object** to the `Value` property in teh **Array Map** to easily access the selected **Object**. The mapping can be achieved through `Value:function (object){return object.id}`.
 
-![](./dropdown-mapping.png ':class=img-size-l')
+<div class="ndl-image-with-background l">
+
+![](./dropdown-mapping.png)
+
+</div>
 
 <##head##>
 

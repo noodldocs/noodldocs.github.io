@@ -4,7 +4,11 @@
 
 The node can be used to create a fresh new [Object](nodes/data/object/object/).
 
-![](./create-new-object.png ':class=img-size-l')
+<div class="ndl-image-with-background l">
+
+![](./create-new-object.png)
+
+</div>
 
 You can provide any number of properties with values for your new Object. When the **Done** signal is sent the Object is created and you can perform other actions using the Object.
 

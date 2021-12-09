@@ -6,7 +6,11 @@ This node lets you navigate between your <span class="ndl-node">[Page](/nodes/na
 
 Unlike the somewhat similar [Component Stack](/nodes/component-stack/component-stack/) the **Page Router** is optimized for web type navigation (in contrast to app type) and uses URLs and routing as part of the navigation as well as the browser history.
 
-![](./page-router-1.png ':class=img-size-m')
+<div class="ndl-image-with-background">
+
+![](./page-router-1.png)
+
+</div>
 
 Every <span class="ndl-node">Page Router</span> has a <span class="ndl-data">Start Page</span>. The pages are rendered inside of the <span class="ndl-node">Page Router</span>. You can use the <span class="ndl-data">Clip Behavior</span> option to decide how the <span class="ndl-node">Page Router</span> should wrap its content.
 
@@ -18,17 +22,29 @@ The **Page Router** uses standard browser navigation which means that the user c
 
 Note that the **Page Router** only navigates between [Pages](/nodes/navigation/page/). **Pages** cannot be created through the Node Picker. You create them using **Create Page** in the component side bar.
 
-![](./create-page.png ':class=img-size-m')
+<div class="ndl-image-with-background">
+
+![](./create-page.png)
+
+</div>
 
 After creating your **Pages** they are automatically added to your **Page Router** unless you have multiple **Page Routers** in your project. Then you'll have to add them manually to where they belong.
 
-![](./pages-in-router.png ':class=img-size-m')
+<div class="ndl-image-with-background">
+
+![](./pages-in-router.png)
+
+</div>
 
 ## Start Page
 
 When creating and adding pages to your **Page Router** you will have to make one of the pages a starting page by opening the menu on the page item in the **Page Router** properties and selecting _Make Start Page"_.
 
-![](./make-start-page.png ':class=img-size-m')
+<div class="ndl-image-with-background">
+
+![](./make-start-page.png)
+
+</div>
 
 ## Navigating
 
@@ -52,7 +68,7 @@ The most straight forward way of navigating between pages within an app is to us
 
 If needed, you can use multiple **Page Routers** at the same time. This could for example be used if you have multiple navigation flows within a higher level navigation flow. For example, you may have a top level navigation between the pages _Home_ _Settings_ and _Content_ and within each page have sub navigation into specific pages under each section.
 
-![](./multi-router.png ':class=img-size-l')
+![](./multi-router.png)
 
 [filename](../common-navigation/page-inputs/README.md ':include')
 

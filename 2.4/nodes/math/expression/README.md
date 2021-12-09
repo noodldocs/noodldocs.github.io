@@ -4,7 +4,11 @@
 
 This node enables you to do your own calculations using simple expressons. Inputs are automatically derived from the expression. An expression set to `a + someName + 1` will get two inputs: one for <span class="ndl-data">a</span> and one for <span class="ndl-data">someName</span>.
 
+<div class="ndl-image-with-background l">
+
 ![](expression.png)
+
+</div>
 
 The <span class="ndl-node">Expression</span> node runs JavaScript under the hood and supports a range of mathematical expressions.
 

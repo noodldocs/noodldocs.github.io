@@ -4,7 +4,12 @@
 
 The **Push Component To Stack** node is used together with a [Component Stack](/nodes/component-stack/component-stack/) to navigate to a new component (i.e. "push on the stack"). It is typically used when creating app style navigation. For more information on how **Component Stack** navigation work, check out the [Component Stack](/nodes/component-stack/component-stack/) documentation.
 
-![](push-component.png ':class=img-size-m')
+<div class="ndl-image-with-background l">
+
+![](push-component.png)
+
+</div>
+
 <##head##>
 
 ## Inputs
@@ -39,8 +44,8 @@ The **Push Component To Stack** node is used together with a [Component Stack](/
 | <span class="ndl-data">Fade In</span>             | <##input:tr-fadein##>Available for _Popup_ transitions. This indicates if the new top component should fade in ou not during the transition.<##input##>                                                                                                                                                                                                                                           |
 | <span class="ndl-data">Timing</span>              | <##input:tr-timing##>This is a timing curve that controls the delay, duration and animation ease of the transition.<##input##>                                                                                                                                                                                                                                                                    |
 
-<div class="ndl-images">
-    <img src="/guides/navigation/transition-params.png" class="ndl-image large"></img>
+<div class="ndl-image-with-background l">
+    <img src="/guides/navigation/transition-params.png"></img>
 </div>
 
 <div style="display: none">

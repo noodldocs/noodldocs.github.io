@@ -4,11 +4,19 @@
 
 This node is used to fetch a selection of records from the Noodl Cloud Services backend. You can provide a query to define the selection of records you want to retrieve.
 
-![](./query-records-node.png ':class=img-size-l')
+<div class="ndl-image-with-background l">
+
+![](./query-records-node.png)
+
+</div>
 
 You can specify the query using filter, sorting and limit in the Property Panel.
 
-![](./query-records-filter-1.png ':class=img-size-l')
+<div class="ndl-image-with-background l">
+
+![](./query-records-filter-1.png)
+
+</div>
 
 <##head##>
 

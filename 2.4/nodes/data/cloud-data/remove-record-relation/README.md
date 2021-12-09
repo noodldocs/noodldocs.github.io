@@ -4,7 +4,11 @@
 
 This node is used to remove a relation between two records, the owning record and the target record.
 
-![](./remove-relation.png ':class=img-size-l')
+<div class="ndl-image-with-background l">
+
+![](./remove-relation.png)
+
+</div>
 
 One record is the owning record (in this case **Group** records that can have a relation to many **Post** records), it should have a **Relation** type property.
 

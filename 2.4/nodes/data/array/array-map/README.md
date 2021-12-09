@@ -4,7 +4,12 @@
 
 This node takes an input array, runs a small map script on each item, and outputs the resulting mapped array. That is an array with new objects, each created in the mapping script.
 
-![](array-map.png ':class=img-size-l')
+<div class="ndl-image-with-background l">
+
+![](array-map.png)
+
+</div>
+
 <##head##>
 
 ## Inputs

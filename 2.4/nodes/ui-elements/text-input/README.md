@@ -4,11 +4,19 @@
 
 This node places a text input field in the visual tree. The input can be used to capture information from a user.
 
-![](./textinput_visual.png ':class=img-size-l')
+<div class="ndl-image-with-background l">
+
+![](./textinput_visual.png)
+
+</div>
 
 The captured value can easily be connected to other nodes in a project.
 
-![](./textinput_node.png ':class=img-size-l')
+<div class="ndl-image-with-background l">
+
+![](./textinput_node.png)
+
+</div>
 
 <##head##>
 

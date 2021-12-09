@@ -4,7 +4,11 @@
 
 Store static data to populate an [Array](nodes/data/array/array/) with items. The Static Array node is great for providing static local data for lists etc. You can use it e.g. as an input to a **For Each** node.
 
-![](static-array-1.png ':class=img-size-m')
+<div class="ndl-image-with-background l">
+
+![](static-array-1.png)
+
+</div>
 
 You can provide the data in either **CSV** format or, **JSON** format. The **items** output is of **Noodl.Array** format. The content of the array is reset whenever the application is refreshed.
 <##head##>

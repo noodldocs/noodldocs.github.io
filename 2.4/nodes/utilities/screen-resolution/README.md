@@ -4,7 +4,11 @@
 
 This node outputs the <span class="ndl-data">width</span>, <span class="ndl-data">height</span> and <span class="ndl-data">aspect ratio</span> of the display area in CSS pixels.
 
+<div class="ndl-image-with-background l">
+
 ![](screen-resolution.png)
+
+</div>
 
 <##head##>
 

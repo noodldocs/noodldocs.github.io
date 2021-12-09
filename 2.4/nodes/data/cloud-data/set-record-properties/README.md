@@ -4,7 +4,11 @@
 
 This action node will set property values of a record.
 
-![](./set-record-properties-node.png ':class=img-size-l')
+<div class="ndl-image-with-background l">
+
+![](./set-record-properties-node.png)
+
+</div>
 
 You need specify the class of the record in the property panel. Then you can either specify the values of the properties to set in the property panel or by providing them as an input connection.
 

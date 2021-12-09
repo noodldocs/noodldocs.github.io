@@ -4,7 +4,11 @@
 
 This node is used to create a new record of a given class. You specify the class of record to be created in the Property Panel. Sending a <span class="ndl-signal">signal</span> to <span class="ndl-signal">Do</span> will perform the action.
 
-![](./create-new-record.png ':class=img-size-l')
+<div class="ndl-image-with-background l">
+
+![](./create-new-record.png)
+
+</div>
 
 You can also provide values for the properties of the record either via connections or by typing the values in the property panel.
 

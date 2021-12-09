@@ -4,11 +4,19 @@
 
 This node is used to filter an <span class="ndl-data">array</span> that is assumed to contain Records of a given class based on custom filter conditions.
 
-![](./filter-records-node.png ':class=img-size-l')
+<div class="ndl-image-with-background l">
+
+![](./filter-records-node.png)
+
+</div>
 
 You can specify both filter and sorting visually.
 
-![](./filter-records-visual.png ':class=img-size-l')
+<div class="ndl-image-with-background l">
+
+![](./filter-records-visual.png)
+
+</div>
 <##head##>
 
 ## Inputs
