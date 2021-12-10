@@ -40,6 +40,7 @@
 - [JavaScript](guides/javascript.md)
 - [Version control](guides/version-control/)
 - [Deploying Noodl apps](guides/deploy-noodl-apps.md)
+- [Figma Plugin](guides/figma/)
 
 <!-- 
 * [Events](guides/events.md)
