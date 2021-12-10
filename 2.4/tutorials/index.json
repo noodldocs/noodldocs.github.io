@@ -23,13 +23,6 @@
     {
         "category": "New for 2.4",
         "label": "",
-        "thumb": "tutorials/03_survey_app.png",
-        "url": "/#/tutorials/getting-started?id=build-the-ui-for-a-task-list-app",
-        "icon": ""
-    },
-    {
-        "category": "New for 2.4",
-        "label": "",
         "thumb": "tutorials/01_tasklist_app.png",
         "url": "/#/tutorials/getting-started?id=build-the-ui-for-a-task-list-app",
         "icon": ""

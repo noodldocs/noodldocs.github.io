@@ -10,7 +10,7 @@
     "iconURL": "navigation_template/navigation.png",
     "title": "Navigation example",
     "desc": "A simple project containing a menu navigation.",
-    "projectURL": "navigation_template/navigation_example_1-0.zip",
+    "projectURL": "navigation_template/navigation_example_1-1.zip",
     "category":"Basic"
   },
   {
@@ -26,7 +26,7 @@
     "iconURL": "survey_app/survey_thumbnail2.png",
     "title": "Custom survey",
     "desc": "A multi-step survey template with custom UI components.",
-    "projectURL": "survey_app/survey_app_1-0.zip",
+    "projectURL": "survey_app/survey_app_1-1.zip",
     "category":"Tutorial"
   },
   {
