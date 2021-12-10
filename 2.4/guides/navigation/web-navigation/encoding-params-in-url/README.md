@@ -33,7 +33,7 @@ In the main App component, create a [Static Array](/nodes/data/array/static-arra
 ```
 name,category,description,price,identifyer
 Katana,steel,A classic japanese weapon used by the samurais,2000,katana
-Broadsword,steel,A favorite among the medival knights,1800,broadsword
+Broadsword,steel,A favorite among the medieval knights,1800,broadsword
 Morning Star,steel,A scary and heavy weapon that require an expert to handle,1200,morning-star
 Wooden Club,wood,A cheap and easy to use weapon that's popular among the farmers,50,wooden-club
 Bokken,wood,A japanese wooden sword used in Kendo,850,bokken
@@ -78,7 +78,7 @@ We immediately see two things
 - The list items need to be styled
 - We see all products, not only the ones in the "steel" category
 
-To fix the styling we go back into the "Product Item" component, make sure the **Group** node is **Content Height** (so the list gets a bit more compact). There is plenty of more styling that can be done, but lets settle for now.
+To fix the styling we go back into the "Product Item" component, make sure the **Group** node is **Content Height** (so the list gets a bit more compact). We also add a **Hover State** on the **Text** node. There is plenty of more styling that can be done, but lets settle for now.
 
 Secondly, to filter out the products of the "steel" category, we go back to the "Steel Products" Page Component.
 
@@ -142,3 +142,29 @@ We want to set it to the "identifyer" value from our product so lets add the pro
 Now try clicking on different products under the different Products pages. You should see the "Show Product Page" with the corresponding identifyer printed on the screen. Also try it in a regular browser to see how the URL looks.
 
 ![](browser-1.png ':class=img-size-l')
+
+### Prettifying the "Show Product Page"
+To finish up the "Show Product Page" we will extract some real data from the product and present in a sligthly prettier way. Go to the "Show Product Page".
+
+Add a new **Group** under the **Page** node and remove the **Text** node that was previously there. Make the **Group** white and give it some margin to give it some space. Add rounded corners and give it some padding for what's going inside it.
+
+Then add three **Text** nodes, one for "name", one for "description" and one for "price". Make the first **Text** node bold. Also, add some nice margins in-between them.
+
+![](show-products-page-1.png ':class=img-size-l')
+
+Now we need to connect the data. We have the "identifyer" coming in as our **Path Parameter**. We are going to use that to filter out the right **Object** from our "Products Array".
+
+So we connect it to an **Array Filter**, which we filter on "identifyer". We should only get one item out, so we can take the **First Item Id** and connect it to the **Id** of an **Object** node.
+
+The **Object** should have three properties, "name", "description" and "price". The "price" need to be formatted. So add a [String Format](/nodes/string-manipulation/string-format/) node with the string `Price: {price} EUR`.
+An input "price" should now be available on the **String Format** node. Connect the "price" output from the **Object** to it.
+
+The data extraction should look similar to below:
+
+![](show-products-page-2.png ':class=img-size-l')
+
+Then connect the data to the **Text** nodes and we are done with this part.
+
+
+
+
