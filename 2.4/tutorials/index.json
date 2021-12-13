@@ -10,14 +10,14 @@
         "category": "New for 2.4",
         "label": "",
         "thumb": "tutorials/01_survey_app.png",
-        "url": "https://youtu.be/ntKTCC7eEk0",
+        "url": "/#/tutorials/survey-app?id=navigation-components",
         "icon": ""
     },
     {
         "category": "New for 2.4",
         "label": "",
         "thumb": "tutorials/02_survey_app.png",
-        "url": "https://youtu.be/720U1pZqWJgp",
+        "url": "/#/tutorials/survey-app?id=interaction-states",
         "icon": ""
     },
     {
