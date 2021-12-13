@@ -25,7 +25,6 @@
 - [UI states and variants](guides/states-and-variants/)
   - [Working with Visual States](guides/states-and-variants/visual-states/)
   - [The States node](guides/states-and-variants/states-node/)
-- [JavaScript](guides/javascript.md)
 - <span class="hoverable">Working With Cloud Data</span>
   - [Creating a Backend](guides/working-with-data/cloud-data/creating-backend/)
   - [Creating a Class](guides/working-with-data/cloud-data/creating-class/)
