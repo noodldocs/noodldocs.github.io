@@ -2,6 +2,9 @@
 
 Noodl is a node based app builder. It’s a way of visually building an application in a way that is similar to code but without any coding skills necessary. Building your app with a node based tool means that you can structure your app visually, easily see all execution paths and follow the data flow.
 
+<div style="padding:62.5% 0 0 0;position:relative;"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/1n0MXSbmTQk" style="position:absolute;top:0;left:0; frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</iframe></div>
+
 ## Nodes
 
 The main building blocks of Noodl are nodes. Every node has its own specific purpose and is very simple in itself, but together they become really powerful.
