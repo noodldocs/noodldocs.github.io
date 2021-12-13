@@ -6,8 +6,12 @@
     },
     {
         "supertitle": "How to",
-        "title": "Do something else with background image",
+        "title": "Create custom UI controls",
         "linkUrl": "guides/navigation/web-navigation/basic-navigation/",
-        "imageUrl": "helloWorld.png"
+    },
+    {
+        "supertitle": "How to",
+        "title": "Capture user data in the cloud",
+        "linkUrl": "guides/navigation/web-navigation/basic-navigation/"
     }
 ]
