@@ -39,7 +39,7 @@
   - [Encoding Parameters In URLs](guides/navigation/web-navigation/encoding-params-in-url/)
 - [JavaScript](guides/javascript.md)
 - [Version control](guides/version-control/)
-- [Deploying Noodl apps](guides/deploy-noodl-apps.md)
+<!-- - [Deploying Noodl apps](guides/deploy-noodl-apps.md) -->
 - [Figma Plugin](guides/figma/)
 
 <!-- 
