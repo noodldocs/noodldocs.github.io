@@ -24,7 +24,7 @@ We will build upon the example built in that guide. If needed you can first impo
 
 <div class="ndl-images">
     <img src="/2.4/guides/navigation/web-navigation/basic-navigation/final.gif" class="ndl-image large"></img> 
-<button class="ndl-import-button" onClick='importIntoNoodl("/2.4/guides/navigation/web-navigation/multi-level-navigation/basic-navigation.zip",{name:"Multi Level Navigation",thumb:"/2.4/guides/navigation/web-navigation/basic-navigation/ui-2.png"})'></button>
+<button class="ndl-import-button" onClick='importIntoNoodl("/2.4/guides/navigation/web-navigation/basic-navigation/basic-navigation.zip",{name:"Basic Navigation",thumb:"/2.4/guides/navigation/web-navigation/basic-navigation/ui-2.png"})'></button>
 </div>
 
 ## Multiple Page Routers
@@ -117,3 +117,8 @@ Finally connect the **Click** signal of the **Button** to **Navigate** on the **
 ![](./main-app-2.png ':class=img-size-m')
 
 Try clicking the Shortcut Button and make sure it always navigates to the "Products" **Page Component** and the "Plastic" **Page Component** within it.
+
+<div class="ndl-images">
+    <img src="/2.4/guides/navigation/web-navigation/multi-level-navigation/multi-level-final.gif" class="ndl-image large"></img> 
+<button class="ndl-import-button" onClick='importIntoNoodl("/2.4/guides/navigation/web-navigation/multi-level-navigation/multi-level-navigation.zip",{name:"Multi Level Navigation",thumb:"/2.4/guides/navigation/web-navigation/multi-level-navigation/multi-level-thumb.png"})'></button>
+</div>

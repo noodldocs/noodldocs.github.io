@@ -110,4 +110,9 @@ Make sure the three **Navigate** nodes points to the right target, and then conn
 
 Now try clicking the buttons. If everything was set up correctly you should see the **Page Component** changing on the screen. Also try it in the browser and see how the URL changes. Try pressing the "Back"/"Forward" button in the browser and see how you move back and forth in the browser history.
 
-![](./final.gif ':class=img-size-l')
+If you want import the full project in Noodl click the "Import" button below and follow the instructions below.
+
+<div class="ndl-images">
+    <img src="/2.4/guides/navigation/web-navigation/basic-navigation/final.gif" class="ndl-image large"></img> 
+<button class="ndl-import-button" onClick='importIntoNoodl("/2.4/guides/navigation/web-navigation/basic-navigation/basic-navigation.zip",{name:"Basic Navigation",thumb:"/2.4/guides/navigation/web-navigation/basic-navigation/ui-2.png"})'></button>
+</div>
