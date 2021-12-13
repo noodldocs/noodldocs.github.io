@@ -165,6 +165,47 @@ The data extraction should look similar to below:
 
 Then connect the data to the **Text** nodes and we are done with this part.
 
+![](show-products-page-3.png ':class=img-size-l')
 
+![](show-products-page-4.png ':class=img-size-m')
 
+## Using Query Parameters
+
+Another way to send parameters to pages is as _Query Parameters_. While you can only have one **Path Parameter**, you can have as many **Query Parameters** as you want.
+
+Lets add a **Query Parameter** to our **Page Inputs** node. We will call it `showVAT` and we will use it to determine whether the price should include VAT or not in the **Show Products Page**.
+
+![](query-param-1.png ':class=img-size-m')
+
+Now lets make use of the parameter. We start by going to the "Settings" page component. We will let the user state its preference here, whether they want to include VAT or not in the displayed price.
+
+### Adding a VAT setting
+
+Add a [Radio Button Group](/nodes/ui-elements/radio-button-group/) with a **Text** node and two [Radio Buttons](/nodes/ui-elements/radio-button/) as children. The text will be the title for the group. Make sure the first **Radio Button** have the value `showVAT` and the second `dontShowVAT`. 
+
+![](settings-1.png ':class=img-size-m')
+
+![](settings-2.png ':class=img-size-m')
+
+So lets save the VAT state, using a bit of logic and a [Variable](/nodes/data/variable/variable/) / [Set Variable](/nodes/data/variable/variable/)  node. Note that we connect the **Variable** that holds the current value to the **Value** of the **Radio Group** node to make sure it reflects the current setting when navigating to the **Settings** Page. (Remember that the **Page Component** will be re-instanciated every time you navigate to it so we need to set the initial value every time.)
+
+![](settings-3.png ':class=img-size-l')
+
+Now we need to update our navigation to encode the setting in the URL. But maybe we should revisit why we would want to do that. Why not use our **Variable** `Show VAT` directly in the **Show Products** page component? Well, if we want our users to be able to copy the URL they are on when looking at a product, and we want the receiver to see the exact same view as the sender, we need to encode the setting in the URL.
+
+### Sending the Query Parameter
+
+Go to the "Product Item" component where we do the navigation to the "Show Product" Page. If you click the **Navigate** node you will now see that the `showVAT` parameter is availabel as an input.
+
+![](navigate-2.png ':class=img-size-m')
+
+We simply connect our **Variable** to it and the value will be sent.
+
+![](list-item-3.png ':class=img-size-l')
+
+### Receiving the Query Parameter
+
+The only thing left is to receive the parameter in the "Show Product" Page and show different prices depending on the parameter. We add a **Variable** that will hold the string to be shown (the price string including the VAT or not). Then we add a [Condition](/nodes/utilities/logic/condition/) node to set the correct string to the **Variable**. The nodes look as below:
+
+![](list-item-4.png ':class=img-size-l')
 
