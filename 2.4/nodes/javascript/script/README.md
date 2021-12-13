@@ -10,7 +10,7 @@ This node allows you to add complex JavaScript to your application. Please refer
 
 </div>
 
-In most cases you are better off using the simpler <span class="ndl-node">[Function](/nodes/javascript/function.md)</span> node for your custom JavaScript.
+In most cases you are better off using the simpler <span class="ndl-node">[Function](/nodes/javascript/function/)</span> node for your custom JavaScript.
 
 <##head##>
 
