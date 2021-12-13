@@ -17,7 +17,7 @@
     "iconURL": "tasklist_app/task_list_thumbnail.png",
     "title": "Task list",
     "desc": "A simple task list template with a connected backend for storing and reading data.",
-    "projectURL": "tasklist_app/task-app-1-0.zip",
+    "projectURL": "tasklist_app/task-app-1-1.zip",
     "category":"Tutorial",
     "useCloudServices":true,
     "cloudServicesTemplateURL":"tasklist_app/task-app-cf.json"
