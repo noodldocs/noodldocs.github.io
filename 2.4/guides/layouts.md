@@ -2,7 +2,7 @@
 
 This guide will cover how to lay out visual elements. It's an important concept for creating responsive, dynamic interfaces for your apps.
 
-The central node for defining a layout in Noodl is the [Group](nodes/visual/group) node. This guide will walk through the most important Group properties for defining a layout.
+The central node for defining a layout in Noodl is the [Group](nodes/ui-elements/group/) node. This guide will walk through the most important Group properties for defining a layout.
 
 **Group** nodes are arranged in a hierarchy. A **Group** controls the layout of its children and there are a number of properties that can be used to specify how the children of a **Group** node will be laid out.
 
