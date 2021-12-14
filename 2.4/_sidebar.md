@@ -23,7 +23,8 @@
 
 - [Layout](guides/layouts.md)
 - [UI states and variants](guides/states-and-variants/)
-  - [Working with Visual States](guides/states-and-variants/visual-states/)
+  - [Style Variants](guides/states-and-variants/variants/)
+  - [Visual States](guides/states-and-variants/visual-states/)
   - [The States node](guides/states-and-variants/states-node/)
 - <span class="hoverable">Working With Cloud Data</span>
   - [Creating a Backend](guides/working-with-data/cloud-data/creating-backend/)
