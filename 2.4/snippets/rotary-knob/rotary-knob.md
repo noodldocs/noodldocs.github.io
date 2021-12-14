@@ -1,6 +1,6 @@
 # Rotary Knob
 
-This is an example of how to use the [Script](/nodes/javascript/script) node to implement a simple rotary knob.
+This is an example of how to use the [Script](/nodes/javascript/script/) node to implement a simple rotary knob.
 
 The knob has start and stop angles, and is not "endless".
 
