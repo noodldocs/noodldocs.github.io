@@ -37,9 +37,15 @@
   - [Basic Navigation](guides/navigation/web-navigation/basic-navigation/)
   - [Multi Level Navigation](guides/navigation/web-navigation/multi-level-navigation/)
   - [Encoding Parameters In URLs](guides/navigation/web-navigation/encoding-params-in-url/)
+- <span class="hoverable">Deploying and hosting Noodl apps</span>
+  - [Deploying an App on `*.noodl.app`](guides/deploy-noodl-apps/deploy-noodl-dot-app.md)
+  - [Using an External Backend](guides/deploy-noodl-apps/using-external-backend.md)
+  - [Hosting backend at GCP (Google Cloud Platform)](guides/deploy-noodl-apps/deploy-backend-gcp.md)
+  - [Hosting backend at AWS](guides/deploy-noodl-apps/deploy-backend-aws.md)
+  - [Hosting frontend at GCP or AWS](guides/deploy-noodl-apps/hosting-frontend.md)
 - [JavaScript](guides/javascript.md)
 - [Version control](guides/version-control/)
-<!-- - [Deploying Noodl apps](guides/deploy-noodl-apps.md) -->
+- [Deploying Noodl apps](guides/deploy-noodl-apps/)
 - [Figma Plugin](guides/figma/)
 
 <!-- 
