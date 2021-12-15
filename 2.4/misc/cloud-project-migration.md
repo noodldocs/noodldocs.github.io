@@ -2,7 +2,7 @@
 
 In Noodl 2.3, new cloud projects will use an improved system that is more stable, secure and will allow us to support features in the future such as branching etc. The new cloud projects are using the popular version control [Git](https://git-scm.com/) which also makes easier to integrate into your development process.
 
-When creating a new cloud project in 2.3 you will automatically get the new type, but any existing cloud projects still use the old system. This will continue to work fine but will not receive updates and bugfixes as prombly so we recommend migrating to a new cloud project (which will also have a bunch of fancy new version control features). 
+When creating a new cloud project in 2.3 you will automatically get the new type, but any existing cloud projects still use the old system. This will continue to work fine but will not receive frequent updates and bugfixes so we recommend migrating to a new cloud project (which will also have a bunch of fancy new version control features). 
 
 To migrate an old project you need to create a new **Cloud Project** just as you normally do. Then you find your old project in the **Library** panel.
 
