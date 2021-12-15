@@ -12,6 +12,7 @@
   - [Horizontal list of cards with snapping](snippets/ui/horizontal-cards-list.md)
   - [Rotary knob](snippets/rotary-knob/rotary-knob.md)
   - [Media Queries](snippets/responsive/media-query.md)
+  - [Shake Detector](snippets/shake-detector/shake-detector.md)
   <!-- - [P5.js Intergration](snippets/p5-canvas/p5-canvas.md) -->
 - [Modules](modules/modules.md)
 <!-- - [Templates](templates/templates.md)
