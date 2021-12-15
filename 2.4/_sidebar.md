@@ -45,7 +45,6 @@
   - [Hosting frontend at GCP or AWS](guides/deploy-noodl-apps/hosting-frontend.md)
 - [JavaScript](guides/javascript.md)
 - [Version control](guides/version-control/)
-- [Deploying Noodl apps](guides/deploy-noodl-apps/)
 - [Figma Plugin](guides/figma/)
 
 <!-- 
