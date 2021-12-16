@@ -13,6 +13,13 @@
     "projectURL": "navigation_template/navigation_example_1-2.zip",
     "category":"Basic"
   },
+    {
+    "iconURL": "happy_holidays/happy_holidays_thumbnail.png",
+    "title": "Happy Holidays",
+    "desc": "A greeting card you can customize and send to all your friends and family.",
+    "projectURL": "happy_holidays/happy-holidays-2021-1.zip",
+    "category":"Basic"
+  },
   {
     "iconURL": "tasklist_app/task_list_thumbnail.png",
     "title": "Task list",
