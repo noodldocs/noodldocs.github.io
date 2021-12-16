@@ -2,7 +2,7 @@
 
 In Noodl there are three main ways of working with Visual States.
 
-[Variants](guides/states-and-variants/variants/)<br>
+[Style Variants](guides/states-and-variants/variants/)<br>
 Used for reusing visual variants of components, like `Primary Button` and `Secondary Button`.
 
 [Visual States](guides/states-and-variants/visual-states/)<br>
