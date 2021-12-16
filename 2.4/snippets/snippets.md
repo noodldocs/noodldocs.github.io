@@ -53,4 +53,8 @@ Remember, if you have questions that aren't covered here, you can always join th
         <td><img src="snippets/p5-canvas/preview.png"></img></td>
         <td><a href="#/snippets/p5-canvas/p5-canvas.md">P5.js Canvas Intergration</a><br>An example on how to set up a p5.js sketch inside of Noodl</td>
     </tr>
+    <tr>
+        <td><img src="snippets/shake-detector/preview.png"></img></td>
+        <td><a href="#/snippets/shake-detector/shake-detector.md">Shake Detector</a><br>Detect when a mobile phone is being shaked</td>
+    </tr>
 </table>
