@@ -1,6 +1,4 @@
-# Variants
-
-!> This guide is under development and is currently missing images.
+# Style Variants
 
 ## What you will learn in this guide
 
@@ -32,7 +30,7 @@ We start by creating a button in the node tree.
 
 <div class="ndl-image-with-background">
 
-![](image.png)
+![](create-button.png)
 
 </div>
 
@@ -40,15 +38,15 @@ We will add a bit more left and right padding, increase the height and make the 
 
 <div class="ndl-image-with-background">
 
-![](image.png)
+![](button.png)
 
 </div>
 
 That looks good. Now let’s create another button.
 
-<div class="ndl-image-with-background">
+<div class="ndl-image-with-background s">
 
-![](image.png)
+![](second-button.png)
 
 </div>
 
@@ -58,15 +56,29 @@ Let’s fix this and save our changes as a variant so that we can start reusing 
 
 At the top of our restyled buttons Property Panel, click the “plus”, “Create new variant”, give it a name and confirm.
 
-<div class="ndl-image-with-background">
+<div class="ndl-image-with-background l">
 
-![](image.png)
+![](create-variant.png)
 
 </div>
 
 This will take all the overrides, remove them from the current instance and save them as a new variant together with all other non-overridden properties.
 
-### Editing a Style Variant
+We can now select the second button and set it to use the "Primary" variant.
+
+<div class="ndl-image-with-background l">
+
+![](set-variant.png)
+
+</div>
+
+<div class="ndl-image-with-background s">
+
+![](styled-buttons.png)
+
+</div>
+
+## Editing a Style Variant
 
 Now that we have the “Primary” button, let’s create the “Secondary” variant.
 
@@ -74,29 +86,51 @@ For demonstrational purposes I will show you another workflow so that you can pi
 
 Since the “Secondary” variant is very similar to the “Primary” one we will create a button and set it to use the “Primary” variant. This way we don’t have to repeat any of the styling we’ve already done.
 
-<div class="ndl-image-with-background">
+<div class="ndl-image-with-background l">
 
-![](image.png)
+![](set-variant.png)
 
 </div>
 
-This time we will not override any styles though. Instead we’ll immediately create a new variant and name it “Secondary”. We now have a “Secondary” variant that is identical to the “Primary” one.
+<div class="ndl-image-with-background s">
+
+![](styled-buttons.png)
+
+</div>
+
+This time we will not override any styles though. Instead we’ll immediately create a new variant and name it “Secondary”.
+
+<div class="ndl-image-with-background l">
+
+![](new-variant.png)
+
+![](name-new-variant.png)
+
+</div>
+
+We now have a “Secondary” variant that is identical to the “Primary” one.
 
 As you already know, if we change any properties now it will count as overrides, and only be saved to this particular instance of the Button node. So, in order to edit the Variant and not the Instance, we press the “Edit variant” button.
 
 <div class="ndl-image-with-background">
 
-![](image.png)
+![](edit-variant.png)
 
 </div>
 
-Notice how the borders become a helpful teal color. This is so that we remember that we are in the Variant editor.
-
-Let’s give this variant a “Primary” colored text, a transparent background and a “Primary” colored border.
+Notice how the borders of the Property Panel become a helpful teal color. This is so that we remember that we are in the Variant editor.
 
 <div class="ndl-image-with-background">
 
-![](image.png)
+![](helpful-teal.png)
+
+</div>
+
+Let’s give this variant a “Primary” colored text, a transparent background and a “Primary” colored border.
+
+<div class="ndl-image-with-background s">
+
+![](two-buttons.png)
 
 </div>
 
@@ -104,7 +138,7 @@ In the “Visual States” guide I got some feedback from my designer friend tha
 
 <div class="ndl-image-with-background">
 
-![](image.png)
+![](visual-state.png)
 
 </div>
 
@@ -112,7 +146,7 @@ All changes done when editing a Variant are saved automatically, so we don’t h
 
 <div class="ndl-image-with-background">
 
-![](image.png)
+![](close.png)
 
 </div>
 

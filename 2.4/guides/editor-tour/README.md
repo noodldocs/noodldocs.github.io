@@ -5,4 +5,4 @@
 <br>
 <br>
 
-?>Please note that this video was recorded for version 2.3 of Noodl. It features a few minor visual inconsistencies, but no big changes for the purposes of this video.
+?>Please note that this video was recorded for the earlier 2.3 version of Noodl. It features a few minor visual inconsistencies with newer versions, but no big changes for the purposes of this video.
