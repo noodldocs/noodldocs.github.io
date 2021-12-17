@@ -4,6 +4,8 @@ Noodl is very extensible. As a developer you can add new modules with new capabl
 
 !> This guide requires <a href="https://nodejs.org/en/download/" target="_blank">Node.js</a> and <a href="https://docs.npmjs.com/downloading-and-installing-node-js-and-npm" target="_blank">npm</a> installed.
 
+!> These docs are only valid for versions below 2.4. A new docs are being written. In the meantime, please reach out on our [Discord](https://discord.gg/23xU2hYrSJ) or [Forum](https://forum.noodl.net/) if you encounter any issues.
+
 ## Setup
 
 First you need to install the Noodl command line interfaces. If you have not previously installed the CLI you can do so via npm.
@@ -173,7 +175,7 @@ Open _index.js_ in your favorite editor. This file contains a simple new core no
 First you must import the Noodl SDK.
 
 ```javascript
-const Noodl = require('@noodl/noodl-sdk')
+const Noodl = require('@noodl/noodl-sdk');
 ```
 
 Next you will define the code for the new node.
@@ -193,15 +195,15 @@ const MyFullNameNode = Noodl.defineNode({
         FirstName: function () {
             this.setOutputs({
                 FullName: this.inputs.FirstName + ' ' + this.inputs.LastName,
-            })
+            });
         },
         LastName: function () {
             this.setOutputs({
                 FullName: this.inputs.FirstName + ' ' + this.inputs.LastName,
-            })
+            });
         },
     },
-})
+});
 ```
 
 -   You need to specify the **name** of the node, this is the name that shows up in the list when creating new nodes.
@@ -215,7 +217,7 @@ Noodl.defineModule({
     setup() {
         //this is called once on startup
     },
-})
+});
 ```
 
 In this simple template we provide our new node as part of the module.
