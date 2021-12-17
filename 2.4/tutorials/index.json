@@ -10,28 +10,28 @@
         "category": "New for 2.4",
         "label": "",
         "thumb": "tutorials/01_survey_app.png",
-        "url": "/#/tutorials/survey-app?id=navigation-components",
+        "url": "/#/tutorials/survey-app?id=_01-navigation-and-components",
         "icon": ""
     },
     {
         "category": "New for 2.4",
         "label": "",
         "thumb": "tutorials/02_survey_app.png",
-        "url": "/#/tutorials/survey-app?id=interaction-states",
+        "url": "#/tutorials/survey-app?id=_02-styling-interaction-states",
         "icon": ""
     },
     {
         "category": "New for 2.4",
         "label": "",
         "thumb": "tutorials/01_tasklist_app.png",
-        "url": "/#/tutorials/getting-started?id=build-the-ui-for-a-task-list-app",
+        "url": "/#/tutorials/tasklist-app?id=_01-build-the-ui-for-a-task-list-app",
         "icon": ""
     },
     {
         "category": "New for 2.4",
         "label": "",
         "thumb": "tutorials/02_tasklist_app.png",
-        "url": "/#/tutorials/getting-started?id=build-a-backend-for-a-task-list-app",
+        "url": "/#/tutorials/tasklist-app?id=_02-build-a-backend-for-a-task-list-app",
         "icon": ""
     }
 ]

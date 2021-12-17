@@ -1,13 +1,15 @@
 # Survey App
 
-Here you will find a video that shows how to build a survey app.
+In this three part video serie we will build a simple survey app, that capture answers through custom styled controls. This serie will cover have to set-up a navigation system, work with components, and how create very custom styled UI controls based on the built-in controls in Noodl.
 
-## Navigation Components
+## 01 Navigation and Components
+Learn how to use and customize radio buttons, and how to set up a navigation flow with a progress bar. 
 
 <div style="padding:62.5% 0 0 0;position:relative;"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/ntKTCC7eEk0" style="position:absolute;top:0;left:0; frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </iframe></div>
 
-## Interaction States
+## 02 Styling interaction states
+Learn how to use and customize a checkbox, using Interaction States, and create a more expressive and advanced multiple choice control.
 
 <div style="padding:62.5% 0 0 0;position:relative;"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/720U1pZqWJg" style="position:absolute;top:0;left:0; frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </iframe></div>
