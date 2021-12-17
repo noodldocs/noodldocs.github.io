@@ -1,6 +1,6 @@
 # Task list App
 
-In this two part video serie we will build a simple task list app from scratch. We will be using Noodl's built-in UI controls for the UI, which will be using buttons, checkboxes and text input fields. In the second video we will show how to connect the frontend to a backend, using Noodl's Cloud Service features. 
+In this two-part video serie we will build a simple task list app from scratch. We will be using Noodl's built-in UI controls for the UI, which will be using buttons, checkboxes and text input fields. In the second video we will show how to connect the frontend to a backend, using Noodl's Cloud Service features. 
 
 By the end you will have a fully functional Task list web app that you can deploy and share. 
 
