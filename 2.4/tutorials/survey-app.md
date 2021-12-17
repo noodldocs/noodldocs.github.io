@@ -1,6 +1,6 @@
 # Survey App
 
-In this three part video serie we will build a simple survey app, that capture answers through custom styled controls. This serie will cover have to set-up a navigation system, work with components, and how create very custom styled UI controls based on the built-in controls in Noodl.
+In this three-part video serie we will build a simple survey app, that captures answers through custom-styled controls. This serie will cover how to set up a navigation system, work with components, and how to create custom-styled UI controls based on the built-in controls in Noodl.
 
 ## 01 Navigation and Components
 Learn how to use and customize radio buttons, and how to set up a navigation flow with a progress bar. 

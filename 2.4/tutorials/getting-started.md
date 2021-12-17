@@ -19,4 +19,4 @@ Build a simple task list web app with real backend from scratch, using Noodl's b
 <br>
 <a href="#/tutorials/survey-app.md" class="tutorial-img-link" style="border-bottom:none;">![](survey_app.png)</a>
 
- Build a multi page survey web app that captures user data through custom styled UI controls. 
+ Build a multi-page survey web app that captures user data through custom-styled UI controls. 
