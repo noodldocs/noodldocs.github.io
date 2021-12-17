@@ -22,8 +22,8 @@ We will go through the following steps:
 If you are new to Web Type Navigation you should go through the [Basic Navigation](/guides/navigation/web-navigation/basic-navigation/) guide first.
 We will build upon the example built in that guide. If needed you can first import the base project by clicking the "import" button below.
 
-<div class="ndl-images">
-    <img src="/2.4/guides/navigation/web-navigation/basic-navigation/final.gif" class="ndl-image large"></img> 
+<div class="ndl-image-with-background l">
+    <img src="/2.4/guides/navigation/web-navigation/basic-navigation/final.gif"></img> 
 <button class="ndl-import-button" onClick='importIntoNoodl("/2.4/guides/navigation/web-navigation/basic-navigation/basic-navigation.zip",{name:"Basic Navigation",thumb:"/2.4/guides/navigation/web-navigation/basic-navigation/ui-2.png"})'></button>
 </div>
 
@@ -41,45 +41,89 @@ How you acheive this in Noodl is to add a **Page Router** in the Products Page, 
 
 So lets start with creating the Top Bar. Go to the Product Page.
 
-![](./component-list-1.png ':class=img-size-m')
+<div class="ndl-image-with-background">
 
-![](./products-page-1.png ':class=img-size-m')
+![](./component-list-1.png)
+
+</div>
+
+<div class="ndl-image-with-background">
+
+![](./products-page-1.png)
+
+</div>
 
 More or less the same way as the sidebar menu was created, we can create the Top Bar. The main difference is that its laid out horizontally and that the buttons has a text instead of an icon. Make sure the Top Bar Group is set to **Content Height** so it doesnt take upp any unnecessary space.
 
-![](./products-page-2.png ':class=img-size-m')
+<div class="ndl-image-with-background">
 
-![](./top-bar-panel.png ':class=img-size-s')
+![](./products-page-2.png)
+
+</div>
+
+<div class="ndl-image-with-background s">
+
+![](./top-bar-panel.png)
+
+</div>
 
 Now let's add a **Page Router** under the Top Bar. It will take up the rest of the space of the **Page**. We change the name of the **Node** and the name of the **Page Router** (the **Name** Property) to "Products Router".
 
-![](./page-router-1.png ':class=img-size-m')
+<div class="ndl-image-with-background">
 
-![](./products-page-3.png ':class=img-size-m')
+![](./page-router-1.png)
+
+</div>
+
+<div class="ndl-image-with-background">
+
+![](./products-page-3.png)
+
+</div>
 
 The next step is to add three new **Page Components** using the "+" icon on the Components List. To keep things tidy, we first create a new folder, "Products Pages", and add the **Page Components** under that folder, "Steel Page", "Wood Page", "Plastic Page"
 
 As you can see you now have to select which **Page Router** you want to add the **Page Component** to. We choose our newly created  "Products Router".
 
-![](./add-page.png ':class=img-size-m')
+<div class="ndl-image-with-background">
+
+![](./add-page.png)
+
+</div>
 
 Once each page is created, add a **Group** node with some easy to recognize color and add a **Text** node as a title, centered.
 
 A fast way to create the **Page Components** is to create one, and the use the "Duplicate" component feature.
 
-![](./duplicate-page.png ':class=img-size-m')
+<div class="ndl-image-with-background">
+
+![](./duplicate-page.png)
+
+</div>
 
 After creating the pages, changing their color and title, you should now have something that looks like this.
 
-![](./pages-1.png ':class=img-size-l')
+<div class="ndl-image-with-background l">
+
+![](./pages-1.png)
+
+</div>
 
 You can now double check the **Page Router** in the "Products Page". It should have the three newly created pages as their available **Page Components**.
 
-![](./page-router-2.png ':class=img-size-m')
+<div class="ndl-image-with-background">
+
+![](./page-router-2.png)
+
+</div>
 
 We should also check the individual **Page** nodes so the "Url Path" is set correctly. Change it to "steel", "wood", "plastic".
 
-![](./page-path-1.png ':class=img-size-m')
+<div class="ndl-image-with-background">
+
+![](./page-path-1.png)
+
+</div>
 
 With the right URL Paths set in place you should now be able to navigate directly to the inner pages of the "Products Page" by editing the URL in the navigation bar of the browser.
 
@@ -89,9 +133,17 @@ Open your favourite browser and try the three different URLs `http://localhost:8
 
 Now lets hook up the Top Bar. Create three **Navigate** nodes in the Products Page Component. Set each of them to target the **Products Router** **Page Router** and chose the respective target page.
 
-![](./topbar-navigate.png ':class=img-size-l')
+<div class="ndl-image-with-background l">
 
-![](./products-router-navigate.png ':class=img-size-m')
+![](./topbar-navigate.png)
+
+</div>
+
+<div class="ndl-image-with-background">
+
+![](./products-router-navigate.png)
+
+</div>
 
 Try clicking the Top Bar. You should now be able between the **Page Components** in the inner **Page Router**.
 
@@ -104,21 +156,37 @@ Doing this using the individual **Page Routers** would be a bit messy, so instea
 
 First lets add the shortcut button. Go to the main App component and add a new **Button** to the sidebar. Call it "Shortcut: Plastic Products". Make it red so it stands out, align it to the bottom, and change the Text Style to a smaller font. Something like this:
 
-![](./shortcut-1.png ':class=img-size-m')
+<div class="ndl-image-with-background">
 
-![](./main-app-1.png ':class=img-size-m')
+![](./shortcut-1.png)
+
+</div>
+
+<div class="ndl-image-with-background">
+
+![](./main-app-1.png)
+
+</div>
 
 To finish things up, add a [Navigate To Path](/nodes/navigation/navigate-to-path/) node, make sure its path is set to `products/plastic`.
 
-![](./navigate-to-path.png ':class=img-size-m')
+<div class="ndl-image-with-background">
+
+![](./navigate-to-path.png)
+
+</div>
 
 Finally connect the **Click** signal of the **Button** to **Navigate** on the **Navigate To Path** node and we are done.
 
-![](./main-app-2.png ':class=img-size-m')
+<div class="ndl-image-with-background">
+
+![](./main-app-2.png)
+
+</div>
 
 Try clicking the Shortcut Button and make sure it always navigates to the "Products" **Page Component** and the "Plastic" **Page Component** within it.
 
-<div class="ndl-images">
-    <img src="/2.4/guides/navigation/web-navigation/multi-level-navigation/multi-level-final.gif" class="ndl-image large"></img> 
+<div class="ndl-image-with-background l">
+    <img src="/2.4/guides/navigation/web-navigation/multi-level-navigation/multi-level-final.gif"></img> 
 <button class="ndl-import-button" onClick='importIntoNoodl("/2.4/guides/navigation/web-navigation/multi-level-navigation/multi-level-navigation.zip",{name:"Multi Level Navigation",thumb:"/2.4/guides/navigation/web-navigation/multi-level-navigation/multi-level-thumb.png"})'></button>
 </div>
