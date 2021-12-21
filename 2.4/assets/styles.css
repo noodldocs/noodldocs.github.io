@@ -133,13 +133,13 @@ li.folder {
   margin-bottom: 6px;
 }
 
-li.folder > span:after,
+/* li.folder > span:after,
 li.folder > a:after {
-  content: '⯆';
+  content: '';
   display: inline-block;
   font-size: 11px;
   padding-left: 5px;
-}
+} */
 
 .hoverable:hover,
 .sidebar ul li a:hover {
