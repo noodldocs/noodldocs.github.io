@@ -1,15 +1,22 @@
 # Build your first app
 
-Here you will find a video series showing how to build a Task List app. It will take around half an hour to watch all of the (two) videos and at the end you will have built a fully functional app, connected to a database and cloud services.
+Here you can find our selection of Noodl video tutorials that shows how to build different app concepts from scratch. You will see many useful patterns in these videos that can be applied to solve both similar and other problems in your own Noodl projects. 
+
+We recommend building along in your own project while watching the tutorials.
 
 If you are new to node based programming, or want to learn more about the editor, you may look through the [Basic Concepts](guides/basic-concepts/) guide or the [Editor Tour](/guides/editor-tour/), but it is **not** a requirement to follow along in the Task List videos below.
 
-## Build the UI for a Task List app
+Happy Noodling! 
 
-<div style="padding:62.5% 0 0 0;position:relative;"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/TNnn0Gzj-H4" style="position:absolute;top:0;left:0; frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</iframe></div>
+## Noodl tutorial video series
+<br>
 
-## Build a backend for a Task List app
+<a href="#/tutorials/tasklist-app.md" class="tutorial-img-link" style="border-bottom:none;">![](tasklist_app.png)</a>
 
-<div style="padding:62.5% 0 0 0;position:relative;"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/HCqlSUyguiE" style="position:absolute;top:0;left:0; frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</iframe></div>
+Build a simple task list web app with real backend from scratch, using Noodl's built-in UI controls and cloud service features.
+<br>
+<br>
+<br>
+<a href="#/tutorials/survey-app.md" class="tutorial-img-link" style="border-bottom:none;">![](survey_app.png)</a>
+
+ Build a multi-page survey web app that captures user data through custom-styled UI controls. 

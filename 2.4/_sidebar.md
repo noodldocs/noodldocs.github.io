@@ -4,6 +4,8 @@
 - [Basic concepts](guides/basic-concepts/)
 - [Editor tour](guides/editor-tour/)
 - [Build your first app](tutorials/getting-started.md)
+  - [Task list app](tutorials/tasklist-app.md)
+  - [Survey app](tutorials/survey-app.md)
 - [Snippets](snippets/snippets.md)
   - [Pointer Position](snippets/javascript/pointer-position.md)
   - [Get DOM Element](snippets/javascript/get-dom-element.md)
