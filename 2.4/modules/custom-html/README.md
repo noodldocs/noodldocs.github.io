@@ -20,7 +20,7 @@ You can pass dynamic values to your markup by using template strings. `{{ FillCo
 
 ## Security notice
 
-This node also allows you to add script tags to you app. For security reasons all script tags are deactivated, but if you need to run a script (required for some embeds) you can turn off that fail safe. <strong>Please note that passing user input to your template string variables can be a security risk for you and your users, leaving you vulnerable to [XSS Attacks](https://en.wikipedia.org/wiki/Cross-site_scripting).</strong>
+This node also allows you to add script tags to your app. For security reasons all script tags are deactivated, but if you need to run a script (required for some embeds) you can turn off that fail safe. <strong>Please note that passing user input to your template string variables can be a security risk for you and your users, leaving you vulnerable to [XSS Attacks](https://en.wikipedia.org/wiki/Cross-site_scripting).</strong>
 
 <##head##>
 
