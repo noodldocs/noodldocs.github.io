@@ -78,6 +78,15 @@ a {
   text-align: right;
 }
 
+.sidebar li {
+  margin: 0;
+}
+
+.sidebar a {
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
 .sidebar ul li {
   margin-left: 20px;
   font-size: 16px;
@@ -117,6 +126,11 @@ a {
 
 .sidebar-nav .folder {
   cursor: pointer;
+}
+
+li.folder {
+  margin-top: 6px ;
+  margin-bottom: 6px;
 }
 
 .hoverable:hover,
