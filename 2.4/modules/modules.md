@@ -38,7 +38,7 @@ Below you will find a list of the modules in the Noodl Module Repository:
         <td><a href="#/modules/graphql/">GraphQL</a><br>A module to help quering data using GraphQL.</td>
     </tr>
     <tr>
-        <td><img src="/modules/custom-html/thumbnail.png"></img></td>
+        <td><img src="/modules/custom-html/thumbnail.png"></td>
         <td><a href="#/modules/custom-html/">Custom HTML</a><br>Write your own HTML and pass values to it with template strings. Useful for embeds.</td>
     </tr>
     <tr>
