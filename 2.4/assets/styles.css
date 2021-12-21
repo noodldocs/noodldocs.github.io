@@ -83,8 +83,8 @@ a {
 }
 
 .sidebar a {
-  margin-top: 6px;
-  margin-bottom: 6px;
+  padding-top: 6px;
+  padding-bottom: 6px;
 }
 
 .sidebar ul li {
