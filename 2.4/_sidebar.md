@@ -36,6 +36,7 @@
   - [Querying Records from database](guides/working-with-data/cloud-data/querying-records/)
   - [Updating Records](guides/working-with-data/cloud-data/updating-records/)
   - [Filtering Database Queries](guides/working-with-data/cloud-data/query-filters/)
+  - [Record Relations](guides/working-with-data/cloud-data/relations/) 
 - <span class="hoverable">Pages and navigation</span>
   - [Basic Navigation](guides/navigation/web-navigation/basic-navigation/)
   - [Multi Level Navigation](guides/navigation/web-navigation/multi-level-navigation/)
