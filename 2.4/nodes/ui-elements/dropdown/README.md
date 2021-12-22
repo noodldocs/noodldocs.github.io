@@ -46,6 +46,8 @@ Depending on how you original data looks, it may be necessary to use the [Array 
 | ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <span class="ndl-data">Items</span> | <##input:item##>This input takes an **Array** of **Objects** that will populate the **Dropdown**. You should make sure that they have the two properties `Label` and `Value` set as they are used to represent the item in the **Dropdown**.<##input##> |
 | <span class="ndl-data">Value</span> | <##input:value##>Setting this input will force the **Dropdown** to select the item with the same value set in its `Value` property.<##input##>                                                                                                          |
+| <span class="ndl-data">Placeholder</span>         | The placeholder text for when the dropdown is empty.                                                                                                                                                                                                                                         |
+| <span class="ndl-data">Placeholder Opacity</span> | The opacity of the placeholder text. `0` is completely transparent and invisible. `1` is completely solid and opaque.                                                                                                                                                                          |
 
 User interaction can be enabled and disabled:
 
