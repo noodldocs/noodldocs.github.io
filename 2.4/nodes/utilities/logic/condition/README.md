@@ -34,7 +34,8 @@ The input <span class="ndl-data">Condition</span> will be treated as a <span cla
 
 | Data                                 | Description                                                                                                                               |
 | ------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| <span class="ndl-data">Result</span> | <##output:result##>A <span class="ndl-data">boolean</span> that holds the latest evaluated value on the **Condition** input. <##output##> |
+| <span class="ndl-data">Is True</span> | <##output:result##>A <span class="ndl-data">boolean</span> that is <span class="ndl-data">true</span> when the latest evaluated value on the **Condition** input is true. <##output##> |
+| <span class="ndl-data">Is False</span> | <##output:isfalse##>A <span class="ndl-data">boolean</span> that is <span class="ndl-data">false</span> when the latest evaluated value on the **Condition** input is false. <##output##> |
 
 | Signal                                   | Description                                                                                                                        |
 | ---------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
