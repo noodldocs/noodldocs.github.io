@@ -29,6 +29,8 @@
   - [Style Variants](guides/states-and-variants/variants/)
   - [Visual States](guides/states-and-variants/visual-states/)
   - [The States node](guides/states-and-variants/states-node/)
+- <span class="hoverable">Working With Local Data</span>
+  - [Using Variables](guides/working-with-data/local-data/using-variables/)
 - <span class="hoverable">Working With Cloud Data</span>
   - [Creating a Backend](guides/working-with-data/cloud-data/creating-backend/)
   - [Creating a Class](guides/working-with-data/cloud-data/creating-class/)
