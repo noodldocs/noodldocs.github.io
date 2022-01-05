@@ -9,14 +9,13 @@ They can also be used to help create conditional logic in your app, for example 
 The guide covers the following topics
 * Setting variables
 * Reading variables
-<!--
 * Accessing variables globally
-* Using variables with conditions -->
+* Using variables with conditions
 
 ## When to use Variables?
 When developing an app, you often run into the situation that you need to hold on to a value - a piece of data - and use it at a different place in your app.
 
-For example, you may have a [TextInput](/nodes/ui-elements/text-input/) where the user can input their name. You want the name first letter of the name to be always capitalized, no matter what the user inputs. This name should be used through out the App. Hence you would like to store it so you can retrieve it on various places in the app.
+For example, you may have a [TextInput](/nodes/ui-elements/text-input/) where the user can input their name. You want the name first letter of the name to be always capitalized, no matter what the user inputs it. This name should be used through out the App. Hence you would like to store it so you can retrieve it on various places in the app.
 
 You cannot really make a connection directly from the **TextInput** node to all the places where the name will be used. First of all, there might be too many of those connections. Second of all, the nodes that need the name are maybe not in the same component so you can't really reach them. And lastly, you don't want the intermittent name, while the user is entering it, you only want it when the user is done, and then you want it with a capital first letter and not exactly how the user wrote it. This is use one case of many, where a Variable comes in handy.
 
@@ -142,3 +141,147 @@ Now test your app. Start writing a name in the **Text Input**, press _Enter_ and
 
 </div>
 
+
+## Accessing Variables Globally 
+Now let's change the structure a little. We will create a **Popup** and present the "Hello World" message in it only after the user have pressed _Enter_.
+
+Start by creating a new visual component, call it "Hello Popup".
+
+<div class="ndl-image-with-background">
+
+![](create-popup-component-1.png)
+
+</div>
+
+This will become our popup. In the new component. Change the size so it takes up 80% of the width and 50% of the height. Make it's layout "Absolute". Align it in the center. Also change the color to a nice color, perhaps blue.
+
+<div class="ndl-image-with-background">
+
+![](popup-panel-1.png)
+
+</div>
+
+<div class="ndl-image-with-background">
+
+![](popup-panel-2.png)
+
+</div>
+
+Now, we want to move the **Text** node and the nodes feeding it with the text from the App component to the popup. Go back to the "App" component and selecte all nodes. Then copy them (Ctrl+C/Cmd+C). Go back to the "Hello Popup" component and paste the nodes.
+
+Remove all nodes except the **Text** node, the **String Format** node and the **Variable** node. Then drag in the **Text** node so it becomes the only child of the **Group** node.
+
+<div class="ndl-image-with-background l">
+
+![](nodes-9.png)
+
+</div>
+
+Then remove the same nodes from the "App" component.
+
+<div class="ndl-image-with-background l">
+
+![](nodes-10.png)
+
+</div>
+
+We have now moved the "Hello World" text into a Popup. So let's open the Popup using the [Show Popup](/nodes/popups/show-popup/) node. Create the node and connect the **Done** signal from the **Set Variable** node to the **Show** signal on the **Show Popup** node. 
+
+<div class="ndl-image-with-background l">
+
+![](nodes-11.png)
+
+</div>
+
+Also make sure the component that's being shown as a popup is the "Hello Popup".
+
+<div class="ndl-image-with-background">
+
+![](popup-panel-3.png)
+
+</div>
+
+To back up for a second; what we have done now is to set the Variable `userName` when the user hits _Enter_. When the Variable have been set (the **Done** signal) we open a Popup with a new component. The component access the same Variable and shows the "Hello Message".
+
+Before trying it, we should probably make it possible to close the popup.
+
+In the "Hello Popup" component. Add a [Close Popup](/nodes/popups/show-popup/) node and connect the **Click** signal from the parent group to the **Close** signal.
+
+<div class="ndl-image-with-background l">
+
+![](nodes-12.png)
+
+</div>
+
+As you can see from this example, Variables are available in any component in your App.
+
+<div class="ndl-image-with-background l">
+
+![](screen-3.png)
+
+</div>
+
+## Using Variables with Conditions
+
+A very useful way to use Variables is when you want your App to show different things depending on certain conditions. For example, if the user enters a name that's too short, you want the text to ask them to pick another name. Otherwise you want to show the Hello message.
+
+The general pattern is the following: Have a Variable that holds the final value to be used by a component (in this case a text to be shown by a **Text** node). Then use a [Condition](/nodes/utilities/condition/) to trigger two different **Set Variable** nodes, depending on the condition. The pattern is outlined below.
+
+<div class="ndl-image-with-background l">
+
+![](pattern-1.png)
+
+</div>
+
+So let's try it on our example. We want to check for the case when the user name is less than 6 characters and ask the user to enter a new and longer name.
+
+So using the pattern above we introduce a new **Variable** in the "Hello Popup". Let's call it `popupText`. We connect its value to the text node and remove the old connection.
+
+<div class="ndl-image-with-background l">
+
+![](nodes-13.png)
+
+</div>
+
+Now we need to check the length of the provided name. This is easy using a combination of a [String](/nodes/data/string/) node, an [Expression](/nodes/math/expression/) node and a [Condition](/nodes/utilities/condition/) node.
+
+Connect the **value** output from the **Variable** `userName` to the a **String** node. There is an output from the **String** called **Length** which holds the length (i.e. number of characters) of the string.
+
+Then create an **Expression** node. We want to check that the length of the name is 6 characters or more. So edit the expression and write
+```
+length >= 6
+```
+
+<div class="ndl-image-with-background">
+
+![](expression-1.png)
+
+</div>
+
+The expression node should now have an input called **length**. Connect the **Length** output from the **String** node to that input.
+
+Finally connect the **Result** output to the **Condition** input of a **Condition** node.
+
+<div class="ndl-image-with-background l">
+
+![](nodes-14.png)
+
+</div>
+
+The **Condition** node has two signal outputs, **on True** and **on False**. We will use these signals to either set the previous "Hello World" string, or the warning string about the too short name. Let's set it up using a **String** node with a predefined error string and the **Set Variable** nodes we used before.
+
+<div class="ndl-image-with-background l">
+
+![](nodes-15.png)
+
+</div>
+
+Try it out with a few different names and see that it works. You may have to tweak the layout of the text to make it look nicer.
+
+You can import the whole project in Noodl by clicking import below.
+
+
+<div class="ndl-image-with-background l">
+    <img src="/2.4/guides/working-with-data/local-data/using-variables/total-1.png" class="ndl-image large"></img>
+<button class="ndl-import-button" onClick='importIntoNoodl("/2.4/guides/working-with-data/local-data/using-variables/using-variables.zip",{name:"Using Variables",thumb:"/2.4/guides/working-with-data/local-data/using-variables/screen-3.png"})'></button>
+</div>
