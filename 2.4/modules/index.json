@@ -61,5 +61,12 @@
         "icon": "webcamera/WebcameraModule.png",
         "project": "webcamera/webcamera-1-0-1.zip",
         "docs": "webcamera/"
+    },
+    {
+        "label": "Mapbox",
+        "desc": "Use this module to add maps and location visualisations to your app.",
+        "icon": "mapbox/MapboxModule.png",
+        "project": "mapbox/mapbox-1-0.zip",
+        "docs": "mapbox/"
     }
 ]
