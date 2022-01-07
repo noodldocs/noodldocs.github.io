@@ -61,10 +61,10 @@ Below you will find a list of the modules in the Noodl Module Repository:
         <td><img src="/modules/webcamera/WebcameraModule.png"></img></td>
         <td><a href="#/modules/webcamera/">Web Camera</a><br>This module adds support for accessing the camera in web apps.</td>
     </tr>
-    <!--<tr>
+    <tr>
         <td><img src="/modules/mapbox/MapboxModule.png"></img></td>
         <td><a href="#/modules/mapbox/">Mapbox</a><br>This module adds support for maps and location technology through Mapbox.</td>
-    </tr>  -->
+    </tr>
     <!--<tr>
         <td><img src="/modules/chartjs/ChartJSModule.png"></img></td>
         <td><a href="#/modules/chartjs/">Chart.js</a><br>A simple and flexible way to do charts and visualizations in Noodl.</td>
