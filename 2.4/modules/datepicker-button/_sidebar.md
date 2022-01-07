@@ -1,9 +1,12 @@
-- Date Picker Button
+-   <h3>Date Picker Button Module</h3>
 
-- [Guide](modules/datepicker-button/)
-  <br/>
+-   [Guide](modules/datepicker-button/)
+    <br/>
 
-- Nodes
+-   **Node Reference**
 
-- [Date Picker Button](modules/datepicker-button/datepicker-button.md)
-  <br/>
+-   [Date Picker Button](modules/datepicker-button/datepicker-button.md)
+    <br/>
+
+-   &nbsp;
+-   [🡐 Back to main docs](/modules/modules)

@@ -16,7 +16,5 @@
 -   [Simple marker rating](TBD)
     <br/>
 
-    </br>
-
--   [🡐 Back to main docs](README.md)
-    </br>
+-   &nbsp;
+-   [🡐 Back to main docs](/modules/modules)
