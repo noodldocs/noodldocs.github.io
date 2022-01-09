@@ -61,5 +61,12 @@
         "icon": "webcamera/WebcameraModule.png",
         "project": "webcamera/webcamera-1-0-1.zip",
         "docs": "webcamera/"
+    },
+    {
+        "label": "Google Sheets",
+        "desc": "Use your google sheets as a data source for your applications.",
+        "icon": "gsheets/gsheets-icon.png",
+        "project": "gsheets/gsheets-1-0.zip",
+        "docs": "gsheets/"
     }
 ]
