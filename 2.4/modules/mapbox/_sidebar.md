@@ -11,7 +11,7 @@
 
 -   **Guides**
 -   [Setting up the Mapbox module](modules/mapbox/guides/setting-up/)
--   [Moving around in the Map]()
+-   [Interacting with the Map](modules/mapbox/guides/interacting/)
 -   [Using Markers]()
 -   [Storing geolocations in the Database]()
     <br/>
