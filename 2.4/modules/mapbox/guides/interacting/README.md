@@ -99,8 +99,15 @@ Finally hook up the outputs **Click** and **Map Moved** signal to change the sta
 
 Now you should be able to move around and click on the map, showing and hiding the panel printing the longitude and latitude.
 
+If you want to import the final project, click the "Import" button below and follow the instructions.
+
+<div class="ndl-image-with-background l">
+    <img src="/2.4/modules/mapbox/guides/interacting/final-result.gif" class="ndl-image large"></img>
+<button class="ndl-import-button" onClick='importIntoNoodl("/2.4/modules/mapbox/guides/interacting/interacting.zip",{name:"Mapbox Interactions",thumb:"/2.4/modules/mapbox/guides/interacting/screen-2.png"})'></button>
+</div>
+<!--
 <div class="ndl-image-with-background l">
 
 ![](final-result.gif)
 
-</div>
+</div> -->

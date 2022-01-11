@@ -10,7 +10,7 @@ This node adds a map to the visual tree, using [Mapbox](https://www.mapbox.com/)
 
 </div>
 
-Markers can be placed on the map by sending an <span class="ndl-data">array</span> of marker <span class="ndl-data">objects</span> containing `Lat`, `Long` and `Color` to the <span class="ndl-data">Markers</span> input.
+Markers can be placed on the map by sending an <span class="ndl-data">array</span> of marker <span class="ndl-data">objects</span> containing `Lat`, `Long` and `Color` to the <span class="ndl-data">Markers</span> input. `Color` can be specified as a string, (e.g. "White") or as a hex string (e.g. "#ffffff").
 
 <div class="ndl-image-with-background l">
 
