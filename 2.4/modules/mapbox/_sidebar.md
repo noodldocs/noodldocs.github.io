@@ -13,7 +13,7 @@
 -   [Setting up the Mapbox module](modules/mapbox/guides/setting-up/)
 -   [Interacting with the Map](modules/mapbox/guides/interacting/)
 -   [Using Markers](modules/mapbox/guides/using-markers/)
--   [Storing geolocations in the Database]()
+<!-- -   [Storing geolocations in the Database]() -->
     <br/>
 
 -   &nbsp;
