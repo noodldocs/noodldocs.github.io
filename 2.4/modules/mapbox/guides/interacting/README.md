@@ -10,7 +10,7 @@ We will go though the following steps:
 * Getting the latitude and longitude of the position a user clicked on the map.
 * Detecting when a user moves the map.
 
-## Getting the position the user clicked
+## Getting the position that the user clicked
 
 If we start out with the same super simple app as in the previous guide we can start adding some interactions to it.
 
@@ -78,7 +78,7 @@ Now try clicking around in the map. You should see the two texts updating whenev
 
 </div>
 
-## Trackin Map Movement
+## Tracking Map Movement
 Now let's add some behavior to the panel. We want it to appear from the bottom when the user clicks on the map. Then, when the user starts panning or zooming in the map. To do this we are going to use the **Click** and **Map Moved** signals.
 
 First add a [States](/nodes/animation/states.md) node that will hold the current state of the panel. Add the states "Off Screen" and "On Screen". Create a value to control in the state, lets call it "Y Position". This is the value that will control the Y position of the panel. It will be 120 when the panel is "Off Screen" (i.e. it will be below the screen). Then it will be 0 when the panel is "On Screen", i.e. it will be back at the bottom of the screen.

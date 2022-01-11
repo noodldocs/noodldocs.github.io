@@ -6,11 +6,13 @@ This guide will show you how to include the Mapbox module in a project and set u
 ## Overview
 We will go though the following steps:
 * Install the Mapbox Module in a Noodl Project.
-* Create an API key on the Mapbox account
+* Create an Access Token on the Mapbox account
 * Create a minimal Mapbox App in Noodl
 
 ## Install the Mapbox Module
-The absolutely most easy way to get started with the Mapbox Module is to use the "Mapbox" template when creating a new project in Noodl. However, if you have an existing project, or want to start from a different template, that's easy as well.
+The most easy way to get started with the Mapbox Module is to use the "Mapbox" template when creating a new project in Noodl. In that template, the Mapbox module is already included. Note that the template will also need you Mapbox Access Token.
+
+However, if you have an existing project, or want to start from a different template, it's easy to get started as well. Just follow these instructions.
 
 When in the project, open the "Module" tab to the left. Find the "Mapbox" module and click "Add".
 
@@ -20,7 +22,7 @@ When in the project, open the "Module" tab to the left. Find the "Mapbox" module
 
 </div>
 
-After the module is imported, you should now be able to find the "Mapbox Map" node in the node picker. Right click in the node editor area to bring up the node picker. Look under "External libraries" to find the **Mapbox Map** node.
+After the module is imported, you should now be able to find the [Mapbox Map](/modules/mapbox/mapbox-map.md) node in the node picker. Right click in the node editor area to bring up the node picker. Look under "External libraries" to find the **Mapbox Map** node.
 
 <div class="ndl-image-with-background s">
 
@@ -28,7 +30,7 @@ After the module is imported, you should now be able to find the "Mapbox Map" no
 
 </div>
 
-Add the node. Then put it as a child to your main App group. As you will see, you will immedieatly get a warning: "No access token. Please specify one in the Project Settings and reload". 
+Add the node. Then put it as a child to your main App group. As you will see, you will immedieatly get a warning: _"No access token. Please specify one in the Project Settings and reload"_. 
 
 <div class="ndl-image-with-background">
 

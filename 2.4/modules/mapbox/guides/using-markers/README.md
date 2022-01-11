@@ -20,7 +20,7 @@ The guide will build upon the example from the previous guides. You can import t
 </div>
 
 ## Markers
-Markers are used to mark points in the map. They can be anywhere on the map and have can have different colors.
+Markers are used to mark points in the map. They can be anywhere on the map and can have different colors.
 
 <div class="ndl-image-with-background s">
 
@@ -28,7 +28,7 @@ Markers are used to mark points in the map. They can be anywhere on the map and 
 
 </div>
 
-Markers are fed to the Mapbox module through a [Array](/nodes/data/array/array/). Each [Object](/nodes/data/object/object/) in the **Array** should be of the format:
+Markers are fed to the Mapbox module through an [Array](/nodes/data/array/array/). Each [Object](/nodes/data/object/object/) in the **Array** should be of the format:
 ```
 {
 	"Lat":<the latitude>,
@@ -93,12 +93,12 @@ If everything was done correctly, you should now be able to place black markers 
 
 ## Capturing when the user clicks a marker
 
-Next step is to be able to do something when the user clicks a marker. So we need to differentiate between clicking on the map and clicking on a marker. Conveniently there is an additional outgoing signal on the **Mapbox Map** node called **Marker Click**. Another signal will be important to, the **Marker Id** output that will contain the **Id** of the **Object** in the marker **Array** that represent the clicked marker.
+Next step is to be able to do something when the user clicks a marker. So we need to differentiate between clicking on the map and clicking on a marker. Conveniently there is an additional outgoing signal on the **Mapbox Map** node called **Marker Click**. Another signal will be important too, the **Marker Id** output that will contain the **Id** of the **Object** in the marker **Array** that represents the clicked marker.
 
-So let's change up the logic slightly, so the panel either shows the marker that was clicked, or the newly created marker if the user didn't click the marker.
+So let's change up the logic slightly, so the panel either shows the marker that was clicked, or the newly created marker if the user didn't click the marker but on the map instead.
 
 Using [Variable](/nodes/data/variable/variable/) and [Set Variable](/nodes/data/variable/set-variable/) node and some logic around that, we make sure a **Variable** holds the current marker. See the [guide](/guides/working-with-data/local-data/using-variables/) on using **Variables** if you want to know more about how to use them.
-Also, the **Marker Click** signal also makes the panel visible. The full node design can be seen below.
+Also, the **Marker Click** signal now makes the panel visible as well. The full node design can be seen below.
 
 <div class="ndl-image-with-background l">
 
@@ -106,9 +106,9 @@ Also, the **Marker Click** signal also makes the panel visible. The full node de
 
 </div>
 
-Finally let's update the panel logic. We want to make sure the latitude/longitude values comes from the marker and not from where you clicked on the map. It won't make a difference now, but we might want to capture more information in the marker we want to show in the panel, so it's a better design.
+Finally, let's update the panel logic. We want to make sure the latitude/longitude values comes from the marker and not from where you clicked on the map. It won't make a difference now, but we might want to capture more information in the marker to show in the panel, so this is a better design.
 
-The `Current Marker` Variable hold the **Id** of the current marker, so just connect it to an **Object** and take out the `Lon` and `Lat` properties from it. The updated design is shown below.  
+The `Current Marker` Variable holds the **Id** of the current marker, so just connect it to an **Object** and take out the `Lon` and `Lat` properties from it. The updated design is shown below.  
 
 <div class="ndl-image-with-background l">
 
@@ -139,9 +139,9 @@ So let's add a [Button](/nodes/ui-elements/button/) to the panel. Remove its lab
 
 </div>
 
-Finally we connect the functionality for the button. We add a [Remove Object From Array](/nodes/data/array/remove-from-array/) node and make sure the **Object Id** is what's stored in the `Current Marker` **Variable** and the **Array Id** comes the same **Id** as the `Map Markers` **Array**.
+We connect the functionality for the button. We add a [Remove Object From Array](/nodes/data/array/remove-from-array/) node and make sure the **Object Id** is what's stored in the `Current Marker` **Variable** and the **Array Id** comes the same **Id** as the `Map Markers` **Array**.
 
-The **Click** signal from the **Button** is connected to **Do** on the **Remove Object From Array** node. Finally we also close the panel when the delete is **Done**.
+The **Click** signal from the **Button** is connected to **Do** on the **Remove Object From Array** node. Finally we also close the panel when the removal is **Done**.
 
 This is what the final node construct looks like. If you want to import the final project click the "Import" button:
 
