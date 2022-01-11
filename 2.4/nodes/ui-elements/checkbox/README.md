@@ -34,8 +34,8 @@ The main input of the Checkbox node is the <span class="ndl-data">Checked</span>
 
 | Data                                           | Description                                                                                                                                |
 | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| <span class="ndl-data">Checked</span>          | A boolean setting the checkbox in "checked" or "unchecked" state. This is the value of the checkbox and can be connected to a data source. |
-| <span class="ndl-data">Background Color</span> | The background color when the checkbox is "checked".                                                                                       |
+| <span class="ndl-data">Checked</span>          | <##input:checked##>A boolean setting the checkbox in "checked" or "unchecked" state. This is the value of the checkbox and can be connected to a data source.<##input##> |
+| <span class="ndl-data">Background Color</span> | <##input:backgroundColor##>The background color when the checkbox is "checked"<##input##>.                                                                                       |
 
 It can be enabled and disabled using the <span class="ndl-data">Enabled</span> input:
 
@@ -83,7 +83,7 @@ The main output of the Checkbox node is the <span class="ndl-data">Checked</span
 
 | Data                                  | Description                                                                                                                                                                                                    |
 | ------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <span class="ndl-data">Checked</span> | A boolean output that is true when this checkbox control is checked and false if not. This is useful when using this control as a base for your own component that will represent visually that it is checked. |
+| <span class="ndl-data">Checked</span> | <##output:checked##>A boolean output that is true when this checkbox control is checked and false if not. This is useful when using this control as a base for your own component that will represent visually that it is checked.<##output##> |
 
 It also features a set of <span class="ndl-signal">signals</span>:
 
