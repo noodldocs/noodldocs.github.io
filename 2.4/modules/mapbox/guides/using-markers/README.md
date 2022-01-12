@@ -20,7 +20,7 @@ The guide will build upon the example from the previous guides. You can import t
 </div>
 
 ## Markers
-Markers are used to mark points in the map. They can be anywhere on the map and can have different colors.
+Markers are used to mark points in the map. They can be anywhere on the map.
 
 <div class="ndl-image-with-background s">
 
@@ -28,12 +28,14 @@ Markers are used to mark points in the map. They can be anywhere on the map and 
 
 </div>
 
+A marker can either be represented by the default icon, or you can use a custom image instead. In this guide we will go with the default icon. The default icon can also have a color of your choice.
+
 Markers are fed to the Mapbox module through an [Array](/nodes/data/array/array/). Each [Object](/nodes/data/object/object/) in the **Array** should be of the format:
 ```
 {
 	"Lat":<the latitude>,
 	"Lon":<the longitude>,
-	"Color":<the color, e.g, "White" or as hex-string "#ffffff">
+	"Color":<the color, e.g, "White" or as hex-string "#ffffff". Only used with the default icon.>
 }
 ```
 Let's change our App so you add a marker whenever you click on the map.
@@ -147,5 +149,5 @@ This is what the final node construct looks like. If you want to import the fina
 
 <div class="ndl-image-with-background l">
     <img src="/2.4/modules/mapbox/guides/using-markers/nodes-7.png" class="ndl-image large"></img>
-<button class="ndl-import-button" onClick='importIntoNoodl("/2.4/modules/mapbox/guides/using-markers/markers.zip",{name:"Mapbox Interactions",thumb:"/2.4/modules/mapbox/guides/using-markers/screen-3.png"})'></button>
+<button class="ndl-import-button" onClick='importIntoNoodl("/2.4/modules/mapbox/guides/using-markers/markers.zip",{name:"Mapbox Markers",thumb:"/2.4/modules/mapbox/guides/using-markers/screen-3.png"})'></button>
 </div>

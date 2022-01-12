@@ -28,6 +28,11 @@ Markers can be placed on the map by sending an <span class="ndl-data">array</spa
 | <span class="ndl-data">Latitude</span>    | Sets the current active latitude.                                                                                          |
 | <span class="ndl-data">Zoom</span>        | Sets the zoom level of the map.                                                                                            |
 | <span class="ndl-data">Markers</span>     | An array of markers on the map. Every marker is defined as an object containing the properties `Lat`, `Lon `, and `Color`. |
+| <span class="ndl-data">Type</span>     | Specifies the Marker type. Can be either `Default` or `Image` |
+| <span class="ndl-data">Source</span>     | Specifies the source of the Marker image. Only available if the Marker is om `Image` type. |
+| <span class="ndl-data">Width</span>     | Specifies the width of the Marker image (in pixels). Only available if the Marker is om `Image` type. |
+| <span class="ndl-data">Height</span>     | Specifies the height of the Marker image (in pixels). Only available if the Marker is om `Image` type. |
+| <span class="ndl-data">Anchor</span>     | Specifies the the anchor point of the Marker image in relation to the location on the map. Only available if the Marker is om `Image` type. |
 | <span class="ndl-data">Interactive</span> | Sets if users can interact with the map or not.                                                                            |
 | <span class="ndl-data">Style</span>       | A path to a [Mapbox Style](https://docs.mapbox.com/api/maps/styles/).                                                      |
 
@@ -39,9 +44,11 @@ Markers can be placed on the map by sending an <span class="ndl-data">array</spa
 
 | Data                                            | Description                                                                                      |
 | ----------------------------------------------- | ------------------------------------------------------------------------------------------------ |
-| <span class="ndl-data">Longitude</span>         | The current active longitude.                                                                    |
-| <span class="ndl-data">Latitude</span>          | The current active latitude.                                                                     |
+| <span class="ndl-data">(Coordinates) Longitude</span>         | The current active longitude.                                                                    |
+| <span class="ndl-data">(Coordinates) Latitude</span>          | The current active latitude.                                                                     |
 | <span class="ndl-data">Zoom</span>              | The current zoom level of the map.                                                               |
+| <span class="ndl-data">(Map Clicked) Longitude</span>         | The longitude that where the user clicked last. To be used with the Click signal.                                                                    |
+| <span class="ndl-data">(Map Clicked) Latitude</span>          | The latitude that where the user clicked last. o be used with the Click signal.                                                                     |
 | <span class="ndl-data">Marker Id</span>         | If you have clicked a marker on the map, this port will send the `Id` of the clicked marker.     |
 | <span class="ndl-data">Width</span>             | The with of the map container.                                                                   |
 | <span class="ndl-data">Height</span>            | The height of the map container.                                                                 |
