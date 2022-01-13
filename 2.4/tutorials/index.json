@@ -9,6 +9,20 @@
     {
         "category": "New for 2.4",
         "label": "",
+        "thumb": "tutorials/01_style_variants.png",
+        "url": "/#/guides/states-and-variants/variants/",
+        "icon": ""
+    },
+    {
+        "category": "New for 2.4",
+        "label": "",
+        "thumb": "tutorials/01_visual_states.png",
+        "url": "/#/guides/states-and-variants/visual-states/",
+        "icon": ""
+    },
+    {
+        "category": "New for 2.4",
+        "label": "",
         "thumb": "tutorials/01_survey_app.png",
         "url": "/#/tutorials/survey-app?id=_01-navigation-and-components",
         "icon": ""
