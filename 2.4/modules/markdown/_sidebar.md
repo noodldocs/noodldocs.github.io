@@ -1,7 +1,11 @@
-- Markdown
-- [Introduction](modules/markdown/)
-  <br/>
+-   <h3>Markdown Module</h3>
 
-- Nodes
-- [Markdown](modules/markdown/markdown-node.md)
-  <br/>
+-   [Guide](modules/markdown/)
+    <br/>
+
+-   Node Reference
+-   [Markdown](modules/markdown/markdown-node.md)
+    <br/>
+
+-   &nbsp;
+-   [🡐 Back to main docs](/modules/modules)

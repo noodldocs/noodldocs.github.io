@@ -1,7 +1,11 @@
-- Lottie
-- [Guide](modules/lottie/)
-  <br/>
+-   <h3>Lottie Module</h3>
 
-- Nodes
-- [Lottie](modules/lottie/lottie.md)
-  <br/>
+-   [Guide](modules/lottie/)
+    <br/>
+
+-   Node Reference
+-   [Lottie](modules/lottie/lottie.md)
+    <br/>
+
+-   &nbsp;
+-   [🡐 Back to main docs](/modules/modules)
