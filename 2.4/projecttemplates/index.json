@@ -35,5 +35,12 @@
         "desc": "Multi page template with list items and page navigation.",
         "projectURL": "travel_app/travel_app_1-1.zip",
         "category": "Tutorial"
+    },
+    {
+        "iconURL": "mapbox/mapbox.png",
+        "title": "Mapbox app",
+        "desc": "A simple map application using Mapbox.",
+        "projectURL": "mapbox/mapbox-app-1.zip",
+        "category": "Tutorial"
     }
 ]
