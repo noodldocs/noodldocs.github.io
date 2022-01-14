@@ -19,6 +19,10 @@ The guide will build upon the example from the previous guides. You can import t
 <button class="ndl-import-button" onClick='importIntoNoodl("/2.4/modules/mapbox/guides/interacting/interacting.zip",{name:"Mapbox Interactions",thumb:"/2.4/modules/mapbox/guides/interacting/screen-2.png"})'></button>
 </div>
 
+There is also a video walking through the guide.
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/LBh51xy9n7k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Markers
 Markers are used to mark points in the map. They can be anywhere on the map.
 

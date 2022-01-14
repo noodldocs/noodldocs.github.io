@@ -9,6 +9,10 @@ We will go though the following steps:
 * Create an Access Token on the Mapbox account
 * Create a minimal Mapbox App in Noodl
 
+There is also a video walking through the guide.
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/l5HN5bPSWGY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Install the Mapbox Module
 The most easy way to get started with the Mapbox Module is to use the "Mapbox" template when creating a new project in Noodl. In that template, the Mapbox module is already included. Note that the template will also need you Mapbox Access Token.
 

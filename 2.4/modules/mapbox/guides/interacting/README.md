@@ -10,6 +10,10 @@ We will go though the following steps:
 * Getting the latitude and longitude of the position a user clicked on the map.
 * Detecting when a user moves the map.
 
+There is also a video walking through the guide.
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/oDGEKKvlD74" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Getting the position that the user clicked
 
 If we start out with the same super simple app as in the previous guide we can start adding some interactions to it.
