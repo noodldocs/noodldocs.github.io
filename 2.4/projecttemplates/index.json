@@ -39,7 +39,7 @@
     {
         "iconURL": "mapbox/mapbox.png",
         "title": "Mapbox app",
-        "desc": "A simple map application using Mapbox.",
+        "desc": "A simple map application using Mapbox. Note: Mapbox Access Token needed. See the Mapbox Module guide.",
         "projectURL": "mapbox/mapbox-app-1.zip",
         "category": "Tutorial"
     }
