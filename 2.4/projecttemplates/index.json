@@ -1,46 +1,46 @@
 [
-  {
-    "iconURL": "hello_world/helloWorld.png",
-    "title": "Hello World",
-    "desc": "A simple application template with just a Group and a Text node.",
-    "projectURL": "hello_world/hello-1-8.zip",
-    "category":"Basic"
-  },
-  {
-    "iconURL": "navigation_template/navigation.png",
-    "title": "Navigation example",
-    "desc": "A simple project containing a menu navigation.",
-    "projectURL": "navigation_template/navigation_example_1-2.zip",
-    "category":"Basic"
-  },
     {
-    "iconURL": "happy_holidays/happy_holidays_thumbnail.png",
-    "title": "Happy Holidays",
-    "desc": "A greeting card you can customize and send to all your friends and family.",
-    "projectURL": "happy_holidays/happy-holidays-2021-1.zip",
-    "category":"Basic"
-  },
-  {
-    "iconURL": "tasklist_app/task_list_thumbnail.png",
-    "title": "Task list",
-    "desc": "A simple task list template with a connected backend for storing and reading data.",
-    "projectURL": "tasklist_app/task-app-1-1.zip",
-    "category":"Tutorial",
-    "useCloudServices":true,
-    "cloudServicesTemplateURL":"tasklist_app/task-app-cf.json"
-  },
-  {
-    "iconURL": "survey_app/survey_thumbnail2.png",
-    "title": "Custom survey",
-    "desc": "A multi-step survey template with custom UI components.",
-    "projectURL": "survey_app/survey_app_1-3.zip",
-    "category":"Tutorial"
-  },
-  {
-    "iconURL": "travel_app/travel_app_thumbnail_mobile.png",
-    "title": "Travel app",
-    "desc": "Multi page template with list items and page navigation.",
-    "projectURL": "travel_app/travel_app_1-1.zip",
-    "category":"Tutorial"
-  }
+        "iconURL": "hello_world/helloWorld.png",
+        "title": "Hello World",
+        "desc": "A simple application template with just a Group and a Text node.",
+        "projectURL": "hello_world/hello-1-8.zip",
+        "category": "Basic"
+    },
+    {
+        "iconURL": "navigation_template/navigation.png",
+        "title": "Navigation example",
+        "desc": "A simple project containing a menu navigation.",
+        "projectURL": "navigation_template/navigation_example_1-2.zip",
+        "category": "Basic"
+    },
+    {
+        "iconURL": "tasklist_app/task_list_thumbnail.png",
+        "title": "Task list",
+        "desc": "A simple task list template with a connected backend for storing and reading data.",
+        "projectURL": "tasklist_app/task-app-1-1.zip",
+        "category": "Tutorial",
+        "useCloudServices": true,
+        "cloudServicesTemplateURL": "tasklist_app/task-app-cf.json"
+    },
+    {
+        "iconURL": "survey_app/survey_thumbnail2.png",
+        "title": "Custom survey",
+        "desc": "A multi-step survey template with custom UI components.",
+        "projectURL": "survey_app/survey_app_1-3.zip",
+        "category": "Tutorial"
+    },
+    {
+        "iconURL": "travel_app/travel_app_thumbnail_mobile.png",
+        "title": "Travel app",
+        "desc": "Multi page template with list items and page navigation.",
+        "projectURL": "travel_app/travel_app_1-1.zip",
+        "category": "Tutorial"
+    },
+    {
+        "iconURL": "mapbox/mapbox.png",
+        "title": "Mapbox app",
+        "desc": "A simple map app using Mapbox. Note: Mapbox Access Token needed.",
+        "projectURL": "mapbox/mapbox-app-1.zip",
+        "category": "Tutorial"
+    }
 ]

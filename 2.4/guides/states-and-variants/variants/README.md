@@ -12,6 +12,10 @@ We will go through the following steps in this guide:
 -   Learn the differences between overrides and variants
 -   Edit a Style Variant
 
+There is also a video walking through the guide.
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/zFF8hoC-JM8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## The quick and dirty method
 
 We could just copy and paste a node we styled, but that comes with a couple of downsides.

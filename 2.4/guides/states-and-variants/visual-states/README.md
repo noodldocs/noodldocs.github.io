@@ -12,6 +12,10 @@ We will go through the following steps in this guide:
 -   Style its `neutral` state
 -   Style it differently in its `hover` state
 
+There is also a video walking through the guide.
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/aya8lsQ9BBc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Let's go!
 
 When working with Visual nodes we often find ourselves in situations where we want to style the node differently based on the user interaction. We might want to have a different background color when hovering a button, or indicating that a checkbox has been checked. This is done using **Visual States** in the nodes settings in the **Property Panel**.

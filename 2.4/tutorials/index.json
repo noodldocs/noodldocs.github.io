@@ -1,44 +1,79 @@
 [
     {
-        "category": "New for 2.4",
+        "category": "Noodl Basics",
         "label": "",
         "thumb": "tutorials/01_noodl_basics.png",
         "url": "/#/guides/basic-concepts/",
         "icon": ""
     },
     {
-        "category": "New for 2.4",
+        "category": "Noodl Basics",
+        "label": "",
+        "thumb": "tutorials/01_style_variants.png",
+        "url": "/#/guides/states-and-variants/variants/",
+        "icon": ""
+    },
+    {
+        "category": "Noodl Basics",
+        "label": "",
+        "thumb": "tutorials/01_visual_states.png",
+        "url": "/#/guides/states-and-variants/visual-states/",
+        "icon": ""
+    },
+    {
+        "category": "App Tutorials",
         "label": "",
         "thumb": "tutorials/01_survey_app.png",
         "url": "/#/tutorials/survey-app?id=_01-navigation-and-components",
         "icon": ""
     },
     {
-        "category": "New for 2.4",
+        "category": "App Tutorials",
         "label": "",
         "thumb": "tutorials/02_survey_app.png",
         "url": "#/tutorials/survey-app?id=_02-styling-interaction-states",
         "icon": ""
     },
     {
-        "category": "New for 2.4",
+        "category": "App Tutorials",
         "label": "",
         "thumb": "tutorials/03_survey_app.png",
         "url": "#/tutorials/survey-app?id=_03-advanced-custom-components",
         "icon": ""
     },
     {
-        "category": "New for 2.4",
+        "category": "App Tutorials",
         "label": "",
         "thumb": "tutorials/01_tasklist_app.png",
         "url": "/#/tutorials/tasklist-app?id=_01-build-the-ui-for-a-task-list-app",
         "icon": ""
     },
     {
-        "category": "New for 2.4",
+        "category": "App Tutorials",
         "label": "",
         "thumb": "tutorials/02_tasklist_app.png",
         "url": "/#/tutorials/tasklist-app?id=_02-build-a-backend-for-a-task-list-app",
+        "icon": ""
+    },
+    {
+        "category": "Modules",
+        "label": "",
+        "thumb": "tutorials/01_mapbox.png",
+        "url": "/#/modules/mapbox/guides/setting-up/",
+        "icon": ""
+    },
+    {
+        "category": "Modules",
+        "label": "",
+        "thumb": "tutorials/02_mapbox.png",
+        "url": "/#/modules/mapbox/guides/interacting/",
+        "icon": ""
+    },
+    {
+        "category": "Modules",
+        "label": "",
+        "thumb": "tutorials/03_mapbox.png",
+        "url": "/#/modules/mapbox/guides/using-markers/",
         "icon": ""
     }
 ]

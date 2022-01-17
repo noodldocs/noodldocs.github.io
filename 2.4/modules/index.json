@@ -68,5 +68,12 @@
         "icon": "gsheets/gsheets-icon.png",
         "project": "gsheets/gsheets-1-1.zip",
         "docs": "gsheets/"
+    },
+    {
+        "label": "Mapbox",
+        "desc": "Use this module to add maps and location visualisations to your app.",
+        "icon": "mapbox/MapboxModule.png",
+        "project": "mapbox/mapbox-1-4.zip",
+        "docs": "mapbox/"
     }
 ]
