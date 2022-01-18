@@ -1,4 +1,4 @@
-##head##>
+<##head##>
 
 # Query Sheet
 
@@ -17,6 +17,8 @@ The node works in a similar way as the [Query Records](/nodes/data/cloud-data/qu
 ![](query-sheet-2.png)
 
 </div>
+
+?> Note that the Google Sheet need to be made public for Noodl to be able to access it.
 
 <##head##>
 
@@ -50,7 +52,7 @@ A filter can be added to the query. It can be a combination of various filter op
 The results of the query is an **Array**, just as with a regular **Query Record**. The Array contains Objects that represents the rows in the Google Sheet. Each column value will be represented by a property in the respective object, with the same name as the column. When using a [Sheet Row](/modules/gsheets/node-docs/sheet-row/) node, the **Id** of the object can be used to set the **Row Id** of the Sheet Row node.
 
 ## Controlling when queries are performed
-If the `Do` signal is unconnected, the Query will automatically be run when the **Query Sheet** node is created and whenever its input changes. By connecting the `Do` signal, the Query will only be run when `Do` is triggered.
+If the `Do` signal is unconnected, the Query will automatically be run when the **Query Sheet** node is created and whenever any of its inputs change. By connecting the `Do` signal, the Query will only be run when `Do` is triggered.
 
 ## Inputs
 
