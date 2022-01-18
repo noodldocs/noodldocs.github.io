@@ -15,6 +15,7 @@
   - [Rotary knob](snippets/rotary-knob/rotary-knob.md)
   - [Media Queries](snippets/responsive/media-query.md)
   - [Shake Detector](snippets/shake-detector/shake-detector.md)
+  - [Image from Video stream](snippets/image-from-video/image-from-video.md)
   <!-- - [P5.js Intergration](snippets/p5-canvas/p5-canvas.md) -->
 - [Modules](modules/modules.md)
 <!-- - [Templates](templates/templates.md)
