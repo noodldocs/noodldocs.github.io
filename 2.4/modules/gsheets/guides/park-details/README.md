@@ -100,4 +100,84 @@ This is great, but it would be even nicer with some actual content!
 
 ## Using the Sheet Row node to get the correct details data
 
-To get the correct content in the Park Details component, we will again use a [Sheet Row](/modules/gsheets/node-docs/sheet-row/) node, so let's add that like this.
+To get the correct content in the Park Details component, we will again use a [Sheet Row](/modules/gsheets/node-docs/sheet-row/) node, so let's place it next to our visual tree.
+
+<div class="ndl-image-with-background l">
+
+![](add-sheet-row.png)
+
+</div>
+
+We need to tell the Sheet Row node which row we want to look at, and if you remember from the previous [guide](/modules/gsheets/guides/setting-up/), we already have a Variable named SelectedRowId. We set this everytime we click on an item in the list. Below you can see where in the List Item component the Variable is being set.
+
+<div class="ndl-image-with-background l">
+
+![](list-item-variable.png)
+
+</div>
+
+Since Variables are global we can use that same Variable in our Park Details component and connect it to the Row Id input of the Sheet Row node.
+
+<div class="ndl-image-with-background l">
+
+![](var-to-sheet-row.png)
+
+</div>
+
+Now we can start to connect all the outputs from the Sheet Row node to our visual tree. Go ahead and make the following connections first, and then we will handle the remaining two.
+
+<div class="ndl-image-with-background l">
+
+![](details-almost-connected.png)
+
+</div>
+
+You still don't see anything in the preview window, unless you go ahead and click on an item in the list. In the image below I clicked on the Arches park. 
+
+<div class="ndl-image-with-background l">
+
+![](arches.png)
+
+</div>
+
+As you can see we haven't filled in the size information or the date for when the park was established so let's tackle that now.
+
+The size that we are getting out from the Sheet Row is in km<sup>2</sup>, so it would be nice to add that at the end of the number. To do that we will use a String Format node, with the following set up, and then connected like in the second image.
+
+<div class="ndl-image-with-background l">
+
+![](string-format-props.png)
+
+</div>
+
+<div class="ndl-image-with-background l">
+
+![](size-connected.png)
+
+</div>
+
+The Established date that we get from the Sheet Row is a Date type and it looks a bit strange if we connect it directly to our text node, so let's put a [Date To String](/nodes/utilities/date-to-string/) node in between. After it's connected it will look like the image below.
+
+<div class="ndl-image-with-background l">
+
+![](date-connected.png)
+
+</div>
+
+The last thing we will do in this guide is to make sure we set the SelectedRowId Variable to the first item in the list. We can do that in the App component like this:
+
+<div class="ndl-image-with-background l">
+
+![](first-item-selected.png)
+
+</div>
+
+Now everytime we reload the first item in the list will always be selected and we will always show something in the Park Details section.
+
+<div class="ndl-image-with-background l">
+
+![](first-item-selected-preview.png)
+
+</div>
+
+In the final part of this Google Sheets guide we will look at how we can apply filters to our Google Sheet data.
