@@ -12,9 +12,9 @@
     <br/>
 
 -   **Guides**
--   [Guide 1](modules/mapbox/guides/setting-up/)
--   [Guide 2](modules/mapbox/guides/interacting/)
--   [etc](modules/mapbox/guides/using-markers/)
+-   [Setting up](modules/gsheets/guides/setting-up/)
+-   [Park Details view](modules/gsheets/guides/park-details/)
+-   [Filtering](modules/gsheets/guides/filtering/)
 
     <br/>
 
