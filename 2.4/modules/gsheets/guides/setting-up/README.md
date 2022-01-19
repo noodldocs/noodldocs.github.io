@@ -8,7 +8,7 @@ In this guide we will build a small application where we display a list of US Na
 
 <div class="ndl-image-with-background s">
 
-![](park-list.png)
+![](parks-list-filled.png)
 
 </div>
 
@@ -56,6 +56,14 @@ Go ahead and delete the text node and you should end up just having a Group node
 ![](hello-world-deleted.png)
 
 </div>
+
+Then style your group like this:
+<div class="ndl-image-with-background l">
+
+![](group-props.png)
+
+</div>
+
 
 Before we build out our simple list UI, let's have a look at the Google Sheet that contains our data. You will find the document [here.](https://docs.google.com/spreadsheets/d/1gjttBIT4bHGFS8ynF31DoYw143ZY3UAiwopAW0N97KQ/) 
 
@@ -316,12 +324,18 @@ Finally we will add a Variable node with the name SelectedRowId, a Set Variable 
 
 Now when you click on an item in the list it should become highlighted.
 
+<div class="ndl-image-with-background l">
+
+![](final-result.png)
+
+</div>
+
 ## Summary
 In this guide we built a list of National Parks using data from a Google Sheet. If you want to import the final project, click the "Import" button below and follow the instructions.
 
 <div class="ndl-image-with-background l">
     <img src="/2.4/modules/gsheets/guides/setting-up/parks-final.gif" class="ndl-image small"></img>
-<button class="ndl-import-button" onClick='importIntoNoodl("/2.4/modules/mapbox/guides/interacting/interacting.zip",{name:"Google Sheets Getting Started",thumb:"/2.4/modules/mapbox/guides/interacting/screen-2.png"})'></button>
+<button class="ndl-import-button" onClick='importIntoNoodl("/2.4/modules/gsheets/guides/setting-up/gsheets-1-1.zip",{name:"Google Sheets Getting Started",thumb:"/2.4/modules/gsheets/guides/setting-up/final-result.png"})'></button>
 </div>
 
 In the next guide, we will create a details view for our parks, and in the final guide we will look at how we can filter the data we get in the Query Sheet node.
