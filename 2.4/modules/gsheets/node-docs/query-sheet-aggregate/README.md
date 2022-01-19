@@ -76,3 +76,4 @@ If the `Do` signal is unconnected, the Query will automatically be run when the 
 | -------------------------------------------- | ----------------------------------------------------------------------------------------- |
 | <span class="ndl-signal">Success</span>        | This signal is sent when a Query was successfully performed. |
 | <span class="ndl-signal">Failure</span> | This signal is sent when a Query failed for some reason. The `Error` property will contain the error message.  |
+
