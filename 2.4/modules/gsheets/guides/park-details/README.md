@@ -180,4 +180,12 @@ Now everytime we reload the first item in the list will always be selected and w
 
 </div>
 
-In the final part of this Google Sheets guide we will look at how we can apply filters to our Google Sheet data.
+## Summary
+In this guide we added a details view to our National Parks example using data from a Google Sheet. If you want to import the final project, click the "Import" button below and follow the instructions.
+
+<div class="ndl-image-with-background l">
+    <img src="/2.4/modules/gsheets/guides/park-details/first-item-selected-preview.png" class="ndl-image small"></img>
+<button class="ndl-import-button" onClick='importIntoNoodl("/2.4/modules/gsheets/guides/park-details/gsheets-1-1.zip",{name:"Google Sheets Park Details",thumb:"/2.4/modules/gsheets/guides/park-details/arches.png"})'></button>
+</div>
+
+In the next guide we will look at how we can apply filters to our Google Sheet data.
