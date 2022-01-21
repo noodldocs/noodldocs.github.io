@@ -185,7 +185,7 @@ In this guide we added a details view to our National Parks example using data f
 
 <div class="ndl-image-with-background l">
     <img src="/2.4/modules/gsheets/guides/park-details/first-item-selected-preview.png" class="ndl-image small"></img>
-<button class="ndl-import-button" onClick='importIntoNoodl("/2.4/modules/gsheets/guides/park-details/gsheets-1-1.zip",{name:"Google Sheets Park Details",thumb:"/2.4/modules/gsheets/guides/park-details/arches.png"})'></button>
+<button class="ndl-import-button" onClick='importIntoNoodl("/2.4/modules/gsheets/guides/park-details/gsheets-part2-1.zip",{name:"Google Sheets Park Details",thumb:"/2.4/modules/gsheets/guides/park-details/arches.png"})'></button>
 </div>
 
 In the next guide we will look at how we can apply filters to our Google Sheet data.

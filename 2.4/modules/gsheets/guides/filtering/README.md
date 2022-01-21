@@ -514,6 +514,6 @@ In this guide we added filters to our National Parks and used the Query Sheets A
 
 <div class="ndl-image-with-background l">
     <img src="/2.4/modules/gsheets/guides/filtering/filter-final-preview.gif" class="ndl-image small"></img>
-<button class="ndl-import-button" onClick='importIntoNoodl("/2.4/modules/gsheets/guides/filtering/gsheets-1-1.zip",{name:"Google Sheets National Parks",thumb:"/2.4/modules/gsheets/guides/filtering/filter-view.png"})'></button>
+<button class="ndl-import-button" onClick='importIntoNoodl("/2.4/modules/gsheets/guides/filtering/gsheets-part3-1.zip",{name:"Google Sheets National Parks",thumb:"/2.4/modules/gsheets/guides/filtering/filter-view.png"})'></button>
 </div>
 
