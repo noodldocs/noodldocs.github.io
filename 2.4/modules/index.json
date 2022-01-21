@@ -66,7 +66,7 @@
         "label": "Google Sheets",
         "desc": "Use your google sheets as a data source for your applications.",
         "icon": "gsheets/gsheets-icon.png",
-        "project": "gsheets/gsheets-1-3.zip",
+        "project": "gsheets/gsheets-1-4.zip",
         "docs": "gsheets/"
     },
     {
