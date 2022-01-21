@@ -65,6 +65,10 @@ Below you will find a list of the modules in the Noodl Module Repository:
         <td><img src="/modules/mapbox/MapboxModule.png"></img></td>
         <td><a href="#/modules/mapbox/">Mapbox</a><br>This module adds support for maps and location technology through Mapbox.</td>
     </tr>
+    <tr>
+        <td><img src="modules/gsheets/gsheets-icon.png"></img></td>
+        <td><a href="#/modules/gsheets/">Google Sheets</a><br>This module allows you to read, sort and filter data stored in a public Google Sheet.</td>
+    </tr>
     <!--<tr>
         <td><img src="/modules/chartjs/ChartJSModule.png"></img></td>
         <td><a href="#/modules/chartjs/">Chart.js</a><br>A simple and flexible way to do charts and visualizations in Noodl.</td>

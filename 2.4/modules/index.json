@@ -63,6 +63,13 @@
         "docs": "webcamera/"
     },
     {
+        "label": "Google Sheets",
+        "desc": "Use your google sheets as a data source for your applications.",
+        "icon": "gsheets/gsheets-icon.png",
+        "project": "gsheets/gsheets-1-5.zip",
+        "docs": "gsheets/"
+    },
+    {
         "label": "Mapbox",
         "desc": "Use this module to add maps and location visualisations to your app.",
         "icon": "mapbox/MapboxModule.png",
