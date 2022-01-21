@@ -42,5 +42,12 @@
         "desc": "A simple map app using Mapbox. Note: Mapbox Access Token needed.",
         "projectURL": "mapbox/mapbox-app-1.zip",
         "category": "Tutorial"
+    },
+    {
+        "iconURL": "suatch/suatch.png",
+        "title": "Color swatch app from Google Sheet",
+        "desc": "A color swatch app using Google Sheet as a simple backend.",
+        "projectURL": "suatch/suatch_1-0.zip",
+        "category": "Tutorial"
     }
 ]
