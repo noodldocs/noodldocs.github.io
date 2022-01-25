@@ -23,7 +23,7 @@ To be able to use Google Analytics you need to have:
 
 If this list is crystal clear, you already know how to do this and can skip along to the [next section](modules/google-analytics/guides/setting-up-google-analytics/?id=set-up-th-noodl-module) of this guide. Otherwise - Google has some handy documentation:
 
-### Beginners guide
+### Beginners guide to Google Analytics
 
 If you don't already have a Google Analytics account you need to [create one](https://support.google.com/analytics/answer/9304153#account&zippy=%2Cweb).
 
@@ -37,11 +37,11 @@ Let's set up our first **Data Stream**. As Noodl outputs Web Apps, we will need 
 
 !> If you want to track more than page views, make sure to enable _Enhanced Measurement_. This will give you a lot of extra tracking [out of the box](https://support.google.com/analytics/answer/9216061).
 
-## Set up th Noodl Module
+## Set up the Noodl Module
 
 In the Google Analytics admin panel, go to your newly created **Data Stream** settings and copy the [Measurement ID](https://support.google.com/analytics/answer/9539598#find-G-ID). You will be needing this later.
 
-Open up your Noodl Project and locate your **Root Compoenent**. It's easy to identify, since it has a small house icon in front of it and is called `App` (if you haven't renamed it).
+Open up your Noodl Project and locate your **Root Component**. It's easy to identify, since it has a small house icon in front of it and is called `App` (if you haven't renamed it).
 
 <div class="ndl-image-with-background l">
 image of Root component in component list
@@ -65,7 +65,7 @@ To be able to track any user interactions we need to check the <span class="ndl-
 
 In most cases it is recommended that you notify the user of your tracking and only track after having been given the users consent.
 
-To do this we can use a **Button** node and a **Switch** node. Connect the **Switch** nodes <span class="ndl-data">Current State</span> output to the <span class="ndl-data">Allow Tracking</span> input on the **Google Analytics Root** node. Use the **Button** nodes <span class="ndl-signal">Click</span> output to flip the **Switch** to `on`.
+To do this we can use a **Button** node and a **Switch** node. Connect the **Switch** nodes <span class="ndl-data">Current State</span> output to the <span class="ndl-data">Allow Tracking</span> input on the **Google Analytics Root** node. Use the **Button** nodes <span class="ndl-signal">Click</span> output to flip the **Switch** to `On`.
 
 <div class="ndl-image-with-background l">
 image of how this setup looks.
@@ -89,6 +89,6 @@ image of how this setup looks.
 
 Congratulations! The Google Analytics integration is complete! You should now be able to see real time data in your [Google Analytics Reports](https://support.google.com/analytics/answer/9212670) view.
 
-Google Analytics is very powerful and has a lot a lot of features, and it's highly recommended to learn more about it if you're just starting your Analytics journey. Sadly, we've reached the end of this guide, but there are many resources where you can learn more about GA4. Google themselves provide free online courses in the [Analytics Academy](https://analytics.google.com/analytics/academy/) that are well worth checking out if you want to learn all the ins and outs of both the tool and tracking strategies. Less in-depth information is also available - one Google (or YouTube) search away.
+Google Analytics is very powerful and has a lot of features, and it's highly recommended to learn more about it if you're just starting your Analytics journey. Sadly, we've reached the end of this guide, but there are many resources where you can learn more about GA4. Google themselves provide free online courses in the [Analytics Academy](https://analytics.google.com/analytics/academy/) that are well worth checking out if you want to learn all the ins and outs of both the tool and tracking strategies. Less in-depth information is also available - one Google (or YouTube) search away.
 
 When you feel it's time to go further on your tracking journey in Noodl, check out our guide on [tracking custom events](modules/google-analytics/guides/tracking-custom-events/).

@@ -20,9 +20,9 @@ In the setup guide we touched briefly on the [Enhanced Measurement](https://supp
 
 If the event we are trying to track is not included in _Enhanced Measurement_ we can send custom events ourselves using the **Send Google Analytics Data** node.
 
-The **Send Google Analytics Data** node is built on top of Googles own `gtag` function, meaning that all _Google Analytics 4_ documentation you see that uses `gtag` can be directly copied and pasted into the node.
+The **Send Google Analytics Data** node is built on top of Google's own `gtag` function, meaning that all _Google Analytics 4_ documentation you see that uses `gtag` can be directly copied and pasted into the node.
 
-In Googles own documentation on [sending events](https://support.google.com/analytics/answer/11147304) we can find the following code in the section named "Send an event":
+In Google's own documentation on [sending events](https://support.google.com/analytics/answer/11147304) we can find the following code in the section named "Send an event":
 
 <!-- prettier-ignore-start -->
 ```html
@@ -56,9 +56,9 @@ We have now successfully tracked our first custom event!
 
 ## Sending dynamic data based on user input
 
-In some cases we want to provide more in depth data, that might be dependent on specific user input. In this case we can use the **String Format** node.
+In some cases we want to provide more in depth data that might be dependent on specific user input. In this case we can use the **String Format** node.
 
-Let's build a small app that tracks the users favourite type of noodle dish. We'll use a **Text Input** and a **Button** to build a tiny form.
+Let's build a small app that tracks the user's favourite type of noodle dish. We'll use a **Text Input** and a **Button** to build a tiny form.
 
 <div class="ndl-image-with-background l">
 image of the setup above.
@@ -88,7 +88,7 @@ image of the setup above.
 
 !> It is **very important** that the `{userDish}` is in quotation marks if the value is a <span class="ndl-data">string</span>, otherwise the tracking will fail. <span class="ndl-data">Numbers</span> can be unquoted.
 
-Now we need to send this data to Google. Create a **Send Google Analytics Data** node, and connect the **String Format** <span class="ndl-data">Formatted</span> output to the **Send Google Analytics Data** <span class="ndl-data">Gtag Tracking Data</span> input, and the **Button** <span class="ndl-signal">Click</span> output to the **Send Google Analytics Data** <span class="ndl-signal">Do</span> input. We will also connect the <span class="ndl-signal">Data Sent</span> output from **Send Google Analytics Data** to the **Text Input's** <span class="ndl-signal">Clear</span>, to visually indicate that the data has been sent.
+Now we need to send this data to Google. Create a **Send Google Analytics Data** node, and connect the **String Format** <span class="ndl-data">Formatted</span> output to the **Send Google Analytics Data** <span class="ndl-data">Gtag Tracking Data</span> input, and the **Button** <span class="ndl-signal">Click</span> output to the **Send Google Analytics Data** <span class="ndl-signal">Do</span> input. We will also connect the <span class="ndl-signal">Data Sent</span> output from **Send Google Analytics Data** to the **Text Input** <span class="ndl-signal">Clear</span>, to visually indicate that the data has been sent.
 
 <div class="ndl-image-with-background l">
 image of the setup above.
@@ -97,4 +97,4 @@ image of the setup above.
 
 </div>
 
-We have now successfully tracked the users favourite noodle dish! Hop on in to the Google Analytics Reports view and use this knowledge responsibly.
+We have now successfully tracked the users favourite noodle dish! Hop on into the Google Analytics Reports view and use this knowledge responsibly.
