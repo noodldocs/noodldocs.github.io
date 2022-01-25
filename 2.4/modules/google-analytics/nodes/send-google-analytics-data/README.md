@@ -21,3 +21,9 @@ This node is used to send custom data to Google Analytics. It works similarily t
 | Signal                             | Description                                                        |
 | ---------------------------------- | ------------------------------------------------------------------ |
 | <span class="ndl-signal">Do</span> | Send a signal to this input to track the data in Google Analytics. |
+
+## Outputs
+
+| Signal                                    | Description                                                                                                       |
+| ----------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| <span class="ndl-signal">Data Sent</span> | Sends a signal when the data has been sent to Google Analytics. Useful for clearing user inputs after submission. |
