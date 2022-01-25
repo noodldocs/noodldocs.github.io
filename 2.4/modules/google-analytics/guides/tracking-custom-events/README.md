@@ -9,8 +9,8 @@ This guide will take you through the process of setting up and tracking custom e
 We will learn about the following things:
 
 -   Enhanced Measurement
--   Track static data
--   Track dynamic data
+-   Sending static data
+-   Sending dynamic data based on user input
 
 ## Enhanced Measurement
 
@@ -54,11 +54,11 @@ image of the setup above.
 
 We have now successfully tracked our first custom event!
 
-## Sending dynamic data
+## Sending dynamic data based on user input
 
 In some cases we want to provide more in depth data, that might be dependent on specific user input. In this case we can use the **String Format** node.
 
-Let's build a small app that tracks the users favourite type of noodle dish. We'll use a **Text Input** and a **Button** to build a tiny form. When the **Button** is pressed, we will clear the **Text Input**.
+Let's build a small app that tracks the users favourite type of noodle dish. We'll use a **Text Input** and a **Button** to build a tiny form.
 
 <div class="ndl-image-with-background l">
 image of the setup above.
@@ -73,7 +73,7 @@ Create a **String Format** node and open up it's **Property Panel**. In the <spa
 
 <!-- prettier-ignore-start -->
 ```js
-    "event", "submitted_dish", {"dish": "{userDish}" }
+    "event", "submitted_dish", {"dish": "{userDish}"}
 ```
 <!-- prettier-ignore-end -->
 
@@ -86,7 +86,7 @@ image of the setup above.
 
 </div>
 
-Now we need to send this data to Google. Create a **Send Google Analytics Data** node, and connect the **String Format** <span class="ndl-data">Formatted</span> output to the **Send Google Analytics Data** <span class="ndl-data">Gtag Tracking Data</span> input, and the **Button** <span class="ndl-signal">Click</span> output to the **Send Google Analytics Data** <span class="ndl-signal">Do</span> input.
+Now we need to send this data to Google. Create a **Send Google Analytics Data** node, and connect the **String Format** <span class="ndl-data">Formatted</span> output to the **Send Google Analytics Data** <span class="ndl-data">Gtag Tracking Data</span> input, and the **Button** <span class="ndl-signal">Click</span> output to the **Send Google Analytics Data** <span class="ndl-signal">Do</span> input. We will also connect the <span class="ndl-signal">Data Sent</span> output from **Send Google Analytics Data** to the **Text Input's** <span class="ndl-signal">Clear</span>, to visually indicate that the data has been sent.
 
 <div class="ndl-image-with-background l">
 image of the setup above.
@@ -94,3 +94,5 @@ image of the setup above.
 ![](image.png)
 
 </div>
+
+We have now successfully tracked the users favourite noodle dish! Hop on in to the Google Analytics Reports view and use this knowledge responsibly.
