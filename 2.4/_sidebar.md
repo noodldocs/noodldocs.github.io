@@ -7,6 +7,7 @@
   - [Task list app](tutorials/tasklist-app.md)
   - [Survey app](tutorials/survey-app.md)
 - [Snippets](snippets/snippets.md)
+  - [Multi Select](snippets/multi-select/)
   - [Pointer Position](snippets/javascript/pointer-position.md)
   - [Get DOM Element](snippets/javascript/get-dom-element.md)
   - [Importing font files](snippets/ui/importing-font-files.md)

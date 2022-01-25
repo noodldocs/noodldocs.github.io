@@ -21,6 +21,10 @@ Some snippets might be to big for copy/pasting, so if you encounter the "Import"
 Remember, if you have questions that aren't covered here, you can always join the conversation on [Discord](https://discord.gg/umRupsc2f5).
 
 <table class="shortcut_list">
+     <tr>
+        <td><img src="snippets/multi-select/multi-select.png"></img></td>
+        <td><a href="#/snippets/multi-select/">Multi select</a><br>An example of a multi select drop down with checkboxes.</td>
+    </tr>
     <tr>
         <td><img src="snippets/javascript/pointer-position.png"></img></td>
         <td><a href="#/snippets/javascript/pointer-position.md">Pointer Position</a><br>This example will attach an event listener to the body element of the web page, and listen for mousemove.</td>
