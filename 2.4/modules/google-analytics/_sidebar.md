@@ -11,7 +11,7 @@
 
 -   **Guides**
 -   [Setting up Google Analytics](modules/google-analytics/guides/setting-up-google-analytics/)
--   [Advanced Tracking](modules/google-analytics/guides/advanced-tracking/)
+-   [Tracking custom events](modules/google-analytics/guides/tracking-custom-events/)
     <!-- -   [User Consent with Cookies](modules/google-analytics/guides/user-consent-with-cookies/) -->
 
     <br/>

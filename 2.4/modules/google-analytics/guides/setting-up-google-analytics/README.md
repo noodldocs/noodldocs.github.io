@@ -87,4 +87,4 @@ Congratulations! The Google Analytics integration is complete! You should now be
 
 Google Analytics is very powerful and has a lot a lot of features, and it's highly recommended to learn more if you're new to it. Sadly, we've reached the end of this guide, but there are many learning resources. Google themselves provide free online courses in the [Analytics Academy](https://analytics.google.com/analytics/academy/) that are well worth checking out to learn all ins and outs. Less in-depth information is also available - one Google (or YouTube) search away.
 
-When you feel it's time to go further on your tracking journey in Noodl, check out our guide on [Advanced Tracking](modules/google-analytics/guides/advanced-tracking/).
+When you feel it's time to go further on your tracking journey in Noodl, check out our guide on [tracking custom events](modules/google-analytics/guides/tracking-custom-events/).
