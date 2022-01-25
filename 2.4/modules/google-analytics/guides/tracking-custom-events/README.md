@@ -36,19 +36,17 @@ In Google's own documentation on [sending events](https://support.google.com/ana
 
 We can copy the data passed to the gtag function and paste it directly into the <span class="ndl-data">Gtag Tracking Data</span> input in the **Property Panel** for the **Send Google Analytics Data** node, like so:
 
-<div class="ndl-image-with-background l">
-image of pasted code in the input.
+<div class="ndl-image-with-background">
 
-![](image.png)
+![](paste-code.png)
 
 </div>
 
 We can now submit the data to Google by sending a signal to the nodes <span class="ndl-signal">Do</span> input.
 
 <div class="ndl-image-with-background l">
-image of the setup above.
 
-![](image.png)
+![](submit-data.png)
 
 </div>
 
@@ -61,9 +59,8 @@ In some cases we want to provide more in depth data that might be dependent on s
 Let's build a small app that tracks the user's favourite type of noodle dish. We'll use a **Text Input** and a **Button** to build a tiny form.
 
 <div class="ndl-image-with-background l">
-image of the setup above.
 
-![](image.png)
+![](form.png)
 
 </div>
 
@@ -80,9 +77,8 @@ Create a **String Format** node and open up it's **Property Panel**. In the <spa
 The `{userDish}` part of this code will create an input named <span class="ndl-data">userDish</span> on this node. We can now send the <span class="ndl-data">Text</span> from **Text Input** to the <span class="ndl-data">userDish</span> input on **String Format**.
 
 <div class="ndl-image-with-background l">
-image of the setup above.
 
-![](image.png)
+![](string-format-connected.png)
 
 </div>
 
@@ -91,9 +87,8 @@ image of the setup above.
 Now we need to send this data to Google. Create a **Send Google Analytics Data** node, and connect the **String Format** <span class="ndl-data">Formatted</span> output to the **Send Google Analytics Data** <span class="ndl-data">Gtag Tracking Data</span> input, and the **Button** <span class="ndl-signal">Click</span> output to the **Send Google Analytics Data** <span class="ndl-signal">Do</span> input. We will also connect the <span class="ndl-signal">Data Sent</span> output from **Send Google Analytics Data** to the **Text Input** <span class="ndl-signal">Clear</span>, to visually indicate that the data has been sent.
 
 <div class="ndl-image-with-background l">
-image of the setup above.
 
-![](image.png)
+![](sending-data.png)
 
 </div>
 
