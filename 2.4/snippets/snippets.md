@@ -26,6 +26,10 @@ Remember, if you have questions that aren't covered here, you can always join th
         <td><a href="#/snippets/multi-select/">Multi select</a><br>An example of a multi select drop down with checkboxes.</td>
     </tr>
     <tr>
+        <td><img src="snippets/checkbox-group/checkbox-group.png"></img></td>
+        <td><a href="#/snippets/checkbox-group/">Checkbox Group</a><br>An example of a dynamically generated checkbox group.</td>
+    </tr>
+    <tr>
         <td><img src="snippets/javascript/pointer-position.png"></img></td>
         <td><a href="#/snippets/javascript/pointer-position.md">Pointer Position</a><br>This example will attach an event listener to the body element of the web page, and listen for mousemove.</td>
     </tr>

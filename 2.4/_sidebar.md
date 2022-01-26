@@ -8,6 +8,7 @@
   - [Survey app](tutorials/survey-app.md)
 - [Snippets](snippets/snippets.md)
   - [Multi Select](snippets/multi-select/)
+  - [Checkbox Group](snippets/checkbox-group/)
   - [Pointer Position](snippets/javascript/pointer-position.md)
   - [Get DOM Element](snippets/javascript/get-dom-element.md)
   - [Importing font files](snippets/ui/importing-font-files.md)
