@@ -4,7 +4,7 @@ This is a small snippet containing a group of checkboxes that are dynamically cr
 
 <div class="ndl-image-with-background">
     <img src="snippets/checkbox-group/checkbox-group.png">
-    <button class="ndl-import-button" onClick='importIntoNoodl("/snippets/checkbox-group/checkbox-group-0-1.zip")'></button>
+    <button class="ndl-import-button" onClick='importIntoNoodl("/snippets/checkbox-group/checkbox-group-0-2.zip")'></button>
 </div>
 
 When importing the snippet into your project make sure you choose the two components **Checkbox Group** and **Checkbox Group Item**. Then you can go ahead and use the checkbox group component as follows.
