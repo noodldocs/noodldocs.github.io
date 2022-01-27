@@ -6,24 +6,37 @@ This guide will show you how to add basic tracking with Google Analytics. After 
 
 ## Overview
 
-We will go through the following steps:
+We will go through the following topics:
 
+-   Beginners guide to Google Analytics
 -   Set up Google Analytics
 -   Set up the Noodl Module
 -   Allow tracking
 -   Next steps
 
+## Beginners guide to Google Analytics
+
+If you're already familiar with _impressions_ and _page views_ and just want to set up your tracking, feel free to jump along to [the next section](modules/google-analytics/guides/setting-up-google-analytics/?id=set-up-google-analytics). If tracking in Google Analytics is new to you, keep reading for a quick crash course.
+
+The most common things to track with Google Analytics are _visitor count_ (often referred to as _Impressions_) and _page views_. These are coincidentally two of the metrics that Google Analytics track by default without you having to take any other action than just starting the tracking script in your app.
+
+Impressions lets you know how many people visit your app. They also include a lot of helpful data on the visiting demographics and what technologies they use to access your app. What is the average length of the users visit? What part of the world are they from? What languages do they speak? Are they primarily desktop or mobile users? All of this, and much more can be answered with the help of impressions.
+
+While impressions are good for tracking general behavior, page views can be used to see details on specific interaction. What are the most visited pages? On what page do your users spend the most time? Are they reaching that last step of the form, or do they drop off earlier? Where do they drop off?
+
+It is well worth learning more about [finding your way around Google Analytics](https://support.google.com/analytics/answer/9367631), and especially the contents and capabilities of [GA4 Reports](https://support.google.com/analytics/answer/9212670), as they are the backbone of Google Analytics and an instrumental tool in shaping the success of your app.
+
 ## Set up Google Analytics
 
 To be able to use Google Analytics you need to have:
 
-1. an Analytics account a _Google Analytics 4 (GA4)_ **Property**
+1. an Analytics account a with _Google Analytics 4 (GA4)_ **Property**
 2. with a _Web_ **Data Stream**
 3. pointing to the deployed app URL (or a placeholder one, like `example.com`).
 
-If this list is crystal clear, you already know how to do this and can skip along to the [next section](modules/google-analytics/guides/setting-up-google-analytics/?id=set-up-th-noodl-module) of this guide. Otherwise - Google has some handy documentation:
+If this list is crystal clear, you already know how to do this and can skip along to the [next section](modules/google-analytics/guides/setting-up-google-analytics/?id=setting-up-the-noodl-module) of this guide. Otherwise - Google has some handy documentation:
 
-### Beginners guide to Google Analytics
+### Setting up your Google account
 
 If you don't already have a Google Analytics account you need to [create one](https://support.google.com/analytics/answer/9304153#account&zippy=%2Cweb).
 
@@ -33,11 +46,11 @@ After that we need to [set up a **Property**](https://support.google.com/analyti
 
 So what is a **Data Stream**? Simply put, it's a connection that will stream data from your app to Google Analytics. You can have multiple **Data Streams** in your **Property**, but in most cases you will only need one.
 
-Let's set up our first **Data Stream**. As Noodl outputs Web Apps, we will need to select the [**Web** option](https://support.google.com/analytics/answer/9304153#stream&zippy=%2Cweb). When asked for the URL of the primary website, this needs to be the URL for your app when it's deployed. `example.com` works for testing purposes as well.
+Let's set up our first **Data Stream**. As Noodl outputs Web Apps, we will need to select the [**Web** option](https://support.google.com/analytics/answer/9304153#stream&zippy=%2Cweb). When asked for the URL of the primary website, this needs to be the URL for your app [when it's deployed](/guides/deploy-noodl-apps/deploy-noodl-dot-app). `example.com` works for testing purposes as well.
 
-!> If you want to track more than page views, make sure to enable _Enhanced Measurement_. This will give you a lot of extra tracking [out of the box](https://support.google.com/analytics/answer/9216061).
+!> If you want to track more than page views and visitor count, make sure to enable _Enhanced Measurement_. This will give you a lot of extra tracking [out of the box](https://support.google.com/analytics/answer/9216061).
 
-## Set up the Noodl Module
+## Seting up the Noodl Module
 
 In the Google Analytics admin panel, go to your newly created **Data Stream** settings and copy the [Measurement ID](https://support.google.com/analytics/answer/9539598#find-G-ID). You will be needing this later.
 
