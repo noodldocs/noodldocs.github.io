@@ -30,7 +30,7 @@ It is well worth learning more about [finding your way around Google Analytics](
 
 To be able to use Google Analytics you need to have:
 
-1. an Analytics account a with _Google Analytics 4 (GA4)_ **Property**
+1. an Analytics account with a _Google Analytics 4 (GA4)_ **Property**
 2. with a _Web_ **Data Stream**
 3. pointing to the deployed app URL (or a placeholder one, like `example.com`).
 
