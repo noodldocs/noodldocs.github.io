@@ -21,6 +21,13 @@
         "docs": "graphql/"
     },
     {
+        "label": "Google Analytics",
+        "desc": "Track user behavior with Google Analytics.",
+        "project": "google-analytics/google-analytics-1-0-7.zip",
+        "icon": "google-analytics/thumbnail.png",
+        "docs": "google-analytics/"
+    },
+    {
         "label": "Custom HTML",
         "desc": "Write your own HTML and pass values to it with template strings. Useful for embeds.",
         "project": "custom-html/custom-html-module-1-0-1.zip",
