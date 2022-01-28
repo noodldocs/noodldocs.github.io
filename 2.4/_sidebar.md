@@ -7,6 +7,7 @@
   - [Task list app](tutorials/tasklist-app.md)
   - [Survey app](tutorials/survey-app.md)
 - [Snippets](snippets/snippets.md)
+  - [Star Rating](snippets/star-rating/)
   - [Multi Select](snippets/multi-select/)
   - [Checkbox Group](snippets/checkbox-group/)
   - [Pointer Position](snippets/javascript/pointer-position.md)
