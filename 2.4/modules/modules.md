@@ -70,7 +70,7 @@ Below you will find a list of the modules in the Noodl Module Repository:
         <td><a href="#/modules/gsheets/">Google Sheets</a><br>This module allows you to read, sort and filter data stored in a public Google Sheet.</td>
     </tr>
     <tr>
-        <td><img src="modules/google-analytics/screenshot.png"></img></td>
+        <td><img src="modules/google-analytics/thumbnail.png"></img></td>
         <td><a href="#/modules/google-analytics/">Google Analytics</a><br>Track user behavior with Google Analytics.</td>
     </tr>
     <!--<tr>

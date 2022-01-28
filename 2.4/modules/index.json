@@ -24,7 +24,7 @@
         "label": "Google Analytics",
         "desc": "Track user behavior with Google Analytics.",
         "project": "google-analytics/google-analytics-1-0-7.zip",
-        "icon": "google-analytics/screenshot.png",
+        "icon": "google-analytics/thumbnail.png",
         "docs": "google-analytics/"
     },
     {
