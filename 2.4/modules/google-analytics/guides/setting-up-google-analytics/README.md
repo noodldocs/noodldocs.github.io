@@ -16,13 +16,15 @@ We will go through the following topics:
 
 ## Beginners guide to Google Analytics
 
-If you're already familiar with _impressions_ and _page views_ and just want to set up your tracking, feel free to jump along to [the next section](modules/google-analytics/guides/setting-up-google-analytics/?id=set-up-google-analytics). If tracking in Google Analytics is new to you, keep reading for a quick crash course.
+If you're already familiar with _impressions_ and _page views_ and just want to set up your tracking, feel free to jump along to [the next section](modules/google-analytics/guides/setting-up-google-analytics/?id=set-up-google-analytics).
 
-The most common things to track with Google Analytics are _visitor count_ (often referred to as _Impressions_) and _page views_. These are coincidentally two of the metrics that Google Analytics track by default without you having to take any other action than just starting the tracking script in your app.
+If tracking in Google Analytics is new to you, keep reading for a quick crash course.
 
-Impressions lets you know how many people visit your app. They also include a lot of helpful data on the visiting demographics and what technologies they use to access your app. What is the average length of the users visit? What part of the world are they from? What languages do they speak? Are they primarily desktop or mobile users? All of this, and much more can be answered with the help of impressions.
+The most common things to track with Google Analytics are _visitor count_ and _page views_. These are coincidentally two of the metrics that Google Analytics track by default without you having to take any other action than just starting the tracking script in your app.
 
-While impressions are good for tracking general behavior, page views can be used to see details on specific interaction. What are the most visited pages? On what page do your users spend the most time? Are they reaching that last step of the form, or do they drop off earlier? Where do they drop off?
+The user data lets you know how many people visit your app. It also include a lot of helpful information on the visiting demographics and what technologies they use to access your app. What is the average length of the users visit? What part of the world are they from? What languages do they speak? Are they primarily desktop or mobile users? All of this, and much more can be answered by reading the collected data.
+
+While the demographic data is good for tracking general behavior, page views can be used to see details on specific interaction. What are the most visited pages? On what page do your users spend the most time? Are they reaching that last step of the form, or do they drop off earlier? Where do they drop off?
 
 It is well worth learning more about [finding your way around Google Analytics](https://support.google.com/analytics/answer/9367631), and especially the contents and capabilities of [GA4 Reports](https://support.google.com/analytics/answer/9212670), as they are the backbone of Google Analytics and an instrumental tool in shaping the success of your app.
 
@@ -32,7 +34,8 @@ To be able to use Google Analytics you need to have:
 
 1. an Analytics account with a _Google Analytics 4 (GA4)_ **Property**
 2. with a _Web_ **Data Stream**
-3. pointing to the deployed app URL (or a placeholder one, like `example.com`).
+3. pointing to the deployed app URL (or a placeholder one, like `example.com`)
+4. with _Enhanced Measurement_ **disabled**
 
 If this list is crystal clear, you already know how to do this and can skip along to the [next section](modules/google-analytics/guides/setting-up-google-analytics/?id=setting-up-the-noodl-module) of this guide. Otherwise - Google has some handy documentation:
 
@@ -48,7 +51,7 @@ So what is a **Data Stream**? Simply put, it's a connection that will stream dat
 
 Let's set up our first **Data Stream**. As Noodl outputs Web Apps, we will need to select the [**Web** option](https://support.google.com/analytics/answer/9304153#stream&zippy=%2Cweb). When asked for the URL of the primary website, this needs to be the URL for your app [when it's deployed](/guides/deploy-noodl-apps/deploy-noodl-dot-app). `example.com` works for testing purposes as well.
 
-!> If you want to track more than page views and visitor count, make sure to enable _Enhanced Measurement_. This will give you a lot of extra tracking [out of the box](https://support.google.com/analytics/answer/9216061).
+!> Make sure to disable [_Enhanced Measurement_](https://support.google.com/analytics/answer/9216061), as this might send double page views.
 
 ## Seting up the Noodl Module
 
@@ -72,11 +75,11 @@ Create a `Google Analytics Root` node and place it in the visual tree, as high u
 
 ## Allow tracking
 
-To be able to track any user interactions we need to check the <span class="ndl-data">Allow Tracking</span> input. This can be done by simply checking the input in the **Property Panel**.
+To be able to track anything we need to check the <span class="ndl-data">Allow Tracking</span> input. This can be done by simply checking the input in the **Property Panel**.
 
 In most cases it is recommended that you notify the user of your tracking and only track after having been given the users consent.
 
-To do this we can use a **Button** node and a **Switch** node. Connect the **Switch** nodes <span class="ndl-data">Current State</span> output to the <span class="ndl-data">Allow Tracking</span> input on the **Google Analytics Root** node. Use the **Button** nodes <span class="ndl-signal">Click</span> output to flip the **Switch** to `On`.
+To do this we can use a **Button** node and a **Switch** node. Connect the **Switch** nodes <span class="ndl-data">Current State</span> output to the <span  class="ndl-data">Allow Tracking</span> input on the **Google Analytics Root** node. Use the **Button** nodes <span class="ndl-signal">Click</span> output to flip the **Switch** to `On`.
 
 <div class="ndl-image-with-background l">
 
@@ -96,7 +99,7 @@ To make sure that everything is correct, we can use the <span class="ndl-signal"
 
 ## Next steps
 
-Congratulations! The Google Analytics integration is complete! You should now be able to see real time data in your [Google Analytics Reports](https://support.google.com/analytics/answer/9212670) view.
+Congratulations! The Google Analytics integration is complete! You should now be able to see stored and real time data in your [Google Analytics Reports](https://support.google.com/analytics/answer/9212670) view.
 
 Google Analytics is very powerful and has a lot of features, and it's highly recommended to learn more about it if you're just starting your Analytics journey. Sadly, we've reached the end of this guide, but there are many resources where you can learn more about GA4. Google themselves provide free online courses in the [Analytics Academy](https://analytics.google.com/analytics/academy/) that are well worth checking out if you want to learn all the ins and outs of both the tool and tracking strategies. Less in-depth information is also available - one Google (or YouTube) search away.
 

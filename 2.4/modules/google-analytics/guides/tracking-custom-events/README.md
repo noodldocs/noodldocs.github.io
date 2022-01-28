@@ -8,17 +8,12 @@ This guide will take you through the process of setting up and tracking custom e
 
 We will learn about the following things:
 
--   Enhanced Measurement
 -   Sending static data
 -   Sending dynamic data based on user input
 
-## Enhanced Measurement
-
-In the setup guide we touched briefly on the [Enhanced Measurement](https://support.google.com/analytics/answer/9216061) that Google provides out of the box. While not being a part of the custom events tracking described in this guide, it can be well worth looking through the data collected when the _Enhanced Measurement_ is activated for your **Data Stream**. It just might contain the behavior you are trying to track.
-
 ## Sending static data
 
-If the event we are trying to track is not included in _Enhanced Measurement_ we can send custom events ourselves using the **Send Google Analytics Data** node.
+To send custom events we use the **Send Google Analytics Data** node.
 
 The **Send Google Analytics Data** node is built on top of Google's own `gtag` function, meaning that all _Google Analytics 4_ documentation you see that uses `gtag` can be directly copied and pasted into the node.
 
