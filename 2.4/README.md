@@ -8,7 +8,7 @@ Noodl is a node based app builder. It’s a way of visually building an applicat
 
 -   If you just want to **get more familiar** with the editor you can watch the [Editor Tour](/guides/editor-tour/), a 15 minute long video taking you through the tool.
 
--   If you want to **get your hands dirty** straight away we recommend the [Build your first app](/tutorials/getting-started.md), two 15 minute long videos taking you through the process of building out a UI for task list app and connecting it to a cloud database.
+-   If you want to **get your hands dirty** straight away we recommend the [Build your first app](/tutorials/getting-started.md), two 15 minute long videos taking you through the process of building out a UI for task list app and connecting it to a cloud database. 
 
 ## Extending Noodl
 
