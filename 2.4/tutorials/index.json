@@ -2,6 +2,20 @@
     {
         "category": "Noodl Basics",
         "label": "",
+        "thumb": "tutorials/01_tasklist_app.png",
+        "url": "/#/tutorials/tasklist-app?id=_01-build-the-ui-for-a-task-list-app",
+        "icon": ""
+    },
+    {
+        "category": "Noodl Basics",
+        "label": "",
+        "thumb": "tutorials/02_tasklist_app.png",
+        "url": "/#/tutorials/tasklist-app?id=_02-build-a-backend-for-a-task-list-app",
+        "icon": ""
+    },
+    {
+        "category": "Noodl Basics",
+        "label": "",
         "thumb": "tutorials/01_noodl_basics.png",
         "url": "/#/guides/basic-concepts/",
         "icon": ""
