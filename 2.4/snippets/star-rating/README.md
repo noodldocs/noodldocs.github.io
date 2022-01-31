@@ -1,6 +1,6 @@
 # Star Rating Component
 
-This is a small snippet containing a Star Ratings component. <a href="#" onclick="importIntoNoodl('/snippets/star-rating/star-rating-1-1.zip')">Copy to clipboard</a>
+This is a small snippet containing a Star Ratings component. <span class="ndl-import" onclick="importIntoNoodl('/snippets/star-rating/star-rating-1-1.zip')">Import into Noodl</span>.
 
 <div class="ndl-image-with-background">
     <img src="snippets/star-rating/star-rating.gif">
