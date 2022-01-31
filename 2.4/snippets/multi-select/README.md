@@ -7,6 +7,8 @@ This is a small snippet containing a multi select drop down with checkboxes as s
     <button class="ndl-import-button" onClick='importIntoNoodl("/snippets/multi-select/multi-select-0-4.zip")'></button>
 </div>
 
+<span class="ndl-import" onclick="importIntoNoodl('/snippets/multi-select/multi-select-0-4.zip')">Import into Noodl</span>
+
 When importing the snippet into your project make sure you choose the three components **Multi Select**, **Multi Select Option** and **Multi Select Pill**. Then you can go ahead and use the multi select component as follows.
 
 <div class="ndl-image">

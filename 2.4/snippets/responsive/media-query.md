@@ -2,7 +2,7 @@
 
 You can access media queries directly through a script. Here's an example you can import and use in your own applications.
 
-Open up a project and Noodl, and click import to get the **Media Query** component.
+Open up a project and Noodl, and click import to get the **Media Query** component. <span class="ndl-import" onclick="importIntoNoodl('/snippets/responsive/media-query-project.zip')">Import into Noodl</span>
 
 <div class="ndl-image-with-background">
     <img src="/snippets/responsive/media-query.png"></img>
