@@ -1,10 +1,10 @@
 # Shake Detector
 
-This is an example of how to use the [Script](/nodes/javascript/script/) node to implement a "Shake detector". <span class="ndl-import" onclick="importIntoNoodl('snippets/shake-detector-1.0.1.zip')">Import into Noodl</span>
+This is an example of how to use the [Script](/nodes/javascript/script/) node to implement a "Shake detector". <span class="ndl-import" onclick="importIntoNoodl('snippets/shake-detector/shake-detector-1.0.1.zip')">Import into Noodl</span>
 
 <div class="ndl-image-with-background">
     <img src="snippets/shake-detector/preview.png">
-    <button class="ndl-import-button" onClick='importIntoNoodl("snippets/shake-detector-1.0.1.zip")'></button>
+    <button class="ndl-import-button" onClick='importIntoNoodl("snippets/shake-detector/shake-detector-1.0.1.zip")'></button>
 </div>
 
 ## Inputs
