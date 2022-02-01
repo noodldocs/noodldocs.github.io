@@ -23,7 +23,7 @@ You cannot really make a connection directly from the **TextInput** node to all 
 
 Let's start by opening a new project. You can base it on the Hello World template. Then add a **TextInput** node. Change its' label to "Name". You may want to add a little bit of padding to the parent container as well, to make sure the **TextInput** get some air around itself.
 
-<div class="ndl-image-with-background">
+<div class="ndl-image-with-background">§
 
 ![](nodes-1.png)
 
@@ -282,6 +282,6 @@ You can import the whole project in Noodl by clicking import below.
 
 
 <div class="ndl-image-with-background l">
-    <img src="/2.4/guides/working-with-data/local-data/using-variables/total-1.png" class="ndl-image large"></img>
-<button class="ndl-import-button" onClick='importIntoNoodl("/2.4/guides/working-with-data/local-data/using-variables/using-variables.zip",{name:"Using Variables",thumb:"/2.4/guides/working-with-data/local-data/using-variables/screen-3.png"})'></button>
+    <img src="guides/working-with-data/local-data/using-variables/total-1.png" class="ndl-image large"></img>
+<button class="ndl-import-button" onClick='importIntoNoodl("guides/working-with-data/local-data/using-variables/using-variables.zip",{name:"Using Variables",thumb:"guides/working-with-data/local-data/using-variables/screen-3.png"})'></button>
 </div>

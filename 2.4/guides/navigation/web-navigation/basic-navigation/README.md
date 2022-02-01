@@ -178,6 +178,6 @@ Now try clicking the buttons. If everything was set up correctly you should see 
 If you want import the full project in Noodl click the "Import" button below and follow the instructions below.
 
 <div class="ndl-image-with-background l">
-    <img src="/2.4/guides/navigation/web-navigation/basic-navigation/final.gif" class="ndl-image large"></img>
-<button class="ndl-import-button" onClick='importIntoNoodl("/2.4/guides/navigation/web-navigation/basic-navigation/basic-navigation.zip",{name:"Basic Navigation",thumb:"/2.4/guides/navigation/web-navigation/basic-navigation/ui-2.png"})'></button>
+    <img src="guides/navigation/web-navigation/basic-navigation/final.gif" class="ndl-image large"></img>
+<button class="ndl-import-button" onClick='importIntoNoodl("guides/navigation/web-navigation/basic-navigation/basic-navigation.zip",{name:"Basic Navigation",thumb:"guides/navigation/web-navigation/basic-navigation/ui-2.png"})'></button>
 </div>

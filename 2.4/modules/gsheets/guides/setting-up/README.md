@@ -334,8 +334,8 @@ Now when you click on an item in the list it should become highlighted.
 In this guide we built a list of National Parks using data from a Google Sheet. If you want to import the final project, click the "Import" button below and follow the instructions.
 
 <div class="ndl-image-with-background l">
-    <img src="/2.4/modules/gsheets/guides/setting-up/parks-final.gif" class="ndl-image small"></img>
-<button class="ndl-import-button" onClick='importIntoNoodl("/2.4/modules/gsheets/guides/setting-up/gsheets-part1-1-2.zip",{name:"Google Sheets Getting Started",thumb:"/2.4/modules/gsheets/guides/setting-up/final-result.png"})'></button>
+    <img src="modules/gsheets/guides/setting-up/parks-final.gif" class="ndl-image small"></img>
+<button class="ndl-import-button" onClick='importIntoNoodl("modules/gsheets/guides/setting-up/gsheets-part1-1-2.zip",{name:"Google Sheets Getting Started",thumb:"modules/gsheets/guides/setting-up/final-result.png"})'></button>
 </div>
 
 In the next guide, we will create a details view for our parks, and in the final guide we will look at how we can filter the data we get in the Query Sheet node.

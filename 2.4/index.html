@@ -62,8 +62,8 @@
       function importIntoNoodl(path,options) {
         query = [];
         if(options && options.name !== undefined) query.push('name=' + encodeURIComponent(options.name));
-        if(options && options.thumb !== undefined) query.push('thumb=' + encodeURIComponent(location.protocol + '//' + location.host + '/' + options.thumb));
-        if(options && options.cf !== undefined) query.push('cf=' + encodeURIComponent(location.protocol + '//' + location.host + '/' + options.cf));
+        if(options && options.thumb !== undefined) query.push('thumb=' + encodeURIComponent(location.protocol + '//' + location.host + location.pathname + '/' +options.thumb));
+        if(options && options.cf !== undefined) query.push('cf=' + encodeURIComponent(location.protocol + '//' + location.host + location.pathname + '/' + options.cf));
 
         var uri =
           'noodl:import/' +

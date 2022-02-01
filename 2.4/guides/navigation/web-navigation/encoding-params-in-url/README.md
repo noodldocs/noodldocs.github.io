@@ -19,8 +19,8 @@ The guide assumes that you are familiar with basic Web Navigation concepts and i
 We will also use the example app developed as part of the two guides as a starting point in this guide. If you haven't built it already, you can import it by clicking the button below and follow the instructions in Noodl.
 
 <div class="ndl-image-with-background l">
-    <img src="/2.4/guides/navigation/web-navigation/multi-level-navigation/multi-level-final.gif"></img> 
-<button class="ndl-import-button" onClick='importIntoNoodl("/2.4/guides/navigation/web-navigation/multi-level-navigation/multi-level-navigation.zip",{name:"Multi Level Navigation",thumb:"/2.4/guides/navigation/web-navigation/multi-level-navigation/multi-level-thumb.png"})'></button>
+    <img src="guides/navigation/web-navigation/multi-level-navigation/multi-level-final.gif"></img> 
+<button class="ndl-import-button" onClick='importIntoNoodl("guides/navigation/web-navigation/multi-level-navigation/multi-level-navigation.zip",{name:"Multi Level Navigation",thumb:"guides/navigation/web-navigation/multi-level-navigation/multi-level-thumb.png"})'></button>
 </div>
 
 ## Path Parameters
@@ -337,6 +337,6 @@ The only thing left is to receive the parameter in the "Show Product" Page and s
 If you want to download the complete project then press the "Import" button below and follow the instructions in Noodl.
 
 <div class="ndl-image-with-background l">
-    <img src="/2.4/guides/navigation/web-navigation/encoding-params-in-url/encoding-params-final.gif"></img> 
-<button class="ndl-import-button" onClick='importIntoNoodl("/2.4/guides/navigation/web-navigation/encoding-params-in-url/param-encoding-url.zip",{name:"Encoding Parameters in URL",thumb:"/2.4/guides/navigation/web-navigation/encoding-params-in-url/show-products-page-4.png"})'></button>
+    <img src="guides/navigation/web-navigation/encoding-params-in-url/encoding-params-final.gif"></img> 
+<button class="ndl-import-button" onClick='importIntoNoodl("guides/navigation/web-navigation/encoding-params-in-url/param-encoding-url.zip",{name:"Encoding Parameters in URL",thumb:"guides/navigation/web-navigation/encoding-params-in-url/show-products-page-4.png"})'></button>
 </div>
