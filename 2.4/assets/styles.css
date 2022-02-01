@@ -276,14 +276,16 @@ body .sidebar-toggle span:nth-child(3) {
   font-size: 18px;
 }
 
-.markdown-section a {
+.markdown-section a,
+.markdown-section .ndl-import {
   text-decoration: none;
   border-bottom: 0.1rem solid #5836F5;
   transition: all 0.3s ease;
   color: #5836F5;
 }
 
-.markdown-section a:hover {
+.markdown-section a:hover,
+.markdown-section .ndl-import:hover {
   border-color: #3F22B8;
   color: #3F22B8;
 }

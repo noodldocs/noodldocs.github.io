@@ -1,7 +1,7 @@
 # Checkbox Group
 
-This is a small snippet containing a group of checkboxes that are dynamically created from an array containing at least the **Value** property, optionally the **Label** property and others as needed.
-
+This is a small snippet containing a group of checkboxes that are dynamically created from an array containing at least the **Value** property, optionally the **Label** property and others as needed. <span class="ndl-import" onclick="importIntoNoodl('/snippets/checkbox-group/checkbox-group-0-2.zip')">Import into Noodl</span>
+ 
 <div class="ndl-image-with-background">
     <img src="snippets/checkbox-group/checkbox-group.png">
     <button class="ndl-import-button" onClick='importIntoNoodl("/snippets/checkbox-group/checkbox-group-0-2.zip")'></button>

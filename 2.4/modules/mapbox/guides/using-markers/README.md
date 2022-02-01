@@ -15,8 +15,8 @@ The guide will build on the two previous Mapbox guides, [Setting up Mapbox modul
 The guide will build upon the example from the previous guides. You can import the result from the previous guide by clicking the import button below. Don't forget to set the correct Access Token that you got from your Mapbox account.
 
 <div class="ndl-image-with-background l">
-    <img src="/2.4/modules/mapbox/guides/interacting/final-result.gif" class="ndl-image large"></img>
-<button class="ndl-import-button" onClick='importIntoNoodl("/2.4/modules/mapbox/guides/interacting/interacting.zip",{name:"Mapbox Interactions",thumb:"/2.4/modules/mapbox/guides/interacting/screen-2.png"})'></button>
+    <img src="modules/mapbox/guides/interacting/final-result.gif" class="ndl-image large"></img>
+<button class="ndl-import-button" onClick='importIntoNoodl("modules/mapbox/guides/interacting/interacting.zip",{name:"Mapbox Interactions",thumb:"modules/mapbox/guides/interacting/screen-2.png"})'></button>
 </div>
 
 There is also a video walking through the guide.
@@ -152,6 +152,6 @@ The **Click** signal from the **Button** is connected to **Do** on the **Remove 
 This is what the final node construct looks like. If you want to import the final project click the "Import" button:
 
 <div class="ndl-image-with-background l">
-    <img src="/2.4/modules/mapbox/guides/using-markers/nodes-7.png" class="ndl-image large"></img>
-<button class="ndl-import-button" onClick='importIntoNoodl("/2.4/modules/mapbox/guides/using-markers/markers.zip",{name:"Mapbox Markers",thumb:"/2.4/modules/mapbox/guides/using-markers/screen-3.png"})'></button>
+    <img src="modules/mapbox/guides/using-markers/nodes-7.png" class="ndl-image large"></img>
+<button class="ndl-import-button" onClick='importIntoNoodl("modules/mapbox/guides/using-markers/markers.zip",{name:"Mapbox Markers",thumb:"modules/mapbox/guides/using-markers/screen-3.png"})'></button>
 </div>

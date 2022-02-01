@@ -2,7 +2,7 @@
 
 This is an example of how to use the [Script](/nodes/javascript/script/) node to implement a simple rotary knob.
 
-The knob has start and stop angles, and is not "endless".
+The knob has start and stop angles, and is not "endless". <span class="ndl-import" onclick="importIntoNoodl('/snippets/rotary-knob/rotary-knob-1.0.1.zip')">Import into Noodl</span>
 
 <div class="ndl-image-with-background">
     <img src="/snippets/rotary-knob/rotary-knob.png">
