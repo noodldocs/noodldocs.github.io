@@ -1,7 +1,7 @@
 [
     {
         "url":"gettingstarted",
-        "label":"Gettin Started",
-        "desc":"Get your feet wet withs this introduction lesson."
+        "thumb": "lessons/gettingstarted.png",
+        "category": "Noodl Basics"
     }
 ]
