@@ -1,8 +1,9 @@
 <!-- A step with just a popup -->
 <div data-template="popup"> 
-    <img src="drag-text-out.gif">
-    <h2>Welcome to this tutorial</h2>
-    <p>You're going to learn some awesome stuff</p>
+    <img src="IT_01_intro.gif">
+    <h2>Welcome to Noodl</h2>
+    <p>In this lesson you will learn about the basic concepts of Noodl that combined will let you build powerful web applications.</p>
+    <p>To get you started we will be building the small counter app you see above, just to introduce you to the core principles of Noodl. One of the greatest things about Noodl is that once you learn these concepts, and how to combine them, there will be virtually no limit to what you can create.</p>
 </div>
 
 <!-- # -->
@@ -14,11 +15,11 @@
         <h2>The node graph</h2>
     </div>
     <div data-template="popup">
-        <img src="drag-text-out.gif">
+        <img src="IT_02_node graph.gif">
         <h2>The node graph</h2>
         <p>One of the core concepts of Noodl is the node graph. It's a collection of nodes (think of them like LEGO blocks) and connections between these nodes.</p>
-        <p>A node represents an element of your prototype, it can be a visual element like a Rectangle or something that is not immediately visible like a logical State. When we put these nodes together with connections it becomes a node graph. </p>
-        <p> With it we can everything from prototypes to power full web apps that you can deploy directly from Noodl. Check out the graph above, don't worry if it looks complicated now. But this is actually something we will build in this lesson.</p>
+        <p>A node represents an element of your app, it can be a visual element like a <strong>Rectangle</strong> or something that is not immediately visible like a logical <strong>Counter</strong> When we put these nodes together with connections it becomes a node graph. </p>
+        <p>With it we can everything from prototypes to power full web apps that you can deploy directly from Noodl. Check out the graph above, don't worry if it looks complicated now. But this is actually something we will build in this lesson.</p>
     </div>
 </div>
 
@@ -30,11 +31,12 @@
         <h2>Visual nodes</h2>
     </div>
     <div data-template="popup">
-        <img src="drag-text-out.gif">
-        <h2>The node graph</h2>
-        <p>One of the core concepts of Noodl is the node graph. It's a collection of nodes (think of them like LEGO blocks) and connections between these nodes.</p>
-        <p>A node represents an element of your prototype, it can be a visual element like a Rectangle or something that is not immediately visible like a logical State. When we put these nodes together with connections it becomes a node graph. </p>
-        <p> With it we can everything from prototypes to power full web apps that you can deploy directly from Noodl. Check out the graph above, don't worry if it looks complicated now. But this is actually something we will build in this lesson.</p>
+        <img src="IT_03_visual hirachy.gif">
+        <h2>Visual nodes</h2>
+        <p>Almost all projects you will be creating have some sort of visual user interface, be it a mobile or desktop app.</p>
+        <p>For that we use visual nodes, such as <strong>images</strong> and <strong>text</strong>. These nodes are blue in color and can be arranged in a hierarchy. What you see now in the node graph editor is a collection of visual nodes. This node graph is the root component, indicated by the small Home icon in the component list to the left. The top node is the root, and everything that is placed under it will be shown in the preview. </p>
+        <p>You can move nodes by dragging them around with the <strong>left</strong> mouse button. You can drag a node in and out of the visual hierarchy as you please.</p>
+    </p>
     </div>
 </div>
 
@@ -50,7 +52,8 @@
         <h3>Drag the text node away from the root node</h3>
     </div>
     <div data-template="popup">
-        <img src="drag-text-out.gif">
+        <img src="IT_04_remove-text.gif">
+        <p>Try dragging the text node away from the hierarchy. As you can see, the text disappears from the preview.</p>
     </div>
 </div>
 
@@ -68,9 +71,183 @@
     </div>
 
     <div data-template="popup">
-        <img src="drag-text-out.gif">
+        <img src="IT_05_add-text.gif">
+        <p>You can add a node as a child to another node by dragging it onto that node. Then it will be added as the last child. Try dragging the text node onto the root group.
+        The text will now be visible again in the preview</p>
     </div>
 </div>
+
+<!-- # -->
+<!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
+
+<div
+    data-conditions='[
+        {"path":"/App:%Group:0","exists":true}
+    ]'
+>
+    <div data-template="item">
+        <header>Task<i data-checkmark="0"></i></header>
+        <h3>Move all nodes</h3>
+    </div>
+
+    <div data-template="popup">
+        <img src="IT_06_move-nodes.gif"></img>
+        <p>You can move all nodes (panning) by pressing the <strong>right mouse</strong> button and dragging.</p>
+    </div>
+</div>
+
+<!-- # -->
+<!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
+
+<div
+    data-conditions='[
+        {"path":"/App:%Group:1","exists":false}
+    ]'
+>
+    <div data-template="item">
+        <header>Task<i data-checkmark="0"></i></header>
+        <h3>Delete the Text nodes</h3>
+    </div>
+
+    <div data-template="popup">
+        <img src="IT_07_delete text.gif"></img>
+        <p>We will not be needing the text node, so delete it. Click it and press delete/backspace.</p>
+        <p>If you make a mistake when editing you can use <strong>Cmd-Z (or Ctrl-Z)</strong> to Undo your latest edit.</p>
+    </div>
+</div>
+
+<!-- # -->
+<!-- A step with an item in the bottom bar. No tasks, so popup will be shown automatically -->
+<div>
+    <div data-template="item">
+        <header>Info</header>
+        <h2>The node picker</h2>
+    </div>
+    <div data-template="popup">
+        <img src="drag-text-out.gif">
+        <h2>The node picker</h2>
+        <p>Bring up the node picker by clicking the "plus" icon in the top bar, or right click in the empty space of the node graph.</p>
+        <p>Here you can browse all the core nodes in Noodl and their categories. You can also read about how to use them.</p>
+        <p>Under each category you can see the corresponding nodes. Click them to place them. </p>
+    </p>
+    </div>
+</div>
+
+<!-- # -->
+<!-- A step with an item in the bottom bar. No tasks, so popup will be shown automatically -->
+<div>
+    <div data-template="item">
+        <header>Info</header>
+        <h2>The Group node</h2>
+    </div>
+    <div data-template="popup">
+        <img src="drag-text-out.gif">
+        <h2>The Group node</h2>
+        <p>The Group node is the most basic visual element and is used to structure layouts, group content, and create visual shapes.</p>
+        <p>If you are familiar with HTML code, a Group is similar to a Div tag in HTML </p>
+    </p>
+    </div>
+</div>
+
+<!-- # -->
+<!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
+
+<div
+    data-conditions='[
+        {"path":"/App:%Group:0","exists":true}
+    ]'
+>
+    <div data-template="item">
+        <header>Task<i data-checkmark="0"></i></header>
+        <h3>Place a Group node as a child to the root group.</h3>
+    </div>
+
+    <div data-template="popup">
+        <img src=""></img>
+        <p>Open the node pic</p>
+
+    </div>
+</div>
+
+<!-- # -->
+<!-- A step with an item in the bottom bar. No tasks, so popup will be shown automatically -->
+<div>
+    <div data-template="item">
+        <header>Info</header>
+        <h2>The sidebar</h2>
+    </div>
+    <div data-template="popup">
+        <img src="drag-text-out.gif">
+        <h2>The sidebar</h2>
+        <p>All nodes have parameters that you can edit to make them behave the way you want. For instance visual nodes have parameters that affect it's appearance, position etc.
+        <p>If you select a node by <strong>left clicking</strong> it you will see the parameters of the node in the sidebar to the left.</p>
+    </p>
+    </div>
+</div>
+
+<!-- # -->
+<!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
+
+<div
+    data-conditions='[
+        {"path":"/App:%Group:0","exists":true}
+    ]'
+>
+    <div data-template="item">
+        <header>Task<i data-checkmark="0"></i></header>
+        <h3>Change the background color of the root Group</h3>
+    </div>
+
+    <div data-template="popup">
+        <img src=""></img>
+        <p>Edit the parameters of the background, find the color parameter and click the color square to select a nice color.</p>
+        <p>If you make a mistake when editing you can use <strong>Cmd-Z (or Ctrl-Z)</strong> to Undo your latest edit.</p>
+    </div>
+</div>
+
+<!-- # -->
+<!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
+
+<div
+    data-conditions='[
+        {"path":"/App:%Group:0","exists":true}
+    ]'
+>
+    <div data-template="item">
+        <header>Task<i data-checkmark="0"></i></header>
+        <h3>Change the Group's Width and Height to 100px</h3>
+    </div>
+
+    <div data-template="popup">
+        <img src=""></img>
+        <p>Edit the Width and Height parameters of the Group as shown on the gif.</p>
+    </div>
+</div>
+
+<!-- # -->
+<!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
+
+<div
+    data-conditions='[
+        {"path":"/App:%Group:0","exists":true}
+    ]'
+>
+    <div data-template="item">
+        <header>Task<i data-checkmark="0"></i></header>
+        <h3>Center the Group to be in the middle of the screen</h3>
+    </div>
+
+    <div data-template="popup">
+        <img src=""></img>
+        <p>Edit the Align X parameter to be centered in the middle. See how in the gif.</p>
+    </div>
+</div>
+
+
+
+
+
+
 
 <!-- # -->
 <!-- A step with an item in the bottom bar. No tasks, so popup will be shown automatically -->
