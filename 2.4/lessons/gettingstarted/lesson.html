@@ -1,6 +1,6 @@
 <!-- A step with just a popup -->
 <div data-template="popup"> 
-    <img src="IT_01_intro.gif">
+    <video src="IT_01_Intro_video.mp4"></video>
     <h2>Welcome to Noodl</h2>
     <p>In this lesson you will learn about the basic concepts of Noodl that combined will let you build powerful web applications.</p>
     <p>To get you started we will be building the small counter app you see above, just to introduce you to the core principles of Noodl. One of the greatest things about Noodl is that once you learn these concepts, and how to combine them, there will be virtually no limit to what you can create.</p>
@@ -15,7 +15,7 @@
         <h2>The node graph</h2>
     </div>
     <div data-template="popup">
-        <img src="IT_02_node graph.gif">
+        <video src="IT_02_node grapgh_video.mp4"></video>
         <h2>The node graph</h2>
         <p>One of the core concepts of Noodl is the node graph. It's a collection of nodes (think of them like LEGO blocks) and connections between these nodes.</p>
         <p>A node represents an element of your app, it can be a visual element like a <strong>Rectangle</strong> or something that is not immediately visible like a logical <strong>Counter</strong> When we put these nodes together with connections it becomes a node graph. </p>
@@ -31,7 +31,7 @@
         <h2>Visual nodes</h2>
     </div>
     <div data-template="popup">
-        <img src="IT_03_visual hirachy.gif">
+        <video src="IT_03_visual hirachy video.mp4"></video>
         <h2>Visual nodes</h2>
         <p>Almost all projects you will be creating have some sort of visual user interface, be it a mobile or desktop app.</p>
         <p>For that we use visual nodes, such as <strong>images</strong> and <strong>text</strong>. These nodes are blue in color and can be arranged in a hierarchy. What you see now in the node graph editor is a collection of visual nodes. This node graph is the root component, indicated by the small Home icon in the component list to the left. The top node is the root, and everything that is placed under it will be shown in the preview. </p>
@@ -44,7 +44,10 @@
 <!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
 <div
     data-conditions='[
-        {"path":"/App:%Group:0", "exists":false}
+        {
+            "path":"/App:%Group:%Text", 
+            "exists":false
+        }
     ]'
 >
     <div data-template="item">
@@ -52,7 +55,7 @@
         <h3>Drag the text node away from the root node</h3>
     </div>
     <div data-template="popup">
-        <img src="IT_04_remove-text.gif">
+        <video src="IT_04_remove-text.mp4"></video>
         <p>Try dragging the text node away from the hierarchy. As you can see, the text disappears from the preview.</p>
     </div>
 </div>
@@ -62,7 +65,10 @@
 
 <div
     data-conditions='[
-        {"path":"/App:%Group:0","exists":true}
+        {
+            "path":"/App:%Group:%Text", 
+            "exists":true
+        }
     ]'
 >
     <div data-template="item">
@@ -71,7 +77,7 @@
     </div>
 
     <div data-template="popup">
-        <img src="IT_05_add-text.gif">
+        <video src="IT_05_add-text.mp4"></video>
         <p>You can add a node as a child to another node by dragging it onto that node. Then it will be added as the last child. Try dragging the text node onto the root group.
         The text will now be visible again in the preview</p>
     </div>
@@ -82,7 +88,9 @@
 
 <div
     data-conditions='[
-        {"path":"/App:%Group:0","exists":true}
+        {
+            "path":"/App:%Group:0",
+            "exists":true}
     ]'
 >
     <div data-template="item">
@@ -91,7 +99,7 @@
     </div>
 
     <div data-template="popup">
-        <img src="IT_06_move-nodes.gif"></img>
+        <video src="IT_06_move-nodes video.mp4"></video>
         <p>You can move all nodes (panning) by pressing the <strong>right mouse</strong> button and dragging.</p>
     </div>
 </div>
@@ -101,7 +109,10 @@
 
 <div
     data-conditions='[
-        {"path":"/App:%Group:1","exists":false}
+        {
+            "path":"/App:%Group:%Text",
+            "exists":false
+        }
     ]'
 >
     <div data-template="item">
@@ -110,7 +121,7 @@
     </div>
 
     <div data-template="popup">
-        <img src="IT_07_delete text.gif"></img>
+        <video src="IT_07_delete text.mp4"></video>
         <p>We will not be needing the text node, so delete it. Click it and press delete/backspace.</p>
         <p>If you make a mistake when editing you can use <strong>Cmd-Z (or Ctrl-Z)</strong> to Undo your latest edit.</p>
     </div>
@@ -124,7 +135,7 @@
         <h2>The node picker</h2>
     </div>
     <div data-template="popup">
-        <img src="IT_08_node picker.gif">
+        <video src="IT_08_node picker video.mp4"></video>
         <h2>The node picker</h2>
         <p>Bring up the node picker by clicking the "plus" icon in the top bar, or right click in the empty space of the node graph.</p>
         <p>Here you can browse all the core nodes in Noodl and their categories. You can also read about how to use them.</p>
@@ -141,7 +152,7 @@
         <h2>The Group node</h2>
     </div>
     <div data-template="popup">
-        <img src="drag-text-out.gif">
+        <video src=""></video>
         <h2>The Group node</h2>
         <p>The Group node is the most basic visual element and is used to structure layouts, group content, and create visual shapes.</p>
         <p>If you are familiar with HTML code, a Group is similar to a Div tag in HTML </p>
@@ -154,7 +165,10 @@
 
 <div
     data-conditions='[
-        {"path":"/App:%Group:0","exists":true}
+        {
+            "path":"/App:%Group:%Group",
+            "exists":true
+        }
     ]'
 >
     <div data-template="item">
@@ -163,7 +177,7 @@
     </div>
 
     <div data-template="popup">
-        <img src="IT_08_node picker.gif"></img>
+        <video src="IT_08_node picker video.mp4"></video>
         <p>Open the node picker by pressing the "+" icon in the top menu or right click in canvas. </p>
         <p>You can search for a node in the Node Picker's search field, or pick it from the UI Elements category. </p>
 
@@ -178,7 +192,7 @@
         <h2>The sidebar</h2>
     </div>
     <div data-template="popup">
-        <img src="IT_10_side panel.gif">
+        <video src="IT_10_side panel.mp4"></video>
         <h2>The sidebar</h2>
         <p>All nodes have parameters that you can edit to make them behave the way you want. For instance visual nodes have parameters that affect it's appearance, position etc.
         <p>If you select a node by <strong>left clicking</strong> it you will see the parameters of the node in the sidebar to the left.</p>
@@ -191,7 +205,10 @@
 
 <div
     data-conditions='[
-        {"path":"/App:%Group:0","exists":true}
+        {
+            "path":"/App:%Group",
+            "hasparams": "backgroundColor"
+        }
     ]'
 >
     <div data-template="item">
@@ -200,28 +217,31 @@
     </div>
 
     <div data-template="popup">
-        <img src=""></img>
+        <video src="IT_11_bg color.mp4"></video>
         <p>Edit the parameters of the background, find the color parameter and click the color square to select a nice color.</p>
         <p>If you make a mistake when editing you can use <strong>Cmd-Z (or Ctrl-Z)</strong> to Undo your latest edit.</p>
     </div>
 </div>
 
+
 <!-- # -->
 <!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
 
 <div
     data-conditions='[
-        {"path":"/App:%Group:0","exists":true}
+        {
+            "path":"/App:%Group:%Group",
+            "hasparams": "backgroundColor"
+        }
     ]'
 >
     <div data-template="item">
         <header>Task<i data-checkmark="0"></i></header>
-        <h3>Change the Group's Width and Height to 100px</h3>
+        <h3>Change the second Group's background color</h3>
     </div>
 
     <div data-template="popup">
-        <img src=""></img>
-        <p>Edit the Width and Height parameters of the Group as shown on the gif.</p>
+        <video src="IT_12_change-bg-second-group.mp4"></video>
     </div>
 </div>
 
@@ -230,20 +250,382 @@
 
 <div
     data-conditions='[
-        {"path":"/App:%Group:0","exists":true}
+        {
+            "path":"/App:%Group:%Group", 
+            "paramseq": {
+                "width": { "value": 300, "unit": "px" },
+                "height": { "value": 300, "unit": "px" }
+            }
+        }
     ]'
 >
     <div data-template="item">
         <header>Task<i data-checkmark="0"></i></header>
-        <h3>Center the Group to be in the middle of the screen</h3>
+        <h3>Change the second Group's Width and Height to 300px</h3>
     </div>
 
     <div data-template="popup">
-        <img src=""></img>
+        <video src="IT_12_change size.mp4"></video>
+        <p>Edit the Width and Height parameters of the Group so its set to 300px instead if 100%, as seen in the video above.</p>
+    </div>
+</div>
+
+<!-- # -->
+<!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
+
+<div
+    data-conditions='[
+        {
+            "path":"/App:%Group:%Group", 
+            "paramseq": {
+                "width": { "value": 300, "unit": "px" },
+                "height": { "value": 300, "unit": "px" }
+            }
+        }
+    ]'
+>
+    <div data-template="item">
+        <header>Task<i data-checkmark="0"></i></header>
+        <h3>Set the second Group's corner radius to 100%</h3>
+    </div>
+
+    <div data-template="popup">
+        <video src="IT_12_corner radius.mp4"></video>
         <p>Edit the Align X parameter to be centered in the middle. See how in the gif.</p>
     </div>
 </div>
 
+
+<!-- # -->
+<!-- A step with an item in the bottom bar. No tasks, so popup will be shown automatically -->
+<div>
+    <div data-template="item">
+        <header>Info</header>
+        <h2>Adding descriptions to nodes</h2>
+    </div>
+    <div data-template="popup">
+        <video src="IT_10_side panel.mp4"></video>
+        <h2>Adding descriptions to nodes</h2>
+        <p>A good practice is to give a more descriptive name to our nodes, as we build our app. This will make it easier for both collaborators and yourself to understand what the different nodes are doing.</p>
+    </p>
+    </div>
+</div>
+
+
+<!-- # -->
+<!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
+
+<div
+    data-conditions='[
+        {"path":"/App:%Group:0","exists":true}
+    ]'
+>
+    <div data-template="item">
+        <header>Task<i data-checkmark="0"></i></header>
+        <h3>Give descriptive names to the two Group nodes</h3>
+    </div>
+
+    <div data-template="popup">
+        <video src="IT_13_descriptions.mp4"></video>
+        <p>Select the first node and change it name by double-clicking the node title in the side panel, or click the edit icon as shown in the video.</p>
+    </div>
+</div>
+
+
+<!-- # -->
+<!-- A step with an item in the bottom bar. No tasks, so popup will be shown automatically -->
+<div>
+    <div data-template="item">
+        <header>Info</header>
+        <h2>Nested visual nodes</h2>
+    </div>
+    <div data-template="popup">
+        <video src="IT_14_text_info.mp4"></video>
+        <h2>Nested visual nodes</h2>
+        <p>Group's are the main building blocks for any layout. We can nest other visual elements as children to a Group to start create more advanced layouts</p>
+        <p>In this example we will insert a text node and place it in the middle of the circle group.</p>
+    </div>
+</div>
+
+
+
+<!-- # -->
+<!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
+
+<div
+    data-conditions='[
+        {
+            "path":"/App:%Group:%Group:%Text:",
+            "exists":true
+        }
+    ]'
+>
+    <div data-template="item">
+        <header>Task<i data-checkmark="0"></i></header>
+        <h3>Add a text node as a child to the Group called Circle</h3>
+    </div>
+
+    <div data-template="popup">
+        <video src="IT_14_text_info.mp4"></video>
+        <p>Select a node and click the edit button to the right for the groups name in the side panel.</p>
+    </div>
+</div>
+
+<!-- # -->
+<!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
+
+<div
+    data-conditions='[
+        {
+            "path":"/App:%Group:%Group%Text",
+            "paramseq": {
+                "alignX": "center",
+                "alignY": "center"
+            }
+        }
+    ]'
+>
+    <div data-template="item">
+        <header>Task<i data-checkmark="0"></i></header>
+        <h3>Center the text inside of the circle</h3>
+    </div>
+
+    <div data-template="popup">
+        <video src="IT_14_center_text.mp4"></video>
+    </div>
+</div>
+
+
+<!-- # -->
+<!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
+
+<div
+    data-conditions='[
+        {
+            "path":"/App:%Group:%Group%Text",
+            "hasparams": "color", "fontSize"
+        }
+    ]'
+>
+    <div data-template="item">
+        <header>Task<i data-checkmark="0"></i></header>
+        <h3>Change the fontsize and color of the text</h3>
+    </div>
+
+    <div data-template="popup">
+        <video src="IT_14_size and color.mp4"></video>
+    </div>
+</div>
+
+
+
+<!-- # -->
+<!-- A step with an item in the bottom bar. No tasks, so popup will be shown automatically -->
+<div>
+    <div data-template="item">
+        <header>Info</header>
+        <h2>UI Controls</h2>
+    </div>
+    <div data-template="popup">
+        <video src="IT_15_ui_controls.mp4"></video>
+        <h2>UI Controls</h2>
+        <p>Noodl comes with a bunch of pre-styled UI controls, so you easily can place a button, a checkbox, or a slider into you application</p>
+        <p>You can style all of these controls to a very fine degree as you need.</p>
+    </p>
+    </div>
+</div>
+
+
+<!-- # -->
+<!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
+
+<div
+    data-conditions='[
+        {"path":"/App:%Group:%Button:0","exists":true}
+    ]'
+>
+    <div data-template="item">
+        <header>Task<i data-checkmark="0"></i></header>
+        <h3>Place a button to the end</h3>
+    </div>
+
+    <div data-template="popup">
+        <video src="IT_15_place button.mp4"></video>
+    </div>
+</div>
+
+
+
+
+<!-- # -->
+<!-- A step with an item in the bottom bar. No tasks, so popup will be shown automatically -->
+<div>
+    <div data-template="item">
+        <header>Info</header>
+        <h2>Dimension modes</h2>
+    </div>
+    <div data-template="popup">
+        <video src="IT_15_set dimension mode info.mp4"></video>
+        <h2>Dimension modes</h2>
+        <p>We can set rules for a how visual elements should take up space via the dimension modes controls in the side panel</p>
+        <p>If we want our buttons size to be controlled by the content inside of it (its label) we can set Content width and</p>
+    </p>
+    </div>
+</div>
+
+
+
+<!-- # -->
+<!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
+
+<div
+    data-conditions='[
+    {
+        "path":"/App:%Group:%Button:0",
+        ...
+    ]'
+>
+    <div data-template="item">
+        <header>Task<i data-checkmark="0"></i></header>
+        <h3>Make the button take up 100% of the width</h3>
+    </div>
+
+    <div data-template="popup">
+        <video src="IT_15_set dimension mode.mp4"></video>
+    </div>
+</div>
+
+
+<!-- # -->
+<!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
+
+<div
+    data-conditions='[
+        {"path":"/App:%Group:0","exists":true}
+    ]'
+>
+    <div data-template="item">
+        <header>Task<i data-checkmark="0"></i></header>
+        <h3>Change size and margins on the button</h3>
+    </div>
+
+    <div data-template="popup">
+        <video src="IT_15_set size and margins.mp4"></video>
+    </div>
+</div>
+
+
+<!-- # -->
+<!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
+
+<div
+    data-conditions='[
+        {"path":"/App:%Group:0","exists":true}
+    ]'
+>
+    <div data-template="item">
+        <header>Task<i data-checkmark="0"></i></header>
+        <h3>Change the button's label to "Count up!"</h3>
+    </div>
+
+    <div data-template="popup">
+        <video src="IT_15_change label.mp4"></video>
+    </div>
+</div>
+
+<!-- # -->
+<!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
+
+<div
+    data-conditions='[
+        {"path":"/App:%Group:0","exists":true}
+    ]'
+>
+    <div data-template="item">
+        <header>Task<i data-checkmark="0"></i></header>
+        <h3>Copy/paste the button and place it bellow. </h3>
+    </div>
+
+    <div data-template="popup">
+        <video src="IT_15_secondary button place.mp4"></video>
+    </div>
+</div>
+
+
+<!-- # -->
+<!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
+
+<div
+    data-conditions='[
+        {"path":"/App:%Group:0","exists":true}
+    ]'
+>
+    <div data-template="item">
+        <header>Task<i data-checkmark="0"></i></header>
+        <h3>Style the new button as a secondary button</h3>
+    </div>
+
+    <div data-template="popup">
+        <video src="IT_15_secondary button color.mp4"></video>
+    </div>
+</div>
+
+
+
+
+
+<!-- # -->
+<!-- A step with an item in the bottom bar. No tasks, so popup will be shown automatically -->
+<div>
+    <div data-template="item">
+        <header>Info</header>
+        <h2>Logic & Utility nodes</h2>
+    </div>
+    <div data-template="popup">
+        <video src="IT_15_set dimension mode info.mp4"></video>
+        <h2>Logic & Utility nodes</h2>
+        <p>Noodl comes with a lot of nodes for creating logics. These nodes are grey and can be found under the Logic and utility node category in the node picker</p>
+        <p>These nodes often take inputs and outputs in form of connections</p>
+        <p>In this example we will use a Counter node to increase a number when the button is clicked.</p>
+    </p>
+    </div>
+</div>
+
+<!-- # -->
+<!-- A step with an item in the bottom bar. No tasks, so popup will be shown automatically -->
+<div>
+    <div data-template="item">
+        <header>Info</header>
+        <h2>Creating connections</h2>
+    </div>
+    <div data-template="popup">
+        <video src="IT_15_set dimension mode info.mp4"></video>
+        <h2>Creating connections</h2>
+        <p>You can create a connection between two nodes by dragging from one node to another.</p>
+        <p>See how the border of the node changes when we hover over the edge and dot in the cornor of the node. This means that a connection wil be created when we start dragging.</p>
+        <p>Select another node to bring up the connection panels. Pick an Output from the source node, and select the Input on the target node that the connection should be made between.</p>
+    </p>
+    </div>
+</div>
+
+
+<!-- # -->
+<!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
+
+<div
+    data-conditions='[
+        {"path":"/App:%Group:0","exists":true}
+    ]'
+>
+    <div data-template="item">
+        <header>Task<i data-checkmark="0"></i></header>
+        <h3> the count of the Counter</h3>
+    </div>
+
+    <div data-template="popup">
+        <video src="IT_15_secondary button color.mp4"></video>
+    </div>
+</div>
 
 
 
