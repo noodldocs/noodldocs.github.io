@@ -83,29 +83,11 @@
     </div>
 </div>
 
-<!-- # -->
-<!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
 
-<div
-    data-conditions='[
-        {
-            "path":"/App:%Group:0",
-            "exists":true}
-    ]'
->
-    <div data-template="item">
-        <header>Task<i data-checkmark="0"></i></header>
-        <h3>Move all nodes</h3>
-    </div>
-
-    <div data-template="popup">
-        <video src="IT_06_move-nodes video.mp4"></video>
-        <p>You can move all nodes (panning) by pressing the <strong>right mouse</strong> button and dragging.</p>
-    </div>
-</div>
 
 <!-- # -->
 <!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
+
 
 <div
     data-conditions='[
@@ -304,7 +286,7 @@
         {
             "path":"/App:%Group:%Group", 
             "paramseq": {
-                "borderRadius": {"value": 20, "unit": "px"}
+                "borderRadius": {"value": 100, "unit": "%"}
             }
         }
     ]'
@@ -342,19 +324,46 @@
 
 <div
     data-conditions='[
-        {"path":"/App:%Group:0","exists":true}
+    {
+        "path":"/App:%Group",
+        "haslabel": "Root"
+    }
     ]'
 >
     <div data-template="item">
         <header>Task<i data-checkmark="0"></i></header>
-        <h3>Give descriptive names to the two Group nodes</h3>
+        <h3>Rename the first Group to Root</h3>
     </div>
 
     <div data-template="popup">
         <video src="IT_13_descriptions.mp4"></video>
-        <p>Select the first node and change it name by double-clicking the node title in the side panel, or click the edit icon as shown in the video.</p>
+        <p>Select the node and change it name by double-clicking the node title in the side panel, or click the edit icon as shown in the video.</p>
     </div>
 </div>
+
+
+<!-- # -->
+<!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
+
+<div
+    data-conditions='[
+    {
+        "path":"/App:%Group:%Group",
+        "haslabel": "Circle"
+    }
+    ]'
+>
+    <div data-template="item">
+        <header>Task<i data-checkmark="0"></i></header>
+        <h3>Rename the second Group to Circle</h3>
+    </div>
+
+    <div data-template="popup">
+        <video src="IT_13_descriptions.mp4"></video>
+        <p>Select the node and change it name by double-clicking the node title in the side panel, or click the edit icon as shown in the video.</p>
+    </div>
+</div>
+
 
 
 <!-- # -->
@@ -405,7 +414,8 @@
             "path":"/App:%Group:%Group%Text",
             "paramseq": {
                 "textAlignX": "center",
-                "textAlignY": "center"
+                "alignY": "center",
+                "alignX": "center"
             }
         }
     ]'
@@ -428,7 +438,8 @@
     data-conditions='[
         {
             "path":"/App:%Group:%Group%Text",
-            "hasparams": "color, fontSize"
+            "hasparams": "color"
+            
         }
     ]'
 >
@@ -506,10 +517,11 @@
 <div
     data-conditions='[
     {
-        "path":"/App:%Group:%net.noodl.controls.button:0",
+        "path":"/App:%Group:%net.noodl.controls.button",
         "paramseq":{
-            "sizeMode" : "explicit"
+            "sizeMode":"explicit"           
         }
+    }
     ]'
 >
     <div data-template="item">
@@ -529,19 +541,19 @@
 <div
     data-conditions='[
         {
-            "path":"/App:%Group:%net.noodl.controls.button:0",
+            "path":"/App:%Group:%net.noodl.controls.button",
             "paramseq": {
+                "marginTop": { "value": 24, "unit": "px" },
                 "marginRight": { "value": 24, "unit": "px" },
                 "marginLeft": { "value": 24, "unit": "px" },
-                "marginBottom": { "value": 24, "unit": "px" },
-                "height":  { "value": 56, "unit": "px" }
+                "marginBottom": { "value": 24, "unit": "px" }
             }
         }
     ]'
 >
     <div data-template="item">
         <header>Task<i data-checkmark="0"></i></header>
-        <h3>Change size and margins on the button</h3>
+        <h3>Change all margins on the button to 24px</h3>
     </div>
 
     <div data-template="popup">
@@ -556,7 +568,7 @@
 <div
     data-conditions='[
         {
-            "path":"/App:%Group:%net.noodl.controls.button:0",
+            "path":"/App:%Group:%net.noodl.controls.button",
             "paramseq": {
                 "label": "Count up!"
             }
@@ -565,7 +577,7 @@
 >
     <div data-template="item">
         <header>Task<i data-checkmark="0"></i></header>
-        <h3>Change the button's label to "Count up!"</h3>
+        <h3>Change the Button's label to "Count up!"</h3>
     </div>
 
     <div data-template="popup">
@@ -627,11 +639,37 @@
         <video src="IT_15_set dimension mode info.mp4"></video>
         <h2>Logic & Utility nodes</h2>
         <p>Noodl comes with lots of nodes for creating logics and functionality. These nodes are grey and can be found under the Logic and Utility node category in the node picker</p>
-        <p>These nodes takes inputs and outputs from other nodes in form of Connections</p>
+        <p>These nodes can't be part of the visual tree as they represent logic. Instead they will be place freely in the space around.
+        <p>Most nodes takes inputs and outputs from other nodes in form of Connections. This is how you build up functionality in Noodl.</p>
         <p>In this tutorial we will use a Counter node to increase a number when the button is clicked.</p>
     </p>
     </div>
 </div>
+
+
+
+<!-- # -->
+<!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
+
+<div
+    data-conditions='[
+        {
+            "path":"/App:%Counter", "exists":true
+        }
+    ]'
+>
+    <div data-template="item">
+        <header>Task<i data-checkmark="0"></i></header>
+        <h3>Place a Counter node into the project</h3>
+    </div>
+
+    <div data-template="popup">
+        <video src="IT_15_secondary button color.mp4"></video>
+    </div>
+</div>
+
+
+
 
 <!-- # -->
 <!-- A step with an item in the bottom bar. No tasks, so popup will be shown automatically -->
@@ -659,13 +697,13 @@
         {
             "from": "/App:%Group%net.noodl.controls.button",
             "to": "/App:%Counter",
-            "hasconnection": "Clicked,Increased"
+            "hasconnection": "onClick, increase"
         }
     ]'
 >
     <div data-template="item">
         <header>Task<i data-checkmark="0"></i></header>
-        <h3>Make a connection from the first Button to the Counter node</h3>
+        <h3>Connect the first Button node to the Counter node</h3>
     </div>
 
     <div data-template="popup">
@@ -683,7 +721,7 @@
         {
             "from": "/App:%Group%net.noodl.controls.button:1",
             "to": "/App:%Counter",
-            "hasconnection": "Clicked,Reset"
+            "hasconnection": "onClick,reset"
         }
     ]'
 >
@@ -708,7 +746,7 @@
         {
             "from": "/App:%Group%Group:%Text",
             "to": "/App:%Counter",
-            "hasconnection": "Clicked,Reset"
+            "hasconnection": "currentCount,text"
         }
     ]'
 >
