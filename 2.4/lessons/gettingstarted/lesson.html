@@ -571,9 +571,6 @@
 </div>
 
 
-
-
-
 <!-- # -->
 <!-- A step with an item in the bottom bar. No tasks, so popup will be shown automatically -->
 <div>
@@ -584,9 +581,9 @@
     <div data-template="popup">
         <video src="IT_15_set dimension mode info.mp4"></video>
         <h2>Logic & Utility nodes</h2>
-        <p>Noodl comes with a lot of nodes for creating logics. These nodes are grey and can be found under the Logic and utility node category in the node picker</p>
-        <p>These nodes often take inputs and outputs in form of connections</p>
-        <p>In this example we will use a Counter node to increase a number when the button is clicked.</p>
+        <p>Noodl comes with lots of nodes for creating logics and functionality. These nodes are grey and can be found under the Logic and Utility node category in the node picker</p>
+        <p>These nodes takes inputs and outputs from other nodes in form of Connections</p>
+        <p>In this tutorial we will use a Counter node to increase a number when the button is clicked.</p>
     </p>
     </div>
 </div>
@@ -602,8 +599,8 @@
         <video src="IT_15_set dimension mode info.mp4"></video>
         <h2>Creating connections</h2>
         <p>You can create a connection between two nodes by dragging from one node to another.</p>
-        <p>See how the border of the node changes when we hover over the edge and dot in the cornor of the node. This means that a connection wil be created when we start dragging.</p>
-        <p>Select another node to bring up the connection panels. Pick an Output from the source node, and select the Input on the target node that the connection should be made between.</p>
+        <p>Hover over the edge or the white dot on a node. This means that a connection wil be created when we start dragging.</p>
+        <p>Select another node to bring up the Connection Panels. Pick an Output from the source node, and select the Input on the target node that the connection should be made between.</p>
     </p>
     </div>
 </div>
@@ -614,16 +611,70 @@
 
 <div
     data-conditions='[
-        {"path":"/App:%Group:0","exists":true}
+        {
+            "from": "/App:%Group%Button",
+            "to": "/App:%Counter",
+            "hasconnection": "Clicked,Increase"
+        }
     ]'
 >
     <div data-template="item">
         <header>Task<i data-checkmark="0"></i></header>
-        <h3> the count of the Counter</h3>
+        <h3>Make a connection from the first Button to the Counter node</h3>
     </div>
 
     <div data-template="popup">
         <video src="IT_15_secondary button color.mp4"></video>
+        <p>Connect the Click event of the Button node to the Increase count event on the Counter node</p>
+    </div>
+</div>
+
+
+<!-- # -->
+<!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
+
+<div
+    data-conditions='[
+        {
+            "from": "/App:%Group%Button:1",
+            "to": "/App:%Counter",
+            "hasconnection": "Clicked,Reset"
+        }
+    ]'
+>
+    <div data-template="item">
+        <header>Task<i data-checkmark="0"></i></header>
+        <h3>Make a connection from the second Button to the Counter node</h3>
+    </div>
+
+    <div data-template="popup">
+        <video src="IT_15_secondary button color.mp4"></video>
+        <p>Connect the Click event of the second Button node to the Reset event on the Counter node.</p>
+    </div>
+</div>
+
+
+
+<!-- # -->
+<!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
+
+<div
+    data-conditions='[
+        {
+            "from": "/App:%Group%Group:%Text",
+            "to": "/App:%Counter",
+            "hasconnection": "Clicked,Reset"
+        }
+    ]'
+>
+    <div data-template="item">
+        <header>Task<i data-checkmark="0"></i></header>
+        <h3>Make a connection from the Counter node to the Text node.</h3>
+    </div>
+
+    <div data-template="popup">
+        <video src="IT_15_secondary button color.mp4"></video>
+        <p>Connect the Click event of the second Button node to the Reset event on the Counter node.</p>
     </div>
 </div>
 
