@@ -585,47 +585,6 @@
     </div>
 </div>
 
-<!-- # -->
-<!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
-
-<div
-    data-conditions='[
-        {"path":"/App:%Group:%net.noodl.controls.button:1","exists":true}
-    ]'
->
-    <div data-template="item">
-        <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Copy/paste the button and place it bellow. </h3>
-    </div>
-
-    <div data-template="popup">
-        <video src="IT_15_secondary button place.mp4"></video>
-    </div>
-</div>
-
-
-<!-- # -->
-<!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
-
-<div
-    data-conditions='[
-        {
-            "path":"/App:%Group:%net.noodl.controls.button:1",
-            "paramseq": {
-                "label": "Count up!"
-            }
-        }
-    ]'
->
-    <div data-template="item">
-        <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Style the new button as a secondary button</h3>
-    </div>
-
-    <div data-template="popup">
-        <video src="IT_15_secondary button color.mp4"></video>
-    </div>
-</div>
 
 
 <!-- # -->
@@ -713,30 +672,6 @@
 </div>
 
 
-<!-- # -->
-<!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
-
-<div
-    data-conditions='[
-        {
-            "from": "/App:%Group%net.noodl.controls.button:1",
-            "to": "/App:%Counter",
-            "hasconnection": "onClick,reset"
-        }
-    ]'
->
-    <div data-template="item">
-        <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Make a connection from the second Button to the Counter node</h3>
-    </div>
-
-    <div data-template="popup">
-        <video src="IT_15_secondary button color.mp4"></video>
-        <p>Connect the Click event of the second Button node to the Reset event on the Counter node.</p>
-    </div>
-</div>
-
-
 
 <!-- # -->
 <!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
@@ -763,7 +698,71 @@
 
 
 
+<!-- # -->
+<!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
 
+<div
+    data-conditions='[
+        {"path":"/App:%Group:2","exists":true}
+    ]'
+>
+    <div data-template="item">
+        <header>Task<span class="lesson-checkmark"></span></header>
+        <h3>Copy/paste the button and place it bellow. </h3>
+    </div>
+
+    <div data-template="popup">
+        <video src="IT_15_secondary button place.mp4"></video>
+    </div>
+</div>
+
+
+<!-- # -->
+<!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
+
+<div
+    data-conditions='[
+        {
+            "path":"/App:%Group:2",
+            "paramseq": {
+                "label": "Count up!"
+            }
+        }
+    ]'
+>
+    <div data-template="item">
+        <header>Task<span class="lesson-checkmark"></span></header>
+        <h3>Style the new button as a secondary button</h3>
+    </div>
+
+    <div data-template="popup">
+        <video src="IT_15_secondary button color.mp4"></video>
+    </div>
+</div>
+
+
+<!-- # -->
+<!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
+
+<div
+    data-conditions='[
+        {
+            "from": "/App:%Group:2",
+            "to": "/App:%Counter",
+            "hasconnection": "onClick,reset"
+        }
+    ]'
+>
+    <div data-template="item">
+        <header>Task<span class="lesson-checkmark"></span></header>
+        <h3>Make a connection from the second Button to the Counter node</h3>
+    </div>
+
+    <div data-template="popup">
+        <video src="IT_15_secondary button color.mp4"></video>
+        <p>Connect the Click event of the second Button node to the Reset event on the Counter node.</p>
+    </div>
+</div>
 
 
 <!-- # -->
