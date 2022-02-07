@@ -7,6 +7,13 @@
         "category": "Basic"
     },
     {
+        "iconURL": "tab_navigation/tabNavigation.png",
+        "title": "Tab Navigation example",
+        "desc": "A simple project containing a tab menu with navigation.",
+        "projectURL": "tab_navigation/tab_navigation_example_1.zip",
+        "category": "Basic"
+    },
+    {
         "iconURL": "navigation_template/navigation.png",
         "title": "Navigation example",
         "desc": "A simple project containing a menu navigation.",
