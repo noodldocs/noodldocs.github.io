@@ -278,6 +278,32 @@
         {
             "path":"/App:%Group:%Group", 
             "paramseq": {
+                "alignX": "center",
+                "alignY": "center"
+            }
+        }
+    ]'
+>
+    <div data-template="item">
+        <header>Task<i data-checkmark="0"></i></header>
+        <h3>Center align the second Group both vertical and horizontal</h3>
+    </div>
+
+    <div data-template="popup">
+        <video src="IT_12_center align.mp4"></video>
+        <p>Edit the Align X parameter to be centered in the middle. See how in the gif.</p>
+    </div>
+</div>
+
+
+<!-- # -->
+<!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
+
+<div
+    data-conditions='[
+        {
+            "path":"/App:%Group:%Group", 
+            "paramseq": {
                 "width": { "value": 300, "unit": "px" },
                 "height": { "value": 300, "unit": "px" }
             }
@@ -291,7 +317,7 @@
 
     <div data-template="popup">
         <video src="IT_12_corner radius.mp4"></video>
-        <p>Edit the Align X parameter to be centered in the middle. See how in the gif.</p>
+        <p>We can turn the Group into a circle but changing its border radius to 100%. See how in the gif.</p>
     </div>
 </div>
 
@@ -355,7 +381,7 @@
 <div
     data-conditions='[
         {
-            "path":"/App:%Group:%Group:%Text:",
+            "path":"/App:%Group:%Group:%Text",
             "exists":true
         }
     ]'
@@ -403,7 +429,7 @@
     data-conditions='[
         {
             "path":"/App:%Group:%Group%Text",
-            "hasparams": "color", "fontSize"
+            "hasparams": "color, fontSize"
         }
     ]'
 >
@@ -441,7 +467,7 @@
 
 <div
     data-conditions='[
-        {"path":"/App:%Group:%Button:0","exists":true}
+        {"path":"/App:%Group:%Button","exists":true}
     ]'
 >
     <div data-template="item">
@@ -481,8 +507,7 @@
 <div
     data-conditions='[
     {
-        "path":"/App:%Group:%Button:0",
-        ...
+        "path":"/App:%Group:%Button:0"
     ]'
 >
     <div data-template="item">
@@ -501,7 +526,15 @@
 
 <div
     data-conditions='[
-        {"path":"/App:%Group:0","exists":true}
+        {
+            "path":"/App:%Group:%Button:0",
+            "paramseq": {
+                "marginRight": { "value": 24, "unit": "px" },
+                "marginLeft": { "value": 24, "unit": "px" },
+                "marginBottom": { "value": 24, "unit": "px" },
+                "height":  { "value": 56, "unit": "px" }
+            }
+        }
     ]'
 >
     <div data-template="item">
@@ -520,7 +553,12 @@
 
 <div
     data-conditions='[
-        {"path":"/App:%Group:0","exists":true}
+        {
+            "path":"/App:%Group:%Button:0",
+            "paramseq": {
+                "label": "Count up!"
+            }
+        }
     ]'
 >
     <div data-template="item">
@@ -538,7 +576,7 @@
 
 <div
     data-conditions='[
-        {"path":"/App:%Group:0","exists":true}
+        {"path":"/App:%Group:%Button:1","exists":true}
     ]'
 >
     <div data-template="item">
@@ -557,7 +595,12 @@
 
 <div
     data-conditions='[
-        {"path":"/App:%Group:0","exists":true}
+        {
+            "path":"/App:%Group:%Button:1",
+            "paramseq": {
+                "label": "Count up!"
+            }
+        }
     ]'
 >
     <div data-template="item">
@@ -614,7 +657,7 @@
         {
             "from": "/App:%Group%Button",
             "to": "/App:%Counter",
-            "hasconnection": "Clicked,Increase"
+            "hasconnection": "Clicked,Increased"
         }
     ]'
 >
