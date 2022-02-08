@@ -22,7 +22,7 @@ If we imagine an App where we have a couple of different **Classes**, say a *Pos
 ## Pointers - One-to-many relationships
 The most simple relationship is a **Pointer**. This type of relationship is often referred to as a _One-to-many_ relationship. For example, a blog *Post* will have many *Comment*s, but each *Comment* only belong to one *Post*. To create this kind of relationship we use a property of a special kind called a **Pointer**. 
 
-A **Pointer** property can reference another **Record** of a certain Class via it's *Id*. In this case we want to reference the Post* that is the owner of a *Comment*. So in the *Comment* class we create a property, let's call it `Owner`, and give it a *Pointer* type and specify that it should point to *Post* records.
+A **Pointer** property can reference another **Record** of a certain Class via it's *Id*. In this case we want to reference the *Post* that is the owner of a *Comment*. So in the *Comment* class we create a property, let's call it `Owner`, and give it a *Pointer* type and specify that it should point to *Post* records.
 
 ?> This is called a _backward_ relationship, i.e. the *Comment* points back to the *Post*. If you want to find all *Comments* for *Post* you will simply look for all *Comments* pointing back to the *Post* you are interested in.
 
@@ -77,6 +77,7 @@ Let's say that we introduce a new **Class** called *Group*, and a *Post* can be 
 
 </div>
 
+It can be a bit tricky in the beginning to get the hang of relations. One way to look at it is this: In this example, A *Group* have a list of pointers to all its *Posts* that belongs to it. So a specific *Group* can easily find its *Posts* by following these pointers. The inverse question, a *Post* who wants to know which *Groups* it belongs to (it can be more than one!) can query for all *Groups* that have a pointer in its list that's pointing at them.
 
 When you have a *Relation* property on a **Record** you need to use the nodes [Add Record Relation](/nodes/data/cloud-data/add-record-relation/) and [Remove Record Relation](/nodes/data/cloud-data/remove-record-relation/) to manage them. In these nodes you need to provide the **id** of the **Record** that has the relation property (Group in our case) and the **id** of the **Record** you want to add or remove to the relationship.
 
@@ -112,9 +113,8 @@ Finally you need to be able to query the relations. You have two cases:
 
 Note that you have to specify the name of the relation property in the class having the property (*Group* in this case) as well.
 
-<!--
 
-If you want to make the inverse query, that is you want to ask for all *Groups* that relates to a post, you create a **Query Records** node with the class *Group* (you want *Groups* back from the query). have a *Post* **Record** (you have the *Id* of a *Post* **Record**) and you want to find all *Group*s that it belongs to you would use this javascript query in a **Query Records** that is set to the **Group** class.
+2) If you want to make the inverse query, that is you want to ask for all *Groups* that relates to a post, you create a **Query Records** node with the class *Group* (you want *Groups* back from the query). have a *Post* **Record** (you have the *Id* of a *Post* **Record**) and you want to find all *Group*s that it belongs to you would use this javascript query in a **Query Records** that is set to the **Group** class.
 
 ```javascript
 where({ 
@@ -123,5 +123,3 @@ where({
 ```
 
 As you can see above you must also make sure that you use the correct relation field, in this case *posts* on the *Group* collection.
-
--->

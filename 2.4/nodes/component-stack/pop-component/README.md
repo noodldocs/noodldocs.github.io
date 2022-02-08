@@ -10,6 +10,8 @@ The **Pop Component Stack** node is used together with a [Component Stack](/node
 
 </div>
 
+?> Note that you have to use the **Pop Component Stack** node from within a component in the **Component Stack**.
+
 <##head##>
 
 ## Inputs
