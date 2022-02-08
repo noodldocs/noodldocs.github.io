@@ -2,8 +2,8 @@
 <div data-template="popup"> 
     <video src="IT_01_Intro_video.mp4"></video>
     <h2>Welcome to Noodl</h2>
-    <p>In this lesson you will learn about the basic concepts of Noodl that combined will let you build powerful web applications.</p>
-    <p>To get you started we will be building the small counter app you see above, just to introduce you to the core principles of Noodl. One of the greatest things about Noodl is that once you learn these concepts, and how to combine them, there will be virtually no limit to what you can create.</p>
+    <p>In this lesson you will learn about the basic concepts of Noodl when combined will let you build powerful web applications.</p>
+    <p>To introduce you to the core principles of Noodl we will be building the small counter app you see above. One of the greatest things about Noodl is that once you learn these concepts, and how to combine them, there will be virtually no limit to what you can create.</p>
 </div>
 
 <!-- # -->
@@ -34,7 +34,7 @@
         <video src="IT_03_visual hirachy video.mp4"></video>
         <h2>Visual nodes</h2>
         <p>Almost all projects you will be creating have some sort of visual user interface, be it a mobile or desktop app.</p>
-        <p>For that we use visual nodes, such as <strong>images</strong> and <strong>text</strong>. These nodes are blue in color and can be arranged in a hierarchy. What you see now in the node graph editor is a collection of visual nodes. This node graph is the root component, indicated by the small Home icon in the component list to the left. The top node is the root, and everything that is placed under it will be shown in the preview. </p>
+        <p>For that we use visual nodes, such as the <strong>Group</strong> node and the <strong>Text</strong> node. These nodes are blue in color and can be arranged in a hierarchy. The top node acts as the root, and everything that is placed under it will be shown. </p>
         <p>You can move nodes by dragging them around with the <strong>left</strong> mouse button. You can drag a node in and out of the visual hierarchy as you please.</p>
     </p>
     </div>
@@ -52,7 +52,7 @@
 >
     <div data-template="item">
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Drag the text node away from the root node</h3>
+        <h3>Drag the Text node away from the Group node</h3>
     </div>
     <div data-template="popup">
         <video src="IT_04_remove-text.mp4"></video>
@@ -99,7 +99,7 @@
 >
     <div data-template="item">
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Delete the Text nodes</h3>
+        <h3>Delete the Text node</h3>
     </div>
 
     <div data-template="popup">
@@ -155,7 +155,7 @@
 >
     <div data-template="item">
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Place a Group node as a child to the root group.</h3>
+        <h3>Place a Group node as a child to the root Group.</h3>
     </div>
 
     <div data-template="popup">
@@ -272,7 +272,7 @@
 >
     <div data-template="item" style="width: 300px">
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Center align the second Group both vertical and horizontal</h3>
+        <h3>Center align the second Group both vertically and horizontally</h3>
     </div>
 
     <div data-template="popup">
@@ -312,12 +312,12 @@
 <div>
     <div data-template="item">
         <header>Info</header>
-        <h2>Adding descriptions to nodes</h2>
+        <h2>Naming nodes</h2>
     </div>
     <div data-template="popup">
         <video src="IT_10_side panel.mp4"></video>
-        <h2>Adding descriptions to nodes</h2>
-        <p>A good practice is to give a more descriptive name to our nodes, as we build our app. This will make it easier for both collaborators and yourself to understand what the different nodes are doing.</p>
+        <h2>Naming nodes</h2>
+        <p>As we build our app a good practice is to give a more descriptive names to our nodes. This will make it easier for both collaborators and yourself to understand what the different nodes are doing.</p>
     </p>
     </div>
 </div>
@@ -380,8 +380,8 @@
     <div data-template="popup">
         <video src="IT_14_text_info.mp4"></video>
         <h2>Nested visual nodes</h2>
-        <p>Group's are the main building blocks for any layout. We can nest other visual elements as children to a Group to start create more advanced layouts</p>
-        <p>In this example we will insert a text node and place it in the middle of the circle group.</p>
+        <p>Groups are the main building blocks for any layout. We can nest other visual elements as children to a Group to start create more advanced layouts</p>
+        <p>In this example we will insert a <b>Text</b> node and place it in the middle of the <b>Group</b> called <i>Circle</i>.</p>
     </div>
 </div>
 
@@ -400,12 +400,12 @@
 >
     <div data-template="item">
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Add a text node as a child to the Group called Circle</h3>
+        <h3>Add a Text node as a child to the Group called <i>Circle</i></h3>
     </div>
 
     <div data-template="popup">
         <video src="IT_14_text_info.mp4"></video>
-        <p>Select a node and click the edit button to the right for the groups name in the side panel.</p>
+        <p>Use the Node Picker to place a Text node and add it as a child to the Group called <i>Circle</i></p>
     </div>
 </div>
 
@@ -449,7 +449,7 @@
 >
     <div data-template="item">
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Change the fontsize of the text node to 150px</h3>
+        <h3>Change the font size of the text node to 150px</h3>
     </div>
 
     <div data-template="popup">
@@ -510,7 +510,7 @@
 >
     <div data-template="item">
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Place a Button node to the end of the visual hierarchy</h3>
+        <h3>Place a Button node at the end of the visual hierarchy</h3>
     </div>
 
     <div data-template="popup">
@@ -532,7 +532,7 @@
         <video src="IT_15_set dimension mode info.mp4"></video>
         <h2>Dimension modes</h2>
         <p>We can set rules for a how visual elements should take up space via the dimension modes controls in the side panel</p>
-        <p>If we want our buttons size to be controlled by the content inside of it (its label) we can set Content width and</p>
+        <p>If we want our button's size to take up 100% of the available width but have a fixed height set in pixels we can set it's dimension mode to <i>Explicit width & height</i>.</p>
     </p>
     </div>
 </div>
@@ -547,18 +547,19 @@
     {
         "path":"/App:%Group:%net.noodl.controls.button",
         "paramseq":{
-            "sizeMode":"explicit"           
+            "sizeMode":"explicit",
+            "height": {"value": 56, "unit": "px"}           
         }
     }
     ]'
 >
     <div data-template="item">
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Make the Button 100% in width and 40px in height</h3>
+        <h3>Make the Button 100% in width and 56px in height</h3>
     </div>
 
     <div data-template="popup">
-        <video src="IT_15_set dimension mode.mp4"></video>
+        <video src="IT_15_set dimension mode and size.mp4"></video>
     </div>
 </div>
 
@@ -571,7 +572,6 @@
         {
             "path":"/App:%Group:%net.noodl.controls.button",
             "paramseq": {
-                "marginTop": { "value": 24, "unit": "px" },
                 "marginRight": { "value": 24, "unit": "px" },
                 "marginLeft": { "value": 24, "unit": "px" },
                 "marginBottom": { "value": 24, "unit": "px" }
@@ -581,11 +581,11 @@
 >
     <div data-template="item">
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Change all margins on the button to 24px</h3>
+        <h3>Change right, left and bottom margins on the button to 24px</h3>
     </div>
 
     <div data-template="popup">
-        <video src="IT_15_set size and margins.mp4"></video>
+        <video src="IT_15_set margins.mp4"></video>
     </div>
 </div>
 
@@ -623,7 +623,7 @@
         <h2>Logic & Utility nodes</h2>
     </div>
     <div data-template="popup">
-        <video src="IT_15_set dimension mode info.mp4"></video>
+        <video src="IT_16_counter_info.mp4"></video>
         <h2>Logic & Utility nodes</h2>
         <p>Noodl comes with lots of nodes for creating logics and functionality. These nodes are grey and can be found under the Logic and Utility node category in the node picker. These nodes can't be part of the visual tree as they represent logic. Instead they will be place freely in the space around. </p>
         <p>Most nodes takes inputs and outputs from other nodes in form of Connections. This is how you build up functionality in Noodl.</p>
@@ -646,11 +646,11 @@
 >
     <div data-template="item">
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Place a Counter node into the project</h3>
+        <h3>Place a Counter node into the node graph</h3>
     </div>
 
     <div data-template="popup">
-        <video src="IT_15_secondary button color.mp4"></video>
+        <video src="IT_16_place_counter.mp4"></video>
     </div>
 </div>
 
@@ -665,7 +665,7 @@
         <h2>Creating connections</h2>
     </div>
     <div data-template="popup">
-        <video src="IT_15_set dimension mode info.mp4"></video>
+        <video src="IT_16_connecting info.mp4"></video>
         <h2>Creating connections</h2>
         <p>You can create a connection between two nodes by dragging from one node to another.</p>
         <p>Hover over the edge or the white dot on a node. This means that a connection wil be created when we start dragging.</p>
@@ -689,12 +689,12 @@
 >
     <div data-template="item" style="width: 400px">
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Connect the <i>Click</i> event of the Button node to the <i>Increase Count</i> event on the Counter node</h3>
+        <h3>Connect the <i>Click</i> event of the Button node to the <i>Increase Count</i> action on the Counter node</h3>
     </div>
 
     <div data-template="popup">
-        <video src="IT_15_secondary button color.mp4"></video>
-        <p>Connect the Click event of the Button node to the Increase Count event on the Counter node</p>
+        <video src="IT_16_connect_button-to-counter.mp4"></video>
+        <p>Connect the Click event of the Button node to the Increase Count action on the Counter node</p>
     </div>
 </div>
 
@@ -713,11 +713,11 @@
 >
     <div data-template="item" style="width: 400px">
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Connect the <i>Current Count</i> property of the Counter node to the <i>Text</i> property on the Text node</h3>
+        <h3>Connect the <i>Current Count</i> property of the Counter to the <i>Text</i> property on the Text node</h3>
     </div>
 
     <div data-template="popup">
-        <video src="IT_15_secondary button color.mp4"></video>
+        <video src="IT_16_connect_counter-to-text.mp4"></video>
     </div>
 </div>
 
@@ -730,7 +730,7 @@
         <h2>Inspecting connections</h2>
     </div>
     <div data-template="popup">
-        <video src="IT_15_set dimension mode info.mp4"></video>
+        <video src="IT_16_inspecting.mp4"></video>
         <h2>Inspecting connections</h2>
         <p>A powerful feature of Noodl is how data and signals are visualized through the connections between nodes.</p>
         <p>Hover over a connection to see a tooltip showing the current value. If you click on the tooltip you can pin it, making it easy to debug your application.</p>
@@ -750,11 +750,11 @@
 >
     <div data-template="item" style="width: 300px;">
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Create a new button node to the end of the visual hierarchy</h3>
+        <h3>Create a new Button node at the end of the visual hierarchy</h3>
     </div>
 
     <div data-template="popup">
-        <video src="IT_15_secondary button place.mp4"></video>
+        <video src="IT_17_place seccond_button.mp4"></video>
     </div>
 </div>
 
@@ -778,9 +778,35 @@
     </div>
 
     <div data-template="popup">
-        <video src="IT_15_secondary button color.mp4"></video>
+        <video src="IT_17_center_second_button.mp4"></video>
     </div>
 </div>
+
+
+
+<!-- # -->
+<!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
+
+<div
+    data-conditions='[
+        {
+            "path":"/App:%Group:2",
+            "paramseq": {
+                "alignX": "center"
+            }
+        }
+    ]'
+>
+    <div data-template="item">
+        <header>Task<span class="lesson-checkmark"></span></header>
+        <h3>Set the new Button's bottom margin to 24px</h3>
+    </div>
+
+    <div data-template="popup">
+        <video src="IT_17_margin_second_button.mp4"></video>
+    </div>
+</div>
+
 
 
 <!-- # -->
@@ -802,7 +828,7 @@
     </div>
 
     <div data-template="popup">
-        <video src="IT_15_secondary button color.mp4"></video>
+        <video src="IT_17_bgcolor_second_button.mp4"></video>
     </div>
 </div>
 
@@ -826,7 +852,7 @@
     </div>
 
     <div data-template="popup">
-        <video src="IT_15_secondary button color.mp4"></video>
+        <video src="IT_17_labelcolor_second_button.mp4"></video>
     </div>
 </div>
 
@@ -850,7 +876,7 @@
     </div>
 
     <div data-template="popup">
-        <video src="IT_15_secondary button color.mp4"></video>
+        <video src="IT_17_label seccond button.mp4"></video>
     </div>
 </div>
 
@@ -873,8 +899,25 @@
     </div>
 
     <div data-template="popup">
-        <video src="IT_15_secondary button color.mp4"></video>
+        <video src="IT_17_connect_reset.mp4"></video>
         <p>Connect the Click event of the second Button node to the Reset event on the Counter node.</p>
+    </div>
+</div>
+
+
+
+<!-- # -->
+<!-- A step with an item in the bottom bar. No tasks, so popup will be shown automatically -->
+<div>
+    <div data-template="item">
+        <header>Info</header>
+        <h2>Deploy your app</h2>
+    </div>
+    <div data-template="popup">
+        <video src="IT_16_inspecting.mp4"></video>
+        <h2>Deploy your app</h2>
+        <p>Noodl support multiple ways of deploying and sharing your app with the world. The easiest way is to use the Sandbox deploy feature, that let you deploy to a custom Noodl URl. </p>
+        <p>You find the deploy pop up in the right top corner, and by typing in a custom noodl domain, you can deploy your project with a single click.</p>
     </div>
 </div>
 
