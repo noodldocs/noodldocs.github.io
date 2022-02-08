@@ -189,13 +189,15 @@
     data-conditions='[
         {
             "path":"/App:%Group",
-            "hasparams": "backgroundColor"
+            "paramseq":{
+                "backgroundColor": "Primary Light"
+            }
         }
     ]'
 >
-    <div data-template="item">
+    <div data-template="item" style="width: 300px">
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Change the background color of the root Group</h3>
+        <h3>Set the background color of the first Group to the color style <i>Primary Light</i></h3>
     </div>
 
     <div data-template="popup">
@@ -213,13 +215,15 @@
     data-conditions='[
         {
             "path":"/App:%Group:%Group",
-            "hasparams": "backgroundColor"
+            "paramseq":{
+                "backgroundColor": "Primary"
+            }
         }
     ]'
 >
-    <div data-template="item">
+    <div data-template="item" style="width: 320px">
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Change the second Group's background color</h3>
+        <h3>Set the background color of the second Group to the color style <i>Primary</i></h3>
     </div>
 
     <div data-template="popup">
@@ -266,7 +270,7 @@
         }
     ]'
 >
-    <div data-template="item">
+    <div data-template="item" style="width: 300px">
         <header>Task<span class="lesson-checkmark"></span></header>
         <h3>Center align the second Group both vertical and horizontal</h3>
     </div>
@@ -332,7 +336,7 @@
 >
     <div data-template="item">
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Rename the first Group to Root</h3>
+        <h3>Rename the first Group to <i>Root</i></h3>
     </div>
 
     <div data-template="popup">
@@ -355,7 +359,7 @@
 >
     <div data-template="item">
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Rename the second Group to Circle</h3>
+        <h3>Rename the second Group to <i>Circle</i></h3>
     </div>
 
     <div data-template="popup">
@@ -411,7 +415,7 @@
 <div
     data-conditions='[
         {
-            "path":"/App:%Group:%Group%Text",
+            "path":"/App:%Group:%Group:%Text",
             "paramseq": {
                 "textAlignX": "center",
                 "alignY": "center",
@@ -437,21 +441,45 @@
 <div
     data-conditions='[
         {
-            "path":"/App:%Group:%Group%Text",
-            "hasparams": "color"
+            "path":"/App:%Group:%Group:%Text",
+            "paramseq": { "fontSize" : {"value": 150, "unit": "px"}}
             
         }
     ]'
 >
     <div data-template="item">
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Change the fontsize and color of the text</h3>
+        <h3>Change the fontsize of the text node to 150px</h3>
     </div>
 
     <div data-template="popup">
         <video src="IT_14_size and color.mp4"></video>
     </div>
 </div>
+
+
+
+<!-- # -->
+<!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
+
+<div
+    data-conditions='[
+        {
+            "path":"/App:%Group:%Group:%Text",
+            "paramseq": { "color" : "Primary Light"}
+        }
+    ]'
+>
+    <div data-template="item" style="width: 300px">
+        <header>Task<span class="lesson-checkmark"></span></header>
+        <h3>Change the color of the text node to the color style <i>Primary Light</i></h3>
+    </div>
+
+    <div data-template="popup">
+        <video src="IT_14_size and color.mp4"></video>
+    </div>
+</div>
+
 
 
 
@@ -482,7 +510,7 @@
 >
     <div data-template="item">
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Place a button to the end</h3>
+        <h3>Place a Button node to the end of the visual hierarchy</h3>
     </div>
 
     <div data-template="popup">
@@ -526,7 +554,7 @@
 >
     <div data-template="item">
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Make the button take up 100% of the width</h3>
+        <h3>Make the Button 100% in width and 40px in height</h3>
     </div>
 
     <div data-template="popup">
@@ -597,8 +625,7 @@
     <div data-template="popup">
         <video src="IT_15_set dimension mode info.mp4"></video>
         <h2>Logic & Utility nodes</h2>
-        <p>Noodl comes with lots of nodes for creating logics and functionality. These nodes are grey and can be found under the Logic and Utility node category in the node picker</p>
-        <p>These nodes can't be part of the visual tree as they represent logic. Instead they will be place freely in the space around.
+        <p>Noodl comes with lots of nodes for creating logics and functionality. These nodes are grey and can be found under the Logic and Utility node category in the node picker. These nodes can't be part of the visual tree as they represent logic. Instead they will be place freely in the space around. </p>
         <p>Most nodes takes inputs and outputs from other nodes in form of Connections. This is how you build up functionality in Noodl.</p>
         <p>In this tutorial we will use a Counter node to increase a number when the button is clicked.</p>
     </p>
@@ -654,23 +681,22 @@
 <div
     data-conditions='[
         {
-            "from": "/App:%Group%net.noodl.controls.button",
+            "from": "/App:%Group:%net.noodl.controls.button",
             "to": "/App:%Counter",
             "hasconnection": "onClick, increase"
         }
     ]'
 >
-    <div data-template="item">
+    <div data-template="item" style="width: 400px">
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Connect the first Button node to the Counter node</h3>
+        <h3>Connect the <i>Click</i> event of the Button node to the <i>Increase Count</i> event on the Counter node</h3>
     </div>
 
     <div data-template="popup">
         <video src="IT_15_secondary button color.mp4"></video>
-        <p>Connect the Click event of the Button node to the Increase count event on the Counter node</p>
+        <p>Connect the Click event of the Button node to the Increase Count event on the Counter node</p>
     </div>
 </div>
-
 
 
 <!-- # -->
@@ -679,20 +705,36 @@
 <div
     data-conditions='[
         {
-            "from": "/App:%Group%Group:%Text",
-            "to": "/App:%Counter",
+            "from": "/App:%Counter",
+            "to": "/App:%Group:%Group:%Text",
             "hasconnection": "currentCount,text"
         }
     ]'
 >
-    <div data-template="item">
+    <div data-template="item" style="width: 400px">
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Make a connection from the Counter node to the Text node.</h3>
+        <h3>Connect the <i>Current Count</i> property of the Counter node to the <i>Text</i> property on the Text node</h3>
     </div>
 
     <div data-template="popup">
         <video src="IT_15_secondary button color.mp4"></video>
-        <p>Connect the Click event of the second Button node to the Reset event on the Counter node.</p>
+    </div>
+</div>
+
+
+<!-- # -->
+<!-- A step with an item in the bottom bar. No tasks, so popup will be shown automatically -->
+<div>
+    <div data-template="item">
+        <header>Info</header>
+        <h2>Inspecting connections</h2>
+    </div>
+    <div data-template="popup">
+        <video src="IT_15_set dimension mode info.mp4"></video>
+        <h2>Inspecting connections</h2>
+        <p>A powerful feature of Noodl is how data and signals are visualized through the connections between nodes.</p>
+        <p>Hover over a connection to see a tooltip showing the current value. If you click on the tooltip you can pin it, making it easy to debug your application.</p>
+    </p>
     </div>
 </div>
 
@@ -706,9 +748,9 @@
         {"path":"/App:%Group:2","exists":true}
     ]'
 >
-    <div data-template="item">
+    <div data-template="item" style="width: 300px;">
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Copy/paste the button and place it bellow. </h3>
+        <h3>Create a new button node to the end of the visual hierarchy</h3>
     </div>
 
     <div data-template="popup">
@@ -725,14 +767,86 @@
         {
             "path":"/App:%Group:2",
             "paramseq": {
-                "label": "Count up!"
+                "alignX": "center"
             }
         }
     ]'
 >
     <div data-template="item">
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Style the new button as a secondary button</h3>
+        <h3>Center the new Button node horizontally</h3>
+    </div>
+
+    <div data-template="popup">
+        <video src="IT_15_secondary button color.mp4"></video>
+    </div>
+</div>
+
+
+<!-- # -->
+<!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
+
+<div
+    data-conditions='[
+        {
+            "path":"/App:%Group:2",
+            "paramseq": {
+                "backgroundColor": "transparent"
+            }
+        }
+    ]'
+>
+    <div data-template="item" style="width: 300px;">
+        <header>Task<span class="lesson-checkmark"></span></header>
+        <h3>Change the new Button's background color to the color style <i>Transparent</i></h3>
+    </div>
+
+    <div data-template="popup">
+        <video src="IT_15_secondary button color.mp4"></video>
+    </div>
+</div>
+
+
+<!-- # -->
+<!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
+
+<div
+    data-conditions='[
+        {
+            "path":"/App:%Group:2",
+            "paramseq": {
+                "color": "Primary"
+            }
+        }
+    ]'
+>
+    <div data-template="item">
+        <header>Task<span class="lesson-checkmark"></span></header>
+        <h3>Change the new Button's label color to <i>Primary</i></h3>
+    </div>
+
+    <div data-template="popup">
+        <video src="IT_15_secondary button color.mp4"></video>
+    </div>
+</div>
+
+
+<!-- # -->
+<!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
+
+<div
+    data-conditions='[
+        {
+            "path":"/App:%Group:2",
+            "paramseq": {
+                "label": "Reset"
+            }
+        }
+    ]'
+>
+    <div data-template="item">
+        <header>Task<span class="lesson-checkmark"></span></header>
+        <h3>Change the label of the new Button to <i>Reset</i></h3>
     </div>
 
     <div data-template="popup">
@@ -753,9 +867,9 @@
         }
     ]'
 >
-    <div data-template="item">
+    <div data-template="item" style="width: 400px">
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Make a connection from the second Button to the Counter node</h3>
+        <h3>Connect the <i>Click</i> event from the new <b>Button</b> to the <i>Reset to start</i> event on the Counter node</h3>
     </div>
 
     <div data-template="popup">
