@@ -134,7 +134,7 @@
         <h2>The Group node</h2>
     </div>
     <div data-template="popup">
-        <video src=""></video>
+        <img src="IT_09_groups.png"></img>
         <h2>The Group node</h2>
         <p>The Group node is the most basic visual element and is used to structure layouts, group content, and create visual shapes.</p>
         <p>If you are familiar with HTML code, a Group is similar to a Div tag in HTML </p>
@@ -315,7 +315,7 @@
         <h2>Naming nodes</h2>
     </div>
     <div data-template="popup">
-        <video src="IT_10_side panel.mp4"></video>
+        <video src="IT_13_root and circle.mp4"></video>
         <h2>Naming nodes</h2>
         <p>As we build our app a good practice is to give a more descriptive names to our nodes. This will make it easier for both collaborators and yourself to understand what the different nodes are doing.</p>
     </p>
@@ -340,7 +340,7 @@
     </div>
 
     <div data-template="popup">
-        <video src="IT_13_descriptions.mp4"></video>
+        <video src="IT_13_root.mp4"></video>
         <p>Select the node and change it name by double-clicking the node title in the side panel, or click the edit icon as shown in the video.</p>
     </div>
 </div>
@@ -363,7 +363,7 @@
     </div>
 
     <div data-template="popup">
-        <video src="IT_13_descriptions.mp4"></video>
+        <video src="IT_13_circle.mp4"></video>
         <p>Select the node and change it name by double-clicking the node title in the side panel, or click the edit icon as shown in the video.</p>
     </div>
 </div>
@@ -442,44 +442,24 @@
     data-conditions='[
         {
             "path":"/App:%Group:%Group:%Text",
-            "paramseq": { "fontSize" : {"value": 150, "unit": "px"}}
+            "paramseq": 
+            {
+                 "fontSize" : {"value": 150, "unit": "px"},
+                 "color" : "Primary Light"    
+            }
             
         }
     ]'
 >
-    <div data-template="item">
+    <div data-template="item" style="width:300px">
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Change the font size of the text node to 150px</h3>
+        <h3>Set the font size of the Text to 150px and its color to <i>Primary Light</i></h3>
     </div>
 
     <div data-template="popup">
         <video src="IT_14_size and color.mp4"></video>
     </div>
 </div>
-
-
-
-<!-- # -->
-<!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
-
-<div
-    data-conditions='[
-        {
-            "path":"/App:%Group:%Group:%Text",
-            "paramseq": { "color" : "Primary Light"}
-        }
-    ]'
->
-    <div data-template="item" style="width: 300px">
-        <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Change the color of the text node to the color style <i>Primary Light</i></h3>
-    </div>
-
-    <div data-template="popup">
-        <video src="IT_14_size and color.mp4"></video>
-    </div>
-</div>
-
 
 
 
@@ -579,7 +559,7 @@
         }
     ]'
 >
-    <div data-template="item">
+    <div data-template="item" style="width: 280px">
         <header>Task<span class="lesson-checkmark"></span></header>
         <h3>Change right, left and bottom margins on the button to 24px</h3>
     </div>
@@ -670,7 +650,6 @@
         <p>You can create a connection between two nodes by dragging from one node to another.</p>
         <p>Hover over the edge or the white dot on a node. This means that a connection wil be created when we start dragging.</p>
         <p>Select another node to bring up the Connection Panels. Pick an Output from the source node, and select the Input on the target node that the connection should be made between.</p>
-    </p>
     </div>
 </div>
 
@@ -792,7 +771,7 @@
         {
             "path":"/App:%Group:2",
             "paramseq": {
-                "alignX": "center"
+                "marginBottom": {"value": 24, "unit": "px"}
             }
         }
     ]'
@@ -914,7 +893,7 @@
         <h2>Deploy your app</h2>
     </div>
     <div data-template="popup">
-        <video src="IT_16_inspecting.mp4"></video>
+        <video src="IT_18_save-combined.mp4"></video>
         <h2>Deploy your app</h2>
         <p>Noodl support multiple ways of deploying and sharing your app with the world. The easiest way is to use the Sandbox deploy feature, that let you deploy to a custom Noodl URl. </p>
         <p>You find the deploy pop up in the right top corner, and by typing in a custom noodl domain, you can deploy your project with a single click.</p>
@@ -927,12 +906,17 @@
 <div>
     <div data-template="item">
         <header>Outro</header>
-        <h2>Summary</h2>
+        <h2>Congratulations!</h2>
     </div>
     <div data-template="popup">
-        <img src="drag-text-out.gif">
+        <img src="tutorial_card.png" style="cursor: pointer;" onclick="window.open('https://www.youtube.com/watch?v=TNnn0Gzj-H4&list=PL2eC2vS4uVoMbujQ5CiNtNuP7s7-UwNn-')">
         <h2>Congratulations!</h2>
-        <p>You've completed this tutorial. Now continue with X or Y</p>
+        <p>You've completed this tutorial. We hope you liked it so far.</p>
+        <p>To take your Noodl skills to the next level we recommend follow along our video tutorial that shows how to build a to-do app with a real backend.</p>
+        <p>Happy Noodling!</p>
+        <button style="width: 150px" onclick="window.open('https://www.youtube.com/watch?v=TNnn0Gzj-H4&list=PL2eC2vS4uVoMbujQ5CiNtNuP7s7-UwNn-')">WATCH TUTORIAL</button>
     </div>
 </div>
 <!-- # -->
+
+
