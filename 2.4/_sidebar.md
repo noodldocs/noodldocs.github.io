@@ -265,6 +265,10 @@
 * [Log In](nodes/data/user/log-in/)
 * [Log Out](nodes/data/user/log-out/)
 * [Set User Properties](nodes/data/user/set-user-properties/)
+* [Send Email Verification](nodes/data/user/send-email-verification/)
+* [Verify Email](nodes/data/user/verify-email/)
+* [Request Password Reset](nodes/data/user/request-password-reset/)
+* [Reset Password](nodes/data/user/reset-password/)
 
 <br/>
 
