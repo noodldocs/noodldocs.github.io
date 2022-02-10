@@ -44,6 +44,7 @@
   - [Updating Records](guides/working-with-data/cloud-data/updating-records/)
   - [Filtering Database Queries](guides/working-with-data/cloud-data/query-filters/)
   - [Record Relations](guides/working-with-data/cloud-data/relations/)
+  - [Access Control](guides/working-with-data/cloud-data/access-control/)
 - <span class="hoverable">Building Business Logic in Noodl</span>
   - [Overview](guides/business-logic/overview/)
   - [Using Zapier with Noodl](guides/business-logic/zapier/)
