@@ -2,7 +2,7 @@
 
 # Cloud Function
 
-This node is used to make calls to backend cloud functions. To use cloud functions you need to have an external [Parse](https://parseplatform.org) backend up and running and have attached cloud functions.
+This node is used to make calls to backend cloud functions. To use cloud functions you need to have an external [Parse](https://parseplatform.org) backend up and running and have attached cloud functions or have a Noodl Zap running in [Zapier](https://zapier.com). You can read more about how to make your own backend logic [here](/guides/business-logic/overview/).
 
 <div class="ndl-image-with-background l">
 
