@@ -1,6 +1,9 @@
 # How to use Zapier with Noodl
 
+## What you will learn in this guide
 This guide will cover how to connect your Noodl application to **Zapier**. **Zapier** is a great platform for automatic tasks and connecting different cloud based applications. This can become very useful for Noodl creators as some tasks need to be performed in the cloud. After a used has signed in, you might want to send them a welcome email, or maybe on some sort of action like inviting a user to a team. Other features, such as payment, can be integrated into your Noodl app successfully using **Zapier**. So let's get started.
+
+## Setup
 
 You connect **Zapier** to your Noodl cloud services, this is what you need to create users, write data to the cloud etc. These events can be used to trigger flows in Zapier.
 

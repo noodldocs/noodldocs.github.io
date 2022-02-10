@@ -25,6 +25,8 @@ You can also provide values for the properties of the record either via connecti
 | ---------------------------------- | ---------------------------------------------------------------------------- |
 | <span class="ndl-signal">Do</span> | <##input:do##>Send a signal on this input to create a new record.<##input##> |
 
+[filename](../acl.md ':include')
+
 ## Outputs
 
 | Data                                | Description                                                                                                     |

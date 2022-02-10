@@ -30,6 +30,8 @@ Send a <span class="ndl-signal">signal</span> to <span class="ndl-signal">Do</sp
 | ---------------------------------- | ---------------------------------------------------------------------------------------------------------- |
 | <span class="ndl-signal">Do</span> | <##input:do##>When a signal is received on this input the properties will be set on the record.<##input##> |
 
+[filename](../acl.md ':include')
+
 ## Outputs
 
 | Data                                | Description                                                                                                     |
