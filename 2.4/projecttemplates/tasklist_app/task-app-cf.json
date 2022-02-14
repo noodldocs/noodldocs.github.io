@@ -5,7 +5,7 @@
         "name":"Todo",
         "properties":{
           "task_description":{"type":"String"},
-          "completed":{"type":"Boolean"}
+          "completed":{"type":"Boolean", "defaultValue":false}
         }
       }
     ]
