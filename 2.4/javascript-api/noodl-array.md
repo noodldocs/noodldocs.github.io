@@ -15,26 +15,26 @@ i.e. has been created with `Noodl.Array.get`.
 Adds or removes an event listener from the array.
 Supported events:
 
--   `add` - an object has been added
--   `remove` - an object is removed
--   `change` - triggered on both add and remove.
+- `add` - an object has been added
+- `remove` - an object is removed
+- `change` - triggered on both add and remove.
 
 Example usage:
 
 ```javascript
-myArray.on('change', () => {
-    // The items of myArray has changed, e.g. an Noodl.Object has been added or removed.
-    // will NOT be triggered if the properties of the objects have changed
-})
+myArray.on("change", () => {
+  // The items of myArray has changed, e.g. an Noodl.Object has been added or removed.
+  // will NOT be triggered if the properties of the objects have changed
+});
 
-myArray.on('add', (args) => {
-    // The object args.item have been added to this array
-})
+myArray.on("add", (args) => {
+  // The object args.item have been added to this array
+});
 
-myArray.on('remove', (args) => {
-    // The object args.item have been removed from this array
-    // The object was removed from index args.index
-})
+myArray.on("remove", (args) => {
+  // The object args.item have been removed from this array
+  // The object was removed from index args.index
+});
 ```
 
 ## `array.set(items)`
@@ -79,3 +79,33 @@ Returns the `Noodl.Object` `item` at the specified index, or `undefined` if out 
 
 Iterates over all objects in the array and calls the callback function for each object
 with `object` and `index` as arguments.
+
+## `array.find(callback)`
+
+Iterates over all objects in the array and returns the first object where the callback returns `true`. If no match is found, it'll return `undefined`.
+
+Example usage:
+
+```javascript
+const item = myArray.find((item) => item.label === "Noodl");
+if (item) {
+  //item was found (item is a Noodl.Object)
+} else {
+  //no item found
+}
+```
+
+## `array.findIndex(callback)`
+
+Iterates over all objects in the array and returns the first index where the callback returns `true`. If no match is found, it'll return `-1`.
+
+Example usage:
+
+```javascript
+const index = myArray.findIndex((item) => item.label === "Noodl");
+if (index === -1) {
+  //no match was found
+} else {
+  //match was found, and the index is now valid
+}
+```
