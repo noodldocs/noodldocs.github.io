@@ -69,4 +69,8 @@ Remember, if you have questions that aren't covered here, you can always join th
         <td><img src="snippets/shake-detector/preview.png"></img></td>
         <td><a href="#/snippets/shake-detector/shake-detector.md">Shake Detector</a><br>Detect when a mobile phone is being shaked</td>
     </tr>
+    <tr>
+        <td><img src="snippets/image-from-video/thumbnail.png"></img></td>
+        <td><a href="#/snippets/image-from-video/image-from-video.md">Image from Video Stream</a><br>Capture and display images from a video stream in Noodl</td>
+    </tr>
 </table>

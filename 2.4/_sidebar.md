@@ -6,6 +6,10 @@
 - [Build your first app](tutorials/getting-started.md)
   - [Task list app](tutorials/tasklist-app.md)
   - [Survey app](tutorials/survey-app.md)
+
+<br/>
+
+* **Snippets & Modules**
 - [Snippets](snippets/snippets.md)
   - [Star Rating](snippets/star-rating/)
   - [Multi Select](snippets/multi-select/)
@@ -21,6 +25,19 @@
   - [Image from Video stream](snippets/image-from-video/image-from-video.md)
   <!-- - [P5.js Intergration](snippets/p5-canvas/p5-canvas.md) -->
 - [Modules](modules/modules.md)
+  - [Date Picker Module](modules/datepicker-button/)
+  - [Form Validation](modules/validation/)
+  - [GraphQL](modules/graphql/)
+  - [Custom HTML embedding](modules/custom-html/)
+  - [i18next Translation](modules/i18next/)
+  - [Lottie Animations](modules/lottie/)
+  - [Markdown](modules/markdown/)
+  - [MQTT](modules/mqtt/)
+  - [Web Camera](modules/webcamera/)
+  - [Mapbox](modules/mapbox/)
+  - [Google Sheets](modules/gsheets/)
+  - [Google Analytics](modules/google-analytics/)
+
 <!-- - [Templates](templates/templates.md)
   - [CRUD Template](templates/crud_template/crud_template.md) -->
 
