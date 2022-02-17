@@ -44,7 +44,7 @@
 <br/>
 
 * **Guides**
-
+- [Importing Projects](guides/importing/)
 - [Layout](guides/layouts.md)
 - [UI states and variants](guides/states-and-variants/)
   - [Style Variants](guides/states-and-variants/variants/)
