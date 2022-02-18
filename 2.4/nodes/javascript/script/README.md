@@ -15,7 +15,7 @@ In most cases you are better off using the simpler <span class="ndl-node">[Funct
 ## Getting Started
 Reading the Javascript [guide](/guides/javascript.md) gives a broader understanding of how it works.
 
-Here is an example how how you create a function which you can call in the node graph:
+Here is an example of how you create a function that you can call in the node graph:
 ```javascript
 Node.Signals.MyFunction = function(value) {
     // run javascript code
