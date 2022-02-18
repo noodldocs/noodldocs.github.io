@@ -14,7 +14,9 @@ We will go through the following steps in the tutorial
 
 ## What is Web Style Navigation?
 
-Noodl supports two types of navigations: App style navigation and Web style navigation. On a high level the main differences are
+Noodl supports two types of navigations: App style navigation and Web style navigation. This guide covers the Web style navigation using the **Page Router** and **Pages**.
+
+On a high level the main differences are
 
 -   Web Style:
 
@@ -40,6 +42,8 @@ The first node to look at in this guide is the **Page Router**. This node mainly
 
 -   Provide space for the **Page** that is currently showing
 -   Keep track of the other **Pages** you can navigate to
+
+The **Page Router** node is a visual node meaning it takes up space on the screen. Any **Page** you navigate to will become child of the **Page Router** and use its space. So when designing your navigation flow, you typically create a bunch of **Page** components holding the content for each page and navigate between them. They will be put in the space that the **Page Router** takes up. All nodes in the visual hierarchy that are not in the **Pages** will stay on screen no matter how you navigate. So title and footer would normally not be part of the **Page** but lie next to the **Page Router** in the hierarchy.
 
 Let's begin by creating a new project based on the "Hello World" Template. Delete the existing **Text** node and add in a **Page Router** using the Node Picker.
 
