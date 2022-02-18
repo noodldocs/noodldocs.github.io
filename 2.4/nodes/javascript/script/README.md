@@ -12,6 +12,16 @@ This node allows you to add complex JavaScript to your application. Please refer
 
 In most cases you are better off using the simpler <span class="ndl-node">[Function](/nodes/javascript/function/)</span> node for your custom JavaScript.
 
+## Getting Started
+Reading the Javascript [guide](/guides/javascript.md) gives a broader understanding of how it works.
+
+Here is an example how how you create a function which you can call in the node graph:
+```javascript
+Node.Signals.MyFunction = function(value) {
+    // run javascript code
+}
+```
+
 <##head##>
 
 ## Inputs

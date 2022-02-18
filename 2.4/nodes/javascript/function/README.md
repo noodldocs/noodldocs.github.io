@@ -2,7 +2,11 @@
 
 # Function
 
-This node enables you to add simpler custom JavaScript to your application. Any time the inputs are changed the function is run and the outputs are updated.
+This node enables you to add simpler custom JavaScript to your application.
+
+Runs the Javascript:
+- When any inputs are updated (if "Run" is not connected to anything)
+- When "Run" is called
 
 <div class="ndl-image-with-background l">
 
