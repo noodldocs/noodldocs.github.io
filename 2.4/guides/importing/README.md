@@ -11,6 +11,6 @@ There are three main ways of import projects in Noodl
 
 The video below walks through the three different ways of importing projects.
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/s5Z0YZtmRTE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/SAIaV4RAo7s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
