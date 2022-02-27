@@ -82,5 +82,12 @@
         "icon": "mapbox/MapboxModule.png",
         "project": "mapbox/mapbox-1-4.zip",
         "docs": "mapbox/"
+    },
+    {
+        "label": "QR Scanner",
+        "desc": "This module contains node for scanning QR codes from camera or images.",
+        "icon": "mapbox/MapboxModule.png",
+        "project": "qr-scanner/qr-scanner-1-0.zip",
+        "docs": "qr-scanner/"
     }
 ]
