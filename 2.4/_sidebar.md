@@ -37,6 +37,7 @@
   - [Mapbox](modules/mapbox/)
   - [Google Sheets](modules/gsheets/)
   - [Google Analytics](modules/google-analytics/)
+  - [QR Code Scanner](modules/qr-scanner/)
 
 <!-- - [Templates](templates/templates.md)
   - [CRUD Template](templates/crud_template/crud_template.md) -->

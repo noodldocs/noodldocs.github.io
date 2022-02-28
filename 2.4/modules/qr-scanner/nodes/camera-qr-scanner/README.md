@@ -1,3 +1,40 @@
+<##head##>
 # Camera QR Scanner
 
-asdasd
+The **Camera QR Scanner** node is used to open the camera view finder and scan for QR codes. It uses a [Video](/nodes/ui-elements/video/) node to display the camera stream.
+
+<div class="ndl-image-with-background l">
+
+![](camera-qr-scanner.png)
+
+</div>
+
+When a QR code has been successfully identifyed, the node will send an event and the decoded string. The decoding happens in real time, meaning if the QR code is not visible anymore the node will send an event to indicate that the scanning failed.
+
+<##head##>
+
+## Inputs
+
+| Data                                      | Description                                                                                                                |
+| ----------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| <span class="ndl-data">Video Node</span>   | This input should be connected to the **Dom Element** output of the **Video** node that's used render the camera view finder.                                                                                         |
+| <span class="ndl-data">Front Facing</span>    | A **boolean** that decides if the front facing camera should be used (default) or the user facing came.                                 |
+| <span class="ndl-data">Max Scans Per Second</span>        | The number of scans per second the scanner will do to find QR codes. Lowering this number may improve performance if needed. Note that changing this number after triggering **Start** will have no effect. |
+
+
+| Signal                                         | Description                                                                                |
+| ---------------------------------------------- | ------------------------------------------------------------------------------------------ |
+| <span class="ndl-signal">Start</span> | Opens the camera stream and starts scanning for QR codes. |
+| <span class="ndl-signal">Stop</span> | Stops the camera stream and stops scanning for QR codes. |
+
+## Outputs
+
+| Data                                            | Description                                                                                      |
+| ----------------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| <span class="ndl-data">Scan Result</span>         | This output contains the decoded string when a QR code has been found and decoded. If no QR code is found this string will be empty.            |
+| <span class="ndl-data">Valid Scan</span>          | A **boolean** that is **true** if the last scan was valid, otherwise **false**.   |
+
+| Signal                                       | Description                                                                               |
+| -------------------------------------------- | ----------------------------------------------------------------------------------------- |
+| <span class="ndl-signal">Scan Successful</span>        | Sends a signal when a successful scan was done. The resulting scan is on the **Scan Result** output. |
+| <span class="ndl-signal">Scan Failed</span> | Sends a signal when the latest scan failed, i.e. no QR code was found. was done. |
