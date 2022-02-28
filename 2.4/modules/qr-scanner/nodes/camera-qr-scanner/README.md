@@ -37,4 +37,4 @@ When a QR code has been successfully identifyed, the node will send an event and
 | Signal                                       | Description                                                                               |
 | -------------------------------------------- | ----------------------------------------------------------------------------------------- |
 | <span class="ndl-signal">Scan Successful</span>        | Sends a signal when a successful scan was done. The resulting scan is on the **Scan Result** output. |
-| <span class="ndl-signal">Scan Failed</span> | Sends a signal when the latest scan failed, i.e. no QR code was found. was done. |
+| <span class="ndl-signal">Scan Failed</span> | Sends a signal when the latest scan failed, i.e. no QR code was found. |
