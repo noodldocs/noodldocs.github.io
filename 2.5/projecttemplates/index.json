@@ -1,0 +1,60 @@
+[
+    {
+        "iconURL": "hello_world/helloWorld.png",
+        "title": "Hello World",
+        "desc": "A simple application template with just a Group and a Text node.",
+        "projectURL": "hello_world/hello-1-8.zip",
+        "category": "Basic"
+    },
+    {
+        "iconURL": "tab_navigation/tabNavigation.png",
+        "title": "Tab Navigation example",
+        "desc": "A simple project containing a tab menu with navigation.",
+        "projectURL": "tab_navigation/tab_navigation_example_1.zip",
+        "category": "Basic"
+    },
+    {
+        "iconURL": "navigation_template/navigation.png",
+        "title": "Navigation example",
+        "desc": "A simple project containing a menu navigation.",
+        "projectURL": "navigation_template/navigation_example_1-2.zip",
+        "category": "Basic"
+    },
+    {
+        "iconURL": "tasklist_app/task_list_thumbnail.png",
+        "title": "Task list",
+        "desc": "A simple task list template with a connected backend for storing and reading data.",
+        "projectURL": "tasklist_app/task-app-1-1.zip",
+        "category": "Tutorial",
+        "useCloudServices": true,
+        "cloudServicesTemplateURL": "tasklist_app/task-app-cf.json"
+    },
+    {
+        "iconURL": "survey_app/survey_thumbnail2.png",
+        "title": "Custom survey",
+        "desc": "A multi-step survey template with custom UI components.",
+        "projectURL": "survey_app/survey_app_1-3.zip",
+        "category": "Tutorial"
+    },
+    {
+        "iconURL": "travel_app/travel_app_thumbnail_mobile.png",
+        "title": "Travel app",
+        "desc": "Multi page template with list items and page navigation.",
+        "projectURL": "travel_app/travel_app_1-1.zip",
+        "category": "Tutorial"
+    },
+    {
+        "iconURL": "mapbox/mapbox_key.png",
+        "title": "Mapbox app (Access key needed)",
+        "desc": "A simple map app using Mapbox. Note: Mapbox Access Token needed.",
+        "projectURL": "mapbox/mapbox-app-1.zip",
+        "category": "Tutorial"
+    },
+    {
+        "iconURL": "suatch/suatch_1-1.png",
+        "title": "Color swatch app from Google Sheet",
+        "desc": "A color swatch app using Google Sheet as a simple backend.",
+        "projectURL": "suatch/suatch_1-1.zip",
+        "category": "Tutorial"
+    }
+]
