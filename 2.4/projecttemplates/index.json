@@ -56,5 +56,12 @@
         "desc": "A color swatch app using Google Sheet as a simple backend.",
         "projectURL": "suatch/suatch_1-1.zip",
         "category": "Tutorial"
+    },
+    {
+        "iconURL": "qr-scanner-template/qr-scanner-thumbnail.png",
+        "title": "QR Code Scanner",
+        "desc": "A simple QR Code Scanner for camera and static images.",
+        "projectURL": "qr-scanner-template/qr-code-template-1-0.zip",
+        "category": "Tutorial"
     }
 ]
