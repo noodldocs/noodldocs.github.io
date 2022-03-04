@@ -9,12 +9,13 @@
 -   [Camera QR Scanner](modules/qr-scanner/nodes/camera-qr-scanner/)
 -   [Image QR Scanner](modules/qr-scanner/nodes/image-qr-scanner/)
     <br/>
-
+<!--
 -   **Guides**
 -   [Guide 1](modules/mapbox/guides/setting-up/)
 -   [Guide 2](modules/mapbox/guides/interacting/)
 
     <br/>
+-->
 
 
 -   &nbsp;
