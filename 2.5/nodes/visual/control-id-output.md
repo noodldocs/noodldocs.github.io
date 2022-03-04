@@ -1,0 +1,2 @@
+**Control Id**  
+This is an identifier of the control that can be used to connect to the **For**  property of the **Label** control. Labels are important for accessibility and by connecting the associated control with a label you will help screen readers and other accessibility tools.
