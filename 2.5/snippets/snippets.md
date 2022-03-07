@@ -73,4 +73,8 @@ Remember, if you have questions that aren't covered here, you can always join th
         <td><img src="snippets/image-from-video/thumbnail.png"></img></td>
         <td><a href="#/snippets/image-from-video/image-from-video.md">Image from Video Stream</a><br>Capture and display images from a video stream in Noodl</td>
     </tr>
+    <tr>
+        <td><img src="snippets/carousel-scroll/carousel-1.png"></img></td>
+        <td><a href="#/snippets/carousel-scroll/">Carousel Scroll</a><br>A horizontal Carousel Scroller</td>
+    </tr>
 </table>
