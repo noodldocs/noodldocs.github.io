@@ -21,7 +21,7 @@ Visible when _Template Type_ is set to _Dynamic_ or after chosing a _Component_ 
 Only visible when _Template Type_ is set to _Explicit_. Choose a component from your project that will be used as template to dynamically create component instances for each object in the Items array.
 
 **Items**  
-An array of objects that will ne used to dynamically create components.
+An array of objects that will be used to dynamically create components.
 
 **Refresh**  
 A signal that will trigger a remove of all created components and recreate them.
