@@ -10,7 +10,7 @@
         "iconURL": "tab_navigation/tabNavigation.png",
         "title": "Tab Navigation example",
         "desc": "A simple project containing a tab menu with navigation.",
-        "projectURL": "tab_navigation/tab_navigation_example_1.zip",
+        "projectURL": "tab_navigation/tab_navigation_example_1-1.zip",
         "category": "Basic"
     },
     {
@@ -19,6 +19,15 @@
         "desc": "A simple project containing a menu navigation.",
         "projectURL": "navigation_template/navigation_example_1-2.zip",
         "category": "Basic"
+    },
+    {
+        "iconURL": "signup_template/signup_thumbnail.png",
+        "title": "Sign Up and Log In template",
+        "desc": "A project with a full sign up and log in flow.",
+        "projectURL": "signup_template/signuptemplate-1-1.zip",
+        "category": "Basic",
+        "useCloudServices": true,
+        "cloudServicesTemplateURL": "signup_template/signup-app-cf.json"
     },
     {
         "iconURL": "tasklist_app/task_list_thumbnail.png",
