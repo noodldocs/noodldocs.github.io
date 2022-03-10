@@ -29,6 +29,8 @@ The **Repeater** needs two things to work.
 
 We will start with the **Array**. In this case we will use the **Static Array** might as well be some other node that outputs an **Array** for example a [Query Records](/nodes/data/cloud-data/query-records/) node that queries records from a database. There is a specific guide for working with **Query Records** [here](/guides/working-with-data/cloud-data/query-records/).
 
+## Providing Items
+
 So create a **Static Array** node. Change its type to ``JSON`` and paste in the following data.
 
 ```json
@@ -47,8 +49,37 @@ So create a **Static Array** node. Change its type to ``JSON`` and paste in the 
 
 </div>
 
+Connect the **Items** output of the **Static Array** to the **Items** input of the **Repeater** node.
+
 <div class="ndl-image-with-background l">
 
 ![](./repeater-2.png)
+
+</div>
+
+Now we have items flowing in to the repeater.
+
+## Create a List Item Template
+Next step is to create a component that can serve as a template for the **Repeater** so it can create one instance of it per list item.
+
+Create a new Visual Component. Call it "Player Item".
+
+<div class="ndl-image-with-background">
+
+![](./list-item-1.png)
+
+</div>
+
+<div class="ndl-image-with-background">
+
+![](./list-item-2.png)
+
+</div>
+
+In the new component we will add in three [Text](/nodes/ui-elements/text/) nodes that will present the information about each player. Make sure to change the layout of the root node to ``Horizontal`` and add in the three **Text** nodes. Call the **Text** nodes, ``name``, ``age``, ``team`` so we can keep track of them. Note that you can use the Canvas view to get a first view of how your list item will look, even before using it in your **Repeater**.
+
+<div class="ndl-image-with-background">
+
+![](./list-item-3.png)
 
 </div>
