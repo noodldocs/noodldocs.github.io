@@ -1,62 +1,24 @@
-# Setting up the Mapbox Module
+# Scanning for QR Codes in a camera feed
+This example enables you to scan a camera feed for Quick Response (QR) Codes and fetch the resulting data in the QR Code. To scan for QR Codes via uploaded images, see the documentation on the [Image QR Scanner](modules/qr-scanner/guides/image-upload/). 
 
-## What you will learn in this guide
-This guide will show you how to include the Mapbox module in a project and set up an Mapbox API key to use for your application.
+The Camera QR Scanner Node works in conjunction with the **Video Node**, which displays the camera feed that will be scanned for QR Codes. In the image below you can see how such a node tree might look.
 
-## Overview
-We will go though the following steps:
-* Install the Mapbox Module in a Noodl Project.
-* Create an Access Token on the Mapbox account
-* Create a minimal Mapbox App in Noodl
+## A simple example setup
+In the example below, we use a [Video](nodes/ui-elements/video/) node to display the camera feed of the Camera QR Scanner. We start this feed with the <span class="ndl-signal">Did Mount</span> signal on the top parent **Group**. If a QR Code has been successfully recognized in the camera feed the <span class="ndl-data">Scan Result</span> is returned to a [String](nodes/data/string/) node that then goes to a [Text Node](nodes/ui-elements/text/) where the data contained in the QR Code will be displayed. 
 
-
-## Install the Mapbox Module
-The most easy way to get started with the Mapbox Module is to use the "Mapbox" template when creating a new project in Noodl. In that template, the Mapbox module is already included. Note that the template will also need you Mapbox Access Token.
-
-However, if you have an existing project, or want to start from a different template, it's easy to get started as well. Just follow these instructions.
-
-When in the project, open the "Module" tab to the left. Find the "Mapbox" module and click "Add".
-
-<div class="ndl-image-with-background s">
-
-![](module-1.png)
-
+<div class="ndl-image-with-background l">
+    <img src="modules/qr-scanner/guides/camera-feed/qr-camera-feed.png" class="ndl-image large"></img>
+<button class="ndl-import-button" onClick='importIntoNoodl("modules/qr-scanner/guides/camera-feed/qr-camera-feed.zip",{name:"Camera QR Scanner",thumb:"modules/qr-scanner/qr_noodlnet.png"})'></button>
 </div>
 
-After the module is imported, you should now be able to find the [Mapbox Map](/modules/mapbox/mapbox-map.md) node in the node picker. Right click in the node editor area to bring up the node picker. Look under "External libraries" to find the **Mapbox Map** node.
+It is also possible to connect the <span class="ndl-data">Scan Result</span> directly to a **Text** node, but by doing it the way above we ensure that the data in the **Text** node does not disappear after the QR Code is out of view again.
 
-<div class="ndl-image-with-background s">
+## Flipping the camera
+Also displayed in the example above is the possibility to flip the camera via the <span class="ndl-data">Front Facing</span> boolean of the **Camera QR Scanner** node. On mobile devices that have both front- and back-facing cameras these are the cameras you can switch between — in this example this is achieved via a [Switch](nodes/logic/switch/) node that is toggled with a [Button Node](nodes/ui-elements/button/). If you are working on a desktop device via e.g. a webcam, this function might only flip the camera feed itself since there are rarely both front- and back-facing cameras on such devices. 
 
-![](nodepicker-1.png)
+## Displaying the camera feed
+Since we are using a **Video** node to display the camera feed, you might want to make adjustments to how the feed is being displayed. Typically you would want to use the display option _Cover_ in the **Video** node’s properties. You can read more about the **Video** node and its different kinds of properties [here](nodes/ui-elements/video/). Likewise it might be a good idea to set a maximum width and height for the video feed itself, either directly in the node itself or via a parent **Group**.
 
-</div>
-
-Add the node. Then put it as a child to your main App group. As you will see, you will immedieatly get a warning: _"No access token. Please specify one in the Project Settings and reload"_. 
-
-<div class="ndl-image-with-background">
-
-![](no-token.png)
-
-</div>
-
-So to use the Mapbox Module you need an access token from Mapbox. You can read more about Access tokens [here](https://docs.mapbox.com/help/getting-started/access-tokens/) and also follow instructions on how to create one. Among other things you will have to set up an account on Mapbox unless you already have one.
-
-## Entering the Mapbox Access Token
-
-Once you got the token (which will look like a long password) you open up the "Project Settings" panel by clicking the cogwheel in the main panel to the left. Copy/Paste the token into the field called "Mapbox Access Token"
-
-<div class="ndl-image-with-background">
-
-![](token-1.png)
-
-</div>
-
-Once you've added in the token, reload the viewer, and you should now have a Mapbox map showing in your App, something like below.
-
-<div class="ndl-image-with-background">
-
-![](screen-1.png)
-
-</div>
-
-You can play a little with the map. Pan and zoom. The button in the top right corner will show your current position and center the map around it, _however for privacy reasons this only works once your app is deployed on a https-url, so it will not work in the viewer_. If you want to try it out quickly you can make a Sandbox Deployment using [this](/guides/deploy-noodl-apps/deploy-noodl-dot-app.md) guide, since a Sandbox deployment will have an url `https://<my_url>.noodl.app`.
+## No camera stream in viewer? HTTP vs. HTTPS
+For security reasons, the camera feed can generally only be accessed through a secure connection, i.e. an URL beginning with <code>https://</code>, and not <code>http://</code>. This means that on some platforms (depending on OS and browser) the camera feed of the **Camera QR Scanner** will not work inside of the Noodl viewer. Furthermore, connecting to http://localhost:8574/ might have the same issue. However, on some platforms localhost is exempted from the rule and the camera works without problems in the viewer.
+If you run into this problem you will have to deploy to a secure server via <code>https://</code>. The easiest way to do that is to use the [Noodl Sandbox Deploy](guides/deploy-noodl-apps/deploy-noodl-dot-app) which uses <code>https://</code> protocols.

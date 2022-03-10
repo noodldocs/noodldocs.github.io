@@ -1,4 +1,3 @@
-<##head##>
 # Image QR Scanner
 
 The **Image QR Scanner** node is used to scane an image for a QR code. It's typically used in conjunction with the [Open File Picker](/nodes/utilities/open-file-picker/) node, to allow the user to upload a file.
@@ -9,9 +8,7 @@ The **Image QR Scanner** node is used to scane an image for a QR code. It's typi
 
 </div>
 
-When a QR code has been successfully identifyed, the node will send a **Scan Successful** event and the decoded string, otherwise **Scan Failed**.
-
-<##head##>
+When a QR code has been successfully identified, the node will send a <span class="ndl-signal">Scan Successful</span> event and the decoded string, otherwise <span class="ndl-signal">Scan Failed</span>.
 
 ## Inputs
 

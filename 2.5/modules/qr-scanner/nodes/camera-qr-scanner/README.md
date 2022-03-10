@@ -1,4 +1,3 @@
-<##head##>
 # Camera QR Scanner
 
 The **Camera QR Scanner** node is used to open the camera view finder and scan for QR codes. It uses a [Video](/nodes/ui-elements/video/) node to display the camera stream.
@@ -8,10 +7,8 @@ The **Camera QR Scanner** node is used to open the camera view finder and scan f
 ![](camera-qr-scanner.png)
 
 </div>
-
-When a QR code has been successfully identifyed, the node will send an event and the decoded string. The decoding happens in real time, meaning if the QR code is not visible anymore the node will send an event to indicate that the scanning failed.
-
-<##head##>
+When a QR code has been successfully identified, the node will send a <span class="ndl-signal">Scan Successful</span> event and the decoded string, otherwise <span class="ndl-signal">Scan Failed</span>.
+In this node, the decoding happens in real time, meaning if the QR code is not visible anymore the node will send an event to indicate that the scanning failed.
 
 ## Inputs
 
