@@ -48,6 +48,11 @@
 * **Guides**
 - [Importing Projects](guides/importing/)
 - [Layout](guides/layouts.md)
+- [Lists](guides/lists/)
+  - [List Basics](guides/lists/list-basics/)
+
+<!--  - [List Selection Logic](guides/lists/selection-logic/)
+  - [Dynamic List Items](guides/lists/dynamic-list-items/) -->
 - [UI states and variants](guides/states-and-variants/)
   - [Style Variants](guides/states-and-variants/variants/)
   - [Visual States](guides/states-and-variants/visual-states/)
