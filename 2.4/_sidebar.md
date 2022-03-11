@@ -60,7 +60,7 @@
 - <span class="hoverable">Working With Local Data</span>
   - [Using Variables](guides/working-with-data/local-data/using-variables/)
   - [Using Objects](guides/working-with-data/local-data/using-objects/)
-- <span class="hoverable">Working With Cloud Data</span>
+- [Working With Cloud Data](guides/working-with-data/cloud-data/)
   - [Creating a Backend](guides/working-with-data/cloud-data/creating-backend/)
   - [Creating a Class](guides/working-with-data/cloud-data/creating-class/)
   - [Creating new database entries](guides/working-with-data/cloud-data/creating-records/)
