@@ -2,7 +2,8 @@
 <div data-template="popup"> 
     <video src="01_intro.mp4"></video>
     <h2>Learn how to create a list from data</h2>
-    <p>This lesson will guide you through the steps to create a list of visual components in Noodl that's based on a data set.</p>
+    <p>This lesson will guide you through the steps to create a list in Noodl that's based on a data set.</p>
+    <p>You'll learn some important concepts along the way, including how to create reusable components and work with data.</p>
     <p>Click "next" to get started!</p>
 </div>
 
@@ -120,14 +121,14 @@
 <div
     data-conditions='[
         {
-            "path":"/List item:#List item", 
+            "path":"/List item:#Image layout", 
             "exists":true
         }
     ]'
 >
-    <div data-template="item" style="width: 330px">
+    <div data-template="item" style="width: 490px">
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Copy (Cmd/Ctrl + C) the group called <i>List item</i> in the App component, and paste it into the newly created component.</h3>
+        <h3>Copy (Cmd/Ctrl + C) the group called <i>Image layout</i> in the App component, and paste it into the newly created component.</h3>
     </div>
     <div data-template="popup">
         <video src="IT_04_remove-text.mp4"></video>
@@ -141,14 +142,14 @@
 <div
     data-conditions='[
         {
-            "path":"/App:%Group:#List item", 
+            "path":"/App:%Group:#Image layout", 
             "exists":false
         }
     ]'
 >
-    <div data-template="item" style="width: 300px">
+    <div data-template="item" style="width: 410px">
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Go back to the App component and delete the Group node we just copied (Image layout).</h3>
+        <h3>Go back to the App component and delete the Group node we just copied (the one named <i>Image layout</i>).</h3>
     </div>
     <div data-template="popup">
         <video src="IT_04_remove-text.mp4"></video>
@@ -167,7 +168,7 @@
         }
     ]'
 >
-    <div data-template="item" style="width: 300px">
+    <div data-template="item" style="width: 350px">
         <header>Task<span class="lesson-checkmark"></span></header>
         <h3>Insert the new component into the visual hierarchy in the App component.</h3>
     </div>
@@ -311,9 +312,9 @@
         }
     ]'
 >
-    <div data-template="item" style="width: 250px">
+    <div data-template="item" style="width: 300px">
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Create an Object node at set it to get its id from the Repeater</h3>
+        <h3>Create an Object node and the "Get Id from" property to "From repeater"</h3>
     </div>
     <div data-template="popup">
         <video src="IT_04_remove-text.mp4"></video>
