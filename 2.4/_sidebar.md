@@ -72,7 +72,7 @@
 - <span class="hoverable">Building Business Logic in Noodl</span>
   - [Overview](guides/business-logic/overview/)
   - [Using Zapier with Noodl](guides/business-logic/zapier/)
-- <span class="hoverable">Pages and navigation</span>
+- [Navigation](guides/navigation/)
   - [Basic Navigation](guides/navigation/web-navigation/basic-navigation/)
   - [Multi Level Navigation](guides/navigation/web-navigation/multi-level-navigation/)
   - [Encoding Parameters In URLs](guides/navigation/web-navigation/encoding-params-in-url/)

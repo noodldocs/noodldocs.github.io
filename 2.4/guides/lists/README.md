@@ -1,5 +1,13 @@
 # List Overview
-Lists in Noodl are generally created throúgh the [Repeater](/nodes/ui-elements/repeater/) node in combination with components that becomes list items. It's an incredibly flexible framework that can create almost all lists you can imagine.
-An example of a more basic list can be find in the [Task List App](tutorials/tasklist-app.md). A more advanced example is the [Carousel scroll](/snippets/carousel-scroll).
+[filename](./nationalparks.mp4 ':include width=100% height=300px autoplay muted loop')
 
-To learn more about how to create lists in Noodl you can follow the guides below.
+[filename](./carousel.mp4 ':include width=100% height=300px autoplay muted loop')
+
+Lists in Noodl are generally created throúgh the **Repeater** node in combination with components that becomes list items. It's an incredibly flexible framework that can create almost all lists you can imagine.
+
+### [Start learning about Lists in Noodl](guides/lists/list-basics/)
+
+
+
+
+
