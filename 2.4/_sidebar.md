@@ -46,10 +46,15 @@
 <br/>
 
 * **Guides**
+- [Guides Overview](guides/)
 - [Importing Projects](guides/importing/)
 - [Layout](guides/layouts.md)
 - [Lists](guides/lists/)
   - [List Basics](guides/lists/list-basics/)
+- [Navigation](guides/navigation/)
+  - [Basic Navigation](guides/navigation/web-navigation/basic-navigation/)
+  - [Multi Level Navigation](guides/navigation/web-navigation/multi-level-navigation/)
+  - [Encoding Parameters In URLs](guides/navigation/web-navigation/encoding-params-in-url/)
 
 <!--  - [List Selection Logic](guides/lists/selection-logic/)
   - [Dynamic List Items](guides/lists/dynamic-list-items/) -->
@@ -69,13 +74,8 @@
   - [Filtering Database Queries](guides/working-with-data/cloud-data/query-filters/)
   - [Record Relations](guides/working-with-data/cloud-data/relations/)
   - [Access Control](guides/working-with-data/cloud-data/access-control/)
-- <span class="hoverable">Building Business Logic in Noodl</span>
-  - [Overview](guides/business-logic/overview/)
+- [Building Business Logic in Noodl](guides/business-logic/overview/)
   - [Using Zapier with Noodl](guides/business-logic/zapier/)
-- [Navigation](guides/navigation/)
-  - [Basic Navigation](guides/navigation/web-navigation/basic-navigation/)
-  - [Multi Level Navigation](guides/navigation/web-navigation/multi-level-navigation/)
-  - [Encoding Parameters In URLs](guides/navigation/web-navigation/encoding-params-in-url/)
 - <span class="hoverable">Deploying and hosting Noodl apps</span>
   - [Deploying an App on `*.noodl.app`](guides/deploy-noodl-apps/deploy-noodl-dot-app.md)
   - [Using an External Backend](guides/deploy-noodl-apps/using-external-backend.md)
