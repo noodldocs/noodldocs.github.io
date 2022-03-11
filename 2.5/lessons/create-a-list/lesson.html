@@ -1,7 +1,8 @@
 <!--Intro popup -->
 <div data-template="popup"> 
-    <h2>Learn how to create a list</h2>
-    <p>This tutorial will guide you through the steps to create a list in Noodl that's based on a data set.</p>
+    <video src="01_intro.mp4"></video>
+    <h2>Learn how to create a list from data</h2>
+    <p>This tutorial will guide you through the steps to create a list of visual components in Noodl that's based on a data set.</p>
     <p>Click "next" to get started!</p>
 </div>
 
@@ -16,9 +17,9 @@
     <div data-template="popup">
         <h2>Key elements of a list</h2>
         <p>A list is build out of three ingredients:</p>
-        <p>1. A list item that tells Noodl how an item should look.</p>
-        <p>2. Data. A list that describes that data we want to populate our list items with</p>
-        <p>3. A repeater that creates one list item component per data record</p>
+        <p>1. A <b>dataset</b> with data to populate our list with items</p>
+        <p>2. A <b>visual component</b> that controls how the list item.</p>
+        <p>3. A <b>repeater node</b> that creates one list item component per data record</p>
         <p>Let's start by looking at the data</p>
     </div>
 </div>
@@ -33,9 +34,368 @@
     </div>
     <div data-template="popup">
         <video src="IT_04_remove-text.mp4"></video>
-        <p>Try dragging the text node away from the hierarchy. As you can see, the text disappears from the preview.</p>
+        <p>There is many ways that we can get data sets into our project. A very easy way is to use the <B>Static Array node.</B></p>
+        <p>This node acts like a text file and supports two very common data formats being JSON and CSV. We have already inserted a small dataset following the <b>JSON format.</b> 
+        <p>This dataset contains images from Unsplash.com along with the names of the artists behind the images.</p>
     </div>
 </div>
+
+<!-- # -->
+
+<!-- Ask user to look at the static data -->
+<div>
+    <div data-template="item">
+        <header>&nbsp;</header>
+        <h2>Components</h2>
+    </div>
+    <div data-template="popup">
+        <video src="IT_04_remove-text.mp4"></video>
+        <p>Components is a great way to break your project into smaller building blocks. A component in Noodl is a set of nodes that is represented as a new node.</p>
+        <p>A main benefit of using components is that they become reusable and you can place multiple instances of that component in a project.</p>
+        <p>In the sidebar you can see all the components in the project, and from here you can also create new components.</p>
+        <p>Noodl have three components types being Visual, Logic, and Page Components. In this lesson we will be using Visual Components</p>
+    </div>
+</div>
+
+<!-- # -->
+
+
+<!-- Ask user to look at the static data -->
+<div>
+    <div data-template="item">
+        <header>&nbsp;</header>
+        <h2>Visual components</h2>
+    </div>
+    <div data-template="popup">
+        <video src="IT_04_remove-text.mp4"></video>
+        <p>As you can see in the project, we already have a few visual nodes that makes up a simple layout of an image and a text node with artist's name.</p>
+        <p>We will be creating a visual component from this simple layout, so we can repeat that component for each record in our dataset. </p>
+        <p>To create a new visual component, click the "+" icon in the component panel.</p>
+    </div>
+</div>
+
+<!-- # -->
+<!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
+<div
+    data-conditions='[
+        {
+            "path":"/List item", 
+            "exists":true
+        }
+    ]'
+>
+    <div data-template="item" style="width: 250px">
+        <header>Task<span class="lesson-checkmark"></span></header>
+        <h3>Create a new visual component called <i>List item</i></h3>
+    </div>
+    <div data-template="popup">
+        <video src="IT_04_remove-text.mp4"></video>
+        <p>Create a new visual component by click the "+" icon in the component panel and name it <i>List item</i>.</p>
+    </div>
+</div>
+
+<!-- # -->
+<!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
+<div
+    data-conditions='[
+        {
+            "path":"/List item:%Group", 
+            "exists":false
+        }
+    ]'
+>
+    <div data-template="item" style="width: 250px">
+        <header>Task<span class="lesson-checkmark"></span></header>
+        <h3>Delete the existing Group node in the component.</i></h3>
+    </div>
+    <div data-template="popup">
+        <video src="IT_04_remove-text.mp4"></video>
+    </div>
+</div>
+
+
+
+<!-- # -->
+<!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
+<div
+    data-conditions='[
+        {
+            "path":"/List item:#List item", 
+            "exists":true
+        }
+    ]'
+>
+    <div data-template="item" style="width: 300px">
+        <header>Task<span class="lesson-checkmark"></span></header>
+        <h3>Copy (cmd/ctrl + C) the group called <i>List item</i> in the App component, and paste into the newly created component.</h3>
+    </div>
+    <div data-template="popup">
+        <video src="IT_04_remove-text.mp4"></video>
+        <p>copy and paste the nodes that makes up the image layout and insert them into our newly created component.</p>
+    </div>
+</div>
+
+
+<!-- # -->
+<!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
+<div
+    data-conditions='[
+        {
+            "path":"/App:%Group:#List item", 
+            "exists":false
+        }
+    ]'
+>
+    <div data-template="item" style="width: 300px">
+        <header>Task<span class="lesson-checkmark"></span></header>
+        <h3>Go back to the App component and delete the Group node we just coppied.</h3>
+    </div>
+    <div data-template="popup">
+        <video src="IT_04_remove-text.mp4"></video>
+        <p></p>
+    </div>
+</div>
+
+
+<!-- # -->
+<!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
+<div
+    data-conditions='[
+        {
+            "path":"/App:%Group:#List item", 
+            "exists":true
+        }
+    ]'
+>
+    <div data-template="item" style="width: 300px">
+        <header>Task<span class="lesson-checkmark"></span></header>
+        <h3>Insert the new component into the visual hirachy in the App component.</h3>
+    </div>
+    <div data-template="popup">
+        <video src="IT_04_remove-text.mp4"></video>
+        <p></p>
+    </div>
+</div>
+
+<!-- # -->
+
+<!-- Ask user to look at the static data -->
+<div>
+    <div data-template="item">
+        <header>&nbsp;</header>
+        <h2>Repeater node</h2>
+    </div>
+    <div data-template="popup">
+        <video src="IT_04_remove-text.mp4"></video>
+        <p>With our new List item component we can manually insert as many instances as we want into our layout.</p>
+        <p>But even better is that we can use our dataset from the Static Array node to generate the List item component for each record in the data.</p>
+        <p>To do that we want to use the Repeater node. This visual node is placed in the visual hirachy and from the property panel we can set what component the repeater should repeat.</p>
+        <p>Now we just need to connect the data from the Static Array node to the Repeater's items input.</p>
+    </div>
+</div>
+
+
+<!-- # -->
+<!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
+<div
+    data-conditions='[
+        {
+            "path":"/App:%Group:%For Each", 
+            "exists":true
+        }
+    ]'
+>
+    <div data-template="item" style="width: 350px">
+        <header>Task<span class="lesson-checkmark"></span></header>
+        <h3>Place a repeater node at the bottom of the visual hirachy in the App component.</h3>
+    </div>
+    <div data-template="popup">
+        <video src="IT_04_remove-text.mp4"></video>
+        <p></p>
+    </div>
+</div>
+
+
+
+
+<!-- # -->
+<!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
+<div
+    data-conditions='[
+        {
+            "path":"/App:%Group:%For Each", 
+            "paramseq":{
+                "template": "/List item"
+            }
+        }
+    ]'
+>
+    <div data-template="item" style="width: 350px">
+        <header>Task<span class="lesson-checkmark"></span></header>
+        <h3>Set the repeater node to use the List item component</h3>
+    </div>
+    <div data-template="popup">
+        <video src="IT_04_remove-text.mp4"></video>
+        <p></p>
+    </div>
+</div>
+
+
+<!-- # -->
+<!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
+<div
+    data-conditions='[
+        {
+            "from": "/App:%Static Data",
+            "to": "/App:%Group:%For Each",
+            "hasconnection": "items,items"
+        }
+    ]'
+>
+    <div data-template="item" style="width: 400px">
+        <header>Task<span class="lesson-checkmark"></span></header>
+        <h3>Connect the <i>Items</i> output from the Static array node to the <i>Items</i> input on the repeater node.</h3>
+    </div>
+    <div data-template="popup">
+        <video src="IT_04_remove-text.mp4"></video>
+        <p></p>
+    </div>
+</div>
+
+
+<!-- # -->
+
+<!-- Ask user to look at the static data -->
+<div>
+    <div data-template="item">
+        <header>&nbsp;</header>
+        <h2>Connecting data</h2>
+    </div>
+    <div data-template="popup">
+        <video src="IT_04_remove-text.mp4"></video>
+        <p>As you might notice, we got 5 images now (one for each image + author pair in the dataset.)</p>
+        <p>However, right now the repeater node is just repeating our List item component 5 times.</p>
+        <p>Our next step is to connect the data values in the dataset to the visual nodes in our List item component. And to do that we will be using an <b>Object node</b>.</p>
+    </div>
+</div>
+
+
+<!-- # -->
+
+<!-- Ask user to look at the static data -->
+<div>
+    <div data-template="item">
+        <header>&nbsp;</header>
+        <h2>The Object node</h2>
+    </div>
+    <div data-template="popup">
+        <video src="IT_04_remove-text.mp4"></video>
+        <p>The Object node lets us access data from objects. The Static array node automatically creates data objects, each with an unique id, for each record in the data set</p>
+        <p>When we use an Object node inside of a component generated by a Repeater node, the Repeater can provide us with the Id for each of the data object. This can be set from the property panel.</p>
+        <p>Once we have set the Object node to get its id from the Repeater, we can hover over the object node and it will show it's content.</p>
+    </div>
+</div>
+
+
+<!-- # -->
+<!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
+<div
+    data-conditions='[
+        {
+            "path":"/List item:%Model2", 
+            "paramseq": {
+                "idSource": "foreach"
+            }
+        }
+    ]'
+>
+    <div data-template="item" style="width: 250px">
+        <header>Task<span class="lesson-checkmark"></span></header>
+        <h3>Create an Object node at set it to get its id from the Repeater</h3>
+    </div>
+    <div data-template="popup">
+        <video src="IT_04_remove-text.mp4"></video>
+        <p></p>
+    </div>
+</div>
+
+
+<!-- # -->
+<!-- Ask user to look at the static data -->
+<div>
+    <div data-template="item">
+        <header>&nbsp;</header>
+        <h2>Object properties</h2>
+    </div>
+    <div data-template="popup">
+        <video src="IT_04_remove-text.mp4"></video>
+        <p>When we hover over the object we can see the data properties available. We can make these properties available as outputs on the Object node by clicking the plus icon in the Object's property panel</p>
+        <p>Type in the property name so it's identical to what we have in the dataset. Remember that the names needs to be identical.</p>
+        <p>Now the outputs are available as outputs and we can connect them to other nodes in the component.</p>
+    </div>
+</div>
+
+
+<!-- # -->
+<!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
+<div
+    data-conditions='[
+        {
+            "from": "/List item:%Model2",
+            "to": "/List item:%Group:%Image",
+            "hasconnection": "prop-url,src"
+        }
+    ]'
+>
+    <div data-template="item" style="width: 400px">
+        <header>Task<span class="lesson-checkmark"></span></header>
+        <h3>Connect the url property of the Object node to the Source input on the image node</h3>
+    </div>
+    <div data-template="popup">
+        <video src="IT_04_remove-text.mp4"></video>
+        <p></p>
+    </div>
+</div>
+
+
+
+<!-- # -->
+<!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
+<div
+    data-conditions='[
+        {
+            "from": "/List item:%Model2",
+            "to": "/List item:%Group:%Group:%Text",
+            "hasconnection": "prop-author,text"
+        }
+    ]'
+>
+    <div data-template="item" style="width: 400px">
+        <header>Task<span class="lesson-checkmark"></span></header>
+        <h3>Connect the <i>author</i> property to the <i>text</i> input on the Text node.</h3>
+    </div>
+    <div data-template="popup">
+        <video src="IT_04_remove-text.mp4"></video>
+        <p></p>
+    </div>
+</div>
+
+
+
+<!-- # -->
+<!-- Ask user to look at the static data -->
+<div>
+    <div data-template="item">
+        <header>&nbsp;</header>
+        <h2>Refresh the viewer</h2>
+    </div>
+    <div data-template="popup">
+        <video src="IT_04_remove-text.mp4"></video>
+        <p>Sometimes we need to refresh the preview window in order to see the latest changes. Especially when connecting data to visual elements.</p>
+    </div>
+</div>
+
+
 
 <!-- # -->
 
