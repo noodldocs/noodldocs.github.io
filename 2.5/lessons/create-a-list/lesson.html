@@ -2,7 +2,8 @@
 <div data-template="popup"> 
     <video src="01_intro.mp4"></video>
     <h2>Learn how to create a list from data</h2>
-    <p>This tutorial will guide you through the steps to create a list of visual components in Noodl that's based on a data set.</p>
+    <p>This lesson will guide you through the steps to create a list in Noodl that's based on a data set.</p>
+    <p>You'll learn some important concepts along the way, including how to create reusable components and work with data.</p>
     <p>Click "next" to get started!</p>
 </div>
 
@@ -16,9 +17,9 @@
     </div>
     <div data-template="popup">
         <h2>Key elements of a list</h2>
-        <p>A list is build out of three ingredients:</p>
+        <p>A list is built out of three ingredients:</p>
         <p>1. A <b>dataset</b> with data to populate our list with items</p>
-        <p>2. A <b>visual component</b> that controls how the list item.</p>
+        <p>2. A <b>visual component</b> that controls how the list item looks and behaves.</p>
         <p>3. A <b>repeater node</b> that creates one list item component per data record</p>
         <p>Let's start by looking at the data</p>
     </div>
@@ -34,8 +35,8 @@
     </div>
     <div data-template="popup">
         <video src="IT_04_remove-text.mp4"></video>
-        <p>There is many ways that we can get data sets into our project. A very easy way is to use the <B>Static Array node.</B></p>
-        <p>This node acts like a text file and supports two very common data formats being JSON and CSV. We have already inserted a small dataset following the <b>JSON format.</b> 
+        <p>There are many ways that we can get datasets into our project. An easy way is to use the <B>Static Array node.</B></p>
+        <p>This node acts as a text file and supports two standard data formats, JSON and CSV. The node in this lesson comes with a small dataset following the <b>JSON format.</b> 
         <p>This dataset contains images from Unsplash.com along with the names of the artists behind the images.</p>
     </div>
 </div>
@@ -50,10 +51,10 @@
     </div>
     <div data-template="popup">
         <video src="IT_04_remove-text.mp4"></video>
-        <p>Components is a great way to break your project into smaller building blocks. A component in Noodl is a set of nodes that is represented as a new node.</p>
-        <p>A main benefit of using components is that they become reusable and you can place multiple instances of that component in a project.</p>
-        <p>In the sidebar you can see all the components in the project, and from here you can also create new components.</p>
-        <p>Noodl have three components types being Visual, Logic, and Page Components. In this lesson we will be using Visual Components</p>
+        <p>Components are used to break your project into smaller building blocks. A component in Noodl is a set of nodes that is represented as a new node.</p>
+        <p>The main benefit of using components is that they are reusable. You can place multiple instances of that component in a project.</p>
+        <p>In the sidebar, you get an overview of all the components in the project, and from here you can also create new components.</p>
+        <p>Noodl has three components types: Visual, Logic, and Page Components. We will be using visual components in this lesson</p>
     </div>
 </div>
 
@@ -68,9 +69,9 @@
     </div>
     <div data-template="popup">
         <video src="IT_04_remove-text.mp4"></video>
-        <p>As you can see in the project, we already have a few visual nodes that makes up a simple layout of an image and a text node with artist's name.</p>
-        <p>We will be creating a visual component from this simple layout, so we can repeat that component for each record in our dataset. </p>
-        <p>To create a new visual component, click the "+" icon in the component panel.</p>
+        <p>A few visual nodes have already been added to this lesson. They define a layout of an image and a text node with the artist's name.</p>
+        <p>We want to use this layout as a list item, and repeat it for each record in our dataset. Let's start with extracting the layout into a new visual component.</p>
+        <p>Creating a visual component is done by clicking the "+" icon in the component section of the sidebar. Let's do that in the next step.</p>
     </div>
 </div>
 
@@ -120,18 +121,18 @@
 <div
     data-conditions='[
         {
-            "path":"/List item:#List item", 
+            "path":"/List item:#Image layout", 
             "exists":true
         }
     ]'
 >
-    <div data-template="item" style="width: 300px">
+    <div data-template="item" style="width: 490px">
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Copy (cmd/ctrl + C) the group called <i>List item</i> in the App component, and paste into the newly created component.</h3>
+        <h3>Copy (Cmd/Ctrl + C) the group called <i>Image layout</i> in the App component, and paste it into the newly created component.</h3>
     </div>
     <div data-template="popup">
         <video src="IT_04_remove-text.mp4"></video>
-        <p>copy and paste the nodes that makes up the image layout and insert them into our newly created component.</p>
+        <p>Copy and paste the nodes that makes up the image layout and insert them into our newly created component.</p>
     </div>
 </div>
 
@@ -141,14 +142,14 @@
 <div
     data-conditions='[
         {
-            "path":"/App:%Group:#List item", 
+            "path":"/App:%Group:#Image layout", 
             "exists":false
         }
     ]'
 >
-    <div data-template="item" style="width: 300px">
+    <div data-template="item" style="width: 410px">
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Go back to the App component and delete the Group node we just coppied.</h3>
+        <h3>Go back to the App component and delete the Group node we just copied (the one named <i>Image layout</i>).</h3>
     </div>
     <div data-template="popup">
         <video src="IT_04_remove-text.mp4"></video>
@@ -167,9 +168,9 @@
         }
     ]'
 >
-    <div data-template="item" style="width: 300px">
+    <div data-template="item" style="width: 350px">
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Insert the new component into the visual hirachy in the App component.</h3>
+        <h3>Insert the new component into the visual hierarchy in the App component.</h3>
     </div>
     <div data-template="popup">
         <video src="IT_04_remove-text.mp4"></video>
@@ -188,9 +189,10 @@
     <div data-template="popup">
         <video src="IT_04_remove-text.mp4"></video>
         <p>With our new List item component we can manually insert as many instances as we want into our layout.</p>
-        <p>But even better is that we can use our dataset from the Static Array node to generate the List item component for each record in the data.</p>
-        <p>To do that we want to use the Repeater node. This visual node is placed in the visual hirachy and from the property panel we can set what component the repeater should repeat.</p>
-        <p>Now we just need to connect the data from the Static Array node to the Repeater's items input.</p>
+        <p>But even better, we can use our dataset from the Static Array node to generate instances from each record in the data.</p>
+        <p>This is handled by the Repeater node. A Repeater is placed in the visual hirachy, and we can set what component the repeater should repeat from the property panel.</p>
+        <p>Then we'll connect the data from the Static Array node to the Repeater's items input.</p>
+        <p>Let's continue to the next step to create a Repeater.</p>
     </div>
 </div>
 
@@ -207,7 +209,7 @@
 >
     <div data-template="item" style="width: 350px">
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Place a repeater node at the bottom of the visual hirachy in the App component.</h3>
+        <h3>Place a repeater at the bottom of the visual hirachy in the App component.</h3>
     </div>
     <div data-template="popup">
         <video src="IT_04_remove-text.mp4"></video>
@@ -273,9 +275,9 @@
     </div>
     <div data-template="popup">
         <video src="IT_04_remove-text.mp4"></video>
-        <p>As you might notice, we got 5 images now (one for each image + author pair in the dataset.)</p>
-        <p>However, right now the repeater node is just repeating our List item component 5 times.</p>
-        <p>Our next step is to connect the data values in the dataset to the visual nodes in our List item component. And to do that we will be using an <b>Object node</b>.</p>
+        <p>Now we got 5 images! One for each image + author pair in the dataset.</p>
+        <p>However, the repeater node is repeating our List item component with the same image and text in every instance.</p>
+        <p>Our next step is to connect the data values in the dataset to the visual nodes in our List item component. To do that we will be using an <b>Object node</b>.</p>
     </div>
 </div>
 
@@ -290,9 +292,10 @@
     </div>
     <div data-template="popup">
         <video src="IT_04_remove-text.mp4"></video>
-        <p>The Object node lets us access data from objects. The Static array node automatically creates data objects, each with an unique id, for each record in the data set</p>
-        <p>When we use an Object node inside of a component generated by a Repeater node, the Repeater can provide us with the Id for each of the data object. This can be set from the property panel.</p>
-        <p>Once we have set the Object node to get its id from the Repeater, we can hover over the object node and it will show it's content.</p>
+        <p>The Object node lets us access data from objects. The Static array node automatically creates data objects for each record in the dataset. Each object gets a unique identifier.</p>
+        <p>When we use an Object node inside of a component generated by a Repeater node, the Repeater can provide us with the identifier for each of the data objects.</p>
+        <p>Once we have set the Object node to get its Id from the Repeater, we can hover over the object node and it will show its content.</p>
+        <p>We'll be setting this up in the next step.</p>
     </div>
 </div>
 
@@ -309,9 +312,9 @@
         }
     ]'
 >
-    <div data-template="item" style="width: 250px">
+    <div data-template="item" style="width: 300px">
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Create an Object node at set it to get its id from the Repeater</h3>
+        <h3>Create an Object node and the "Get Id from" property to "From repeater"</h3>
     </div>
     <div data-template="popup">
         <video src="IT_04_remove-text.mp4"></video>
@@ -329,8 +332,8 @@
     </div>
     <div data-template="popup">
         <video src="IT_04_remove-text.mp4"></video>
-        <p>When we hover over the object we can see the data properties available. We can make these properties available as outputs on the Object node by clicking the plus icon in the Object's property panel</p>
-        <p>Type in the property name so it's identical to what we have in the dataset. Remember that the names needs to be identical.</p>
+        <p>When we hover over the object we can see the available data properties. We send these properties through outputs on the Object node by clicking the plus icon in the Object's property panel</p>
+        <p>Type in the property name so it's identical to what we have in the dataset. It's case sensitive.</p>
         <p>Now the outputs are available as outputs and we can connect them to other nodes in the component.</p>
     </div>
 </div>
@@ -349,7 +352,7 @@
 >
     <div data-template="item" style="width: 400px">
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Connect the url property of the Object node to the Source input on the image node</h3>
+        <h3>Connect the <i>url</i> property of the Object node to the <i>Source</i> input on the image node</h3>
     </div>
     <div data-template="popup">
         <video src="IT_04_remove-text.mp4"></video>
@@ -365,7 +368,7 @@
     data-conditions='[
         {
             "from": "/List item:%Model2",
-            "to": "/List item:%Group:%Group:%Text",
+            "to": "/List item:%Group:%Text",
             "hasconnection": "prop-author,text"
         }
     ]'
@@ -407,7 +410,7 @@
     <div data-template="popup">
         <img src="tutorial_card.png" style="cursor: pointer;" onclick="window.open('https://www.youtube.com/watch?v=TNnn0Gzj-H4&list=PL2eC2vS4uVoMbujQ5CiNtNuP7s7-UwNn-')">
         <h2>Congratulations!</h2>
-        <p>You've completed this tutorial, we hope you liked it!</p>
+        <p>You've completed this lesson, we hope you liked it!</p>
         <p>To take your Noodl skills to the next level we recommend our video tutorial that shows how to build a to-do app with a real backend.</p>
         <p>Happy Noodling!</p>
         <button style="width: 150px" onclick="window.open('https://www.youtube.com/watch?v=TNnn0Gzj-H4&list=PL2eC2vS4uVoMbujQ5CiNtNuP7s7-UwNn-')">WATCH TUTORIAL</button>
