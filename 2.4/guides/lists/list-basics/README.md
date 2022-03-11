@@ -11,7 +11,7 @@ The guide will walk you through the following steps.
 * Connecting the data to the **List Item**
 * Detecting when the user clicks an item
 
-## The Repeter Node
+## The Repeater Node
 The main node for making lists is the **Repeater** node. The **Repeater** node takes an **Array** as an input (the **Items** property). It then and creates a copy of the provided **List Item** template as a component and connects the specific **Object** (or **Record**) in the **Array** with its respective **List Item**.
 
 The **Array** could for example be coming from an [Array](/nodes/data/array/array/) node, from a database through a [Query Records](/nodes/data/cloud-data/query-records/) or a [Static Array](/nodes/data/array/static-array/).
@@ -24,7 +24,7 @@ Let's get started by starting a new project using the "Hello World" template. Re
 
 </div>
 
-The **Repeater** needs two things to work.
+The **Repeater** needs two things to work:
 1. Some **Array** data that can be represented as _List Items_
 2. A _Template component_ that will be repeated per item in the **Array**
 
@@ -58,10 +58,10 @@ Connect the **Items** output of the **Static Array** to the **Items** input of t
 
 </div>
 
-Now we have items flowing in to the repeater.
+Now we have items flowing into the repeater.
 
 ## Create a List Item Template
-Next step is to create a component that can serve as a template for the **Repeater** so it can create one instance of it per list item.
+Next step is to create a component that can serve as a template for the **Repeater**. One component will be created per item in the **Array** that's feeding the **Repeater**.
 
 Create a new Visual Component. Call it "Player Item".
 
