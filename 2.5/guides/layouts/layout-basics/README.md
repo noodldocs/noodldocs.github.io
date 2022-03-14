@@ -1,20 +1,37 @@
 # Layout
 
+## What you will learn in this guide
+
 This guide will cover how to lay out visual elements. It's an important concept for creating responsive, dynamic interfaces for your apps.
 
 The central node for defining a layout in Noodl is the [Group](nodes/ui-elements/group/) node. This guide will walk through the most important Group properties for defining a layout.
 
-**Group** nodes are arranged in a hierarchy. A **Group** controls the layout of its children and there are a number of properties that can be used to specify how the children of a **Group** node will be laid out.
+## Overview
+
+We will cover the following topics in this guide:
+
+* The Group Node
+* Layout Direction and position
+* Size and Dimensions
+* Alignment
+* Margin and Padding
+* Multi Line Layout
+
+## The Group Node
+
+The **Group** node is the most central node for doing a layout. It's the fundamental way of building visual hierarchies and structures in Noodl.
+
+**Group** nodes are arranged in a hierarchy and can have other nodes as children. It controls the layout of its children and there are a number of properties that can be used to specify how the children of a **Group** node will be laid out. You can copy the various node examples used in this guide by clicking "Copy nodes" and then pasting into a Noodl project.
 
 <div class="ndl-image-with-background">
-    <img src="/guides/layouts/groups.png"/>
+    <img src="guides/layouts/layout-basics/groups.png"/>
      <button class="ndl-copy-nodes-button" onClick='copyJsonToClipboard({"nodes":[{"id":"5a81ad6d-b8eb-16f8-e2b3-3533c0a05462","type":"Group","label":"Group","x":176,"y":140.5,"parameters":{"backgroundColor":"#FFFFFF"},"ports":[],"children":[{"id":"999f7f8b-6678-ed24-5ea9-08b25e1b394e","type":"Group","x":196,"y":186.5,"parameters":{"marginTop":{"value":20,"unit":"px"},"marginLeft":{"value":20,"unit":"px"},"marginRight":{"value":20,"unit":"px"},"marginBottom":{"value":20,"unit":"px"},"paddingTop":{"value":50,"unit":"px"},"paddingLeft":{"value":50,"unit":"px"},"paddingRight":{"value":50,"unit":"px"},"paddingBottom":{"value":50,"unit":"px"},"backgroundColor":"#DBDBDB"},"ports":[],"children":[{"id":"ddde9610-f9a6-03bd-bb46-4a67d56a2180","type":"Group","x":216,"y":232.5,"parameters":{"backgroundColor":"#B5B5B5"},"ports":[],"children":[]}]}]}],"connections":[]})'></button>
 </div>
 
-?> Hovering on a node in Noodl with the mouse cursor will highlight the corresponding visual element in the preview window
+?> Hovering on a node in Noodl with the mouse cursor will highlight the corresponding visual element in the preview window. This is a great way to debug your layout. For example you hover over a node and you cannot see it in the preview window, it's likely that it has a zero size or lies outside the screen.
 
 <div class="ndl-image-with-background">
-    <img src="/guides/layouts/hover.gif"></img>
+    <img src="guides/layouts/layout-basics/hover.gif"></img>
 </div>
 
 ## Layout direction
@@ -22,30 +39,32 @@ The central node for defining a layout in Noodl is the [Group](nodes/ui-elements
 By default the **Group** node will stack its children vertically. You can change the layout direction by editing the **Layout** property:
 
 <div class="ndl-image-with-background">
-    <img src="/guides/layouts/layout-prop.png"></img>
+    <img src="guides/layouts/layout-basics/layout-prop.png"></img>
 </div>
 
 -   `Vertical` Children are stacked vertically.
 -   `Horizontal` Children are stacked horizontally.
--   `None` Children are _not_ stacked.
+-   `None` Children are _not_ stacked. You will have to position them yourselves, for example by using margins, x/y positions or various alginments (see below).
 
 Here's an example you can copy into Noodl. Click the "Copy nodes" button next to the image and press Ctrl+V (Windows) or Cmd+V (macOS) to paste them into Noodl. Make sure you have a project open.
 
 Change the **Layout** of the top level node to see how the direction of the child nodes change.
 
 <div class="ndl-image-with-background">
-    <img src="/guides/layouts/layout-dir.png"></img>
+    <img src="guides/layouts/layout-basics/layout-dir.png"></img>
      <button class="ndl-copy-nodes-button" onClick='copyJsonToClipboard({"nodes":[{"id":"9f88e7d6-959c-7946-f66d-3db6257d522b","type":"Group","label":"Layout node","x":290,"y":395,"parameters":{"sizeMode":"explicit","backgroundColor":"#E6E6E6"},"ports":[],"children":[{"id":"8a0b2c8c-c534-bdcc-102d-2905b48d8885","type":"Group","x":310,"y":456,"parameters":{"marginTop":{"value":5,"unit":"px"},"marginLeft":{"value":5,"unit":"px"},"marginRight":{"value":5,"unit":"px"},"marginBottom":{"value":5,"unit":"px"},"backgroundColor":"#C2C2C2","width":{"value":100,"unit":"px"},"height":{"value":100,"unit":"px"}},"ports":[],"children":[]},{"id":"bcfa83ad-f05f-d7ff-13a4-f82ac19bd664","type":"Group","x":310,"y":502,"parameters":{"marginTop":{"value":5,"unit":"px"},"marginLeft":{"value":5,"unit":"px"},"marginRight":{"value":5,"unit":"px"},"marginBottom":{"value":5,"unit":"px"},"backgroundColor":"#C2C2C2","width":{"value":100,"unit":"px"},"height":{"value":100,"unit":"px"}},"ports":[],"children":[]},{"id":"35c2039f-5f12-3dab-bc94-a7c630aa9698","type":"Group","x":310,"y":548,"parameters":{"marginTop":{"value":5,"unit":"px"},"marginLeft":{"value":5,"unit":"px"},"marginRight":{"value":5,"unit":"px"},"marginBottom":{"value":5,"unit":"px"},"backgroundColor":"#C2C2C2","width":{"value":100,"unit":"px"},"height":{"value":100,"unit":"px"}},"ports":[],"children":[]}]}],"connections":[]})'></button>
 </div>
 
-You control how a layout affects a node by setting its **Position** property:
+## Layout Position
 
--   `In Layout` - This node is part of the parent node's layout. It will be stacked with its siblings depending on the parent node's layout settings.
+As a child of a group you can also control how you will be layouted by setting the **Position** property:
+
+-   `In Layout` - This node is part of the parent node's layout. It will be stacked with its siblings depending on the parent node's layout settings as explained above.
 -   `Absolute` - Removes a node from the flow of a layout. Use margins and alignment to set the position.
 -   `Sticky` - Behaves like `In Layout`, except when the node is about the be scrolled outside the parent. It'll stick to an edge of the parent instead of scrolling away. Which edge can be controlled with the _Alignment_ input.
 
 <div class="ndl-image-with-background">
-    <img src="/guides/layouts/layout-absolute.png"></img>
+    <img src="guides/layouts/layout-basics/layout-absolute.png"></img>
 </div>
 
 ## Dimensions
@@ -53,7 +72,7 @@ You control how a layout affects a node by setting its **Position** property:
 The dimensions section control how the size of a **Group** will be calculated.
 
 <div class="ndl-image-with-background">
-    <img src="/guides/layouts/dims-1.png"></img>
+    <img src="guides/layouts/layout-basics/dims-1.png"></img>
 </div>
 
 A **Group** can also get its dimensions from the size of its children. You use the icons at the top to change between the four modes (from right):
@@ -66,8 +85,8 @@ A **Group** can also get its dimensions from the size of its children. You use t
 You can copy the nodes below to an empty component in Noodl. The result is shown to the right. These nodes each use a different setting for the **Dimensions** icons.
 
 <div class="ndl-image-with-background">
-    <img src="/guides/layouts/content-size-nodes.png" class="ndl-image small"></img>
-     <img src="/guides/layouts/content-size-example.png" class="ndl-image small"></img>
+    <img src="guides/layouts/layout-basics/content-size-nodes.png" class="ndl-image small"></img>
+     <img src="guides/layouts/layout-basics/content-size-example.png" class="ndl-image small"></img>
       <button class="ndl-copy-nodes-button" onClick='copyJsonToClipboard({"nodes":[{"id":"3aad82a0-9636-d391-b31c-06f66be77bdc","type":"Group","x":243,"y":178,"parameters":{"backgroundColor":"#FFFFFF"},"ports":[],"children":[{"id":"61757927-9c6c-3afb-a964-1492a5ff5a90","type":"Group","label":"Content height","x":263,"y":224,"parameters":{"sizeMode":"contentHeight","backgroundColor":"#D6D6D6","marginBottom":{"value":20,"unit":"px"},"width":{"value":100,"unit":"px"}},"ports":[],"children":[{"id":"cefc770e-47c0-ddfd-0caa-b88831ce8e8f","type":"Circle","x":283,"y":285,"parameters":{"fillColor":"#858585","size":50},"ports":[],"children":[]}]},{"id":"ccdbfc6b-8138-cc99-6ffc-aaf6b5c4b56e","type":"Group","label":"Content size","x":263,"y":331,"parameters":{"sizeMode":"contentSize","backgroundColor":"#D6D6D6","marginBottom":{"value":20,"unit":"px"}},"ports":[],"children":[{"id":"cef82662-86c6-43d7-5221-fa47869a5043","type":"Circle","x":283,"y":392,"parameters":{"fillColor":"#858585","size":50},"ports":[],"children":[]}]},{"id":"000843d3-fdf9-7638-67e3-42617b66bf4f","type":"Group","label":"Content width","x":263,"y":438,"parameters":{"sizeMode":"contentWidth","backgroundColor":"#D6D6D6","height":{"value":100,"unit":"px"}},"ports":[],"children":[{"id":"f94a589b-b042-9f9e-1d2f-0599a5fe2f41","type":"Circle","x":283,"y":499,"parameters":{"fillColor":"#858585","size":50},"ports":[],"children":[]}]}]}],"connections":[]})'></button>
 </div>
 
@@ -86,7 +105,7 @@ Enabling _Fixed_ will force a Group to be exactly the size that's specified and 
 
 <div class="ndl-image-with-background">
 
-![](layouts/fixed-height.gif)
+![](fixed-height.gif)
 
 </div>
 
@@ -97,7 +116,7 @@ This can be changed be either enabling `Fixed` or as in this example, enable `Cl
 
 <div class="ndl-image-with-background">
 
-![](layouts/clip.gif)
+![](clip.gif)
 
 </div>
 
@@ -108,20 +127,20 @@ You can use the alignment controls to pin the children to a specific edge, or ho
 A Group can control the alignment of its children using the _Align and justify content_ property.
 
 <div class="ndl-image-with-background l">
-    <img src="guides/layouts/alignment.gif">
+    <img src="guides/layouts/layout-basics/alignment.gif">
       <button class="ndl-copy-nodes-button" onClick='copyJsonToClipboard({"nodes":[{"id":"6bede195-ea0c-d5ca-a315-500079267560","type":"Group","x":198.0,"y":196,"parameters":{"backgroundColor":"#D6D6D6"},"children":[{"id":"b5beb893-c7ae-9467-da03-0032b8221ab6","type":"Circle","x":218.0,"y":242,"parameters":{"fillColor":"#858585"}},{"id":"0404c68a-525c-f975-60d3-8d0f7143abb7","type":"Circle","x":218.0,"y":288,"parameters":{"fillColor":"#858585"}},{"id":"b2b85213-f75e-7d0b-050e-dbee3c312fd7","type":"Circle","x":218.0,"y":334,"parameters":{"fillColor":"#858585"}}]}]})'></button>
 </div>
 
 Children can use the _alignment_ controls to override the parent's alignment settings.
 
 <div class="ndl-image-with-background">
-    <img src="/guides/layouts/align-props.png"></img>
+    <img src="guides/layouts/layout-basics/align-props.png"></img>
 </div>
 
 Children can use margins to offset the position from how it's aligned.
 
 <div class="ndl-image-with-background l">
-    <img src="/guides/layouts/align.gif">
+    <img src="guides/layouts/layout-basics/align.gif">
       <button class="ndl-copy-nodes-button" onClick='copyJsonToClipboard({"nodes":[{"id":"8a968ff3-9099-fc23-eaef-b3f3c2f8a271","type":"Group","label":"Layout None","x":-124.8300537163023,"y":231.19983547495616,"parameters":{"backgroundColor":"#FFFFFF","flexDirection":"none"},"ports":[],"children":[{"id":"6c2df5ce-7596-06da-a5c5-335275501d64","type":"Circle","x":-104.8300537163023,"y":292.19983547495616,"parameters":{"fillColor":"#C9C9C9","alignY":"top","alignX":"left"},"ports":[],"children":[]}]}],"connections":[]})'></button>
 </div>
 
@@ -130,7 +149,7 @@ Children can use margins to offset the position from how it's aligned.
 Clicking on a node will select it and open the property panel. This panel has controls for setting the margin and padding.
 
 <div class="ndl-image-with-background">
-    <img src="/guides/layouts/margin-and-padding-props.png"></img>
+    <img src="guides/layouts/layout-basics/margin-and-padding-props.png"></img>
 </div>
 
 Here you can specify the _margin_, i.e. the distance between this node and its siblings in the layout. You can specify the margins in all four directions. You can also specify the _padding_, which is the distance from the borders of the **Group** to its children.
@@ -144,7 +163,7 @@ If the child nodes extend beyond the border of the parent you have a couple of o
 Wrapping is controlled by the **Multi Line Wrap** option in the properties.
 
 <div class="ndl-image-with-background">
-    <img src="/guides/layouts/wrap.png"></img>
+    <img src="guides/layouts/layout-basics/wrap.png"></img>
 </div>
 
 You can choose any of these options:
@@ -156,6 +175,6 @@ You can choose any of these options:
 Here's an example of a horizontal layout with **Multi Line Wrap** set to `On`.
 
 <div class="ndl-image-with-background l">
-    <img src="guides/layouts/multi-line.gif">
+    <img src="guides/layouts/layout-basics/multi-line.gif">
       <button class="ndl-copy-nodes-button" onClick='copyJsonToClipboard({"nodes":[{"id":"4ea33114-1bd2-d35a-79b6-9c6daf4ba473","type":"Group","x":198.0,"y":196.0,"parameters":{"backgroundColor":"#D6D6D6","flexDirection":"row","flexWrap":"wrap"},"children":[{"id":"beeb24c5-2bf0-ca33-62ce-b448a10f1b09","type":"Circle","x":218.0,"y":242.0,"parameters":{"fillColor":"#858585"}},{"id":"1742b597-6ee5-dd00-0781-ec3c368b9bdc","type":"Circle","x":218.0,"y":288.0,"parameters":{"fillColor":"#858585"}},{"id":"e4fc4976-3c13-4a5d-701c-ef3a72eb17b5","type":"Circle","x":218.0,"y":334.0,"parameters":{"fillColor":"#858585"}},{"id":"37441ff4-81ac-47ac-2882-8d3f5a4151b4","type":"Circle","x":251.53808416795107,"y":210.45256017010956,"parameters":{"fillColor":"#858585"}},{"id":"4d7a3378-7b80-1f6d-c0cd-285360f291f6","type":"Circle","x":251.53808416795107,"y":256.45256017010956,"parameters":{"fillColor":"#858585"}},{"id":"b1a7b659-7519-e8ea-f4f5-96bba6954b81","type":"Circle","x":251.53808416795107,"y":302.45256017010956,"parameters":{"fillColor":"#858585"}}]}]})'></button>
 </div>

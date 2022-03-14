@@ -48,7 +48,8 @@
 * **Guides**
 - [Guides Overview](guides/)
 - [Importing Projects](guides/importing/)
-- [Layout](guides/layouts.md)
+- [Layout](guides/layouts/)
+  - [Layout Basics](guides/layouts/layout-basics/)
 - [Lists](guides/lists/)
   - [List Basics](guides/lists/list-basics/)
 - [Navigation](guides/navigation/)

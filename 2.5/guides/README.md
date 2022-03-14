@@ -31,7 +31,7 @@ Welcome to the Noodl Guides section! We are constantly adding more and more guid
 <table class="modules-table">
     <tr>
         <td><img src="/modules/validation/FormValidationModule.png"></img></td>
-        <td><a href="#/guides/layouts.md/">Layout</a><br>Noodl has a very powerful layout engine. This guide takes you through the different layout features avaialable.</td>
+        <td><a href="#guides/layouts/layout-basics/">Layout</a><br>Noodl has a very powerful layout engine. This guide takes you through the different layout features avaialable.</td>
     </tr>
 </table>
 
