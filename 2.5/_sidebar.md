@@ -77,10 +77,8 @@
 - [Building Business Logic in Noodl](guides/business-logic/overview/)
   - [Using Zapier with Noodl](guides/business-logic/zapier/)
 - <span class="hoverable">Deploying and hosting Noodl apps</span>
-  - [Deploying an App on `*.noodl.app`](guides/deploy-noodl-apps/deploy-noodl-dot-app.md)
+  - [Deploying an App on sandbox domain](guides/deploy-noodl-apps/deploy-noodl-dot-app.md)
   - [Using an External Backend](guides/deploy-noodl-apps/using-external-backend.md)
-  - [Hosting backend at GCP (Google Cloud Platform)](guides/deploy-noodl-apps/deploy-backend-gcp.md)
-  - [Hosting backend at AWS](guides/deploy-noodl-apps/deploy-backend-aws.md)
   - [Hosting frontend at GCP or AWS](guides/deploy-noodl-apps/hosting-frontend.md)
 - [JavaScript](guides/javascript.md)
 - [Version control](guides/version-control/)

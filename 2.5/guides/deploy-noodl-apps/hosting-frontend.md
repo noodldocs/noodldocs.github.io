@@ -1,24 +1,26 @@
 # Hosting your Noodl Frontend at GCP or AWS
 
 ## What you will learn in this guide
-In this guide you will learn how to deploy your Noodl App frontend to a local folder and then host it on either Google Cloud Platform or AWS. This is needed if you want to host your Noodl App frontend in your own cloud infrastructure and with your own domain name.
+In this guide you will learn how to **Self Host** by deploying your Noodl App frontend to a local folder and then host it on either Google Cloud Platform or AWS. This is needed if you want to host your Noodl App frontend in your own cloud infrastructure and with your own domain name.
 
-?>**Enabling Deploy to Folder**<br/>Note: To be able to follow this guide you must have "Deploy to Folder" feature enabled. This is not available by default in Noodl. You can enable it by submitting [this form](https://www.noodl.net/deploy-to-folder).
+?>**Self Hosting**<br/>Note: To be able to follow this guide you must have "Self Host" feature enabled. This is not available by default in Noodl. You can enable it by submitting [this form](https://www.noodl.net/deploy-to-folder).
 
 ## Overview
 
-In Noodl You can deploy your application to a **noodl.app** domain for free. See [this](deploy-noodl-dot-app.md) guide for more information.
+By default, Noodl will host you App (both backend and frontend), by deploying your app to a **sandbox.noodl.app** domain for free or using your own domain. See [this](deploy-noodl-dot-app.md) guide for more information.  
 
-However, if you want to use your own custom domain, or if you want features like faster globalized delivery via CDNs etc, you may want to host your frontend somewhere else. For this you will first deploy it locally and then upload it to your hosting provider of choice.
+However, for various reasons, you may want to host your frontend on your own infrastructure. For this you will first deploy it locally and then upload it to your hosting provider of choice.
 
 ## Deploying to Local Folder
-By using the *deploy to folder* section Noodl will save a version of your frontend to a folder on your local machine, this folder will contain everything needed and you can simply upload the content to your hosting service.
+By using the **Self Hosting** section in the Noodl deployment popup will save a version of your frontend to a folder on your local machine, this folder will contain everything needed and you can simply upload the content to your hosting service.
 
 <div class="ndl-image-with-background l">
 
 ![](noodl-deploy-to-folder.png)
 
 </div>
+
+Make sure you pick the backend you want to use for the deploy.
 
 ## Hosting your Frontend at GCP or AWS
 

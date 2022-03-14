@@ -151,19 +151,11 @@ Welcome to the Noodl Guides section! We are constantly adding more and more guid
 <table class="modules-table">
     <tr>
         <td><img src="/modules/validation/FormValidationModule.png"></img></td>
-        <td><a href="#/guides/deploy-noodl-apps/deploy-noodl-dot-app.md">Sandbox Deploys</a><br>Deploying to a Noodl Sandbox is the easiest way to put your app out in the wild. Learn about it in this guide.</td>
+        <td><a href="#/guides/deploy-noodl-apps/deploy-noodl-dot-app.md">Sandbox Deploys</a><br>Deploying to a Noodl Sandbox (*.sandbox.noodl.app) is the easiest way to put your app out in the wild. Learn about it in this guide.</td>
     </tr>
     <tr>
         <td><img src="/modules/validation/FormValidationModule.png"></img></td>
         <td><a href="#/guides/deploy-noodl-apps/using-external-backend.md">Using an External Backend</a><br>Noodl allows you to host your own backend if necessary. Read how to set it up in this guide.</td>
-    </tr>
-    <tr>
-        <td><img src="/modules/validation/FormValidationModule.png"></img></td>
-        <td><a href="#/guides/deploy-noodl-apps/deploy-backend-gcp.md">Hosting External Backend of GCP</a><br>One option for hosting your own backend is the Google Cloud Platform. This guide shows you how to set that up.</td>
-    </tr>
-    <tr>
-        <td><img src="/modules/validation/FormValidationModule.png"></img></td>
-        <td><a href="#/guides/deploy-noodl-apps/deploy-backend-aws.md">Hosting External Backend of GCP</a><br>Another option for hosting your own backend is AWS. This guide shows you how to get that working.</td>
     </tr>
     <tr>
         <td><img src="/modules/validation/FormValidationModule.png"></img></td>

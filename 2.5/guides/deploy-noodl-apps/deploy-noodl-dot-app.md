@@ -33,4 +33,4 @@ Once you have deployed your app they will be available in the list of Sandbox De
 
 </div>
 
-You can choose to **Disable** a deploy, which will remove the public URL. After **Disabling** a deply you can remove it completely.
+You can select any of the sandbox deploys and change which backend to use or to **Delete** the deploys.
