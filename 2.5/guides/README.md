@@ -155,6 +155,10 @@ Welcome to the Noodl Guides section! We are constantly adding more and more guid
     </tr>
     <tr>
         <td><img src="/modules/validation/FormValidationModule.png"></img></td>
+        <td><a href="#/guides/deploy-noodl-apps/deploy-to-own-domain.md">Deploying to you own custom domain</a><br>You can deploy to your own custom domains as well. This guide walks you through the steps.</td>
+    </tr>
+    <tr>
+        <td><img src="/modules/validation/FormValidationModule.png"></img></td>
         <td><a href="#/guides/deploy-noodl-apps/using-external-backend.md">Using an External Backend</a><br>Noodl allows you to host your own backend if necessary. Read how to set it up in this guide.</td>
     </tr>
     <tr>

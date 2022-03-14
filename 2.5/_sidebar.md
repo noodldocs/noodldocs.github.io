@@ -78,6 +78,7 @@
   - [Using Zapier with Noodl](guides/business-logic/zapier/)
 - <span class="hoverable">Deploying and hosting Noodl apps</span>
   - [Deploying an App on sandbox domain](guides/deploy-noodl-apps/deploy-noodl-dot-app.md)
+  - [Deploying to your custom domain](guides/deploy-noodl-apps/deploy-to-own-domain.md)
   - [Using an External Backend](guides/deploy-noodl-apps/using-external-backend.md)
   - [Hosting frontend at GCP or AWS](guides/deploy-noodl-apps/hosting-frontend.md)
 - [JavaScript](guides/javascript.md)
