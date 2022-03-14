@@ -76,7 +76,7 @@
   - [Access Control](guides/working-with-data/cloud-data/access-control/)
 - [Building Business Logic in Noodl](guides/business-logic/overview/)
   - [Using Zapier with Noodl](guides/business-logic/zapier/)
-- <span class="hoverable">Deploying and hosting Noodl apps</span>
+- [Deploying and hosting Noodl apps](guides/deploy-noodl-apps/)
   - [Deploying an App on sandbox domain](guides/deploy-noodl-apps/deploy-noodl-dot-app.md)
   - [Deploying to your custom domain](guides/deploy-noodl-apps/deploy-to-own-domain.md)
   - [Using an External Backend](guides/deploy-noodl-apps/using-external-backend.md)
