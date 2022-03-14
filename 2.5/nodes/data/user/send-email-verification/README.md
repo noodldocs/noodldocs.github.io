@@ -2,7 +2,7 @@
 
 # Send Email Verification
 
-When a new user is created that have a valid email Noodl will automatically attempt to send a verification email (this needs an email service hooked up via something like [Zapier](/guides/zapier)). If for some reasone you need to resend the email you can use this action node. Your will need to provide the span <span class="ndl-data">email</span> as in input to the node and then trigger the <span class="ndl-signal">Do</span> action.
+When a new user is created that have a valid email Noodl will automatically attempt to send a verification email (this needs an email service hooked up via something like [Zapier](/guides/business-logic/zapier/)). If for some reasone you need to resend the email you can use this action node. Your will need to provide the span <span class="ndl-data">email</span> as in input to the node and then trigger the <span class="ndl-signal">Do</span> action.
 
 <div class="ndl-image-with-background l">
 

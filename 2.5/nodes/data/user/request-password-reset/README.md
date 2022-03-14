@@ -2,7 +2,7 @@
 
 # Request Password Reset
 
-This action node is used to help users recover a lost password, or to change their password. In order to do this they first need to receive a reset link via email. This action will trigger such an email (it needs to be hooked up via one of Noodls cloud services integrations such as [Zapier](/guides/zapier)). Typically you would use some sort of password recovery page.
+This action node is used to help users recover a lost password, or to change their password. In order to do this they first need to receive a reset link via email. This action will trigger such an email (it needs to be hooked up via one of Noodls cloud services integrations such as [Zapier](/guides/business-logic/zapier/)). Typically you would use some sort of password recovery page.
 
 ![](./request-ui.png)
 
