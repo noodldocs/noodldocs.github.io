@@ -23,6 +23,7 @@
   - [Media Queries](snippets/responsive/media-query.md)
   - [Shake Detector](snippets/shake-detector/shake-detector.md)
   - [Image from Video stream](snippets/image-from-video/image-from-video.md)
+  - [Carousel Scroll](snippets/carousel-scroll/)
   <!-- - [P5.js Intergration](snippets/p5-canvas/p5-canvas.md) -->
 - [Modules](modules/modules.md)
   - [Date Picker Module](modules/datepicker-button/)
@@ -37,6 +38,7 @@
   - [Mapbox](modules/mapbox/)
   - [Google Sheets](modules/gsheets/)
   - [Google Analytics](modules/google-analytics/)
+  - [QR Code Scanner](modules/qr-scanner/)
 
 <!-- - [Templates](templates/templates.md)
   - [CRUD Template](templates/crud_template/crud_template.md) -->
@@ -44,8 +46,18 @@
 <br/>
 
 * **Guides**
+- [Guides Overview](guides/)
 - [Importing Projects](guides/importing/)
 - [Layout](guides/layouts.md)
+- [Lists](guides/lists/)
+  - [List Basics](guides/lists/list-basics/)
+- [Navigation](guides/navigation/)
+  - [Basic Navigation](guides/navigation/web-navigation/basic-navigation/)
+  - [Multi Level Navigation](guides/navigation/web-navigation/multi-level-navigation/)
+  - [Encoding Parameters In URLs](guides/navigation/web-navigation/encoding-params-in-url/)
+
+<!--  - [List Selection Logic](guides/lists/selection-logic/)
+  - [Dynamic List Items](guides/lists/dynamic-list-items/) -->
 - [UI states and variants](guides/states-and-variants/)
   - [Style Variants](guides/states-and-variants/variants/)
   - [Visual States](guides/states-and-variants/visual-states/)
@@ -53,7 +65,7 @@
 - <span class="hoverable">Working With Local Data</span>
   - [Using Variables](guides/working-with-data/local-data/using-variables/)
   - [Using Objects](guides/working-with-data/local-data/using-objects/)
-- <span class="hoverable">Working With Cloud Data</span>
+- [Working With Cloud Data](guides/working-with-data/cloud-data/)
   - [Creating a Backend](guides/working-with-data/cloud-data/creating-backend/)
   - [Creating a Class](guides/working-with-data/cloud-data/creating-class/)
   - [Creating new database entries](guides/working-with-data/cloud-data/creating-records/)
@@ -62,13 +74,8 @@
   - [Filtering Database Queries](guides/working-with-data/cloud-data/query-filters/)
   - [Record Relations](guides/working-with-data/cloud-data/relations/)
   - [Access Control](guides/working-with-data/cloud-data/access-control/)
-- <span class="hoverable">Building Business Logic in Noodl</span>
-  - [Overview](guides/business-logic/overview/)
+- [Building Business Logic in Noodl](guides/business-logic/overview/)
   - [Using Zapier with Noodl](guides/business-logic/zapier/)
-- <span class="hoverable">Pages and navigation</span>
-  - [Basic Navigation](guides/navigation/web-navigation/basic-navigation/)
-  - [Multi Level Navigation](guides/navigation/web-navigation/multi-level-navigation/)
-  - [Encoding Parameters In URLs](guides/navigation/web-navigation/encoding-params-in-url/)
 - <span class="hoverable">Deploying and hosting Noodl apps</span>
   - [Deploying an App on `*.noodl.app`](guides/deploy-noodl-apps/deploy-noodl-dot-app.md)
   - [Using an External Backend](guides/deploy-noodl-apps/using-external-backend.md)
