@@ -19,49 +19,40 @@
         "thumb": "tutorials/01_style_variants.png",
         "url": "/#/guides/states-and-variants/variants/"
     },
+
+
+
+
     {
-        "category": "Noodl Basics",
-        "thumb": "tutorials/01_visual_states.png",
-        "url": "/#/guides/states-and-variants/visual-states/"
+        "category": "Video tutorials",
+        "thumb": "tutorials/introduction_to_noodl.png",
+        "url": "https://www.youtube.com/watch?v=zWsr1SAtrB4"
+    },
+
+    {
+        "category": "Video tutorials",
+        "thumb": "tutorials/basic_concepts.png",
+        "url": "https://www.youtube.com/watch?v=zWsr1SAtrB4"
+    },
+
+    {
+        "category": "Video tutorials",
+        "thumb": "tutorials/tasklist_app_01.png",
+        "url": "https://www.youtube.com/watch?v=zWsr1SAtrB4"
     },
     {
-        "category": "App Tutorials",
-        "thumb": "tutorials/01_survey_app.png",
-        "url": "/#/tutorials/survey-app?id=_01-navigation-and-components"
+        "category": "Video tutorials",
+        "thumb": "tutorials/survey_app_01.png",
+        "url": "https://www.youtube.com/watch?v=zWsr1SAtrB4"
     },
     {
-        "category": "App Tutorials",
-        "thumb": "tutorials/02_survey_app.png",
-        "url": "#/tutorials/survey-app?id=_02-styling-interaction-states"
+        "category": "Video tutorials",
+        "thumb": "tutorials/figma_plugin.png",
+        "url": "https://www.youtube.com/watch?v=zWsr1SAtrB4"
     },
     {
-        "category": "App Tutorials",
-        "thumb": "tutorials/03_survey_app.png",
-        "url": "#/tutorials/survey-app?id=_03-advanced-custom-components"
-    },
-    {
-        "category": "App Tutorials",
-        "thumb": "tutorials/01_tasklist_app.png",
-        "url": "/#/tutorials/tasklist-app?id=_01-build-the-ui-for-a-task-list-app"
-    },
-    {
-        "category": "App Tutorials",
-        "thumb": "tutorials/02_tasklist_app.png",
-        "url": "/#/tutorials/tasklist-app?id=_02-build-a-backend-for-a-task-list-app"
-    },
-    {
-        "category": "Modules",
-        "thumb": "tutorials/01_mapbox.png",
-        "url": "/#/modules/mapbox/guides/setting-up/"
-    },
-    {
-        "category": "Modules",
-        "thumb": "tutorials/02_mapbox.png",
-        "url": "/#/modules/mapbox/guides/interacting/"
-    },
-    {
-        "category": "Modules",
-        "thumb": "tutorials/03_mapbox.png",
-        "url": "/#/modules/mapbox/guides/using-markers/"
+        "category": "Video tutorials",
+        "thumb": "tutorials/more_videos.png",
+        "url": "https://www.youtube.com/watch?v=zWsr1SAtrB4"
     }
 ]
