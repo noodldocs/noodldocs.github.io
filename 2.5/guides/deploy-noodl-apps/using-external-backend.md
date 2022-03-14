@@ -88,12 +88,12 @@ You can now try connecting to your Docker container from Noodl. Go into you Nood
 ![](../working-with-data/cloud-data/creating-backend/cloud-services.png)
 
 </div>
-
+Select the tab "Add Cloud Service"
 Create a new backend. Make sure the **External** checkbox is checked:
 
 <div class="ndl-image-with-background l">
 
-![](noodl-external-backend-local.png)
+![](noodl-external-backend.png)
 
 </div>
 

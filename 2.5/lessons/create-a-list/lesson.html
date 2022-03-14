@@ -97,7 +97,25 @@
     </div>
 </div>
 
-
+<!-- # -->
+<!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
+<div
+    data-conditions='[
+        {
+            "path":"/List item:%Group", 
+            "exists":false
+        }
+    ]'
+>
+    <div data-template="item" style="width: 350px">
+        <header>Task<span class="lesson-checkmark"></span></header>
+        <h3>Delete the default Group node that was created with the new component.</h3>
+    </div>
+    <div data-template="popup">
+        <video src="07_delete_node.mp4"></video>
+        <p>A component can only have one visual hirachy, so we will need to delete the default Group that came with Visual component when we created it.</p>
+    </div>
+</div>
 
 <!-- # -->
 <!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
@@ -118,28 +136,6 @@
         <p>Cut and paste the nodes that makes up the image layout and insert them into our newly created component.</p>
     </div>
 </div>
-
-
-<!-- # -->
-<!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
-<div
-    data-conditions='[
-        {
-            "path":"/List item:#Image layout", 
-            "exists":true
-        }
-    ]'
->
-    <div data-template="item" style="width: 490px">
-        <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Delete the default Group node that was created with the new component.</h3>
-    </div>
-    <div data-template="popup">
-        <video src="07_delete_node.mp4"></video>
-        <p>A component can only have one visual hirachy, so we will need to delete the default Group that came with Visual component when we created it.</p>
-    </div>
-</div>
-
 
 <!-- # -->
 <!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
@@ -192,7 +188,7 @@
 >
     <div data-template="item" style="width: 350px">
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Delete the List item from visual hirachy in the App component </h3>
+        <h3>Delete the List item from the visual hierarchy in the App component </h3>
     </div>
     <div data-template="popup">
         <video src="10_delete_listitem.mp4"></video>
@@ -426,9 +422,9 @@
         }
     ]'
 >
-    <div data-template="item" style="width: 300px">
+    <div data-template="item" style="width: 350px">
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Connect the <i>author</i> property to the <i>text</i> input on the Text node.</h3>
+        <h3>Connect the <i>author</i> property to the <i>text</i> input on the Text node named <i>Artist name</i></h3>
     </div>
     <div data-template="popup">
         <video src="16_connect-properties.mp4"></video>
