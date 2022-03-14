@@ -1,93 +1,58 @@
 [
     {
-        "category": "Noodl Basics",
-        "label": "",
+        "category": "Guides",
         "thumb": "tutorials/01_tasklist_app.png",
-        "url": "/#/tutorials/tasklist-app?id=_01-build-the-ui-for-a-task-list-app",
-        "icon": ""
+        "url": "/#/tutorials/tasklist-app?id=_01-build-the-ui-for-a-task-list-app"
     },
     {
-        "category": "Noodl Basics",
-        "label": "",
+        "category": "Guides",
         "thumb": "tutorials/02_tasklist_app.png",
-        "url": "/#/tutorials/tasklist-app?id=_02-build-a-backend-for-a-task-list-app",
-        "icon": ""
+        "url": "/#/tutorials/tasklist-app?id=_02-build-a-backend-for-a-task-list-app"
     },
     {
-        "category": "Noodl Basics",
-        "label": "",
+        "category": "Guides",
         "thumb": "tutorials/01_noodl_basics.png",
-        "url": "/#/guides/basic-concepts/",
-        "icon": ""
+        "url": "/#/guides/basic-concepts/"
     },
     {
-        "category": "Noodl Basics",
-        "label": "",
+        "category": "Guides",
         "thumb": "tutorials/01_style_variants.png",
-        "url": "/#/guides/states-and-variants/variants/",
-        "icon": ""
+        "url": "/#/guides/states-and-variants/variants/"
+    },
+
+
+
+
+    {
+        "category": "Video tutorials",
+        "thumb": "tutorials/introduction_to_noodl.png",
+        "url": "https://www.youtube.com/watch?v=zWsr1SAtrB4"
+    },
+
+    {
+        "category": "Video tutorials",
+        "thumb": "tutorials/basic_concepts.png",
+        "url": "https://www.youtube.com/watch?v=1n0MXSbmTQk"
+    },
+
+    {
+        "category": "Video tutorials",
+        "thumb": "tutorials/tasklist_app_01.png",
+        "url": "https://www.youtube.com/watch?v=TNnn0Gzj-H4&t=2s"
     },
     {
-        "category": "Noodl Basics",
-        "label": "",
-        "thumb": "tutorials/01_visual_states.png",
-        "url": "/#/guides/states-and-variants/visual-states/",
-        "icon": ""
+        "category": "Video tutorials",
+        "thumb": "tutorials/survey_app_01.png",
+        "url": "https://www.youtube.com/watch?v=ntKTCC7eEk0&t=4s"
     },
     {
-        "category": "App Tutorials",
-        "label": "",
-        "thumb": "tutorials/01_survey_app.png",
-        "url": "/#/tutorials/survey-app?id=_01-navigation-and-components",
-        "icon": ""
+        "category": "Video tutorials",
+        "thumb": "tutorials/figma_plugin.png",
+        "url": "https://www.youtube.com/watch?v=titAgD6L6no"
     },
     {
-        "category": "App Tutorials",
-        "label": "",
-        "thumb": "tutorials/02_survey_app.png",
-        "url": "#/tutorials/survey-app?id=_02-styling-interaction-states",
-        "icon": ""
-    },
-    {
-        "category": "App Tutorials",
-        "label": "",
-        "thumb": "tutorials/03_survey_app.png",
-        "url": "#/tutorials/survey-app?id=_03-advanced-custom-components",
-        "icon": ""
-    },
-    {
-        "category": "App Tutorials",
-        "label": "",
-        "thumb": "tutorials/01_tasklist_app.png",
-        "url": "/#/tutorials/tasklist-app?id=_01-build-the-ui-for-a-task-list-app",
-        "icon": ""
-    },
-    {
-        "category": "App Tutorials",
-        "label": "",
-        "thumb": "tutorials/02_tasklist_app.png",
-        "url": "/#/tutorials/tasklist-app?id=_02-build-a-backend-for-a-task-list-app",
-        "icon": ""
-    },
-    {
-        "category": "Modules",
-        "label": "",
-        "thumb": "tutorials/01_mapbox.png",
-        "url": "/#/modules/mapbox/guides/setting-up/",
-        "icon": ""
-    },
-    {
-        "category": "Modules",
-        "label": "",
-        "thumb": "tutorials/02_mapbox.png",
-        "url": "/#/modules/mapbox/guides/interacting/",
-        "icon": ""
-    },
-    {
-        "category": "Modules",
-        "label": "",
-        "thumb": "tutorials/03_mapbox.png",
-        "url": "/#/modules/mapbox/guides/using-markers/",
-        "icon": ""
+        "category": "Video tutorials",
+        "thumb": "tutorials/more_videos.png",
+        "url": "https://www.youtube.com/channel/UCLkJ8XYV1J1RqrZKY-o1YWg/videos"
     }
 ]

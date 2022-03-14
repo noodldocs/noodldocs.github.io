@@ -1,7 +1,16 @@
 [
     {
         "url":"gettingstarted",
-        "thumb": "lessons/gettingstarted.png",
-        "category": "Noodl Basics"
+        "thumb": "lessons/gettingstarted-1.png",
+        "thumbStarted": "lessons/gettingstarted-2.png",
+        "thumbCompleted": "lessons/gettingstarted-3.png",
+        "category": "Lessons"
+    },
+    {
+        "url":"create-a-list",
+        "thumb": "lessons/create-a-list-1.png",
+        "thumbStarted": "lessons/create-a-list-2.png",
+        "thumbCompleted": "lessons/create-a-list-3.png",
+        "category": "Lessons"
     }
 ]
