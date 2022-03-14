@@ -1,23 +1,33 @@
 [
     {
         "category": "Guides",
-        "thumb": "tutorials/01_tasklist_app.png",
-        "url": "/#/tutorials/tasklist-app?id=_01-build-the-ui-for-a-task-list-app"
+        "thumb": "tutorials/guide_basics.png",
+        "url": "#/guides/basic-concepts/"
     },
     {
         "category": "Guides",
-        "thumb": "tutorials/02_tasklist_app.png",
-        "url": "/#/tutorials/tasklist-app?id=_02-build-a-backend-for-a-task-list-app"
+        "thumb": "tutorials/guide_layout.png",
+        "url": "#/guides/layouts/"
     },
     {
         "category": "Guides",
-        "thumb": "tutorials/01_noodl_basics.png",
-        "url": "/#/guides/basic-concepts/"
+        "thumb": "tutorials/guide_lists.png",
+        "url": "#/guides/lists/"
     },
     {
         "category": "Guides",
-        "thumb": "tutorials/01_style_variants.png",
-        "url": "/#/guides/states-and-variants/variants/"
+        "thumb": "tutorials/guide_navigation.png",
+        "url": "#/guides/navigation/"
+    },
+    {
+        "category": "Guides",
+        "thumb": "tutorials/guide_backend.png",
+        "url": "/#/guides/data"
+    },
+    {
+        "category": "Guides",
+        "thumb": "tutorials/guide_more.png",
+        "url": "/#/guides/"
     },
 
 
