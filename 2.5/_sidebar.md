@@ -48,7 +48,8 @@
 * **Guides**
 - [Guides Overview](guides/)
 - [Importing Projects](guides/importing/)
-- [Layout](guides/layouts.md)
+- [Layout](guides/layouts/)
+  - [Layout Basics](guides/layouts/layout-basics/)
 - [Lists](guides/lists/)
   - [List Basics](guides/lists/list-basics/)
 - [Navigation](guides/navigation/)
@@ -76,8 +77,9 @@
   - [Access Control](guides/working-with-data/cloud-data/access-control/)
 - [Building Business Logic in Noodl](guides/business-logic/overview/)
   - [Using Zapier with Noodl](guides/business-logic/zapier/)
-- <span class="hoverable">Deploying and hosting Noodl apps</span>
+- [Deploying and hosting Noodl apps](guides/deploy-noodl-apps/)
   - [Deploying an App on sandbox domain](guides/deploy-noodl-apps/deploy-noodl-dot-app.md)
+  - [Deploying to your custom domain](guides/deploy-noodl-apps/deploy-to-own-domain.md)
   - [Using an External Backend](guides/deploy-noodl-apps/using-external-backend.md)
   - [Hosting frontend at GCP or AWS](guides/deploy-noodl-apps/hosting-frontend.md)
 - [JavaScript](guides/javascript.md)

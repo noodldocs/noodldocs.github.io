@@ -1,4 +1,4 @@
-# Deploy an App to the Sandbox domain, `*.noodl.app`
+# Deploy an App to the Sandbox domain, `*.sandbox.noodl.app`
 
 ## What you will learn in this guide
 This guide will teach you how to deploy a Noodl App to the Noodl Sandbox, i.e the `noodl.app` domain.

@@ -6,8 +6,8 @@ This guide will take you through the process of creating a **Backend** for your 
 ## Overview
 
 We will go through the following steps in this guide:
-* Enable Cloud Services in your project
-* Use the default **Backend**
+* Creating a Backend
+* Selecting a Backend for you project
 * Inspect the **Backend Database** using the **Dashboard**
 * Create and switch to a new **Backend**
 
@@ -21,8 +21,7 @@ Also note that **Backends** are shared within a workspace, i.e. all projects in 
 ### Internal vs External Backends
 In Noodl there are two types of **Backends**, __Internal__ and __External__. The **Internal Backends** are easiest to use, since Noodl can create those for you in a few clicks. **External Backends** are Backends that you set up and host yourself. In this guide we will focus on **Internal Backends**.
 
-## Enabling Cloud Services
-The first thing you need to do is to enable cloud services in your project. You do that by clicking the cloud icon in the top right corner and then click the `Enable Cloud Services` button.
+To add a new Cloud Service click the **Cloud Services** icon in the top right.
 
 <div class="ndl-image-with-background">
 
@@ -30,19 +29,31 @@ The first thing you need to do is to enable cloud services in your project. You 
 
 </div>
 
-## Use the default **Backend**
-Once Cloud Services is enabled, Noodl will create a Default Backend for your workspace, unless there already is a **Backend** in this workspace. This Default Backend is an **Internal Backend** and is often all you need in your App.
+Go to the **Add Cloud Service** tab.
 
-Open the "Cloud Services Popup" and make sure you have a **Default Backend** called `Default Cloud Service` selected as Project Backend as shown below.
+<div class="ndl-image-with-background">
 
-<div class="ndl-image-with-background l">
-
-![](default-cloud-services.png)
+![](add-cloud-service.png)
 
 </div>
 
+Give the Cloud Service a name, for example "My Cloud Service" and a description "My cloud service for development". It could be a good idea to have multiple cloud services for the same project, since each cloud service will have its own database. This means that you can have one cloud service for development - where it doesnt matter if you mess up your data - and one for production.
+
+You can skip filling in a Master Key, which means that Noodl will automatically generate one for you.
+
+## Select active backend
+Now you can select the newly created Backend as the Backend for your project.
+
+<div class="ndl-image-with-background">
+
+![](cloud-service-created.png)
+
+</div>
+
+This means that any data requests, for example from a [Query Records](/nodes/data/cloud-data/query-records/), will come from this backend.
+
 ## Inspect the Backend using the Dashboard
-Now your project is connected to a **Backend** with a **Database**. The best way to get an overview of the database is to open the **Dashboard**. You open it by clicking the `Dashboard` button under Cloud Services.
+Now your project is connected to a **Backend** with a **Database**. The best way to get an overview of the database is to open the **Dashboard**. You open it by clicking the `Open dashboard` button on your Cloud Service.
 
 <div class="ndl-image-with-background l">
 
@@ -56,7 +67,7 @@ No you can see the contents of your **Database** in the menu to the left, under 
 A **Class** in the database is a collection of **Records** of the same type. In other databases these are often referred to as __Tables__ or __Collections__. In the case of the `User` class, it contains **User Records** where each record have data properties such as User Name, Email, etc. A typical app will have many different classes but we will not create any new classes in this guide. Instead you can close the **Dashboard** window for now.
 
 ## Creating and switching to a new backend
-Now you can create a second backend, by clicking `Create New Backend`. Give it a name, for example `Second Backend` and a short description: `My second backend`. You now have a second backend in the list, that you can switch to by clicking `Set as Project Backend`.
+Now you can create a second backend, by clicking `Create New Backend`. Give it a name, for example `Second Backend` and a short description: `My production backend`. You now have a second backend in the list, that you can switch to by clicking `Set as Project Backend`.
 
 <div class="ndl-image-with-background l">
 
@@ -70,7 +81,7 @@ Now you can create a second backend, by clicking `Create New Backend`. Give it a
 
 </div>
 
-If you now open the **Dashboard** again, you can see that the **Dashboard** is now showing the contents of the Database in "My second backend". The content looks the same as the **Default Backend**, containing the `User` and `Role` classes with no entries yet. But they are pointing to two different databases.
+If you now open the **Dashboard** again, but for the second backend, you can see that the **Dashboard** is now showing the contents of the Database in "My second backend". The content looks the same as the **Default Backend**, containing the `User` and `Role` classes with no entries yet. But they are located in a different database.
 
 
 

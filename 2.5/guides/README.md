@@ -31,7 +31,7 @@ Welcome to the Noodl Guides section! We are constantly adding more and more guid
 <table class="modules-table">
     <tr>
         <td><img src="/modules/validation/FormValidationModule.png"></img></td>
-        <td><a href="#/guides/layouts.md/">Layout</a><br>Noodl has a very powerful layout engine. This guide takes you through the different layout features avaialable.</td>
+        <td><a href="#guides/layouts/layout-basics/">Layout</a><br>Noodl has a very powerful layout engine. This guide takes you through the different layout features avaialable.</td>
     </tr>
 </table>
 
@@ -152,6 +152,10 @@ Welcome to the Noodl Guides section! We are constantly adding more and more guid
     <tr>
         <td><img src="/modules/validation/FormValidationModule.png"></img></td>
         <td><a href="#/guides/deploy-noodl-apps/deploy-noodl-dot-app.md">Sandbox Deploys</a><br>Deploying to a Noodl Sandbox (*.sandbox.noodl.app) is the easiest way to put your app out in the wild. Learn about it in this guide.</td>
+    </tr>
+    <tr>
+        <td><img src="/modules/validation/FormValidationModule.png"></img></td>
+        <td><a href="#/guides/deploy-noodl-apps/deploy-to-own-domain.md">Deploying to you own custom domain</a><br>You can deploy to your own custom domains as well. This guide walks you through the steps.</td>
     </tr>
     <tr>
         <td><img src="/modules/validation/FormValidationModule.png"></img></td>
