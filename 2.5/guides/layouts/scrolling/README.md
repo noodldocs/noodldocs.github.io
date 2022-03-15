@@ -251,7 +251,7 @@ You now have a working scrolling list with a sticky header and footer.
 
 <div class="ndl-image-with-background l">
 
-[filename](./sticky1.mp4 ':include width=100% height=300px autoplay muted loop')
+[filename](./sticky2.mp4 ':include width=100% height=300px autoplay muted loop')
 
 </div>
 
