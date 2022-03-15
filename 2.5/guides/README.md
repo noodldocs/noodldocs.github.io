@@ -14,6 +14,10 @@ Welcome to the Noodl Guides section! We are constantly adding more and more guid
     </tr>
     <tr>
         <td><img src="/modules/validation/FormValidationModule.png"></img></td>
+        <td><a href="#/guides/events/">Events</a><br>Events are used to pass signals and data from one place in your node graph to another without having to make direct connections.</td>
+    </tr>    
+    <tr>
+        <td><img src="/modules/validation/FormValidationModule.png"></img></td>
         <td><a href="#/guides/javascript.md">JavaScript</a><br>JavaScript can be used freely within Noodl. So if you know a little JavaScript this guide will show you how to make use of it in Noodl.</td>
     </tr>
     <tr>
