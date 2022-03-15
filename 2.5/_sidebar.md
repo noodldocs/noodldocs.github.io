@@ -48,7 +48,9 @@
 * **Guides**
 - [Guides Overview](guides/)
 - [Importing Projects](guides/importing/)
-- [Layout](guides/layouts.md)
+- [Layout](guides/layouts/)
+  - [Layout Basics](guides/layouts/layout-basics/)
+  - [Scrolling Content](guides/layouts/scrolling/)
 - [Lists](guides/lists/)
   - [List Basics](guides/lists/list-basics/)
 - [Navigation](guides/navigation/)
@@ -81,6 +83,7 @@
   - [Deploying to your custom domain](guides/deploy-noodl-apps/deploy-to-own-domain.md)
   - [Using an External Backend](guides/deploy-noodl-apps/using-external-backend.md)
   - [Hosting frontend at GCP or AWS](guides/deploy-noodl-apps/hosting-frontend.md)
+- [Events](guides/events/)
 - [JavaScript](guides/javascript.md)
 - [Version control](guides/version-control/)
 - [Figma Plugin](guides/figma/)

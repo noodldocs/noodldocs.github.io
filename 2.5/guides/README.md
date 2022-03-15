@@ -14,6 +14,10 @@ Welcome to the Noodl Guides section! We are constantly adding more and more guid
     </tr>
     <tr>
         <td><img src="/modules/validation/FormValidationModule.png"></img></td>
+        <td><a href="#/guides/events/">Events</a><br>Events are used to pass signals and data from one place in your node graph to another without having to make direct connections.</td>
+    </tr>    
+    <tr>
+        <td><img src="/modules/validation/FormValidationModule.png"></img></td>
         <td><a href="#/guides/javascript.md">JavaScript</a><br>JavaScript can be used freely within Noodl. So if you know a little JavaScript this guide will show you how to make use of it in Noodl.</td>
     </tr>
     <tr>
@@ -31,7 +35,11 @@ Welcome to the Noodl Guides section! We are constantly adding more and more guid
 <table class="modules-table">
     <tr>
         <td><img src="/modules/validation/FormValidationModule.png"></img></td>
-        <td><a href="#/guides/layouts.md/">Layout</a><br>Noodl has a very powerful layout engine. This guide takes you through the different layout features avaialable.</td>
+        <td><a href="#guides/layouts/layout-basics/">Layout</a><br>Noodl has a very powerful layout engine. This guide takes you through the different layout features avaialable.</td>
+    </tr>
+    <tr>
+        <td><img src="/modules/validation/FormValidationModule.png"></img></td>
+        <td><a href="#guides/layouts/scrolling/">Scrolling Content</a><br>When you have content that stretches beyond its space on the screen you may want to be able to scroll through the content. This is very common for lists, for example. This guide explains how it works.</td>
     </tr>
 </table>
 
