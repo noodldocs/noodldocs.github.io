@@ -12,5 +12,12 @@
         "thumbStarted": "lessons/create-a-list-2.png",
         "thumbCompleted": "lessons/create-a-list-3.png",
         "category": "Lessons"
+    },
+    {
+        "url":"navigation",
+        "thumb": "lessons/navigation-1.png",
+        "thumbStarted": "lessons/navigation-2.png",
+        "thumbCompleted": "lessons/navigation-3.png",
+        "category": "Lessons"
     }
 ]

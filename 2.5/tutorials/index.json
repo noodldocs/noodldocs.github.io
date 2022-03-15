@@ -22,7 +22,7 @@
     {
         "category": "Guides",
         "thumb": "tutorials/guide_backend.png",
-        "url": "/#/guides/data"
+        "url": "#/guides/working-with-data/cloud-data/"
     },
     {
         "category": "Guides",
