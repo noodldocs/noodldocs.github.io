@@ -33,6 +33,10 @@ Welcome to the Noodl Guides section! We are constantly adding more and more guid
         <td><img src="/modules/validation/FormValidationModule.png"></img></td>
         <td><a href="#guides/layouts/layout-basics/">Layout</a><br>Noodl has a very powerful layout engine. This guide takes you through the different layout features avaialable.</td>
     </tr>
+    <tr>
+        <td><img src="/modules/validation/FormValidationModule.png"></img></td>
+        <td><a href="#guides/layouts/scrolling/">Scrolling Content</a><br>When you have content that stretches beyond its space on the screen you may want to be able to scroll through the content. This is very common for lists, for example. This guide explains how it works.</td>
+    </tr>
 </table>
 
 ## Lists

@@ -50,6 +50,7 @@
 - [Importing Projects](guides/importing/)
 - [Layout](guides/layouts/)
   - [Layout Basics](guides/layouts/layout-basics/)
+  - [Scrolling Content](guides/layouts/scrolling/)
 - [Lists](guides/lists/)
   - [List Basics](guides/lists/list-basics/)
 - [Navigation](guides/navigation/)
