@@ -436,8 +436,8 @@
     data-conditions='[
         {
             "from": "/Description page:%Model2",
-            "path":"/Description page:%Page:%Group:%Image",
-            "hasconnection": "image,source"
+            "to":"/Description page:%Page:%Group:%Image",
+            "hasconnection": "prop-photo,src"
         }
     ]'
 >
@@ -456,8 +456,8 @@
     data-conditions='[
         {
             "from": "/Description page:%Model2",
-            "path":"/Description page:%Page:%Group:%Text",
-            "hasconnection": "title,text"
+            "to":"/Description page:%Page:%Group:%Text",
+            "hasconnection": "prop-title,text"
         }
     ]'
 >
@@ -476,8 +476,8 @@
     data-conditions='[
         {
             "from": "/Description page:%Model2",
-            "path":"/Description page:%Page:%Group:%Text:2",
-            "hasconnection": "description,text"
+            "to":"/Description page:%Page:%Group:3",
+            "hasconnection": "prop-description,text"
         }
     ]'
 >
@@ -528,12 +528,12 @@
 <!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
 <div
     data-conditions='[
-        {
-            "path":"/Description page:%Page input", 
-            "paramseq": {
-                "parameter": "object id"
-              }
+    {
+        "path": "/Description page:%PageInputs",
+        "paramseq": {
+            "pathParams": "object id"
         }
+    }
     ]'
 >
     <div data-template="item" style="width: 350px">
@@ -551,15 +551,72 @@
 <div
     data-conditions='[
         {
-            "from": "/Description page:%Page input",
+            "from": "/Description page:%PageInputs",
             "to": "/Description page:%Model2",
-            "hasconnection": "object id,Id"
+            "hasconnection": "pm-object id,modelId"
         }
     ]'
 >
     <div data-template="item" style="width: 450px">
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Connect the <i>object id</i>parameter from the Page input node to the Id property of the Object node></h3>
+        <h3>Connect the <i>object id</i> parameter from the Page input node to the Id property of the Object node</h3>
+    </div>
+    <div data-template="popup">
+    </div>
+</div>
+
+
+<!-- # -->
+<!-- Ask user to look at the static data -->
+<div>
+    <div data-template="item">
+        <header>&nbsp;</header>
+        <h2>Navigation node</h2>
+    </div>
+    <div data-template="popup">
+        <h2>Navigation node</h2>
+        <p>Last piece missing for having a working navigation flow is not do the actual navigation when some event happens.</p>
+        <p>As we are on the Description page already, we can add a Navigation node that points to the List page, and gets triggered when we click the "go back" button</p>
+        <p>The Navigation node has a <i>Target page</i> property where we can select what page it should navigate to.</p>
+    </div>
+</div>
+
+
+<!-- # -->
+<!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
+<div
+    data-conditions='[
+        {
+            "path": "/Description page:%RouterNavigate",
+            "paramseq":{
+                "target": "/List page"
+            }
+        }
+    ]'
+>
+    <div data-template="item" style="width: 450px">
+        <header>Task<span class="lesson-checkmark"></span></header>
+        <h3>Place a Navigate node in to the node graph and select the Target page to be  <i>List page</i></h3>
+    </div>
+    <div data-template="popup">
+    </div>
+</div>
+
+
+<!-- # -->
+<!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
+<div
+    data-conditions='[
+        {
+            "from": "/Description page:%Page:%Group:%net.noodl.controls.button",
+            "to": "/Description page:%RouterNavigate",
+            "hasconnection": "onClick,navigate"
+        }
+    ]'
+>
+    <div data-template="item" style="width: 450px">
+        <header>Task<span class="lesson-checkmark"></span></header>
+        <h3>Connect the <i>Click</i> event from the Button node to the Navigate event on the Navigate node></h3>
     </div>
     <div data-template="popup">
     </div>
@@ -567,6 +624,129 @@
 
 
 
+
+<!-- # -->
+<!-- Ask user to look at the static data -->
+<div>
+    <div data-template="item">
+        <header>&nbsp;</header>
+        <h2>Navigation</h2>
+    </div>
+    <div data-template="popup">
+        <h2>Navigation</h2>
+        <p>Great! Now we can click that "Go back" button to navigate to the list page.</p>
+        <p>Now we just need to add a Navigate node to our Destination list item and make sure we pass on the object id as an input to the navigation node.</p>
+        <p>When we set a Navigation node to target a specific page, the Page inputs paramters defined in the page's Page input node, will show up as inputs on the navigation node.</p>
+        <p>Let's try it out!</p>
+    </div>
+</div>
+
+
+<!-- # -->
+<!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
+<div
+    data-conditions='[
+        {
+            "path": "/App:%Group:%Group:%Router",
+            "paramseq": {
+                "pages": {
+                    "startPage": "/List page"
+                }
+            }
+        }
+    ]'
+>
+    <div data-template="item" style="width: 450px">
+        <header>Task<span class="lesson-checkmark"></span></header>
+        <h3>Set the Page Router's start page to be the <i>List page</i>, as we had to begin with</h3>
+    </div>
+    <div data-template="popup">
+    </div>
+</div>
+
+
+
+<!-- # -->
+<!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
+<div
+    data-conditions='[
+        {
+            "path": "/Destination List item:%RouterNavigate",
+            "exists": true
+        }
+    ]'
+>
+    <div data-template="item" style="width: 450px">
+        <header>Task<span class="lesson-checkmark"></span></header>
+        <h3>Go to the <i>Destination List item</i> component, and place a Navigate node.</h3>
+    </div>
+    <div data-template="popup">
+    </div>
+</div>
+
+
+<!-- # -->
+<!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
+<div
+    data-conditions='[
+        {
+            "path": "/Destination List item:%RouterNavigate",
+            "paramseq":{
+                "target": "/Description page"
+            }
+        }
+    ]'
+>
+    <div data-template="item" style="width: 450px">
+        <header>Task<span class="lesson-checkmark"></span></header>
+        <h3>Set the Navigate node's target page to be the Description page</h3>
+    </div>
+    <div data-template="popup">
+    </div>
+</div>
+
+
+<!-- # -->
+<!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
+<div
+    data-conditions='[
+        {
+            "from": "/Destination List item:%Model2",
+            "to": "/Destination List item:%RouterNavigate",
+            "hasconnection": "id,pm-object id"
+        }
+    ]'
+>
+    <div data-template="item" style="width: 450px">
+        <header>Task<span class="lesson-checkmark"></span></header>
+        <h3>Connect the Id output from the Object node to the <i>object id</i> input on the Navigate node</h3>
+    </div>
+    <div data-template="popup">
+    </div>
+</div>
+
+
+
+<!-- # -->
+<!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
+<div
+    data-conditions='[
+        
+            {
+                "from": "/Destination List item:%Group",
+                "to": "/Destination List item:%RouterNavigate",
+                "hasconnection": "onClick,navigate"
+            }
+        
+    ]'
+>
+    <div data-template="item" style="width: 450px">
+        <header>Task<span class="lesson-checkmark"></span></header>
+        <h3>Connect the <i>Click</i> event from the top Group node to the <i>Navigate</i> event on the Navigation node</h3>
+    </div>
+    <div data-template="popup">
+    </div>
+</div>
 
 
 
