@@ -24,7 +24,7 @@
         "iconURL": "signup_template/signup_thumbnail.png",
         "title": "Sign Up and Log In template",
         "desc": "A project with a full sign up and log in flow.",
-        "projectURL": "signup_template/signuptemplate-1-1.zip",
+        "projectURL": "signup_template/signuptemplate-1-2.zip",
         "category": "Basic",
         "useCloudServices": true,
         "cloudServicesTemplateURL": "signup_template/signup-app-cf.json"

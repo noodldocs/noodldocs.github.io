@@ -1,11 +1,16 @@
 # Deploy an App to the Sandbox domain, `*.sandbox.noodl.app`
 
 ## What you will learn in this guide
-This guide will teach you how to deploy a Noodl App to the Noodl Sandbox, i.e the `noodl.app` domain.
+This guide will teach you how to deploy a Noodl App to the Noodl Sandbox, i.e the `sandbox.noodl.app` domain.
 You can use this to share your Noodl App with other people.
 
 ## Overview
-There are multiple ways for you to deploy Noodl Apps so other people can use them. The easiest one is to use the Noodl Sandbox deployment. The your app will get a public URL that ends with `.noodl.app`.
+There are multiple ways for you to deploy Noodl Apps so other people can use them. The easiest one is to use the Noodl Sandbox deployment. The your app will get a public URL that ends with `.sandbox.noodl.app`.
+
+The video below walks through all deployment options in Noodl, including Sandbox deploys:
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/M97-89RiboE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 ## Doing a Sandbox Deployment
 Open the project you want to deploy. Then click the **Deploy** button on the top right.
