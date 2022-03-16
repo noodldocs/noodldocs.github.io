@@ -24,7 +24,7 @@
         "iconURL": "signup_template/signup_thumbnail.png",
         "title": "Sign Up and Log In template",
         "desc": "A project with a full sign up and log in flow.",
-        "projectURL": "signup_template/signuptemplate-1-1.zip",
+        "projectURL": "signup_template/signuptemplate-1-2.zip",
         "category": "Basic",
         "useCloudServices": true,
         "cloudServicesTemplateURL": "signup_template/signup-app-cf.json"
@@ -33,7 +33,7 @@
         "iconURL": "tasklist_app/task_list_thumbnail.png",
         "title": "Task list",
         "desc": "A simple task list template with a connected backend for storing and reading data.",
-        "projectURL": "tasklist_app/task-app-1-1.zip",
+        "projectURL": "tasklist_app/task-app-1-2.zip",
         "category": "Tutorial",
         "useCloudServices": true,
         "cloudServicesTemplateURL": "tasklist_app/task-app-cf.json"

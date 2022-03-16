@@ -3,9 +3,9 @@
     <video src="01_intro.mp4"></video>
     <h2>Learn how to work with navigation</h2>
     <p>This lesson will guide you through the steps of setting up a navigation system.</p>
-    <p>We will be using a simple list of destination cards, and make each card navigate to a detailed page for the destination.</p>
-    <p>There are many types of navigation patterns, and through this lesson you will learn about the basics needed for most navigation patterns.</p>
-    <p>Click "next" to get started!</p>
+    <p>The lesson starts with a list containing cards showing travel destinations. During the lesson, we'll make each card navigate to a detailed page for the destination.</p>
+    <p>There are many types of navigation patterns, and you will learn the basics needed for most navigation patterns.</p>
+    <p>Click "Next" to get started!</p>
 </div>
 
 <!-- # -->
@@ -20,8 +20,8 @@
         <h2>Key elements of a navigation system</h2>
         <p>A navigation system is built out of three elements:</p>
         <p>1. A <b>Page Router </b> node, which works as a visual node in the visual hierarchy, controlling what page to show.</p>
-        <p>2. Multiple <b>Page Components</b> that each will hold the visual elements of a page.</p>
-        <p>3. A <b>Navigate</b> node that lets you navigate from one page to another when an event happens.</p>
+        <p>2. Multiple <b>Page Components</b> that each contains a page of an application.</p>
+        <p>3. A <b>Navigate</b> node that lets you navigate from one page to another.</p>
         <p>Let's start by looking at the project.</p>
     </div>
 </div>
@@ -37,9 +37,10 @@
     <div data-template="popup">
         <video src="02_static-array.mp4"></video>
         <h2>Scope of this lessons</h2>
-        <p>In this lesson we have build a small list of destination cards for you. It's a very similar approach to what we covered in lesson 02.</p>
-        <p>Everything is in the App Component for now, but we will soon be moving the lists into it's own page and open another page with when an list item is clicked.</p>
-        <p>Let's start out looking at the Page router component and how to set it up.</p>
+        <p>This lesson starts with a premade list containing cards for travel destinations. It's a very similar approach to what was used in lesson 02.</p>
+        <p>Everything is in the <b>App</b> component, but we will soon be moving the destination cards into their own page. We'll also navigate to a new page when an card is clicked.</p>
+        <p>Let's start looking at the <b>Page Router</b> node and how to set it up.</p>
+        <p>Click "Next" to continue</p>
     </div>
 </div>
 
@@ -56,6 +57,7 @@
         <h2>Tutorial tasks</h2>
         <p>During this tutorial, you will be given multiple tasks. Spot them in the tutorial timeline by the “Task” label.</p>
         <p>Click on the card to get a hint of how to complete the task.</p>
+        <p>Click "Next" to continue.</p>
     </div>
 </div>
 
@@ -69,8 +71,10 @@
     </div>
     <div data-template="popup">
         <h2>Page Router node</h2>
-        <p>The Page Router node is a visual node meaning it takes up space on the screen. Any Page you navigate to will become child of the Page Router and use its space.</p>
-        <p>All nodes in the visual hierarchy that are not in the Pages will stay on screen no matter how you navigate. So title and footer would normally not be part of the Page but lie next to the Page Router in the hierarchy.</p>
+        <p>The Page Router node is a visual node and takes up space on the screen. Any page you navigate to will become child of the Page Router and use the space available to the Page Router.</p>
+        <p>The other nodes in the visual hierarchy in the App component will stay active when navigating. So a menu and footer could be places outside a page, and live next to the Page Router node in the hierarchy.
+            So navigation only affects the contents of the Page Router.
+        </p>
         <p>Lets start by placing a Page router node into our App component.</p>
     </div>
 </div>
@@ -88,11 +92,11 @@
 >
     <div data-template="item" style="width: 350px">
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Place a Page router node as the first child to the Group called <i>Max width: 600px</i></h3>
+        <h3>Place a <b>Page Router</b> node a child to the <b>Group</b> node called <i>Max width: 600px</i></h3>
     </div>
     <div data-template="popup">
         <video src="05_create-component.mp4"></video>
-        <p>Place a Page router node as the first child to the Group called <i>Max width: 600px</i></p>
+        <p>Place a <b>Page Router</b> node a child to the <b>Group</b> node called <i>Max width: 600px</i></p>
     </div>
 </div>
 
@@ -106,10 +110,11 @@
     </div>
     <div data-template="popup">
         <h2>Creating pages</h2>
-        <p>Now when we have our Page Router node, our next steps is to add some pages to it. This can be done from the property panel when we have the Page Router node selected.</p> 
-        <p>Click the "Add new page" button to assign existing pages to be part of this Page Router.</p> 
-        <p>If we already had Page components in the project we could simple add them to our router from here, but we don't have any Pages yet.</p>
-        <p>You can create new pages from here by clicking the "+" icon in top of the popup window where it says <i>Create new page</i></p>
+        <p>Now when we have our Page Router node, our next steps is to add pages to it. This can be done from the property panel, with the Page Router node selected.</p> 
+        <p>The "Add new page" button allows you to to assign existing pages to be part of this Page Router, or to create new pages.</p> 
+        <p>If we already had Page components in the project we could simple add them to our Page Router from here, but we don't have any pages yet.</p>
+        <p>You can create new pages from here by clicking the "+" icon in top of the popup window where it says <i>Create new page</i>.</p>
+        <p>Click "Next" to start creating a new page.</p>
     </div>
 </div>
 
@@ -130,7 +135,7 @@
 >
     <div data-template="item" style="width: 350px">
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Create a new page called <i>List page</i></h3>
+        <h3>Create a new page called <i>List page</i>.<br><i>Note: Page names are case sensitive</i></h3>
     </div>
     <div data-template="popup">
         <video src="05_create-component.mp4"></video>
@@ -174,11 +179,12 @@
     </div>
     <div data-template="popup">
         <h2>Page Components</h2>
-        <p>A page component will be put in the space that the Page Router takes up, once navigated to the page.</p>
-        <p>To change the content of a page we can navigate to a Page component from the component sidebar. By default, a Page components comes with two nodes:</p>
-        <p>1. A visual page node. Everything nested to this node will be part of the page.</p>
-        <p>2. A Page inputs node. This node is used to send data to the page when navigating.</p>
-        <p>Lets move our Lists and title to our newly created page called <i>List page</i></p>
+        <p>A page in Noodl is also called a <i>Page Component</i> as it in many ways works as any other visual component in Noodl.</p>
+        <p>To change the content of a page we can open the page component from the component sidebar, or by clicking on it in the component canvas. By default, a page components comes with two nodes:</p>
+        <p>1. A Page node. This is the visual root of the page, and all children will be part of the page.</p>
+        <p>2. A Page Inputs node. This node is used to send data when navigating to the page. This data is also added to the URL of the page so it can be bookmarked, or revisited later through a link.</p>
+        <p>Lets move our list of destination cards to our newly created page called <i>List page</i></p>
+        <p>Click "Next" to continue.</p>
     </div>
 </div>
 
@@ -193,13 +199,13 @@
         }
     ]'
 >
-    <div data-template="item" style="width: 550px">
+    <div data-template="item" style="width: 500px">
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Select the Group called <i>List content</i> and all its children, including the static Array node, and move them into the List page component</h3>
+        <h3>Select the Group called <i>List content</i>, it's children, and with the Static Array node. Move them into the <i>List page</i> component.</h3>
     </div>
     <div data-template="popup">
         <video src="05_create-component.mp4"></video>
-        <p>Move the Static array, Repeater, and Text node into the List page component</p>
+        <h3>Select the Group called <i>List content</i>, it's children, and with the Static Array node. Move them into the <i>List page</i> component.</h3>
     </div>
 </div>
 
@@ -216,11 +222,11 @@
 >
     <div data-template="item" style="width: 350px">
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Make the List content group a children to the Page node.</h3>
+        <h3>Make the <i>List content </i>Group a child to the Page node.</h3>
     </div>
     <div data-template="popup">
         <video src="05_create-component.mp4"></video>
-        <p>Move the Static array, Repeater, and Text node into the List page component</p>
+        <p>Make the <i>List content </i>Group a child to the Page node.</p>
     </div>
 </div>
 
@@ -235,9 +241,10 @@
     <div data-template="popup">
         <video src="04_visual-component.mp4"></video>
         <h2>Setting a start page</h2>
-        <p>Once we added the list nodes to the page, they become visible in our preview.</p>
-        <p>This is because the List page is set to be the start page inside the Page Router</p>
-        <p>We can change what page should be the start page from the contextual menu on each page item in the Page router node's property panel.</p>
+        <p>Once we added the nodes for our destination cards to the page, they become visible in our preview.</p>
+        <p>This is because the <b>List page</b> is set to be the start page inside the Page Router</p>
+        <p>We can change the start page from the menu on each page item in the Page router node's property panel.</p>
+        <p>Click "Next" to continue.</p>
     </div>
 </div>
 
@@ -257,13 +264,13 @@
         }
     ]'
 >
-    <div data-template="item" style="width: 500px">
+    <div data-template="item" style="width: 460px">
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Go back to the App component, and modify the Page Router so that the <i>Description page</i> is set to be the start page</h3>
+        <h3>Go back to the App component, and modify the Page Router so that the <i>Description page</i> is set as the start page</h3>
     </div>
     <div data-template="popup">
         <video src="05_create-component.mp4"></video>
-        <p></p>
+        <p>Go back to the App component, and modify the Page Router so that the <i>Description page</i> is set as the start page</p>
     </div>
 </div>
 
@@ -273,15 +280,15 @@
 <div>
     <div data-template="item">
         <header>&nbsp;</header>
-        <h2>Description page</h2>
+        <h2>Layout a page</h2>
     </div>
     <div data-template="popup">
         <video src="04_visual-component.mp4"></video>
-        <h2>Description page</h2>
-        <p>Our preview now become blank, and thats because the Description page is now set to be the start page.</p> 
-        <p>The Description page don't have any content yet, hence the blank screen. So while we have it visible in the preview lets add a simple layout.</p>
+        <h2>Layout a page</h2>
+        <p>Our preview now become blank, and thats because the Description page is currently empty.</p>
         <p>The purpose of this page is to show more details after clicking on one of the destination cards.</p>
-        <p>We will be adding a back button, an image, a title, and a description to the Description page now.</p>
+        <p>We will add a back button, an image, a title, and a description to the Description page.</p>
+        <p>Click "Next" to start designing this page.</p>
     </div>
 </div>
 
@@ -299,7 +306,7 @@
 >
     <div data-template="item" style="width: 350px">
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>In the Description page, add a Group node to the Page node</h3>
+        <h3>Go to the Description page and add a <b>Group</b> node to the <b>Page</b> node</h3>
     </div>
     <div data-template="popup">
     </div>
@@ -321,7 +328,7 @@
 >
     <div data-template="item" style="width: 350px">
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Add a Button node as a child to the Group node, ad change its label to <i>Go back</i></h3>
+        <h3>Add a <b>Button</b> node as a child to the <b>Group</b> node, and change its <b>label</b> to <i>Go back</i></h3>
     </div>
     <div data-template="popup">
     </div>
@@ -342,7 +349,7 @@
 >
     <div data-template="item" style="width: 550px">
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Add an image node as a second child to the Group node and set its <i>Top margin</i> to 24px, and dimension mode to explicit width & height</h3>
+        <h3>Add an <b>Image</b> node as a second child to the <b>Group</b> node and set its <b>Top margin</b> to <i>24px</i>, and <b>dimension mode</b> to <i>Explicit width & content height</i></h3>
     </div>
     <div data-template="popup">
     </div>
@@ -364,7 +371,7 @@
 >
     <div data-template="item" style="width: 400px">
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Add a text node as a third child and give it a text style of <i>H1</i> and a <i>Top margin<i> of 24px</h3>
+        <h3>Add a <b>Text</b> node as a third child and set its <b>Text style</b> to <i>H1</i> and <b>Top margin<b> of <i>24px</i></h3>
     </div>
     <div data-template="popup">
     </div>
@@ -386,7 +393,7 @@
 >
     <div data-template="item" style="width: 400px">
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Add another text node and give it a text style of <i>Body Text</i> and a <i>Top margin<i> of 24px</i></h3>
+        <h3>Add another <b>Text</b> node and set its <b>Text style</b> to <i>Body Text</i> and <b>Top margin<b> to <i>24px</i></h3>
     </div>
     <div data-template="popup">
     </div>
@@ -396,16 +403,16 @@
 <!-- # -->
 <!-- Ask user to look at the static data -->
 <div>
-    <div data-template="item">
+    <div data-template="item" style="width: 250px;">
         <header>&nbsp;</header>
         <h2>Sending data to a page</h2>
     </div>
     <div data-template="popup">
         <video src="04_visual-component.mp4"></video>
         <h2>Sending data to a page</h2>
-        <p>Now we have a simple layout to display more details about the destination we click on from the list.</p>
-        <p>As our list of destinations is created with data from a Static array node, we want to make the data associated with a clicked destination list item available inside of this description page.</p>
-        <p>We can do this by first adding an Object node into the page, so we have a way to recieve the data, and create and connect the properties to our layout.</p>
+        <p>Now we have a simple layout to display more details about a destination.</p>
+        <p>Our list of destinations are created with data from a Static Array node, and we want to make the data associated with a clicked destination card available inside of the Description page.</p>
+        <p>We can do this by adding an <b>Object</b> node into the page, so we have a way to recieve the data, and create and connect the properties to our layout.</p>
     </div>
 </div>
 
@@ -417,13 +424,15 @@
     data-conditions='[
         {
             "path":"/Description page:%Model2", 
-            "exists":true
+            "paramseq": {
+                "properties": "title,description,photo"
+              }
         }
     ]'
 >
     <div data-template="item" style="width: 450px">
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Add an Object node to the Description page and create the three following properties: <i>title, description, photo</i></h3>
+        <h3>Add an <b>Object</b> node to the <b>Description page</b> and create the three following Object properties: <i>title, description, photo</i></h3>
     </div>
     <div data-template="popup">
     </div>
@@ -443,7 +452,7 @@
 >
     <div data-template="item" style="width: 350px">
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Connect the <i>image</i> property to the source input on the image node</h3>
+        <h3>Connect the <b>photo</b> property to the <b>source input</b> on the <b>Image</b> node</h3>
     </div>
     <div data-template="popup">
     </div>
@@ -463,7 +472,7 @@
 >
     <div data-template="item" style="width: 350px">
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Connect the <i>title</i> property from the Object node to the first text node's text input</h3>
+        <h3>Connect the <b>title</b> property from the <b>Object</b> node to the first <b>Text</b> node's <b>Text</b>input</h3>
     </div>
     <div data-template="popup">
     </div>
@@ -481,9 +490,9 @@
         }
     ]'
 >
-    <div data-template="item" style="width: 350px">
+    <div data-template="item" style="width: 380px">
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Connect the <i>description</i> property from the Object node to the second text node's text input</h3>
+        <h3>Connect the <b>description</b> property from the <b>Object</b> node to the second <b>Text</b> node's <b>Text</b> input</h3>
     </div>
     <div data-template="popup">
     </div>
@@ -496,14 +505,14 @@
 <div>
     <div data-template="item">
         <header>&nbsp;</header>
-        <h2>Page input node</h2>
+        <h2>Page Input node</h2>
     </div>
     <div data-template="popup">
-        <h2>Page input node</h2>
-        <p>When we create a Page component it comes with Page input node. With this node, we can define input parameters that we can connect data to once we navigate to the page.</p>
-        <p>The Page input has two types of parameters being <i>Path parameters</i> and <i>Query parameters</i>.</p>
-        <p>A page can only have one Path parameter as than becomes part of the url. In our case this becomes helpful if we want to get an url that points directly to the Description page for a specfic destination.</p>
-        <p>A page can have multiple query parameters, and will not be part of the url.</p>
+        <h2>Page Input node</h2>
+        <p>When we create a Page Component it comes with a <b>Page Input</b> node. It defines the input parameters to a page.</p>
+        <p>The Page Input node has two types of parameters, <b>Path parameters</b> and <b>Query parameters</b>.</p>
+        <p>A Path parameter becomes a part of the Page's URL. In our case this is helpful if we want to get a complete URL that points directly to the Description page for a specific destination.</p>
+        <p>A page can also have query parameters, which are appended to the end of the URL after a `?` mark.</p>
     </div>
 </div>
 
@@ -511,15 +520,15 @@
 <!-- # -->
 <!-- Ask user to look at the static data -->
 <div>
-    <div data-template="item">
+    <div data-template="item"  style="width: 300px">
         <header>&nbsp;</header>
-        <h2>Creating a path parameter</h2>
+        <h2>Creating a Path parameter</h2>
     </div>
     <div data-template="popup">
-        <h2>Creating a path parameter</h2>
-        <p>We want to send an Object Id that can reference the data of the destination card, once we click on a destination card to navigate.</p>
-        <p>If we create an input property on the Page node and connect that to the id property on the Object node we will have a way to access the data inside the page.</p>
-        <p>Let's add a path parameter called <i>object id</i></p>
+        <h2>Creating a Path parameter</h2>
+        <p>When the a destination card is clicked we want to send the Id of the Object with the data for that destination, so we can access the data on that page.</p>
+        <p>We'll achieve this by adding a Page parameter to the Destination page, and connect that to the <b>Id</b> property on the <b>Object</b>.</p>
+        <p>Let's add a Path Parameter called <i>object id</i> in the next step. Click "Next" to continue.</p>
     </div>
 </div>
 
@@ -538,7 +547,7 @@
 >
     <div data-template="item" style="width: 350px">
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>On the Page input, create a path parameter called <i>object id</i></h3>
+        <h3>On the <b>Page Input</b> node, create a Path parameter with the name <i>object id</i></h3>
     </div>
     <div data-template="popup">
     </div>
@@ -559,7 +568,7 @@
 >
     <div data-template="item" style="width: 450px">
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Connect the <i>object id</i> parameter from the Page input node to the Id property of the Object node</h3>
+        <h3>Connect the <b>object id</b> parameter from the <b>Page input</b> node to the <b>Id property</b> of the <b>Object node</b></h3>
     </div>
     <div data-template="popup">
     </div>
@@ -575,9 +584,10 @@
     </div>
     <div data-template="popup">
         <h2>Navigation node</h2>
-        <p>Last piece missing for having a working navigation flow is not do the actual navigation when some event happens.</p>
-        <p>As we are on the Description page already, we can add a Navigation node that points to the List page, and gets triggered when we click the "go back" button</p>
-        <p>The Navigation node has a <i>Target page</i> property where we can select what page it should navigate to.</p>
+        <p>The last piece to complete the navigation flow is to create the navigation actions when a list item, or the "go back" button is clicked.</p>
+        <p>As we are on the Description page, we can add a <b>Navigation</b> node that points to the <b>List page</b>, that gets triggered when the "go back" button is clicked.</p>
+        <p>The Navigation node has a <b>Target page</b> property where we can select what page it should navigate to.</p>
+        <p>Click "Next" to start creating the <b>Navigation</b> node.</p>
     </div>
 </div>
 
@@ -594,9 +604,9 @@
         }
     ]'
 >
-    <div data-template="item" style="width: 450px">
+    <div data-template="item" style="width: 400px">
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Place a Navigate node in to the node graph and select the Target page to be  <i>List page</i></h3>
+        <h3>Place a <b>Navigate</b> node in to the node graph and set the <b>Target page</b> property to <i>List page</i></h3>
     </div>
     <div data-template="popup">
     </div>
@@ -616,7 +626,7 @@
 >
     <div data-template="item" style="width: 450px">
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Connect the <i>Click</i> event from the Button node to the Navigate event on the Navigate node></h3>
+        <h3>Connect the <b>Click</b> event from the Button node to the <b>Navigate</b> event on the Navigate node</h3>
     </div>
     <div data-template="popup">
     </div>
@@ -634,10 +644,10 @@
     </div>
     <div data-template="popup">
         <h2>Navigation</h2>
-        <p>Great! Now we can click that "Go back" button to navigate to the list page.</p>
-        <p>Now we just need to add a Navigate node to our Destination list item and make sure we pass on the object id as an input to the navigation node.</p>
-        <p>When we set a Navigation node to target a specific page, the Page inputs paramters defined in the page's Page input node, will show up as inputs on the navigation node.</p>
-        <p>Let's try it out!</p>
+        <p>Great! Now we can click the "Go back" button to navigate to the <b>List page</b>.</p>
+        <p>Let's add the last Navigate node to our <b>Destination list item component</b> and make sure we pass on the object id as an input to the <b>Navigation node</b>.</p>
+        <p>When we set a Navigation node to target a specific page, the path parameters of that page will will show up as inputs on the <b>Navigation</b> node.</p>
+        <p>Click "Next" to start connecting it all together!</p>
     </div>
 </div>
 
@@ -656,9 +666,9 @@
         }
     ]'
 >
-    <div data-template="item" style="width: 450px">
+    <div data-template="item" style="width: 330px">
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Set the Page Router's start page to be the <i>List page</i>, as we had to begin with</h3>
+        <h3>Go to the <i>App</i> component and set the Page Router's start page to the <i>List page</i></h3>
     </div>
     <div data-template="popup">
     </div>
@@ -676,9 +686,9 @@
         }
     ]'
 >
-    <div data-template="item" style="width: 450px">
+    <div data-template="item" style="width: 340px">
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Go to the <i>Destination List item</i> component, and place a Navigate node.</h3>
+        <h3>Go to the <i>Destination List item</i> component, and create a Navigate node.</h3>
     </div>
     <div data-template="popup">
     </div>
@@ -697,9 +707,9 @@
         }
     ]'
 >
-    <div data-template="item" style="width: 450px">
+    <div data-template="item" style="width: 300px">
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Set the Navigate node's target page to be the Description page</h3>
+        <h3>Set the Navigate node's target page to the Description page</h3>
     </div>
     <div data-template="popup">
     </div>
@@ -719,7 +729,7 @@
 >
     <div data-template="item" style="width: 450px">
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Connect the Id output from the Object node to the <i>object id</i> input on the Navigate node</h3>
+        <h3>Connect the <i>Id</i> output from the Object node to the <i>object id</i> input on the Navigate node</h3>
     </div>
     <div data-template="popup">
     </div>
@@ -749,6 +759,20 @@
 </div>
 
 
+<!-- # -->
+<!-- Ask user to look at the static data -->
+<div>
+    <div data-template="item">
+        <header>&nbsp;</header>
+        <h2>Try it out</h2>
+    </div>
+    <div data-template="popup">
+        <h2>Try it out</h2>
+        <p>We now have everything in place, and you can now click on the cards to navigate to the description page</p> 
+    </div>
+</div>
+
+
 
 <!-- # -->
 <!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
@@ -761,7 +785,7 @@
         <!--<img src="tutorial_card.png" style="cursor: pointer;" onclick="window.open('https://www.youtube.com/watch?v=TNnn0Gzj-H4&list=PL2eC2vS4uVoMbujQ5CiNtNuP7s7-UwNn-')"> -->
         <h2>Congratulations!</h2>
         <p>You've completed this lesson, we hope you liked it!</p>
-        <p>To take your Noodl skills to the next level we recommend our video tutorial that shows how to build a to-do app with a real backend.</p>
+        <p>Try out the app for a while and remember you can learn more about navigation on our Documentation site.</p>
         <p>Happy Noodling!</p>
         <button style="width: 150px" data-click="exitEditor">EXIT LESSON</button>
     </div>
