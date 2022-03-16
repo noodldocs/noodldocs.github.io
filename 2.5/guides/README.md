@@ -141,6 +141,15 @@ Welcome to the Noodl Guides section! We are constantly adding more and more guid
     </tr>
 </table>
 
+## User Management
+
+<table class="modules-table">
+    <tr>
+        <td><img src="/modules/validation/FormValidationModule.png"></img></td>
+        <td><a href="#/guides/user-management/">User Management</a><br>Noodl have a built in User Management system that handles creating new accounts, signing in and out, etc. This guide shows how to use it.</td>
+    </tr>
+</table>
+
 ## Building Business Logic in Noodl
 
 <table class="modules-table">

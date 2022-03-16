@@ -5,6 +5,12 @@ This guide will cover how to connect your Noodl application to **Zapier**. **Zap
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/mHX9XdFMHJ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+You can also watch this video that explains how to use Zapier to send out emails for email verification and forgot password links.
+
+You can also check out the video below that walks through all deployment options in Noodl, including deploying to a Custom Domain:
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/DWwE1RzuN2o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Setup
 
 You connect **Zapier** to your Noodl cloud services, this is what you need to create users, write data to the cloud etc. These events can be used to trigger flows in Zapier.
