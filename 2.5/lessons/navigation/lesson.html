@@ -216,7 +216,7 @@
 >
     <div data-template="item" style="width: 350px">
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Make the nodes children to the Page node.</h3>
+        <h3>Make the List content group a children to the Page node.</h3>
     </div>
     <div data-template="popup">
         <video src="05_create-component.mp4"></video>
@@ -278,10 +278,10 @@
     <div data-template="popup">
         <video src="04_visual-component.mp4"></video>
         <h2>Description page</h2>
-        <p>Our preview now become blank, and thats because the Description page is not set to be the start page</p> 
-        <p>The Description page don't have any content yet, so while we have it visible in the preview, lets add a simple layout</p>
-        <p>The purpose of this page is to show are more details after clicking on one of the destination cards.</p>
-        <p> we will be adding a back button, an image, a title, and a description</p>
+        <p>Our preview now become blank, and thats because the Description page is now set to be the start page.</p> 
+        <p>The Description page don't have any content yet, hence the blank screen. So while we have it visible in the preview lets add a simple layout.</p>
+        <p>The purpose of this page is to show more details after clicking on one of the destination cards.</p>
+        <p>We will be adding a back button, an image, a title, and a description to the Description page now.</p>
     </div>
 </div>
 
@@ -313,13 +313,15 @@
     data-conditions='[
         {
             "path":"/Description page:%Page:%Group:%net.noodl.controls.button", 
-            "exists":true
+            "paramseq": {
+                "label": "Go back"
+            }
         }
     ]'
 >
     <div data-template="item" style="width: 350px">
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Add a button as a child to the Group node, ad change its label to <i>Go back</i>.</h3>
+        <h3>Add a Button node as a child to the Group node, ad change its label to <i>Go back</i></h3>
     </div>
     <div data-template="popup">
     </div>
@@ -332,14 +334,15 @@
         {
             "path":"/Description page:%Page:%Group:%Image", 
             "paramseq": {
+                "sizeMode":"explicit",
                 "marginTop": { "value": 24, "unit": "px" }
             }
         }
     ]'
 >
-    <div data-template="item" style="width: 350px">
+    <div data-template="item" style="width: 550px">
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Add a image node as a second child to the Group node and a <i>Top margin</i> of 24px</h3>
+        <h3>Add an image node as a second child to the Group node and set its <i>Top margin</i> to 24px, and dimension mode to explicit width & height</h3>
     </div>
     <div data-template="popup">
     </div>
@@ -353,6 +356,7 @@
         {
             "path":"/Description page:%Page:%Group:%Text", 
             "paramseq": {
+                "textStyle": "H1",
                 "marginTop": { "value": 24, "unit": "px" }
             }
         }
@@ -360,7 +364,7 @@
 >
     <div data-template="item" style="width: 400px">
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Add a text node as a third child and give it a text style of <i>Header</i> and a <i>Top margin<i> of 24px</h3>
+        <h3>Add a text node as a third child and give it a text style of <i>H1</i> and a <i>Top margin<i> of 24px</h3>
     </div>
     <div data-template="popup">
     </div>
@@ -372,8 +376,9 @@
 <div
     data-conditions='[
         {
-            "path":"/Description page:%Page:%Group:%Text:2", 
+            "path":"/Description page:%Page:%Group:3", 
             "paramseq": {
+                "textStyle": "Body Text",
                 "marginTop": { "value": 24, "unit": "px" }
             }
         }
@@ -381,7 +386,7 @@
 >
     <div data-template="item" style="width: 400px">
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Add another text node and give it a text style of <i>Body</i> and a <i>Top margin<i> of 24px</i></h3>
+        <h3>Add another text node and give it a text style of <i>Body Text</i> and a <i>Top margin<i> of 24px</i></h3>
     </div>
     <div data-template="popup">
     </div>
@@ -393,14 +398,14 @@
 <div>
     <div data-template="item">
         <header>&nbsp;</header>
-        <h2>Send data to a page</h2>
+        <h2>Sending data to a page</h2>
     </div>
     <div data-template="popup">
         <video src="04_visual-component.mp4"></video>
-        <h2>Send data to a page</h2>
+        <h2>Sending data to a page</h2>
         <p>Now we have a simple layout to display more details about the destination we click on from the list.</p>
         <p>As our list of destinations is created with data from a Static array node, we want to make the data associated with a clicked destination list item available inside of this description page.</p>
-        <p>We can do this by first adding an Object node into the page, so we have a way to recieve the data</p>
+        <p>We can do this by first adding an Object node into the page, so we have a way to recieve the data, and create and connect the properties to our layout.</p>
     </div>
 </div>
 
@@ -412,19 +417,155 @@
     data-conditions='[
         {
             "path":"/Description page:%Model2", 
-            "paramseq": {
-                "properties": "title,description,photo"
-              }
+            "exists":true
         }
     ]'
 >
-    <div data-template="item" style="width: 350px">
+    <div data-template="item" style="width: 450px">
         <header>Task<span class="lesson-checkmark"></span></header>
         <h3>Add an Object node to the Description page and create the three following properties: <i>title, description, photo</i></h3>
     </div>
     <div data-template="popup">
     </div>
 </div>
+
+
+<!-- # -->
+<!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
+<div
+    data-conditions='[
+        {
+            "from": "/Description page:%Model2",
+            "path":"/Description page:%Page:%Group:%Image",
+            "hasconnection": "image,source"
+        }
+    ]'
+>
+    <div data-template="item" style="width: 350px">
+        <header>Task<span class="lesson-checkmark"></span></header>
+        <h3>Connect the <i>image</i> property to the source input on the image node</h3>
+    </div>
+    <div data-template="popup">
+    </div>
+</div>
+
+
+<!-- # -->
+<!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
+<div
+    data-conditions='[
+        {
+            "from": "/Description page:%Model2",
+            "path":"/Description page:%Page:%Group:%Text",
+            "hasconnection": "title,text"
+        }
+    ]'
+>
+    <div data-template="item" style="width: 350px">
+        <header>Task<span class="lesson-checkmark"></span></header>
+        <h3>Connect the <i>title</i> property from the Object node to the first text node's text input</h3>
+    </div>
+    <div data-template="popup">
+    </div>
+</div>
+
+
+<!-- # -->
+<!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
+<div
+    data-conditions='[
+        {
+            "from": "/Description page:%Model2",
+            "path":"/Description page:%Page:%Group:%Text:2",
+            "hasconnection": "description,text"
+        }
+    ]'
+>
+    <div data-template="item" style="width: 350px">
+        <header>Task<span class="lesson-checkmark"></span></header>
+        <h3>Connect the <i>description</i> property from the Object node to the second text node's text input</h3>
+    </div>
+    <div data-template="popup">
+    </div>
+</div>
+
+
+
+<!-- # -->
+<!-- Ask user to look at the static data -->
+<div>
+    <div data-template="item">
+        <header>&nbsp;</header>
+        <h2>Page input node</h2>
+    </div>
+    <div data-template="popup">
+        <h2>Page input node</h2>
+        <p>When we create a Page component it comes with Page input node. With this node, we can define input parameters that we can connect data to once we navigate to the page.</p>
+        <p>The Page input has two types of parameters being <i>Path parameters</i> and <i>Query parameters</i>.</p>
+        <p>A page can only have one Path parameter as than becomes part of the url. In our case this becomes helpful if we want to get an url that points directly to the Description page for a specfic destination.</p>
+        <p>A page can have multiple query parameters, and will not be part of the url.</p>
+    </div>
+</div>
+
+
+<!-- # -->
+<!-- Ask user to look at the static data -->
+<div>
+    <div data-template="item">
+        <header>&nbsp;</header>
+        <h2>Creating a path parameter</h2>
+    </div>
+    <div data-template="popup">
+        <h2>Creating a path parameter</h2>
+        <p>We want to send an Object Id that can reference the data of the destination card, once we click on a destination card to navigate.</p>
+        <p>If we create an input property on the Page node and connect that to the id property on the Object node we will have a way to access the data inside the page.</p>
+        <p>Let's add a path parameter called <i>object id</i></p>
+    </div>
+</div>
+
+
+<!-- # -->
+<!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
+<div
+    data-conditions='[
+        {
+            "path":"/Description page:%Page input", 
+            "paramseq": {
+                "parameter": "object id"
+              }
+        }
+    ]'
+>
+    <div data-template="item" style="width: 350px">
+        <header>Task<span class="lesson-checkmark"></span></header>
+        <h3>On the Page input, create a path parameter called <i>object id</i></h3>
+    </div>
+    <div data-template="popup">
+    </div>
+</div>
+
+
+
+<!-- # -->
+<!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
+<div
+    data-conditions='[
+        {
+            "from": "/Description page:%Page input",
+            "to": "/Description page:%Model2",
+            "hasconnection": "object id,Id"
+        }
+    ]'
+>
+    <div data-template="item" style="width: 450px">
+        <header>Task<span class="lesson-checkmark"></span></header>
+        <h3>Connect the <i>object id</i>parameter from the Page input node to the Id property of the Object node></h3>
+    </div>
+    <div data-template="popup">
+    </div>
+</div>
+
+
 
 
 
