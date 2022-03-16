@@ -10,6 +10,10 @@ The guide walks you through the following topics
 * Deploying to your acquired custom domain
 * Managing your custom domain deployments
 
+You can also check out the video below that walks through all deployment options in Noodl, including deploying to a Custom Domain:
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/M97-89RiboE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Acquiring your domain
 The first thing you need to do is to acquire the domain, i.e. purchase it from a domain provider if you don't have it already. There are many different places where you can acquire a domain and they all work a little differently. The important thing is that you need to be able to configure the DNS records and especially set a [CNAME](https://en.wikipedia.org/wiki/CNAME_record) record. You will need this later.
 
