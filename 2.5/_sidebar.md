@@ -76,6 +76,7 @@
   - [Filtering Database Queries](guides/working-with-data/cloud-data/query-filters/)
   - [Record Relations](guides/working-with-data/cloud-data/relations/)
   - [Access Control](guides/working-with-data/cloud-data/access-control/)
+- [User Management](guides/user-management/)
 - [Building Business Logic in Noodl](guides/business-logic/overview/)
   - [Using Zapier with Noodl](guides/business-logic/zapier/)
 - [Deploying and hosting Noodl apps](guides/deploy-noodl-apps/)

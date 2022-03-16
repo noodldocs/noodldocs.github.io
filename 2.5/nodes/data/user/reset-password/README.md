@@ -14,6 +14,8 @@ Generally your application should have a specific **password reset page** that i
 
 <##head##>
 
+This [guide](/guides/user-management/) explains in detail how to connect Noodl with an email service using Zapier.
+
 ## Inputs
 
 | Signal                             | Description                                                                                                                  |

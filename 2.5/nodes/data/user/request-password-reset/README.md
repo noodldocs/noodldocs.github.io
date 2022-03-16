@@ -16,6 +16,8 @@ This page would run the **Request Password Reset** action as shown below. The no
 
 <##head##>
 
+This [guide](/guides/user-management/) explains in detail how to connect Noodl with an email service using Zapier.
+
 ## Inputs
 
 | Signal                             | Description                                                                                                                  |
