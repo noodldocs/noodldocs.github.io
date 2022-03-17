@@ -3,11 +3,65 @@
 - [Introduction](/)
 - [Basic concepts](guides/basic-concepts/)
 - [Editor tour](guides/editor-tour/)
-- [Build your first app](tutorials/getting-started.md)
+  - [Importing Projects](guides/importing/)
+  - [Version control](guides/version-control/)  
+
+<br/>
+
+* **Guides**
+- [Overview](guides/)
+- [Building user interfaces](guides/layouts/)
+  - [Basics]()
+  - [UI Controls]()
+  - [Layout](guides/layouts/layout-basics/)
+  - [Style Variants](guides/states-and-variants/variants/)
+  - [Visual States](guides/states-and-variants/visual-states/)
+  - [The States node](guides/states-and-variants/states-node/)
+  - [Scrolling Content](guides/layouts/scrolling/)
+  - [Figma Plugin](guides/figma/)
+- [Navigation](guides/navigation/)
+  - [Basic Navigation](guides/navigation/web-navigation/basic-navigation/)
+  - [Multi Level Navigation](guides/navigation/web-navigation/multi-level-navigation/)
+  - [Encoding Parameters In URLs](guides/navigation/web-navigation/encoding-params-in-url/)
+  - [Popups]()
+- <span class="hoverable">Working with data</span>
+  - [Using Variables](guides/working-with-data/local-data/using-variables/)
+  - [Using Objects](guides/working-with-data/local-data/using-objects/)
+  - [Arrays]()
+- [Lists](guides/lists/)
+  - [List Basics](guides/lists/list-basics/)
+  - [List with controls]()
+
+
+<!--  - [List Selection Logic](guides/lists/selection-logic/)
+  - [Dynamic List Items](guides/lists/dynamic-list-items/) -->
+
+
+
+- [Working With Cloud Data](guides/working-with-data/cloud-data/)
+  - [Creating a Backend](guides/working-with-data/cloud-data/creating-backend/)
+  - [Creating a Class](guides/working-with-data/cloud-data/creating-class/)
+  - [Creating new database entries](guides/working-with-data/cloud-data/creating-records/)
+  - [Querying Records from database](guides/working-with-data/cloud-data/querying-records/)
+  - [Updating Records](guides/working-with-data/cloud-data/updating-records/)
+  - [Filtering Database Queries](guides/working-with-data/cloud-data/query-filters/)
+  - [Record Relations](guides/working-with-data/cloud-data/relations/)
+  - [Access Control](guides/working-with-data/cloud-data/access-control/)
+- [User Management](guides/user-management/)
+- [Building business logic](guides/business-logic/overview/)
+  - [Using Zapier with Noodl](guides/business-logic/zapier/) 
+  - [JavaScript](guides/javascript.md)  
+  - [Events](guides/events/)
+- [Deploying and hosting](guides/deploy-noodl-apps/)
+  - [Deploying an App on sandbox domain](guides/deploy-noodl-apps/deploy-noodl-dot-app.md)
+  - [Deploying to your custom domain](guides/deploy-noodl-apps/deploy-to-own-domain.md)
+  - [Using an External Backend](guides/deploy-noodl-apps/using-external-backend.md)
+  - [Hosting frontend at GCP or AWS](guides/deploy-noodl-apps/hosting-frontend.md)
+- [Build along videos](tutorials/getting-started.md)
   - [Task list app](tutorials/tasklist-app.md)
   - [Survey app](tutorials/survey-app.md)
 
-<br/>
+<br/>  
 
 * **Snippets & Modules**
 - [Snippets](snippets/snippets.md)
@@ -44,50 +98,6 @@
   - [CRUD Template](templates/crud_template/crud_template.md) -->
 
 <br/>
-
-* **Guides**
-- [Guides Overview](guides/)
-- [Importing Projects](guides/importing/)
-- [Layout](guides/layouts/)
-  - [Layout Basics](guides/layouts/layout-basics/)
-  - [Scrolling Content](guides/layouts/scrolling/)
-- [Lists](guides/lists/)
-  - [List Basics](guides/lists/list-basics/)
-- [Navigation](guides/navigation/)
-  - [Basic Navigation](guides/navigation/web-navigation/basic-navigation/)
-  - [Multi Level Navigation](guides/navigation/web-navigation/multi-level-navigation/)
-  - [Encoding Parameters In URLs](guides/navigation/web-navigation/encoding-params-in-url/)
-
-<!--  - [List Selection Logic](guides/lists/selection-logic/)
-  - [Dynamic List Items](guides/lists/dynamic-list-items/) -->
-- [UI states and variants](guides/states-and-variants/)
-  - [Style Variants](guides/states-and-variants/variants/)
-  - [Visual States](guides/states-and-variants/visual-states/)
-  - [The States node](guides/states-and-variants/states-node/)
-- <span class="hoverable">Working With Local Data</span>
-  - [Using Variables](guides/working-with-data/local-data/using-variables/)
-  - [Using Objects](guides/working-with-data/local-data/using-objects/)
-- [Working With Cloud Data](guides/working-with-data/cloud-data/)
-  - [Creating a Backend](guides/working-with-data/cloud-data/creating-backend/)
-  - [Creating a Class](guides/working-with-data/cloud-data/creating-class/)
-  - [Creating new database entries](guides/working-with-data/cloud-data/creating-records/)
-  - [Querying Records from database](guides/working-with-data/cloud-data/querying-records/)
-  - [Updating Records](guides/working-with-data/cloud-data/updating-records/)
-  - [Filtering Database Queries](guides/working-with-data/cloud-data/query-filters/)
-  - [Record Relations](guides/working-with-data/cloud-data/relations/)
-  - [Access Control](guides/working-with-data/cloud-data/access-control/)
-- [User Management](guides/user-management/)
-- [Building Business Logic in Noodl](guides/business-logic/overview/)
-  - [Using Zapier with Noodl](guides/business-logic/zapier/)
-- [Deploying and hosting Noodl apps](guides/deploy-noodl-apps/)
-  - [Deploying an App on sandbox domain](guides/deploy-noodl-apps/deploy-noodl-dot-app.md)
-  - [Deploying to your custom domain](guides/deploy-noodl-apps/deploy-to-own-domain.md)
-  - [Using an External Backend](guides/deploy-noodl-apps/using-external-backend.md)
-  - [Hosting frontend at GCP or AWS](guides/deploy-noodl-apps/hosting-frontend.md)
-- [Events](guides/events/)
-- [JavaScript](guides/javascript.md)
-- [Version control](guides/version-control/)
-- [Figma Plugin](guides/figma/)
 
 <!-- 
 * [Events](guides/events.md)
