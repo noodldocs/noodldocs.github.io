@@ -2,9 +2,8 @@
 <div data-template="popup"> 
     <video src="01_intro.mp4"></video>
     <h2>Learn how to work with navigation</h2>
-    <p>This lesson will guide you through the steps of setting up a navigation system.</p>
+    <p>This lesson will guide you through the steps of setting up a navigation system. There are many types of navigation patterns, and you will learn the basics needed for most navigation patterns.</p>
     <p>The lesson starts with a list containing cards showing travel destinations. During the lesson, we'll make each card navigate to a detailed page for the destination.</p>
-    <p>There are many types of navigation patterns, and you will learn the basics needed for most navigation patterns.</p>
     <p>Click "Next" to get started!</p>
 </div>
 
@@ -35,7 +34,6 @@
         <h2>Scope of this lessons</h2>
     </div>
     <div data-template="popup">
-        <video src="02_static-array.mp4"></video>
         <h2>Scope of this lessons</h2>
         <p>This lesson starts with a premade list containing cards for travel destinations. It's a very similar approach to what was used in lesson 02.</p>
         <p>Everything is in the <b>App</b> component, but we will soon be moving the destination cards into their own page. We'll also navigate to a new page when an card is clicked.</p>
@@ -68,8 +66,9 @@
     <div data-template="item">
         <header>&nbsp;</header>
         <h2>Page Router node</h2>
-    </div>
+    </div>d
     <div data-template="popup">
+        <video src="04_page-router.mp4"></video>
         <h2>Page Router node</h2>
         <p>The Page Router node is a visual node and takes up space on the screen. Any page you navigate to will become child of the Page Router and use the space available to the Page Router.</p>
         <p>The other nodes in the visual hierarchy in the App component will stay active when navigating. So a menu and footer could be places outside a page, and live next to the Page Router node in the hierarchy.
@@ -95,7 +94,7 @@
         <h3>Place a <b>Page Router</b> node a child to the <b>Group</b> node called <i>Max width: 600px</i></h3>
     </div>
     <div data-template="popup">
-        <video src="05_create-component.mp4"></video>
+        <video src="05_place_pagerouter.mp4"></video>
         <p>Place a <b>Page Router</b> node a child to the <b>Group</b> node called <i>Max width: 600px</i></p>
     </div>
 </div>
@@ -109,10 +108,10 @@
         <h2>Creating pages</h2>
     </div>
     <div data-template="popup">
+        <video src="06_creatingpages.mp4"></video>
         <h2>Creating pages</h2>
         <p>Now when we have our Page Router node, our next steps is to add pages to it. This can be done from the property panel, with the Page Router node selected.</p> 
-        <p>The "Add new page" button allows you to to assign existing pages to be part of this Page Router, or to create new pages.</p> 
-        <p>If we already had Page components in the project we could simple add them to our Page Router from here, but we don't have any pages yet.</p>
+        <p>The "Add new page" button allows you to to assign existing pages to be part of this Page Router, or to create new pages. If we already had Page components in the project we could simple add them to our Page Router from here, but we don't have any pages yet.</p>
         <p>You can create new pages from here by clicking the "+" icon in top of the popup window where it says <i>Create new page</i>.</p>
         <p>Click "Next" to start creating a new page.</p>
     </div>
@@ -138,7 +137,7 @@
         <h3>Create a new page called <i>List page</i>.<br><i>Note: Page names are case sensitive</i></h3>
     </div>
     <div data-template="popup">
-        <video src="05_create-component.mp4"></video>
+        <video src="07_addlistpage.mp4"></video>
         <p>Create a new page called <i>List page</i></p>
     </div>
 </div>
@@ -163,7 +162,7 @@
         <h3>Create another new page called <i>Description page</i></h3>
     </div>
     <div data-template="popup">
-        <video src="05_create-component.mp4"></video>
+        <video src="08_adddescriptionpage.mp4"></video>
         <p>Create another new page called <i>Description page</i></p>
     </div>
 </div>
@@ -179,6 +178,7 @@
     </div>
     <div data-template="popup">
         <h2>Page Components</h2>
+        <video src="09_pagecomponents.mp4"></video>
         <p>A page in Noodl is also called a <i>Page Component</i> as it in many ways works as any other visual component in Noodl.</p>
         <p>To change the content of a page we can open the page component from the component sidebar, or by clicking on it in the component canvas. By default, a page components comes with two nodes:</p>
         <p>1. A Page node. This is the visual root of the page, and all children will be part of the page.</p>
@@ -204,7 +204,7 @@
         <h3>Select the Group called <i>List content</i>, it's children, and with the Static Array node. Move them into the <b>List page</b> component.</h3>
     </div>
     <div data-template="popup">
-        <video src="05_create-component.mp4"></video>
+        <video src="10_listcontent.mp4"></video>
         <h3>Select the Group called <i>List content</i>, it's children, and with the Static Array node. Move them into the <b>List page</b> component.</h3>
     </div>
 </div>
@@ -225,7 +225,7 @@
         <h3>Make the <i>List content </i>Group a child to the Page node.</h3>
     </div>
     <div data-template="popup">
-        <video src="05_create-component.mp4"></video>
+        <<video src="10_listcontent.mp4"></video>
         <p>Make the <i>List content </i>Group a child to the Page node.</p>
     </div>
 </div>
@@ -239,9 +239,9 @@
         <h2>Setting a start page</h2>
     </div>
     <div data-template="popup">
-        <video src="04_visual-component.mp4"></video>
+        <video src="11_makestartpage.mp4"></video>
         <h2>Setting a start page</h2>
-        <p>Once we added the nodes for our destination cards to the page, they become visible in our preview.</p>
+        <p>Once we added the nodes for our list of cards to the Page list, they become visible in our preview.</p>
         <p>This is because the <b>List page</b> is set to be the start page inside the Page Router</p>
         <p>We can change the start page from the menu on each page item in the Page router node's property panel.</p>
         <p>Click "Next" to continue.</p>
@@ -269,7 +269,7 @@
         <h3>Go back to the App component, and modify the Page Router so that the <i>Description page</i> is set as the start page</h3>
     </div>
     <div data-template="popup">
-        <video src="05_create-component.mp4"></video>
+        <video src="12_description_as_startpage.mp4"></video>
         <p>Go back to the App component, and modify the Page Router so that the <i>Description page</i> is set as the start page</p>
     </div>
 </div>
@@ -283,11 +283,11 @@
         <h2>Layout a page</h2>
     </div>
     <div data-template="popup">
-        <video src="04_visual-component.mp4"></video>
+        <video src="13_makelayout.mp4"></video>
         <h2>Layout a page</h2>
         <p>Our preview now become blank, and thats because the Description page is currently empty.</p>
         <p>The purpose of this page is to show more details after clicking on one of the destination cards.</p>
-        <p>We will add a back button, an image, a title, and a description to the Description page.</p>
+        <p>We will adding a back button, an image, a title, and a description to the Description page.</p>
         <p>Click "Next" to start designing this page.</p>
     </div>
 </div>
@@ -309,6 +309,7 @@
         <h3>Go to the Description page and add a <b>Group</b> node to the <b>Page</b> node</h3>
     </div>
     <div data-template="popup">
+        <video src="14_addgroup.mp4"></video>
     </div>
 </div>
 
@@ -331,6 +332,7 @@
         <h3>Add a <b>Button</b> node as a child to the <b>Group</b> node, and change its <b>label</b> to <i>Go back</i></h3>
     </div>
     <div data-template="popup">
+        <video src="15_addbutton.mp4"></video>
     </div>
 </div>
 
@@ -341,7 +343,7 @@
         {
             "path":"/Description page:%Page:%Group:%Image", 
             "paramseq": {
-                "sizeMode":"explicit",
+                "sizeMode":"contentHeight",
                 "marginTop": { "value": 24, "unit": "px" }
             }
         }
@@ -352,6 +354,7 @@
         <h3>Add an <b>Image</b> node as a second child to the <b>Group</b> node and set its <b>Top margin</b> to <i>24px</i>, and <b>dimension mode</b> to <i>Explicit width & content height</i></h3>
     </div>
     <div data-template="popup">
+        <video src="16_adddimage.mp4"></video>
     </div>
 </div>
 
@@ -374,6 +377,7 @@
         <h3>Add a <b>Text</b> node as a third child and set its <b>Text style</b> to <i>H1</i> and <b>Top margin<b> of <i>24px</i></h3>
     </div>
     <div data-template="popup">
+        <video src="17_addtitle.mp4"></video>
     </div>
 </div>
 
@@ -396,6 +400,7 @@
         <h3>Add another <b>Text</b> node and set its <b>Text style</b> to <i>Body Text</i> and <b>Top margin<b> to <i>24px</i></h3>
     </div>
     <div data-template="popup">
+        <video src="18_adddescription.mp4"></video>
     </div>
 </div>
 
@@ -409,6 +414,7 @@
         <h2>Navigation node</h2>
     </div>
     <div data-template="popup">
+        <video src="19_navigatenode.mp4"></video>
         <h2>Navigation node</h2>
         <p>We now have a layout on the page, so let's add a few nodes so we can have a working navigation flow between the List page and the Description page.</p>
         <p>As we are on the Description page, we can add a <b>Navigation</b> node that points to the <b>List page</b>, that gets triggered when the "go back" button is clicked.</p>
@@ -435,6 +441,7 @@
         <h3>Place a <b>Navigate</b> node in to the node graph and set the <b>Target page</b> property to <i>List page</i></h3>
     </div>
     <div data-template="popup">
+        <video src="19_navigatenode.mp4"></video>
     </div>
 </div>
 
@@ -455,6 +462,7 @@
         <h3>Connect the <b>Click</b> event from the Button node to the <b>Navigate</b> event on the Navigate node</h3>
     </div>
     <div data-template="popup">
+        <video src="19_navigatenode.mp4"></video>
     </div>
 </div>
 
@@ -467,6 +475,7 @@
         <h2>Navigation</h2>
     </div>
     <div data-template="popup">
+        <video src="20_navigationflow.mp4"></video>
         <h2>Navigation</h2>
         <p>Great! Now we can click the "Go back" button to navigate to the <b>List page</b>.</p>
         <p>Let's add another Navigate node to our <b>Destination list item component</b> so we can navigate back and forth between the two pages.</p>
@@ -495,6 +504,7 @@
         <h3>Go to the <i>App</i> component and set the Page Router's start page to the <i>List page</i></h3>
     </div>
     <div data-template="popup">
+        <video src="21_setstartpage.mp4"></video>
     </div>
 </div>
 
@@ -515,6 +525,7 @@
         <h3>Go to the <i>Destination List item</i> component, and create a Navigate node.</h3>
     </div>
     <div data-template="popup">
+        <video src="20_navigationflow.mp4"></video>
     </div>
 </div>
 
@@ -536,6 +547,7 @@
         <h3>Set the Navigate node's target page to the Description page</h3>
     </div>
     <div data-template="popup">
+        <video src="20_navigationflow.mp4"></video>
     </div>
 </div>
 
@@ -558,6 +570,7 @@
         <h3>Connect the <i>Click</i> event from the top Group node to the <i>Navigate</i> event on the Navigation node</h3>
     </div>
     <div data-template="popup">
+        <video src="20_navigationflow.mp4"></video>
     </div>
 </div>
 
@@ -571,7 +584,7 @@
         <h2>Navigating back and forth</h2>
     </div>
     <div data-template="popup">
-        <video src="04_visual-component.mp4"></video>
+        <video src="22_backandforth.mp4"></video>
         <h2>Navigating back and forth</h2>
         <p>Well done! We now have a flow between the two pages, and this navigation pattern is all you need to know to create most navigation patterns.</p>
         <p>Are you ready for adding some data to the page as we navigate?</p>
@@ -589,7 +602,6 @@
         <h2>Sending data to a page</h2>
     </div>
     <div data-template="popup">
-        <video src="04_visual-component.mp4"></video>
         <h2>Sending data to a page</h2>
         <p>The Description page now we have a simple layout that we can use to display more details about a destination once we click on a destination card.</p>
         <p>Our list of destinations are created with data from a Static Array node, and we want to make the data associated with a clicked destination card available inside of the Description page.</p>
@@ -622,6 +634,7 @@
         <h2>Creating a Path parameter</h2>
     </div>
     <div data-template="popup">
+        <video src="23_pageparameter.mp4"></video>
         <h2>Creating a Path parameter</h2>
         <p>When the a destination card is clicked we want to send the Id of the Object with the data for that destination, so we can access the data on that page.</p>
         <p>We'll achieve this by adding a Page parameter to the Destination page, and connect that to the <b>Id</b> property on the <b>Object</b>node.</p>
@@ -647,6 +660,7 @@
         <h3>Go to the Description page and create a <b>Path parameter</b> On the <b>Page Input</b> node, with the name <i>object id</i></h3>
     </div>
     <div data-template="popup">
+        <video src="23_pageparameter.mp4"></video>
     </div>
 </div>
 
@@ -660,6 +674,7 @@
         <h2>Navigate inputs</h2>
     </div>
     <div data-template="popup">
+        <video src="24_Navigateinputs.mp4"></video>
         <h2>Navigate inputs</h2>
         <p>When we create a <b>Path parameter</b> on the Page Input node, we create a new input on every Navigate node that is targeting the page containing the Page Input node.</p>
         <p>Let's go back to the <b>Destination List item</b> component and connect the <B>Object</B> nodes's id to Navigate node</p>
@@ -685,6 +700,7 @@
         <h3>Go to the <b>Destination List item</b> component, and connect the <b>Id</b> output from the <b>Object</b> node to the input called <b>object id</b> on the Navigate node</h3>
     </div>
     <div data-template="popup">
+        <video src="24_Navigateinputs.mp4"></video>
     </div>
 </div>
 
@@ -707,6 +723,7 @@
         <h3>Add an <b>Object</b> node to the <b>Description page</b> and create the three following Object properties: <i>title, description, photo</i></h3>
     </div>
     <div data-template="popup">
+        <video src="25_addobject.mp4"></video>
     </div>
 </div>
 
@@ -728,6 +745,7 @@
         <h3>Connect the <b>object id</b> parameter from the <b>Page input</b> node to the <b>Id property</b> of the <b>Object node</b></h3>
     </div>
     <div data-template="popup">
+        <video src="26_objectid.mp4"></video>
     </div>
 </div>
 
@@ -749,6 +767,7 @@
         <h3>Connect the <b>photo</b> property to the <b>source input</b> on the <b>Image</b> node</h3>
     </div>
     <div data-template="popup">
+        <video src="27_photo.mp4"></video>
     </div>
 </div>
 
@@ -769,6 +788,7 @@
         <h3>Connect the <b>title</b> property from the <b>Object</b> node to the first <b>Text</b> node's <b>Text</b>input</h3>
     </div>
     <div data-template="popup">
+        <video src="28_title.mp4"></video>
     </div>
 </div>
 
@@ -789,6 +809,7 @@
         <h3>Connect the <b>description</b> property from the <b>Object</b> node to the second <b>Text</b> node's <b>Text</b> input</h3>
     </div>
     <div data-template="popup">
+        <video src="29_description.mp4"></video>
     </div>
 </div>
 
@@ -803,6 +824,7 @@
         <h2>Try it out!</h2>
     </div>
     <div data-template="popup">
+        <video src="30_allworking.mp4"></video>
         <h2>Refresh and try it out!</h2>
         <p>Great! Now we have everything in place and a working navigation system that sends data between the pages.</p>
         <p>Refresh the preview, and close this popup to try it out a bit. When you are done, click the lesson step to finish this lesson.</p>
@@ -820,10 +842,10 @@
         <h2>Congratulations!</h2>
     </div>
     <div data-template="popup">
-        <!--<img src="tutorial_card.png" style="cursor: pointer;" onclick="window.open('https://www.youtube.com/watch?v=TNnn0Gzj-H4&list=PL2eC2vS4uVoMbujQ5CiNtNuP7s7-UwNn-')"> -->
+        <img src="tutorial_card.png" style="cursor: pointer;" onclick="window.open('https://www.youtube.com/watch?v=TNnn0Gzj-H4&list=PL2eC2vS4uVoMbujQ5CiNtNuP7s7-UwNn-')">
         <h2>Congratulations!</h2>
         <p>You've completed this lesson, we hope you liked it!</p>
-        <p>Try out the app for a while and remember you can learn more about navigation on our Documentation site.</p>
+        <p>To take your Noodl skills to the next step, we recommend watching our Todo list app videos where you will learn how to build a working app from scratch.</p>
         <p>Happy Noodling!</p>
         <button style="width: 150px" data-click="exitEditor">EXIT LESSON</button>
     </div>
