@@ -1,23 +1,23 @@
 [
     {
         "url":"gettingstarted",
-        "thumb": "lessons/gettingstarted-1.png",
-        "thumbStarted": "lessons/gettingstarted-2.png",
-        "thumbCompleted": "lessons/gettingstarted-3.png",
+        "thumb": "lessons/01lesson_notstarted.png",
+        "thumbStarted": "lessons/01lesson_started.png",
+        "thumbCompleted": "lessons/01lesson_completed.png",
         "category": "Lessons"
     },
     {
         "url":"create-a-list",
-        "thumb": "lessons/create-a-list-1.png",
-        "thumbStarted": "lessons/create-a-list-2.png",
-        "thumbCompleted": "lessons/create-a-list-3.png",
+        "thumb": "lessons/02lesson_notstarted.png",
+        "thumbStarted": "lessons/02lesson_started.png",
+        "thumbCompleted": "lessons/02lesson_completed.png",
         "category": "Lessons"
     },
     {
         "url":"navigation",
-        "thumb": "lessons/navigation-1.png",
-        "thumbStarted": "lessons/navigation-2.png",
-        "thumbCompleted": "lessons/navigation-3.png",
+        "thumb": "lessons/03lesson_notstarted.png",
+        "thumbStarted": "lessons/03lesson_started.png",
+        "thumbCompleted": "lessons/03lesson_completed.png",
         "category": "Lessons"
     }
 ]
