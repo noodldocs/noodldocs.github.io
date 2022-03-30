@@ -11,12 +11,12 @@ Happy Noodling!
 ## Noodl tutorial video series
 <br>
 
-<a href="#/tutorials/tasklist-app.md" class="tutorial-img-link" style="border-bottom:none;">![](tasklist_app.png)</a>
+<a href="#/tutorials/tasklist-app.md" class="tutorial-img-link" style="border-bottom:none;">![](./tasklist_app_01.png)</a>
 
 Build a simple task list web app with real backend from scratch, using Noodl's built-in UI controls and cloud service features.
 <br>
 <br>
 <br>
-<a href="#/tutorials/survey-app.md" class="tutorial-img-link" style="border-bottom:none;">![](survey_app.png)</a>
+<a href="#/tutorials/survey-app.md" class="tutorial-img-link" style="border-bottom:none;">![](./survey_app_01.png)</a>
 
  Build a multi-page survey web app that captures user data through custom-styled UI controls. 
