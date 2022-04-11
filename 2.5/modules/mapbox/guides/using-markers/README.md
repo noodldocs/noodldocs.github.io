@@ -10,7 +10,7 @@ This guide will walk you through the following steps
 * Capturing when the user clicks a marker
 * Removing markers from the map
 
-The guide will build on the two previous Mapbox guides, [Setting up Mapbox module]() and [Interacting with the Mapbox Module](). It's recommended that you read those guides first, if you haven't already.
+The guide will build on the two previous Mapbox guides, [Setting up Mapbox module](modules/mapbox/guides/setting-up/) and [Interacting with the Mapbox Module](modules/mapbox/guides/interacting/). It's recommended that you read those guides first, if you haven't already.
 
 The guide will build upon the example from the previous guides. You can import the result from the previous guide by clicking the import button below. Don't forget to set the correct Access Token that you got from your Mapbox account.
 
