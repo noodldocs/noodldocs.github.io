@@ -61,7 +61,7 @@ In the Google Analytics admin panel, go to your newly created **Data Stream** se
 
 Open up your Noodl Project and locate your **Root Component**. It's easy to identify, since it has a small house icon in front of it and is called `App` (if you haven't renamed it).
 
-<div class="ndl-image-with-background">
+<div className="ndl-image-with-background">
 
 ![](/modules/google-analytics/guides/setting-up-google-analytics/root-component.png)
 
@@ -69,7 +69,7 @@ Open up your Noodl Project and locate your **Root Component**. It's easy to iden
 
 Create a `Google Analytics Root` node and place it in the visual tree, as high up as you can, then paste the **Measurement ID** that you copied earlier into the `Measurement ID` input in the **Property Panel**.
 
-<div class="ndl-image-with-background l">
+<div className="ndl-image-with-background l">
 
 ![](/modules/google-analytics/guides/setting-up-google-analytics/added-root-node.png)
 
@@ -77,13 +77,13 @@ Create a `Google Analytics Root` node and place it in the visual tree, as high u
 
 ## Allow tracking
 
-To be able to track anything we need to check the <span class="ndl-data">Allow Tracking</span> input. This can be done by simply checking the input in the **Property Panel**.
+To be able to track anything we need to check the <span className="ndl-data">Allow Tracking</span> input. This can be done by simply checking the input in the **Property Panel**.
 
 In most cases it is recommended that you notify the user of your tracking and only track after having been given the users consent.
 
-To do this we can use a **Button** node and a **Switch** node. Connect the **Switch** nodes <span class="ndl-data">Current State</span> output to the <span  class="ndl-data">Allow Tracking</span> input on the **Google Analytics Root** node. Use the **Button** nodes <span class="ndl-signal">Click</span> output to flip the **Switch** to `On`.
+To do this we can use a **Button** node and a **Switch** node. Connect the **Switch** nodes <span className="ndl-data">Current State</span> output to the <span  className="ndl-data">Allow Tracking</span> input on the **Google Analytics Root** node. Use the **Button** nodes <span className="ndl-signal">Click</span> output to flip the **Switch** to `On`.
 
-<div class="ndl-image-with-background l">
+<div className="ndl-image-with-background l">
 
 ![](/modules/google-analytics/guides/setting-up-google-analytics/allow-tracking-with-button.png)
 
@@ -91,9 +91,9 @@ To do this we can use a **Button** node and a **Switch** node. Connect the **Swi
 
 This will initiate the tracking when the user clicks the button.
 
-To make sure that everything is correct, we can use the <span class="ndl-signal">Starting Tracking</span> output on the **Google Analytics Root** node. This will send a <span class="ndl-signal">signal</span> when the Google Analytics tracking code has been activated. This <span class="ndl-signal">signal</span> can also be used to hide the button after consent has been given. Simply use the same "flip the switch" trick we did above, but setting the **Switch** initial state to `On` (letting the **Button** flip the switch to `Off`) and connecting the <span class="ndl-data">Current State</span> output to the <span class="ndl-data">Mounted</span> input on the **Button**.
+To make sure that everything is correct, we can use the <span className="ndl-signal">Starting Tracking</span> output on the **Google Analytics Root** node. This will send a <span className="ndl-signal">signal</span> when the Google Analytics tracking code has been activated. This <span className="ndl-signal">signal</span> can also be used to hide the button after consent has been given. Simply use the same "flip the switch" trick we did above, but setting the **Switch** initial state to `On` (letting the **Button** flip the switch to `Off`) and connecting the <span className="ndl-data">Current State</span> output to the <span className="ndl-data">Mounted</span> input on the **Button**.
 
-<div class="ndl-image-with-background l">
+<div className="ndl-image-with-background l">
 
 ![](/modules/google-analytics/guides/setting-up-google-analytics/hide-button-on-track.png)
 

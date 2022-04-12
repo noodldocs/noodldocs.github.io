@@ -9,7 +9,7 @@ hide_title: true
 
 This node allows you to add your own custom HTML markup to your visual tree. Common use cases include embeds or inline SVG's.
 
-<div class="ndl-image-with-background l">
+<div className="ndl-image-with-background l">
 
 ![](/modules/custom-html/custom-html.png)
 
@@ -17,7 +17,7 @@ This node allows you to add your own custom HTML markup to your visual tree. Com
 
 You can pass dynamic values to your markup by using template strings. `{{ FillColor }}` will create an input port named `FillColor`.
 
-<div class="ndl-image-with-background l">
+<div className="ndl-image-with-background l">
 
 ![](/modules/custom-html/example.png)
 
@@ -31,8 +31,8 @@ This node also allows you to add script tags to your app. For security reasons a
 
 ## Inputs
 
-| Data                                                | Description                                                                                                                                                                                                                                                                                                    |
-| --------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <span class="ndl-data">HTML</span>                  | Your custom markup that will be rendered in the visual tree.                                                                                                                                                                                                                                                   |
-| <span class="ndl-data">Run inline JavaScript</span> | Running scripts with user input can be dangerous. To provide an extra layer of security JavaScript in the custom HTML is prevented from running. Turn this on if your embed require scripts or if you are an advanced user with knowledge of [XSS Attacks](https://en.wikipedia.org/wiki/Cross-site_scripting) |
-| <span class="ndl-data">Custom Variables</span>      | Any variable in a template string will become an input. Only one variable per template string allowed                                                                                                                                                                                                          |
+| Data                                                    | Description                                                                                                                                                                                                                                                                                                    |
+| ------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <span className="ndl-data">HTML</span>                  | Your custom markup that will be rendered in the visual tree.                                                                                                                                                                                                                                                   |
+| <span className="ndl-data">Run inline JavaScript</span> | Running scripts with user input can be dangerous. To provide an extra layer of security JavaScript in the custom HTML is prevented from running. Turn this on if your embed require scripts or if you are an advanced user with knowledge of [XSS Attacks](https://en.wikipedia.org/wiki/Cross-site_scripting) |
+| <span className="ndl-data">Custom Variables</span>      | Any variable in a template string will become an input. Only one variable per template string allowed                                                                                                                                                                                                          |

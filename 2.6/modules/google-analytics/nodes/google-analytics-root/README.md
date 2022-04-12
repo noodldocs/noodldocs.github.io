@@ -8,7 +8,7 @@ hide_title: true
 
 This node loads Google Analytics in your Noodl app. It _must_ be placed in your **Root Component** for the tracking to work properly. You can find your **Root Component** in the **Components** list in the sidebar, having a house icon beside it.
 
-<div class="ndl-image-with-background l">
+<div className="ndl-image-with-background l">
 
 ![](/modules/google-analytics/screenshot.png)
 
@@ -20,13 +20,13 @@ This node uses [Google Analytics 4](https://developers.google.com/analytics/devg
 
 ## Inputs
 
-| Data                                         | Description                                                                                                               |
-| -------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| <span class="ndl-data">Measurement ID</span> | The [Google Analytics Measurement ID](https://support.google.com/analytics/answer/9539598#find-G-ID) to send the data to. |
-| <span class="ndl-data">Allow Tracking</span> | Sets if tracking should be allowed. For GDPR reasons this is disabled by default.                                         |
+| Data                                             | Description                                                                                                               |
+| ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------- |
+| <span className="ndl-data">Measurement ID</span> | The [Google Analytics Measurement ID](https://support.google.com/analytics/answer/9539598#find-G-ID) to send the data to. |
+| <span className="ndl-data">Allow Tracking</span> | Sets if tracking should be allowed. For GDPR reasons this is disabled by default.                                         |
 
 ## Outputs
 
-| Signal                                            | Description                                                                              |
-| ------------------------------------------------- | ---------------------------------------------------------------------------------------- |
-| <span class="ndl-signal">Starting Tracking</span> | Sends a signal after the tracking code is activated, before it's initialised in the app. |
+| Signal                                                | Description                                                                              |
+| ----------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| <span className="ndl-signal">Starting Tracking</span> | Sends a signal after the tracking code is activated, before it's initialised in the app. |

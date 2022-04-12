@@ -1,86 +1,146 @@
 [
     {
+        "label": "Rotary Knob",
+        "desc": "A small module contain a rotary know UI component.",
+        "icon": "rotary-knob/rotary-knob.png",
+        "project": "rotary-knob/rotary-knob-1.0.1.zip",
+        "docs": "rotary-knob/",
+        "isFeatured": false
+    },
+    {
+        "label": "Shake Detector",
+        "desc": "A small module to detect a device shake with the accelerometer.",
+        "icon": "shake-detector/preview.png",
+        "project": "shake-detector/shake-detector-1.0.1.zip",
+        "docs": "shake-detector/",
+        "isFeatured": false
+    },
+    {
+        "label": "Carousel Scroll",
+        "desc": "A module with components to build carousell scroll user interfaces.",
+        "icon": "carousel-scroll/carousel-1.png",
+        "project": "carousel-scroll/carousel-scroll-1-1.zip",
+        "docs": "carousel-scroll/",
+        "isFeatured": false
+    },
+    {
+        "label": "Media Query",
+        "desc": "Contains a handy component to create responsive interfaces.",
+        "icon": "media-query/media-query.png",
+        "project": "media-query/media-query-project.zip",
+        "docs": "media-query/",
+        "isFeatured": true
+    },
+    {
+        "label": "Multi Select",
+        "desc": "This module contains a few components that will help you make multi select drop downs.",
+        "icon": "multi-select/multi-select.png",
+        "project": "multi-select/multi-select-0-4.zip",
+        "docs": "multi-select/",
+        "isFeatured": false
+    },
+    {
+        "label": "Checkbox group",
+        "desc": "This module contains a few components that will help you make checkbox groups.",
+        "icon": "checkbox-group/checkbox-group.png",
+        "project": "checkbox-group/checkbox-group-0-2.zip",
+        "docs": "checkbox-group/",
+        "isFeatured": false
+    },
+    {
         "label": "Mapbox",
         "desc": "Use this module to add maps and location visualisations to your app.",
         "icon": "mapbox/MapboxModule.png",
         "project": "mapbox/mapbox-1-5.zip",
-        "docs": "mapbox/"
+        "docs": "mapbox/",
+        "isFeatured": true
     },
     {
         "label": "Google Analytics",
         "desc": "Track user behavior with Google Analytics.",
         "project": "google-analytics/google-analytics-1-0-7.zip",
         "icon": "google-analytics/thumbnail.png",
-        "docs": "google-analytics/"
-    }, 
+        "docs": "google-analytics/",
+        "isFeatured": false
+    },
     {
         "label": "Google Sheets",
         "desc": "Use your google sheets as a data source for your applications.",
         "icon": "gsheets/gsheets-icon.png",
         "project": "gsheets/gsheets-1-7.zip",
-        "docs": "gsheets/"
-    },   
+        "docs": "gsheets/",
+        "isFeatured": true
+    },
     {
         "label": "GraphQL",
         "desc": "A module to help quering data using GraphQL.",
         "project": "graphql/graphql-module-1-0-1.zip",
         "icon": "graphql/GraphQLModule.png",
-        "docs": "graphql/"
+        "docs": "graphql/",
+        "isFeatured": true
     },
     {
         "label": "QR Scanner",
         "desc": "This module contains node for scanning QR codes from camera or images.",
         "icon": "qr-scanner/qr-scanner-icon.png",
         "project": "qr-scanner/qr-scanner-1-4.zip",
-        "docs": "qr-scanner/"
-    }, 
+        "docs": "qr-scanner/",
+        "isFeatured": true
+    },
     {
         "label": "Custom HTML",
         "desc": "Write your own HTML and pass values to it with template strings. Useful for embeds.",
         "project": "custom-html/custom-html-module-1-0-1.zip",
         "icon": "custom-html/thumbnail.png",
-        "docs": "custom-html/"
+        "docs": "custom-html/",
+        "isFeatured": false
     },
     {
         "label": "Form Validation",
         "desc": "This module adds a utility node that makes different kind of form validation easier.",
         "project": "validation/validation-1-2.zip",
         "icon": "validation/FormValidationModule.png",
-        "docs": "validation/"
+        "docs": "validation/",
+        "isFeatured": false
     },
     {
         "label": "i18next Translation",
         "desc": "A module for using i18next in Noodl.",
         "project": "i18next/i18next-1-0-3.zip",
         "icon": "i18next/i8nextModule.png",
-        "docs": "i18next/"
+        "docs": "i18next/",
+        "isFeatured": false
     },
     {
         "label": "Lottie",
         "desc": "A module for using Lottie in Noodl.",
         "project": "lottie/lottie-1-0-1.zip",
         "icon": "lottie/LottieModule.png",
-        "docs": "lottie/"
+        "docs": "lottie/",
+        "isFeatured": false
     },
     {
         "label": "Markdown",
         "desc": "Use Markdown in Noodl and style it with CSS.",
         "project": "markdown/noodl-markdown-1-0-1.zip",
         "icon": "markdown/MarkdownModule.png",
-        "docs": "markdown/"
+        "docs": "markdown/",
+        "isFeatured": false
     },
     {
         "label": "MQTT Module",
         "desc": "This module contains nodes for sending and receiving messages over MQTT in web apps.",
         "project": "mqtt/mqtt-module-1-0-2.zip",
         "icon": "mqtt/MQTTModule.png",
-        "docs": "mqtt/"
+        "docs": "mqtt/",
+        "isFeatured": true
     },
     {
         "label": "Web Camera",
         "desc": "Support for accessing the camera in web apps.",
         "icon": "webcamera/WebcameraModule.png",
         "project": "webcamera/webcamera-1-0-4.zip",
-        "docs": "webcamera/"
-    }       
+        "docs": "webcamera/",
+        "isFeatured": false
+    }
 ]

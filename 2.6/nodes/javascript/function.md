@@ -1,3 +1,9 @@
+---
+hide_title: true
+hide_table_of_contents: true
+title: Function
+---
+
 <##head##>
 
 # Function
@@ -5,22 +11,23 @@
 This node enables you to add simpler custom JavaScript to your application.
 
 Runs the Javascript:
-- When any inputs are updated (if "Run" is not connected to anything)
-- When "Run" is called
 
-<div class="ndl-image-with-background l">
+-   When any inputs are updated (if "Run" is not connected to anything)
+-   When "Run" is called
+
+<div className="ndl-image-with-background l">
 
 ![](/nodes/javascript/function/function-1.png)
 
 </div>
 
-The code runs from top to bottom. For more complex custom JavaScript with multiple executon paths and extended control you should use the <span class="ndl-node">Script</span> node.
+The code runs from top to bottom. For more complex custom JavaScript with multiple executon paths and extended control you should use the <span className="ndl-node">Script</span> node.
 
 <##head##>
 
 The most basic way to use the node is as an expression, any time the inputs are changed the script is run and the outputs are updated. E.g. the example above can be used as shown below.
 
-<div class="ndl-image-with-background l">
+<div className="ndl-image-with-background l">
 
 ![](/nodes/javascript/function/function-2.png)
 
@@ -36,7 +43,7 @@ Outputs.FullName = Inputs.FirstName + ' ' + Inputs.LastName
 
 Will create the output **FullName** and the inputs **FirstName** and **LastName**. Another option is to explicitly specify the inputs and outputs in the properties of the node. This will allow you to explicitly specify the types of the inputs and outputs. This can be especially useful if the node is connected to **Component Inputs** or **Component Outputs**.
 
-<div class="ndl-image-with-background">
+<div className="ndl-image-with-background">
 
 ![](/nodes/javascript/function/function-3.png)
 
@@ -60,7 +67,7 @@ The code above will automatically create two outputs **TestIsTrue** and **TestIs
 
 Normally the script is run when any of the inputs change, i.e. receive new data via connections, but you can also control when the function is run with the **Run** signal input. If this input has a connection the script will only run when a signal is received.
 
-<div class="ndl-image-with-background l">
+<div className="ndl-image-with-background l">
 
 ![](/nodes/javascript/function/function-4.png)
 
@@ -68,17 +75,17 @@ Normally the script is run when any of the inputs change, i.e. receive new data 
 
 ## Inputs
 
-| Data                                         | Description                                                                                                                                                                                         |
-| -------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <span class="ndl-data">Script Inputs</span>  | Here you can list inputs to the function and specify types for the inputs as described above. For each input specified or simply used in the function code an input to the node will be created.    |
-| <span class="ndl-data">Script Outputs</span> | Here you can list outputs to the function and specify types for the outputs as described above. For each output specified or simply used in the function code an input to the node will be created. |
+| Data                                             | Description                                                                                                                                                                                         |
+| ------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <span className="ndl-data">Script Inputs</span>  | Here you can list inputs to the function and specify types for the inputs as described above. For each input specified or simply used in the function code an input to the node will be created.    |
+| <span className="ndl-data">Script Outputs</span> | Here you can list outputs to the function and specify types for the outputs as described above. For each output specified or simply used in the function code an input to the node will be created. |
 
-| Signal                              | Description                                                                                                                      |
-| ----------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| <span class="ndl-signal">Run</span> | Send a signal here to run the function. If this input has a connection the function script will not run when inputs are changed. |
+| Signal                                  | Description                                                                                                                      |
+| --------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| <span className="ndl-signal">Run</span> | Send a signal here to run the function. If this input has a connection the function script will not run when inputs are changed. |
 
 ## Outputs
 
-| Data                                  | Description                                 |
-| ------------------------------------- | ------------------------------------------- |
-| <span class="ndl-data">Outputs</span> | The outputs defined in the function script. |
+| Data                                      | Description                                 |
+| ----------------------------------------- | ------------------------------------------- |
+| <span className="ndl-data">Outputs</span> | The outputs defined in the function script. |

@@ -1,18 +1,24 @@
+---
+hide_title: true
+hide_table_of_contents: true
+title: Component Inputs
+---
+
 <##head##>
 
 # Component Inputs
 
 This node is used to create inputs for reusable components.
 
-<div class="ndl-image-with-background l">
+<div className="ndl-image-with-background l">
 
 ![](/nodes/component-utilities/component-inputs/ci_node.png)
 
 </div>
 
-A <span class="ndl-node">Component Input</span> node can have multiple ports connected to inputs on the nodes inside of the component.
+A <span className="ndl-node">Component Input</span> node can have multiple ports connected to inputs on the nodes inside of the component.
 
-<div class="ndl-image-with-background l">
+<div className="ndl-image-with-background l">
 
 ![](/nodes/component-utilities/component-inputs/ci_node2.png)
 
@@ -22,7 +28,7 @@ A <span class="ndl-node">Component Input</span> node can have multiple ports con
 
 A very powerful feature of Noodl is the ability to create **Components** that act as reusable nodes in your application.
 
-<div class="ndl-image-with-background">
+<div className="ndl-image-with-background">
 
 ![](/nodes/component-utilities/component-inputs/component-inputs.png)
 
@@ -35,7 +41,7 @@ The inputs of a component originate from a **Component Inputs** node and are con
 When a **Component Inputs** node is created, it doesn't have any ports. The ports must be added by inspecting the node (left clicking it) and then clicking the **+Port** button.
 You can create and name ports as you wish.
 
-<div class="ndl-image-with-background">
+<div className="ndl-image-with-background">
 
 ![](/nodes/component-utilities/component-inputs/component-inputs-add.png)
 

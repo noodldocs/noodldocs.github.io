@@ -1,10 +1,16 @@
+---
+hide_title: true
+hide_table_of_contents: true
+title: Static Array
+---
+
 <##head##>
 
 # Static Array
 
-Store static data to populate an [Array](/nodes/data/array/array.md) with items. The Static Array node is great for providing static local data for lists etc. You can use it e.g. as an input to a **For Each** node.
+Store static data to populate an [Array](/nodes/data/array/array-node.md) with items. The Static Array node is great for providing static local data for lists etc. You can use it e.g. as an input to a **For Each** node.
 
-<div class="ndl-image-with-background l">
+<div className="ndl-image-with-background l">
 
 ![](/nodes/data/array/static-array/static-array-1.png)
 
@@ -15,9 +21,9 @@ You can provide the data in either **CSV** format or, **JSON** format. The **ite
 
 ## Inputs
 
-| Data                               | Description                                                                                                           |
-| ---------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| <span class="ndl-data">Type</span> | Choose what format the data will be in.<br/><br/>`CSV`: Comma-separated values<br/>`JSON`: JavaScript Object Notation |
+| Data                                   | Description                                                                                                           |
+| -------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| <span className="ndl-data">Type</span> | Choose what format the data will be in.<br/><br/>`CSV`: Comma-separated values<br/>`JSON`: JavaScript Object Notation |
 
 ### CSV
 
@@ -51,6 +57,6 @@ Example:
 
 ## Outputs
 
-| Data                                | Description                                                                                                                                                                                       |
-| ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <span class="ndl-data">Items</span> | <##output:items##>A `Noodl.Array` object that can be connected to e.g. an [Array](/nodes/data/array/array.md), [JavaScript](/docs/guides/business-logic/javascript) or [Repeater](/nodes/ui-controls/repeater).<##output##> |
+| Data                                    | Description                                                                                                                                                                                                                      |
+| --------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <span className="ndl-data">Items</span> | <##output:items##>A `Noodl.Array` object that can be connected to e.g. an [Array](/nodes/data/array/array-node.md), [JavaScript](/docs/guides/business-logic/javascript) or [Repeater](/nodes/ui-controls/repeater).<##output##> |
