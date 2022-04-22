@@ -10,7 +10,7 @@ The snippet is packaged up as a Noodl project that can be imported. Import by pr
 
 <div class="ndl-image-with-background">
     <img src="snippets/carousel-scroll/carousel-1.png"></img> 
-<button class="ndl-import-button" onClick='importIntoNoodl("snippets/carousel-scroll/carousel-scroll-1-0.zip",{name:"Carousel Scroll Snippet",thumb:"snippets/carousel-scroll/carousel-1.png"})'></button>
+<button class="ndl-import-button" onClick='importIntoNoodl("snippets/carousel-scroll/carousel-scroll-1-1.zip",{name:"Carousel Scroll Snippet",thumb:"snippets/carousel-scroll/carousel-1.png"})'></button>
 </div>
 
 If you need help on how to import project you can follow [this](/guides/importing/) guide.
