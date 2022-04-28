@@ -1,0 +1,26 @@
+[
+    {
+        "videoId": "SAIaV4RAo7s",
+        "title": "My first video",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+        "videoLength": 6.06
+    },
+    {
+        "videoId": "DWwE1RzuN2o",
+        "title": "My second video",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+        "videoLength": 6.06
+    },
+    {
+        "videoId": "mHX9XdFMHJ0",
+        "title": "My third video",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+        "videoLength": 6.06
+    },
+    {
+        "videoId": "DG7LRrudMeE",
+        "title": "My fourth video",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+        "videoLength": 6.06
+    }
+]

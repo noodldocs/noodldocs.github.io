@@ -1,0 +1,26 @@
+[
+    {
+        "title": "Pages and navigation",
+        "text": "Learn how to build both simple and advanced navigatino systems, browser url’s and more.",
+        "link": "docs/guides/navigation/overview",
+        "image": "http://img.youtube.com/vi/DWwE1RzuN2o/0.jpg"
+    },
+    {
+        "title": "Layout",
+        "text": "Learn how to build both simple and advanced navigatino systems, browser url’s and more.",
+        "link": "docs/guides/navigation/overview",
+        "image": "http://img.youtube.com/vi/DWwE1RzuN2o/0.jpg"
+    },
+    {
+        "title": "UI states and variants",
+        "text": "Learn how to build both simple and advanced navigatino systems, browser url’s and more.",
+        "link": "docs/guides/navigation/overview",
+        "image": "http://img.youtube.com/vi/DWwE1RzuN2o/0.jpg"
+    },
+    {
+        "title": "Working with local data",
+        "text": "Learn how to build both simple and advanced navigatino systems, browser url’s and more.",
+        "link": "docs/guides/navigation/overview",
+        "image": "http://img.youtube.com/vi/DWwE1RzuN2o/0.jpg"
+    }
+]

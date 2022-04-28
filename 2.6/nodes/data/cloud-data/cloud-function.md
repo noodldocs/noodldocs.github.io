@@ -57,7 +57,7 @@ The only exception is if the returned array is an array of JavaScript primitives
 
 | Data                                     | Description                                                                                                                                                                                                                                                                                                |
 | ---------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <span className="ndl-data">Result</span> | <##output:result##>This output will contain the result that the **Cloud Function** returns upon completion. Depending on the type returned from the function this will either be a [Noodl.Object](/javascript/data/object), [Noodl.Array](/javascript/data/array) or a simple javascript type.<##output##> |
+| <span className="ndl-data">Result</span> | <##output:result##>This output will contain the result that the **Cloud Function** returns upon completion. <##output##> |
 
 | Signal                                      | Description                                                                                              |
 | ------------------------------------------- | -------------------------------------------------------------------------------------------------------- |

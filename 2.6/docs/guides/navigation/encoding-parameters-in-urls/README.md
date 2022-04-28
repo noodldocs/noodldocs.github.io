@@ -24,7 +24,7 @@ We will also use the example app developed as part of the two guides as a starti
 
 <div className="ndl-image-with-background l">
     <img src="guides/navigation/web-navigation/multi-level-navigation/multi-level-final.gif"></img>
-<button className="ndl-import-button" onClick='importIntoNoodl("guides/navigation/web-navigation/multi-level-navigation/multi-level-navigation.zip",{name:"Multi Level Navigation",thumb:"guides/navigation/web-navigation/multi-level-navigation/multi-level-thumb.png"})'></button>
+<button className="ndl-import-button" onClick='importIntoNoodl("docs/guides/navigation/encoding-parameters-in-urls/multi-level-navigation.zip",{name:"Multi Level Navigation",thumb:"docs/guides/navigation/encoding-parameters-in-urls/multi-level-thumb.png"})'></button>
 </div>
 
 ## Path Parameters

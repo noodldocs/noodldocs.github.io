@@ -26,7 +26,7 @@ The <span className="ndl-node">Repeater</span> node takes data from a Noodl <spa
 
 <##head##>
 
-More details can be found in the [guide](/docs/guides/lists/list-basics).
+More details can be found in the [guide](/docs/guides/data/list-basics).
 
 ## Inputs
 
