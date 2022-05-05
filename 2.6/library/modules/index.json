@@ -4,125 +4,143 @@
         "desc": "A small module contain a rotary know UI component.",
         "icon": "library/modules/rotary-knob/rotary-knob.png",
         "project": "library/modules/rotary-knob/rotary-knob-1.0.1.zip",
-        "docs": "/library/modules/rotary-knob/"
+        "docs": "/library/modules/rotary-knob/",
+        "tags": ["UI"]
     },
     {
         "label": "Shake Detector",
         "desc": "A small module to detect a device shake with the accelerometer.",
         "icon": "library/modules/shake-detector/preview.png",
         "project": "library/modules/shake-detector/shake-detector-1.0.1.zip",
-        "docs": "/library/modules/shake-detector/"
+        "docs": "/library/modules/shake-detector/",
+        "tags": ["Device"]
     },
     {
         "label": "Carousel Scroll",
         "desc": "A module with components to build carousell scroll user interfaces.",
         "icon": "library/modules/carousel-scroll/carousel-1.png",
         "project": "library/modules/carousel-scroll/carousel-scroll-1-1.zip",
-        "docs": "/library/modules/carousel-scroll/"
+        "docs": "/library/modules/carousel-scroll/",
+        "tags": ["UI"]
     },
     {
         "label": "Media Query",
         "desc": "Contains a handy component to create responsive interfaces.",
         "icon": "library/modules/media-query/media-query.png",
         "project": "library/modules/media-query/media-query-project.zip",
-        "docs": "/library/modules/media-query/"
+        "docs": "/library/modules/media-query/",
+        "tags": ["UI", "Utility"]
     },
     {
         "label": "Multi Select",
         "desc": "This module contains a few components that will help you make multi select drop downs.",
         "icon": "library/modules/multi-select/multi-select.png",
         "project": "library/modules/multi-select/multi-select-0-4.zip",
-        "docs": "/library/modules/multi-select/"
+        "docs": "/library/modules/multi-select/",
+        "tags": ["UI"]
     },
     {
         "label": "Checkbox group",
         "desc": "This module contains a few components that will help you make checkbox groups.",
         "icon": "library/modules/checkbox-group/checkbox-group.png",
         "project": "library/modules/checkbox-group/checkbox-group-0-2.zip",
-        "docs": "/library/modules/checkbox-group/"
+        "docs": "/library/modules/checkbox-group/",
+        "tags": ["UI", "Utility"]
     },
     {
         "label": "Mapbox",
         "desc": "Use this module to add maps and location visualisations to your app.",
         "icon": "library/modules/mapbox/MapboxModule.png",
         "project": "library/modules/mapbox/mapbox-1-5.zip",
-        "docs": "/library/modules/mapbox/"
+        "docs": "/library/modules/mapbox/",
+        "tags": ["UI", "Service"]
     },
     {
         "label": "Google Analytics",
         "desc": "Track user behavior with Google Analytics.",
         "project": "library/modules/google-analytics/google-analytics-1-0-7.zip",
         "icon": "library/modules/google-analytics/thumbnail.png",
-        "docs": "/library/modules/google-analytics/"
+        "docs": "/library/modules/google-analytics/",
+        "tags": ["Service", "Analytics"]
     },
     {
         "label": "Google Sheets",
         "desc": "Use your google sheets as a data source for your applications.",
         "icon": "library/modules/gsheets/gsheets-icon.png",
         "project": "library/modules/gsheets/gsheets-1-7.zip",
-        "docs": "/library/modules/gsheets/"
+        "docs": "/library/modules/gsheets/",
+        "tags": ["Service", "Data"]
     },
     {
         "label": "GraphQL",
         "desc": "A module to help quering data using GraphQL.",
         "project": "library/modules/graphql/graphql-module-1-0-1.zip",
         "icon": "library/modules/graphql/GraphQLModule.png",
-        "docs": "/library/modules/graphql/"
+        "docs": "/library/modules/graphql/",
+        "tags": ["Data", "Networking"]
     },
     {
         "label": "QR Scanner",
         "desc": "This module contains node for scanning QR codes from camera or images.",
         "icon": "library/modules/qr-scanner/qr-scanner-icon.png",
         "project": "library/modules/qr-scanner/qr-scanner-1-4.zip",
-        "docs": "/library/modules/qr-scanner/"
+        "docs": "/library/modules/qr-scanner/",
+        "tags": ["Device"]
     },
     {
         "label": "Custom HTML",
         "desc": "Write your own HTML and pass values to it with template strings. Useful for embeds.",
         "project": "library/modules/custom-html/custom-html-module-1-0-1.zip",
         "icon": "library/modules/custom-html/thumbnail.png",
-        "docs": "/library/modules/custom-html/"
+        "docs": "/library/modules/custom-html/",
+        "tags": ["UI", "Code"]
     },
     {
         "label": "Form Validation",
         "desc": "This module adds a utility node that makes different kind of form validation easier.",
         "project": "library/modules/validation/validation-1-2.zip",
         "icon": "library/modules/validation/FormValidationModule.png",
-        "docs": "/library/modules/validation/"
+        "docs": "/library/modules/validation/",
+        "tags": ["Data", "Utility"]
     },
     {
         "label": "i18next Translation",
         "desc": "A module for using i18next in Noodl.",
         "project": "library/modules/i18next/i18next-1-0-3.zip",
         "icon": "library/modules/i18next/i8nextModule.png",
-        "docs": "/library/modules/i18next/"
+        "docs": "/library/modules/i18next/",
+        "tags": ["Data", "Utility"]
     },
     {
         "label": "Lottie",
         "desc": "A module for using Lottie in Noodl.",
         "project": "library/modules/lottie/lottie-1-0-1.zip",
         "icon": "library/modules/lottie/LottieModule.png",
-        "docs": "/library/modules/lottie/"
+        "docs": "/library/modules/lottie/",
+        "tags": ["UI", "Animation"]
     },
     {
         "label": "Markdown",
         "desc": "Use Markdown in Noodl and style it with CSS.",
         "project": "library/modules/markdown/noodl-markdown-1-0-1.zip",
         "icon": "library/modules/markdown/MarkdownModule.png",
-        "docs": "/library/modules/markdown/"
+        "docs": "/library/modules/markdown/",
+        "tags": ["Code"]
     },
     {
         "label": "MQTT Module",
         "desc": "This module contains nodes for sending and receiving messages over MQTT in web apps.",
         "project": "library/modules/mqtt/mqtt-module-1-0-2.zip",
         "icon": "library/modules/mqtt/MQTTModule.png",
-        "docs": "/library/modules/mqtt/"
+        "docs": "/library/modules/mqtt/",
+        "tags": ["Device", "Networking"]
     },
     {
         "label": "Web Camera",
         "desc": "Support for accessing the camera in web apps.",
         "icon": "library/modules/webcamera/WebcameraModule.png",
         "project": "library/modules/webcamera/webcamera-1-0-4.zip",
-        "docs": "/library/modules/webcamera/"
+        "docs": "/library/modules/webcamera/",
+        "tags": ["Device"]
     }
 ]
