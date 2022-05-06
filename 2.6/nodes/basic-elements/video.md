@@ -20,6 +20,7 @@ The <span className="ndl-data">source</span> can be set from a URL or a file. Yo
 | ----------------------------------------- | ------------------------------------------- |
 | <span className="ndl-signal">Play</span>  | Signal to start playing the video.          |
 | <span className="ndl-signal">Pause</span> | Signal to pause the video.                  |
+| <span className="ndl-signal">Restart</span> | Signal to play the video from the beginning. |
 | <span className="ndl-signal">Reset</span> | Signal to reset the video to the beginning. |
 
 | Data                                       | Description                                                                            |

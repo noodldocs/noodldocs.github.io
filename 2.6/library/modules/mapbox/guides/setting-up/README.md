@@ -1,3 +1,7 @@
+---
+title: Setting up the Mapbox Module
+hide_title: true
+---
 # Setting up the Mapbox Module
 
 ## What you will learn in this guide

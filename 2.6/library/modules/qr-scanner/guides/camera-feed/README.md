@@ -1,3 +1,7 @@
+---
+title: Scanning for QR Codes in a camera feed
+hide_title: true
+---
 # Scanning for QR Codes in a camera feed
 
 This example enables you to scan a camera feed for Quick Response (QR) Codes and fetch the resulting data in the QR Code. To scan for QR Codes via uploaded images, see the documentation on the [Image QR Scanner](/library/modules/qr-scanner/guides/image-upload).

@@ -1,3 +1,7 @@
+---
+title: Google Sheets Module
+hide_title: true
+---
 # Google Sheets Module
 
 The Google Sheets Module makes it easy to read data from publich Google Sheets. Use it for example to use Google Sheets as a CMS system or a read-only data repository. There are three nodes included, [Query Sheet](/library/modules/gsheets/node-docs/query-sheet), [Query Sheet Aggregate](/library/modules/gsheets/node-docs/query-sheet-aggregate) and [Sheet Row](/library/modules/gsheets/node-docs/sheet-row).

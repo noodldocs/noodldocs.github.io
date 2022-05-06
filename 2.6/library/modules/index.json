@@ -24,6 +24,14 @@
         "tags": ["UI"]
     },
     {
+        "label": "Chart.js",
+        "desc": "A module with components to build charts.",
+        "icon": "library/modules/chartjs/icon.png",
+        "project": "library/modules/chartjs/chartjs-1-0-0.zip",
+        "docs": "/library/modules/chartjs/",
+        "tags": ["UI"]
+    },
+    {
         "label": "Media Query",
         "desc": "Contains a handy component to create responsive interfaces.",
         "icon": "library/modules/media-query/media-query.png",
@@ -142,5 +150,13 @@
         "project": "library/modules/webcamera/webcamera-1-0-4.zip",
         "docs": "/library/modules/webcamera/",
         "tags": ["Device"]
+    },
+    {
+        "label": "Image Cropper",
+        "desc": "Image Cropper Module",
+        "icon": "library/modules/webcamera/WebcameraModule.png",
+        "project": "library/modules/image-cropper/image-cropper-1-0.zip",
+        "docs": "/library/modules/webcamera/",
+        "tags": ["UI"]
     }
 ]

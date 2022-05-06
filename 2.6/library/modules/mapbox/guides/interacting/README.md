@@ -1,3 +1,7 @@
+---
+title: Interacting with the Mapbox Module
+hide_title: true
+---
 # Interacting with the Mapbox Module
 
 ## What you will learn in this guide

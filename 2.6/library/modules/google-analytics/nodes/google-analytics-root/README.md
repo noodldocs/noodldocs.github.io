@@ -1,4 +1,5 @@
 ---
+title: Google Analytics Root
 hide_title: true
 ---
 

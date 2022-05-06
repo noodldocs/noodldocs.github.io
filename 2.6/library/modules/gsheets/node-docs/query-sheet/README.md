@@ -1,4 +1,5 @@
 ---
+title: Query Sheet
 hide_title: true
 ---
 

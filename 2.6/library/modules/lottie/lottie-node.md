@@ -1,4 +1,5 @@
 ---
+title: Lottie
 hide_title: true
 ---
 

@@ -1,3 +1,7 @@
+---
+title: Multi Select
+hide_title: true
+---
 # Multi Select
 
 This is a small snippet containing a multi select drop down with checkboxes as shown below:

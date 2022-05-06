@@ -1,4 +1,5 @@
 ---
+title: GraphQL Query
 hide_title: true
 ---
 

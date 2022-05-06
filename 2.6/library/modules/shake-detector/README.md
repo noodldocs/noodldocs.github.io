@@ -1,3 +1,7 @@
+---
+title: Shake Detector
+hide_title: true
+---
 # Shake Detector
 
 This is an example of how to use the [Script](/nodes/javascript/script) node to implement a "Shake detector".

@@ -1,4 +1,5 @@
 ---
+title: Send Google Analytics Data
 hide_title: true
 ---
 

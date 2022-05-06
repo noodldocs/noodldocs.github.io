@@ -1,3 +1,7 @@
+---
+title: Web Camera
+hide_title: true
+---
 # Web Camera
 
 ## Adding the module to your project

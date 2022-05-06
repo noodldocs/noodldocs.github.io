@@ -1,4 +1,5 @@
 ---
+title: LanguageBundle
 hide_title: true
 ---
 

@@ -1,3 +1,7 @@
+---
+title: Media Queries
+hide_title: true
+---
 # Media Queries
 
 You can access media queries directly through a script. Here's an example you can import and use in your own applications. When you import this module you will get the **Media Query** component.

@@ -1,4 +1,5 @@
 ---
+title: i18next
 hide_title: true
 ---
 

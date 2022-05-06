@@ -1,3 +1,7 @@
+---
+title: Carousel Scroll
+hide_title: true
+---
 # Carousel Scroll
 
 This module contains a simple horizontal Carousel scroll with the following features:

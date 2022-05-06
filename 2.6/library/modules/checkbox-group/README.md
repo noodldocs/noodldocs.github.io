@@ -1,3 +1,7 @@
+---
+title: Checkbox Group
+hide_title: true
+---
 # Checkbox Group
 
 This is a small module containing a group of checkboxes that are dynamically created from an array containing at least the **Value** property, optionally the **Label** property and others as needed.

@@ -1,3 +1,7 @@
+---
+title: Getting Screen Coordinates of Markers
+hide_title: true
+---
 # Getting Screen Coordinates of Markers
 
 This snippet is useful if you want to position something, for example a Noodl Component, on top of a Marker on the Mapbox Map.

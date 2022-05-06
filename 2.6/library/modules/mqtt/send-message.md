@@ -1,4 +1,5 @@
 ---
+title: Send Message
 hide_title: true
 ---
 

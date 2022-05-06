@@ -1,4 +1,5 @@
 ---
+title: Validate
 hide_title: true
 ---
 

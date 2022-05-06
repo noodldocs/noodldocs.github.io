@@ -8,7 +8,8 @@ title: Dropdown
 
 # Dropdown
 
-This node places a dropdown input field in the visual tree. The input can for example be used to capture information from a user.
+This node places a dropdown input field in the visual tree.
+The input can for example be used to capture information from a user.
 
 <div className="ndl-image-with-background l">
 
@@ -16,7 +17,8 @@ This node places a dropdown input field in the visual tree. The input can for ex
 
 </div>
 
-The dropdown takes an array of options as an input, which will be shown in the dropdown for the user to pick from.
+The dropdown takes an array of options as an input,
+which will be shown in the dropdown for the user to pick from.
 
 <div className="ndl-image-with-background l">
 
@@ -26,9 +28,12 @@ The dropdown takes an array of options as an input, which will be shown in the d
 
 ## The Incoming Items Format
 
-The incoming items should be an [Array](/nodes/data/array/array-node.md) of [Objects](/nodes/data/object/object-node.md), for example coming from a [Static Array](/nodes/data/array/static-array) or [Static Array](/nodes/data/cloud-data/query-records) node.
+The incoming items should be an [Array](/nodes/data/array/array-node.md) of [Objects](/nodes/data/object/object-node.md),
+for example coming from a [Static Array](/nodes/data/array/static-array),
+[Query Records](/nodes/data/cloud-data/query-records) or a [Function](/nodes/javascript/function) node.
 
-The **Object** should have two mandatory properties: `Label`, `Value` (note that the case matters, `value` would not work). The `Label` property should contain the string to be shown in the **Dropdown**. The `Value` property will be set on the output **Value** on the **Dropdown**.
+The **Object** should have two mandatory properties: `Label`, `Value` (note that the case matters, `value` would not work). The `Label` property should contain the string to be shown in the **Dropdown**.
+The `Value` property will be set on the output **Value** on the **Dropdown**.
 
 <div className="ndl-image-with-background l">
 
@@ -36,7 +41,9 @@ The **Object** should have two mandatory properties: `Label`, `Value` (note that
 
 </div>
 
-Depending on how you original data looks, it may be necessary to use the [Array Map](/nodes/data/array/array-map/) node to re-map values in the original data towards `Label` and `Value`. One useful pattern is to map the `id` of an **Object** to the `Value` property in teh **Array Map** to easily access the selected **Object**. The mapping can be achieved through `Value:function (object){return object.id}`.
+Depending on how your original data looks, it may be necessary to use the [Array Map](/nodes/data/array/array-map/) node to re-map values in the original data towards `Label` and `Value`.
+One useful pattern is to map the `id` of an **Object** to the `Value` property in the **Array Map** to easily access the selected **Object**.
+The mapping can be achieved through `Value: function (object) { return object.id }`.
 
 <div className="ndl-image-with-background l">
 
@@ -66,18 +73,18 @@ User interaction can be enabled and disabled:
 
 This node supports the following [Visual Input Properties](../shared-props/inputs/visual-input-properties/):
 
--   [Margin](../shared-props/inputs/visual-input-properties/#margin)
--   [Alignment](../shared-props/inputs/visual-input-properties/#alignment)
--   [Dimensions](../shared-props/inputs/visual-input-properties/#dimensions)
--   [Layout, Position](../shared-props/inputs/visual-input-properties/#-position)
--   [Text Style](../shared-props/inputs/visual-input-properties/#text-style)
--   [Style](../shared-props/inputs/visual-input-properties/#style)
--   [Border Style](../shared-props/inputs/visual-input-properties/#border-style)
--   [Corner Radius](../shared-props/inputs/visual-input-properties/#corner-radius)
--   [Box Shadow](../shared-props/inputs/visual-input-properties/#box-shadow)
--   [Placement](../shared-props/inputs/visual-input-properties/#placement)
--   [Other](../shared-props/inputs/visual-input-properties/#other)
--   [Advanced Style](../shared-props/inputs/visual-input-properties/#advanced-style)
+- [Margin](../shared-props/inputs/visual-input-properties/#margin)
+- [Alignment](../shared-props/inputs/visual-input-properties/#alignment)
+- [Dimensions](../shared-props/inputs/visual-input-properties/#dimensions)
+- [Layout, Position](../shared-props/inputs/visual-input-properties/#-position)
+- [Text Style](../shared-props/inputs/visual-input-properties/#text-style)
+- [Style](../shared-props/inputs/visual-input-properties/#style)
+- [Border Style](../shared-props/inputs/visual-input-properties/#border-style)
+- [Corner Radius](../shared-props/inputs/visual-input-properties/#corner-radius)
+- [Box Shadow](../shared-props/inputs/visual-input-properties/#box-shadow)
+- [Placement](../shared-props/inputs/visual-input-properties/#placement)
+- [Other](../shared-props/inputs/visual-input-properties/#other)
+- [Advanced Style](../shared-props/inputs/visual-input-properties/#advanced-style)
 
 ## Outputs
 
@@ -120,9 +127,9 @@ Apart from triggering <span className="ndl-signal">signals</span> the Dropdown n
 
 This node supports the following [Visual Output Properties](../shared-props/outputs/visual-output-properties/):
 
--   [Bounding Box](../shared-props/outputs/visual-output-properties/#bounding-box)
--   [Mounted](../shared-props/outputs/visual-output-properties/#mounted)
--   [Other](../shared-props/outputs/visual-output-properties/#other)
+- [Bounding Box](../shared-props/outputs/visual-output-properties/#bounding-box)
+- [Mounted](../shared-props/outputs/visual-output-properties/#mounted)
+- [Other](../shared-props/outputs/visual-output-properties/#other)
 
 <div className="hidden-props-for-editor">
 

@@ -1,4 +1,5 @@
 ---
+title: Image QR Scanner
 hide_title: true
 ---
 

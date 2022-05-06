@@ -1,3 +1,7 @@
+---
+title: Google Analytics Module
+hide_title: true
+---
 # Google Analytics Module
 
 This module allows you to track user interactions with your Noodl app, using Google Analytics.

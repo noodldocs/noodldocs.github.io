@@ -1,4 +1,5 @@
 ---
+title: Query Sheet Aggregate
 hide_title: true
 ---
 

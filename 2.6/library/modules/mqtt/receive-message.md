@@ -1,4 +1,5 @@
 ---
+title: Receive Message
 hide_title: true
 ---
 

@@ -1,3 +1,7 @@
+---
+title: i18next Module
+hide_title: true
+---
 # i18next Module
 
 Module for using [i18next](https://www.i18next.com) in Noodl.

@@ -1,3 +1,7 @@
+---
+title: Mapbox
+hide_title: true
+---
 # Mapbox
 
 This module allows you to add a map with marker functionality to your Noodl App, using [Mapbox](https://www.mapbox.com/).

@@ -1,3 +1,7 @@
+---
+title: Setting up Google Analytics
+hide_title: true
+---
 # Setting up Google Analytics
 
 ## What you will learn in this guide

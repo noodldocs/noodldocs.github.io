@@ -1,4 +1,5 @@
 ---
+title: Mapbox Map
 hide_title: true
 ---
 

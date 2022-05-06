@@ -1,3 +1,7 @@
+---
+title: Form Validation
+hide_title: true
+---
 # Form Validation
 
 ## Adding the module to your project

@@ -1,4 +1,5 @@
 ---
+title: Camera QR Scanner
 hide_title: true
 ---
 

@@ -1,3 +1,7 @@
+---
+title: Rotary Knob
+hide_title: true
+---
 # Rotary Knob
 
 This is an example of how to use the [Script](/nodes/javascript/script) node to implement a simple rotary knob.

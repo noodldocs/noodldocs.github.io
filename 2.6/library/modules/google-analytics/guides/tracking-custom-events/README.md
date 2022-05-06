@@ -1,3 +1,7 @@
+---
+title: Tracking Custom Events in Google Analytics
+hide_title: true
+---
 # Tracking custom events in Google Analytics
 
 ## What you will learn in this guide

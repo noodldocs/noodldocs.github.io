@@ -1,4 +1,5 @@
 ---
+title: Translation
 hide_title: true
 ---
 

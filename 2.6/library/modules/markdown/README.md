@@ -1,4 +1,8 @@
-# Markdown module
+---
+title: Markdown Module
+hide_title: true
+---
+# Markdown Module
 
 ## Adding the module to your project
 
