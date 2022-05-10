@@ -9,7 +9,7 @@ const NodeType = {
 const nodeData = [
     {
         label: 'UI Elements',
-        description: 'Lorem ipsum',
+        description: `These nodes make up all of the visuals of your app. Put them in your node tree whenever you want to render an element on the screen. These nodes also support <a href="/2.6/docs/guides/user-interfaces/style-variants">Variants</a> and <a href="/2.6/docs/guides/user-interfaces/visual-states">States</a>.`,
         items: [
             {
                 label: 'Basic Elements',
@@ -92,7 +92,8 @@ const nodeData = [
 
     {
         label: 'Navigation & Popups',
-        description: 'Lorem ipsum',
+        description:
+            'These nodes cover all your navigation needs, everyting from URL and hash based navigation to component replacement. You can either use them to reroute the user to a different views or render content on top of the current view in modals.',
         items: [
             {
                 label: 'Navigation',
@@ -171,7 +172,8 @@ const nodeData = [
 
     {
         label: 'Logic & Utilities',
-        description: 'Lorem ipsum',
+        description:
+            'Most of the meat in an app comes from logic and data processing. This is your toolbox for working with most logic, data and user interactions, big and small.',
         items: [
             {
                 label: 'General Utils',
@@ -335,7 +337,8 @@ const nodeData = [
 
     {
         label: 'Component Utilities',
-        description: 'Lorem ipsum',
+        description:
+            'One of the core concepts in Noodl is the ability to create your own reusable components. Here are nodes that help you manage how data passes through them.',
         items: [
             {
                 label: 'Component Inputs',
@@ -377,7 +380,8 @@ const nodeData = [
 
     {
         label: 'Read & Write Data',
-        description: 'Lorem ipsum',
+        description:
+            'No app is complete without content. These are nodes that help you work with dynamic data defined in the app, a Noodl Cloud Service or from any backend of your choice.',
         items: [
             {
                 label: 'Variables & Objects',
@@ -589,7 +593,8 @@ const nodeData = [
 
     {
         label: 'Custom Code',
-        description: 'Lorem ipsum',
+        description:
+            "Even though most problems can be solved with Noodl's built in base nodes, it's nice to have options for those specific situations that require code. After all, text based coding is quite fun too.",
         items: [
             {
                 label: 'Expression',

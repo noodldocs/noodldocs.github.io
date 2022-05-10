@@ -1,26 +1,38 @@
 [
     {
         "title": "Pages and navigation",
-        "text": "Learn how to build both simple and advanced navigatino systems, browser url’s and more.",
-        "link": "docs/guides/navigation/overview",
-        "image": "http://img.youtube.com/vi/DWwE1RzuN2o/0.jpg"
+        "description": "Learn how to build both simple and advanced navigatino systems, browser url’s and more.",
+        "href": "/docs/guides/navigation/overview",
+        "imageUrl": "/img/featured-content-images/guide-navigation.png"
     },
     {
         "title": "Layout",
-        "text": "Learn how to build both simple and advanced navigatino systems, browser url’s and more.",
-        "link": "docs/guides/navigation/overview",
-        "image": "http://img.youtube.com/vi/DWwE1RzuN2o/0.jpg"
+        "description": "Learn about Noodls powerful layout system and how to use it to craete responsive UI.",
+        "href": "/docs/guides/user-interfaces/layout",
+        "imageUrl": "/img/featured-content-images/guide-layout.png"
     },
     {
-        "title": "UI states and variants",
-        "text": "Learn how to build both simple and advanced navigatino systems, browser url’s and more.",
-        "link": "docs/guides/navigation/overview",
-        "image": "http://img.youtube.com/vi/DWwE1RzuN2o/0.jpg"
+        "title": "UI Controls and Data",
+        "description": "Learn how connect the UI Controls of Noodl to data nodes to create forms and more.",
+        "href": "/docs/guides/data/ui-controls-and-data",
+        "imageUrl": "/img/featured-content-images/guide-list.png"
     },
     {
-        "title": "Working with local data",
-        "text": "Learn how to build both simple and advanced navigatino systems, browser url’s and more.",
-        "link": "docs/guides/navigation/overview",
-        "image": "http://img.youtube.com/vi/DWwE1RzuN2o/0.jpg"
+        "title": "Creating a Backend",
+        "description": "Learn how to set up a backend for your App, containing a database that your app can store and read persistant data from.",
+        "href": "/docs/guides/cloud-data/creating-a-backend",
+        "imageUrl": "/img/featured-content-images/guide-backend.png"
+    },
+    {
+        "title": "Javascript in Noodl",
+        "description": "Learn how to make make use of your Javascript knowledge in Noodl and combining nodes with code.",
+        "href": "/docs/guides/business-logic/javascript",
+        "imageUrl": "/img/featured-content-images/guide-code.png"
+    },
+    {
+        "title": "Custom UI Components",
+        "description": "Learn how to create your own custom UI Components that you can re-use in your Apps.",
+        "href": "/docs/guides/business-logic/custom-ui-components",
+        "imageUrl": "/img/featured-content-images/guide-layout.png"
     }
 ]

@@ -1,0 +1,38 @@
+[
+    {
+        "title": "Building user interfaces",
+        "description": "",
+        "href": "/docs/guides/user-interfaces/overview",
+        "imageUrl": "#"
+    },
+    {
+        "title": "Working with data",
+        "description": "",
+        "href": "/docs/guides/data/overview",
+        "imageUrl": "#"
+    },
+    {
+        "title": "Navigation",
+        "description": "",
+        "href": "/docs/guides/navigation/overview",
+        "imageUrl": "#"
+    },
+    {
+        "title": "Working with cloud data",
+        "description": "",
+        "href": "/docs/guides/cloud-data/overview",
+        "imageUrl": "#"
+    },
+    {
+        "title": "Building business logic",
+        "description": "",
+        "href": "/docs/guides/business-logic/overview",
+        "imageUrl": "#"
+    },
+    {
+        "title": "Deploying and hosting apps",
+        "description": "",
+        "href": "/docs/guides/deploy/overview",
+        "imageUrl": "#"
+    }
+]

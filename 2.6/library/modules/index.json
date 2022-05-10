@@ -24,10 +24,18 @@
         "tags": ["UI"]
     },
     {
+        "label": "Avatar",
+        "desc": "A module with components to build avatars.",
+        "icon": "library/modules/avatar/preview.png",
+        "project": "library/modules/avatar/avatar-module-1-0-0.zip",
+        "docs": "/library/modules/avatar/",
+        "tags": ["UI"]
+    },
+    {
         "label": "Chart.js",
         "desc": "A module with components to build charts.",
         "icon": "library/modules/chartjs/icon.png",
-        "project": "library/modules/chartjs/chartjs-1-0-0.zip",
+        "project": "library/modules/chartjs/chartjs-module-1-0-0.zip",
         "docs": "/library/modules/chartjs/",
         "tags": ["UI"]
     },
@@ -153,10 +161,18 @@
     },
     {
         "label": "Image Cropper",
-        "desc": "Image Cropper Module",
-        "icon": "library/modules/webcamera/WebcameraModule.png",
-        "project": "library/modules/image-cropper/image-cropper-1-0.zip",
-        "docs": "/library/modules/webcamera/",
-        "tags": ["UI"]
+        "desc": "Image Cropper Module. Mainly intended for cropping profile pictures.",
+        "icon": "library/modules/image-cropper/thumb.png",
+        "project": "library/modules/image-cropper/image-cropper-1-4.zip",
+        "docs": "/library/modules/image-cropper/",
+        "tags": ["UI", "Utility"]
+    },
+    {
+        "label": "Panning and Zooming Control",
+        "desc": "A control that implements a pan and zoom view on large images.",
+        "icon": "library/modules/image-cropper/thumb.png",
+        "project": "library/modules/panning-and-zooming/panning-and-zoom-1-0.zip",
+        "docs": "/library/modules/panning-and-zooming/",
+        "tags": ["UI", "Utility"]
     }
 ]
