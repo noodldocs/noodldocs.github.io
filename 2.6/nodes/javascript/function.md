@@ -12,8 +12,8 @@ This node enables you to add simpler custom JavaScript to your application.
 
 Runs the Javascript:
 
--   When any inputs are updated (if "Run" is not connected to anything)
--   When "Run" is called
+- When any inputs are updated (if "Run" is not connected to anything)
+- When "Run" is called
 
 <div className="ndl-image-with-background l">
 
@@ -21,11 +21,14 @@ Runs the Javascript:
 
 </div>
 
-The code runs from top to bottom. For more complex custom JavaScript with multiple executon paths and extended control you should use the <span className="ndl-node">Script</span> node.
+The code runs from top to bottom.
+For more complex custom JavaScript with multiple executon paths and extended control you should use the <span className="ndl-node">Script</span> node.
 
 <##head##>
 
-The most basic way to use the node is as an expression, any time the inputs are changed the script is run and the outputs are updated. E.g. the example above can be used as shown below.
+The most basic way to use the node is as an expression,
+any time the inputs are changed the script is run and the outputs are updated.
+E.g. the example above can be used as shown below.
 
 <div className="ndl-image-with-background l">
 
@@ -35,13 +38,17 @@ The most basic way to use the node is as an expression, any time the inputs are 
 
 ## Custom inputs and outputs
 
-In your function script you can use the **Inputs** and **Outputs** object and any properties of these objects that you use in your script will automatically create input and outputs ports. So the following script:
+In your function script you can use the **Inputs** and **Outputs** object and any properties of these objects that you use in your script will automatically create input and outputs ports.
+So the following script:
 
 ```javascript
-Outputs.FullName = Inputs.FirstName + ' ' + Inputs.LastName
+Outputs.FullName = Inputs.FirstName + " " + Inputs.LastName;
 ```
 
-Will create the output **FullName** and the inputs **FirstName** and **LastName**. Another option is to explicitly specify the inputs and outputs in the properties of the node. This will allow you to explicitly specify the types of the inputs and outputs. This can be especially useful if the node is connected to **Component Inputs** or **Component Outputs**.
+Will create the output **FullName** and the inputs **FirstName** and **LastName**.
+Another option is to explicitly specify the inputs and outputs in the properties of the node.
+This will allow you to explicitly specify the types of the inputs and outputs.
+This can be especially useful if the node is connected to **Component Inputs** or **Component Outputs**.
 
 <div className="ndl-image-with-background">
 
@@ -55,17 +62,20 @@ If you want to send a signal from your **Function** script you can use an output
 
 ```javascript
 if (Inputs.Test === true) {
-    Outputs.TestIsTrue()
+  Outputs.TestIsTrue();
 } else {
-    Outputs.TestIsFalse()
+  Outputs.TestIsFalse();
 }
 ```
 
-The code above will automatically create two outputs **TestIsTrue** and **TestIsFalse** that are signals. When the inputs are changed and the code is run the node will send a signal on either depending on the content of the **Test** input.
+The code above will automatically create two outputs **TestIsTrue** and **TestIsFalse** that are signals.
+When the inputs are changed and the code is run the node will send a signal on either depending on the content of the **Test** input.
 
 ## Controlled execution
 
-Normally the script is run when any of the inputs change, i.e. receive new data via connections, but you can also control when the function is run with the **Run** signal input. If this input has a connection the script will only run when a signal is received.
+Normally the script is run when any of the inputs change, i.e.
+receive new data via connections, but you can also control when the function is run with the **Run** signal input.
+If this input has a connection the script will only run when a signal is received.
 
 <div className="ndl-image-with-background l">
 

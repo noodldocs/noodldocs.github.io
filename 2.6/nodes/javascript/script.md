@@ -8,7 +8,9 @@ title: Script
 
 # Script
 
-This node allows you to add complex JavaScript to your application. Please refer to the [Script Guide](/docs/guides/business-logic/javascript) to learn more about the API. But remember - with great power comes great responsibility.
+This node allows you to add complex JavaScript to your application.
+Please refer to the [Script Guide](/docs/guides/business-logic/javascript) to learn more about the API.
+But remember - with great power comes great responsibility.
 
 <div className="ndl-image-with-background l">
 
@@ -26,16 +28,18 @@ Here is an example of how you create a function that you can call in the node gr
 
 ```javascript
 Node.Signals.MyFunction = function (value) {
-    // run javascript code
-}
+  // run javascript code
+};
 ```
 
 <##head##>
 
 ## Inputs
 
-The inputs are defined by the content of the script or by explicitly specifying inputs in the properties. See the javascript [guide](/docs/guides/business-logic/javascript) for more details.
+The inputs are defined by the content of the script or by explicitly specifying inputs in the properties.
+See the javascript [guide](/docs/guides/business-logic/javascript) for more details.
 
 ## Outputs
 
-The outputs are defined by the content of the script or by explicitly specifying outputs in the properties. See the javascript [guide](/docs/guides/business-logic/javascript) for more details.
+The outputs are defined by the content of the script or by explicitly specifying outputs in the properties.
+See the javascript [guide](/docs/guides/business-logic/javascript) for more details.

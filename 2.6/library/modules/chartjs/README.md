@@ -22,6 +22,8 @@ Supported chart types:
 There are many different kinds inputs to change the style of the chart.
 Like the title, tooltip and legends.
 
+## Changing the Data
+
 To style the chart data, it should be added next to the data it want to style.
 To recreate for example this chart ([Bar Chart Border Radius](https://www.chartjs.org/docs/latest/samples/bar/border-radius.html)).
 It should send the style in the datasets to the chart.
@@ -56,5 +58,18 @@ Outputs.Data = {
             borderSkipped: false
         }
     ]
+}
+```
+
+## Changing the Scales
+
+```js
+Outputs.Scales = {
+    x: {
+        stacked: true
+    },
+    y: {
+        stacked: true
+    }
 }
 ```

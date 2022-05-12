@@ -4,13 +4,7 @@ hide_title: true
 ---
 # Web Camera
 
-## Adding the module to your project
-
-To get access to the **Web Camera** node in this module we need to add the Web Camera module to our Noodl project. Open the Noodl project in which you want to add the module, and import it from the sidebar.
-
-![](/library/modules/webcamera/webcamera-add-module.png)
-
-Once the module is imported you will have access to the Web Camera node.
+Adding this module will give you access to the Web Camera node.
 
 ## Usage example
 
