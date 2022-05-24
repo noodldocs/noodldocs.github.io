@@ -50,6 +50,11 @@ This node supports the following [Visual Output Properties](../shared-props/outp
 
 <div className="hidden-props-for-editor">
 
+---
+hide_title: true
+title: Visual Input Properties
+---
+
 # Visual Input Properties
 
 All visual nodes feature a plethora of visual properties that can be accessed both in the Property Panel and through inputs. These are documented below. Plese refer to the individual node documentation pages to see which nodes feature what visual properties.

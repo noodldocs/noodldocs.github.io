@@ -8,7 +8,7 @@ export const FrontpageBlocks = {
 }
 
 export const frontpageData = [
-    // { type: FrontpageBlocks.SearchBar },
+    { type: FrontpageBlocks.SearchBar },
     {
         type: FrontpageBlocks.Hero,
         title: 'Get started with Noodl',

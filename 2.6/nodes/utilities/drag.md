@@ -11,7 +11,9 @@ title: Drag
 The drag node is used to make visual nodes draggable with the mouse or touch. All children of a **Drag** node automatically become draggable.
 
 <div className="ndl-image-with-background l">
-    <img src="/nodes/utilities/drag/drag.png" className="ndl-image"></img>
+
+![](/nodes/utilities/drag/drag.png)
+
 </div>
 
 <##head##>

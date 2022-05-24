@@ -23,13 +23,17 @@ You can also use the String node connected to a <span className="ndl-node">Compo
 You can use it to provide a static value for input to other nodes. It is local to the component and cannot be accessed anywhere else in the graph.
 
 <div className="ndl-image-with-background l">
-    <img src="/nodes/data/string/local-string.png"></img>
+
+![](/nodes/data/string/local-string.png)
+
 </div>
 
 You can simply connect to the **Value** input to set the value of the node when the connection is updated.
 
 <div className="ndl-image-with-background l">
-    <img src="/nodes/data/string/string-1.png"></img>
+
+![](/nodes/data/string/string-1.png)
+
 </div>
 
 Using a variable node like above will make the **Text** component input show up as a string in the property editor of all instances of this component.
@@ -37,7 +41,9 @@ Using a variable node like above will make the **Text** component input show up 
 You can also use the **Set** input to control when the value of the variable node is updated. In the setup below the value is only updated when the **Text Input** node is blurred.
 
 <div className="ndl-image-with-background l">
-    <img src="/nodes/data/string/string-2.png"></img>
+
+![](/nodes/data/string/string-2.png)
+
 </div>
 
 ## Inputs
