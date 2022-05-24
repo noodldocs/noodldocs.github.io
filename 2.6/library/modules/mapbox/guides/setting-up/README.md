@@ -2,6 +2,7 @@
 title: Setting up the Mapbox Module
 hide_title: true
 ---
+
 # Setting up the Mapbox Module
 
 ## What you will learn in this guide
@@ -18,7 +19,7 @@ We will go though the following steps:
 
 There is also a video walking through the guide.
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/l5HN5bPSWGY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/l5HN5bPSWGY" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 
 ## Install the Mapbox Module
 

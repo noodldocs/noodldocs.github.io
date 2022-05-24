@@ -2,6 +2,7 @@
 title: Using Markers
 hide_title: true
 ---
+
 import ImportButton from '/src/components/importbutton'
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
@@ -30,7 +31,7 @@ The guide will build upon the example from the previous guides. You can import t
 
 There is also a video walking through the guide.
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/LBh51xy9n7k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/LBh51xy9n7k" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 
 ## Markers
 

@@ -73,18 +73,18 @@ User interaction can be enabled and disabled:
 
 This node supports the following [Visual Input Properties](../shared-props/inputs/visual-input-properties/):
 
-- [Margin](../shared-props/inputs/visual-input-properties/#margin)
-- [Alignment](../shared-props/inputs/visual-input-properties/#alignment)
-- [Dimensions](../shared-props/inputs/visual-input-properties/#dimensions)
-- [Layout, Position](../shared-props/inputs/visual-input-properties/#-position)
-- [Text Style](../shared-props/inputs/visual-input-properties/#text-style)
-- [Style](../shared-props/inputs/visual-input-properties/#style)
-- [Border Style](../shared-props/inputs/visual-input-properties/#border-style)
-- [Corner Radius](../shared-props/inputs/visual-input-properties/#corner-radius)
-- [Box Shadow](../shared-props/inputs/visual-input-properties/#box-shadow)
-- [Placement](../shared-props/inputs/visual-input-properties/#placement)
-- [Other](../shared-props/inputs/visual-input-properties/#other)
-- [Advanced Style](../shared-props/inputs/visual-input-properties/#advanced-style)
+-   [Margin](../shared-props/inputs/visual-input-properties/#margin)
+-   [Alignment](../shared-props/inputs/visual-input-properties/#alignment)
+-   [Dimensions](../shared-props/inputs/visual-input-properties/#dimensions)
+-   [Layout, Position](../shared-props/inputs/visual-input-properties/#-position)
+-   [Text Style](../shared-props/inputs/visual-input-properties/#text-style)
+-   [Style](../shared-props/inputs/visual-input-properties/#style)
+-   [Border Style](../shared-props/inputs/visual-input-properties/#border-style)
+-   [Corner Radius](../shared-props/inputs/visual-input-properties/#corner-radius)
+-   [Box Shadow](../shared-props/inputs/visual-input-properties/#box-shadow)
+-   [Placement](../shared-props/inputs/visual-input-properties/#placement)
+-   [Other](../shared-props/inputs/visual-input-properties/#other)
+-   [Advanced Style](../shared-props/inputs/visual-input-properties/#advanced-style)
 
 ## Outputs
 
@@ -127,9 +127,9 @@ Apart from triggering <span className="ndl-signal">signals</span> the Dropdown n
 
 This node supports the following [Visual Output Properties](../shared-props/outputs/visual-output-properties/):
 
-- [Bounding Box](../shared-props/outputs/visual-output-properties/#bounding-box)
-- [Mounted](../shared-props/outputs/visual-output-properties/#mounted)
-- [Other](../shared-props/outputs/visual-output-properties/#other)
+-   [Bounding Box](../shared-props/outputs/visual-output-properties/#bounding-box)
+-   [Mounted](../shared-props/outputs/visual-output-properties/#mounted)
+-   [Other](../shared-props/outputs/visual-output-properties/#other)
 
 <div className="hidden-props-for-editor">
 

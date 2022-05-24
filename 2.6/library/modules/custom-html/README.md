@@ -11,7 +11,7 @@ This node allows you to add your own custom HTML markup to your visual tree. Com
 
 <div className="ndl-image-with-background l">
 
-![](/library/modules/custom-html/custom-html.png)
+![](/library/modules/custom-html/html.png)
 
 </div>
 

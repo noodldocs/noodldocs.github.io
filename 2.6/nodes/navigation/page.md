@@ -8,7 +8,14 @@ title: Page
 
 # Page
 
-The **Page** node is a basic building block when creating web type navigation using a [Page Router](/nodes/navigation/page-router). Note: **Page** nodes cannot be created throught the node picker, it can only be created by adding a new **Page** in the component list.
+The **Page** node is a basic building block when creating web type navigation using a [Page Router](/nodes/navigation/page-router). 
+
+:::note
+
+**Page** nodes cannot be created throught the node picker, it can only be created by adding a new **Page** in the component list.
+
+:::
+
 
 **Pages** are typically used together with a [Page Inputs](/nodes/navigation/page-inputs) node to be able to provide parameters to the **Page**.
 

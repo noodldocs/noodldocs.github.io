@@ -83,5 +83,13 @@
         "href": "/library/examples/javascript-example",
         "imageUrl": "/library/examples/javascript-example/final-1.png",
         "project": "/library/examples/javascript-example/biz-logic-js.zip"
+    },
+    {
+        "title": "Sign Up / Sign In Form",
+        "description": "This app includes a simple Sign Up / Sign In form, including buttons for requesting a new password and validating your email.",
+        "href": "/library/examples/sign-up",
+        "imageUrl": "/library/examples/sign-up/signup_thumbnail.png",
+        "project": "/library/examples/sign-up/signuptemplate-1-2.zip",
+        "backend": "/library/examples/sign-up/signup-app-cf.json"
     }
 ]

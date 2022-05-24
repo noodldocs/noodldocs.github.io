@@ -2,13 +2,14 @@
 title: Shake Detector
 hide_title: true
 ---
+
 # Shake Detector
 
 This is an example of how to use the [Script](/nodes/javascript/script) node to implement a "Shake detector".
 
 <div className="ndl-image-with-background">
 
-![](/library/modules/shake-detector/preview.png)
+![](/library/modules/shake-detector/shake-detector.png)
 
 </div>
 

@@ -21,12 +21,16 @@ export const frontpageData = [
             {
                 type: 'link',
                 colorVariable: '--doc-color-noodl-orange-20',
+                backgroundImage:
+                    '/img/featured-content-images/noodl-basics.png',
                 label: 'Noodl basics',
-                href: '/docs/getting-started/overview',
+                href: '/docs/getting-started/fundamentals',
             },
             {
                 type: 'link',
                 colorVariable: '--doc-color-noodl-blue-20',
+                backgroundImage:
+                    '/img/featured-content-images/build-first-app.png',
                 label: 'Build your first app',
                 href: '/docs/build-alongs/task-list-app',
             },

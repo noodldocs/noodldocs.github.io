@@ -1,38 +1,38 @@
 [
     {
-        "title": "Pages and navigation",
-        "description": "Learn how to build both simple and advanced navigatino systems, browser url’s and more.",
+        "title": "Pages and Navigation",
+        "description": "Learn how to build navigation systems, browser url’s and more.",
         "href": "/docs/guides/navigation/overview",
-        "imageUrl": "/img/featured-content-images/guide-navigation.png"
+        "imageUrl": "/img/featured-content-images/navigation.png"
     },
     {
         "title": "Layout",
-        "description": "Learn about Noodls powerful layout system and how to use it to craete responsive UI.",
+        "description": "Learn about Noodls powerful layout system and how to use it to create responsive UI.",
         "href": "/docs/guides/user-interfaces/layout",
-        "imageUrl": "/img/featured-content-images/guide-layout.png"
+        "imageUrl": "/img/featured-content-images/layout.png"
     },
     {
         "title": "UI Controls and Data",
-        "description": "Learn how connect the UI Controls of Noodl to data nodes to create forms and more.",
+        "description": "Learn how connect UI Controls to data nodes to create forms and more.",
         "href": "/docs/guides/data/ui-controls-and-data",
-        "imageUrl": "/img/featured-content-images/guide-list.png"
+        "imageUrl": "/img/featured-content-images/list.png"
     },
     {
         "title": "Creating a Backend",
-        "description": "Learn how to set up a backend for your App, containing a database that your app can store and read persistant data from.",
+        "description": "Learn how to set up a backend for your App, to store and read persistant data.",
         "href": "/docs/guides/cloud-data/creating-a-backend",
-        "imageUrl": "/img/featured-content-images/guide-backend.png"
+        "imageUrl": "/img/featured-content-images/data.png"
     },
     {
         "title": "Javascript in Noodl",
-        "description": "Learn how to make make use of your Javascript knowledge in Noodl and combining nodes with code.",
+        "description": "Learn how to use Javascript in Noodl and combine nodes with code.",
         "href": "/docs/guides/business-logic/javascript",
-        "imageUrl": "/img/featured-content-images/guide-code.png"
+        "imageUrl": "/img/featured-content-images/code.png"
     },
     {
         "title": "Custom UI Components",
-        "description": "Learn how to create your own custom UI Components that you can re-use in your Apps.",
+        "description": "Learn how to create your own re-usable components.",
         "href": "/docs/guides/business-logic/custom-ui-components",
-        "imageUrl": "/img/featured-content-images/guide-layout.png"
+        "imageUrl": "/img/featured-content-images/list.png"
     }
 ]
