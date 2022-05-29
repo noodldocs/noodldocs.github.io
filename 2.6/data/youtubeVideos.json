@@ -1,0 +1,26 @@
+[
+    {
+        "videoId": "titAgD6L6no",
+        "title": "Using the Noodl Figma plugin",
+        "description": "This video shows how to use the Noodl Figma plugin.",
+        "videoLength": "06.56"
+    },
+    {
+        "videoId": "DWwE1RzuN2o",
+        "title": "Using the sign-up template",
+        "description": "Learn how to make a complete sign-up flow, including email setup for account validation and password recovery.",
+        "videoLength": "19.55"
+    },
+    {
+        "videoId": "DG7LRrudMeE",
+        "title": "Tab Navigation Template",
+        "description": "Learn how to build a tab menu that let's the user navigate between different pages.",
+        "videoLength": "02.38"
+    },
+    {
+        "videoId": "VwgcIsclVpE",
+        "title": "Star Rating Component",
+        "description": "Learn how to build an animated star rating component from scratch.",
+        "videoLength": "07.10"
+    }
+]

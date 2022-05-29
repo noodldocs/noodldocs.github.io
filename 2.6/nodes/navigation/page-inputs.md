@@ -1,10 +1,16 @@
+---
+hide_title: true
+hide_table_of_contents: true
+title: Page Inputs
+---
+
 <##head##>
 
 # Page Inputs
 
 This node is used to pass parameters in the URL when navigating between pages in a [Page Router](/nodes/navigation/page-router).
 
-<div class="ndl-image-with-background l">
+<div className="ndl-image-with-background l">
 
 ![](/nodes/navigation/page-inputs/page-inputs.png)
 
@@ -29,4 +35,4 @@ A **Path Parameter** is added to the route of the page at the end. For example a
 
 A **Query Parameter** are encoded using `?parameter=value;` notation in the URL. You can have any number of **Query Parameters**.
 
-<span class="hidden-props-for-editor"><##output:pm-\*##>A page parameter that will be available as an input on any **Navigate** node that navigates to its associated **Page**.<##output##></span>
+<span className="hidden-props-for-editor"><##output:pm-\*##>A page parameter that will be available as an input on any **Navigate** node that navigates to its associated **Page**.<##output##></span>

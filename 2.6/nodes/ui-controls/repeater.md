@@ -1,18 +1,24 @@
+---
+hide_title: true
+hide_table_of_contents: true
+title: Repeater
+---
+
 <##head##>
 
 # Repeater
 
-This node is used to dynamically insert visual components based on <span class="ndl-data">array</span> data.
+This node is used to dynamically insert visual components based on <span className="ndl-data">array</span> data.
 
-<div class="ndl-image-with-background l">
+<div className="ndl-image-with-background l">
 
 ![](/nodes/ui-controls/repeater/repeater_visual.png)
 
 </div>
 
-The <span class="ndl-node">Repeater</span> node takes data from a Noodl <span class="ndl-data">Array</span> and generates an existing visual component for each item in the <span class="ndl-data">Array</span>. The [Object](/nodes/data/object/object.md) or [Record](/nodes/data/cloud-data/record) associated with the visual component can then be used to populate the component with data.
+The <span className="ndl-node">Repeater</span> node takes data from a Noodl <span className="ndl-data">Array</span> and generates an existing visual component for each item in the <span className="ndl-data">Array</span>. The [Object](/nodes/data/object/object-node.md) or [Record](/nodes/data/cloud-data/record) associated with the visual component can then be used to populate the component with data.
 
-<div class="ndl-image-with-background l">
+<div className="ndl-image-with-background l">
 
 ![](/nodes/ui-controls/repeater/repeater_node.png)
 
@@ -20,20 +26,20 @@ The <span class="ndl-node">Repeater</span> node takes data from a Noodl <span cl
 
 <##head##>
 
-More details can be found in the [guide](/docs/guides/lists/list-basics).
+More details can be found in the [guide](/docs/guides/data/list-basics).
 
 ## Inputs
 
-| Data                                        | Description                                                                                                                                                                                                                                                                            |
-| ------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <span class="ndl-data">Template Type</span> | This input is used to enable or disable dynamic templates. The input can be:<br/><br/>`Explicit`: The same _Component_ will be used for all items.<br/>`Dynamic`: Use code to choose what _Component_ to create for each item. In this case you will have to set the **Script** input. |
-| <span class="ndl-data">Script</span>        | Available when **Template Type** is set to **Dynamic** or after chosing a _Component_ for a **Explicit** template type . Write a script to map input or choose what Component to create for every item (see below).                                                                    |
-| <span class="ndl-data">Component</span>     | Only available when **Template Type** is set to **Explicit**. Choose a component from your project that will be used as template to dynamically create component instances for each object in the Items array.                                                                         |
-| <span class="ndl-data">Items</span>         | <##input:items##>An array of [Objects](/nodes/data/object/object.md) or [Records](/nodes/data/cloud-data/record) that will be used to dynamically create components.<##input##>                                                                                                         |
+| Data                                            | Description                                                                                                                                                                                                                                                                            |
+| ----------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <span className="ndl-data">Template Type</span> | This input is used to enable or disable dynamic templates. The input can be:<br/><br/>`Explicit`: The same _Component_ will be used for all items.<br/>`Dynamic`: Use code to choose what _Component_ to create for each item. In this case you will have to set the **Script** input. |
+| <span className="ndl-data">Script</span>        | Available when **Template Type** is set to **Dynamic** or after chosing a _Component_ for a **Explicit** template type . Write a script to map input or choose what Component to create for every item (see below).                                                                    |
+| <span className="ndl-data">Component</span>     | Only available when **Template Type** is set to **Explicit**. Choose a component from your project that will be used as template to dynamically create component instances for each object in the Items array.                                                                         |
+| <span className="ndl-data">Items</span>         | <##input:items##>An array of [Objects](/nodes/data/object/object-node.md) or [Records](/nodes/data/cloud-data/record) that will be used to dynamically create components.<##input##>                                                                                                   |
 
-| Signal                                  | Description                                                                                                                       |
-| --------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| <span class="ndl-signal">Refresh</span> | <##input:refresh##>By sending a signal to this input all items in the **Repeater** will be removed and then recreated.<##input##> |
+| Signal                                      | Description                                                                                                                       |
+| ------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| <span className="ndl-signal">Refresh</span> | <##input:refresh##>By sending a signal to this input all items in the **Repeater** will be removed and then recreated.<##input##> |
 
 ### Script
 
@@ -74,15 +80,15 @@ In the example above the script looks at the property "type" of each object, and
 | -------------------- | ------------------------------------------------------------------------- |
 | **Template Outputs** | An output is created for every signal output of the _Template_ component. |
 
-| Data                                       | Description                                                                                                                                                                                                                                                                                                                                     |
-| ------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <span class="ndl-data">Item Id</span>      | <##output:itemActionItemId##>This output will be updated every time a signal is sent on any of the component output signals to reflect the **Id** of the related [Object](/nodes/data/object/object.md) or [Record](/nodes/data/cloud-data/record/) that triggered the signal.<##output##>                                                        |
-| <span class="ndl-data">Item Outputs</span> | This group contains component outputs other than signals for the component template of the **Repeater** node. When a signal is triggered by one of the component instances the outputs will be replayed along with the _Item Id_ of the corresponding item. This can be used to store component specific outputs in e.g. objects and variables. |
+| Data                                           | Description                                                                                                                                                                                                                                                                                                                                     |
+| ---------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <span className="ndl-data">Item Id</span>      | <##output:itemActionItemId##>This output will be updated every time a signal is sent on any of the component output signals to reflect the **Id** of the related [Object](/nodes/data/object/object-node.md) or [Record](/nodes/data/cloud-data/record/) that triggered the signal.<##output##>                                                 |
+| <span className="ndl-data">Item Outputs</span> | This group contains component outputs other than signals for the component template of the **Repeater** node. When a signal is triggered by one of the component instances the outputs will be replayed along with the _Item Id_ of the corresponding item. This can be used to store component specific outputs in e.g. objects and variables. |
 
-<span class="hidden-props-for-editor"><##output:itemOutput-\*##>An output value coming from the list item.<##output##></span>
+<span className="hidden-props-for-editor"><##output:itemOutput-\*##>An output value coming from the list item.<##output##></span>
 
-| Signal                                       | Description                                                                                                                                                                                                                                                |
-| -------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <span class="ndl-signal">Item Signals</span> | This group contains component output signals from the component template of the **Repeater** node. When any of the component instances triggers an output signal, these will be relayed by the **Repeater** node along with the corresponding **Item Id**. |
+| Signal                                           | Description                                                                                                                                                                                                                                                |
+| ------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <span className="ndl-signal">Item Signals</span> | This group contains component output signals from the component template of the **Repeater** node. When any of the component instances triggers an output signal, these will be relayed by the **Repeater** node along with the corresponding **Item Id**. |
 
-<span class="hidden-props-for-editor"><##output:itemOutputSignal-\*##>An output signal coming from the list item.<##output##></span>
+<span className="hidden-props-for-editor"><##output:itemOutputSignal-\*##>An output signal coming from the list item.<##output##></span>

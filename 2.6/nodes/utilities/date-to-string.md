@@ -1,16 +1,22 @@
+---
+hide_title: true
+hide_table_of_contents: true
+title: Date To String
+---
+
 <##head##>
 
 # Date To String
 
-This node translates a <span class="ndl-data">date</span> type input and outputs a <span class="ndl-data">string</span> based on your specified format.
+This node translates a <span className="ndl-data">date</span> type input and outputs a <span className="ndl-data">string</span> based on your specified format.
 
-<div class="ndl-image-with-background l">
+<div className="ndl-image-with-background l">
 
 ![](/nodes/utilities/date-to-string/date-to-string.png)
 
 </div>
 
-The format is specified as a <span class="ndl-data">string</span> that can include the following special syntax: `{date}`, `{month}`, `{year}`, `{hour}`, `{minute}` and `{second}`.
+The format is specified as a <span className="ndl-data">string</span> that can include the following special syntax: `{date}`, `{month}`, `{year}`, `{hour}`, `{minute}` and `{second}`.
 
 <##head##>
 
@@ -29,17 +35,17 @@ The default format is this:
 
 ## Inputs
 
-| Data                                 | Description                                                          |
-| ------------------------------------ | -------------------------------------------------------------------- |
-| <span class="ndl-data">Format</span> | This is where the format string is specified, see above for details. |
-| <span class="ndl-data">Date</span>   | The date input to format.                                            |
+| Data                                     | Description                                                          |
+| ---------------------------------------- | -------------------------------------------------------------------- |
+| <span className="ndl-data">Format</span> | This is where the format string is specified, see above for details. |
+| <span className="ndl-data">Date</span>   | The date input to format.                                            |
 
 ## Outputs
 
-| Data                                        | Description                |
-| ------------------------------------------- | -------------------------- |
-| <span class="ndl-data">\*Date String</span> | The formatted date string. |
+| Data                                            | Description                |
+| ----------------------------------------------- | -------------------------- |
+| <span className="ndl-data">\*Date String</span> | The formatted date string. |
 
-| Signal                                       | Description                                            |
-| -------------------------------------------- | ------------------------------------------------------ |
-| <span class="ndl-signal">Date Changed</span> | Sends a signal when the formatted date string changed. |
+| Signal                                           | Description                                            |
+| ------------------------------------------------ | ------------------------------------------------------ |
+| <span className="ndl-signal">Date Changed</span> | Sends a signal when the formatted date string changed. |

@@ -1,3 +1,9 @@
+---
+hide_title: true
+hide_table_of_contents: true
+title: Component Children
+---
+
 <##head##>
 
 # Component Children
@@ -8,7 +14,7 @@ Any instance of a component that have a **Component Children** placed in its hei
 able to have children. These children will appear as though they were inserted at the location of
 the **Component Children** node.
 
-<div class="ndl-image-with-background">
+<div className="ndl-image-with-background">
 
 ![](/nodes/component-utilities/component-children/component-children.png)
 

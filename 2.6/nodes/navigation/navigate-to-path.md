@@ -1,16 +1,22 @@
+---
+hide_title: true
+hide_table_of_contents: true
+title: Navigate To Path
+---
+
 <##head##>
 
 # Navigate To Path
 
-This node lets you navigate to a specific <span class="ndl-node">[Page](/nodes/navigation/page)</span> node in a <span class="ndl-node">[Page Router](/nodes/navigation/page-router)</span>.
+This node lets you navigate to a specific <span className="ndl-node">[Page](/nodes/navigation/page)</span> node in a <span className="ndl-node">[Page Router](/nodes/navigation/page-router)</span>.
 
-<div class="ndl-image-with-background l">
+<div className="ndl-image-with-background l">
 
 ![](/nodes/navigation/navigate-to-path/navigate-to-path.png)
 
 </div>
 
-In most cases you will want to use the <span class="ndl-node">[Navigate](/nodes/navigation/navigate)</span> or <span class="ndl-node">[External Link](/nodes/navigation/external-link)</span> nodes for your navigation. The <span class="ndl-node">Navigate To Path</span> node is a low level implementation suitable for more advanced and specific use cases.
+In most cases you will want to use the <span className="ndl-node">[Navigate](/nodes/navigation/navigate)</span> or <span className="ndl-node">[External Link](/nodes/navigation/external-link)</span> nodes for your navigation. The <span className="ndl-node">Navigate To Path</span> node is a low level implementation suitable for more advanced and specific use cases.
 
 <##head##>
 
@@ -22,15 +28,15 @@ In a way, **Navigate To Path** is very much like writing a URL directly into the
 
 ## Inputs
 
-| Data                                           | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| ---------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <span class="ndl-data">Path</span>             | <##input:path##>Use this property to set the path to navigate to. Note that the **Path** should not include the domain but only the route within the Noodl project. The **Path** may include a **Path Parameter** as the final part, that will be forwarded to the receiving **Page**. You can also use `{}` to make part of the **Path** dynamic and expose the part as an input. For example the path `/{a}/{b}/` will expose two new inputs _a_ and _b_.<##input##> |
-| <span class="ndl-data">Query Parameters</span> | You can add any number of **Query Parameters** that will be forwarded to the receiving [Page](/nodes/navigation/page/) through their [Page](/nodes/navigation/page-inputs/) node.                                                                                                                                                                                                                                                                                      |
+| Data                                               | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| -------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <span className="ndl-data">Path</span>             | <##input:path##>Use this property to set the path to navigate to. Note that the **Path** should not include the domain but only the route within the Noodl project. The **Path** may include a **Path Parameter** as the final part, that will be forwarded to the receiving **Page**. You can also use `{}` to make part of the **Path** dynamic and expose the part as an input. For example the path `/{a}/{b}/` will expose two new inputs _a_ and _b_.<##input##> |
+| <span className="ndl-data">Query Parameters</span> | You can add any number of **Query Parameters** that will be forwarded to the receiving [Page](/nodes/navigation/page/) through their [Page](/nodes/navigation/page-inputs/) node.                                                                                                                                                                                                                                                                                      |
 
-| Signal                                   | Description                                                                                                                   |
-| ---------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| <span class="ndl-signal">Navigate</span> | <##input:navigate##>Sending a signal to this input will perform the navigation according to the provided **Path**.<##input##> |
+| Signal                                       | Description                                                                                                                   |
+| -------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| <span className="ndl-signal">Navigate</span> | <##input:navigate##>Sending a signal to this input will perform the navigation according to the provided **Path**.<##input##> |
 
-<span class="hidden-props-for-editor"><##input:q-\*##>A **Query Parameter** that will be forwarded to the receiving **Page** node through their **Page Inputs** node.<##input##></span>
+<span className="hidden-props-for-editor"><##input:q-\*##>A **Query Parameter** that will be forwarded to the receiving **Page** node through their **Page Inputs** node.<##input##></span>
 
-<span class="hidden-props-for-editor"><##input:p-\*##>A **Path Parameter** that will be part of the **Path**.<##input##></span>
+<span className="hidden-props-for-editor"><##input:p-\*##>A **Path Parameter** that will be part of the **Path**.<##input##></span>

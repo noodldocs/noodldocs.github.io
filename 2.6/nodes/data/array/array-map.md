@@ -1,10 +1,16 @@
+---
+hide_title: true
+hide_table_of_contents: true
+title: Array Map
+---
+
 <##head##>
 
 # Array Map
 
 This node takes an input array, runs a small map script on each item, and outputs the resulting mapped array. That is an array with new objects, each created in the mapping script.
 
-<div class="ndl-image-with-background l">
+<div className="ndl-image-with-background l">
 
 ![](/nodes/data/array/array-map/array-map.png)
 
@@ -14,9 +20,9 @@ This node takes an input array, runs a small map script on each item, and output
 
 ## Inputs
 
-| Data                                | Description                                                  |
-| ----------------------------------- | ------------------------------------------------------------ |
-| <span class="ndl-data">Items</span> | <##input:items##>The array that should be mapped.<##input##> |
+| Data                                    | Description                                                  |
+| --------------------------------------- | ------------------------------------------------------------ |
+| <span className="ndl-data">Items</span> | <##input:items##>The array that should be mapped.<##input##> |
 
 ### Script
 
@@ -29,7 +35,7 @@ map({
 })
 ```
 
-You can either provide a string with the name of the property that should be mapped with the syntax _to:'from'_ which will simply rename a property taking the value directly from the input object. Or you can provide a mapping function that takes the object (of the type [Noodl.Object](/javascript-api/data/object)) and the function should return the mapped value.
+You can either provide a string with the name of the property that should be mapped with the syntax _to:'from'_ which will simply rename a property taking the value directly from the input object. Or you can provide a mapping function that takes the object (of the type [Noodl.Object](/javascript/reference/object)) and the function should return the mapped value.
 
 Sometimes you need to extract the **Id** of the objects you are mapping, this can be done in the following way:
 
@@ -46,11 +52,11 @@ Note that the objects that are created when mapping are new objects so they will
 
 ### General
 
-| Data                                | Description                                                                                                      |
-| ----------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
-| <span class="ndl-data">Items</span> | <##output:items##>The mapped array.<##output##>                                                                  |
-| <span class="ndl-data">Count</span> | <##output:count##>The number of items in the mapped array (this will be the same as the input array)<##output##> |
+| Data                                    | Description                                                                                                      |
+| --------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| <span className="ndl-data">Items</span> | <##output:items##>The mapped array.<##output##>                                                                  |
+| <span className="ndl-data">Count</span> | <##output:count##>The number of items in the mapped array (this will be the same as the input array)<##output##> |
 
-| Signal                                  | Description                                                                                                                                                                                  |
-| --------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <span class="ndl-signal">Changed</span> | <##output:changed##>A signal is emitted here when the input array has been modified which will trigger the _Array Map_ node to remap the input and produce a new output _Items_.<##output##> |
+| Signal                                      | Description                                                                                                                                                                                  |
+| ------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <span className="ndl-signal">Changed</span> | <##output:changed##>A signal is emitted here when the input array has been modified which will trigger the _Array Map_ node to remap the input and produce a new output _Items_.<##output##> |

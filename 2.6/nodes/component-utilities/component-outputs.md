@@ -1,18 +1,24 @@
+---
+hide_title: true
+hide_table_of_contents: true
+title: Component Outputs
+---
+
 <##head##>
 
 # Component Outputs
 
 This node is used to create outputs for reusable components.
 
-<div class="ndl-image-with-background l">
+<div className="ndl-image-with-background l">
 
 ![](/nodes/component-utilities/component-outputs/co_node1.png)
 
 </div>
 
-A <span class="ndl-node">Component Output</span> node can have as many ports as needed and can make output properties from the nodes available on the custom component.
+A <span className="ndl-node">Component Output</span> node can have as many ports as needed and can make output properties from the nodes available on the custom component.
 
-<div class="ndl-image-with-background l">
+<div className="ndl-image-with-background l">
 
 ![](/nodes/component-utilities/component-outputs/co_node2.png)
 
@@ -22,7 +28,7 @@ A <span class="ndl-node">Component Output</span> node can have as many ports as 
 
 A very powerful feature of Noodl is the ability to create **Components** that act as reusable nodes in your application. A core concept of components is that they can have inputs and outputs like any of the built in nodes.
 
-<div class="ndl-image-with-background">
+<div className="ndl-image-with-background">
 
 ![](/nodes/component-utilities/component-outputs/component-outputs.png)
 
@@ -34,7 +40,7 @@ connected to any other node in the component.
 When a **Component Outputs** node is created, it doesn't have any ports. The ports must be added by inspecting the node (left clicking it) and then clicking the **+Port** button.
 You can create and name ports as you wish.
 
-<div class="ndl-image-with-background">
+<div className="ndl-image-with-background">
 
 ![](/nodes/component-utilities/component-outputs/component-output-ports.png)
 
