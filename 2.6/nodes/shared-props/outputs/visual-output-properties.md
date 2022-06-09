@@ -1,3 +1,8 @@
+---
+hide_title: true
+title: Visual Output Properties
+---
+
 # Visual Output Properties
 
 ## Scrolling

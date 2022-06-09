@@ -118,6 +118,6 @@ import ImportButton from '/src/components/importbutton'
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
 <div className="ndl-image-with-background l">
-    <img src={useBaseUrl("/modules/mapbox/guides/interacting/final-result.gif")} className="ndl-image large"></img>
+    <img src={useBaseUrl("/library/modules/mapbox/guides/interacting/final-result.gif")} className="ndl-image large"></img>
     <ImportButton zip="interacting.zip" name="Mapbox Interactions" thumb="screen-2.png"/>
 </div>

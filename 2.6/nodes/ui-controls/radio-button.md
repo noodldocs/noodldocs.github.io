@@ -458,6 +458,11 @@ The Dimension Constraints Gadget allows you to clamp the values of the [Dimensio
 | <span className="ndl-data">CSS Class</span> | <##input:cssClass##>Specify a CSS class this node will have.<##input##> |
 | **CSS Style**                               | Use this property to specify your custom CSS.                           |
 
+---
+hide_title: true
+title: Visual Output Properties
+---
+
 # Visual Output Properties
 
 ## Scrolling

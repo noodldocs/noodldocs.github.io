@@ -3,7 +3,7 @@
         "label": "Rotary Knob",
         "desc": "A rotary knob UI component.",
         "icon": "library/modules/rotary-knob/rotary-knob.png",
-        "project": "library/modules/rotary-knob/rotary-knob-1.0.2.zip",
+        "project": "library/modules/rotary-knob/rotary-knob-1.0.3.zip",
         "docs": "/library/modules/rotary-knob/",
         "tags": ["UI"]
     },
@@ -11,9 +11,18 @@
         "label": "Shake Detector",
         "desc": "A small module to detect a device shake with the accelerometer.",
         "icon": "library/modules/shake-detector/shake-detector.png",
-        "project": "library/modules/shake-detector/shake-detector-1.0.1.zip",
+        "project": "library/modules/shake-detector/shake-detector-1.0.2.zip",
         "docs": "/library/modules/shake-detector/",
         "tags": ["Device"]
+    },
+
+    {
+        "label": "Table",
+        "desc": "Basic core nodes to create tables. Example included.",
+        "icon": "library/modules/table/table_example.png",
+        "project": "library/modules/table/table-example-1-0-0.zip",
+        "docs": "/library/modules/table/",
+        "tags": ["UI", "Data"]
     },
 
     {
@@ -167,5 +176,13 @@
         "icon": "library/modules/i18next/translate.png",
         "docs": "/library/modules/i18next/",
         "tags": ["Data", "Utility"]
+    },
+    {
+        "label": "Stripe Checkout",
+        "desc": "Stripe Checkout for your web apps.",
+        "project": "library/modules/stripe-checkout/stripe-checkout-1-0-0.zip",
+        "icon": "library/modules/stripe-checkout/translate.png",
+        "docs": "/library/modules/stripe-checkout/",
+        "tags": ["Service"]
     }
 ]
