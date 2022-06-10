@@ -69,7 +69,7 @@
         "label": "Mapbox",
         "desc": "Use this module to add maps and location visualisations to your app.",
         "icon": "library/modules/mapbox/mapbox.png",
-        "project": "library/modules/mapbox/mapbox-1-5.zip",
+        "project": "library/modules/mapbox/mapbox-1-7.zip",
         "docs": "/library/modules/mapbox/",
         "tags": ["UI", "Service"]
     },
