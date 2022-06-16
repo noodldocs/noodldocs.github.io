@@ -108,7 +108,7 @@
     {
         "label": "Custom HTML",
         "desc": "Write your own HTML and pass values to it with template strings. Useful for embeds.",
-        "project": "library/modules/custom-html/custom-html-module-1-0-1.zip",
+        "project": "library/modules/custom-html/custom-html-module-1-0-2.zip",
         "icon": "library/modules/custom-html/html.png",
         "docs": "/library/modules/custom-html/",
         "tags": ["UI", "Code"]

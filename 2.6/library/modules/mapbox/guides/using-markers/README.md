@@ -25,7 +25,7 @@ The guide will build on the two previous Mapbox guides, [Setting up Mapbox modul
 The guide will build upon the example from the previous guides. You can import the result from the previous guide by clicking the import button below. Don't forget to set the correct Access Token that you got from your Mapbox account.
 
 <div className="ndl-image-with-background l">
-    <img src={useBaseUrl("modules/mapbox/guides/interacting/final-result.gif")} className="ndl-image large"></img>
+    <img src={useBaseUrl("library/modules/mapbox/guides/interacting/final-result.gif")} className="ndl-image large"></img>
 	<ImportButton zip="interacting.zip" name="Mapbox Interactions" thumb="screen-2.png"/>
 </div>
 
@@ -165,6 +165,6 @@ The **Click** signal from the **Button** is connected to **Do** on the **Remove 
 This is what the final node construct looks like. If you want to import the final project click the "Import" button:
 
 <div className="ndl-image-with-background l">
-    <img src={useBaseUrl("/modules/mapbox/guides/using-markers/nodes-7.png")} className="ndl-image large"></img>
+    <img src={useBaseUrl("library/modules/mapbox/guides/using-markers/nodes-7.png")} className="ndl-image large"></img>
 	<ImportButton zip="markers.zip" name="Mapbox Markers" thumb="screen-3.png"/>
 </div>
