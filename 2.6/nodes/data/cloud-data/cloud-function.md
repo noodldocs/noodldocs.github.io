@@ -32,8 +32,8 @@ You can also provide parameters that you want to be passed to the cloud function
 
 </div>
 
-The cloud function can return a value, an object or an array when finished. The return value will be available on the **Result** output. The result value will be converted to a Noodl type, for example an [Object](/nodes/data/object/object-node.md) or an [Array](/nodes/data/array/array-node.md) containing **Objects**.
-The only exception is if the returned array is an array of JavaScript primitives (strings, numbers, booleans), i.e. _not_ objects. Then Noodl cannot convert the array to a Noodl **Array** with **Objects**. Instead the returned array will be a JavaScript array with primitives that need to be handed in JavaScript by a [Function](/nodes/javascript/function.md) or [Script](/nodes/javascript/script.md) node.
+The cloud function can return a value, an object or an array when finished. The return value will be available on the **Result** output. The result value will be converted to a Noodl type, for example an [Object](/nodes/data/object/object-node) or an [Array](/nodes/data/array/array-node) containing **Objects**.
+The only exception is if the returned array is an array of JavaScript primitives (strings, numbers, booleans), i.e. _not_ objects. Then Noodl cannot convert the array to a Noodl **Array** with **Objects**. Instead the returned array will be a JavaScript array with primitives that need to be handed in JavaScript by a [Function](/nodes/javascript/function) or [Script](/nodes/javascript/script) node.
 
 <div className="ndl-image-with-background l">
 
@@ -55,8 +55,8 @@ The only exception is if the returned array is an array of JavaScript primitives
 
 ## Outputs
 
-| Data                                     | Description                                                                                                                                                                                                                                                                                                |
-| ---------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Data                                     | Description                                                                                                              |
+| ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
 | <span className="ndl-data">Result</span> | <##output:result##>This output will contain the result that the **Cloud Function** returns upon completion. <##output##> |
 
 | Signal                                      | Description                                                                                              |

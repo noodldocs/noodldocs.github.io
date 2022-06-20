@@ -8,7 +8,7 @@ title: Create New Array
 
 # Create New Array
 
-Creates a new Array. The outgoing property _Id_ is the id of the newly created array. This can for example be connected to an [Array](/nodes/data/array/array-node.md) node or [Insert Object Into Array Node](/nodes/data/array/insert-into-array).
+Creates a new Array. The outgoing property _Id_ is the id of the newly created array. This can for example be connected to an [Array](/nodes/data/array/array-node) node or [Insert Object Into Array Node](/nodes/data/array/insert-into-array).
 
 <div className="ndl-image-with-background l">
 

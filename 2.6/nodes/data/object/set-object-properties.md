@@ -8,7 +8,7 @@ title: Set Object Properties
 
 # Set Object Properties
 
-You can use this node to set properties on an [Object](/nodes/data/object/object-node.md). You must identify the **Object** with it's **Id** (see full docs for details)
+You can use this node to set properties on an [Object](/nodes/data/object/object-node). You must identify the **Object** with it's **Id** (see full docs for details)
 
 <div className="ndl-image-with-background l">
 

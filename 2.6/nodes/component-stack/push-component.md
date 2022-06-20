@@ -8,7 +8,7 @@ title: Push Component
 
 # Push Component To Stack
 
-The **Push Component To Stack** node is used together with a [Component Stack](/nodes/component-stack/component-stack-node.md) to navigate to a new component (i.e. "push on the stack"). It is typically used when creating app style navigation. For more information on how **Component Stack** navigation work, check out the [Component Stack](/nodes/component-stack/component-stack-node.md) documentation.
+The **Push Component To Stack** node is used together with a [Component Stack](/nodes/component-stack/component-stack-node) to navigate to a new component (i.e. "push on the stack"). It is typically used when creating app style navigation. For more information on how **Component Stack** navigation work, check out the [Component Stack](/nodes/component-stack/component-stack-node) documentation.
 
 <div className="ndl-image-with-background l">
 

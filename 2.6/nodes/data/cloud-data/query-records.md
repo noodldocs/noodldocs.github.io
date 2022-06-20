@@ -193,7 +193,7 @@ where({
 
 Don't forget that you need to send a signal to _Fetch_ to perform a new fetch with a new filter if any of the filter inputs have changed.
 
-**Records** also support many-to-many relationships via _Relations_. <!-- , check out the guide [here](/guides/relations.md) for more information. --> You can filter our all **Records** in the collection you are querying that are related to a specific **Record** via a _Relation_ with a given key using:
+**Records** also support many-to-many relationships via _Relations_. <!-- , check out the guide [here](/guides/relations) for more information. --> You can filter our all **Records** in the collection you are querying that are related to a specific **Record** via a _Relation_ with a given key using:
 
 ```javascript
 where({

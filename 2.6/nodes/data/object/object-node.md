@@ -8,7 +8,7 @@ title: Object
 
 # Object
 
-An **Object** is a basic data object in Noodl that stores any amount of properties. It can be used standalone or together with [Array](nodes/data/array/array-node.md) and [Repeater](nodes/ui-controls/repeater) nodes to create lists. An **Object** works much like a [Variable](nodes/data/variable/variable-node.md) but it can store many properties in one object.
+An **Object** is a basic data object in Noodl that stores any amount of properties. It can be used standalone or together with [Array](nodes/data/array/array-node) and [Repeater](nodes/ui-controls/repeater) nodes to create lists. An **Object** works much like a [Variable](nodes/data/variable/variable-node) but it can store many properties in one object.
 
 <div className="ndl-image-with-background l">
 

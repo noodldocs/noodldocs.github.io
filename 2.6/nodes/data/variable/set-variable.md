@@ -8,7 +8,7 @@ title: Set Variable
 
 # Set Variable
 
-This node sets the **Value** of a [Variable](/nodes/data/variable/variable-node.md). You provide the new value on the **Value** input and trigger the <span className="ndl-signal">Do</span> action.
+This node sets the **Value** of a [Variable](/nodes/data/variable/variable-node). You provide the new value on the **Value** input and trigger the <span className="ndl-signal">Do</span> action.
 
 <div className="ndl-image-with-background l">
 

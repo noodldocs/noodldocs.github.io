@@ -16,7 +16,7 @@ Represents a file that has been uploaded to the Noodl Cloud Services and stored 
 
 </div>
 
-**Cloud File** is typically used in combination with the [Open File Picker](/nodes/utilities/open-file-picker.md) and the [Upload File](/nodes/data/cloud-data/upload-file.md) to upload a file and store a reference to it in the database. Then **Cloud File** is used to retrieve the reference and get the URL or Name of the file.
+**Cloud File** is typically used in combination with the [Open File Picker](/nodes/utilities/open-file-picker) and the [Upload File](/nodes/data/cloud-data/upload-file) to upload a file and store a reference to it in the database. Then **Cloud File** is used to retrieve the reference and get the URL or Name of the file.
 
 <div className="ndl-image-with-background l">
 

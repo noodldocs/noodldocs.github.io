@@ -45,7 +45,7 @@ Markers are used to mark points in the map. They can be anywhere on the map.
 
 A marker can either be represented by the default icon, or you can use a custom image instead. In this guide we will go with the default icon. The default icon can also have a color of your choice.
 
-Markers are fed to the Mapbox module through an [Array](/nodes/data/array/array-node.md). Each [Object](/nodes/data/object/object-node.md) in the **Array** should be of the format:
+Markers are fed to the Mapbox module through an [Array](/nodes/data/array/array-node). Each [Object](/nodes/data/object/object-node) in the **Array** should be of the format:
 
 ```
 {
@@ -116,7 +116,7 @@ Next step is to be able to do something when the user clicks a marker. So we nee
 
 So let's change up the logic slightly, so the panel either shows the marker that was clicked, or the newly created marker if the user didn't click the marker but on the map instead.
 
-Using [Variable](/nodes/data/variable/variable-node.md) and [Set Variable](/nodes/data/variable/set-variable) node and some logic around that, we make sure a **Variable** holds the current marker. See the [guide](/docs/guides/data/variables) on using **Variables** if you want to know more about how to use them.
+Using [Variable](/nodes/data/variable/variable-node) and [Set Variable](/nodes/data/variable/set-variable) node and some logic around that, we make sure a **Variable** holds the current marker. See the [guide](/docs/guides/data/variables) on using **Variables** if you want to know more about how to use them.
 Also, the **Marker Click** signal now makes the panel visible as well. The full node design can be seen below.
 
 <div className="ndl-image-with-background l">

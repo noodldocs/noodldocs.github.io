@@ -16,7 +16,7 @@ This node a shared set of properties that can be accessed from a component as we
 
 </div>
 
-The <span className="ndl-node">Component Object</span> node works much like the <span className="ndl-node">[Object](/nodes/data/object/object-node.md)</span> node where you add properties that become inputs or outputs to the node.
+The <span className="ndl-node">Component Object</span> node works much like the <span className="ndl-node">[Object](/nodes/data/object/object-node)</span> node where you add properties that become inputs or outputs to the node.
 
 <##head##>
 
@@ -26,7 +26,7 @@ The <span className="ndl-node">Component Object</span> node works much like the 
 
 </div>
 
-Unlike the <span className="ndl-node">[Object](/nodes/data/object/object-node.md)</span> node it does not have an <span className="ndl-data">Id</span>. Instead all <span className="ndl-node">Component Object</span> nodes within the same component share the same data.
+Unlike the <span className="ndl-node">[Object](/nodes/data/object/object-node)</span> node it does not have an <span className="ndl-data">Id</span>. Instead all <span className="ndl-node">Component Object</span> nodes within the same component share the same data.
 
 ## Inputs
 

@@ -8,7 +8,7 @@ title: Static Array
 
 # Static Array
 
-Store static data to populate an [Array](/nodes/data/array/array-node.md) with items. The Static Array node is great for providing static local data for lists etc. You can use it e.g. as an input to a **For Each** node.
+Store static data to populate an [Array](/nodes/data/array/array-node) with items. The Static Array node is great for providing static local data for lists etc. You can use it e.g. as an input to a **For Each** node.
 
 <div className="ndl-image-with-background l">
 
@@ -57,6 +57,6 @@ Example:
 
 ## Outputs
 
-| Data                                    | Description                                                                                                                                                                                                                      |
-| --------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <span className="ndl-data">Items</span> | <##output:items##>A `Noodl.Array` object that can be connected to e.g. an [Array](/nodes/data/array/array-node.md), [JavaScript](/docs/guides/business-logic/javascript) or [Repeater](/nodes/ui-controls/repeater).<##output##> |
+| Data                                    | Description                                                                                                                                                                                                                   |
+| --------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <span className="ndl-data">Items</span> | <##output:items##>A `Noodl.Array` object that can be connected to e.g. an [Array](/nodes/data/array/array-node), [JavaScript](/docs/guides/business-logic/javascript) or [Repeater](/nodes/ui-controls/repeater).<##output##> |

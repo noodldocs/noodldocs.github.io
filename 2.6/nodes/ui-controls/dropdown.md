@@ -28,7 +28,7 @@ which will be shown in the dropdown for the user to pick from.
 
 ## The Incoming Items Format
 
-The incoming items should be an [Array](/nodes/data/array/array-node.md) of [Objects](/nodes/data/object/object-node.md),
+The incoming items should be an [Array](/nodes/data/array/array-node) of [Objects](/nodes/data/object/object-node),
 for example coming from a [Static Array](/nodes/data/array/static-array),
 [Query Records](/nodes/data/cloud-data/query-records) or a [Function](/nodes/javascript/function) node.
 

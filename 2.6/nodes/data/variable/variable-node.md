@@ -8,7 +8,7 @@ title: Variable
 
 # Variable
 
-Use this node to store a single data variable that will be globally accessible throughout the application. **Variable** works in a similar way as [Object](/nodes/data/object/object-node.md) but can only store one value.
+Use this node to store a single data variable that will be globally accessible throughout the application. **Variable** works in a similar way as [Object](/nodes/data/object/object-node) but can only store one value.
 
 <div className="ndl-image-with-background l">
 

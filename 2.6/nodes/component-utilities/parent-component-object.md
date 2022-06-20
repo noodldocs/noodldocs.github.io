@@ -16,7 +16,7 @@ title: Parent Component Object
 
 </div>
 
-The node is used much like an [Object](/nodes/data/object/object-node.md) where you can output properties on the node. The node does not have an **Id** instead the data is shared with the parent component. This node is very useful in patterns such as radio groups where child components may need to access the **Component Object** of its parent.
+The node is used much like an [Object](/nodes/data/object/object-node) where you can output properties on the node. The node does not have an **Id** instead the data is shared with the parent component. This node is very useful in patterns such as radio groups where child components may need to access the **Component Object** of its parent.
 <##head##>
 
 ## Inputs
