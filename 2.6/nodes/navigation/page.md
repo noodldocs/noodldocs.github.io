@@ -8,14 +8,13 @@ title: Page
 
 # Page
 
-The **Page** node is a basic building block when creating web type navigation using a [Page Router](/nodes/navigation/page-router). 
+The **Page** node is a basic building block when creating web type navigation using a [Page Router](/nodes/navigation/page-router).
 
 :::note
 
 **Page** nodes cannot be created throught the node picker, it can only be created by adding a new **Page** in the component list.
 
 :::
-
 
 **Pages** are typically used together with a [Page Inputs](/nodes/navigation/page-inputs) node to be able to provide parameters to the **Page**.
 
@@ -34,20 +33,20 @@ The **Page** node is a basic building block when creating web type navigation us
 | <span className="ndl-data">Title</span>    | <##input:title##>This property controls the title of the **Page** i.e. what the title of the browser window will be say when the **Page** is active.<##input##>                                                                                                    |
 | <span className="ndl-data">URL path</span> | <##input:urlPath##>This property controls the URL route to this **Page** in relation to its [Page Router](/nodes/navigation/page-router).<##input##> See the documentation for [Page Router](/nodes/navigation/page-router) for more details on how routing works. |
 
-This node supports the following [Visual Input Properties](../shared-props/inputs/visual-input-properties/):
+This node supports the following [Visual Input Properties](/nodes/shared-props/inputs/visual-input-properties/):
 
--   [Padding](../shared-props/inputs/visual-input-properties#padding)
--   [Advanced Style](../shared-props/inputs/visual-input-properties#advanced-style)
+-   [Padding](/nodes/shared-props/inputs/visual-input-properties#padding)
+-   [Advanced Style](/nodes/shared-props/inputs/visual-input-properties#advanced-style)
 
 ## Outputs
 
 ### Visual
 
-This node supports the following [Visual Output Properties](../shared-props/outputs/visual-output-properties/):
+This node supports the following [Visual Output Properties](/nodes/shared-props/outputs/visual-output-properties/):
 
--   [Bounding Box](../shared-props/outputs/visual-output-properties#bounding-box)
--   [Mounted](../shared-props/outputs/visual-output-properties#mounted)
--   [Other](../shared-props/outputs/visual-output-properties#other)
+-   [Bounding Box](/nodes/shared-props/outputs/visual-output-properties#bounding-box)
+-   [Mounted](/nodes/shared-props/outputs/visual-output-properties#mounted)
+-   [Other](/nodes/shared-props/outputs/visual-output-properties#other)
 
 <div className="hidden-props-for-editor">
 

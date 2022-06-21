@@ -111,7 +111,7 @@ The **Page Router** is a visual node. It will automatically expand to take all s
 
 ### Visual
 
-This node also supports the [Advanced Style](../shared-props/inputs/visual-input-properties#advanced-style) gadget from the [Visual Input Properties](../shared-props/inputs/visual-input-properties/).
+This node also supports the [Advanced Style](/nodes/shared-props/inputs/visual-input-properties#advanced-style) gadget from the [Visual Input Properties](/nodes/shared-props/inputs/visual-input-properties/).
 
 ## Outputs
 
@@ -121,11 +121,11 @@ This node also supports the [Advanced Style](../shared-props/inputs/visual-input
 
 ### Visual
 
-This node supports the following [Visual Output Properties](../shared-props/outputs/visual-output-properties/):
+This node supports the following [Visual Output Properties](/nodes/shared-props/outputs/visual-output-properties/):
 
--   [Bounding Box](../shared-props/outputs/visual-output-properties/#bounding-box)
--   [Mounted](../shared-props/outputs/visual-output-properties/#mounted)
--   [Other](../shared-props/outputs/visual-output-properties/#other)
+-   [Bounding Box](/nodes/shared-props/outputs/visual-output-properties/#bounding-box)
+-   [Mounted](/nodes/shared-props/outputs/visual-output-properties/#mounted)
+-   [Other](/nodes/shared-props/outputs/visual-output-properties/#other)
 
 <div className="hidden-props-for-editor">
 

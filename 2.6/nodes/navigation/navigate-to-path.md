@@ -24,7 +24,7 @@ In most cases you will want to use the <span className="ndl-node">[Navigate](/no
 
 You don't specify which **Page Router** that should perform the navigation, it will be implicitly resolved using the provided path. For example, if you have a **Page Router** with **URL path** `router1`, with a **Page**with the **URL path** `page1`, which in turn contains an unnamed **Page** with the **URL path** `pageA`, providing the **Path** `/router1/page1/pageA/` will force the two **Page Routers** to navigate to the respective pages.
 
-In a way, **Navigate To Path** is very much like writing a URL directly into the browser address bar. However the node is only used to navigate between **Pages** in the Noodl project. If you want to navigate to an external URL you should instead use the [External Link](nodes/navigation/external-link) node.
+In a way, **Navigate To Path** is very much like writing a URL directly into the browser address bar. However the node is only used to navigate between **Pages** in the Noodl project. If you want to navigate to an external URL you should instead use the [External Link](/nodes/navigation/external-link) node.
 
 ## Inputs
 

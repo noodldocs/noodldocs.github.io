@@ -42,20 +42,20 @@ The Video node also has some special Video Layout properties:
 
 ### Visual
 
-This node supports the following [Visual Input Properties](../shared-props/inputs/visual-input-properties):
+This node supports the following [Visual Input Properties](/nodes/shared-props/inputs/visual-input-properties):
 
--   [Margin](../shared-props/inputs/visual-input-properties#margin)
--   [Alignment](../shared-props/inputs/visual-input-properties#alignment)
--   [Dimensions](../shared-props/inputs/visual-input-properties#dimensions)
--   [Layout, Position](../shared-props/inputs/visual-input-properties#-position)
--   [Style](../shared-props/inputs/visual-input-properties#style)
--   [Border Style](../shared-props/inputs/visual-input-properties#border-style)
--   [Corner Radius](../shared-props/inputs/visual-input-properties#corner-radius)
--   [Box Shadow](../shared-props/inputs/visual-input-properties#box-shadow)
--   [Placement](../shared-props/inputs/visual-input-properties#placement)
--   [Dimension Constraints](../shared-props/inputs/visual-input-properties#dimension-constraints)
--   [Other](../shared-props/inputs/visual-input-properties#other)
--   [Advanced Style](../shared-props/inputs/visual-input-properties#advanced-style)
+-   [Margin](/nodes/shared-props/inputs/visual-input-properties#margin)
+-   [Alignment](/nodes/shared-props/inputs/visual-input-properties#alignment)
+-   [Dimensions](/nodes/shared-props/inputs/visual-input-properties#dimensions)
+-   [Layout, Position](/nodes/shared-props/inputs/visual-input-properties#-position)
+-   [Style](/nodes/shared-props/inputs/visual-input-properties#style)
+-   [Border Style](/nodes/shared-props/inputs/visual-input-properties#border-style)
+-   [Corner Radius](/nodes/shared-props/inputs/visual-input-properties#corner-radius)
+-   [Box Shadow](/nodes/shared-props/inputs/visual-input-properties#box-shadow)
+-   [Placement](/nodes/shared-props/inputs/visual-input-properties#placement)
+-   [Dimension Constraints](/nodes/shared-props/inputs/visual-input-properties#dimension-constraints)
+-   [Other](/nodes/shared-props/inputs/visual-input-properties#other)
+-   [Advanced Style](/nodes/shared-props/inputs/visual-input-properties#advanced-style)
 
 ## Outputs
 
@@ -72,13 +72,13 @@ This node supports the following [Visual Input Properties](../shared-props/input
 
 ### Visual
 
-This node supports the following [Visual Output Properties](../shared-props/outputs/visual-output-properties).
+This node supports the following [Visual Output Properties](/nodes/shared-props/outputs/visual-output-properties).
 
--   [Bounding Box](../shared-props/outputs/visual-output-properties/#bounding-box)
--   [Mounted](../shared-props/outputs/visual-output-properties/#mounted)
--   [Pointer Events](../shared-props/outputs/visual-output-properties/#pointer-events)
--   [Hover Events](../shared-props/outputs/visual-output-properties/#hover-events)
--   [Other](../shared-props/outputs/visual-output-properties/#other)
+-   [Bounding Box](/nodes/shared-props/outputs/visual-output-properties/#bounding-box)
+-   [Mounted](/nodes/shared-props/outputs/visual-output-properties/#mounted)
+-   [Pointer Events](/nodes/shared-props/outputs/visual-output-properties/#pointer-events)
+-   [Hover Events](/nodes/shared-props/outputs/visual-output-properties/#hover-events)
+-   [Other](/nodes/shared-props/outputs/visual-output-properties/#other)
 
 <div className="hidden-props-for-editor">
 

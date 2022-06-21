@@ -60,9 +60,9 @@ The drag node is used to make visual nodes draggable with the mouse or touch. Al
 
 ### Visual
 
-This node supports the following [Visual Input Properties](../shared-props/inputs/visual-input-properties):
+This node supports the following [Visual Input Properties](/nodes/shared-props/inputs/visual-input-properties):
 
--   [Advanced Style](../shared-props/inputs/visual-input-properties#advanced-style)
+-   [Advanced Style](/nodes/shared-props/inputs/visual-input-properties#advanced-style)
 
 ## Outputs
 

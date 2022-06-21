@@ -30,23 +30,23 @@ You can use an icon from the built in library, or provide your own image source.
 
 ### Visual
 
-This node supports the following [Visual Input Properties](../shared-props/inputs/visual-input-properties):
+This node supports the following [Visual Input Properties](/nodes/shared-props/inputs/visual-input-properties):
 
--   [Margin](../shared-props/inputs/visual-input-properties#margin)
--   [Padding](../shared-props/inputs/visual-input-properties#padding)
--   [Alignment](../shared-props/inputs/visual-input-properties#alignment)
--   [Layout, Position](../shared-props/inputs/visual-input-properties#-position)
--   [Style](../shared-props/inputs/visual-input-properties#style)
--   [Placement](../shared-props/inputs/visual-input-properties#placement)
--   [Advanced Style](../shared-props/inputs/visual-input-properties#advanced-style)
+-   [Margin](/nodes/shared-props/inputs/visual-input-properties#margin)
+-   [Padding](/nodes/shared-props/inputs/visual-input-properties#padding)
+-   [Alignment](/nodes/shared-props/inputs/visual-input-properties#alignment)
+-   [Layout, Position](/nodes/shared-props/inputs/visual-input-properties#-position)
+-   [Style](/nodes/shared-props/inputs/visual-input-properties#style)
+-   [Placement](/nodes/shared-props/inputs/visual-input-properties#placement)
+-   [Advanced Style](/nodes/shared-props/inputs/visual-input-properties#advanced-style)
 
 ## Outputs
 
-This node supports the following [Visual Output Properties](../shared-props/outputs/visual-output-properties):
+This node supports the following [Visual Output Properties](/nodes/shared-props/outputs/visual-output-properties):
 
--   [Bounding Box](../shared-props/outputs/visual-output-properties#bounding-box)
--   [Mounted](../shared-props/outputs/visual-output-properties#mounted)
--   [Other](../shared-props/outputs/visual-output-properties#other)
+-   [Bounding Box](/nodes/shared-props/outputs/visual-output-properties#bounding-box)
+-   [Mounted](/nodes/shared-props/outputs/visual-output-properties#mounted)
+-   [Other](/nodes/shared-props/outputs/visual-output-properties#other)
 
 <div className="hidden-props-for-editor">
 

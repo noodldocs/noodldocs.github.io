@@ -72,20 +72,20 @@ Similarly, it has a set of icon properties:
 
 ### Visual
 
-This node supports the following [Visual Input Properties](../shared-props/inputs/visual-input-properties/):
+This node supports the following [Visual Input Properties](/nodes/shared-props/inputs/visual-input-properties/):
 
--   [Margin](../shared-props/inputs/visual-input-properties/#margin)
--   [Padding](../shared-props/inputs/visual-input-properties/#padding)
--   [Alignment](../shared-props/inputs/visual-input-properties/#alignment)
--   [Dimensions](../shared-props/inputs/visual-input-properties/#dimensions)
--   [Layout, Position](../shared-props/inputs/visual-input-properties/#-position)
--   [Style](../shared-props/inputs/visual-input-properties/#style)
--   [Border Style](../shared-props/inputs/visual-input-properties/#border-style)
--   [Corner Radius](../shared-props/inputs/visual-input-properties/#corner-radius)
--   [Box Shadow](../shared-props/inputs/visual-input-properties/#box-shadow)
--   [Placement](../shared-props/inputs/visual-input-properties/#placement)
--   [Other](../shared-props/inputs/visual-input-properties/#other)
--   [Advanced Style](../shared-props/inputs/visual-input-properties/#advanced-style)
+-   [Margin](/nodes/shared-props/inputs/visual-input-properties/#margin)
+-   [Padding](/nodes/shared-props/inputs/visual-input-properties/#padding)
+-   [Alignment](/nodes/shared-props/inputs/visual-input-properties/#alignment)
+-   [Dimensions](/nodes/shared-props/inputs/visual-input-properties/#dimensions)
+-   [Layout, Position](/nodes/shared-props/inputs/visual-input-properties/#-position)
+-   [Style](/nodes/shared-props/inputs/visual-input-properties/#style)
+-   [Border Style](/nodes/shared-props/inputs/visual-input-properties/#border-style)
+-   [Corner Radius](/nodes/shared-props/inputs/visual-input-properties/#corner-radius)
+-   [Box Shadow](/nodes/shared-props/inputs/visual-input-properties/#box-shadow)
+-   [Placement](/nodes/shared-props/inputs/visual-input-properties/#placement)
+-   [Other](/nodes/shared-props/inputs/visual-input-properties/#other)
+-   [Advanced Style](/nodes/shared-props/inputs/visual-input-properties/#advanced-style)
 
 ## Outputs
 
@@ -120,11 +120,11 @@ Apart from triggering <span className="ndl-signal">signals</span> the Checkbox n
 | <span className="ndl-data">Pressed</span> | <##output:pressedState##>A boolean output that is true when the user is currently pressing the control. This is useful when using this control as a base for your own component that will represent visually that it is pressed.<##output##>                                                                                                                   |
 
 
-This node supports the following [Visual Output Properties](../shared-props/outputs/visual-output-properties/):
+This node supports the following [Visual Output Properties](/nodes/shared-props/outputs/visual-output-properties/):
 
--   [Bounding Box](../shared-props/outputs/visual-output-properties/#bounding-box)
--   [Mounted](../shared-props/outputs/visual-output-properties/#mounted)
--   [Other](../shared-props/outputs/visual-output-properties/#other)
+-   [Bounding Box](/nodes/shared-props/outputs/visual-output-properties/#bounding-box)
+-   [Mounted](/nodes/shared-props/outputs/visual-output-properties/#mounted)
+-   [Other](/nodes/shared-props/outputs/visual-output-properties/#other)
 
 <div className="hidden-props-for-editor">
 

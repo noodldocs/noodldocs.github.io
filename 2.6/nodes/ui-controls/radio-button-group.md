@@ -41,18 +41,18 @@ It can be enabled and disabled using the <span className="ndl-data">Enabled</spa
 
 ### Visual
 
-This node supports the following [Visual Input Properties](../shared-props/inputs/visual-input-properties/):
+This node supports the following [Visual Input Properties](/nodes/shared-props/inputs/visual-input-properties/):
 
--   [Margin](../shared-props/inputs/visual-input-properties/#margin)
--   [Padding](../shared-props/inputs/visual-input-properties/#padding)
--   [Alignment](../shared-props/inputs/visual-input-properties/#alignment)
--   [Dimensions](../shared-props/inputs/visual-input-properties/#dimensions)
--   [Layout](../shared-props/inputs/visual-input-properties/)
--   [Style](../shared-props/inputs/visual-input-properties/#style)
--   [Placement](../shared-props/inputs/visual-input-properties/#placement)
--   [Dimension Constraints](../shared-props/inputs/visual-input-properties/#dimension-constraints)
--   [Other](../shared-props/inputs/visual-input-properties/#other)
--   [Advanced Style](../shared-props/inputs/visual-input-properties/#advanced-style)
+-   [Margin](/nodes/shared-props/inputs/visual-input-properties/#margin)
+-   [Padding](/nodes/shared-props/inputs/visual-input-properties/#padding)
+-   [Alignment](/nodes/shared-props/inputs/visual-input-properties/#alignment)
+-   [Dimensions](/nodes/shared-props/inputs/visual-input-properties/#dimensions)
+-   [Layout](/nodes/shared-props/inputs/visual-input-properties/)
+-   [Style](/nodes/shared-props/inputs/visual-input-properties/#style)
+-   [Placement](/nodes/shared-props/inputs/visual-input-properties/#placement)
+-   [Dimension Constraints](/nodes/shared-props/inputs/visual-input-properties/#dimension-constraints)
+-   [Other](/nodes/shared-props/inputs/visual-input-properties/#other)
+-   [Advanced Style](/nodes/shared-props/inputs/visual-input-properties/#advanced-style)
 
 ## Outputs
 
@@ -66,11 +66,11 @@ This node supports the following [Visual Input Properties](../shared-props/input
 
 ### Visual
 
-This node supports the following [Visual Output Properties](../shared-props/outputs/visual-output-properties/):
+This node supports the following [Visual Output Properties](/nodes/shared-props/outputs/visual-output-properties/):
 
--   [Bounding Box](../shared-props/outputs/visual-output-properties/#bounding-box)
--   [Mounted](../shared-props/outputs/visual-output-properties/#mounted)
--   [Other](../shared-props/outputs/visual-output-properties/#other)
+-   [Bounding Box](/nodes/shared-props/outputs/visual-output-properties/#bounding-box)
+-   [Mounted](/nodes/shared-props/outputs/visual-output-properties/#mounted)
+-   [Other](/nodes/shared-props/outputs/visual-output-properties/#other)
 
 <div className="hidden-props-for-editor">
 
