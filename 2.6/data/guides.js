@@ -376,6 +376,14 @@ const guides = [
             },
             {
                 type: 'doc',
+                label: 'Deploying to iOS and Android',
+                id: 'guides/deploy/deploying-to-ios-and-android',
+                imageUrl: '/img/featured-content-images/hosting.png',
+                description:
+                    'Learn how to deploy your project as a native app',
+            },
+            {
+                type: 'doc',
                 label: 'Self Hosting your Noodl Frontend',
                 id: 'guides/deploy/hosting-frontend',
                 imageUrl: '/img/featured-content-images/hosting.png',
