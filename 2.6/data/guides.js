@@ -368,11 +368,11 @@ const guides = [
             },
             {
                 type: 'doc',
-                label: 'Using an external backend',
+                label: 'Using a self hosted backend',
                 id: 'guides/deploy/using-an-external-backend',
                 imageUrl: '/img/featured-content-images/data.png',
                 description:
-                    'Learn how to create an external backend through a Docker Container',
+                    'Learn how to create a self hosted backend through a Docker Container',
             },
             {
                 type: 'doc',
@@ -384,7 +384,7 @@ const guides = [
             },
             {
                 type: 'doc',
-                label: 'Self Hosting your Noodl Frontend',
+                label: 'Self hosting your Noodl Frontend',
                 id: 'guides/deploy/hosting-frontend',
                 imageUrl: '/img/featured-content-images/hosting.png',
                 description:

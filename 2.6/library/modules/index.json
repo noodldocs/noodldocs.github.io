@@ -1,5 +1,13 @@
 [
     {
+        "label": "PDF Viewer",
+        "desc": "A UI component for rendering PDFs from an URL.",
+        "icon": "library/modules/pdf-viewer/pdf-viewer.png",
+        "project": "library/modules/pdf-viewer/pdf-viewer-1.0.0.zip",
+        "docs": "/library/modules/pdf-viewer/",
+        "tags": ["UI"]
+    },
+    {
         "label": "Rotary Knob",
         "desc": "A rotary knob UI component.",
         "icon": "library/modules/rotary-knob/rotary-knob.png",
