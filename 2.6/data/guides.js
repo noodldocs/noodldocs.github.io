@@ -390,6 +390,14 @@ const guides = [
                 description:
                     'Learn how to deploy your project to a local folder for Self Hosting',
             },
+            {
+                type: 'doc',
+                label: 'Deploying as a micro frontend',
+                id: 'guides/deploy/micro-frontend',
+                imageUrl: '/img/featured-content-images/hosting.png',
+                description:
+                    'Learn how to deploy your app as a micro frontend, part of a container application.',
+            },
         ],
     },
 ]
