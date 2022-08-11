@@ -148,7 +148,7 @@
     {
         "label": "MQTT Module",
         "desc": "Send and receive messages over the MQTT protocol in web apps.",
-        "project": "library/modules/mqtt/mqtt-module-1-0-2.zip",
+        "project": "library/modules/mqtt/mqtt-module-1-0-3.zip",
         "icon": "library/modules/mqtt/mqtt.png",
         "docs": "/library/modules/mqtt/",
         "tags": ["Device", "Networking"]
@@ -189,7 +189,7 @@
         "label": "Stripe Checkout",
         "desc": "Stripe Checkout for your web apps.",
         "project": "library/modules/stripe-checkout/stripe-checkout-1-0-0.zip",
-        "icon": "library/modules/stripe-checkout/translate.png",
+        "icon": "library/modules/stripe-checkout/stripe_checkout.png",
         "docs": "/library/modules/stripe-checkout/",
         "tags": ["Service"]
     }

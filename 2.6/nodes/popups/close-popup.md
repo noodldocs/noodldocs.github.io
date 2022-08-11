@@ -32,6 +32,12 @@ Sending data back to the triggering component is done by adding **Result** value
 
 After specifying results and close actions in the properties the corresponding inputs become available on the **Close Popup** node.
 
+:::info
+
+**Close Popup** has to be called in the same component that **Open Popup** opened.
+
+:::
+
 <div className="ndl-image-with-background l">
 
 ![](/nodes/popups/close-popup/close-popup-3.png)

@@ -5,6 +5,13 @@ hide_title: true
 
 # Custom Tooltip
 
+:::tip
+
+There are some known timing problems when setting `Plugins Object`,
+solution is to set the `Plugins Object` on `Did Mount`.
+
+:::
+
 ## Custom Tooltip Content
 
 This sample shows how to use the tooltip callbacks to add additional content to the tooltip.
