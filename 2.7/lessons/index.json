@@ -1,0 +1,26 @@
+[
+    {
+        "url":"gettingstarted",
+        "thumb": "lessons/01lesson_notstarted.png",
+        "thumbStarted": "lessons/01lesson_started.png",
+        "thumbCompleted": "lessons/01lesson_completed.png",
+        "category": "Lessons",
+        "name": "https---docs-noodl-net-2-5-lessons-gettingstarted-project-zip"
+    },
+    {
+        "url":"create-a-list",
+        "thumb": "lessons/02lesson_notstarted.png",
+        "thumbStarted": "lessons/02lesson_started.png",
+        "thumbCompleted": "lessons/02lesson_completed.png",
+        "category": "Lessons",
+        "name": "https---docs-noodl-net-2-5-lessons-create-a-list-project-zip"
+    },
+    {
+        "url":"navigation",
+        "thumb": "lessons/03lesson_notstarted.png",
+        "thumbStarted": "lessons/03lesson_started.png",
+        "thumbCompleted": "lessons/03lesson_completed.png",
+        "category": "Lessons",
+        "name": "https---docs-noodl-net-2-5-lessons-navigation-project-zip"
+    }
+]
