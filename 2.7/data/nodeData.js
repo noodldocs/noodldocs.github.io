@@ -215,6 +215,11 @@ const nodeData = [
             id: 'utilities/drag',
             nodeType: NodeType.Visual,
           },
+          {
+            label: 'Animate To Value',
+            id: 'logic/animate-to-value',
+            nodeType: NodeType.Logic,
+          },
         ],
       },
 
