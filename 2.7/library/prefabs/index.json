@@ -70,5 +70,13 @@
     "project": "library/prefabs/media-query/media-query-project.zip",
     "docs": "/library/prefabs/media-query/",
     "tags": ["UI", "Utility"]
+  },
+  {
+    "label": "Progress Circle",
+    "desc": "Contains an animating progress visualization in percentage.",
+    "icon": "library/prefabs/progress-circle/progress-circle.png",
+    "project": "library/prefabs/media-query/media-query-project.zip",
+    "docs": "/library/prefabs/progress-circle/",
+    "tags": ["UI", "Utility"]
   }
 ]
