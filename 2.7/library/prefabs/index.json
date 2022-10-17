@@ -35,7 +35,7 @@
     "label": "Table",
     "desc": "Component for creating tables from data.",
     "icon": "library/prefabs/table/table.png",
-    "project": "library/prefabs/table/table-0-2.zip",
+    "project": "library/prefabs/table/table-0-3.zip",
     "docs": "/library/prefabs/table/",
     "tags": ["UI", "Data"]
   },
@@ -75,8 +75,32 @@
     "label": "Progress Circle",
     "desc": "Contains an animating progress visualization in percentage.",
     "icon": "library/prefabs/progress-circle/progress-circle.png",
-    "project": "library/prefabs/media-query/media-query-project.zip",
+    "project": "library/prefabs/progress-circle/progress-cicle-0-1.zip",
     "docs": "/library/prefabs/progress-circle/",
-    "tags": ["UI", "Utility"]
+    "tags": ["UI"]
+  },
+  {
+    "label": "Popup Modal",
+    "desc": "Contains a classic popup modal for simple confirm popups.",
+    "icon": "library/prefabs/modal/modal.png",
+    "project": "library/prefabs/modal/modal-0-1.zip",
+    "docs": "/library/prefabs/modal/",
+    "tags": ["UI"]
+  },  
+  {
+    "label": "Toast",
+    "desc": "Contains Toast messages for success, warnings, errors, and neutral.",
+    "icon": "library/prefabs/toast/toast.png",
+    "project": "library/prefabs/toast/toast-0-1.zip",
+    "docs": "/library/prefabs/toast/",
+    "tags": ["UI"]
+  },
+  {
+    "label": "Toggle Switch",
+    "desc": "A toggle switch UI component.",
+    "icon": "library/prefabs/toggle/toggle.png",
+    "project": "library/prefabs/toggle/toggle-0-1.zip",
+    "docs": "/library/prefabs/toggle/",
+    "tags": ["UI"]
   }
 ]
