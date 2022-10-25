@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunknew_noodl_docs=self.webpackChunknew_noodl_docs||[]).push([[5211],{73690:function(e){e.exports=JSON.parse('{"title":"Recent updates","items":[{"title":"October update","permalink":"/2.7/whats-new/october-2022"},{"title":"September update","permalink":"/2.7/whats-new/september-2022"}]}')}}]);
