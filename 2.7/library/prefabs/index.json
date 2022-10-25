@@ -106,7 +106,7 @@
   {
     "label": "Tab Bar",
     "desc": "A tab bar component, useful for creating tab navigation.",
-    "icon": "library/prefabs/tag-bar/tab-bar.png",
+    "icon": "library/prefabs/tab-bar/tab-bar.png",
     "project": "library/prefabs/tab-bar/tab-bar-0-1.zip",
     "docs": "/library/prefabs/tab-bar/",
     "tags": ["UI"]
