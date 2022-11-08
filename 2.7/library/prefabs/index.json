@@ -118,5 +118,29 @@
     "project": "library/prefabs/rating/rating-0-1.zip",
     "docs": "/library/prefabs/rating/",
     "tags": ["UI"]
-  }
+  },
+  {
+    "label": "Loading Spinner",
+    "desc": "A loading spinner that can be shown when requesting data etc.",
+    "icon": "library/prefabs/loading-spinner/loading-spinner.png",
+    "project": "library/prefabs/loading-spinner/loading-spinner-0-1.zip",
+    "docs": "/library/prefabs/loading-spinner/",
+    "tags": ["UI"]
+  },
+  {
+    "label": "Tags",
+    "desc": "Display a list of tags, with nice auto generated colors.",
+    "icon": "library/prefabs/tags/tags.png",
+    "project": "library/prefabs/tags/tags-0-1.zip",
+    "docs": "/library/prefabs/tags/",
+    "tags": ["UI"]
+  },
+  {
+    "label": "Selection Pills",
+    "desc": "A list of selection pills, select one or many.",
+    "icon": "library/prefabs/selection-pills/selection-pills.png",
+    "project": "library/prefabs/selection-pills/selection-pills-0-1.zip",
+    "docs": "/library/prefabs/selection-pills/",
+    "tags": ["UI"]
+  }  
 ]
