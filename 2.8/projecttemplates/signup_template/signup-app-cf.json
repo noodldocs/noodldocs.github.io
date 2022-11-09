@@ -4,8 +4,7 @@
         "type":"collection",
         "name":"_User",
         "properties":{
-          "firstName":{"type":"String"},
-          "lastName":{"type":"String"},
+          "name":{"type":"String"},
           "profileImage":{"type":"File"}
         }
       }
