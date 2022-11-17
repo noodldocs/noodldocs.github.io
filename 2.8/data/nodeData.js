@@ -428,6 +428,11 @@ const nodeData = [
             id: 'data/variable/variable-node',
             nodeType: NodeType.Data,
           },
+          {
+            label: 'Run Tasks',
+            id: 'data/run-tasks',
+            nodeType: NodeType.Data,
+          },
         ],
       },
 
@@ -622,6 +627,22 @@ const nodeData = [
         nodeType: NodeType.Custom,
       },
     ],
+  },
+
+  {
+    label: 'Cloud Functions',
+    items: [
+      {
+        label: 'Request',
+        id: 'cloud-functions/request',
+        nodeType: NodeType.Data,
+      },
+      {
+        label: 'Response',
+        id: 'cloud-functions/response',
+        nodeType: NodeType.Data,
+      },
+    ]
   },
 ];
 

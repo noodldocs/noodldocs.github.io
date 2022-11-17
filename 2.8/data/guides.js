@@ -308,28 +308,52 @@ const guides = [
                 imageUrl: '/img/featured-content-images/logic.png',
                 description: 'Learn how to work with events in Noodl',
             },
-            {
+          /*  {
                 type: 'doc',
                 label: 'Zapier',
                 id: 'guides/business-logic/zapier',
                 imageUrl: '/img/featured-content-images/logic.png',
                 description:
                     'Learn how to connect Noodl to Zapier for task automation more',
-            },
+            },*/
             /*{
                             type: 'doc',
                             label: 'Webhooks',
                             id: 'guides/business-logic/webhooks',
                         },*/
-            {
+          /*  {
                 type: 'doc',
                 label: 'User Management',
                 id: 'guides/business-logic/user-management',
                 imageUrl: '/img/featured-content-images/data.png',
                 description:
                     'Learn how to use Noodls built in User Management nodes to create signup flows and more',
-            },
+            },*/
         ],
+    },
+
+    {
+        type: 'category',
+        label: 'Cloud Functions',
+        link: { type: 'doc', id: 'guides/cloud-logic/overview' },
+        items: [
+            {
+                type: 'doc',
+                label: 'Introduction',
+                id: 'guides/cloud-logic/introduction',
+                imageUrl: '/img/featured-content-images/logic.png',
+                description:
+                    'Start learning how to build logic that runs in the cloud.',
+            },
+            {
+                type: 'doc',
+                label: 'User Management',
+                id: 'guides/cloud-logic/user-management',
+                imageUrl: '/img/featured-content-images/data.png',
+                description:
+                    'Learn how create signup flows and more.',
+            },
+        ]
     },
     {
         type: 'category',

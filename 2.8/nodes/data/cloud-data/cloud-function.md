@@ -8,58 +8,61 @@ title: Cloud Function
 
 # Cloud Function
 
-This node is used to make calls to backend cloud functions. To use cloud functions you need to have an external [Parse](https://parseplatform.org) backend up and running and have attached cloud functions or have a Noodl Zap running in [Zapier](https://zapier.com). You can read more about how to make your own backend logic [here](/docs/guides/business-logic/overview).
+Cloud functions are logic components that run in the cloud and not on the client like other logic components. The **Cloud Function** node is how you initiate a call to a cloud function component. Learn more about how to use cloud functions in this [guide](/docs/guides/cloud-logic/introduction).
 
 <div className="ndl-image-with-background l">
 
-![](/nodes/data/cloud-data/cloud-function/cloudfunction.png)
+![](/nodes/data/cloud-data/cloud-function/cloud-function-1.png)
 
 </div>
 
-You need to specify the name of the cloud function you want to call. This is done via the **Function Name** property.
-
-<div className="ndl-image-with-background">
-
-![](/nodes/data/cloud-data/cloud-function/cloudfunction-name.png)
-
-</div>
-
-You can also provide parameters that you want to be passed to the cloud function by adding them using the **Parameters** property. Once a parameter is added the corresponding input is available on the node. You provide the input values via regular Noodl connections.
-
-<div className="ndl-image-with-background">
-
-![](/nodes/data/cloud-data/cloud-function/cloudfunction-params.png)
-
-</div>
-
-The cloud function can return a value, an object or an array when finished. The return value will be available on the **Result** output. The result value will be converted to a Noodl type, for example an [Object](/nodes/data/object/object-node) or an [Array](/nodes/data/array/array-node) containing **Objects**.
-The only exception is if the returned array is an array of JavaScript primitives (strings, numbers, booleans), i.e. _not_ objects. Then Noodl cannot convert the array to a Noodl **Array** with **Objects**. Instead the returned array will be a JavaScript array with primitives that need to be handed in JavaScript by a [Function](/nodes/javascript/function) or [Script](/nodes/javascript/script) node.
+You will first need to pick the cloud function that you want to call with this node.
 
 <div className="ndl-image-with-background l">
 
-![](/nodes/data/cloud-data/cloud-function/cloudfunction-result-example.png)
+![](/nodes/data/cloud-data/cloud-function/cloud-function-2.png)
 
 </div>
+
+After you have picked the cloud function, the **Cloud Function** node will receive the input parameters and output result parameters defined in the cloud function so you can hook them up to the logic of your application.
+
+A cloud function can either return a **Success** or **Failure** response, this will result in the corresponding output signal on the **Cloud Function** node. You can use this to trigger different flows in your logic.
+
+<div className="ndl-image-with-background l">
+
+![](/nodes/data/cloud-data/cloud-function/cloud-function-3.png)
+
+</div>
+
+If a **Failure** signal is emitted you can also use the **Error** output that will contain the error message sent from the cloud function.
+
+If a **Success** signal is sent the result parameters will be available as outputs on the **Cloud Function** node.
+
 <##head##>
 
 ## Inputs
 
 | Data                                                | Description                                                                                                                                      |
 | --------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
-| <span className="ndl-data">Function Name</span>     | <##input:functionName##>The name of the cloud function to call.<##input##>                                                                       |
-| <span className="ndl-data">Custom Parameters</span> | <##input:pm-\*##>A parameter that will be passed to the function. Any parameters you add will become available as inputs on the node.<##input##> |
+| <span className="ndl-data">Function</span>     | <##input:functionName##>The cloud function component that this node will call.<##input##>                                                                       |
+
+### Parameters
+The **Cloud Function** node will receive all parameters specified in the [Request](/nodes/cloud-functions/request) node in the cloud function component as inputs. When the <span className="ndl-signal">Call</span> signal is received the values on the inputs will be sent to the cloud funciton.
 
 | Signal                                   | Description                                                                                 |
 | ---------------------------------------- | ------------------------------------------------------------------------------------------- |
-| <span className="ndl-signal">Call</span> | <##input:call##>Send a signal on this input to issue the request to the backend.<##input##> |
+| <span className="ndl-signal">Call</span> | <##input:call##>Send a signal on this input to issue the request to the cloud function.<##input##> |
 
 ## Outputs
 
 | Data                                     | Description                                                                                                              |
 | ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| <span className="ndl-data">Result</span> | <##output:result##>This output will contain the result that the **Cloud Function** returns upon completion. <##output##> |
+| <span className="ndl-data">Error</span> | <##output:error##>If the cloud function results in an error status, this output will contain the error message. <##output##> |
+
+### Result
+The **Cloud Function** node will receive all result parameters specified in any [Response](/nodes/cloud-functions/response) node in the cloud function component that is called. When the cloud function completes and retuns a **Sucess** status, any result parameters sent back will be available on these outputs.
 
 | Signal                                      | Description                                                                                              |
 | ------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
-| <span className="ndl-signal">Success</span> | <##output:success##>This is sent if the function returns a success code and a result object.<##output##> |
-| <span className="ndl-signal">Failure</span> | <##output:failure##>This is sent if the function returns a fail code.<##output##>                        |
+| <span className="ndl-signal">Success</span> | <##output:success##>This is sent if the cloud function returns a **Success** status.<##output##> |
+| <span className="ndl-signal">Failure</span> | <##output:failure##>This is sent if the cloud function returns a **Failure** status.<##output##>                        |
