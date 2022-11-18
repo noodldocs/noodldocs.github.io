@@ -12,7 +12,7 @@ export const frontpageData = [
     {
         type: FrontpageBlocks.Hero,
         title: 'Get started with Noodl',
-        text: 'Noodl is a low code, node based app builder. It’s a much faster and iterative way to build software than classic code. In Noodl you can use a visual paradigm to build you app, but you can also use code when more convenient. Noodl is also great for designers, as it gives full control over the look and feel of your App. In Noodl everything is live and you edit you app while its live. This site contains all you need to get started!',
+        text: "Noodl is a low code web app builder that will have you creating applications faster and smarter. It's a visual development environment that you don't need any previous coding skills to start learning. It's also great for developers who already know how to code as you can easily mix in JavaScript when appropriate, and Noodl is great for designers too, as it gives full control over the look and feel of your App. In Noodl everything is live and you edit you app while its live. This site contains all you need to get started!",
         gridItems: [
             {
                 type: 'youtube',
@@ -24,7 +24,7 @@ export const frontpageData = [
                 backgroundImage:
                     '/img/featured-content-images/noodl-basics.png',
                 label: 'Noodl basics',
-                href: '/docs/getting-started/fundamentals',
+                href: '/docs/getting-started/workflow',
             },
             {
                 type: 'link',

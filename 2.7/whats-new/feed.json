@@ -5,6 +5,15 @@
     "description": "Noodl Blog",
     "items": [
         {
+            "id": "november-2022-2",
+            "content_html": "<section><h2 class=\"anchor anchorWithStickyNavbar_mojV\" id=\"fixes\">Fixes<a class=\"hash-link\" href=\"#fixes\" title=\"Direct link to heading\">​</a></h2><ul><li>Fixed a deployement bug that caused a small amount of projects to fail to deploy</li></ul><h2 class=\"anchor anchorWithStickyNavbar_mojV\" id=\"changes\">Changes<a class=\"hash-link\" href=\"#changes\" title=\"Direct link to heading\">​</a></h2><ul><li>Upgraded Electron so Noodl uses a newer version of Chromium</li></ul></section>",
+            "url": "https://docs.noodl.net/2.7/whats-new/november-2022-2",
+            "title": "Noodl 2.7.2 (Momofuku)",
+            "summary": "Noodl 2.7.2 fixes a deploy bug reported in 2.7.1",
+            "date_modified": "2022-11-18T00:00:00.000Z",
+            "tags": []
+        },
+        {
             "id": "november-2022",
             "content_html": "<section><h2 class=\"anchor anchorWithStickyNavbar_mojV\" id=\"fixes\">Fixes<a class=\"hash-link\" href=\"#fixes\" title=\"Direct link to heading\">​</a></h2><ul><li>Fixed regression causing deployment to take a bit longer</li><li>Fixed issue with the cloud service dashboard not showing relations correctly</li><li>Fixed issue with queries that included relation constraints</li></ul></section>",
             "url": "https://docs.noodl.net/2.7/whats-new/november-2022",
