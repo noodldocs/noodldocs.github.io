@@ -347,8 +347,8 @@ const guides = [
             },
             {
                 type: 'doc',
-                label: 'User Management',
-                id: 'guides/cloud-logic/user-management',
+                label: 'Email Verification',
+                id: 'guides/cloud-logic/email-verification',
                 imageUrl: '/img/featured-content-images/data.png',
                 description:
                     'Learn how create signup flows and more.',

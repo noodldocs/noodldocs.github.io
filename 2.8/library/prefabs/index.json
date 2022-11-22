@@ -142,5 +142,21 @@
     "project": "library/prefabs/selection-pills/selection-pills-0-1.zip",
     "docs": "/library/prefabs/selection-pills/",
     "tags": ["UI"]
-  }  
+  },
+  {
+    "label": "Email Verification",
+    "desc": "Cloud functions for email verification and reset password.",
+    "icon": "library/prefabs/email-verification/email-verification.png",
+    "project": "library/prefabs/email-verification/email-verification-0-2.zip",
+    "docs": "/library/prefabs/email-verification/",
+    "tags": ["Cloud"]
+  },
+  {
+    "label": "OAuth2",
+    "desc": "Cloud functions for oauth2 user authentication.",
+    "icon": "library/prefabs/oauth2/oauth2.png",
+    "project": "library/prefabs/oauth2/oauth2-0-2.zip",
+    "docs": "/library/prefabs/oauth2/",
+    "tags": ["Cloud"]
+  }   
 ]
