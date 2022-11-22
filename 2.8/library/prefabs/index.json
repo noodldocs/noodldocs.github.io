@@ -155,8 +155,16 @@
     "label": "OAuth2",
     "desc": "Cloud functions for oauth2 user authentication.",
     "icon": "library/prefabs/oauth2/oauth2.png",
-    "project": "library/prefabs/oauth2/oauth2-0-2.zip",
+    "project": "library/prefabs/oauth2/oauth2-0-1.zip",
     "docs": "/library/prefabs/oauth2/",
     "tags": ["Cloud"]
-  }   
+  },
+  {
+    "label": "TOTP",
+    "desc": "Cloud functions for auth with timebased one time passwords like Google Auth.",
+    "icon": "library/prefabs/totp/totp.png",
+    "project": "library/prefabs/totp/totp-0-1.zip",
+    "docs": "/library/prefabs/totp/",
+    "tags": ["Cloud"]
+  } 
 ]
