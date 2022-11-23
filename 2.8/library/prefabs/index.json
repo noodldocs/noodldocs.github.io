@@ -163,7 +163,7 @@
     "label": "TOTP",
     "desc": "Cloud functions for auth with timebased one time passwords like Google Auth.",
     "icon": "library/prefabs/totp/totp.png",
-    "project": "library/prefabs/totp/totp-0-1.zip",
+    "project": "library/prefabs/totp/totp-0-2.zip",
     "docs": "/library/prefabs/totp/",
     "tags": ["Cloud"]
   } 
