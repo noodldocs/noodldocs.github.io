@@ -353,6 +353,22 @@ const guides = [
                 description:
                     'Learn how create signup flows and more.',
             },
+            {
+                type: 'doc',
+                label: 'Background Jobs',
+                id: 'guides/cloud-logic/background-jobs',
+                imageUrl: '/img/featured-content-images/logic.png',
+                description:
+                    'How to do background jobs using cloud functions.',
+            },            
+            {
+                type: 'doc',
+                label: 'Javascript',
+                id: 'guides/cloud-logic/javascript',
+                imageUrl: '/img/featured-content-images/logic.png',
+                description:
+                    'How to write Javascript in cloud functions.',
+            },
         ]
     },
     {

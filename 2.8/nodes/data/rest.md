@@ -39,7 +39,7 @@ request was initiated. The _Request_ object contains details on the request that
 The example below will create two inputs that you can connect to this node from other data in your applications. It modifies the headers and content for the request.
 
 ```javascript
-Request.header["some-important-header"] = Inputs.ImportantHeader;
+Request.headers["some-important-header"] = Inputs.ImportantHeader;
 Request.content = {
   "send-me": Inputs.SendMe,
 };
