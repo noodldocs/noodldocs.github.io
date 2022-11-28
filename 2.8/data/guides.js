@@ -356,10 +356,10 @@ const guides = [
             {
                 type: 'doc',
                 label: 'Background Jobs',
-                id: 'guides/cloud-logic/background-jobs',
+                id: 'guides/cloud-logic/scheduled-jobs',
                 imageUrl: '/img/featured-content-images/logic.png',
                 description:
-                    'How to do background jobs using cloud functions.',
+                    'How to do scheduled jobs using cloud functions.',
             },            
             {
                 type: 'doc',
