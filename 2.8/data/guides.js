@@ -355,7 +355,7 @@ const guides = [
             },
             {
                 type: 'doc',
-                label: 'Background Jobs',
+                label: 'Scheduled Jobs',
                 id: 'guides/cloud-logic/scheduled-jobs',
                 imageUrl: '/img/featured-content-images/logic.png',
                 description:
