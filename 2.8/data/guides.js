@@ -360,6 +360,14 @@ const guides = [
                 imageUrl: '/img/featured-content-images/logic.png',
                 description:
                     'How to do scheduled jobs using cloud functions.',
+            },
+            {
+                type: 'doc',
+                label: 'Logging and Debugging',
+                id: 'guides/cloud-logic/logging',
+                imageUrl: '/img/featured-content-images/logic.png',
+                description:
+                    'How to log and debug your cloud functions.',
             },            
             {
                 type: 'doc',

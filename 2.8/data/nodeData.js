@@ -540,6 +540,11 @@ const nodeData = [
             id: 'data/cloud-data/cloud-function',
             nodeType: NodeType.Data,
           },
+          {
+            label: 'Config',
+            id: 'data/cloud-data/config',
+            nodeType: NodeType.Data,
+          },
         ],
       },
 
