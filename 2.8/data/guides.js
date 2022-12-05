@@ -202,11 +202,11 @@ const guides = [
         items: [
             {
                 type: 'doc',
-                label: 'Creating a backend',
+                label: 'Creating a cloud service',
                 id: 'guides/cloud-data/creating-a-backend',
                 imageUrl: '/img/featured-content-images/data.png',
                 description:
-                    'Learn how to set up a backend for your App, to store and read persistant data',
+                    'Learn how to set up a cloud service for your App, to store and read persistant data',
             },
             {
                 type: 'doc',
@@ -214,14 +214,14 @@ const guides = [
                 id: 'guides/cloud-data/creating-a-class',
                 imageUrl: '/img/featured-content-images/data.png',
                 description:
-                    'Learn how to create a class for storing data records in a backend',
+                    'Learn how to create a class for storing data records in a cloud service.',
             },
             {
                 type: 'doc',
                 label: 'Creating new database records',
                 id: 'guides/cloud-data/creating-new-database-records',
                 imageUrl: '/img/featured-content-images/data.png',
-                description: 'Learn how to store a data Record in a backend',
+                description: 'Learn how to store a data Record in a cloud service.',
             },
             {
                 type: 'doc',
@@ -416,11 +416,11 @@ const guides = [
             },
             {
                 type: 'doc',
-                label: 'Using a self hosted backend',
+                label: 'Using a self hosted cloud service',
                 id: 'guides/deploy/using-an-external-backend',
                 imageUrl: '/img/featured-content-images/data.png',
                 description:
-                    'Learn how to create a self hosted backend through a Docker Container',
+                    'Learn how to create a self hosted cloud service through a Docker Container',
             },
             {
                 type: 'doc',
