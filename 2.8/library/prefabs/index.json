@@ -3,7 +3,7 @@
     "label": "Date Picker",
     "desc": "A date picker component.",
     "icon": "library/prefabs/date-picker/date-picker.png",
-    "project": "library/prefabs/date-picker/date-picker-1-0.zip",
+    "project": "library/prefabs/date-picker/date-picker-1-1.zip",
     "docs": "/library/prefabs/date-picker/",
     "tags": ["UI"]
   },
@@ -11,7 +11,7 @@
     "label": "Time Picker",
     "desc": "A time picker component.",
     "icon": "library/prefabs/time-picker/time-picker.png",
-    "project": "library/prefabs/time-picker/time-picker-1-0.zip",
+    "project": "library/prefabs/time-picker/time-picker-1-1.zip",
     "docs": "/library/prefabs/time-picker/",
     "tags": ["UI"]
   },
@@ -19,7 +19,7 @@
     "label": "Multi Choice with Pills",
     "desc": "A multi select drop down, showing the selected items as pills.",
     "icon": "library/prefabs/multi-choice-with-pills/multi-choice-with-pills.png",
-    "project": "library/prefabs/multi-choice-with-pills/multi-choice-with-pills-0-7.zip",
+    "project": "library/prefabs/multi-choice-with-pills/multi-choice-with-pills-0-8.zip",
     "docs": "/library/prefabs/multi-choice-with-pills/",
     "tags": ["UI"]
   },
@@ -43,7 +43,7 @@
     "label": "Form",
     "desc": "Component for creating dynamic forms.",
     "icon": "library/prefabs/form/form.png",
-    "project": "library/prefabs/form/form-0-1.zip",
+    "project": "library/prefabs/form/form-0-2.zip",
     "docs": "/library/prefabs/form/",
     "tags": ["UI", "Data"]
   },
