@@ -7,7 +7,9 @@
     content="Learn how to use Noodl with guides, tutorials and examples."
   />
   <script>
-    window.location = '/2.7/' + window.location.hash;
+    var hash = window.location.hash;
+    if(hash.indexOf('#/') === 0) hash.substring(2)
+    window.location = '/2.7/' + hash;
   </script>
 </head>
 <body>
