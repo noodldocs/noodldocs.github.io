@@ -166,5 +166,13 @@
     "project": "library/prefabs/totp/totp-0-2.zip",
     "docs": "/library/prefabs/totp/",
     "tags": ["Cloud"]
+  },
+  {
+    "label": "Stripe",
+    "desc": "Some helpers to make cloud functions for accepting payments and subscriptions.",
+    "icon": "library/prefabs/stripe/stripe.png",
+    "project": "library/prefabs/stripe/stripe-0-1.zip",
+    "docs": "/library/prefabs/stripe/",
+    "tags": ["Cloud"]
   } 
 ]

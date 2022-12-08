@@ -575,27 +575,7 @@ const nodeData = [
             label: 'Set User Properties',
             id: 'data/user/set-user-properties',
             nodeType: NodeType.Data,
-          },
-          {
-            label: 'Verify Email',
-            id: 'data/user/verify-email',
-            nodeType: NodeType.Data,
-          },
-          {
-            label: 'Send Email Verification',
-            id: 'data/user/send-email-verification',
-            nodeType: NodeType.Data,
-          },
-          {
-            label: 'Reset Password',
-            id: 'data/user/reset-password',
-            nodeType: NodeType.Data,
-          },
-          {
-            label: 'Request Password Reset',
-            id: 'data/user/request-password-reset',
-            nodeType: NodeType.Data,
-          },
+          }
         ],
       },
 
