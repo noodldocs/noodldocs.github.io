@@ -142,13 +142,5 @@
     "project": "library/modules/webcamera/webcamera-1-0-4.zip",
     "docs": "/library/modules/webcamera/",
     "tags": ["Device"]
-  },
-  {
-    "label": "Stripe Checkout",
-    "desc": "Stripe Checkout for your web apps.",
-    "project": "library/modules/stripe-checkout/stripe-checkout-1-0-0.zip",
-    "icon": "library/modules/stripe-checkout/stripe_checkout.png",
-    "docs": "/library/modules/stripe-checkout/",
-    "tags": ["Service"]
   }
 ]
