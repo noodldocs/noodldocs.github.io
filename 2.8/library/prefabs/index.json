@@ -144,6 +144,22 @@
     "tags": ["UI"]
   },
   {
+    "label": "Send Grid",
+    "desc": "A simple prefab for sending emails with Send Grid.",
+    "icon": "library/prefabs/sendgrid/sendgrid.png",
+    "project": "library/prefabs/sendgrid/sendgrid-0-1.zip",
+    "docs": "/library/prefabs/sendgrid/",
+    "tags": ["Cloud"]
+  },
+  {
+    "label": "Mail Gun",
+    "desc": "A simple prefab for sending emails with Mail Gun.",
+    "icon": "library/prefabs/mailgun/mailgun.png",
+    "project": "library/prefabs/mailgun/mailgun-0-1.zip",
+    "docs": "/library/prefabs/mailgun/",
+    "tags": ["Cloud"]
+  },
+  {
     "label": "Email Verification",
     "desc": "Cloud functions for email verification and reset password.",
     "icon": "library/prefabs/email-verification/email-verification.png",
@@ -155,7 +171,7 @@
     "label": "OAuth2",
     "desc": "Cloud functions for oauth2 user authentication.",
     "icon": "library/prefabs/oauth2/oauth2.png",
-    "project": "library/prefabs/oauth2/oauth2-0-1.zip",
+    "project": "library/prefabs/oauth2/oauth2-0-2.zip",
     "docs": "/library/prefabs/oauth2/",
     "tags": ["Cloud"]
   },
