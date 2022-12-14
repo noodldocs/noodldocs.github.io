@@ -163,7 +163,7 @@
     "label": "Email Verification",
     "desc": "Cloud functions for email verification and reset password.",
     "icon": "library/prefabs/email-verification/email-verification.png",
-    "project": "library/prefabs/email-verification/email-verification-0-2.zip",
+    "project": "library/prefabs/email-verification/email-verification-0-3.zip",
     "docs": "/library/prefabs/email-verification/",
     "tags": ["Cloud"]
   },
@@ -187,7 +187,7 @@
     "label": "Stripe",
     "desc": "Some helpers to make cloud functions for accepting payments and subscriptions.",
     "icon": "library/prefabs/stripe/stripe.png",
-    "project": "library/prefabs/stripe/stripe-0-3.zip",
+    "project": "library/prefabs/stripe/stripe-0-4.zip",
     "docs": "/library/prefabs/stripe/",
     "tags": ["Cloud"]
   } 
