@@ -3,7 +3,7 @@
     "label": "Date Picker",
     "desc": "A date picker component.",
     "icon": "library/prefabs/date-picker/date-picker.png",
-    "project": "library/prefabs/date-picker/date-picker-1-1.zip",
+    "project": "library/prefabs/date-picker/date-picker-1-2.zip",
     "docs": "/library/prefabs/date-picker/",
     "tags": ["UI"]
   },
@@ -43,7 +43,7 @@
     "label": "Form",
     "desc": "Component for creating dynamic forms.",
     "icon": "library/prefabs/form/form.png",
-    "project": "library/prefabs/form/form-0-2.zip",
+    "project": "library/prefabs/form/form-0-3.zip",
     "docs": "/library/prefabs/form/",
     "tags": ["UI", "Data"]
   },
