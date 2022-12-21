@@ -1,0 +1,681 @@
+<!-- A step with just a popup -->
+<div data-template="popup"> 
+    <video src="IT_01_Intro_video.mp4"></video>
+    <h2>Page Navigation</h2>
+    <p>Welcome back! In this fifth lesson we will learn how to work with page navigation that takes data with it.</p>
+    <p>In this tutorial we will make our cards navigate to a deddicated details page when we click on one of them.</p>
+</div>
+<!-- # -->
+
+
+<!-- Talk about lists -->
+<div> 
+    <div data-template="item">
+        <header>&nbsp;</header>
+        <h2>Key elements of a navigation system</h2>
+    </div>
+    <div data-template="popup">
+        <h2>Key elements of a navigation system</h2>
+        <p>All Noodl projects starts with a simple navigation system in place. We have already learned how to navigate between existing pages, but lets take step back a look at the three key elements for working with navigation in Noodl:</p>
+        <ol>
+        <li><p>Multiple <b>Page Components</b> that each contains a page of an application. We already have a Task Page and a Start Page.</p></li>
+        <li><p>A <b>Page Router </b> node, that works works as a container that controls what Page component to show. This node is often placed in the App component.</p></li>
+        <li><p>A <b>Navigate</b> node that lets you navigate from one page to another.</p></li>
+        </ol>
+    </div>
+</div>
+<!-- # -->
+
+
+<!-- Ask user to look at the static data -->
+<div>
+    <div data-template="item">
+        <header>&nbsp;</header>
+        <h2>Page Router node</h2>
+    </div>
+    <div data-template="popup">
+        <video src="04_page-router.mp4"></video>
+        <h2>Page Router node</h2>
+        <p>The Page Router node is a visual node that acts as a container for pages. Any page you navigate to will be rendered inside the Page Router and fill out the space available.</p>
+        <p>Navigation menu and footer often live next to the Page Router in the Node Graph so they don't need to be inserted in every page.</p>
+        <p>If we select the Page Router we can see all the Pages that are part of it, and we can also set which page we want to act as the start page.</p>
+    </div>
+</div>
+<!-- # -->
+
+<!-- # -->
+<!-- Ask user to look at the static data -->
+<div>
+    <div data-template="item">
+        <header>&nbsp;</header>
+        <h2>Creating pages</h2>
+    </div>
+    <div data-template="popup">
+        <video src="06_creatingpages.mp4"></video>
+        <h2>Creating pages</h2>
+        <p>When we add a new Page component it automatically gets added to the Page Router. A quick way to add a new page is by clicking the "+" icon in the Component side panel and pick Page component.</p> 
+        <p>Click "Next" to start creating a new page.</p>
+    </div>
+</div>
+<!-- # -->
+
+<!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
+<div
+    data-conditions='[
+        {
+            "path":"/App:%Group:%Router", 
+            "paramseq": {
+                "pages": {
+                  "routes": ["/Start Page","/Task Page","/Details Page"]
+                }
+            }
+        }
+    ]'
+>
+    <div data-template="item" style="width: 350px">
+        <header>Task<span class="lesson-checkmark"></span></header>
+        <h3>Create a new page called <i>Details Page</i>.<br><i>Note: Page names are case sensitive</i></h3>
+    </div>
+    <div data-template="popup">
+        <video src="07_addlistpage.mp4"></video>
+        <p>Create a new page called <i>Details Page</i>.<br><i>Note: Page names are case sensitive</i></p>
+    </div>
+</div>
+<!-- # -->
+
+
+<!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
+<div
+    data-conditions='[
+        {
+            "viewerpatheq":"/task-page"
+        }
+    ]'
+>
+    <div data-template="item" style="width: 280px">
+        
+        <header>Task<span class="lesson-checkmark"></span></header>
+        <h3>Select the /task-page path in the path dropdown</h3>
+    </div>
+
+    <div data-template="popup">
+        <style>.lesson-item-popup {width: 600px !important;}</style>
+        <video src="IT_08_node picker video.mp4"></video>
+        <p>In this lesson we will be working on the page called "Task Page" so select that in the path dropdown</p>
+        <p>Select the /task-page path in the path dropdown</p>
+    </div>
+</div>
+<!-- # -->
+
+<!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
+<div
+    data-conditions='[
+        {
+            "activecomponentnameeq":"/Task Page"
+        }
+    ]'
+>
+    <div data-template="item" style="width: 280px">
+        
+        <header>Task<span class="lesson-checkmark"></span></header>
+        <h3>Select the Task Page component in the component panel</h3>
+    </div>
+
+    <div data-template="popup">
+        <style>.lesson-item-popup {width: 600px !important;}</style>
+        <video src="IT_08_node picker video.mp4"></video>
+        <p>Select the Task Page component in the component panel</p>
+    </div>
+</div>
+<!-- # -->
+
+<!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
+<div
+    data-conditions='[
+        {
+            "path":"/Task Page:%RouterNavigate", 
+            "exists": true
+        }
+    ]'
+>
+    <div data-template="item" style="width: 280px">
+        
+        <header>Task<span class="lesson-checkmark"></span></header>
+        <h3>Open the Node picker and place a Navigate node in the Task page</h3>
+    </div>
+
+    <div data-template="popup">
+        <style>.lesson-item-popup {width: 600px !important;}</style>
+        <video src="IT_08_node picker video.mp4"></video>
+        <p>Select the Task Page component in the component panel</p>
+    </div>
+</div>
+<!-- # -->
+
+<!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
+<div
+    data-conditions='[
+        {
+            "path":"/Task Page:%RouterNavigate", 
+            "paramseq": {
+                "target":"/Details page"
+                }
+        }
+    ]'
+>
+    <div data-template="item" style="width: 280px">
+        
+        <header>Task<span class="lesson-checkmark"></span></header>
+        <h3>Set the Target Page property of the navigate node to "Details Page"</h3>
+    </div>
+
+    <div data-template="popup">
+        <style>.lesson-item-popup {width: 600px !important;}</style>
+        <video src="IT_08_node picker video.mp4"></video>
+        <p>Select the Task Page component in the component panel</p>
+    </div>
+</div>
+<!-- # -->
+
+
+<!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
+<div
+    data-conditions='[
+        {
+            "from": "/Task Page:%Page:%Group:%Group:%For Each",
+            "to":"/Task Page:%RouterNavigate", 
+            "hasconnection": "itemOutputSignal-Clicked, navigate"
+        }
+    ]'
+>
+    <div data-template="item" style="width: 340px">
+        
+        <header>Task<span class="lesson-checkmark"></span></header>
+        <h3>Connect the clicked event from the repeater to the navigate input on the Navigate node</h3>
+    </div>
+
+    <div data-template="popup">
+        <style>.lesson-item-popup {width: 600px !important;}</style>
+        <video src="IT_08_node picker video.mp4"></video>
+        <p>Select the Task Page component in the component panel</p>
+    </div>
+</div>
+<!-- # -->
+
+
+<!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
+<div
+    data-conditions='[
+        {
+            "viewerpatheq":"/details-page"
+        }
+    ]'
+>
+    <div data-template="item" style="width: 340px">
+        
+        <header>Task<span class="lesson-checkmark"></span></header>
+        <h3>Click on one of the cards to trigger to navigate</h3>
+    </div>
+
+    <div data-template="popup">
+        <style>.lesson-item-popup {width: 600px !important;}</style>
+        <video src="IT_08_node picker video.mp4"></video>
+        <p>Select the Task Page component in the component panel</p>
+    </div>
+</div>
+<!-- # -->
+
+
+<!-- Ask user to look at the static data -->
+<div>
+    <div data-template="item">
+        <header>&nbsp;</header>
+        <h2>The Page component.</h2>
+    </div>
+    <div data-template="popup">
+        <style>.lesson-item-popup {width: 600px !important;}</style>
+        <video src="02_static-array.mp4"></video>
+        <h2>The Page component</h2>
+        <p>If we click on a card we will now navigate to our new Details page. So far its a very empty page</p>
+        <p>Every page component comes with a Page node, and a Page Inputs node. The Page Inputs node, works similar to the Component Inputs node that we already have been using, but with a few differences.</p>
+        <P>On the Page Inputs node, we can create Path and Query Inputs. This is ways to send data into a page when we navigate to it and encode the data as part of the pages url. We will work more with this in this lesson, but first lets build a simple interface on this page.</P>
+    </div>
+</div>
+<!-- # -->
+
+<!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
+<div
+data-conditions='[
+    {
+        "path":"/Details Page:%Page:%Group", 
+        "exists": true
+    }
+]'
+>
+    <div data-template="item" style="width: 340px">
+        
+        <header>Task<span class="lesson-checkmark"></span></header>
+        <h3>In the Details Page component, add a Group node as child to the Page node</h3>
+    </div>
+
+    <div data-template="popup">
+        <style>.lesson-item-popup {width: 600px !important;}</style>
+        <video src="IT_08_node picker video.mp4"></video>
+        <p>Select the Task Page component in the component panel</p>
+    </div>
+</div>
+<!-- # -->
+
+
+
+
+
+
+
+
+
+
+<!-- Ask user to look at the static data -->
+<div>
+    <div data-template="item">
+        <header>&nbsp;</header>
+        <h2>Repeater node</h2>
+    </div>
+    <div data-template="popup">
+        <style>.lesson-item-popup {width: 600px !important;}</style>
+        <video src="09_repeater.mp4"></video>
+        <h2>Repeater node</h2>
+        <p>The Repeater node is used to generate visual components based on objects in an array. It takes a visual component as a template that then will be rendered where the Repeater node is placed in the Dom tree.</p>
+        <p>The repeater needs an array to generate from, and for each object in the array, a component instance is generated and rendered.</p>
+        <p>Let's first remove our existing Card components from the dom tree, add Repeater node, and connect it up with our static array.</p>
+    </div>
+</div>
+<!-- # -->
+
+
+<!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
+<div
+    data-conditions='[
+        {
+            "path":"/Task Page:%Page:%Group:#Content Container:0",
+            "exists":false
+        },
+        {
+            "path":"/Task Page:%Page:%Group:#Content Container:1",
+            "exists":false
+        },
+        {
+            "path":"/Task Page:%Page:%Group:#Content Container:2",
+            "exists":false
+        }
+    ]'
+>
+    <div data-template="item" style="width: 280px">
+        
+        <header>Task<span class="lesson-checkmark"></span></header>
+        <h3>In the Task Page, delete the three Card components</h3>
+    </div>
+
+    <div data-template="popup">
+        <style>.lesson-item-popup {width: 600px !important;}</style>
+        <video src="IT_08_node picker video.mp4"></video>
+        <p>In this lesson we will be working on the page called "Task Page" so select that in the path dropdown</p>
+        <p>Select the /task-page path in the path dropdown</p>
+    </div>
+</div>
+<!-- # -->
+
+
+<!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
+<div
+    data-conditions='[
+        {
+            "path":"/Task Page:%Page:%Group:#Content Container:%For Each",
+            "exists":true
+        }
+    ]'
+>
+    <div data-template="item" style="width: 280px">
+        
+        <header>Task<span class="lesson-checkmark"></span></header>
+        <h3>Add a Repeater node as a child to the Content Container Group</h3>
+    </div>
+
+    <div data-template="popup">
+        <style>.lesson-item-popup {width: 600px !important;}</style>
+        <video src="IT_08_node picker video.mp4"></video>
+        <p>In this lesson we will be working on the page called "Task Page" so select that in the path dropdown</p>
+        <p>Select the /task-page path in the path dropdown</p>
+    </div>
+</div>
+<!-- # -->
+
+
+<!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
+<div
+    data-conditions='[
+        {
+            "path":"/Task Page:%Page:%Group:#Content Container:%For Each",
+            "paramseq": {
+                "template":"/Card component"
+            }
+        }
+    ]'
+>
+    <div data-template="item" style="width: 320px">
+        
+        <header>Task<span class="lesson-checkmark"></span></header>
+        <h3>Set the Repeater node's Template property to use the Card component</h3>
+    </div>
+
+    <div data-template="popup">
+        <style>.lesson-item-popup {width: 600px !important;}</style>
+        <video src="IT_08_node picker video.mp4"></video>
+        <p>In this lesson we will be working on the page called "Task Page" so select that in the path dropdown</p>
+        <p>Select the /task-page path in the path dropdown</p>
+    </div>
+</div>
+<!-- # -->
+
+
+<!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
+<div
+    data-conditions='[
+        {   
+            "from":"/Task Page:%Static Data",
+            "to":"/Task Page:%Page:%Group:#Content Container:%For Each",
+            "hasconnection":"items,items"
+        }
+    ]'
+>
+    <div data-template="item" style="width: 280px">
+        
+        <header>Task<span class="lesson-checkmark"></span></header>
+        <h3>Connect the Static array's Items output to the Repeater's Item input</h3>
+    </div>
+
+    <div data-template="popup">
+        <style>.lesson-item-popup {width: 600px !important;}</style>
+        <video src="IT_08_node picker video.mp4"></video>
+        <p>In this lesson we will be working on the page called "Task Page" so select that in the path dropdown</p>
+        <p>Select the /task-page path in the path dropdown</p>
+    </div>
+</div>
+<!-- # -->
+
+
+<!-- A step with an item in the bottom bar. No tasks, so popup will be shown automatically -->
+<div>
+    <div data-template="item">
+        <header>&nbsp;</header>
+        <h2>Mapping data</h2>
+    </div>
+    <div data-template="popup">
+        <style>.lesson-item-popup {width: 600px !important;}</style>
+        <video src="task-intro-video.mp4"></video>
+        <h2>Mapping data</h2>
+        <p>We now got 4 cards in our UI, each with unique data. Let's just walk through what happend here.</p>
+        <p>We already created our Card component in the last lesson, where we created ports on a Component Input node and hooked them up to the properties we wanted to overwrite.</p>
+        <p>The Component Input node, can also be used to extract the data from the the objects that the Repeater node is iterating through as it generates the visual components.</p>
+    </div>
+</div>
+<!-- # -->
+
+
+
+<!-- A step with an item in the bottom bar. No tasks, so popup will be shown automatically -->
+<div>
+    <div data-template="item">
+        <header>&nbsp;</header>
+        <h2>Making clickable cards</h2>
+    </div>
+    <div data-template="popup">
+        <style>.lesson-item-popup {width: 600px !important;}</style>
+        <video src="task-intro-video.mp4"></video>
+        <h2>Making clickable cards</h2>
+        <p>Now we have built the basic system for showing cards (or any other type of list) from data. But to take this a step further we can also implement a way to make each card clickable and get its associated object so we can use that data somewhere else.</p>
+        <p>To do this we first need to add a Component Output node into a our Card component, so we can get data out of the card as well.</p>
+        <p></p>
+    </div>
+</div>
+<!-- # -->
+
+
+<!-- A step with an item in the bottom bar. No tasks, so popup will be shown automatically -->
+<div>
+    <div data-template="item">
+        <header>&nbsp;</header>
+        <h2>Component Output node</h2>
+    </div>
+    <div data-template="popup">
+        <style>.lesson-item-popup {width: 600px !important;}</style>
+        <video src="task-intro-video.mp4"></video>
+        <h2>Component Output node</h2>
+        <p>Just as we can use a Component Input node to get data and signals into a component, we can use a Component Output node to get data and signals out of a component.</p>
+        <p>In our case we want to make the Card component clickable, so we can receive a signal from the card when its clicked.</p>
+        <p>Lets start by creating a Component Output node in our Card component</p>
+    </div>
+</div>
+<!-- # -->
+
+
+<!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
+<div
+    data-conditions='[
+        {
+            "path":"/Card component:%Component Outputs",
+            "exists":true
+        }
+    ]'
+>
+    <div data-template="item" style="width: 340px">
+        
+        <header>Task<span class="lesson-checkmark"></span></header>
+        <h3>In the Card component, open the Node picker and place a Component Outputs node</h3>
+    </div>
+
+    <div data-template="popup">
+        <style>.lesson-item-popup {width: 600px !important;}</style>
+        <video src="IT_08_node picker video.mp4"></video>
+        <p>In the Card component, open the Node picker and place a Component Outputs node</p>
+    </div>
+</div>
+<!-- # -->
+
+
+<!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
+<div
+    data-conditions='[
+        {
+            "path":"/Card component:%Component Outputs",
+            "hasport": "Clicked"
+        }
+    ]'
+>
+    <div data-template="item" style="width: 340px">
+        
+        <header>Task<span class="lesson-checkmark"></span></header>
+        <h3>Create a port called "Clicked"</h3>
+    </div>
+
+    <div data-template="popup">
+        <style>.lesson-item-popup {width: 600px !important;}</style>
+        <video src="IT_08_node picker video.mp4"></video>
+        <p>Create a port called "Clicked"</p>
+    </div>
+</div>
+<!-- # -->
+
+
+<!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
+<div
+    data-conditions='[
+        {
+            "from": "/Card component:%Group",
+            "to": "/Card component:%Component Outputs",
+            "hasconnection": "onClick, Clicked"
+        }
+    ]'
+>
+    <div data-template="item" style="width: 400px">
+        
+        <header>Task<span class="lesson-checkmark"></span></header>
+        <h3>Connect the click event from the group called Card to the new clicked port on the Component Output node</h3>
+    </div>
+
+    <div data-template="popup">
+        <style>.lesson-item-popup {width: 600px !important;}</style>
+        <video src="IT_08_node picker video.mp4"></video>
+        <p>Connect the click event from the group called Card to the new clicked port on the Component Output node</p>
+    </div>
+</div>
+<!-- # -->
+
+
+<!-- A step with an item in the bottom bar. No tasks, so popup will be shown automatically -->
+<div>
+    <div data-template="item">
+        <header>&nbsp;</header>
+        <h2>Repeaters and Component Outputs</h2>
+    </div>
+    <div data-template="popup">
+        <style>.lesson-item-popup {width: 600px !important;}</style>
+        <video src="task-intro-video.mp4"></video>
+        <h2>Repeaters and Component Outputs</h2>
+        <p>If we just had a single Card component we would now be able to get the click event in the node graph where the Card component is placed.</p>
+        <p>But as we are using a Repeater node to generate four Card components, we need a way to know which of the four we click.</p>
+        <p>Earlier in this lesson we talked about how each object in the array has an unique Id. This now becomes handy as we can make the Repeater node give us the object id of the card instance we click.</p>
+    </div>
+</div>
+<!-- # -->
+
+<!-- A step with an item in the bottom bar. No tasks, so popup will be shown automatically -->
+<div>
+    <div data-template="item">
+        <header>&nbsp;</header>
+        <h2>Object node</h2>
+    </div>
+    <div data-template="popup">
+        <style>.lesson-item-popup {width: 600px !important;}</style>
+        <video src="task-intro-video.mp4"></video>
+        <h2>Object node</h2>
+        <p>The Object node gives us a way to access an object and its data anywhere in a project if we give it the unique id of an object.</p>
+        <p>Objects are in general a good way to store data in one node graph and access it again in another node graph.</p>
+        <p>We can use the Object node in combination with the Repeater node to receive the object data from a clicked Card.</p>
+    </div>
+</div>
+<!-- # -->
+
+
+<!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
+<div
+    data-conditions='[
+        {
+            "path":"/Task Page:%Model2", 
+            "exists":true
+        }
+    ]'
+>
+    <div data-template="item" style="width: 350px">
+        <header>Task<span class="lesson-checkmark"></span></header>
+        <h3>In the Task Page, place an Object node adjacent to the Repeater node.</h3>
+    </div>
+    <div data-template="popup">
+        <style>.lesson-item-popup {width: 600px !important;}</style>
+        <video src="07_delete_node.mp4"></video>
+        <p>In the Task Page, place an Object node adjacent to the Repeater node.</p>
+    </div>
+</div>
+<!-- # -->
+
+
+<!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
+<div
+    data-conditions='[
+        {
+            "from": "/Task Page:%Page:%Group:#Content Container:%For Each",
+            "to": "/Task Page:%Model2",
+            "hasconnection": "itemActionItemId, modelId"
+        }
+    ]'
+>
+    <div data-template="item" style="width: 400px">
+        
+        <header>Task<span class="lesson-checkmark"></span></header>
+        <h3>Connect the item id output from the Repeater node, to the Object Id Input of the Object node</h3>
+    </div>
+
+    <div data-template="popup">
+        <style>.lesson-item-popup {width: 600px !important;}</style>
+        <video src="IT_08_node picker video.mp4"></video>
+        <p>Connect the item id output from the Repeater node, to the Object Id Input of the Object node</p>
+    </div>
+</div>
+<!-- # -->
+
+
+
+<!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
+<div
+    data-conditions='[
+        {
+            "from": "/Task Page:%Page:%Group:#Content Container:%For Each",
+            "to": "/Task Page:%Model2",
+            "hasconnection": "itemOutputSignal-Clicked, fetch"
+        }
+    ]'
+>
+    <div data-template="item" style="width: 400px">
+        
+        <header>Task<span class="lesson-checkmark"></span></header>
+        <h3>Connect the Clicked signal from the Repeater node, to the Fetch input on the Object node</h3>
+    </div>
+
+    <div data-template="popup">
+        <style>.lesson-item-popup {width: 600px !important;}</style>
+        <video src="IT_08_node picker video.mp4"></video>
+        <p>Connect the item id output from the Repeater node, to the Object Id Input of the Object node</p>
+    </div>
+</div>
+<!-- # -->
+
+
+<!-- A step with an item in the bottom bar. No tasks, so popup will be shown automatically -->
+<div>
+    <div data-template="item">
+        <header>&nbsp;</header>
+        <h2>Click the cards</h2>
+    </div>
+    <div data-template="popup">
+        <style>.lesson-item-popup {width: 600px !important;}</style>
+        <video src="task-intro-video.mp4"></video>
+        <h2>Click the cards</h2>
+        <p>Try hovering over the object and pin the data popup so we can inspect the change when we click a card.</p>
+        <p>As you can see we now get the object id, and all the associated data from the specific card we click. This is a very powerful pattern that is used to almost any app.</p>
+        <p>In the next lesson we will try to take this a step further, and bring he data into a new page.</p>
+    </div>
+</div>
+<!-- # -->
+
+
+<!-- A step with an item in the bottom bar. No tasks, so popup will be shown automatically -->
+<div>
+    <div data-template="item">
+        <header>Outro</header>
+        <h2>Congratulations!</h2>
+    </div>
+    <div data-template="popup">
+        <style>.lesson-item-popup {width: 600px !important;}</style>
+        <!--<img src="tutorial_card.png" style="cursor: pointer;" onclick="window.open('https://www.youtube.com/watch?v=TNnn0Gzj-H4&list=PL2eC2vS4uVoMbujQ5CiNtNuP7s7-UwNn-')"> -->
+        <h2>Congratulations!</h2>
+        <p>You've completed forth tutorial, we hope you got the gist of it!</p>
+        <p>Feel free to continue change the different input properties to customize the cards even more. e.g with new text andd background colors.</p>
+        <p>In the next tutorial we will learn how to create the same cards but from a data-driven approach.</p>
+        <p>Happy Noodling!</p>
+        <!--<button style="width: 150px" onclick="window.open('https://www.youtube.com/watch?v=TNnn0Gzj-H4&list=PL2eC2vS4uVoMbujQ5CiNtNuP7s7-UwNn-')">WATCH TUTORIAL</button>-->
+        <button style="width: 150px" data-click="exitEditor">EXIT LESSON</button>
+    </div>
+</div>
+<!-- # -->
+
+

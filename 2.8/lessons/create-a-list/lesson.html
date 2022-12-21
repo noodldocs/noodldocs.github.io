@@ -25,8 +25,8 @@
         <p>Let's start by looking at the data</p>
     </div>
 </div>
-
 <!-- # -->
+
 
 <!-- Ask user to look at the static data -->
 <div>
@@ -43,30 +43,46 @@
         <p>The dataset contains images from the image site Unsplash.com along with the names of the artists behind the images.</p>
     </div>
 </div>
-
 <!-- # -->
+
 
 <!-- Ask user to look at the static data -->
 <div>
     <div data-template="item">
         <header>&nbsp;</header>
-        <h2>Components</h2>
+        <h2>Visual Components</h2>
     </div>
     <div data-template="popup">
         <style>.lesson-item-popup {width: 600px !important;}</style>
         <video src="04_components.mp4"></video>
-        <h2>Components</h2>
-        <p>Components are used to break your project into smaller building blocks. A component in Noodl is a set of nodes that is represented as a new node.</p>
-        <p>The main benefit of using components is that they are reusable. You can place multiple instances of that component in a project.</p>
-        <p>In the sidebar, you get an overview of all the components in the project, and from here you can also create new components.</p>
-        <p>Noodl has three components types: Visual, Logic, and Page Components. We will be using visual components in this lesson</p>
+        <h2>Visual Components</h2>
+        <p>We learned how to break the ui into reusable components in the last lesson. But another powerful way for us to use components is as visual templates for data-driven content.</p>
+        <p>To accomplish this we need another node called the Repeater node.</p>
     </div>
 </div>
-
 <!-- # -->
 
 
 <!-- Ask user to look at the static data -->
+<div>
+    <div data-template="item">
+        <header>&nbsp;</header>
+        <h2>Repeater node</h2>
+    </div>
+    <div data-template="popup">
+        <style>.lesson-item-popup {width: 600px !important;}</style>
+        <video src="09_repeater.mp4"></video>
+        <h2>Repeater node</h2>
+        <p>With our new List item component, we can insert multiple instances into our layout.</p>
+        <p>We can use our dataset from the Static Array node to do so, and generate instances from each record in the data.</p>
+        <p>This is handled by the <b>Repeater</b> node. A Repeater is placed in the visual hierarchy, and we can set what component the repeater should repeat from the property panel.</p>
+        <p>Then we'll connect the data from the Static Array node to the Repeater's items input.</p>
+        <p>Let's continue to the next step to create a Repeater.</p>
+    </div>
+</div>
+<!-- Ask user to look at the static data -->
+
+
 <div>
     <div data-template="item">
         <header>&nbsp;</header>
@@ -97,8 +113,9 @@
         <p>Click on the card to get a hint of how to complete the task.</p>
     </div>
 </div>
-
 <!-- # -->
+
+
 <!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
 <div
     data-conditions='[
@@ -161,7 +178,7 @@
     </div>
 </div>
 
-<!--
+<!-- # -->
 <div
     data-conditions='[
         {
@@ -202,6 +219,7 @@
         <p>Let's continue to the next step to create a Repeater.</p>
     </div>
 </div>
+<!-- # -->
 
 
 <!--

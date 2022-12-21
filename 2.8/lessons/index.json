@@ -1,26 +1,42 @@
 [
     {
-        "url":"gettingstarted",
+        "url":"01_basics",
         "thumb": "lessons/01lesson_notstarted.png",
         "thumbStarted": "lessons/01lesson_started.png",
         "thumbCompleted": "lessons/01lesson_completed.png",
         "category": "Lessons",
-        "name": "https---docs-noodl-net-2-5-lessons-gettingstarted-project-zip"
+        "name": "lesson_01_basics"
     },
     {
-        "url":"create-a-list",
-        "thumb": "lessons/02lesson_notstarted.png",
-        "thumbStarted": "lessons/02lesson_started.png",
-        "thumbCompleted": "lessons/02lesson_completed.png",
+        "url":"02_layout",
+        "thumb": "lessons/01lesson_notstarted.png",
+        "thumbStarted": "lessons/01lesson_started.png",
+        "thumbCompleted": "lessons/01lesson_completed.png",
         "category": "Lessons",
-        "name": "https---docs-noodl-net-2-5-lessons-create-a-list-project-zip"
+        "name": "lesson_02_layout"
     },
     {
-        "url":"navigation",
-        "thumb": "lessons/03lesson_notstarted.png",
-        "thumbStarted": "lessons/03lesson_started.png",
-        "thumbCompleted": "lessons/03lesson_completed.png",
+        "url":"03_components",
+        "thumb": "lessons/01lesson_notstarted.png",
+        "thumbStarted": "lessons/01lesson_started.png",
+        "thumbCompleted": "lessons/01lesson_completed.png",
         "category": "Lessons",
-        "name": "https---docs-noodl-net-2-5-lessons-navigation-project-zip"
+        "name": "lesson_03_components"
+    },
+    {
+        "url":"04_data-driven-components",
+        "thumb": "lessons/01lesson_notstarted.png",
+        "thumbStarted": "lessons/01lesson_started.png",
+        "thumbCompleted": "lessons/01lesson_completed.png",
+        "category": "Lessons",
+        "name": "lesson_04_data-driven-components"
+    },
+    {
+        "url":"05_page-navigation",
+        "thumb": "lessons/01lesson_notstarted.png",
+        "thumbStarted": "lessons/01lesson_started.png",
+        "thumbCompleted": "lessons/01lesson_completed.png",
+        "category": "Lessons",
+        "name": "lesson_05_page-navigation"
     }
 ]
