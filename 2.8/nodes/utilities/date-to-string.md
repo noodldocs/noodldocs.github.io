@@ -16,16 +16,16 @@ This node translates a <span className="ndl-data">date</span> type input and out
 
 </div>
 
-The format is specified as a <span className="ndl-data">string</span> that can include the following special syntax: `{date}`, `{month}`, `{year}`, `{hour}`, `{minute}` and `{second}`.
+The format is specified as a <span className="ndl-data">string</span> that can include the following special syntax: `{date}`, `{month}`, `{year}`, `{hours}`, `{minutes}` and `{seconds}`.
 
 <##head##>
 
 -   **{date}** The numeric date part.
 -   **{month}** The numeric month 1 = January, 12 = December.
 -   **{year}** The numeric year.
--   **{hour}** The numeric hour, between 0..23
--   **{minute}** The numeric minute, between 0..60
--   **{second}** The numeric second, between 0..60
+-   **{hours}** The numeric hour, between 0..23
+-   **{minutes}** The numeric minute, between 0..60
+-   **{seconds}** The numeric second, between 0..60
 
 The default format is this:
 
