@@ -64,6 +64,14 @@
     "tags": ["Data", "Utility"]
   },
   {
+    "label": "Material Icons",
+    "desc": "The latest material icon set library.",
+    "icon": "library/modules/material-icons/material-icons.png",
+    "project": "library/modules/material-icons/material-icons-1-1.zip",
+    "docs": "/library/modules/material-icons/",
+    "tags": ["UI"]
+  },
+  {
     "label": "Markdown",
     "desc": "Use Markdown in Noodl and style it with CSS.",
     "project": "library/modules/markdown/noodl-markdown-1-0-1.zip",

@@ -1,42 +1,47 @@
 [
-    {
-        "url":"01_basics",
-        "thumb": "lessons/01lesson_notstarted.png",
-        "thumbStarted": "lessons/01lesson_started.png",
-        "thumbCompleted": "lessons/01lesson_completed.png",
-        "category": "Lessons",
-        "name": "lesson_01_basics"
-    },
-    {
-        "url":"02_layout",
-        "thumb": "lessons/01lesson_notstarted.png",
-        "thumbStarted": "lessons/01lesson_started.png",
-        "thumbCompleted": "lessons/01lesson_completed.png",
-        "category": "Lessons",
-        "name": "lesson_02_layout"
-    },
-    {
-        "url":"03_components",
-        "thumb": "lessons/01lesson_notstarted.png",
-        "thumbStarted": "lessons/01lesson_started.png",
-        "thumbCompleted": "lessons/01lesson_completed.png",
-        "category": "Lessons",
-        "name": "lesson_03_components"
-    },
-    {
-        "url":"04_data-driven-components",
-        "thumb": "lessons/01lesson_notstarted.png",
-        "thumbStarted": "lessons/01lesson_started.png",
-        "thumbCompleted": "lessons/01lesson_completed.png",
-        "category": "Lessons",
-        "name": "lesson_04_data-driven-components"
-    },
-    {
-        "url":"05_page-navigation",
-        "thumb": "lessons/01lesson_notstarted.png",
-        "thumbStarted": "lessons/01lesson_started.png",
-        "thumbCompleted": "lessons/01lesson_completed.png",
-        "category": "Lessons",
-        "name": "lesson_05_page-navigation"
-    }
+  {
+    "url": "01_basics",
+    "thumb": "lessons/01lesson.png",
+    "category": "Lessons",
+    "name": "lesson_01_basics",
+    "header": "Lesson 01 (15min)",
+    "title": "Noodl Basics",
+    "completionBadge": "lessons/lesson-complete-badge.png"
+  },
+  {
+    "url": "02_layout",
+    "thumb": "lessons/02lesson.png",
+    "category": "Lessons",
+    "name": "lesson_02_layout",
+    "header": "Lesson 02 (15min)",
+    "title": "Layout",
+    "completionBadge": "lessons/lesson-complete-badge.png"
+  },
+  {
+    "url": "03_components",
+    "thumb": "lessons/03lesson.png",
+    "category": "Lessons",
+    "name": "lesson_03_components",
+    "header": "Lesson 03 (15min)",
+    "title": "Reusable Components",
+    "completionBadge": "lessons/lesson-complete-badge.png"
+  },
+  {
+    "url": "04_data-driven-components",
+    "thumb": "lessons/04lesson.png",
+    "category": "Lessons",
+    "name": "lesson_04_data-driven-components",
+    "header": "Lesson 04 (15min)",
+    "title": "Data-driven Components",
+    "completionBadge": "lessons/lesson-complete-badge.png"
+  },
+  {
+    "url": "05_page-navigation",
+    "thumb": "lessons/05lesson.png",
+    "category": "Lessons",
+    "name": "lesson_05_page-navigation",
+    "header": "Lesson 05 (15min)",
+    "title": "Data-driven Pages",
+    "completionBadge": "lessons/lesson-complete-badge.png"
+  }
 ]

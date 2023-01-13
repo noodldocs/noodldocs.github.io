@@ -1,299 +1,446 @@
 <!-- A step with just a popup -->
-<div data-template="popup"> 
-    <video src="lesson-03_08-insertingcards.mp4"></video>
-    <h2>Welcome back!</h2>
-    <p>In this third lesson we will learn how to create reusable components out of our visual nodes</p>
-    <p>In the last lesson we created a nice little card item. Now lets make it into a component!</p>
+<div data-template="popup">
+  <video src="lesson-03_08-insertingcards.mp4"></video>
+  <h2>Welcome back!</h2>
+  <p>
+    This third lesson will be all about components, and why they might be the most powerful tool in you Noodl toolbox.
+  </p>
+  <p>
+    In the last lesson you created a nice <i>Card Item</i>, let's see how we can make it into a reusable Component.
+  </p>
 </div>
 <!-- # -->
-
 
 <!-- Ask user to look at the static data -->
 <div>
-    <div data-template="item">
-        <header>&nbsp;</header>
-        <h2>Components</h2>
-    </div>
-    <div data-template="popup">
-        <style>.lesson-item-popup {width: 600px !important;}</style>
-        <video src="lesson-03_01-components.mp4"></video>
-        <h2>Components</h2>
-        <p>Components are used to break your project into smaller building blocks. There is two reasons why you want this:</p>
-        <p>1) It's a good way to break your project into multiple building blocks so we don't end up with hugh node graphs.</p>
-        <p>2) Components are reusable so we can place multiple instances of that component in a project. This becomes extra important when we ant to make our app data-driven.</p>
-        <p>In the sidebar, you get an overview of all the components in the project, and from here you can also create new components.</p>
-        <p>Noodl has three components types: Visual, Logic, and Page Components. We will be using visual components in this lesson</p>
-    </div>
+  <div data-template="item">
+    <header>&nbsp;</header>
+    <h2>Components</h2>
+  </div>
+  <div data-template="popup">
+    <style>
+      .lesson-item-popup {
+        width: 600px !important;
+      }
+    </style>
+    <video src="lesson-03_01-components.mp4"></video>
+    <h2>Components</h2>
+    <p>
+      Components are used to break your project into smaller building blocks.
+      This pattern has two main benefits:
+    </p>
+    <p>
+      1) They can be reused across your app, so you dont have to rebuild the
+      same UI or logic in multiple places. This is extra important when we want
+      to make our app data driven.
+    </p>
+    <p>
+      2) It's a good way to keep your project organized, so you don't end up
+      with huge, complex node graphs.
+    </p>
+    <p>
+      In the Component Panel in the Sidebar you get an overview of all the components in the project,
+      and from here you can also create new ones.
+    </p>
+    <p>
+      Noodl has four types of components: Visual, Logic, Page and Cloud Function
+      components. You will be using visual components in this lesson.
+    </p>
+  </div>
 </div>
 <!-- # -->
 
+<!-- A step with an item in the bottom bar. No tasks, so popup will be shown automatically -->
+<div>
+  <div data-template="item">
+    <header>&nbsp;</header>
+    <h2>Tutorial tasks</h2>
+  </div>
+  <div data-template="popup">
+    <style>
+      .lesson-item-popup {
+        width: 600px !important;
+      }
+    </style>
+    <h2>Tutorial tasks</h2>
+    <p>
+      During this tutorial, you will be given multiple tasks. Spot them in the
+      tutorial timeline by the <i>Task</i> label.
+    </p>
+    <p>Click on the card to get a hint of how to complete the task.</p>
+  </div>
+</div>
+<!-- # -->
 
 <!-- Ask user to look at the static data -->
 <div>
-    <div data-template="item">
-        <header>&nbsp;</header>
-        <h2>Visual components</h2>
-    </div>
-    <div data-template="popup">
-        <style>.lesson-item-popup {width: 600px !important;}</style>
-        <video src="lesson-03_02-visual components.mp4"></video>
-        <h2>Visual components</h2>
-        <p>We can turn a set of visual nodes (like our Card Item) into a Visual Component to create multiple instances of the component. In our app we want multiple Card Items, so thats a perfect case to turn something into a component.</p>
-        <p>Creating a visual component is done by clicking the "+" icon in the component section of the sidebar. Let's do that in the next step.</p>
-    </div>
+  <div data-template="item">
+    <header>&nbsp;</header>
+    <h2>Visual components</h2>
+  </div>
+  <div data-template="popup">
+    <style>
+      .lesson-item-popup {
+        width: 600px !important;
+      }
+    </style>
+    <video src="lesson-03_02-visual components.mp4"></video>
+    <h2>Visual components</h2>
+    <p>
+      You can turn a set of visual nodes (like our <i>Card Item</i>) into a visual
+      component to make it reusable. Your task app will include multiple tasks
+      with a <i>Card Item</i> each, so it's a perfect case to turn into a component.
+    </p>
+    <p>
+      Creating a new visual component is done by <strong>left clicking</strong> the <i>plus</i> icon in the
+      <i>Component</i> section of the Component Panel.
+    </p>
+  </div>
 </div>
 <!-- # -->
-
 
 <!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
 <div
-    data-conditions='[
+  data-conditions='[
         {
             "viewerpatheq":"/task-page"
         }
     ]'
 >
-    <div data-template="item" style="width: 280px">
-        
-        <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Select the /task-page path in the path dropdown</h3>
-    </div>
+  <div data-template="item" style="width: 280px">
+    <header>
+      Task
+      <span class="lesson-checkmark"></span>
+    </header>
+    <h3>Select the <strong><i>/task-page path</i></strong> in the Path Dropdown</h3>
+  </div>
 
-    <div data-template="popup">
-        <style>.lesson-item-popup {width: 600px !important;}</style>
-        <video src="lesson-03_04-select taskpage.mp4"></video>
-        <p>In this lesson we will be working on the page called "Task Page" so select that in the path dropdown</p>
-        <p>Select the /task-page path in the path dropdown</p>
-    </div>
+  <div data-template="popup">
+    <style>
+      .lesson-item-popup {
+        width: 600px !important;
+      }
+    </style>
+    <video src="lesson-03_04-select taskpage.mp4"></video>
+    <p>
+      In this lesson we will be working on the page called <i>Task Page</i> so select
+      that in the Path Dropdown.
+    </p>
+  </div>
 </div>
 <!-- # -->
 
-
 <!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
 <div
-    data-conditions='[
+  data-conditions='[
         {
             "path":"/Card Item",
             "exists":true
         }
     ]'
 >
-    <div data-template="item" style="width: 250px">
-        <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Create a new visual component called <i>Card Item</i></h3>
-    </div>
-    <div data-template="popup">
-        <style>.lesson-item-popup {width: 600px !important;}</style>
-        <video src="lesson-03_05-createvisualcomponent.mp4"></video>
-        <p>Create a new visual component by clicking the "+" icon in the component panel and naming it <i>Card Item</i>.</p>
-    </div>
+  <div data-template="item" style="width: 250px">
+    <header>
+      Task
+      <span class="lesson-checkmark"></span>
+    </header>
+    <h3>
+      Create a new visual component called <i>Card Item</i>
+    </h3>
+  </div>
+  <div data-template="popup">
+    <style>
+      .lesson-item-popup {
+        width: 600px !important;
+      }
+    </style>
+    <video src="lesson-03_05-createvisualcomponent.mp4"></video>
+    <p>
+      Create a new visual component by <strong>left clicking</strong> the <i>plus</i> icon in the component panel and name it <i>Card Item</i>.
+    </p>
+  </div>
 </div>
 <!-- # -->
-
 
 <!-- A step with an item in the bottom bar. No tasks, so popup will be shown automatically -->
 <div>
-    <div data-template="item">
-        <header>&nbsp;</header>
-        <h2>New Components</h2>
-    </div>
-    <div data-template="popup">
-        <style>.lesson-item-popup {width: 600px !important;}</style>
-        <video src="lesson-03_05-v2 createvisualcomponent.mp4"></video>
-        <h2>New Components</h2>
-        <p>When we have created a new Visual Component it comes with a single Group node in the Node Graph. The one we just deleted.</p>
-        <p>A component can only have one visual hierarchy, so we need to delete it before pasting in the Card nodes.</p>
-        <p>We can now cut and paste the Card nodes we want from the Task Page into this newly created Component.</p>
-    </div>
+  <div data-template="item">
+    <header>&nbsp;</header>
+    <h2>New Components</h2>
+  </div>
+  <div data-template="popup">
+    <style>
+      .lesson-item-popup {
+        width: 600px !important;
+      }
+    </style>
+    <video src="lesson-03_05-v2 createvisualcomponent.mp4"></video>
+    <h2>New Components</h2>
+    <p>
+      When creating a new visual component it contains a single <strong>Group</strong> node by
+      default.
+    </p>
+    <p>
+      Components can only have one visual hierarchy, so you need to delete the
+      default <strong>Group</strong> before pasting in the card relates nodes from the <i>Task Page</i>.
+    </p>
+  </div>
 </div>
 <!-- # -->
 
-
 <!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
 <div
-    data-conditions='[
+  data-conditions='[
         {
-            "path":"/Task Item:%Group", 
+            "path":"/Card Item:%Group",
             "exists":false
         }
     ]'
 >
-    <div data-template="item" style="width: 350px">
-        <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Delete the default Group node that was created with the new component.</h3>
-    </div>
-    <div data-template="popup">
-        <style>.lesson-item-popup {width: 600px !important;}</style>
-        <video src="lesson-03_06-delete.mp4"></video>
-        <p>A component can only have one visual hierarchy, so we will need to delete the default Group that came with the Visual component when we created it.</p>
-    </div>
+  <div data-template="item" style="width: 350px">
+    <header>
+      Task
+      <span class="lesson-checkmark"></span>
+    </header>
+    <h3>Delete the default <strong>Group</strong> node in the new component.</h3>
+  </div>
+  <div data-template="popup">
+    <style>
+      .lesson-item-popup {
+        width: 600px !important;
+      }
+    </style>
+    <video src="lesson-03_06-delete.mp4"></video>
+    <p>
+      A component can only have one visual hierarchy, so you will need to delete
+      the default Group node if you want to copy and paste from another node
+      graph.
+    </p>
+  </div>
 </div>
 
 <!-- # -->
-
-
 
 <!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
 <div
-    data-conditions='[
+  data-conditions='[
         {
-            "path":"/Card Item:#Card", 
+            "path":"/Card Item:#Card Item",
             "exists":true
         }
     ]'
 >
-    <div data-template="item" style="width: 490px">
-        <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Go to the Task Page and Cut (Cmd/Ctrl + X) the group called <i>Card</i>, and paste it into our newly created Card Item component.</h3>
-    </div>
-    <div data-template="popup">
-        <style>.lesson-item-popup {width: 600px !important;}</style>
-        <video src="lesson-03_07-inserttocomponent.mp4"></video>
-        <p>Go to the Task Page and Cut (Cmd/Ctrl + X) the group called <i>Card</i>, and paste it into our newly created Card Item component..</p>
-    </div>
+  <div data-template="item" style="width: 490px">
+    <header>
+      Task
+      <span class="lesson-checkmark"></span>
+    </header>
+    <h3>
+      Go to the <i>Task Page</i> and use <strong>cut</strong> the <i>Card Item</i> Group node. Then <strong>paste</strong> it into your newly created <i>Card Item</i> component.
+    </h3>
+  </div>
+  <div data-template="popup">
+    <style>
+      .lesson-item-popup {
+        width: 600px !important;
+      }
+    </style>
+    <video src="lesson-03_07-inserttocomponent.mp4"></video>
+    <p>Select the <i>Card Item</i> Group node. Cut with <strong>Ctrl/Cmd + X</strong>. Paste with <strong>Ctrl/Cmd + V</strong>.</p>
+  </div>
 </div>
 <!-- # -->
-
 
 <!-- A step with an item in the bottom bar. No tasks, so popup will be shown automatically -->
 <div>
-    <div data-template="item">
-        <header>&nbsp;</header>
-        <h2>Using Components</h2>
-    </div>
-    <div data-template="popup">
-        <style>.lesson-item-popup {width: 600px !important;}</style>
-        <video src="lesson-03_08-insertingcards.mp4"></video>
-        <h2>Using Components</h2>
-        <p>Placing an instance of a component into the node graph is as easy as dragging the component from the side panel into the Node Graph of the component or page we want it to be in.</p>
-    </div>
+  <div data-template="item">
+    <header>&nbsp;</header>
+    <h2>Using Components</h2>
+  </div>
+  <div data-template="popup">
+    <style>
+      .lesson-item-popup {
+        width: 600px !important;
+      }
+    </style>
+    <video src="lesson-03_08-insertingcards.mp4"></video>
+    <h2>Using Components</h2>
+    <p>
+      Placing an instance of a component into the node graph is as easy as
+      dragging the component from the <strong>Component Panel</strong> into the node graph of the
+      component or page we want it to be in.
+    </p>
+
+    <p>You can also find all your components in the <strong>Node Picker</strong>.</p>
+  </div>
 </div>
 <!-- # -->
 
-
 <!-- A step with an item in the bottom bar. No tasks, so popup will be shown automatically -->
 <div
-    data-conditions='[
+  data-conditions='[
         {
-            "path":"/Task Page:%Page:%Group:#Content Container:#Card Item", 
+            "path":"/Task Page:%Page:%Group:#Content Container:#Card Item",
             "exists":true
         }
     ]'
 >
-    <div data-template="item" style="width: 450px">
-        <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Go to the Task Page and Insert the new Card Item component as a child to the group called <i>Content Container.</i></h3>
-    </div>
-    <div data-template="popup">
-        <style>.lesson-item-popup {width: 600px !important;}</style>
-        <video src="lesson-03_08-insertingcards.mp4"></video>
-        <p></p>
-    </div>
+  <div data-template="item" style="width: 450px">
+    <header>
+      Task
+      <span class="lesson-checkmark"></span>
+    </header>
+    <h3>
+      Go to the <i>Task Page</i> and insert the new <i>Card Item</i> component as a child to
+      the Group called <strong><i>Content Container</i></strong>
+    </h3>
+  </div>
+  <div data-template="popup">
+    <style>
+      .lesson-item-popup {
+        width: 600px !important;
+      }
+    </style>
+    <video src="lesson-03_08-insertingcards.mp4"></video>
+    <p></p>
+  </div>
 </div>
 <!-- # -->
 
-
 <!-- A step with an item in the bottom bar. No tasks, so popup will be shown automatically -->
 <div
-    data-conditions='[
+  data-conditions='[
         {
-            "path":"/Task Page:%Page:%Group:#Content Container:0", 
+            "path":"/Task Page:%Page:%Group:#Content Container:0",
             "exists":true
         },
         {
-            "path":"/Task Page:%Page:%Group:#Content Container:1", 
+            "path":"/Task Page:%Page:%Group:#Content Container:1",
             "exists":true
         },
         {
-            "path":"/Task Page:%Page:%Group:#Content Container:2", 
+            "path":"/Task Page:%Page:%Group:#Content Container:2",
             "exists":true
         }
     ]'
 >
-    <div data-template="item" style="width: 360px">
-        <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Repeat the previous task, so you have 3 Card item components in total</h3>
-    </div>
-    <div data-template="popup">
-        <style>.lesson-item-popup {width: 600px !important;}</style>
-        <video src="lesson-03_08-insertingcards.mp4"></video>
-        <p></p>
-    </div>
+  <div data-template="item" style="width: 360px">
+    <header>
+      Task
+      <span class="lesson-checkmark"></span>
+    </header>
+    <h3>
+      Repeat the previous task, so you have 3 <i>Card Item</i> components in total
+    </h3>
+  </div>
+  <div data-template="popup">
+    <style>
+      .lesson-item-popup {
+        width: 600px !important;
+      }
+    </style>
+    <video src="lesson-03_08-insertingcards.mp4"></video>
+    <p>Copy with Cmd/Ctrl + C and paste with Cmd/Ctrl + V</p>
+  </div>
 </div>
 <!-- # -->
 
-
-
 <!-- A step with an item in the bottom bar. No tasks, so popup will be shown automatically -->
 <div
-    data-conditions='[
+  data-conditions='[
         {
-            "path":"/Card Item:%Group", 
+            "path":"/Card Item:%Group",
             "paramseq": {
                 "marginBottom": { "value": 16, "unit": "px" }
             }
         }
     ]'
 >
-    <div data-template="item" style="width: 360px">
-        <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>In the Card Item Component, set the bottom margin of the Top group to 16px</h3>
-    </div>
-    <div data-template="popup">
-        <style>.lesson-item-popup {width: 600px !important;}</style>
-        <video src="lesson-03_09-cardmargin.mp4"></video>
-        <p></p>
-    </div>
+  <div data-template="item" style="width: 360px">
+    <header>
+      Task
+      <span class="lesson-checkmark"></span>
+    </header>
+    <h3>
+      In the <i>Card Item</i> component, set the <strong>bottom margin</strong> of the <i>Top</i> group to <i><strong>16px</strong></i>
+    </h3>
+  </div>
+  <div data-template="popup">
+    <style>
+      .lesson-item-popup {
+        width: 600px !important;
+      }
+    </style>
+    <video src="lesson-03_09-cardmargin.mp4"></video>
+    <p></p>
+  </div>
 </div>
 <!-- # -->
-
 
 <!-- A step with an item in the bottom bar. No tasks, so popup will be shown automatically -->
 <div>
-    <div data-template="item">
-        <header>&nbsp;</header>
-        <h2>Component Inputs</h2>
-    </div>
-    <div data-template="popup">
-        <style>.lesson-item-popup {width: 600px !important;}</style>
-        <video src="lesson-03_10-componentinput.mp4"></video>
-        <h2>Component Inputs</h2>
-        <p>When we changed the bottom margin on the Card Item component, the change applied to all instances. However, some properties we want overwrite be unique for each instance, like the displayed text, the image and the background color. </p>
-        <p>We can achieve this by using the Component Input Node. Through that we can create "ports" and connect those ports to the input properties of our visual nodes that we want to overwrite.</p>
-        <p>Once we do that, the Card Item component node will get Input Properties that we can set to overwrite the default values.</p>
-    </div>
+  <div data-template="item">
+    <header>&nbsp;</header>
+    <h2>Component Inputs</h2>
+  </div>
+  <div data-template="popup">
+    <style>
+      .lesson-item-popup {
+        width: 600px !important;
+      }
+    </style>
+    <video src="lesson-03_10-componentinput.mp4"></video>
+    <h2>Component Inputs</h2>
+    <p>
+      When you changed the bottom margin on the <i>Card Item</i> component that change
+      applied to all instances of <i>Card Item</i> across your app. This is great for reusability
+      purposes. However, some property overwrites we want to be unique for each specific
+      instance, like the displayed text, the image and the background color.
+    </p>
+    <p>
+      You can achieve this by using the <strong>Component Input</strong> node. This node allows
+      you to create <strong>ports</strong> on the component. The <strong>ports</strong> can be connected to the input
+      properties that you want to overwrite.
+    </p>
+    <p>
+      This allows you to create your own Property Panels for your components: When a <strong>Component Input</strong> port is connected it will show up as an <strong>input property</strong> on the the <i>Card Item</i> component node. It will allow you to overwrite the components default values.
+    </p>
+  </div>
 </div>
 <!-- # -->
 
-
 <!-- A step with an item in the bottom bar. No tasks, so popup will be shown automatically -->
 <div
-    data-conditions='[
+  data-conditions='[
         {
-            "path":"/Card Item:%Component Inputs", 
+            "path":"/Card Item:%Component Inputs",
             "exists":true
         }
     ]'
 >
-    <div data-template="item" style="width: 300px">
-        <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Create a Component input node inside the Card Item component  </h3>
-    </div>
-    <div data-template="popup">
-        <style>.lesson-item-popup {width: 600px !important;}</style>
-        <video src="lesson-03_11-creating inputs.mp4"></video>
-        <p></p>
-    </div>
+  <div data-template="item" style="width: 300px">
+    <header>
+      Task
+      <span class="lesson-checkmark"></span>
+    </header>
+    <h3>Create a <strong>Component Inputs</strong> node inside the <i>Card Item</i></h3>
+  </div>
+  <div data-template="popup">
+    <style>
+      .lesson-item-popup {
+        width: 600px !important;
+      }
+    </style>
+    <video src="lesson-03_11-creating inputs.mp4"></video>
+  </div>
 </div>
 <!-- # -->
 
-
-
 <!-- A step with an item in the bottom bar. No tasks, so popup will be shown automatically -->
 <div
-    data-conditions='[
+  data-conditions='[
         {
-            "path":"/Card Item:%Component Inputs", 
+            "path":"/Card Item:%Component Inputs",
             "hasport": "Image",
             "hasport": "Background Color",
             "hasport": "Title",
@@ -302,68 +449,103 @@
         }
     ]'
 >
-    <div data-template="item" style="width: 400px">
-        <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Add the following five ports to the Component Input: <i>Image</i>, <i>Background Color</i>, <i>Title</i>, <i>Category</i>, <i>Date</i> </h3>
-    </div>
-    <div data-template="popup">
-        <style>.lesson-item-popup {width: 600px !important;}</style>
-        <video src="lesson-03_11-creating inputs.mp4"></video>
-        <p></p>
-    </div>
+  <div data-template="item" style="width: 400px">
+    <header>
+      Task
+      <span class="lesson-checkmark"></span>
+    </header>
+    <h3>
+      Add the following five ports to the Component Input:
+      <strong><i>Image</i></strong>
+      ,
+      <strong><i>Background Color</i></strong>
+      ,
+      <strong><i>Title</i></strong>
+      ,
+      <strong><i>Category</i></strong>
+      ,
+      <strong><i>Date</i></strong>
+    </h3>
+  </div>
+  <div data-template="popup">
+    <style>
+      .lesson-item-popup {
+        width: 600px !important;
+      }
+    </style>
+    <video src="lesson-03_11-creating inputs.mp4"></video>
+    <p></p>
+  </div>
 </div>
 <!-- # -->
 
-
 <!-- A step with an item in the bottom bar. No tasks, so popup will be shown automatically -->
 <div
-    data-conditions='[
+  data-conditions='[
         {
             "from": "/Card Item:%Component Inputs",
-            "to": "/Card Item:#Card",
+            "to": "/Card Item:#Card Item",
             "hasconnection": "Background Color,backgroundColor"
         }
     ]'
 >
-    <div data-template="item" style="width: 500px">
-        <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Connect the Background Color port of the Component Input node, to the background color input of the Card group</h3>
-    </div>
-    <div data-template="popup">
-        <style>.lesson-item-popup {width: 600px !important;}</style>
-        <video src="lesson-03_12-bgcolor.mp4"></video>
-        <p></p>
-    </div>
+  <div data-template="item" style="width: 500px">
+    <header>
+      Task
+      <span class="lesson-checkmark"></span>
+    </header>
+    <h3>
+      Connect the <i>Background Color</i> port of the <strong>Component Inputs</strong> node to the
+      <strong>background color</strong> input of the <i>Card</i> group
+    </h3>
+  </div>
+  <div data-template="popup">
+    <style>
+      .lesson-item-popup {
+        width: 600px !important;
+      }
+    </style>
+    <video src="lesson-03_12-bgcolor.mp4"></video>
+    <p></p>
+  </div>
 </div>
 <!-- # -->
 
-
 <!-- A step with an item in the bottom bar. No tasks, so popup will be shown automatically -->
 <div
-    data-conditions='[
+  data-conditions='[
         {
             "from": "/Card Item:%Component Inputs",
-            "to": "/Card Item:#Card:%Image",
+            "to": "/Card Item:#Card Item:%Image",
             "hasconnection": "Image,src"
         }
     ]'
 >
-    <div data-template="item" style="width: 400px">
-        <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Connect the Image port of the Component Input node, to the source input of the Image node</h3>
-    </div>
-    <div data-template="popup">
-        <style>.lesson-item-popup {width: 600px !important;}</style>
-        <video src="lesson-03_12-image.mp4"></video>
-        <p></p>
-    </div>
+  <div data-template="item" style="width: 400px">
+    <header>
+      Task
+      <span class="lesson-checkmark"></span>
+    </header>
+    <h3>
+      Connect the <i>Image</i> port of the <strong>Component Inputs</strong> node to the <strong>source</strong> input of
+      the <strong>Image</strong> node
+    </h3>
+  </div>
+  <div data-template="popup">
+    <style>
+      .lesson-item-popup {
+        width: 600px !important;
+      }
+    </style>
+    <video src="lesson-03_12-image.mp4"></video>
+    <p></p>
+  </div>
 </div>
 <!-- # -->
 
-
 <!-- A step with an item in the bottom bar. No tasks, so popup will be shown automatically -->
 <div
-    data-conditions='[
+  data-conditions='[
         {
             "from": "/Card Item:%Component Inputs",
             "to": "/Card Item:%Group:%Group:0",
@@ -371,22 +553,31 @@
         }
     ]'
 >
-    <div data-template="item" style="width: 400px">
-        <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Connect the Title port of the Component Input node, to the text input of the Card Title text node</h3>
-    </div>
-    <div data-template="popup">
-        <style>.lesson-item-popup {width: 600px !important;}</style>
-        <video src="lesson-03_12-title.mp4"></video>
-        <p></p>
-    </div>
+  <div data-template="item" style="width: 400px">
+    <header>
+      Task
+      <span class="lesson-checkmark"></span>
+    </header>
+    <h3>
+      Connect the <i>Title</i> port of the <strong>Component Inputs</strong> node to the <strong>text</strong> input of
+      the <i>Card Title</i> node
+    </h3>
+  </div>
+  <div data-template="popup">
+    <style>
+      .lesson-item-popup {
+        width: 600px !important;
+      }
+    </style>
+    <video src="lesson-03_12-title.mp4"></video>
+    <p></p>
+  </div>
 </div>
 <!-- # -->
 
-
 <!-- A step with an item in the bottom bar. No tasks, so popup will be shown automatically -->
 <div
-    data-conditions='[
+  data-conditions='[
         {
             "from": "/Card Item:%Component Inputs",
             "to": "/Card Item:%Group:%Group:1",
@@ -394,22 +585,32 @@
         }
     ]'
 >
-    <div data-template="item" style="width: 500px">
-        <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Connect the Category port of the Component Input node, to the text input of the Category text node</h3>
-    </div>
-    <div data-template="popup">
-        <style>.lesson-item-popup {width: 600px !important;}</style>
-        <     <video src="lesson-03_12-category.mp4"></video>
-        <p></p>
-    </div>
+  <div data-template="item" style="width: 500px">
+    <header>
+      Task
+      <span class="lesson-checkmark"></span>
+    </header>
+    <h3>
+      Connect the <i>Category</i> port of the <strong>Component Inputs</strong> node to the <strong>text</strong> input
+      of the <i>Category</i> node
+    </h3>
+  </div>
+  <div data-template="popup">
+    <style>
+      .lesson-item-popup {
+        width: 600px !important;
+      }
+    </style>
+    <
+    <video src="lesson-03_12-category.mp4"></video>
+    <p></p>
+  </div>
 </div>
 <!-- # -->
 
-
 <!-- A step with an item in the bottom bar. No tasks, so popup will be shown automatically -->
 <div
-    data-conditions='[
+  data-conditions='[
         {
             "from": "/Card Item:%Component Inputs",
             "to": "/Card Item:%Group:%Group:2",
@@ -417,39 +618,58 @@
         }
     ]'
 >
-    <div data-template="item" style="width: 400px">
-        <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Connect the Date port of the Component Input node to the text input of the Date text node</h3>
-    </div>
-    <div data-template="popup">
-        <style>.lesson-item-popup {width: 600px !important;}</style>
-        <video src="lesson-03_13-date.mp4"></video>
-        <p></p>
-    </div>
+  <div data-template="item" style="width: 400px">
+    <header>
+      Task
+      <span class="lesson-checkmark"></span>
+    </header>
+    <h3>
+      Connect the <i>Date</i> port of the <strong>Component Inputs</strong> node to the <strong>text</strong> input of the
+      <strong>Date</strong> node
+    </h3>
+  </div>
+  <div data-template="popup">
+    <style>
+      .lesson-item-popup {
+        width: 600px !important;
+      }
+    </style>
+    <video src="lesson-03_13-date.mp4"></video>
+    <p></p>
+  </div>
 </div>
 <!-- # -->
-
 
 <!-- A step with an item in the bottom bar. No tasks, so popup will be shown automatically -->
 <div>
-    <div data-template="item">
-        <header>&nbsp;</header>
-        <h2>Overwriting Component inputs</h2>
-    </div>
-    <div data-template="popup">
-        <style>.lesson-item-popup {width: 600px !important;}</style>
-        <video src="lesson-03_14-overwrite.mp4"></video>
-        <h2>Overwriting Component inputs</h2>
-        <p>When we have connected ports from our Component Input node to input properties of our visual nodes, these properties are now exposed on the component node wherever we are using it.</p>
-        <p>This means that we can style each instance of the component to our liking. And we can always connect up more properties, if we want to control more properties.</p>
-    </div>
+  <div data-template="item">
+    <header>&nbsp;</header>
+    <h2>Overwriting Component inputs</h2>
+  </div>
+  <div data-template="popup">
+    <style>
+      .lesson-item-popup {
+        width: 600px !important;
+      }
+    </style>
+    <video src="lesson-03_14-overwrite.mp4"></video>
+    <h2>Overwriting Component inputs</h2>
+    <p>
+      All the ports created in the <strong>Component Inputs</strong> node are now exposed on the
+      component wherever it is used.
+    </p>
+    <p>
+      This means that you can style each instance of the component individually
+      without those changes being applied across the whole app.
+    </p>
+    <p>You can add more ports at any time to control more properties.</p>
+  </div>
 </div>
 <!-- # -->
 
-
 <!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
 <div
-    data-conditions='[
+  data-conditions='[
         {
             "path":"/Task Page:%Page:%Group:#Content Container:1",
             "paramseq": {
@@ -458,25 +678,31 @@
         }
     ]'
 >
-    <div data-template="item" style="width: 380px">
-        
-        <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Go to the Task Page and change the Image on the second Card Item component to "study.png"   </h3>
-    </div>
+  <div data-template="item" style="width: 380px">
+    <header>
+      Task
+      <span class="lesson-checkmark"></span>
+    </header>
+    <h3>
+      Go to the <i>Task Page</i> and change the <i>Image</i> on the second Card Item component
+      to <i><strong>study.png</strong></i>
+    </h3>
+  </div>
 
-    <div data-template="popup">
-        <style>.lesson-item-popup {width: 600px !important;}</style>
-        <video src="lesson-03_15-study.mp4"></video>
-        <p>Open the node picker by pressing the "+" icon in the top menu, or right click on node canvas.</p>
-        <p>You can find the Group node in the UI Elements category.</p>
-    </div>
+  <div data-template="popup">
+    <style>
+      .lesson-item-popup {
+        width: 600px !important;
+      }
+    </style>
+    <video src="lesson-03_15-study.mp4"></video>
+  </div>
 </div>
 <!-- # -->
 
-
 <!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
 <div
-    data-conditions='[
+  data-conditions='[
         {
             "path":"/Task Page:%Page:%Group:#Content Container:2",
             "paramseq": {
@@ -485,24 +711,30 @@
         }
     ]'
 >
-    <div data-template="item" style="width: 380px">
-        
-        <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Change the Image on the third Card Item component to "shopping.png"</h3>
-    </div>
+  <div data-template="item" style="width: 380px">
+    <header>
+      Task
+      <span class="lesson-checkmark"></span>
+    </header>
+    <h3>
+      Find the third <i>Card Item</i> component and change the <i>Image</i> to <i><strong>shopping.png</strong></i>
+    </h3>
+  </div>
 
-    <div data-template="popup">
-        <style>.lesson-item-popup {width: 600px !important;}</style>
-        <video src="lesson-03_16-shopping.mp4"></video>
-        <p>Open the node picker by pressing the "+" icon in the top menu, or right click on node canvas.</p>
-        <p>You can find the Group node in the UI Elements category.</p>
-    </div>
+  <div data-template="popup">
+    <style>
+      .lesson-item-popup {
+        width: 600px !important;
+      }
+    </style>
+    <video src="lesson-03_16-shopping.mp4"></video>
+  </div>
 </div>
 <!-- # -->
 
 <!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
 <div
-    data-conditions='[
+  data-conditions='[
         {
             "path":"/Task Page:%Page:%Group:#Content Container:1",
             "hasparams": "Background Color"
@@ -513,40 +745,51 @@
         }
     ]'
 >
-    <div data-template="item" style="width: 380px">
-        
-        <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Change the background color of the cards to colors of your liking</h3>
-    </div>
+  <div data-template="item" style="width: 380px">
+    <header>
+      Task
+      <span class="lesson-checkmark"></span>
+    </header>
+    <h3>Change the <strong>background color</strong> of the cards to any colors of your liking</h3>
+  </div>
 
-    <div data-template="popup">
-        <style>.lesson-item-popup {width: 600px !important;}</style>
-        <video src="IT_08_node picker video.mp4"></video>
-        <p>Open the node picker by pressing the "+" icon in the top menu, or right click on node canvas.</p>
-        <p>You can find the Group node in the UI Elements category.</p>
-    </div>
+  <div data-template="popup">
+    <style>
+      .lesson-item-popup {
+        width: 600px !important;
+      }
+    </style>
+    <video src="lesson-03_17-changebgcolor.mp4"></video>
+  </div>
 </div>
 <!-- # -->
-
 
 <!-- A step with an item in the bottom bar. No tasks, so popup will be shown automatically -->
 <div>
-    <div data-template="item">
-        <header>Outro</header>
-        <h2>Congratulations!</h2>
-    </div>
-    <div data-template="popup">
-        <style>.lesson-item-popup {width: 600px !important;}</style>
-        <!--<img src="tutorial_card.png" style="cursor: pointer;" onclick="window.open('https://www.youtube.com/watch?v=TNnn0Gzj-H4&list=PL2eC2vS4uVoMbujQ5CiNtNuP7s7-UwNn-')"> -->
-        <h2>Congratulations!</h2>
-        <p>You've completed this tutorial, we hope you got the gist of it!</p>
-        <p>Feel free to continue change the different input properties to customize the cards even more. e.g with new text andd background colors.</p>
-        <p>In the next tutorial we will learn how to create the same cards but from a data-driven approach.</p>
-        <p>Happy Noodling!</p>
-        <!--<button style="width: 150px" onclick="window.open('https://www.youtube.com/watch?v=TNnn0Gzj-H4&list=PL2eC2vS4uVoMbujQ5CiNtNuP7s7-UwNn-')">WATCH TUTORIAL</button>-->
-        <button style="width: 150px" data-click="exitEditor">EXIT LESSON</button>
-    </div>
+  <div data-template="item">
+    <header>Outro</header>
+    <h2>Congratulations!</h2>
+  </div>
+  <div data-template="popup">
+    <style>
+      .lesson-item-popup {
+        width: 600px !important;
+      }
+    </style>
+    <!--<img src="tutorial_card.png" style="cursor: pointer;" onclick="window.open('https://www.youtube.com/watch?v=TNnn0Gzj-H4&list=PL2eC2vS4uVoMbujQ5CiNtNuP7s7-UwNn-')"> -->
+    <h2>Congratulations!</h2>
+    <p>You've completed this tutorial, we hope you got the gist of it!</p>
+    <p>
+      Feel free to continue change the different input properties to customize
+      the cards even more. e.g with new paddings or borders.
+    </p>
+    <p>
+      In the next tutorial you will learn how to generate this list of cards with
+      a data driven approach.
+    </p>
+    <p>Happy Noodling!</p>
+    <!--<button style="width: 150px" onclick="window.open('https://www.youtube.com/watch?v=TNnn0Gzj-H4&list=PL2eC2vS4uVoMbujQ5CiNtNuP7s7-UwNn-')">WATCH TUTORIAL</button>-->
+    <button style="width: 150px" data-click="exitEditor">EXIT LESSON</button>
+  </div>
 </div>
 <!-- # -->
-
-

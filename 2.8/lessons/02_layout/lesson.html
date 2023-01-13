@@ -1,14 +1,10 @@
 <!-- A step with just a popup -->
 <div data-template="popup">
-  <video src="IT_01_Intro_video.mp4"></video>
+  <image src="lesson-02_00_introimg.png"></image>
   <h2>Welcome back!</h2>
-  <p>
-    In this second lesson we will look closer at building layouts using the
-    visual nodes.
+  <p>In this second lesson we will look closer at building layouts using the visual nodes.
   </p>
-  <p>
-    We already have a simple page but not much content. At the end of this
-    lesson you will have built a card to display items in your Todo List App.
+  <p>We already have a simple page but not much content. At the end of this lesson you will have built a card to display items in your task manager app.
   </p>
 </div>
 <!-- # -->
@@ -27,14 +23,10 @@
     </style>
     <video src="lesson-02_01_pageselector.mp4"></video>
     <h2>Select page to preview</h2>
-    <p>
-      In the topbar you can select what page you want to be active as you
-      develop. It's similar to a browser, where you can jump directly to a
-      specific page of your app.
+    <p>At the top of the editor you have the <strong>Path Dropdown</strong>. It's similar to the URL-bar in a browser and is used to jump directly to a specific page of your app while you develop.
     </p>
     <p>
-      In this lesson we will be working on the page called "Task Page" so select
-      that in the path dropdown.
+      In this lesson we will be working on the page called <i>Task Page</i>. Let's jump to it.
     </p>
   </div>
 </div>
@@ -53,7 +45,9 @@
       Task
       <span class="lesson-checkmark"></span>
     </header>
-    <h3>Select the /task-page path in the path dropdown</h3>
+    <h3>
+      Select the <i><strong>/task-page</strong></i> path in the <strong>Path Dropdown</strong>
+    </h3>
   </div>
 
   <div data-template="popup">
@@ -63,11 +57,6 @@
       }
     </style>
     <video src="lesson-02_01_pageselector.mp4"></video>
-    <p>
-      In this lesson we will be working on the page called "Task Page" so select
-      that in the path dropdown
-    </p>
-    <p>Select the /task-page path in the path dropdown</p>
   </div>
 </div>
 <!-- # -->
@@ -85,7 +74,9 @@
       Task
       <span class="lesson-checkmark"></span>
     </header>
-    <h3>Select the Task Page component in the component panel</h3>
+    <h3>
+      Select the <strong><i>Task Page</i></strong> component in the <strong>Component Panel</strong>
+    </h3>
   </div>
 
   <div data-template="popup">
@@ -95,7 +86,6 @@
       }
     </style>
     <video src="lesson-02_02_selecttaskpage.mp4"></video>
-    <p>Select the Task Page component in the component panel</p>
   </div>
 </div>
 <!-- # -->
@@ -114,13 +104,8 @@
     </style>
     <video src="lesson-02_03_group.mp4"></video>
     <h2>The Group node</h2>
-    <p>
-      The Group node is the most basic visual element and is used to structure
-      layouts, group content, and create visual shapes.
-    </p>
-    <p>
-      If you are familiar with HTML code, a Group is similar to a
-      &lt;div&gt;-tag in HTML.
+    <p>The <strong>Group</strong> node is the most basic visual element and is used to structure layouts, group content, and create visual shapes.</p>
+    <p>If you are familiar with HTML code, a Group is similar to a &lt;div&gt;-tag in HTML.
     </p>
   </div>
 </div>
@@ -140,14 +125,8 @@
     </style>
     <video src="lesson-02_04_nestedvisual.mp4"></video>
     <h2>Nested visual nodes</h2>
-    <p>
-      We can nest visual elements as children of a Group node to start creating
-      more advanced layouts.
-    </p>
-    <p>
-      This is a pattern you will see over and over again, so let's use it to
-      build our card.
-    </p>
+    <p>You can nest visual elements as children of a Group node to start creating more advanced layouts.</p>
+    <p>This is a pattern you will see over and over again, so let's use it to build the card.</p>
   </div>
 </div>
 <!-- # -->
@@ -166,7 +145,7 @@
       Task
       <span class="lesson-checkmark"></span>
     </header>
-    <h3>Place a Group node as a child to the "Content Container" Group</h3>
+    <h3>Place a <strong>Group</strong> node as a child to the <i>Content Container</i> Group</h3>
   </div>
 
   <div data-template="popup">
@@ -176,13 +155,7 @@
       }
     </style>
     <video src="lesson-02_05_placegroup.mp4"></video>
-    <p>
-      Open the Node Picker by
-      <strong>Left Clicking</strong>
-      the "+" icon in the top menu, or
-      <strong>Right Click</strong>
-      on an empty space in the Node Graph.
-    </p>
+    <p>Open the Node Picker by <strong>left clicking</strong> the <i>plus</i> icon in the Topbar, or <strong>right click</strong> on an empty space in the Node Canvas.</p>
     <p>You can find the Group node in the UI Elements category.</p>
   </div>
 </div>
@@ -197,15 +170,12 @@
     }
     ]'
 >
-  <div data-template="item">
+  <div data-template="item" style="width: 260px">
     <header>
       Task
       <span class="lesson-checkmark"></span>
     </header>
-    <h3>
-      Rename the Group to
-      <i>Card Item</i>
-    </h3>
+    <h3>Rename the Group to <i>Card Item</i></h3>
   </div>
 
   <div data-template="popup">
@@ -215,15 +185,7 @@
       }
     </style>
     <video src="lesson-02_06_carditem.mp4"></video>
-    <p>
-      Select the Group node and change its name by pressing the
-      <strong>Enter</strong>
-      key. You can also
-      <strong>Double Click</strong>
-      the node title in the Side Panel, or
-      <strong>Left Click</strong>
-      the edit icon as shown in the video.
-    </p>
+    <p>Select the Group node and change its name by pressing the <strong>enter</strong> key. You can also <strong>double click</strong> the node title in the Property Panel, or <strong>left click</strong> the edit icon as shown in the video.</p>
   </div>
 </div>
 
@@ -235,7 +197,7 @@
         {
             "path":"/Task Page:%Page:%Group:#Content Container:%Group",
             "paramseq":{
-                "backgroundColor": "#E6E1FE"
+                "backgroundColor": "Primary Subtle"
             }
         }
     ]'
@@ -245,10 +207,7 @@
       Task
       <span class="lesson-checkmark"></span>
     </header>
-    <h3>
-      Set the background color of the new Group to the color style
-      <i>#E6E1FE</i>
-    </h3>
+    <h3>Set the background color of the new Group to the color style <strong><i>Primary Subtle</i></strong></h3>
   </div>
 
   <div data-template="popup">
@@ -282,15 +241,14 @@
     <video src="lesson-02_08_explicit-width-height.mp4"></video>
     <h2>Dimension Mode: Explicit width & content height</h2>
     <p>
-      By default Group nodes are set to a Dimension Mode with an explicit width
+      By default Group nodes are set to a <strong>dimension mode</strong> with an explicit width
       and height of 100%. This means that they will take up all available space
       in both directions.
     </p>
     <p>
       Often we want a Group's height to resize to the height of the children
       inside of it. We can achieve that with the dimension mode
-      <i>Explicit width & content height</i>
-      .
+      <strong><i>Explicit width & content height</i></strong>.
     </p>
   </div>
 </div>
@@ -318,14 +276,9 @@
       <span class="lesson-checkmark"></span>
     </header>
     <h3>
-      Select the "Card Item" group and set its
-      <b>dimension mode</b>
-      to
-      <i>Explicit width & content height</i>
-      , and set all
-      <b>paddings</b>
-      to
-      <i>24px</i>
+      Select the <i>Card Item</i> group and set its <strong>dimension mode</strong> to
+      <strong><i>Explicit width & content height</i></strong>, and set all <strong>paddings</strong>
+      to <strong><i>24px</i></strong>
     </h3>
   </div>
   <div data-template="popup">
@@ -351,7 +304,7 @@
       Task
       <span class="lesson-checkmark"></span>
     </header>
-    <h3>Set the Group's corner radius to 4px</h3>
+    <h3>Set the Group's corner radius to <strong><i>4px</i></strong></h3>
   </div>
 
   <div data-template="popup">
@@ -361,11 +314,9 @@
       }
     </style>
     <video src="lesson-02_10_cornerradius.mp4"></video>
-    <p>
-      Select the Group to bring up the Property Panel. Find the Corner Radius
+    <p>Select the Group to bring up the Property Panel. Find the <strong>Corner Radius</strong>
       property and set it to
-      <i>4px</i>
-      .
+      <strong><i>4px</i></strong>.
     </p>
   </div>
 </div>
@@ -388,18 +339,14 @@
     <h2>Images and media</h2>
     <p>
       Noodl comes with different nodes for displaying images and video. They
-      have a
-      <strong>Source</strong>
-      property where you set the path to the file you want to show.
+      have a <strong>Source</strong> property where you set the path to the file you want to show.
     </p>
     <p>
-      Clicking the
-      <strong>Source</strong>
-      input will show all available images and videos that are uploaded to the
+      Clicking the <strong>Source</strong> input will show all available images and videos that are uploaded to the
       project. You can also input an external URL to a media file.
     </p>
     <p>
-      You can add images and videos to the project by simply dragging them into
+      You can add images and videos to the project by simply <strong>dragging and dropping</strong> them into
       the editor. In this lesson we already added some images for you to use.
     </p>
   </div>
@@ -421,11 +368,7 @@
       <span class="lesson-checkmark"></span>
     </header>
     <h3>
-      Open the Node Picker and place an
-      <strong>Image</strong>
-      node as a child to the
-      <strong>Card Item</strong>
-      group.
+      Open the Node Picker and place an <strong>Image</strong> node as a child to the <i>Card Item</i> group.
     </h3>
   </div>
 
@@ -437,19 +380,14 @@
     </style>
     <video src="lesson-02_12_addimages.mp4"></video>
     <p>
-      Open the Node Picker by pressing the "+" icon in the top menu, or right
-      click on an empty space in the Node Graph.
+      Open the Node Picker by <strong>left clicking </strong> the <i>plus</i> icon in the Topbar, or <strong>right click</strong> on an empty space in the Node Canvas.
     </p>
     <p>
-      You can search for the
-      <strong>Image</strong>
-      node in the Node Picker's search field, or find it in the UI Elements
-      category.
+      You can search for the <strong>Image</strong> node in the Node Picker's search field, or find it in the UI Elements category.
     </p>
   </div>
 </div>
 <!-- # -->
-
 
 <!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
 <div
@@ -467,7 +405,7 @@
       Task
       <span class="lesson-checkmark"></span>
     </header>
-    <h3>Set the image source to "work.png"</h3>
+    <h3>Set the <strong>image source</strong> to <strong><i>work.png</i></strong></h3>
   </div>
 
   <div data-template="popup">
@@ -478,14 +416,11 @@
     </style>
     <video src="lesson-02_13_setimagesrc.mp4"></video>
     <p>
-      Click the
-      <strong>Source</strong>
-      property to see a list of available images in the project.
+      Click the <strong>Source</strong> property to see a list of available images in the project.
     </p>
   </div>
 </div>
 <!-- # -->
-
 
 <!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
 <div
@@ -504,10 +439,8 @@
       <span class="lesson-checkmark"></span>
     </header>
     <h3>
-      Set the
-      <strong>Image</strong>
-      node's Dimension Mode to
-      <i>Explicit width and height</i>
+      Set the <strong>Image</strong> node's <strong>dimension</strong> mode to
+      <strong><i>Explicit width and height</i></strong>
     </h3>
   </div>
 
@@ -519,10 +452,8 @@
     </style>
     <video src="lesson-02_14_setimagesize.mp4"></video>
     <p>
-      Click the
-      <strong>Image</strong>
-      node to open its Property Panel and scroll down to the Dimension Mode
-      property. Hover over the different options to see what they are called.
+      Click the <strong>Image</strong> node to open its Property Panel and scroll down to the <strong>dimension mode</strong>
+      property. <strong>Hover</strong> over the different options to see what they are called.
     </p>
   </div>
 </div>
@@ -534,8 +465,8 @@
         {
             "path":"/Task Page:%Page:%Group:#Content Container:#Card Item:%Image",
             "paramseq": {
-                "width": {"value": 100, "unit": "px"},
-                "height": {"value": 100, "unit": "px"}
+                "width": {"value": 80, "unit": "px"},
+                "height": {"value": 80, "unit": "px"}
             }
         }
     ]'
@@ -545,7 +476,7 @@
       Task
       <span class="lesson-checkmark"></span>
     </header>
-    <h3>Set the image size to 100px width and 100px height</h3>
+    <h3>Set the <strong>image size</strong> to <strong><i>80px</i></strong> width and <strong><i>80px</i></strong> height</h3>
   </div>
 
   <div data-template="popup">
@@ -556,17 +487,12 @@
     </style>
     <video src="lesson-02_14_setimagesize.mp4"></video>
     <p>
-      Click the
-      <strong>Image</strong>
-      node to open its Property Panel and scroll to the Size property. Set the
-      width and height to
-      <i>100px</i>
-      .
+      Click the <strong>Image</strong> node to open its Property Panel and scroll to the <strong>size</strong> property. Set the
+      width and height to <strong><i>80px</i></strong>.
     </p>
   </div>
 </div>
 <!-- # -->
-
 
 <!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
 <div
@@ -582,7 +508,7 @@
       Task
       <span class="lesson-checkmark"></span>
     </header>
-    <h3>Place a new Group node as a sibling below the Image node</h3>
+    <h3>Place a new <strong>Group</strong> node as a sibling below the <strong>Image</strong> node</h3>
   </div>
 
   <div data-template="popup">
@@ -593,14 +519,10 @@
     </style>
     <video src="lesson-02_15_addgroup.mp4"></video>
     <p>
-      Open the Node Picker by pressing the "+" icon in the top menu, or right
-      click on an empty space in the Node Graph.
+      Open the Node Picker by <strong>left clicking</strong> the <i>plus</i> icon in the Topbar, or <strong>right click</strong> on an empty space in the Node Canvas.
     </p>
     <p>
-      You can search for the
-      <strong>Group</strong>
-      node in the Node Picker's search field, or find it in the UI Elements
-      category.
+      You can search for the <strong>Group</strong> node in the Node Picker's search field, or find it in the UI Elements category.
     </p>
   </div>
 </div>
@@ -630,10 +552,7 @@
       <span class="lesson-checkmark"></span>
     </header>
     <h3>
-      Place three new
-      <strong>Text</strong>
-      nodes as a children to new
-      <strong>Group</strong>
+      Place three <strong>Text</strong> nodes as a children to the new <strong>Group</strong>
     </h3>
   </div>
 
@@ -645,10 +564,12 @@
     </style>
     <video src="lesson-02_16_text.mp4"></video>
     <p>
-      Click the
-      <strong>Source</strong>
-      property to see a list of available images in the project.
+      Open the Node Picker by <strong>left clicking</strong> the <i>plus</i> icon in the Topbar, or <strong>right click</strong> on an empty space in the Node Canvas.
     </p>
+    <p>
+      You can search for the <strong>Text</strong> node in the Node Picker's search field, or find it in the UI Elements category.
+    </p>
+    <p>Use <strong>Ctrl/Cmd + C</strong> to copy a selected node, and <strong>Ctrl/Cmd + V</strong> to paste it.</p>
   </div>
 </div>
 
@@ -668,7 +589,7 @@
       Task
       <span class="lesson-checkmark"></span>
     </header>
-    <h3>Rename the first text node to "Card Title"</h3>
+    <h3>Rename the first <strong>Text</strong> node to <strong><i>Card Title</i></strong></h3>
   </div>
 
   <div data-template="popup">
@@ -678,10 +599,43 @@
       }
     </style>
     <video src="lesson-02_17_card title.mp4"></video>
-    <p>
-      Click the Source Input Property to see a list of available images in the
-      project.
-    </p>
+    <p>Select the first <strong>Text</strong> node and change its name by pressing the <strong>enter</strong> key. You can also <strong>double click</strong> the node title in the Property Panel, or <strong>left click</strong> the edit icon.</p>
+  </div>
+</div>
+
+<!-- # -->
+
+<!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
+<div
+  data-conditions='[
+        {
+            "path":"/Task Page:%Page:%Group:#Content Container:#Card Item:1:1",
+            "haslabel": "Category"
+        },
+        {
+          "path":"/Task Page:%Page:%Group:#Content Container:#Card Item:1:2",
+          "haslabel": "Date"
+      }
+    ]'
+>
+  <div data-template="item" style="width: 350px">
+    <header>
+      Task
+      <span class="lesson-checkmark"></span>
+    </header>
+    <h3>
+      Rename the second Text node to <strong><i>Category</i></strong>, and the third Text node to <strong><i>Date</i></strong>
+    </h3>
+  </div>
+
+  <div data-template="popup">
+    <style>
+      .lesson-item-popup {
+        width: 600px !important;
+      }
+    </style>
+    <video src="lesson-02_17_card title.mp4"></video>
+        <p>Select the second or third <strong>Text</strong> node and change its name by pressing the <strong>enter</strong> key. You can also <strong>double click</strong> the node title in the Property Panel, or <strong>left click</strong> the edit icon.</p>
   </div>
 </div>
 
@@ -701,17 +655,8 @@
     </style>
     <video src="lesson-02_18_horizontal.mp4"></video>
     <h2>Horizontal layouts</h2>
-    <p>
-      By default all visual nodes are stacked vertically inside of their parent
-      node.
-    </p>
-    <p>
-      We can change this by changing the parent's
-      <strong>Layout Direction</strong>
-      property to
-      <strong>Horizontal</strong>
-      instead of
-      <strong>Vertical</strong>
+    <p>By default all visual nodes are stacked vertically inside of their parent node.</p>
+    <p>We can change this by changing the parent's <strong>layout direction</strong> property to <strong><i>Horizontal</i></strong> instead of <strong><i>Vertical</i></strong>
     </p>
   </div>
 </div>
@@ -734,9 +679,7 @@
       Task
       <span class="lesson-checkmark"></span>
     </header>
-    <h3>
-      Select the "Card Item" Group node and set the Layout Direction to
-      <i>Horizontal</i>
+    <h3>Select the <i>Card Item</i> Group node and set the <strong>layout direction</strong> to <strong><i>Horizontal</i></strong>
     </h3>
   </div>
 
@@ -748,12 +691,7 @@
     </style>
     <video src="lesson-02_18_horizontal.mp4"></video>
     <p>
-      Click the
-      <strong>Group</strong>
-      node named "Card Item" to open its Property Panel. Find the Layout
-      Direction property and set it to
-      <i>Horizontal</i>
-      .
+      Click the <strong>Group</strong> node named <i>Card Item</i> to open its Property Panel. Find the <strong>layout direction</strong> property and set it to <strong><i>Horizontal</i></strong>.
     </p>
   </div>
 </div>
@@ -771,16 +709,13 @@
         }
     ]'
 >
-  <div data-template="item" style="width: 280px">
+  <div data-template="item" style="width: 220px">
     <header>
       Task
       <span class="lesson-checkmark"></span>
     </header>
     <h3>
-      Give the
-      <strong>Image</strong>
-      node a right margin of
-      <i>24px</i>
+      Give the <strong>Image</strong> node a right margin of <strong><i>24px</i></strong>
     </h3>
   </div>
 
@@ -792,11 +727,8 @@
     </style>
     <video src="lesson-02_19_imagemargin.mp4"></video>
     <p>
-      Click the
-      <strong>Image</strong>
-      node to open its Property Panel. At the top you will find the Margin settings. Set the right margin to
-      <i>24px</i>
-      .
+      Click the <strong>Image</strong> node to open its Property Panel. At the top you will find the <strong>margin
+      settings</strong>. Set the right margin to <strong><i>24px</i></strong>.
     </p>
   </div>
 </div>
@@ -849,8 +781,7 @@
       <span class="lesson-checkmark"></span>
     </header>
     <h3>
-      Select the Text node called "Card Title". Set the text style property to
-      "Title Medium"
+      Select the <strong>Text</strong> node called <i>Card Title</i>. Set the <strong>text style</strong> property to <strong><i>Title Medium</i></strong>
     </h3>
   </div>
 

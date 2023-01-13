@@ -1,9 +1,63 @@
 <!-- A step with just a popup -->
 <div data-template="popup"> 
     <video src="lesson-04_19_inspect.mp4"></video>
-    <h2>Data-driven components</h2>
+    <h2>Data driven components</h2>
     <p>Welcome back! In this fourth lesson we will learn how to use a data source to render a list of UI components. </p>
     <p>In the last lesson we created a card component that we copied multiple times to create a list of cards. We will now learn how to generate the list of cards from data instead.</p>
+</div>
+<!-- # -->
+
+
+<!-- Ask user to look at the static data -->
+<div>
+    <div data-template="item">
+        <header>&nbsp;</header>
+        <h2>Static data</h2>
+    </div>
+    <div data-template="popup">
+        <style>.lesson-item-popup {width: 600px !important;}</style>
+        <video src="lesson-04_04-staticarray.mp4"></video>
+        <h2>Static data</h2>
+        <p>There are many ways that we can get datasets into our project. An easy way is to use the <strong>Static Array</strong> node.</p>
+        <p>This node acts as a text file and supports two standard data formats, JSON and CSV. The node in this lesson comes with a small dataset following the <strong>JSON format.</strong> 
+        <p>The dataset contains data for four Card component, with data for titles, category and date for each card.</p>
+    </div>
+</div>
+<!-- # -->
+
+<!-- Ask user to look at the static data -->
+<div>
+    <div data-template="item">
+        <header>&nbsp;</header>
+        <h2>Arrays and Objects</h2>
+    </div>
+    <div data-template="popup">
+        <style>.lesson-item-popup {width: 600px !important;}</style>
+        <video src="lesson-04_04-staticarray.mp4"></video>
+        <h2>Arrays and Objects</h2>
+        <p>Data in Noodl is typically structured in objects and arrays. The same goes for the content inside the static Array node.</p>
+        <p>The structure we have in our Static Array Node is really a way to define an array with objects and the properties of each object.</p>
+        <p>Each object automatically gets a unique id attached to it which means that we can later grab the data from the object, when we have it's id.</b> 
+        <p>This is one of the more tricky concepts in Noodl, but let's go forward so we can experience how it works in practice.</b> 
+    </div>
+</div>
+<!-- # -->
+
+
+<!-- Ask user to look at the static data -->
+<div>
+    <div data-template="item">
+        <header>&nbsp;</header>
+        <h2>Repeater node</h2>
+    </div>
+    <div data-template="popup">
+        <style>.lesson-item-popup {width: 600px !important;}</style>
+        <video src="lesson-04_08-repeater.mp4"></video>
+        <h2>Repeater node</h2>
+        <p>The Repeater node is used to generate visual components based on objects in an array. It takes a visual component as a template that then is rendered where the Repeater node is placed in the Dom tree.</p>
+        <p>The repeater needs an array to generate from, and for each object in the array, a component instance is generated and rendered.</p>
+        <p>Let's first remove our existing Card components from the dom tree, add a Repeater node, and connect it up with our static array.</p>
+    </div>
 </div>
 <!-- # -->
 
@@ -26,82 +80,6 @@
         <video src="lesson-04_02-selecttaskpage.mp4"></video>
         <p>In this lesson we will be working on the page called "Task Page" so select that in the path dropdown</p>
         <p>Select the /task-page path in the path dropdown</p>
-    </div>
-</div>
-<!-- # -->
-
-<!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
-<div
-    data-conditions='[
-        {
-            "activecomponentnameeq":"/Task Page"
-        }
-    ]'
->
-    <div data-template="item" style="width: 280px">
-        
-        <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Select the Task Page component in the component panel</h3>
-    </div>
-
-    <div data-template="popup">
-        <style>.lesson-item-popup {width: 600px !important;}</style>
-        <video src="lesson-04_03-selecttaskcomponent.mp4"></video>
-        <p>Select the Task Page component in the component panel</p>
-    </div>
-</div>
-<!-- # -->
-
-
-<!-- Ask user to look at the static data -->
-<div>
-    <div data-template="item">
-        <header>&nbsp;</header>
-        <h2>Static data</h2>
-    </div>
-    <div data-template="popup">
-        <style>.lesson-item-popup {width: 600px !important;}</style>
-        <video src="lesson-04_04-staticarray.mp4"></video>
-        <h2>Static data</h2>
-        <p>There are many ways that we can get datasets into our project. An easy way is to use the <B>Static Array node.</B></p>
-        <p>This node acts as a text file and supports two standard data formats, JSON and CSV. The node in this lesson comes with a small dataset following the <b>JSON format.</b> 
-        <p>The dataset contains data for four Card component, with data for titles, category and date for each card.</p>
-    </div>
-</div>
-<!-- # -->
-
-<!-- Ask user to look at the static data -->
-<div>
-    <div data-template="item">
-        <header>&nbsp;</header>
-        <h2>Arrays and Objects</h2>
-    </div>
-    <div data-template="popup">
-        <style>.lesson-item-popup {width: 600px !important;}</style>
-        <video src="lesson-04_04-staticarray.mp4"></video>
-        <h2>Arrays and Objects</h2>
-        <p>Data in Noodl is typically structured in objects and arrays. The same goes for the content inside the static Array node.</p>
-        <p>The structure we have in our Static Array Node is really a way to define an array with objects and the properties of each object.</p>
-        <p>Each object automatically gets a unique id attached to it which means that we can later grab the data from the object, when we have it's id.</b> 
-        <p>This is one of the more tricky concepts in Noodl, but let's forward so we can experience how it works in practice.</b> 
-    </div>
-</div>
-<!-- # -->
-
-
-<!-- Ask user to look at the static data -->
-<div>
-    <div data-template="item">
-        <header>&nbsp;</header>
-        <h2>Repeater node</h2>
-    </div>
-    <div data-template="popup">
-        <style>.lesson-item-popup {width: 600px !important;}</style>
-        <video src="lesson-04_08-addrepeater.mp4"></video>
-        <h2>Repeater node</h2>
-        <p>The Repeater node is used to generate visual components based on objects in an array. It takes a visual component as a template that then will be rendered where the Repeater node is placed in the Dom tree.</p>
-        <p>The repeater needs an array to generate from, and for each object in the array, a component instance is generated and rendered.</p>
-        <p>Let's first remove our existing Card components from the dom tree, add Repeater node, and connect it up with our static array.</p>
     </div>
 </div>
 <!-- # -->
@@ -245,10 +223,10 @@
     </div>
     <div data-template="popup">
         <style>.lesson-item-popup {width: 600px !important;}</style>
-        <video src="task-intro-video.mp4"></video>
+        <video src="lesson-04_13_connectclicked.mp4"></video>
         <h2>Making clickable cards</h2>
         <p>Now we have built the basic system for showing cards (or any other type of list) from data. But to take this a step further we can also implement a way to make each card clickable and get its associated object so we can use that data somewhere else.</p>
-        <p>To do this we first need to add a Component Output node into a our Card component, so we can get data out of the card as well.</p>
+        <p>To do this we first need to add a Component Outputs node into a our Card component, so we can get data out of the card as well.</p>
         <p></p>
     </div>
 </div>
@@ -259,15 +237,15 @@
 <div>
     <div data-template="item">
         <header>&nbsp;</header>
-        <h2>Component Output node</h2>
+        <h2>Component Outputs node</h2>
     </div>
     <div data-template="popup">
         <style>.lesson-item-popup {width: 600px !important;}</style>
         <video src="lesson-04_12_componentoutput.mp4"></video>
-        <h2>Component Output node</h2>
-        <p>Just as we can use a Component Input node to get data and signals into a component, we can use a Component Output node to get data and signals out of a component.</p>
+        <h2>Component Outputs node</h2>
+        <p>Just as we can use a Component Inputs node to get data and signals into a component, we can use a Component Outputs node to get data and signals out of a component.</p>
         <p>In our case we want to make the Card component clickable, so we can receive a signal from the card when its clicked.</p>
-        <p>Lets start by creating a Component Output node in our Card component</p>
+        <p>Lets start by creating a Component Outputs node in our Card component</p>
     </div>
 </div>
 <!-- # -->
@@ -483,8 +461,7 @@
         <!--<img src="tutorial_card.png" style="cursor: pointer;" onclick="window.open('https://www.youtube.com/watch?v=TNnn0Gzj-H4&list=PL2eC2vS4uVoMbujQ5CiNtNuP7s7-UwNn-')"> -->
         <h2>Congratulations!</h2>
         <p>You've completed forth tutorial, we hope you got the gist of it!</p>
-        <p>Feel free to continue change the different input properties to customize the cards even more. e.g with new text andd background colors.</p>
-        <p>In the next tutorial we will learn how to create the same cards but from a data-driven approach.</p>
+        <p>In the next tutorial we will learn how to use the click event on our card to navigate to a detailed page with dynamic data for each card.</p>
         <p>Happy Noodling!</p>
         <!--<button style="width: 150px" onclick="window.open('https://www.youtube.com/watch?v=TNnn0Gzj-H4&list=PL2eC2vS4uVoMbujQ5CiNtNuP7s7-UwNn-')">WATCH TUTORIAL</button>-->
         <button style="width: 150px" data-click="exitEditor">EXIT LESSON</button>
