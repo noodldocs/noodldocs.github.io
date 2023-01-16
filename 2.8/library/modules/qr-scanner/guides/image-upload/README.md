@@ -17,7 +17,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
 
 <div className="ndl-image-with-background l">
     <img src={useBaseUrl("/library/modules/qr-scanner/guides/image-upload/qr-image-upload.png")} className="ndl-image large"></img>
-    <ImportButton zip="qr-image-upload.zip" name="Camera QR Scanner" thumb="qr_noodlnet.png"/>
+    <ImportButton zip="/library/modules/qr-scanner/guides/image-upload/qr-image-upload.zip" name="Uploaded File QR Scanner" thumb="/library/modules/qr-scanner/qr_noodlnet.png"/>
 </div>
 
 Note that In this particular example, no text will be shown if QR Code can’t be found or read from the uploaded image. You can use the <span className="ndl-signal">Scan Success/Scan Failed</span> signals of the **Image QR Scanner** node to include error handling, but this is not shown in this simple setup.

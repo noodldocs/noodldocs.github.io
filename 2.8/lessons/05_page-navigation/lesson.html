@@ -1,15 +1,15 @@
 <!-- A step with just a popup -->
-<div data-template="popup"> 
+<div data-template="popup">
     <video src="lesson-05_00-intro.mp4"></video>
     <h2>Page Navigation</h2>
-    <p>Welcome back! In this fifth lesson we will learn how to work with page navigation and how to pass data between pages.</p>
-    <p>In this tutorial we will make our cards navigate to a dedicated details page when we click on one of them.</p>
+    <p>Welcome back! In this fifth lesson you will learn how to work with page navigation and how to pass data between pages.</p>
+    <p>In the last lesson you built a clickable <i>Card Item</i> component. Let's make it lead to a dedicated details page.</p>
 </div>
 <!-- # -->
 
 
 <!-- Talk about lists -->
-<div> 
+<div>
     <div data-template="item">
         <header>&nbsp;</header>
         <h2>Key elements of a navigation system</h2>
@@ -17,11 +17,11 @@
     <div data-template="popup">
         <video src="lesson-05_01-keylements.mp4"></video>
         <h2>Key elements of a navigation system</h2>
-        <p>All Noodl projects start with a simple navigation system in place. We have already learned how to navigate between existing pages, but let's take step back and look at the three key elements for working with navigation in Noodl:</p>
+        <p>All Noodl projects start with a simple navigation system in place. In previous lessons we went through the basics of navigation. Let's refresh the memory of what is needed for navigation in Noodl:</p>
         <ol>
-        <li><p>Multiple <b>Page Components</b> that each contains a page of an application. We already have a Task Page and a Start Page.</p></li>
-        <li><p>A <b>Page Router </b> node, that works as a container that controls which Page component to show. This node is often placed in the App component.</p></li>
-        <li><p>A <b>Navigate</b> node that lets you navigate from one page to another.</p></li>
+            <li><p>Multiple <strong>page components</strong> that each contain a page of your app. In this project you already have a <i>Start Page</i> and a <i>Task Page</i>.</p></li>
+            <li><p>A <strong>Page Router</strong> node, that works as a container that controls which page component to show. This node is often placed in the <i>App</i> component.</p></li>
+            <li><p>A <stron>Navigate</stron> node that lets you navigate from one page to another.</p></li>
         </ol>
     </div>
 </div>
@@ -38,8 +38,8 @@
         <video src="lesson-05_01-keylements.mp4"></video>
         <h2>Page Router node</h2>
         <p>The Page Router node is a visual node that acts as a container for pages. Any page you navigate to will be rendered inside the Page Router and fill out the space available.</p>
-        <p>Navigation menu and footer often live next to the Page Router in the Node Graph so they don't need to be inserted in every page.</p>
-        <p>If we select the Page Router we can see all the Pages that are part of it, and we can also set which page we want to act as the start page.</p>
+        <p>In the node graph, the Page Router often lives in between a <i>Header</i> and a <i>Footer</i> component. This way they don't need to be inserted (and rerendered) on every page.</p>
+        <p>If we select the <strong>Page Router</strong> you can see all the pages that are part of it. You can also set which page you want to act as the start page.</p>
     </div>
 </div>
 <!-- # -->
@@ -54,8 +54,8 @@
     <div data-template="popup">
         <video src="lesson-05_04-creating pages.mp4"></video>
         <h2>Creating pages</h2>
-        <p>When we add a new Page component it automatically gets added to the Page Router. A quick way to add a new page is by clicking the "+" icon in the Component side panel and pick Page component.</p> 
-        <p>Click "Next" to start creating a new page.</p>
+        <p>When you create a new page component it automatically gets added to the Page Router. A quick way to create a new page is by opening the <strong>Component Panel</strong>, then <strong>clicking</strong> the <i>plus</i> icon and picking <i>page component</i>.</p>
+        <p>It's time for you to create your very own page!</p>
     </div>
 </div>
 <!-- # -->
@@ -64,7 +64,7 @@
 <div
     data-conditions='[
         {
-            "path":"/App:%Group:%Router", 
+            "path":"/App:%Group:%Router",
             "paramseq": {
                 "pages": {
                   "routes": ["/Start Page","/Task Page","/Details Page"]
@@ -75,11 +75,11 @@
 >
     <div data-template="item" style="width: 350px">
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Create a new page called <i>Details Page</i>.<br><i>Note: Page names are case sensitive</i></h3>
+        <h3>Create a new page called <strong><i>Details Page</i></strong></h3>
     </div>
     <div data-template="popup">
         <video src="lesson-05_04-creating pages.mp4"></video>
-        <p>Create a new page called <i>Details Page</i>.<br><i>Note: Page names are case sensitive</i></p>
+        <p>Open the Component Panel and click the <i>plus</i> icon in the Components section. Name it <strong><i>Details Page</i></strong>, remember that page names are case sensitive.</p>
     </div>
 </div>
 <!-- # -->
@@ -93,15 +93,14 @@
     ]'
 >
     <div data-template="item" style="width: 280px">
-        
+
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Select the /details-page path in the path dropdown</h3>
+        <h3>Select the <strong><i>/details-page</i></strong> path in the Path Dropdown</h3>
     </div>
 
     <div data-template="popup">
         <style>.lesson-item-popup {width: 600px !important;}</style>
         <video src="lesson-05_05-select details page.mp4"></video>
-        <p>Select the /details-page path in the path dropdown</p>
     </div>
 </div>
 <!-- # -->
@@ -116,9 +115,10 @@
     <div data-template="popup">
         <style>.lesson-item-popup {width: 600px !important;}</style>
         <video src="lesson-05_04-pagescomponent.mp4"></video>
-        <h2>The Page component</h2>
-        <p>Every page component comes with a Page node, and a Page Inputs node. All children to the page node gets rendered on the page.</p>
-        <P>With the Page Inputs node, we can create Path and Query Inputs. These are ways to send data into a page when we navigate to it and encode the data as part of the pages url. We will work more with this in this lesson, but first lets get a simple interface on this page.</P>
+        <h2>The page component</h2>
+        <p>Every page component comes with a <strong>Page</strong> node and a <strong>Page Inputs</strong> node. All children to the page node gets rendered on the page.</p>
+        <p>With the Page Inputs node, we can create Path and Query Inputs. They are used to send data into a page. You have probably seen this on other websites before, looking something like this: www.webshop.com/products<strong>?search=noodles</strong>.</p>
+        <p>We will take a closer look at this shortly, but first lets get a simple interface on this page.</p>
     </div>
 </div>
 <!-- # -->
@@ -133,9 +133,9 @@
     <div data-template="popup">
         <style>.lesson-item-popup {width: 600px !important;}</style>
         <video src="lesson-05_07-copy-page-content.mp4"></video>
-        <h2>We prepared a bit from home</h2>
-        <p>To keep this lesson within a reasonable length of time we have added a component to the project containing a simple UI for our newly created Details Page.</p>
-        <p>You can go the Details Page Content component and copy all the nodes and paste them into the Details page as children to the Page node.</p>
+        <h2>Here's something we prepared earlier...</h2>
+        <p>To keep this lesson within a reasonable length we decided to add a component to the project containing a simple UI for our newly created <i>Details Page</i>.</p>
+        <p>You can go the <i>Details Page Content</i> component and copy all the nodes and paste them into the <i>Details Page</i> as children to the Page node.</p>
     </div>
 </div>
 <!-- # -->
@@ -144,21 +144,20 @@
 <div
 data-conditions='[
     {
-        "path":"/Details Page:%Page:#Page Content", 
+        "path":"/Details Page:%Page:#Page Content",
         "exists": true
     }
 ]'
 >
     <div data-template="item" style="width: 460px">
-        
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Copy all the nodes from the Details page content component, and paste them under the page node in the Details Page.</h3>
+        <h3>Copy all the nodes from the <i>Details Page Content</i> component, and paste them under the Page node in the <i>Details Page</i>.</h3>
     </div>
 
     <div data-template="popup">
         <style>.lesson-item-popup {width: 600px !important;}</style>
         <video src="lesson-05_07-copy-page-content.mp4"></video>
-        <p>Copy all the nodes from the Details page content component, and paste them under the page node in the Details Page.</p>
+        <p>Copy with <strong>Cmd/Ctrl + C</strong> and paste with <strong>Cmd/Ctrl + V</strong></p>
     </div>
 </div>
 <!-- # -->
@@ -173,9 +172,9 @@ data-conditions='[
         <style>.lesson-item-popup {width: 600px !important;}</style>
         <video src="lesson-05_08-add-taskid.mp4"></video>
         <h2>Page Inputs</h2>
-        <p>Every page comes with a Page Inputs node, that similar to components Inputs, allows us to create parameters that we can use to send data into a page when we navigate to it.</p>
-        <p>We can create two different types of parameters: Query parameters and Path parameters. In this lesson we will be using the Path parameter</p>
-        <P>In this way we can use the same page and dynamically change the content on the page from the data we get from the path parameters. The data that we send in as a Path parameter will also be part of the page's url.</P>
+        <p>The Page Inputs node is similar to the Components Inputs node. It allows you to create parameters that can be used to send data into a page when you navigate to it.</p>
+        <p>There are two different types of parameters: <strong>query parameters</strong> and <strong>path parameters</strong>. In this lesson you will be using the latter.</p>
+        <p>The page parameters makes it possible to use a <strong>page component</strong> as a template, allowing you to keep the style and structure, but dynamically change the content.</p>
     </div>
 </div>
 <!-- # -->
@@ -187,21 +186,21 @@ data-conditions='[
         {
             "path":"/Details Page:%PageInputs",
             "paramseq": {
-                "pathParams":"Task id"    
+                "pathParams":"Task id"
             }
         }
     ]'
 >
     <div data-template="item" style="width: 280px">
-        
+
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>On the Page Input node, Create a path parameter called <i>Task id</i></h3>
+        <h3>On the <strong>Page Inputs</strong> node, create a path parameter called <strong><i>Task id</i></strong></h3>
     </div>
 
     <div data-template="popup">
         <style>.lesson-item-popup {width: 600px !important;}</style>
         <video src="lesson-05_08-add-taskid.mp4"></video>
-        <p>On the Page Input node, Create a path parameter called task id</p>
+        <p>The name is case sensitive</p>
     </div>
 </div>
 <!-- # -->
@@ -216,15 +215,14 @@ data-conditions='[
     ]'
 >
     <div data-template="item" style="width: 280px">
-        
+
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>In the Details Page, Create an Object node</h3>
+        <h3>In the <strong>Details Page</strong>, create an <strong>Object</strong> node</h3>
     </div>
 
     <div data-template="popup">
         <style>.lesson-item-popup {width: 600px !important;}</style>
         <video src="lesson-05_09-add-objectnode.mp4"></video>
-        <p>On the Page Input node, Create a path parameter called task id</p>
     </div>
 </div>
 <!-- # -->
@@ -241,15 +239,14 @@ data-conditions='[
     ]'
 >
     <div data-template="item" style="width: 340px">
-        
+
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Connect the Task id output from the Page input node to the Id input on the Object node</h3>
+        <h3>Connect the <strong>Page Inputs</strong> node to the <strong>Object</strong> node. Then send the <strong><i>task id</i></strong> output to the <strong><i>Id</i></strong> input</h3>
     </div>
 
     <div data-template="popup">
         <style>.lesson-item-popup {width: 600px !important;}</style>
         <video src="lesson-05_10-connect-to-object.mp4"></video>
-        <p>On the Page Input node, Create a path parameter called task id</p>
     </div>
 </div>
 <!-- # -->
@@ -265,15 +262,14 @@ data-conditions='[
     ]'
 >
     <div data-template="item" style="width: 240px">
-        
+
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Go back to the Task page and delete the Object node</h3>
+        <h3>Go back to the <i>Task Page</i> and delete the <strong>Object</strong> node</h3>
     </div>
 
     <div data-template="popup">
         <style>.lesson-item-popup {width: 600px !important;}</style>
         <video src="lesson-05_11-delete-object.mp4"></video>
-        <p>On the Page Input node, Create a path parameter called task id</p>
     </div>
 </div>
 <!-- # -->
@@ -283,21 +279,20 @@ data-conditions='[
 <div
     data-conditions='[
         {
-            "path":"/Task Page:%RouterNavigate", 
+            "path":"/Task Page:%RouterNavigate",
             "exists": true
         }
     ]'
 >
     <div data-template="item" style="width: 280px">
-        
+
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Open the Node picker and place a Navigate node in the Task page</h3>
+        <h3>Open the Node Picker and place a <strong>Navigate</strong> node in the <i>Task Page</i></h3>
     </div>
 
     <div data-template="popup">
         <style>.lesson-item-popup {width: 600px !important;}</style>
         <video src="lesson-05_12-place-navigatenode.mp4"></video>
-        <p>Open the Node picker and place a Navigate node in the Task page</p>
     </div>
 </div>
 <!-- # -->
@@ -306,7 +301,7 @@ data-conditions='[
 <div
     data-conditions='[
         {
-            "path":"/Task Page:%RouterNavigate", 
+            "path":"/Task Page:%RouterNavigate",
             "paramseq": {
                 "target":"/Details page"
                 }
@@ -314,15 +309,14 @@ data-conditions='[
     ]'
 >
     <div data-template="item" style="width: 280px">
-        
+
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Set the Target Page property of the navigate node to "Details Page"</h3>
+        <h3>On the <strong>Navigate</strong> node, set the <strong>target page</strong> property to <strong><i>Details Page</i></strong></h3>
     </div>
 
     <div data-template="popup">
         <style>.lesson-item-popup {width: 600px !important;}</style>
         <video src="lesson-05_12-place-navigatenode.mp4"></video>
-        <p>Set the Target Page property of the navigate node to "Details Page"</p>
     </div>
 </div>
 <!-- # -->
@@ -333,21 +327,20 @@ data-conditions='[
     data-conditions='[
         {
             "from": "/Task Page:%Page:%Group:%Group:%For Each",
-            "to":"/Task Page:%RouterNavigate", 
+            "to":"/Task Page:%RouterNavigate",
             "hasconnection": "itemOutputSignal-Clicked, navigate"
         }
     ]'
 >
     <div data-template="item" style="width: 340px">
-        
+
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Connect the clicked event from the repeater to the navigate input on the Navigate node</h3>
+        <h3>Connect the <strong>Repeater</strong> node to the <strong>Navigate</strong> node. Then send the <strong><i>clicked</i></strong> output to the <strong><i>navigate</i></strong> input</h3>
     </div>
 
     <div data-template="popup">
         <style>.lesson-item-popup {width: 600px !important;}</style>
         <video src="lesson-05_13-connect-from-repeater.mp4"></video>
-        <p>Connect the clicked event from the repeater to the navigate input on the Navigate node</p>
     </div>
 </div>
 <!-- # -->
@@ -367,15 +360,14 @@ data-conditions='[
     ]'
 >
     <div data-template="item" style="width: 340px">
-        
+
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Connect the Item id from the Repeater node to the Task id on the navigate node</h3>
+        <h3>Connect the <strong>Repeater</strong> node to the <strong>Navigate</strong> node. Then send the <strong><i>item id</i></strong> output to the <strong><i>task id</i></strong> input</h3>
     </div>
 
     <div data-template="popup">
         <style>.lesson-item-popup {width: 600px !important;}</style>
         <video src="lesson-05_13-connect-from-repeater.mp4"></video>
-        <p>On the Page Input node, Create a path parameter called task id</p>
     </div>
 </div>
 <!-- # -->
@@ -391,9 +383,8 @@ data-conditions='[
         <style>.lesson-item-popup {width: 600px !important;}</style>
         <video src="lesson-05_14-objectid-pageinput.mp4"></video>
         <h2>Object Id as a page parameter</h2>
-        <p>We now have a navigation system that allows us to click on a card, get it's underlying object id, and parse it as a path parameter when we navigate to the Details Page.</p>
-        <p>This makes it easy for us to access all the data via the object on the Details page. And based on which card we click,  </p>
-        <p>In the Details Page, let's create the properties on the Object node so we can connect the data to our UI.</p>
+        <p>You now have a navigation system that allows us to click on a card, get it's underlying object id, and use that as a path parameter when you navigate to the <i>Details Page</i>.</p>
+        <p>This makes allows you to access all the data via the <strong>Object</strong> in the <i>Details Page</i> component.</p>
     </div>
 </div>
 <!-- # -->
@@ -410,7 +401,7 @@ data-conditions='[
         <style>.lesson-item-popup {width: 600px !important;}</style>
         <video src="lesson-05_15-objectid-properties.mp4"></video>
         <h2>Object properties</h2>
-        <p>When we have a valid id set on a object node, we can see all the available data when we inspect node. However, to make it available as outputs, we need to manually create them as parameters by matching the names.</p>
+        <p>When there is a valid id set on a <strong>Object</strong> node, you can see all the available data when the node is inspected. However, to make it available as outputs, you need to manually create them as parameters by matching the names.</p>
     </div>
 </div>
 <!-- # -->
@@ -419,7 +410,7 @@ data-conditions='[
 <div
     data-conditions='[
         {
-            "path":"/Details page:%Model2", 
+            "path":"/Details page:%Model2",
             "paramseq":{
                 "properties":"Image,Background Color,Title,Category,Date"
             }
@@ -428,7 +419,7 @@ data-conditions='[
 >
     <div data-template="item" style="width: 450px">
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>In the Details Page, add the following properties to the object node: <i>Image</i>, <i>Background Color</i>, <i>Title</i>, <i>Category</i>, <i>Date</i> </h3>
+        <h3>In the <i>Details Page</i>, add the following properties to the Object node: <strong><i>Image</i></strong>, <strong><i>Background Color</i></strong>, <strong><i>Title</i></strong>, <strong><i>Category</i></strong>, <strong><i>Date</i></strong></h3>
     </div>
     <div data-template="popup">
         <style>.lesson-item-popup {width: 600px !important;}</style>
@@ -451,7 +442,7 @@ data-conditions='[
 >
     <div data-template="item" style="width: 500px">
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Connect the Background Color property of the Object node, to the background color input of the <B>Hero section</B> group</h3>
+        <h3>Connect the <strong>Object</strong> node to the <strong>Hero section</strong> Group. Then send the <strong><i>background color</i></strong> output to the <strong><i>background color</i></strong> input</h3>
     </div>
     <div data-template="popup">
         <style>.lesson-item-popup {width: 600px !important;}</style>
@@ -474,7 +465,7 @@ data-conditions='[
 >
     <div data-template="item" style="width: 400px">
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Connect the Image property of the Object node, to the source input of the Image node</h3>
+        <h3>Connect the <strong>Object</strong> node to the <strong>Image</strong> node. Then send the <strong><i>image</i></strong> output to the <strong><i>source</i></strong> input</h3>
     </div>
     <div data-template="popup">
         <style>.lesson-item-popup {width: 600px !important;}</style>
@@ -497,7 +488,7 @@ data-conditions='[
 >
     <div data-template="item" style="width: 400px">
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Connect the Title property of the Object node, to the text property of the Title text node</h3>
+        <h3>Connect the <strong>Object</strong> node to the <striong>Title</striong> Text node. Then send the <strong><i>title</i></strong> output to the <strong><i>text</i></strong> input</h3>
     </div>
     <div data-template="popup">
         <style>.lesson-item-popup {width: 600px !important;}</style>
@@ -520,7 +511,8 @@ data-conditions='[
 >
     <div data-template="item" style="width: 400px">
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Connect the <i>Category</i> property of the Object node, to the text property of the Category text node </h3>
+        <h3>Connect the <strong>Object</strong> node to the <strong>Category</strong> Text node. Then send the <strong><i>category</i></strong> output to the <strong><i>text</i></strong> input</h3>
+
     </div>
     <div data-template="popup">
         <style>.lesson-item-popup {width: 600px !important;}</style>
@@ -543,7 +535,7 @@ data-conditions='[
 >
     <div data-template="item" style="width: 400px">
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Connect the Date parameter of the Object node to the text property of the Calender text node</h3>
+        <h3>Connect the <strong>Object</strong> node to the <strong>Calender</strong> Text node. Then send the <strong><i>date</i></strong> output to the <strong><i>text</i></strong> input</h3>
     </div>
     <div data-template="popup">
         <style>.lesson-item-popup {width: 600px !important;}</style>
@@ -564,9 +556,9 @@ data-conditions='[
         <style>.lesson-item-popup {width: 600px !important;}</style>
         <video src="lesson-05_17-navigateback.mp4"></video>
         <h2>Navigating back</h2>
-        <p>We can navigate to the details page when we click a card, but how do we navigate back again?</p>
-        <p>First of all most browsers have controls to navigate back and forth. The Noodl editor have similar controls next to the path dropdown.</p>
-        <p>We can also make an explicit way in our UI by using a navigate node again. Let's do that.</p>
+        <p>You will now be navigated to the <i>Details Page</i> when you click a card. But what if you want to navigate back again?</p>
+        <p>The easiest way is just to use the <i>back</i> and <i>forward</i> controls built in to your browser. The Noodl editor has similar controls next to the Path Dropdown.</p>
+        <p>If you want to be fancy, you can use the <b>Navigate</b> node to create a custom <i>back</i> control. Let's do that.</p>
     </div>
 </div>
 <!-- # -->
@@ -576,7 +568,7 @@ data-conditions='[
 <div
     data-conditions='[
     {
-        "path":"/Details Page:%RouterNavigate", 
+        "path":"/Details Page:%RouterNavigate",
         "paramseq": {
             "target":"/Task page"
         }
@@ -585,7 +577,7 @@ data-conditions='[
 >
     <div data-template="item" style="width: 320px">
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>In the Details page, add a Navigate node and set target page to Task Page.</h3>
+        <h3>In the <i>Details Page</i>, add a <strong>Navigate</strong> node and set the <strong>target page</strong> to <strong><i>Task Page</i></strong></h3>
     </div>
     <div data-template="popup">
         <style>.lesson-item-popup {width: 600px !important;}</style>
@@ -602,7 +594,7 @@ data-conditions='[
     data-conditions='[
     {
         "from": "/Details Page:%Page:#Page Content:#Page body:%net.noodl.controls.button",
-        "to":"/Details Page:%RouterNavigate", 
+        "to":"/Details Page:%RouterNavigate",
         "hasconnection": "onClick, navigate"
     }
     ]'
@@ -610,6 +602,7 @@ data-conditions='[
     <div data-template="item" style="width: 400px">
         <header>Task<span class="lesson-checkmark"></span></header>
         <h3>Connect the click event from the button node to the navigate input on the navigate node</h3>
+        <h3>Connect the <strong>Button</strong> node to the <strong>Navigate</strong> node. Then send the <strong><i>click</i></strong> output to the <strong><i>navigate</i></strong> input</h3>
     </div>
     <div data-template="popup">
         <style>.lesson-item-popup {width: 600px !important;}</style>
@@ -629,7 +622,7 @@ data-conditions='[
     ]'
 >
     <div data-template="item" style="width: 280px">
-        
+
         <header>Task<span class="lesson-checkmark"></span></header>
         <h3>Click the button to navigate back to the task page</h3>
     </div>
@@ -637,7 +630,6 @@ data-conditions='[
     <div data-template="popup">
         <style>.lesson-item-popup {width: 600px !important;}</style>
         <video src="lesson-05_05-select details page.mp4"></video>
-        <p>Click the button to navigate back to the task page</p>
     </div>
 </div>
 <!-- # -->
@@ -655,8 +647,9 @@ data-conditions='[
         <!--<img src="tutorial_card.png" style="cursor: pointer;" onclick="window.open('https://www.youtube.com/watch?v=TNnn0Gzj-H4&list=PL2eC2vS4uVoMbujQ5CiNtNuP7s7-UwNn-')"> -->
         <h2>Congratulations!</h2>
         <p>You've completed fifth tutorial, we hope you got the gist of it!</p>
-        <p>Feel free to try navigating back and forth too see the details page change content from each card.</p>
-        <p>In the next tutorial we will learn how to create a form page to let the user create new Task items.</p>
+        <p>Feel free to navigate back and forth too the details of each card if you have nothing better to do.</p>
+        <p>Otherwise, it seems about time to start building your own app!</p>
+        <!--<p>In the next tutorial we will learn how to create a form page to let the user create new Task items.</p>-->
         <p>Happy Noodling!</p>
         <!--<button style="width: 150px" onclick="window.open('https://www.youtube.com/watch?v=TNnn0Gzj-H4&list=PL2eC2vS4uVoMbujQ5CiNtNuP7s7-UwNn-')">WATCH TUTORIAL</button>-->
         <button style="width: 150px" data-click="exitEditor">EXIT LESSON</button>

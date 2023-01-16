@@ -17,7 +17,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
 
 <div className="ndl-image-with-background l">
     <img src={useBaseUrl("/library/modules/qr-scanner/guides/camera-feed/qr-camera-feed.png")} className="ndl-image large"></img>
-    <ImportButton zip="qr-camera-feed.zip" name="Camera QR Scanner" thumb="qr_noodlnet.png"/>
+    <ImportButton zip="/library/modules/qr-scanner/guides/camera-feed/qr-camera-feed.zip" name="Camera QR Scanner" thumb="/library/modules/qr-scanner/qr_noodlnet.png"/>
 </div>
 
 It is also possible to connect the <span className="ndl-data">Scan Result</span> directly to a **Text** node, but by doing it the way above we ensure that the data in the **Text** node does not disappear after the QR Code is out of view again.
