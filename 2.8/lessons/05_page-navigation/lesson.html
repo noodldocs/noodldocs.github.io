@@ -2,8 +2,8 @@
 <div data-template="popup"> 
     <video src="lesson-05_00-intro.mp4"></video>
     <h2>Page Navigation</h2>
-    <p>Welcome back! In this fifth lesson we will learn how to work with page navigation and how to pass data between pages.</p>
-    <p>In this tutorial we will make our cards navigate to a dedicated details page when we click on one of them.</p>
+    <p>Welcome back! In this fifth lesson you will learn how to work with page navigation and how to pass data between pages.</p>
+    <p>Last time you built a UI with clickable <i>Card Item</i>s. Let's make them navigate to a dedicated details page.</p>
 </div>
 <!-- # -->
 
@@ -17,11 +17,11 @@
     <div data-template="popup">
         <video src="lesson-05_01-keylements.mp4"></video>
         <h2>Key elements of a navigation system</h2>
-        <p>All Noodl projects start with a simple navigation system in place. We have already learned how to navigate between existing pages, but let's take step back and look at the three key elements for working with navigation in Noodl:</p>
+        <p>All Noodl projects start with a simple navigation system in place. In the previous lessons we briefly touched on some basic navigation between existing pages. Let's dive deeper, take a step back and look at the three key elements for working with navigation in Noodl:</p>
         <ol>
-        <li><p>Multiple <b>Page Components</b> that each contains a page of an application. We already have a Task Page and a Start Page.</p></li>
-        <li><p>A <b>Page Router </b> node, that works as a container that controls which Page component to show. This node is often placed in the App component.</p></li>
-        <li><p>A <b>Navigate</b> node that lets you navigate from one page to another.</p></li>
+            <li><p>Multiple <b>page components</b> that each contain a page of you app. In this project you already have a <i>Task Page</i> and a <i>Start Page</i>.</p></li>
+            <li><p>A <b>Page Router</b> node, that works as a container that controls which page component to show. This node is often placed in the <i>App</i> component.</p></li>
+            <li><p>A <b>Navigate</b> node that lets you navigate from one page to another.</p></li>
         </ol>
     </div>
 </div>
@@ -37,9 +37,9 @@
     <div data-template="popup">
         <video src="lesson-05_01-keylements.mp4"></video>
         <h2>Page Router node</h2>
-        <p>The Page Router node is a visual node that acts as a container for pages. Any page you navigate to will be rendered inside the Page Router and fill out the space available.</p>
-        <p>Navigation menu and footer often live next to the Page Router in the Node Graph so they don't need to be inserted in every page.</p>
-        <p>If we select the Page Router we can see all the Pages that are part of it, and we can also set which page we want to act as the start page.</p>
+        <p>The <strong>Page Router</strong> node is a visual node that acts as a container for pages. Any page you navigate to will be rendered inside the Page Router and fill out all the space available.</p>
+        <p>In a node graph the Page Router usually lives in between a <i>header</i> and a <i>footer</i> component. This way the header and footer don't need to be inserted (and rerendered) in every page.</p>
+        <p>If we select the Page Router we can see all the pages that are part of it, and we can also set which page we want to act as the start page.</p>
     </div>
 </div>
 <!-- # -->
@@ -54,8 +54,8 @@
     <div data-template="popup">
         <video src="lesson-05_04-creating pages.mp4"></video>
         <h2>Creating pages</h2>
-        <p>When we add a new Page component it automatically gets added to the Page Router. A quick way to add a new page is by clicking the "+" icon in the Component side panel and pick Page component.</p> 
-        <p>Click "Next" to start creating a new page.</p>
+        <p>When we add a new page component it automatically gets added to the Page Router. A quick way to add a new page is by <strong>clicking</strong> the <i>plus</i> icon in the Component Panel and pick <i>page component</i>.</p> 
+        <p>It's about time you try this for yourself!</p>
     </div>
 </div>
 <!-- # -->
@@ -75,11 +75,11 @@
 >
     <div data-template="item" style="width: 350px">
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Create a new page called <i>Details Page</i>.<br><i>Note: Page names are case sensitive</i></h3>
+        <h3>Create a new page called <i>Details Page</i></h3>
     </div>
     <div data-template="popup">
         <video src="lesson-05_04-creating pages.mp4"></video>
-        <p>Create a new page called <i>Details Page</i>.<br><i>Note: Page names are case sensitive</i></p>
+        <p>Open the Component Panel, <strong>click</strong> the <i>plus</i> icon and pick <i>page component</i>. Page names are case sensitive, so make sure to call it <strong><i>Details Page</i></strong>.></p>
     </div>
 </div>
 <!-- # -->
@@ -95,13 +95,13 @@
     <div data-template="item" style="width: 280px">
         
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Select the /details-page path in the path dropdown</h3>
+        <h3>Select the <strong><i>/details-page</i></strong> path in the Path Dropdown</h3>
     </div>
 
     <div data-template="popup">
         <style>.lesson-item-popup {width: 600px !important;}</style>
         <video src="lesson-05_05-select details page.mp4"></video>
-        <p>Select the /details-page path in the path dropdown</p>
+        <p>You can find the Path Dropdown in the Topbar</p>
     </div>
 </div>
 <!-- # -->
@@ -451,7 +451,7 @@ data-conditions='[
 >
     <div data-template="item" style="width: 500px">
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Connect the Background Color parameter of the Object node, to the background color input of the <B>Hero section</B> group</h3>
+        <h3>Connect the Background Color property of the Object node, to the background color input of the <B>Hero section</B> group</h3>
     </div>
     <div data-template="popup">
         <style>.lesson-item-popup {width: 600px !important;}</style>
@@ -474,7 +474,7 @@ data-conditions='[
 >
     <div data-template="item" style="width: 400px">
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Connect the Image parameter of the Object node, to the source input of the Image node</h3>
+        <h3>Connect the Image property of the Object node, to the source input of the Image node</h3>
     </div>
     <div data-template="popup">
         <style>.lesson-item-popup {width: 600px !important;}</style>
@@ -497,7 +497,7 @@ data-conditions='[
 >
     <div data-template="item" style="width: 400px">
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Connect the Title parameter of the Object node, to the text input of the Card Title text node</h3>
+        <h3>Connect the Title property of the Object node, to the text property of the Title text node</h3>
     </div>
     <div data-template="popup">
         <style>.lesson-item-popup {width: 600px !important;}</style>
@@ -520,7 +520,7 @@ data-conditions='[
 >
     <div data-template="item" style="width: 400px">
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Connect the <i>Category</i> parameter of the Object node, to the text input of the Category text node</h3>
+        <h3>Connect the <i>Category</i> property of the Object node, to the text property of the Category text node </h3>
     </div>
     <div data-template="popup">
         <style>.lesson-item-popup {width: 600px !important;}</style>
@@ -543,7 +543,7 @@ data-conditions='[
 >
     <div data-template="item" style="width: 400px">
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Connect the Date parameter of the Object node to the text input of the Calender text node</h3>
+        <h3>Connect the Date parameter of the Object node to the text property of the Calender text node</h3>
     </div>
     <div data-template="popup">
         <style>.lesson-item-popup {width: 600px !important;}</style>
@@ -637,7 +637,7 @@ data-conditions='[
     <div data-template="popup">
         <style>.lesson-item-popup {width: 600px !important;}</style>
         <video src="lesson-05_05-select details page.mp4"></video>
-        <p>Select the /details-page path in the path dropdown</p>
+        <p>Click the button to navigate back to the task page</p>
     </div>
 </div>
 <!-- # -->

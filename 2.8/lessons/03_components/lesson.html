@@ -6,7 +6,7 @@
     This third lesson will be all about components, and why they might be the most powerful tool in you Noodl toolbox.
   </p>
   <p>
-    In the last lesson you created a nice <i>Card Item</i>, let's see how we can make it into a reusable Component.
+    In the last lesson you created a nice card item, let's see how we can make it into a reusable Component.
   </p>
 </div>
 <!-- # -->
@@ -30,8 +30,8 @@
       This pattern has two main benefits:
     </p>
     <p>
-      1) They can be reused across your app, so you dont have to rebuild the
-      same UI or logic in multiple places. This is extra important when we want
+      1) They can be reused across your app, so you don't have to rebuild the
+      same UI or logic in multiple places. This is important when we want
       to make our app data driven.
     </p>
     <p>
@@ -43,7 +43,7 @@
       and from here you can also create new ones.
     </p>
     <p>
-      Noodl has four types of components: Visual, Logic, Page and Cloud Function
+      Noodl has four types: Visual, Logic, Page and Cloud Function
       components. You will be using visual components in this lesson.
     </p>
   </div>
@@ -197,7 +197,7 @@
         }
     ]'
 >
-  <div data-template="item" style="width: 350px">
+  <div data-template="item" style="width: 250px">
     <header>
       Task
       <span class="lesson-checkmark"></span>
@@ -230,13 +230,13 @@
         }
     ]'
 >
-  <div data-template="item" style="width: 490px">
+  <div data-template="item" style="width: 540px">
     <header>
       Task
       <span class="lesson-checkmark"></span>
     </header>
     <h3>
-      Go to the <i>Task Page</i> and use <strong>cut</strong> the <i>Card Item</i> Group node. Then <strong>paste</strong> it into your newly created <i>Card Item</i> component.
+      Go to the <i>Task Page</i> and use <strong>cut</strong> (Crtl/Cmd + X) the <i>Card Item</i> Group node. Then <strong>paste</strong> it into your newly created <i>Card Item</i> component.
     </h3>
   </div>
   <div data-template="popup">
@@ -394,8 +394,8 @@
     <p>
       When you changed the bottom margin on the <i>Card Item</i> component that change
       applied to all instances of <i>Card Item</i> across your app. This is great for reusability
-      purposes. However, some property overwrites we want to be unique for each specific
-      instance, like the displayed text, the image and the background color.
+      purposes. However, sometimes we want certain properties to be unique for each specific
+      instance, like the displayed text, the image and the background color in our case.
     </p>
     <p>
       You can achieve this by using the <strong>Component Input</strong> node. This node allows
@@ -403,7 +403,7 @@
       properties that you want to overwrite.
     </p>
     <p>
-      This allows you to create your own Property Panels for your components: When a <strong>Component Input</strong> port is connected it will show up as an <strong>input property</strong> on the the <i>Card Item</i> component node. It will allow you to overwrite the components default values.
+      This allows you to create your own Property Panels for your components: When a <strong>Component Input</strong> port is connected it will show up as an <strong>input property</strong> on the <i>Card Item</i> component node. It will allow you to overwrite the components default values.
     </p>
   </div>
 </div>
@@ -496,7 +496,7 @@
     </header>
     <h3>
       Connect the <i>Background Color</i> port of the <strong>Component Inputs</strong> node to the
-      <strong>background color</strong> input of the <i>Card</i> group
+      <strong>background color</strong> input of the <i>Card Item</i> group
     </h3>
   </div>
   <div data-template="popup">
@@ -684,7 +684,7 @@
       <span class="lesson-checkmark"></span>
     </header>
     <h3>
-      Go to the <i>Task Page</i> and change the <i>Image</i> on the second Card Item component
+      Go to the <i>Task Page</i> and change the <i>Image</i>on the second <strong>Card Item </strong>component
       to <i><strong>study.png</strong></i>
     </h3>
   </div>
@@ -711,7 +711,7 @@
         }
     ]'
 >
-  <div data-template="item" style="width: 380px">
+  <div data-template="item" style="width: 340px">
     <header>
       Task
       <span class="lesson-checkmark"></span>
@@ -745,7 +745,7 @@
         }
     ]'
 >
-  <div data-template="item" style="width: 380px">
+  <div data-template="item" style="width: 300px">
     <header>
       Task
       <span class="lesson-checkmark"></span>

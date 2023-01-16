@@ -1,5 +1,5 @@
 <!-- A step with just a popup -->
-<div data-template="popup"> 
+<div data-template="popup">
     <video src="lesson-04_19_inspect.mp4"></video>
     <h2>Data driven components</h2>
     <p>Welcome back! In this fourth lesson we will learn how to use a data source to render a list of UI components. </p>
@@ -19,8 +19,8 @@
         <video src="lesson-04_04-staticarray.mp4"></video>
         <h2>Static data</h2>
         <p>There are many ways that we can get datasets into our project. An easy way is to use the <strong>Static Array</strong> node.</p>
-        <p>This node acts as a text file and supports two standard data formats, JSON and CSV. The node in this lesson comes with a small dataset following the <strong>JSON format.</strong> 
-        <p>The dataset contains data for four Card component, with data for titles, category and date for each card.</p>
+        <p>This node acts as a text file and supports two standard data formats, JSON and CSV. The node in this lesson comes with a small dataset following the <strong>JSON format</strong>.
+        <p>The dataset holds all the data for the <i>Card Item</i>s we want to render. It contains a list of titles, categories and dates for each card.</p>
     </div>
 </div>
 <!-- # -->
@@ -29,16 +29,32 @@
 <div>
     <div data-template="item">
         <header>&nbsp;</header>
-        <h2>Arrays and Objects</h2>
+        <h2>Data types</h2>
+    </div>
+    <div data-template="popup">
+        <style>.lesson-item-popup {width: 600px !important;}</style>
+        <h2>Data types</h2>
+        <p>Noodl is built on top of JavaScript, a language with five primary data types: <strong>number</strong>, <strong>string</strong>, <strong>boolean</strong>, <strong>array</strong> and <strong>object</strong>.</p>
+        <p>The editor has nodes designed to store all the different data types, but the most common way of handling data in Noodl is by using objects in arrays.</p>
+        <p>Let's have a closer look at this pattern.</p>
+    </div>
+</div>
+<!-- # -->
+
+<!-- Ask user to look at the static data -->
+<div>
+    <div data-template="item">
+        <header>&nbsp;</header>
+        <h2>Data in Noodl</h2>
     </div>
     <div data-template="popup">
         <style>.lesson-item-popup {width: 600px !important;}</style>
         <video src="lesson-04_04-staticarray.mp4"></video>
-        <h2>Arrays and Objects</h2>
-        <p>Data in Noodl is typically structured in objects and arrays. The same goes for the content inside the static Array node.</p>
-        <p>The structure we have in our Static Array Node is really a way to define an array with objects and the properties of each object.</p>
-        <p>Each object automatically gets a unique id attached to it which means that we can later grab the data from the object, when we have it's id.</b> 
-        <p>This is one of the more tricky concepts in Noodl, but let's go forward so we can experience how it works in practice.</b> 
+        <h2>Objects in arrays</h2>
+        <p>There are multiple ways of storing data in Noodl, but for our usecase the <strong>Static Array</strong> node is perfect, since it's the simplest one.</p>
+        <p>If you look at the structure in the Static Array node you can see that it defines an <strong>array</strong> that contains multiple <strong>objects</strong>. Each object has a set of <strong>properties</strong>.</p>
+        <p>In Noodl, every object automatically gets a unique id attached to it. This means that we can look up a specific object (using its id) and get its data.</b>
+        <p>This is one of the more tricky concepts in Noodl, but let's go forward so we can experience how it works in practice.</b>
     </div>
 </div>
 <!-- # -->
@@ -54,9 +70,9 @@
         <style>.lesson-item-popup {width: 600px !important;}</style>
         <video src="lesson-04_08-repeater.mp4"></video>
         <h2>Repeater node</h2>
-        <p>The Repeater node is used to generate visual components based on objects in an array. It takes a visual component as a template that then is rendered where the Repeater node is placed in the Dom tree.</p>
-        <p>The repeater needs an array to generate from, and for each object in the array, a component instance is generated and rendered.</p>
-        <p>Let's first remove our existing Card components from the dom tree, add a Repeater node, and connect it up with our static array.</p>
+        <p>The <strong>Repeater</strong> node is used to generate visual components based on an array of objects. It takes a <strong>visual component</strong> as a template and renders it in place of the Repeater node in the Dom tree.</p>
+        <p>One component instance is generated and rendered for every onject in the array.</p>
+        <p>Let's first remove the existing <i>Card Item</i> components from the DOM tree, add a Repeater node, and connect it up with our Static Array.</p>
     </div>
 </div>
 <!-- # -->
@@ -70,16 +86,15 @@
     ]'
 >
     <div data-template="item" style="width: 280px">
-        
+
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Select the /task-page path in the path dropdown</h3>
+        <h3>Select the <strong><i>/task-page</i></strong> path in the Path Dropdown</h3>
     </div>
 
     <div data-template="popup">
         <style>.lesson-item-popup {width: 600px !important;}</style>
         <video src="lesson-04_02-selecttaskpage.mp4"></video>
-        <p>In this lesson we will be working on the page called "Task Page" so select that in the path dropdown</p>
-        <p>Select the /task-page path in the path dropdown</p>
+        <p>In this lesson you will be working on the page called <i>Task Page</i>. Navigate to it using the Path Dropdown in the Topbar.</p>
     </div>
 </div>
 <!-- # -->
@@ -103,16 +118,15 @@
     ]'
 >
     <div data-template="item" style="width: 280px">
-        
+
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>In the Task Page, delete the three Card Item components</h3>
+        <h3>In the <i>Task Page</i>, delete the three <i>Card Item</i> components</h3>
     </div>
 
     <div data-template="popup">
         <style>.lesson-item-popup {width: 600px !important;}</style>
         <video src="lesson-04_07-delete components.mp4"></video>
-        <p>In this lesson we will be working on the page called "Task Page" so select that in the path dropdown</p>
-        <p>Select the /task-page path in the path dropdown</p>
+        <p>Select the <i>Card Item</i> components and <strong>press the backspace key</strong> to delete them.</p>
     </div>
 </div>
 <!-- # -->
@@ -128,16 +142,14 @@
     ]'
 >
     <div data-template="item" style="width: 280px">
-        
+
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Add a Repeater node as a child to the Content Container Group</h3>
+        <h3>Add a <strong>Repeater</strong> node as a child to the <i>Content Container</i> Group</h3>
     </div>
 
     <div data-template="popup">
         <style>.lesson-item-popup {width: 600px !important;}</style>
         <video src="lesson-04_08-addrepeater.mp4"></video>
-        <p>In this lesson we will be working on the page called "Task Page" so select that in the path dropdown</p>
-        <p>Select the /task-page path in the path dropdown</p>
     </div>
 </div>
 <!-- # -->
@@ -155,16 +167,14 @@
     ]'
 >
     <div data-template="item" style="width: 320px">
-        
+
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Set the Repeater node's Template property to use the Card Item</h3>
+        <h3>Set the Repeater node's <strong>template</strong> property to use the <strong><i>Card Item</i></strong></h3>
     </div>
 
     <div data-template="popup">
         <style>.lesson-item-popup {width: 600px !important;}</style>
         <video src="lesson-04_09-cartitemtemplate.mp4"></video>
-        <p>In this lesson we will be working on the page called "Task Page" so select that in the path dropdown</p>
-        <p>Select the /task-page path in the path dropdown</p>
     </div>
 </div>
 <!-- # -->
@@ -173,7 +183,7 @@
 <!-- A step with an item in the bottom bar. It has tasks, so popup will only be shown when user clicks the item -->
 <div
     data-conditions='[
-        {   
+        {
             "from":"/Task Page:%Static Data",
             "to":"/Task Page:%Page:%Group:#Content Container:%For Each",
             "hasconnection":"items,items"
@@ -181,16 +191,14 @@
     ]'
 >
     <div data-template="item" style="width: 280px">
-        
+
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Connect the Static array's Items output to the Repeater's Item input</h3>
+        <h3>Connect the Static Array's <strong>items</strong> output to the Repeater's <strong>item</strong> input</h3>
     </div>
 
     <div data-template="popup">
         <style>.lesson-item-popup {width: 600px !important;}</style>
         <video src="lesson-04_09-connectarray.mp4"></video>
-        <p>In this lesson we will be working on the page called "Task Page" so select that in the path dropdown</p>
-        <p>Select the /task-page path in the path dropdown</p>
     </div>
 </div>
 <!-- # -->
@@ -206,9 +214,9 @@
         <style>.lesson-item-popup {width: 600px !important;}</style>
         <video src="lesson-04_10_mappingdata.mp4"></video>
         <h2>Mapping data</h2>
-        <p>We now got 4 cards in our UI, each with unique data. Let's just walk through what happend here.</p>
-        <p>We already created our Card component in the last lesson, where we created ports on a Component Input node and hooked them up to the properties we wanted to overwrite.</p>
-        <p>The Component Input node, can also be used to extract the data from the the objects that the Repeater node is iterating through as it generates the visual components.</p>
+        <p>You now have 4 cards in your UI, each with unique data. Let's walk through what happened here.</p>
+        <p>You already created the <i>Card Item</i> component in the last lesson. There you also created ports on the <i>Card Item</i> using a <strong>Component Inputs</strong> node. Those ports where hooked up to the properties we wanted to overwrite.</p>
+        <p>If the port names on the Component Inputs node matches the object keys in the Repeaters array, that daya will automatically be passed to the rendered component.</p>
     </div>
 </div>
 <!-- # -->
@@ -225,9 +233,7 @@
         <style>.lesson-item-popup {width: 600px !important;}</style>
         <video src="lesson-04_13_connectclicked.mp4"></video>
         <h2>Making clickable cards</h2>
-        <p>Now we have built the basic system for showing cards (or any other type of list) from data. But to take this a step further we can also implement a way to make each card clickable and get its associated object so we can use that data somewhere else.</p>
-        <p>To do this we first need to add a Component Outputs node into a our Card component, so we can get data out of the card as well.</p>
-        <p></p>
+        <p>You have now built the basic system for showing cards (or any other type of list) from data. But to take this a step further you can also implement a way to make each card clickable and get its associated object so we can use that data somewhere else.</p>
     </div>
 </div>
 <!-- # -->
@@ -243,9 +249,9 @@
         <style>.lesson-item-popup {width: 600px !important;}</style>
         <video src="lesson-04_12_componentoutput.mp4"></video>
         <h2>Component Outputs node</h2>
-        <p>Just as we can use a Component Inputs node to get data and signals into a component, we can use a Component Outputs node to get data and signals out of a component.</p>
-        <p>In our case we want to make the Card component clickable, so we can receive a signal from the card when its clicked.</p>
-        <p>Lets start by creating a Component Outputs node in our Card component</p>
+        <p>Just as the Component Inputs node can be used to get data and signals into a component, you can use a <strong>Component Outputs</strong> node to send data and signals out from a component.</p>
+        <p>In this case we want to make the <i>Card Item</i> clickable, so that we can receive a signal from the card when it's clicked.</p>
+        <p>Let's start by creating a <strong>Component Outputs</strong> node in our <i>Card Item</i> component</p>
     </div>
 </div>
 <!-- # -->
@@ -261,15 +267,15 @@
     ]'
 >
     <div data-template="item" style="width: 340px">
-        
+
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>In the Card Item component, open the Node picker and place a Component Outputs node</h3>
+        <h3>In the <i>Card Item</i>, create a <strong>Component Outputs</strong> node</h3>
     </div>
 
     <div data-template="popup">
         <style>.lesson-item-popup {width: 600px !important;}</style>
         <video src="lesson-04_12_componentoutput.mp4"></video>
-        <p>In the Card component, open the Node picker and place a Component Outputs node</p>
+        <p>Open the <i>Card Item</i>component, open the Node Picker and place a Component Outputs node anywhere in the node graph.</p>
     </div>
 </div>
 <!-- # -->
@@ -285,15 +291,14 @@
     ]'
 >
     <div data-template="item" style="width: 340px">
-        
+
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Create a port called "Clicked"</h3>
+        <h3>Create a port called <strong><i>Clicked</i></strong></h3>
     </div>
 
     <div data-template="popup">
         <style>.lesson-item-popup {width: 600px !important;}</style>
         <video src="lesson-04_13_clicked.mp4"></video>
-        <p>Create a port called "Clicked"</p>
     </div>
 </div>
 <!-- # -->
@@ -310,15 +315,14 @@
     ]'
 >
     <div data-template="item" style="width: 400px">
-        
+
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Connect the click event from the group called Card to the new clicked port on the Component Output node</h3>
+        <h3>Connect the <strong>click</strong> event from the <i>Card</i> group to the new <strong>clicked</strong> port on the Component Outputs node</h3>
     </div>
 
     <div data-template="popup">
         <style>.lesson-item-popup {width: 600px !important;}</style>
         <video src="lesson-04_13_connectclicked.mp4"></video>
-        <p>Connect the click event from the group called Card to the new clicked port on the Component Output node</p>
     </div>
 </div>
 <!-- # -->
@@ -334,9 +338,9 @@
         <style>.lesson-item-popup {width: 600px !important;}</style>
         <video src="lesson-04_14_outputs.mp4"></video>
         <h2>Repeaters and Component Outputs</h2>
-        <p>If we just had a single Card component we would now be able to get the click event in the node graph where the Card component is placed.</p>
-        <p>But as we are using a Repeater node to generate four Card components, we need a way to know which of the four we click.</p>
-        <p>Earlier in this lesson we talked about how each object in the array has an unique Id. This now becomes handy as we can make the Repeater node give us the object id of the card instance we click.</p>
+        <p>If you just had a single Card component you would now be able to get the click event in the node graph where the <i>Card Item</i> component is placed.</p>
+        <p>Since the <i>Card Item</i>s are generated by the Repeater node we cant access that port directly, so you need a way to know which of the four cards you click.</p>
+        <p>Earlier in this lesson we talked about how each object in the array has a unique id. This is really handy, as you can make the Repeater node give us the object id of the card instance we click.</p>
     </div>
 </div>
 <!-- # -->
@@ -351,9 +355,9 @@
         <style>.lesson-item-popup {width: 600px !important;}</style>
         <video src="lesson-04_15_objects.mp4"></video>
         <h2>Object node</h2>
-        <p>The Object node gives us a way to access an object and its data anywhere in a project if we give it the unique id of an object.</p>
-        <p>Objects are in general a good way to store data in one node graph and access it again in another node graph.</p>
-        <p>We can use the Object node in combination with the Repeater node to receive the object data from a clicked Card.</p>
+        <p>The <strong>Object</strong> node gives you a way to access an object and its data anywhere in a project. You only need to provide it with an object id.</p>
+        <p>Objects are generally a good way to share data between different node graphs.</p>
+        <p>Let's look at how the the Object and Repeater nodes can be used together to get the object data from a clicked <i>Card Item</i>.</p>
     </div>
 </div>
 <!-- # -->
@@ -363,19 +367,19 @@
 <div
     data-conditions='[
         {
-            "path":"/Task Page:%Model2", 
+            "path":"/Task Page:%Model2",
             "exists":true
         }
     ]'
 >
     <div data-template="item" style="width: 350px">
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>In the Task Page, place an Object node adjacent to the Repeater node.</h3>
+        <h3>In the <i>Task Page</i> component, place an <strong>Object</strong> node adjacent to the <strong>Repeater</strong> node.</h3>
     </div>
     <div data-template="popup">
         <style>.lesson-item-popup {width: 600px !important;}</style>
         <video src="lesson-04_15_objects.mp4"></video>
-        <p>In the Task Page, place an Object node adjacent to the Repeater node.</p>
+        <p>Navigate to the <i>Task Page</i> component using the Component Panel in the Sidebar. Then open the Node Picker and create a new Object node.</p>
     </div>
 </div>
 <!-- # -->
@@ -392,15 +396,14 @@
     ]'
 >
     <div data-template="item" style="width: 400px">
-        
+
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Connect the item id output from the Repeater node, to the Object Id Input of the Object node</h3>
+        <h3>Connect the <strong>item id</strong> output from the Repeater node, to the <strong>object id</strong> input on the Object node</h3>
     </div>
 
     <div data-template="popup">
         <style>.lesson-item-popup {width: 600px !important;}</style>
         <video src="lesson-04_17_connectid.mp4"></video>
-        <p>Connect the item id output from the Repeater node, to the Object Id Input of the Object node</p>
     </div>
 </div>
 <!-- # -->
@@ -418,15 +421,14 @@
     ]'
 >
     <div data-template="item" style="width: 400px">
-        
+
         <header>Task<span class="lesson-checkmark"></span></header>
-        <h3>Connect the Clicked signal from the Repeater node, to the Fetch input on the Object node</h3>
+        <h3>Connect the <strong>clicked</strong> signal from the Repeater node, to the <strong>fetch</strong> input on the Object node</h3>
     </div>
 
     <div data-template="popup">
         <style>.lesson-item-popup {width: 600px !important;}</style>
         <video src="lesson-04_18_clickfetch.mp4"></video>
-        <p>Connect the item id output from the Repeater node, to the Object Id Input of the Object node</p>
     </div>
 </div>
 <!-- # -->
@@ -442,9 +444,8 @@
         <style>.lesson-item-popup {width: 600px !important;}</style>
         <video src="lesson-04_19_inspect.mp4"></video>
         <h2>Click the cards</h2>
-        <p>Try hovering over the object and pin the data popup so we can inspect the change when we click a card.</p>
-        <p>As you can see we now get the object id, and all the associated data from the specific card we click. This is a very powerful pattern that is used to almost any app.</p>
-        <p>In the next lesson we will try to take this a step further, and bring he data into a new page.</p>
+        <p>Try <strong>hovering</strong> over the Object and pin the Data Popup so you can inspect the change when the <i>Card Item</i>.</p>
+        <p>As you can see you now get the object id, and all the associated data from the specific card that is clicked. This is a very powerful pattern that is used in almost every app.</p>
     </div>
 </div>
 <!-- # -->
@@ -460,8 +461,9 @@
         <style>.lesson-item-popup {width: 600px !important;}</style>
         <!--<img src="tutorial_card.png" style="cursor: pointer;" onclick="window.open('https://www.youtube.com/watch?v=TNnn0Gzj-H4&list=PL2eC2vS4uVoMbujQ5CiNtNuP7s7-UwNn-')"> -->
         <h2>Congratulations!</h2>
-        <p>You've completed forth tutorial, we hope you got the gist of it!</p>
-        <p>In the next tutorial we will learn how to use the click event on our card to navigate to a detailed page with dynamic data for each card.</p>
+        <p>You've completed fourth tutorial! Great job!</p>
+        <p>If you are new to programming, you might be interested in reading a little more about the different data types in JavaScript.</p>
+        <p>In the next tutorial we will learn how to use the click event on our card to navigate to a detailed page with dynamic data from each card.</p>
         <p>Happy Noodling!</p>
         <!--<button style="width: 150px" onclick="window.open('https://www.youtube.com/watch?v=TNnn0Gzj-H4&list=PL2eC2vS4uVoMbujQ5CiNtNuP7s7-UwNn-')">WATCH TUTORIAL</button>-->
         <button style="width: 150px" data-click="exitEditor">EXIT LESSON</button>
