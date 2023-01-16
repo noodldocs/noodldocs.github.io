@@ -11,7 +11,7 @@ const NodeType = {
 const nodeData = [
   {
     label: 'UI Elements',
-    description: `These nodes make up all of the visuals of your app. Put them in your node tree whenever you want to render an element on the screen. These nodes also support <a href="/2.8/docs/guides/user-interfaces/style-variants">Variants</a> and <a href="/2.8/docs/guides/user-interfaces/visual-states">States</a>.`,
+    description: `These nodes make up all of the visuals of your app. Put them in your node tree whenever you want to render an element on the screen. These nodes also support <a href="/2.7/docs/guides/user-interfaces/style-variants">Variants</a> and <a href="/2.7/docs/guides/user-interfaces/visual-states">States</a>.`,
     items: [
       {
         label: 'Basic Elements',
@@ -575,7 +575,7 @@ const nodeData = [
             label: 'Set User Properties',
             id: 'data/user/set-user-properties',
             nodeType: NodeType.Data,
-          },
+          }
         ],
       },
 
@@ -627,7 +627,7 @@ const nodeData = [
         id: 'cloud-functions/response',
         nodeType: NodeType.Data,
       },
-    ],
+    ]
   },
 ];
 
