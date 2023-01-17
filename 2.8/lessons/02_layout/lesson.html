@@ -4,14 +4,14 @@
   <h2>Welcome back!</h2>
   <p>In this second lesson we will look closer at building layouts using the visual nodes.
   </p>
-  <p>We already have a simple page but not much content. At the end of this lesson you will have built a card to display items in your task manager app.
+  <p>You already have a simple page but not much content. At the end of this lesson you will have built a card to display items in your task manager app.
   </p>
 </div>
 <!-- # -->
 
 <!-- A step with an item in the bottom bar. No tasks, so popup will be shown automatically -->
 <div>
-  <div data-template="item">
+  <div data-template="item" style="width: 260px">
     <header>&nbsp;</header>
     <h2>Select page to preview</h2>
   </div>
@@ -145,7 +145,7 @@
       Task
       <span class="lesson-checkmark"></span>
     </header>
-    <h3>Place a <strong>Group</strong> node as a child to the <i>Content Container</i> Group</h3>
+    <h3>Place a <strong>Group</strong> node as a child to the <strong>Content Container</strong> Group</h3>
   </div>
 
   <div data-template="popup">
@@ -175,7 +175,7 @@
       Task
       <span class="lesson-checkmark"></span>
     </header>
-    <h3>Rename the Group to <i>Card Item</i></h3>
+    <h3>Rename the Group to <strong><i>Card Item</i></strong></h3>
   </div>
 
   <div data-template="popup">
@@ -202,12 +202,12 @@
         }
     ]'
 >
-  <div data-template="item" style="width: 300px">
+  <div data-template="item" style="width: 320px">
     <header>
       Task
       <span class="lesson-checkmark"></span>
     </header>
-    <h3>Set the background color of the new Group to the color style <strong><i>Primary Subtle</i></strong></h3>
+    <h3>Set the <strong>background color</strong> of the new Group to the color style <strong><i>Primary Subtle</i></strong></h3>
   </div>
 
   <div data-template="popup">
@@ -217,6 +217,7 @@
       }
     </style>
     <video src="lesson-02_07_change-bgcolor.mp4"></video>
+    <p>You open the Color Style list by clicking the text in the <strong>background color</strong> input.</p>
   </div>
 </div>
 
@@ -276,7 +277,7 @@
       <span class="lesson-checkmark"></span>
     </header>
     <h3>
-      Select the <i>Card Item</i> group and set its <strong>dimension mode</strong> to
+      On the <strong>Card Item</strong> Group, set the <strong>dimension mode</strong> to
       <strong><i>Explicit width & content height</i></strong>, and set all <strong>paddings</strong>
       to <strong><i>24px</i></strong>
     </h3>
@@ -304,7 +305,7 @@
       Task
       <span class="lesson-checkmark"></span>
     </header>
-    <h3>Set the Group's corner radius to <strong><i>4px</i></strong></h3>
+    <h3>On the <strong>Card Item</strong> Group, set the <strong>corner radius</strong> to <strong><i>4px</i></strong></h3>
   </div>
 
   <div data-template="popup">
@@ -327,7 +328,7 @@
 <div>
   <div data-template="item">
     <header>&nbsp;</header>
-    <h2>Images and Media</h2>
+    <h2>Images and media</h2>
   </div>
   <div data-template="popup">
     <style>
@@ -339,7 +340,7 @@
     <h2>Images and media</h2>
     <p>
       Noodl comes with different nodes for displaying images and video. They
-      have a <strong>Source</strong> property where you set the path to the file you want to show.
+      have a <strong>source</strong> property where you set the path to the file you want to show.
     </p>
     <p>
       Clicking the <strong>Source</strong> input will show all available images and videos that are uploaded to the
@@ -368,7 +369,7 @@
       <span class="lesson-checkmark"></span>
     </header>
     <h3>
-      Open the Node Picker and place an <strong>Image</strong> node as a child to the <i>Card Item</i> group.
+      Open the Node Picker and place an <strong>Image</strong> node as a child to the <strong>Card Item</strong> Group.
     </h3>
   </div>
 
@@ -416,7 +417,7 @@
     </style>
     <video src="lesson-02_13_setimagesrc.mp4"></video>
     <p>
-      Click the <strong>Source</strong> property to see a list of available images in the project.
+      Click the <strong>source</strong> property to see a list of available images in the project.
     </p>
   </div>
 </div>
@@ -624,7 +625,7 @@
       <span class="lesson-checkmark"></span>
     </header>
     <h3>
-      Rename the second Text node to <strong><i>Category</i></strong>, and the third Text node to <strong><i>Date</i></strong>
+      Rename the second <strong>Text</strong> node to <strong><i>Category</i></strong>, and the third Text node to <strong><i>Date</i></strong>
     </h3>
   </div>
 
@@ -679,7 +680,7 @@
       Task
       <span class="lesson-checkmark"></span>
     </header>
-    <h3>Select the <i>Card Item</i> Group node and set the <strong>layout direction</strong> to <strong><i>Horizontal</i></strong>
+    <h3>On the <strong>Card Item</strong> Group node, set the <strong>layout direction</strong> to <strong><i>Horizontal</i></strong>
     </h3>
   </div>
 
@@ -739,7 +740,7 @@
 <div>
   <div data-template="item">
     <header>&nbsp;</header>
-    <h2>Text and Color Styles</h2>
+    <h2>Text and color styles</h2>
   </div>
   <div data-template="popup">
     <style>
@@ -748,7 +749,7 @@
       }
     </style>
     <video src="lesson-02_20_textstyles.mp4"></video>
-    <h2>Text and Color Styles</h2>
+    <h2>Text and color Styles</h2>
     <p></p>
     <p>
       We can create styles for text and colors to quickly reference them and
@@ -781,7 +782,7 @@
       <span class="lesson-checkmark"></span>
     </header>
     <h3>
-      Select the <strong>Text</strong> node called <i>Card Title</i>. Set the <strong>text style</strong> property to <strong><i>Title Medium</i></strong>
+      On the <strong>Card Title</strong> Text node, set the <strong>text style</strong> property to <strong><i>Title Medium</i></strong>
     </h3>
   </div>
 

@@ -43,7 +43,7 @@
       and from here you can also create new ones.
     </p>
     <p>
-      Noodl has four types: Visual, Logic, Page and Cloud Function
+      Noodl has four types: <strong>visual</strong>, <strong>logic</strong>, <strong>page</strong> and <strong>cloud function</strong>
       components. You will be using visual components in this lesson.
     </p>
   </div>
@@ -112,7 +112,7 @@
       Task
       <span class="lesson-checkmark"></span>
     </header>
-    <h3>Select the <strong><i>/task-page path</i></strong> in the Path Dropdown</h3>
+    <h3>Select the <strong><i>/task-page</i></strong> path in the <strong>Path Dropdown</strong></h3>
   </div>
 
   <div data-template="popup">
@@ -145,7 +145,7 @@
       <span class="lesson-checkmark"></span>
     </header>
     <h3>
-      Create a new visual component called <i>Card Item</i>
+      Create a new visual component called <strong><i>Card Item</i></strong>
     </h3>
   </div>
   <div data-template="popup">
@@ -166,7 +166,7 @@
 <div>
   <div data-template="item">
     <header>&nbsp;</header>
-    <h2>New Components</h2>
+    <h2>New components</h2>
   </div>
   <div data-template="popup">
     <style>
@@ -182,7 +182,7 @@
     </p>
     <p>
       Components can only have one visual hierarchy, so you need to delete the
-      default <strong>Group</strong> before pasting in the card relates nodes from the <i>Task Page</i>.
+      default <strong>Group</strong> before pasting in the card related nodes from the <i>Task Page</i>.
     </p>
   </div>
 </div>
@@ -202,7 +202,7 @@
       Task
       <span class="lesson-checkmark"></span>
     </header>
-    <h3>Delete the default <strong>Group</strong> node in the new component.</h3>
+    <h3>Delete the default <strong>Group</strong> node in the new component</h3>
   </div>
   <div data-template="popup">
     <style>
@@ -236,7 +236,7 @@
       <span class="lesson-checkmark"></span>
     </header>
     <h3>
-      Go to the <i>Task Page</i> and use <strong>cut</strong> (Crtl/Cmd + X) the <i>Card Item</i> Group node. Then <strong>paste</strong> it into your newly created <i>Card Item</i> component.
+      Open the <i>Task Page</i> node graph and <strong>cut</strong> the <strong>Card Item</strong> Group node. Then <strong>paste</strong> it into your newly created <strong>Card Item</strong> component
     </h3>
   </div>
   <div data-template="popup">
@@ -255,7 +255,7 @@
 <div>
   <div data-template="item">
     <header>&nbsp;</header>
-    <h2>Using Components</h2>
+    <h2>Using components</h2>
   </div>
   <div data-template="popup">
     <style>
@@ -291,8 +291,8 @@
       <span class="lesson-checkmark"></span>
     </header>
     <h3>
-      Go to the <i>Task Page</i> and insert the new <i>Card Item</i> component as a child to
-      the Group called <strong><i>Content Container</i></strong>
+      Go to the <i>Task Page</i> node graph and insert the new <strong>Card Item</strong> component as a child to
+      the <strong>Content Container</strong> Group
     </h3>
   </div>
   <div data-template="popup">
@@ -324,13 +324,13 @@
         }
     ]'
 >
-  <div data-template="item" style="width: 360px">
+  <div data-template="item" style="width: 300px">
     <header>
       Task
       <span class="lesson-checkmark"></span>
     </header>
     <h3>
-      Repeat the previous task, so you have 3 <i>Card Item</i> components in total
+      Repeat the previous task, so you have 3 <strong>Card Item</strong> components in total
     </h3>
   </div>
   <div data-template="popup">
@@ -362,7 +362,7 @@
       <span class="lesson-checkmark"></span>
     </header>
     <h3>
-      In the <i>Card Item</i> component, set the <strong>bottom margin</strong> of the <i>Top</i> group to <i><strong>16px</strong></i>
+      In the <strong>Card Item</strong> component, set the <strong>bottom margin</strong> of the <strong>Card Item</strong> Group to <i><strong>16px</strong></i>
     </h3>
   </div>
   <div data-template="popup">
@@ -423,7 +423,7 @@
       Task
       <span class="lesson-checkmark"></span>
     </header>
-    <h3>Create a <strong>Component Inputs</strong> node inside the <i>Card Item</i></h3>
+    <h3>Create a <strong>Component Inputs</strong> node inside the <strong>Card Item</strong> node graph</h3>
   </div>
   <div data-template="popup">
     <style>
@@ -455,15 +455,11 @@
       <span class="lesson-checkmark"></span>
     </header>
     <h3>
-      Add the following five ports to the Component Input:
-      <strong><i>Image</i></strong>
-      ,
-      <strong><i>Background Color</i></strong>
-      ,
-      <strong><i>Title</i></strong>
-      ,
-      <strong><i>Category</i></strong>
-      ,
+      Add the following five ports to the Component Inputs:
+      <strong><i>Image</i></strong>,
+      <strong><i>Background Color</i></strong>,
+      <strong><i>Title</i></strong>,
+      <strong><i>Category</i></strong>,
       <strong><i>Date</i></strong>
     </h3>
   </div>
@@ -474,7 +470,7 @@
       }
     </style>
     <video src="lesson-03_11-creating inputs.mp4"></video>
-    <p></p>
+    <p>Remember that port names are case sensitive</p>
   </div>
 </div>
 <!-- # -->
@@ -494,10 +490,8 @@
       Task
       <span class="lesson-checkmark"></span>
     </header>
-    <h3>
-      Connect the <i>Background Color</i> port of the <strong>Component Inputs</strong> node to the
-      <strong>background color</strong> input of the <i>Card Item</i> group
-    </h3>
+
+    <h3>Connect the <strong>Component Inputs</strong> node to the <strong>Card Item</strong> Group node and send the <strong><i>background color</i></strong> output to the <strong><i>background color</i></strong> input</h3>
   </div>
   <div data-template="popup">
     <style>
@@ -506,7 +500,6 @@
       }
     </style>
     <video src="lesson-03_12-bgcolor.mp4"></video>
-    <p></p>
   </div>
 </div>
 <!-- # -->
@@ -526,10 +519,8 @@
       Task
       <span class="lesson-checkmark"></span>
     </header>
-    <h3>
-      Connect the <i>Image</i> port of the <strong>Component Inputs</strong> node to the <strong>source</strong> input of
-      the <strong>Image</strong> node
-    </h3>
+
+    <h3>Connect the <strong>Component Inputs</strong> node to the <strong>Image</strong> node and send the <strong><i>image</i></strong> output to the <strong><i>source</i></strong> input</h3>
   </div>
   <div data-template="popup">
     <style>
@@ -538,7 +529,6 @@
       }
     </style>
     <video src="lesson-03_12-image.mp4"></video>
-    <p></p>
   </div>
 </div>
 <!-- # -->
@@ -558,10 +548,8 @@
       Task
       <span class="lesson-checkmark"></span>
     </header>
-    <h3>
-      Connect the <i>Title</i> port of the <strong>Component Inputs</strong> node to the <strong>text</strong> input of
-      the <i>Card Title</i> node
-    </h3>
+
+    <h3>Connect the <strong>Component Inputs</strong> node to the <strong>Card Title</strong> Text node and send the <strong><i>title</i></strong> output to the <strong><i>text</i></strong> input</h3>
   </div>
   <div data-template="popup">
     <style>
@@ -570,7 +558,6 @@
       }
     </style>
     <video src="lesson-03_12-title.mp4"></video>
-    <p></p>
   </div>
 </div>
 <!-- # -->
@@ -585,15 +572,13 @@
         }
     ]'
 >
-  <div data-template="item" style="width: 500px">
+  <div data-template="item" style="width: 460px">
     <header>
       Task
       <span class="lesson-checkmark"></span>
     </header>
-    <h3>
-      Connect the <i>Category</i> port of the <strong>Component Inputs</strong> node to the <strong>text</strong> input
-      of the <i>Category</i> node
-    </h3>
+
+    <h3>Connect the <strong>Component Inputs</strong> node to the <strong>Category</strong> Text node and send the <strong><i>category</i></strong> output to the <strong><i>text</i></strong> input</h3>
   </div>
   <div data-template="popup">
     <style>
@@ -623,10 +608,8 @@
       Task
       <span class="lesson-checkmark"></span>
     </header>
-    <h3>
-      Connect the <i>Date</i> port of the <strong>Component Inputs</strong> node to the <strong>text</strong> input of the
-      <strong>Date</strong> node
-    </h3>
+
+    <h3>Connect the <strong>Component Inputs</strong> node to the <strong>Date</strong> Text node and send the <strong><i>date</i></strong> output to the <strong><i>text</i></strong> input</h3>
   </div>
   <div data-template="popup">
     <style>
@@ -644,7 +627,7 @@
 <div>
   <div data-template="item">
     <header>&nbsp;</header>
-    <h2>Overwriting Component inputs</h2>
+    <h2>Overwriting component inputs</h2>
   </div>
   <div data-template="popup">
     <style>
@@ -678,13 +661,13 @@
         }
     ]'
 >
-  <div data-template="item" style="width: 380px">
+  <div data-template="item" style="width: 420px">
     <header>
       Task
       <span class="lesson-checkmark"></span>
     </header>
     <h3>
-      Go to the <i>Task Page</i> and change the <i>Image</i>on the second <strong>Card Item </strong>component
+      Go to the <i>Task Page</i> node graph and change the <strong>image</strong> on the second <strong>Card Item </strong>component
       to <i><strong>study.png</strong></i>
     </h3>
   </div>
@@ -717,7 +700,7 @@
       <span class="lesson-checkmark"></span>
     </header>
     <h3>
-      Find the third <i>Card Item</i> component and change the <i>Image</i> to <i><strong>shopping.png</strong></i>
+      On the third <i>Card Item</i> component, change the <strong>image</strong> to <i><strong>shopping.png</strong></i>
     </h3>
   </div>
 
