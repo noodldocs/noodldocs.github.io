@@ -11,6 +11,23 @@
 
 <!-- A step with an item in the bottom bar. No tasks, so popup will be shown automatically -->
 <div>
+    <div data-template="item">
+        <header>&nbsp;</header>
+        <h2>Lesson tasks</h2>
+    </div>
+    <div data-template="popup">
+        <style>.lesson-item-popup {width: 600px !important;}</style>
+        <image src="../01_task.png"></image>
+        <h2>Time to get your hands dirty!</h2>
+        <p>During this lesson, you will be given multiple tasks. Spot them in the lesson timeline by the <i>Task</i> label.</p>
+        <p>If you get stuck you can get a hint by clicking the card in the timeline.</p>
+        <p>Some of the nodes graphs will already be set up for you beforehand. This is to keep the lessons short so that you can focus on learning one concept at a time. If it feels like magic at times, don't worry. It's just a concept you will learn in a later lesson.</p>
+    </div>
+</div>
+<!-- # -->
+
+<!-- A step with an item in the bottom bar. No tasks, so popup will be shown automatically -->
+<div>
   <div data-template="item" style="width: 260px">
     <header>&nbsp;</header>
     <h2>Select page to preview</h2>
@@ -23,11 +40,8 @@
     </style>
     <video src="lesson-02_01_pageselector.mp4"></video>
     <h2>Select page to preview</h2>
-    <p>At the top of the editor you have the <strong>Path Dropdown</strong>. It's similar to the URL-bar in a browser and is used to jump directly to a specific page of your app while you develop.
-    </p>
-    <p>
-      In this lesson we will be working on the page called <i>Task Page</i>. Let's jump to it.
-    </p>
+    <p>At the top of the editor you have the <strong>Path Dropdown</strong>. It's similar to the URL-bar in a browser and is used to jump directly to a specific page of your app while you develop.</p>
+    <p>In this lesson we will be working on the page called <i>Task Page</i>. Let's jump to it.</p>
   </div>
 </div>
 <!-- # -->
@@ -57,6 +71,26 @@
       }
     </style>
     <video src="lesson-02_01_pageselector.mp4"></video>
+  </div>
+</div>
+<!-- # -->
+
+<!-- A step with an item in the bottom bar. No tasks, so popup will be shown automatically -->
+<div>
+  <div data-template="item" style="width: 260px">
+    <header>&nbsp;</header>
+    <h2>Select page to preview</h2>
+  </div>
+  <div data-template="popup">
+    <style>
+      .lesson-item-popup {
+        width: 600px !important;
+      }
+    </style>
+    <video src="lesson-02_01_pageselector.mp4"></video>
+    <h2>Select page to preview</h2>
+    <p>At the top of the editor you have the <strong>Path Dropdown</strong>. It's similar to the URL-bar in a browser and is used to jump directly to a specific page of your app while you develop.</p>
+    <p>In this lesson we will be working on the page called <i>Task Page</i>. Let's jump to it.</p>
   </div>
 </div>
 <!-- # -->
@@ -155,7 +189,7 @@
       }
     </style>
     <video src="lesson-02_05_placegroup.mp4"></video>
-    <p>Open the Node Picker by <strong>left clicking</strong> the <i>plus</i> icon in the Topbar, or <strong>right click</strong> on an empty space in the Node Canvas.</p>
+    <p>Open the Node Picker by <strong>clicking</strong> the <i>plus</i> icon in the Topbar, or <strong>right click</strong> on an empty space in the Node Canvas.</p>
     <p>You can find the Group node in the UI Elements category.</p>
   </div>
 </div>
@@ -185,7 +219,7 @@
       }
     </style>
     <video src="lesson-02_06_carditem.mp4"></video>
-    <p>Select the Group node and change its name by pressing the <strong>enter</strong> key. You can also <strong>double click</strong> the node title in the Property Panel, or <strong>left click</strong> the edit icon as shown in the video.</p>
+    <p>Select the Group node and change its name by pressing the <strong>enter</strong> key. You can also <strong>double click</strong> the node title in the Property Panel, or <strong>click</strong> the edit icon as shown in the video.</p>
   </div>
 </div>
 
@@ -381,7 +415,7 @@
     </style>
     <video src="lesson-02_12_addimages.mp4"></video>
     <p>
-      Open the Node Picker by <strong>left clicking </strong> the <i>plus</i> icon in the Topbar, or <strong>right click</strong> on an empty space in the Node Canvas.
+      Open the Node Picker by <strong>clicking </strong> the <i>plus</i> icon in the Topbar, or <strong>right click</strong> on an empty space in the Node Canvas.
     </p>
     <p>
       You can search for the <strong>Image</strong> node in the Node Picker's search field, or find it in the UI Elements category.
@@ -520,7 +554,7 @@
     </style>
     <video src="lesson-02_15_addgroup.mp4"></video>
     <p>
-      Open the Node Picker by <strong>left clicking</strong> the <i>plus</i> icon in the Topbar, or <strong>right click</strong> on an empty space in the Node Canvas.
+      Open the Node Picker by <strong>clicking</strong> the <i>plus</i> icon in the Topbar, or <strong>right click</strong> on an empty space in the Node Canvas.
     </p>
     <p>
       You can search for the <strong>Group</strong> node in the Node Picker's search field, or find it in the UI Elements category.
@@ -565,7 +599,7 @@
     </style>
     <video src="lesson-02_16_text.mp4"></video>
     <p>
-      Open the Node Picker by <strong>left clicking</strong> the <i>plus</i> icon in the Topbar, or <strong>right click</strong> on an empty space in the Node Canvas.
+      Open the Node Picker by <strong>clicking</strong> the <i>plus</i> icon in the Topbar, or <strong>right click</strong> on an empty space in the Node Canvas.
     </p>
     <p>
       You can search for the <strong>Text</strong> node in the Node Picker's search field, or find it in the UI Elements category.
@@ -600,7 +634,7 @@
       }
     </style>
     <video src="lesson-02_17_card title.mp4"></video>
-    <p>Select the first <strong>Text</strong> node and change its name by pressing the <strong>enter</strong> key. You can also <strong>double click</strong> the node title in the Property Panel, or <strong>left click</strong> the edit icon.</p>
+    <p>Select the first <strong>Text</strong> node and change its name by pressing the <strong>enter</strong> key. You can also <strong>double click</strong> the node title in the Property Panel, or <strong>click</strong> the edit icon.</p>
   </div>
 </div>
 
@@ -636,7 +670,7 @@
       }
     </style>
     <video src="lesson-02_17_card title.mp4"></video>
-        <p>Select the second or third <strong>Text</strong> node and change its name by pressing the <strong>enter</strong> key. You can also <strong>double click</strong> the node title in the Property Panel, or <strong>left click</strong> the edit icon.</p>
+        <p>Select the second or third <strong>Text</strong> node and change its name by pressing the <strong>enter</strong> key. You can also <strong>double click</strong> the node title in the Property Panel, or <strong>click</strong> the edit icon.</p>
   </div>
 </div>
 

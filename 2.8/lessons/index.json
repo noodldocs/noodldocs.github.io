@@ -43,5 +43,23 @@
     "header": "Lesson 05 (15min)",
     "title": "Data-driven Pages",
     "completionBadge": "lessons/lesson-complete-badge.png"
+  },
+  {
+    "url": "06_store-user-data",
+    "thumb": "lessons/06lesson.png",
+    "category": "Lessons",
+    "name": "lesson_06_store-user-data",
+    "header": "Lesson 06 (15min)",
+    "title": "User created data",
+    "completionBadge": "lessons/lesson-complete-badge.png"
+  },
+  {
+    "url": "07_logic-components",
+    "thumb": "lessons/07lesson.png",
+    "category": "Lessons",
+    "name": "lesson_07_logic-components",
+    "header": "Lesson 07 (15min)",
+    "title": "States & Logic Components",
+    "completionBadge": "lessons/lesson-complete-badge.png"
   }
 ]

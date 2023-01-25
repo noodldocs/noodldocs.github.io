@@ -150,5 +150,13 @@
     "project": "library/modules/webcamera/webcamera-1-0-4.zip",
     "docs": "/library/modules/webcamera/",
     "tags": ["Device"]
+  },
+  {
+    "label": "Parse Cloud Function",
+    "desc": "Call Parse Platform cloud functions.",
+    "icon": "library/modules/parse-cloud-function/parse-cloud-function.png",
+    "project": "library/modules/parse-cloud-function/parse-cloud-function-1-0-0.zip",
+    "docs": "/library/modules/parse-cloud-function/",
+    "tags": ["Data", "Networking"]
   }
 ]
