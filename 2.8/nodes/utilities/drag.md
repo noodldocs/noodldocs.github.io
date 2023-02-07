@@ -8,7 +8,13 @@ title: Drag
 
 # Drag
 
-The drag node is used to make visual nodes draggable with the mouse or touch. All children of a **Drag** node automatically become draggable.
+The drag node is used to make visual nodes draggable with the mouse or touch. The child of a **Drag** node automatically become draggable.
+
+:::tip
+
+The Drag node can only have one child, but that child can have many children.
+
+:::
 
 <div className="ndl-image-with-background l">
 
@@ -56,6 +62,7 @@ The drag node is used to make visual nodes draggable with the mouse or touch. Al
 | ---------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <span className="ndl-data">Start Drag X</span> | Specifies the X position that will be used as the starting point. Setting this will force the child nodes to the specified position.                                                                                               |
 | <span className="ndl-data">Start Drag Y</span> | Specifies the Y position that will be used as the starting point. Setting this will force the child nodes to the specified position.                                                                                               |
+| <span className="ndl-data">Scale</span> | Specifies the move scale that will be used when dragging the node around. This can correct the drag deltas while you are zoomed in or out.                                                                                               |
 | <span className="ndl-data">Mounted</span>      | This property is used to completely remove the node from the DOM. If this property is set to false the node is removed from the DOM. It differs from the _Visible_ property where the node is still part of the DOM but invisible. |
 
 ### Visual
