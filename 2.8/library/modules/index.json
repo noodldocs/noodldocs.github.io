@@ -158,5 +158,13 @@
     "project": "library/modules/parse-cloud-function/parse-cloud-function-1-0-0.zip",
     "docs": "/library/modules/parse-cloud-function/",
     "tags": ["Data", "Networking"]
+  },
+  {
+    "label": "Data Context",
+    "desc": "Share data between all child components.",
+    "icon": "library/modules/data-context/banner.png",
+    "project": "library/modules/data-context/data-context-1-0-0.zip",
+    "docs": "/library/modules/data-context/",
+    "tags": ["Data"]
   }
 ]

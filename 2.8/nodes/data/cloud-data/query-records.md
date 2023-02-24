@@ -124,7 +124,7 @@ As mentioned above the filter script is a javascript function so you can provide
 
 ```javascript
 where({
-    SomeDate: { equalTo: new Date().toISOString() },
+    SomeDate: { equalTo: new Date() },
 })
 ```
 
@@ -198,6 +198,78 @@ Don't forget that you need to send a signal to _Fetch_ to perform a new fetch wi
 ```javascript
 where({
     relatedTo: { id: Inputs.MyRecordWithARelation, key: 'the-relation-key' },
+})
+```
+
+### Geo queries
+Noodl allows you to associate real-world latitude and longitude coordinates with an object. Using a **GeoPoint** property type in a class allows queries to take into account the proximity of an object to a reference point. This allows you to easily do things like find out what user is closest to another user or which places are closest to a user.
+
+If you have a **Record** with a **GeoPoint** type property called **Location** you can use these queries, first `nearSphere`, it will return results ordered by the distance from the specified `latitude` and `longitude` point.
+
+```javascript
+where({
+    Location: {
+        nearSphere:{
+            latitude:48.0,
+            longitude:-110.1
+        }
+    }
+})
+```
+
+You can also specify a maximum distance from the center point by using either `maxDistanceInMiles` or `maxDistanceInKilometers`, e.g.
+
+```javascript
+where({
+    Location: {
+        nearSphere:{
+            latitude:48.0,
+            longitude:-110.1,
+            maxDistanceInKilometers:100
+        }
+    }
+})
+```
+
+Another option is to query only records with **Location** that are within a certain rectangular bounding box. This makes it possible to query for the set of records that are contained within a particular area. It's done using the `withinBox` query.
+
+```javascript
+where({
+    Location: {
+        withinBox:[
+            {
+                latitude: 37.71,
+                longitude: -122.53
+            },
+            {
+                latitude: 30.82,
+                longitude: -122.37   
+            } 
+        ]
+    }
+})
+```
+
+It’s also possible to query for the set of records that are contained within or on the bounds of a polygon. Opened or closed paths are allowed, minimum of 3 points. It's done using the `withinPolygon` query.
+
+```javascript
+where({
+    Location: {
+        withinPolygon:[
+            {
+                latitude: 25.774,
+                longitude: -80.190
+            },
+            {
+                latitude: 18.466,
+                longitude: -66.118
+            },
+            {
+                latitude: 32.321,
+                longitude: -64.757
+            }
+        ]
+    }
 })
 ```
 

@@ -130,6 +130,7 @@ Any variable of the **Inputs** object that you access in your scrips will automa
 | ------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
 | <span className="ndl-signal">Success</span> | A signal will be emitted on this output if the request receives a successful status code (2XX).         |
 | <span className="ndl-signal">Failure</span> | A signal will be emitted on this output on all other status codes of if another type of failure occurs. |
+| <span className="ndl-signal">Canceled</span> | A signal will be emitted on this output if the request was canceled. |
 
 ### Request and response outputs
 

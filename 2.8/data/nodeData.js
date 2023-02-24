@@ -22,6 +22,11 @@ const nodeData = [
             nodeType: NodeType.Visual,
           },
           {
+            label: 'Columns',
+            id: 'basic-elements/columns',
+            nodeType: NodeType.Visual,
+          },
+          {
             label: 'Text',
             id: 'basic-elements/text',
             nodeType: NodeType.Visual,
@@ -575,7 +580,7 @@ const nodeData = [
             label: 'Set User Properties',
             id: 'data/user/set-user-properties',
             nodeType: NodeType.Data,
-          }
+          },
         ],
       },
 
@@ -627,7 +632,7 @@ const nodeData = [
         id: 'cloud-functions/response',
         nodeType: NodeType.Data,
       },
-    ]
+    ],
   },
 ];
 
