@@ -27,7 +27,7 @@ Reading the Javascript [guide](/docs/guides/business-logic/javascript) gives a b
 Here is an example of how you create a function that you can call in the node graph:
 
 ```javascript
-Node.Signals.MyFunction = function (value) {
+Script.Signals.MyFunction = function (value) {
   // run javascript code
 };
 ```

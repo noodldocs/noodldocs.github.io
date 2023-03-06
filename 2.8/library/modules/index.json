@@ -163,7 +163,7 @@
     "label": "Data Context",
     "desc": "Share data between all child components.",
     "icon": "library/modules/data-context/banner.png",
-    "project": "library/modules/data-context/data-context-1-0-0.zip",
+    "project": "library/modules/data-context/data-context-1-0-1.zip",
     "docs": "/library/modules/data-context/",
     "tags": ["Data"]
   }
