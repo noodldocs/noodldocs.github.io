@@ -35,7 +35,7 @@
     "label": "Table",
     "desc": "Component for creating tables from data.",
     "icon": "library/prefabs/table/table.png",
-    "project": "library/prefabs/table/table-0-3.zip",
+    "project": "library/prefabs/table/table-0-4.zip",
     "docs": "/library/prefabs/table/",
     "tags": ["UI", "Data"]
   },
@@ -190,5 +190,29 @@
     "project": "library/prefabs/stripe/stripe-0-4.zip",
     "docs": "/library/prefabs/stripe/",
     "tags": ["Cloud"]
-  } 
+  },
+  {
+    "label": "Pagination",
+    "desc": "A component for pagination, showing available pages and letting user switch.",
+    "icon": "library/prefabs/pagination/pagination.png",
+    "project": "library/prefabs/pagination/pagination-0-1.zip",
+    "docs": "/library/prefabs/pagination/",
+    "tags": ["UI"]
+  },
+  {
+    "label": "Pages And Rows",
+    "desc": "A component for pagination, letting user pick page and number of rows per page.",
+    "icon": "library/prefabs/pagesandrows/pagesandrows.png",
+    "project": "library/prefabs/pagesandrows/pagesandrows-0-2.zip",
+    "docs": "/library/prefabs/pagesandrows/",
+    "tags": ["UI"]
+  },
+  {
+    "label": "Filters",
+    "desc": "A prefab for creating filter controls that work well with query records.",
+    "icon": "library/prefabs/filters/filters.png",
+    "project": "library/prefabs/filters/filters-0-1.zip",
+    "docs": "/library/prefabs/filters/",
+    "tags": ["UI"]
+  }     
 ]

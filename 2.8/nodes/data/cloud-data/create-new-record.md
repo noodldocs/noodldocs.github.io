@@ -32,11 +32,6 @@ You can also provide values for the properties of the record either via connecti
 | -------------------------------------- | ---------------------------------------------------------------------------- |
 | <span className="ndl-signal">Do</span> | <##input:do##>Send a signal on this input to create a new record.<##input##> |
 
----
-hide_title: true
-hide_table_of_contents: true
----
-
 ### Access Control Rules
 
 When creating and updating records you can also specify access control rules. By default all records created can be read and written by everyone, they are completely public. This is convenient in the beginning when you are working on your applications but as you want to make it publicly available you need to think about access control. You do this by adding access control rules when creating or updating records.

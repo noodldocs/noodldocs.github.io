@@ -42,11 +42,6 @@ An Id of a record is needed to perform the action of this node:
 | -------------------------------------- | ---------------------------------------------------------------------------------------------------------- |
 | <span className="ndl-signal">Do</span> | <##input:do##>When a signal is received on this input the properties will be set on the record.<##input##> |
 
----
-hide_title: true
-hide_table_of_contents: true
----
-
 ### Access Control Rules
 
 When creating and updating records you can also specify access control rules. By default all records created can be read and written by everyone, they are completely public. This is convenient in the beginning when you are working on your applications but as you want to make it publicly available you need to think about access control. You do this by adding access control rules when creating or updating records.

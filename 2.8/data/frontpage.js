@@ -5,6 +5,7 @@ export const FrontpageBlocks = {
     FeaturedGuides: 'featuredguides',
     FeaturedProjects: 'featuredprojects',
     FeaturedVideos: 'featuredvideos',
+    FeaturedPrefabs: 'featuredprefabs',
 }
 
 export const frontpageData = [
@@ -16,7 +17,7 @@ export const frontpageData = [
         gridItems: [
             {
                 type: 'youtube',
-                videoId: 'zWsr1SAtrB4',
+                videoId: 'kD-Oz_M-IS4',
             },
             {
                 type: 'link',
@@ -25,21 +26,20 @@ export const frontpageData = [
                     '/img/featured-content-images/noodl-basics.png',
                 label: 'Noodl basics',
                 href: '/docs/getting-started/workflow',
+                playIcon:false,
             },
             {
                 type: 'link',
                 colorVariable: '--doc-color-noodl-blue-20',
                 backgroundImage:
                     '/img/featured-content-images/build-first-app.png',
-                label: 'Build your first app',
-                href: '/docs/build-alongs/task-list-app',
+                label: 'Intro to cloud services',
+                href: 'https://www.youtube.com/watch?v=ecas2QPbr0g',
             },
         ],
     },
     { type: FrontpageBlocks.FeaturedGuides },
-    {
-        type: FrontpageBlocks.FeaturedModules,
-    },
-    { type: FrontpageBlocks.FeaturedProjects },
+    { type: FrontpageBlocks.FeaturedPrefabs,},
+    { type: FrontpageBlocks.FeaturedModules,},
     { type: FrontpageBlocks.FeaturedVideos },
 ]

@@ -6,21 +6,27 @@
         "videoLength": "06.56"
     },
     {
-        "videoId": "DWwE1RzuN2o",
-        "title": "Using the sign-up template",
-        "description": "Learn how to make a complete sign-up flow, including email setup for account validation and password recovery.",
-        "videoLength": "19.55"
+        "videoId": "u04KnVju4KU",
+        "title": "Building AirBnB Clone",
+        "description": "Casually building an AirBnB clone and testing some new upcoming features of 2.8.2",
+        "videoLength": "2:09:22"
     },
     {
-        "videoId": "DG7LRrudMeE",
-        "title": "Tab Navigation Template",
-        "description": "Learn how to build a tab menu that let's the user navigate between different pages.",
-        "videoLength": "02.38"
+        "videoId": "zFJLPNCZGV8",
+        "title": "Noodl 2.8 release overview",
+        "description": "A look at the new features of 2.8 most norably cloud functions.",
+        "videoLength": "04:15"
     },
     {
-        "videoId": "VwgcIsclVpE",
-        "title": "Star Rating Component",
-        "description": "Learn how to build an animated star rating component from scratch.",
-        "videoLength": "07.10"
+        "videoId": "ATyqeK_deu4",
+        "title": "Noodl Basics - Visual States",
+        "description": "Learn how to use Noodl visual interaction states.",
+        "videoLength": "1:54"
+    },
+    {
+        "videoId": "ecas2QPbr0g",
+        "title": "Intro to cloud services",
+        "description": "Continue the learning journey from the intro lessons in this video guide.",
+        "videoLength": "22:08"
     }
 ]

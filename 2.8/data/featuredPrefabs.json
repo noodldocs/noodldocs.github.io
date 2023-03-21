@@ -1,8 +1,8 @@
 [
-  "Date Picker",
-  "Time Picker",
-  "Multi Choice",
   "Table",
   "Form",
-  "Navigation Menu"
+  "Date Picker",
+  "Popup Modal",
+  "Toast",
+  "Email Verification"
 ]
