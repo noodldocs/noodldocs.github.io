@@ -8,7 +8,7 @@ title: Create New Object
 
 # Create New Object
 
-The node can be used to create a fresh new [Object](nodes/data/object/object-node).
+The node can be used to create a fresh new [Object](/nodes/data/object/object-node).
 
 <div className="ndl-image-with-background l">
 

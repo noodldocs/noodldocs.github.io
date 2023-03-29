@@ -35,7 +35,7 @@
     "label": "Table",
     "desc": "Component for creating tables from data.",
     "icon": "library/prefabs/table/table.png",
-    "project": "library/prefabs/table/table-0-4.zip",
+    "project": "library/prefabs/table/table-0-6.zip",
     "docs": "/library/prefabs/table/",
     "tags": ["UI", "Data"]
   },
@@ -67,7 +67,7 @@
     "label": "Media Query",
     "desc": "Contains a handy component to create responsive interfaces.",
     "icon": "library/prefabs/media-query/media-query.png",
-    "project": "library/prefabs/media-query/media-query-project.zip",
+    "project": "library/prefabs/media-query/media-query-0-2.zip",
     "docs": "/library/prefabs/media-query/",
     "tags": ["UI", "Utility"]
   },
@@ -213,6 +213,14 @@
     "icon": "library/prefabs/filters/filters.png",
     "project": "library/prefabs/filters/filters-0-1.zip",
     "docs": "/library/prefabs/filters/",
+    "tags": ["UI"]
+  },
+  {
+    "label": "OpenAI",
+    "desc": "A prefab with cloud functions for creating chat bots with the OpenAI API.",
+    "icon": "library/prefabs/openai/openai.png",
+    "project": "library/prefabs/openai/openai-0-4.zip",
+    "docs": "/library/prefabs/openai/",
     "tags": ["UI"]
   }     
 ]

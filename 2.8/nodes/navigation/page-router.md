@@ -62,9 +62,9 @@ Generally, the route to a **Page** looks like the following
 
 `<domainname>#/<route1>/<route2>/<route3>...`
 
-where `<domainname` is the domain on where you host the app and each `<route>` points to either a **Page Router** or a **Page** within a **Page Router**. The `<route>` may also include a **Page Parameter** and **Query Parameters** (see below).
+where `<domainname>` is the domain on where you host the app and each `<route>` points to either a **Page Router** or a **Page** within a **Page Router**. The `<route>` may also include a **Page Parameter** and **Query Parameters** (see below).
 
-For example a **Page Route** with the **URL Path** 'myrouter', with two possible pages with **URL Paths** _page1_ and _page2_, will have two possible routes: _myrouter/page1_ and _#myrouter/page2_. Note the '#' character that is always added in the beginning of a route. If, for example, the Noodl App is deployed on the domain _app.mynoodlapps.com_, entering *https://app.mynoodlapps.com#myrouter/page2* in the browser will take make the **Page Router** with the **URL Path** _myrouter_ navigate to the **Page** with the **URL Path** _page2_.
+For example a **Page Route** with the **URL Path** 'myrouter', with two possible pages with **URL Paths** _page1_ and _page2_, will have two possible routes: `myrouter/page1` and `#myrouter/page2`. Note the '#' character that is always added in the beginning of a route. If, for example, the Noodl App is deployed on the domain `app.mynoodlapps.com`, entering `https://app.mynoodlapps.com#myrouter/page2` in the browser will take make the **Page Router** with the **URL Path** _myrouter_ navigate to the **Page** with the **URL Path** _page2_.
 
 ### Navigating using Navigation node
 

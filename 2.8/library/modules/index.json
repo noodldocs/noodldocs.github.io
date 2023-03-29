@@ -54,7 +54,15 @@
     "icon": "library/modules/custom-html/html.png",
     "docs": "/library/modules/custom-html/",
     "tags": ["UI", "Code"]
-  },    
+  },
+  {
+    "label": "Simple Tooltips",
+    "desc": "Add simple tooltips to your Noodl App.",
+    "project": "library/modules/simple-tooltips/simple-tooltips-v1-0-0.zip",
+    "icon": "library/modules/simple-tooltips/simple-tooltips.png",
+    "docs": "/library/modules/simple-tooltips/",
+    "tags": ["UI"]
+  },
   {
     "label": "Form Validation",
     "desc": "A utility node that makes different kind of form validation easier.",
