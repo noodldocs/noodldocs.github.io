@@ -9,7 +9,7 @@ This module allows you to add avatars to your Noodl App.
 
 <div className="ndl-image-with-background l">
 
-![](library/modules/avatar/preview.png)
+![](/library/modules/avatar/preview.png)
 
 </div>
 
@@ -25,7 +25,7 @@ This node is written using the SDK and gives you all the options to modify the s
 
 <div className="ndl-image-with-background l">
 
-![](library/modules/avatar/avatar-group-node.png)
+![](/library/modules/avatar/avatar-group-node.png)
 
 </div>
 

@@ -67,7 +67,7 @@ Open up your Noodl Project and locate your **Root Component**. It's easy to iden
 
 <div className="ndl-image-with-background">
 
-![](library/modules/google-analytics/guides/setting-up-google-analytics/root-component.png)
+![](/library/modules/google-analytics/guides/setting-up-google-analytics/root-component.png)
 
 </div>
 
@@ -75,7 +75,7 @@ Create a `Google Analytics Root` node and place it in the visual tree, as high u
 
 <div className="ndl-image-with-background l">
 
-![](library/modules/google-analytics/guides/setting-up-google-analytics/added-root-node.png)
+![](/library/modules/google-analytics/guides/setting-up-google-analytics/added-root-node.png)
 
 </div>
 
@@ -89,7 +89,7 @@ To do this we can use a **Button** node and a **Switch** node. Connect the **Swi
 
 <div className="ndl-image-with-background l">
 
-![](library/modules/google-analytics/guides/setting-up-google-analytics/allow-tracking-with-button.png)
+![](/library/modules/google-analytics/guides/setting-up-google-analytics/allow-tracking-with-button.png)
 
 </div>
 
@@ -99,7 +99,7 @@ To make sure that everything is correct, we can use the <span className="ndl-sig
 
 <div className="ndl-image-with-background l">
 
-![](library/modules/google-analytics/guides/setting-up-google-analytics/hide-button-on-track.png)
+![](/library/modules/google-analytics/guides/setting-up-google-analytics/hide-button-on-track.png)
 
 </div>
 

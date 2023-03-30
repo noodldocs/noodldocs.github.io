@@ -12,7 +12,7 @@ The **Push Component To Stack** node is used together with a [Component Stack](/
 
 <div className="ndl-image-with-background l">
 
-![](nodes/component-stack/push-component/push-component.png)
+![](/nodes/component-stack/push-component/push-component.png)
 
 </div>
 

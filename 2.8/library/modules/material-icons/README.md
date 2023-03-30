@@ -9,7 +9,7 @@ This module contains the latest material icon set. Add it to your project and yo
 
 <div className="ndl-image-with-background xl">
 
-![](library/modules/material-icons/iconpicker.png)
+![](/library/modules/material-icons/iconpicker.png)
 
 </div>
 
@@ -17,6 +17,6 @@ Simply add the module to your project and you will have the latest icon set avai
 
 <div className="ndl-image-with-background xl">
 
-![](library/modules/material-icons/addmodule.png)
+![](/library/modules/material-icons/addmodule.png)
 
 </div>

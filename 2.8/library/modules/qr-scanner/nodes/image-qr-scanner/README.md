@@ -11,7 +11,7 @@ The **Image QR Scanner** node is used to scane an image for a QR code. It's typi
 
 <div className="ndl-image-with-background l">
 
-![](library/modules/qr-scanner/nodes/image-qr-scanner/image-qr-scanner.png)
+![](/library/modules/qr-scanner/nodes/image-qr-scanner/image-qr-scanner.png)
 
 </div>
 

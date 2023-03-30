@@ -12,7 +12,7 @@ This node is used to close a popup that have previously been shown with the <spa
 
 <div className="ndl-image-with-background l">
 
-![](nodes/popups/close-popup/close-popup-1.png)
+![](/nodes/popups/close-popup/close-popup-1.png)
 
 </div>
 
@@ -26,7 +26,7 @@ Sending data back to the triggering component is done by adding **Result** value
 
 <div className="ndl-image-with-background">
 
-![](nodes/popups/close-popup/close-popup-2.png)
+![](/nodes/popups/close-popup/close-popup-2.png)
 
 </div>
 
@@ -40,7 +40,7 @@ After specifying results and close actions in the properties the corresponding i
 
 <div className="ndl-image-with-background l">
 
-![](nodes/popups/close-popup/close-popup-3.png)
+![](/nodes/popups/close-popup/close-popup-3.png)
 
 </div>
 
@@ -48,7 +48,7 @@ These **Result** values and **Close Actions** will also become available as outp
 
 <div className="ndl-image-with-background l">
 
-![](nodes/popups/show-popup/show-popup-3.png)
+![](/nodes/popups/show-popup/show-popup-3.png)
 
 </div>
 

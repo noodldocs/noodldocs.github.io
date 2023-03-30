@@ -12,7 +12,7 @@ This node enables you to do your own calculations using simple expressons. Input
 
 <div className="ndl-image-with-background xl">
 
-![](nodes/math/expression/expression-1.png)
+![](/nodes/math/expression/expression-1.png)
 
 </div>
 
@@ -51,7 +51,7 @@ Normally, an expression node recalculates whenever one of the input parameters c
 
 <div className="ndl-image-with-background xl">
 
-![](nodes/math/expression/expression-2.png)
+![](/nodes/math/expression/expression-2.png)
 
 </div>
 

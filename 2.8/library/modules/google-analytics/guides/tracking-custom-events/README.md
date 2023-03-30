@@ -37,7 +37,7 @@ We can copy the data passed to the gtag function and paste it directly into the 
 
 <div className="ndl-image-with-background">
 
-![](library/modules/google-analytics/guides/tracking-custom-events/paste-code.png)
+![](/library/modules/google-analytics/guides/tracking-custom-events/paste-code.png)
 
 </div>
 
@@ -45,7 +45,7 @@ We can now submit the data to Google by sending a signal to the nodes <span clas
 
 <div className="ndl-image-with-background l">
 
-![](library/modules/google-analytics/guides/tracking-custom-events/submit-data.png)
+![](/library/modules/google-analytics/guides/tracking-custom-events/submit-data.png)
 
 </div>
 
@@ -59,7 +59,7 @@ Let's build a small app that tracks the user's favourite type of noodle dish. We
 
 <div className="ndl-image-with-background l">
 
-![](library/modules/google-analytics/guides/tracking-custom-events/form.png)
+![](/library/modules/google-analytics/guides/tracking-custom-events/form.png)
 
 </div>
 
@@ -77,7 +77,7 @@ The `{userDish}` part of this code will create an input named <span className="n
 
 <div className="ndl-image-with-background l">
 
-![](library/modules/google-analytics/guides/tracking-custom-events/string-format-connected.png)
+![](/library/modules/google-analytics/guides/tracking-custom-events/string-format-connected.png)
 
 </div>
 
@@ -89,7 +89,7 @@ Now we need to send this data to Google. Create a **Send Google Analytics Data**
 
 <div className="ndl-image-with-background l">
 
-![](library/modules/google-analytics/guides/tracking-custom-events/sending-data.png)
+![](/library/modules/google-analytics/guides/tracking-custom-events/sending-data.png)
 
 </div>
 

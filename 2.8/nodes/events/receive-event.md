@@ -12,7 +12,7 @@ This node is used to receive a signal triggered by a <span className="ndl-node">
 
 <div className="ndl-image-with-background l">
 
-![](nodes/events/receive-event/receive-event.png)
+![](/nodes/events/receive-event/receive-event.png)
 
 </div>
 

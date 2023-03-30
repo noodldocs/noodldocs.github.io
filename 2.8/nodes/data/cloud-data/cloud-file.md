@@ -12,7 +12,7 @@ Represents a file that has been uploaded to the Noodl Cloud Services and stored 
 
 <div className="ndl-image-with-background l">
 
-![](nodes/data/cloud-data/cloud-file/cloud-file.png)
+![](/nodes/data/cloud-data/cloud-file/cloud-file.png)
 
 </div>
 
@@ -20,7 +20,7 @@ Represents a file that has been uploaded to the Noodl Cloud Services and stored 
 
 <div className="ndl-image-with-background l">
 
-![](nodes/data/cloud-data/upload-file/upload-file.png)
+![](/nodes/data/cloud-data/upload-file/upload-file.png)
 
 </div>
 <##head##>

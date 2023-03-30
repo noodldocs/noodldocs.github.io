@@ -13,7 +13,7 @@ If the _Object_ to be removed is not in the array, nothing will happen.
 
 <div className="ndl-image-with-background">
 
-![](nodes/data/array/remove-from-array/remove-object-from-array.png)
+![](/nodes/data/array/remove-from-array/remove-object-from-array.png)
 
 </div>
 

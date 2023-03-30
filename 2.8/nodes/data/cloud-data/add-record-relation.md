@@ -12,7 +12,7 @@ This action node is used to create a relation between two records, the owning re
 
 <div className="ndl-image-with-background l">
 
-![](nodes/data/cloud-data/add-record-relation/add-relation.png)
+![](/nodes/data/cloud-data/add-record-relation/add-relation.png)
 
 </div>
 

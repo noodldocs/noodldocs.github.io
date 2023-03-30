@@ -12,7 +12,7 @@ This node is used to dynamically insert visual components based on <span classNa
 
 <div className="ndl-image-with-background l">
 
-![](nodes/ui-controls/repeater/repeater_visual.png)
+![](/nodes/ui-controls/repeater/repeater_visual.png)
 
 </div>
 
@@ -20,7 +20,7 @@ The <span className="ndl-node">Repeater</span> node takes data from a Noodl <spa
 
 <div className="ndl-image-with-background l">
 
-![](nodes/ui-controls/repeater/repeater_node.png)
+![](/nodes/ui-controls/repeater/repeater_node.png)
 
 </div>
 

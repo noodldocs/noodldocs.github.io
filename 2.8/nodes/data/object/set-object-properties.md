@@ -12,7 +12,7 @@ You can use this node to set properties on an [Object](/nodes/data/object/object
 
 <div className="ndl-image-with-background l">
 
-![](nodes/data/object/set-object-properties/set-object-properties.png)
+![](/nodes/data/object/set-object-properties/set-object-properties.png)
 
 </div>
 
@@ -20,7 +20,7 @@ You can then specify which properties you want to set on the Object in the prope
 
 <div className="ndl-image-with-background">
 
-![](nodes/data/object/set-object-properties/prop-panel.png)
+![](/nodes/data/object/set-object-properties/prop-panel.png)
 
 </div>
 

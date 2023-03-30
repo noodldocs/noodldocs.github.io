@@ -12,7 +12,7 @@ This node will take an array of items as input and output a filtered version of 
 
 <div className="ndl-image-with-background l">
 
-![](nodes/data/array/array-filter/array-filter.png)
+![](/nodes/data/array/array-filter/array-filter.png)
 
 </div>
 
@@ -40,7 +40,7 @@ By default the **Array Filter** node will pass through all objects of the input 
 
 <div className="ndl-image-with-background">
 
-![](nodes/data/array/array-filter/collection-filter.png)
+![](/nodes/data/array/array-filter/collection-filter.png)
 
 </div>
 
@@ -67,7 +67,7 @@ The available operations of the filter depend on the type that is set.
 
 <div className="ndl-image-with-background">
 
-![](nodes/data/array/array-filter/collection-filter-2.png)
+![](/nodes/data/array/array-filter/collection-filter-2.png)
 
 </div>
 
@@ -78,7 +78,7 @@ For each property you can choose the sorting order.
 
 <div className="ndl-image-with-background">
 
-![](nodes/data/array/array-filter/collection-sort.png)
+![](/nodes/data/array/array-filter/collection-sort.png)
 
 </div>
 

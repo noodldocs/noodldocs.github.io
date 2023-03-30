@@ -12,7 +12,7 @@ This node is used to set properties on the currently logged in user.
 
 <div className="ndl-image-with-background l">
 
-![](nodes/data/user/set-user-properties/set-user-properties-nodes.png)
+![](/nodes/data/user/set-user-properties/set-user-properties-nodes.png)
 
 </div>
 

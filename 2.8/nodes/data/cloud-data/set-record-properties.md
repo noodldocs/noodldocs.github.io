@@ -12,7 +12,7 @@ This action node will set property values of a record.
 
 <div className="ndl-image-with-background l">
 
-![](nodes/data/cloud-data/set-record-properties/set-record-properties-node.png)
+![](/nodes/data/cloud-data/set-record-properties/set-record-properties-node.png)
 
 </div>
 
@@ -48,7 +48,7 @@ When creating and updating records you can also specify access control rules. By
 
 <div className="ndl-image-with-background m">
 
-![](nodes/data/cloud-data/acl-1.png)
+![](/nodes/data/cloud-data/acl-1.png)
 
 </div>
 

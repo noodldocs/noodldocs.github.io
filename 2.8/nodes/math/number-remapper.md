@@ -12,7 +12,7 @@ This node maps a range of input <span className="ndl-data">numbers</span> to a r
 
 <div className="ndl-image-with-background l">
 
-![](nodes/math/number-remapper/number_remapper_node.png)
+![](/nodes/math/number-remapper/number_remapper_node.png)
 
 </div>
 

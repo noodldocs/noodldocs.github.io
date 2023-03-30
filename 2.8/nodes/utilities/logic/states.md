@@ -12,7 +12,7 @@ This node is used to switch between logical states. Each state holds values that
 
 <div className="ndl-image-with-background l">
 
-![](nodes/utilities/logic/states/states_visual.gif)
+![](/nodes/utilities/logic/states/states_visual.gif)
 
 </div>
 
@@ -20,7 +20,7 @@ The <span className="ndl-node">State</span> node is often used to create animati
 
 <div className="ndl-image-with-background l">
 
-![](nodes/utilities/logic/states/states_node.gif)
+![](/nodes/utilities/logic/states/states_node.gif)
 
 </div>
 

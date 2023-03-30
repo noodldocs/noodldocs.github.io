@@ -11,7 +11,7 @@ This node loads Google Analytics in your Noodl app. It _must_ be placed in your 
 
 <div className="ndl-image-with-background l">
 
-![](library/modules/google-analytics/screenshot.png)
+![](/library/modules/google-analytics/screenshot.png)
 
 </div>
 

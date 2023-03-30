@@ -12,7 +12,7 @@ This node sends a <span className="ndl-signal">signal</span> when the input valu
 
 <div className="ndl-image-with-background l">
 
-![](nodes/logic/value-changed/valuechanged_node.png)
+![](/nodes/logic/value-changed/valuechanged_node.png)
 
 </div>
 

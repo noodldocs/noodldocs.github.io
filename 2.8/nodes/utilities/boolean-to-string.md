@@ -12,7 +12,7 @@ This node takes a <span className="ndl-data">boolean</span> input and converts i
 
 <div className="ndl-image-with-background l">
 
-![](nodes/utilities/boolean-to-string/boolean-to-string.png)
+![](/nodes/utilities/boolean-to-string/boolean-to-string.png)
 
 </div>
 

@@ -12,7 +12,7 @@ This node translates a <span className="ndl-data">date</span> type input and out
 
 <div className="ndl-image-with-background l">
 
-![](nodes/utilities/date-to-string/date-to-string.png)
+![](/nodes/utilities/date-to-string/date-to-string.png)
 
 </div>
 

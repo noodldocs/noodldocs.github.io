@@ -12,7 +12,7 @@ This node is used to log out a user from the current session. That means that th
 
 <div className="ndl-image-with-background l">
 
-![](nodes/data/user/log-out/logout.png)
+![](/nodes/data/user/log-out/logout.png)
 
 </div>
 

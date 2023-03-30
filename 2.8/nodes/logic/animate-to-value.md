@@ -12,7 +12,7 @@ This node takes a target value and will automatically animate towards it. The an
 
 <div className="ndl-image-with-background l">
 
-![](nodes/logic/animate-to-value/animate-to-value.png)
+![](/nodes/logic/animate-to-value/animate-to-value.png)
 
 </div>
 

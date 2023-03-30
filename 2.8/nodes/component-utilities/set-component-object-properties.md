@@ -12,7 +12,7 @@ title: Set Component Object Properties
 
 <div className="ndl-image-with-background l">
 
-![](nodes/component-utilities/set-component-object-properties/set-component-object-properties.png)
+![](/nodes/component-utilities/set-component-object-properties/set-component-object-properties.png)
 
 </div>
 

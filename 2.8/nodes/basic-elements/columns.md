@@ -12,7 +12,7 @@ This node is used to layout your content in columns with gaps.
 
 <div className="ndl-image-with-background l">
 
-![](nodes/basic-elements/columns/columns_visual.png)
+![](/nodes/basic-elements/columns/columns_visual.png)
 
 </div>
 
@@ -24,7 +24,7 @@ A layout string is simply a string of numbers with spaces between them. Every nu
 
 <div className="ndl-image-with-background l">
 
-![](nodes/basic-elements/columns/columns_example.png)
+![](/nodes/basic-elements/columns/columns_example.png)
 
 </div>
 

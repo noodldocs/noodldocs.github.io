@@ -12,7 +12,7 @@ This node is used to create outputs for reusable components.
 
 <div className="ndl-image-with-background l">
 
-![](nodes/component-utilities/component-outputs/co_node1.png)
+![](/nodes/component-utilities/component-outputs/co_node1.png)
 
 </div>
 
@@ -20,7 +20,7 @@ A <span className="ndl-node">Component Output</span> node can have as many ports
 
 <div className="ndl-image-with-background l">
 
-![](nodes/component-utilities/component-outputs/co_node2.png)
+![](/nodes/component-utilities/component-outputs/co_node2.png)
 
 </div>
 
@@ -30,7 +30,7 @@ A very powerful feature of Noodl is the ability to create **Components** that ac
 
 <div className="ndl-image-with-background">
 
-![](nodes/component-utilities/component-outputs/component-outputs.png)
+![](/nodes/component-utilities/component-outputs/component-outputs.png)
 
 </div>
 
@@ -42,7 +42,7 @@ You can create and name ports as you wish.
 
 <div className="ndl-image-with-background">
 
-![](nodes/component-utilities/component-outputs/component-output-ports.png)
+![](/nodes/component-utilities/component-outputs/component-output-ports.png)
 
 </div>
 

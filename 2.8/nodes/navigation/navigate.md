@@ -12,7 +12,7 @@ This node is used to navigate between <span className="ndl-node">[Page](/nodes/n
 
 <div className="ndl-image-with-background l">
 
-![](nodes/navigation/navigate/navigate-page-inputs.png)
+![](/nodes/navigation/navigate/navigate-page-inputs.png)
 
 </div>
 

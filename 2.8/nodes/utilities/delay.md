@@ -12,7 +12,7 @@ This node lets you delay <span className="ndl-signal">signals</span> by the spec
 
 <div className="ndl-image-with-background l">
 
-![](nodes/utilities/delay/delay_node.png)
+![](/nodes/utilities/delay/delay_node.png)
 
 </div>
 

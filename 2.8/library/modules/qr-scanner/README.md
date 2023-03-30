@@ -8,6 +8,6 @@ This module is a wrapper of the [QR Scanner](https://github.com/nimiq/qr-scanner
 
 <div className="ndl-image-with-background l">
 
-![](library/modules/qr-scanner/qr-scanner-demo-1.png)
+![](/library/modules/qr-scanner/qr-scanner-demo-1.png)
 
 </div>

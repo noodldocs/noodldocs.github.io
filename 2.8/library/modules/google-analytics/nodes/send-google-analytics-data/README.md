@@ -11,7 +11,7 @@ This node is used to send custom data to Google Analytics. It works similarily t
 
 <div className="ndl-image-with-background l">
 
-![](library/modules/google-analytics/screenshot.png)
+![](/library/modules/google-analytics/screenshot.png)
 
 </div>
 

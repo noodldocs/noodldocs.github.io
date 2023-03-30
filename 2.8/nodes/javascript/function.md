@@ -17,7 +17,7 @@ Runs the Javascript:
 
 <div className="ndl-image-with-background l">
 
-![](nodes/javascript/function/function-1.png)
+![](/nodes/javascript/function/function-1.png)
 
 </div>
 
@@ -32,7 +32,7 @@ E.g. the example above can be used as shown below.
 
 <div className="ndl-image-with-background l">
 
-![](nodes/javascript/function/function-2.png)
+![](/nodes/javascript/function/function-2.png)
 
 </div>
 
@@ -52,7 +52,7 @@ This can be especially useful if the node is connected to **Component Inputs** o
 
 <div className="ndl-image-with-background">
 
-![](nodes/javascript/function/function-3.png)
+![](/nodes/javascript/function/function-3.png)
 
 </div>
 
@@ -79,7 +79,7 @@ If this input has a connection the script will only run when a signal is receive
 
 <div className="ndl-image-with-background l">
 
-![](nodes/javascript/function/function-4.png)
+![](/nodes/javascript/function/function-4.png)
 
 </div>
 

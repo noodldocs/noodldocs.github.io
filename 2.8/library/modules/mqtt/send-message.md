@@ -10,7 +10,7 @@ hide_title: true
 use the same MQTT broker and thus messages can be sent across devices. The **Send Message** node uses topics to specify which receivers should get the messages.
 
 
-![](library/modules/mqtt/send-message.gif)
+![](/library/modules/mqtt/send-message.gif)
 
 <##head##>
 

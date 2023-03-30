@@ -12,7 +12,7 @@ The node can be used to create a fresh new [Object](/nodes/data/object/object-no
 
 <div className="ndl-image-with-background l">
 
-![](nodes/data/object/create-new-object/create-new-object.png)
+![](/nodes/data/object/create-new-object/create-new-object.png)
 
 </div>
 

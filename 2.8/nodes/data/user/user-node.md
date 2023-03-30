@@ -12,7 +12,7 @@ This node provides information about the current user session, if the web app ha
 
 <div className="ndl-image-with-background l">
 
-![](nodes/data/user/user/user_node.png)
+![](/nodes/data/user/user/user_node.png)
 
 </div>
 
@@ -20,7 +20,7 @@ The <span className="ndl-node">User</span> node only works if the user is create
 
 <div className="ndl-image-with-background l">
 
-![](nodes/data/user/log-in/login_node.png)
+![](/nodes/data/user/log-in/login_node.png)
 
 </div>
 

@@ -12,7 +12,7 @@ Use this node to store a single data variable that will be globally accessible t
 
 <div className="ndl-image-with-background l">
 
-![](nodes/data/variable/variable/variable-1.png)
+![](/nodes/data/variable/variable/variable-1.png)
 
 </div>
 

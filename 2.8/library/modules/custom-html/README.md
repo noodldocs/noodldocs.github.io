@@ -11,7 +11,7 @@ This node allows you to add your own custom HTML markup to your visual tree. Com
 
 <div className="ndl-image-with-background l">
 
-![](library/modules/custom-html/html.png)
+![](/library/modules/custom-html/html.png)
 
 </div>
 
@@ -19,7 +19,7 @@ You can pass dynamic values to your markup by using template strings. `{{ FillCo
 
 <div className="ndl-image-with-background l">
 
-![](library/modules/custom-html/example.png)
+![](/library/modules/custom-html/example.png)
 
 </div>
 

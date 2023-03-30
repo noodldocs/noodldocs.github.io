@@ -12,7 +12,7 @@ This node holds a <span className="ndl-data">number</span> that can be increased
 
 <div className="ndl-image-with-background l">
 
-![](nodes/math/counter/counter_node.png)
+![](/nodes/math/counter/counter_node.png)
 
 </div>
 
@@ -22,7 +22,7 @@ The Counter node can be limited to a `min` and a `max` value, and the limit can 
 
 <div className="ndl-image-with-background l">
 
-![](nodes/math/counter/counter.gif)
+![](/nodes/math/counter/counter.gif)
 
 </div>
 

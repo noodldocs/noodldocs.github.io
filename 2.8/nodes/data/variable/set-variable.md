@@ -12,7 +12,7 @@ This node sets the **Value** of a [Variable](/nodes/data/variable/variable-node)
 
 <div className="ndl-image-with-background l">
 
-![](nodes/data/variable/variable/variable-1.png)
+![](/nodes/data/variable/variable/variable-1.png)
 
 </div>
 

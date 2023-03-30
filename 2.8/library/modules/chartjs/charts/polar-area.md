@@ -9,7 +9,7 @@ hide_title: true
 
 <div className="ndl-image-with-background l">
 
-![](library/modules/chartjs/charts/polar-area-chart.png)
+![](/library/modules/chartjs/charts/polar-area-chart.png)
 
 </div>
 
@@ -43,7 +43,7 @@ Outputs.Data = {
 
 <div className="ndl-image-with-background l">
 
-![](library/modules/chartjs/charts/polar-area-centered-labels-chart.png)
+![](/library/modules/chartjs/charts/polar-area-centered-labels-chart.png)
 
 </div>
 

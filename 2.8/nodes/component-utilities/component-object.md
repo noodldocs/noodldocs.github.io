@@ -12,7 +12,7 @@ This node a shared set of properties that can be accessed from a component as we
 
 <div className="ndl-image-with-background l">
 
-![](nodes/component-utilities/component-object/component-object.png)
+![](/nodes/component-utilities/component-object/component-object.png)
 
 </div>
 
@@ -22,7 +22,7 @@ The <span className="ndl-node">Component Object</span> node works much like the 
 
 <div className="ndl-image-with-background">
 
-![](nodes/component-utilities/component-object/component-object-props.png)
+![](/nodes/component-utilities/component-object/component-object-props.png)
 
 </div>
 

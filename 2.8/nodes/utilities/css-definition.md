@@ -12,7 +12,7 @@ This node lets you write your own global custom CSS. It outputs your style defin
 
 <div className="ndl-image-with-background l">
 
-![](nodes/utilities/css-definition/preview.png)
+![](/nodes/utilities/css-definition/preview.png)
 
 </div>
 
@@ -20,7 +20,7 @@ The Visual nodes all have built in Visual Properties. They feature all the styli
 
 <div className="ndl-image-with-background l">
 
-![](nodes/utilities/css-definition/css-example.png)
+![](/nodes/utilities/css-definition/css-example.png)
 
 </div>
 
@@ -28,7 +28,7 @@ Classes can be attached to the Visual nodes in the Property Panel:
 
 <div className="ndl-image-with-background l">
 
-![](nodes/utilities/css-definition/class-example.png)
+![](/nodes/utilities/css-definition/class-example.png)
 
 </div>
 

@@ -12,7 +12,7 @@ This node is used to log in users that exist in the Noodl Cloud Service. You nee
 
 <div className="ndl-image-with-background l">
 
-![](nodes/data/user/log-in/login_visual.png)
+![](/nodes/data/user/log-in/login_visual.png)
 
 </div>
 
@@ -20,7 +20,7 @@ Once a user is logged in, their data can be accessed through the <span className
 
 <div className="ndl-image-with-background l">
 
-![](nodes/data/user/log-in/login_node.png)
+![](/nodes/data/user/log-in/login_node.png)
 
 </div>
 

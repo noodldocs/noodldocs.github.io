@@ -14,7 +14,7 @@ But remember - with great power comes great responsibility.
 
 <div className="ndl-image-with-background l">
 
-![](nodes/javascript/script/script.png)
+![](/nodes/javascript/script/script.png)
 
 </div>
 

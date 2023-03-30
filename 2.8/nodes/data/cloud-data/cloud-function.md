@@ -12,7 +12,7 @@ Cloud functions are logic components that run in the cloud and not on the client
 
 <div className="ndl-image-with-background l">
 
-![](nodes/data/cloud-data/cloud-function/cloud-function-1.png)
+![](/nodes/data/cloud-data/cloud-function/cloud-function-1.png)
 
 </div>
 
@@ -20,7 +20,7 @@ You will first need to pick the cloud function that you want to call with this n
 
 <div className="ndl-image-with-background l">
 
-![](nodes/data/cloud-data/cloud-function/cloud-function-2.png)
+![](/nodes/data/cloud-data/cloud-function/cloud-function-2.png)
 
 </div>
 
@@ -30,7 +30,7 @@ A cloud function can either return a **Success** or **Failure** response, this w
 
 <div className="ndl-image-with-background l">
 
-![](nodes/data/cloud-data/cloud-function/cloud-function-3.png)
+![](/nodes/data/cloud-data/cloud-function/cloud-function-3.png)
 
 </div>
 

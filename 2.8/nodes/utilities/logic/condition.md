@@ -12,7 +12,7 @@ This node evaluates a condition and sends one of two <span className="ndl-signal
 
 <div className="ndl-image-with-background l">
 
-![](nodes/utilities/logic/condition/condition_node.png)
+![](/nodes/utilities/logic/condition/condition_node.png)
 
 </div>
 
@@ -22,7 +22,7 @@ The input <span className="ndl-data">Condition</span> will be treated as a <span
 
 <div className="ndl-image-with-background l">
 
-![](nodes/utilities/logic/condition/condition.gif)
+![](/nodes/utilities/logic/condition/condition.gif)
 
 </div>
 

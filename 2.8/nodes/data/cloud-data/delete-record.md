@@ -12,7 +12,7 @@ This node will delete a **Record** of a given **Class** from the Noodl Cloud Ser
 
 <div className="ndl-image-with-background l">
 
-![](nodes/data/cloud-data/delete-record/delete-record-node.png)
+![](/nodes/data/cloud-data/delete-record/delete-record-node.png)
 
 </div>
 

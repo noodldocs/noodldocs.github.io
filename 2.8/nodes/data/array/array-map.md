@@ -12,7 +12,7 @@ This node takes an input array, runs a small map script on each item, and output
 
 <div className="ndl-image-with-background l">
 
-![](nodes/data/array/array-map/array-map.png)
+![](/nodes/data/array/array-map/array-map.png)
 
 </div>
 

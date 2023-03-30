@@ -12,7 +12,7 @@ This node can be used to perform a set of tasks comprised of a logic component f
 
 <div className="ndl-image-with-background xl">
 
-![](nodes/data/run-tasks/run-tasks-1.png)
+![](/nodes/data/run-tasks/run-tasks-1.png)
 
 </div>
 
@@ -20,7 +20,7 @@ The <span className="ndl-node">Run Tasks</span> node needs a task component that
 
 <div className="ndl-image-with-background xl">
 
-![](nodes/data/run-tasks/run-tasks-2.png)
+![](/nodes/data/run-tasks/run-tasks-2.png)
 
 </div>
 
@@ -30,7 +30,7 @@ You can control the behaviour of how the tasks are run with the properties.
 
 <div className="ndl-image-with-background l">
 
-![](nodes/data/run-tasks/run-tasks-props.png)
+![](/nodes/data/run-tasks/run-tasks-props.png)
 
 </div>
 
@@ -44,7 +44,7 @@ You can control the behaviour of how the tasks are run with the properties.
 
 <div className="ndl-image-with-background xl">
 
-![](nodes/data/run-tasks/run-tasks-4.png)
+![](/nodes/data/run-tasks/run-tasks-4.png)
 
 </div>
 
@@ -52,7 +52,7 @@ As with the **Repeater** you need to specify that the **Id** of the object shoul
 
 <div className="ndl-image-with-background l">
 
-![](nodes/data/run-tasks/run-tasks-3.png)
+![](/nodes/data/run-tasks/run-tasks-3.png)
 
 </div>
 
@@ -60,7 +60,7 @@ However the properties of the object corresponding to that task will also be ava
 
 <div className="ndl-image-with-background xl">
 
-![](nodes/data/run-tasks/run-tasks-5.png)
+![](/nodes/data/run-tasks/run-tasks-5.png)
 
 </div>
 

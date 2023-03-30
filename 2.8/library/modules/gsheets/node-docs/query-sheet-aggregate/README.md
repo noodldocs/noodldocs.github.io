@@ -15,7 +15,7 @@ This node is used do aggregate data queries on a column from a public Google She
 
 <div className="ndl-image-with-background l">
 
-![](library/modules/gsheets/node-docs/query-sheet-aggregate/query-sheet-ag-1.png)
+![](/library/modules/gsheets/node-docs/query-sheet-aggregate/query-sheet-ag-1.png)
 
 </div>
 
@@ -33,7 +33,7 @@ You refer to the document through its id. You find the id in the URL of the Goog
 
 <div className="ndl-image-with-background l">
 
-![](library/modules/gsheets/node-docs/query-sheet/query-sheet-3.png)
+![](/library/modules/gsheets/node-docs/query-sheet/query-sheet-3.png)
 
 </div>
 
@@ -41,7 +41,7 @@ You also have to specify the Sheet Name. You find the Sheet names in the Google 
 
 <div className="ndl-image-with-background">
 
-![](library/modules/gsheets/node-docs/query-sheet/query-sheet-4.png)
+![](/library/modules/gsheets/node-docs/query-sheet/query-sheet-4.png)
 
 </div>
 
@@ -51,7 +51,7 @@ A filter can be added to the query, meaning the aggregate will only be calculate
 
 <div className="ndl-image-with-background l">
 
-![](library/modules/gsheets/node-docs/query-sheet-aggregate/query-sheet-ag-1.png)
+![](/library/modules/gsheets/node-docs/query-sheet-aggregate/query-sheet-ag-1.png)
 
 </div>
 

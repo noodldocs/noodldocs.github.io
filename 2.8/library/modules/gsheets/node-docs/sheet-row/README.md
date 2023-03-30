@@ -13,13 +13,13 @@ By setting the `Row Id` of the **Sheet Row**, and selecting the **Sheet** (if yo
 
 <div className="ndl-image-with-background l">
 
-![](library/modules/gsheets/node-docs/sheet-row/sheet-row-1.png)
+![](/library/modules/gsheets/node-docs/sheet-row/sheet-row-1.png)
 
 </div>
 
 <div className="ndl-image-with-background l">
 
-![](library/modules/gsheets/node-docs/sheet-row/sheet-row-2.png)
+![](/library/modules/gsheets/node-docs/sheet-row/sheet-row-2.png)
 
 </div>
 

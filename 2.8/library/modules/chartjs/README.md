@@ -7,7 +7,7 @@ hide_title: true
 
 This module allows you to add charts to your Noodl App, using [Chart.js](https://www.chartjs.org/).
 
-![](library/modules/chartjs/preview-bar-chart-nodes.png)
+![](/library/modules/chartjs/preview-bar-chart-nodes.png)
 
 Supported chart types:
 * Line and Area
