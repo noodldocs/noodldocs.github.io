@@ -12,7 +12,7 @@ This node is used to filter an <span className="ndl-data">array</span> that is a
 
 <div className="ndl-image-with-background l">
 
-![](/nodes/data/cloud-data/filter-records/filter-records-node.png)
+![](nodes/data/cloud-data/filter-records/filter-records-node.png)
 
 </div>
 
@@ -20,7 +20,7 @@ You can specify both filter and sorting visually.
 
 <div className="ndl-image-with-background l">
 
-![](/nodes/data/cloud-data/filter-records/filter-records-visual.png)
+![](nodes/data/cloud-data/filter-records/filter-records-visual.png)
 
 </div>
 <##head##>

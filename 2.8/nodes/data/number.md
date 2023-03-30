@@ -12,7 +12,7 @@ This node holds a <span className="ndl-data">number</span> value. It is local to
 
 <div className="ndl-image-with-background l">
 
-![](/nodes/data/number/number-1.png)
+![](nodes/data/number/number-1.png)
 
 </div>
 
@@ -20,7 +20,7 @@ You can also use the <span className="ndl-node">Number</span> node connected to 
 
 <div className="ndl-image-with-background l">
 
-![](/nodes/data/number/number-2.png)
+![](nodes/data/number/number-2.png)
 
 </div>
 

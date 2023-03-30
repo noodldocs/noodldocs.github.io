@@ -12,7 +12,7 @@ This node is used to display a component as a modal popup on top of the entire w
 
 <div className="ndl-image-with-background">
 
-![](/nodes/popups/show-popup/show-popup-2.png)
+![](nodes/popups/show-popup/show-popup-2.png)
 
 </div>
 
@@ -20,7 +20,7 @@ The <span className="ndl-node">Show Popup</span> node lets you specify which com
 
 <div className="ndl-image-with-background l">
 
-![](/nodes/popups/show-popup/show-popup-1.png)
+![](nodes/popups/show-popup/show-popup-1.png)
 
 </div>
 
@@ -30,7 +30,7 @@ When a popup is closed with the [Close Popup](/nodes/popups/close-popup) node it
 
 <div className="ndl-image-with-background l">
 
-![](/nodes/popups/show-popup/show-popup-3.png)
+![](nodes/popups/show-popup/show-popup-3.png)
 
 </div>
 

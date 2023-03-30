@@ -12,7 +12,7 @@ When a new user is created that have a valid email Noodl will automatically atte
 
 <div className="ndl-image-with-background l">
 
-![](/nodes/data/user/send-email-verification/send-email-verification.png)
+![](nodes/data/user/send-email-verification/send-email-verification.png)
 
 </div>
 

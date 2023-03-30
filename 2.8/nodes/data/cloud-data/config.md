@@ -12,7 +12,7 @@ This node is used to fetch a configuration parameter from the cloud services. Ca
 
 <div className="ndl-image-with-background xl">
 
-![](/nodes/data/cloud-data/config/config-node.png)
+![](nodes/data/cloud-data/config/config-node.png)
 
 </div>
 
@@ -20,7 +20,7 @@ You pick a **Parameter** in the properties of the node. First you must specify t
 
 <div className="ndl-image-with-background xl">
 
-![](/nodes/data/cloud-data/config/config-dashboard.png)
+![](nodes/data/cloud-data/config/config-dashboard.png)
 
 </div>
 
@@ -32,7 +32,7 @@ Once you have create your parameters in the cloud services dashboard you can pic
 
 <div className="ndl-image-with-background l">
 
-![](/nodes/data/cloud-data/config/config-props.png)
+![](nodes/data/cloud-data/config/config-props.png)
 
 </div>
 
@@ -42,7 +42,7 @@ Config parameters are especially useful when you need to have values that vary d
 
 <div className="ndl-image-with-background xl">
 
-![](/nodes/data/cloud-data/config/config-local.png)
+![](nodes/data/cloud-data/config/config-local.png)
 
 </div>
 
@@ -50,7 +50,7 @@ For the node above we want a special config parameter for when running locally s
 
 <div className="ndl-image-with-background l">
 
-![](/nodes/data/cloud-data/config/config-local-props.png)
+![](nodes/data/cloud-data/config/config-local-props.png)
 
 </div>
 

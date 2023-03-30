@@ -12,7 +12,7 @@ This node outputs the <span className="ndl-data">width</span>, <span className="
 
 <div className="ndl-image-with-background l">
 
-![](/nodes/utilities/screen-resolution/screen-resolution.png)
+![](nodes/utilities/screen-resolution/screen-resolution.png)
 
 </div>
 

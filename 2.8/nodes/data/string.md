@@ -12,7 +12,7 @@ This node contains a <span className="ndl-data">string</span> value (text). It c
 
 <div className="ndl-image-with-background l">
 
-![](/nodes/data/string/string_node.png)
+![](nodes/data/string/string_node.png)
 
 </div>
 
@@ -24,7 +24,7 @@ You can use it to provide a static value for input to other nodes. It is local t
 
 <div className="ndl-image-with-background l">
 
-![](/nodes/data/string/local-string.png)
+![](nodes/data/string/local-string.png)
 
 </div>
 
@@ -32,7 +32,7 @@ You can simply connect to the **Value** input to set the value of the node when 
 
 <div className="ndl-image-with-background l">
 
-![](/nodes/data/string/string-1.png)
+![](nodes/data/string/string-1.png)
 
 </div>
 
@@ -42,7 +42,7 @@ You can also use the **Set** input to control when the value of the variable nod
 
 <div className="ndl-image-with-background l">
 
-![](/nodes/data/string/string-2.png)
+![](nodes/data/string/string-2.png)
 
 </div>
 

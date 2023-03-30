@@ -14,7 +14,7 @@ Generally your application should have a specific **email verification page** th
 
 <div className="ndl-image-with-background l">
 
-![](/nodes/data/user/verify-email/verify-email.png)
+![](nodes/data/user/verify-email/verify-email.png)
 
 </div>
 

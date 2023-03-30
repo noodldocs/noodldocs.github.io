@@ -28,7 +28,7 @@ If we start out with the same super simple app as in the previous guide we can s
 
 <div className="ndl-image-with-background l">
 
-![](/library/modules/mapbox/guides/interacting/initial-state.png)
+![](library/modules/mapbox/guides/interacting/initial-state.png)
 
 </div>
 
@@ -36,7 +36,7 @@ Let's first remove the "Hello World"-text. Instead we replace it with a panel. W
 
 <div className="ndl-image-with-background">
 
-![](/library/modules/mapbox/guides/interacting/nodes-1.png)
+![](library/modules/mapbox/guides/interacting/nodes-1.png)
 
 </div>
 
@@ -44,7 +44,7 @@ We want it to float on top of the MapboxMap so change it's **Position** to **Abs
 
 <div className="ndl-image-with-background s">
 
-![](/library/modules/mapbox/guides/interacting/popup-panel-1.png)
+![](library/modules/mapbox/guides/interacting/popup-panel-1.png)
 
 </div>
 
@@ -52,7 +52,7 @@ Also make it white, with rounded corners of 10 pixels and a 2 pixel outline of a
 
 <div className="ndl-image-with-background s">
 
-![](/library/modules/mapbox/guides/interacting/popup-panel-2.png)
+![](library/modules/mapbox/guides/interacting/popup-panel-2.png)
 
 </div>
 
@@ -60,7 +60,7 @@ Now you should have a panel floating on top of the map.
 
 <div className="ndl-image-with-background l">
 
-![](/library/modules/mapbox/guides/interacting/screen-1.png)
+![](library/modules/mapbox/guides/interacting/screen-1.png)
 
 </div>
 
@@ -70,7 +70,7 @@ Add two text nodes in the panel. Adjust the padding (horizontally and vertically
 
 <div className="ndl-image-with-background l">
 
-![](/library/modules/mapbox/guides/interacting/state-2.png)
+![](library/modules/mapbox/guides/interacting/state-2.png)
 
 </div>
 
@@ -78,7 +78,7 @@ Then connect the two outputs "Longitude" and "Latitude" to the respective text. 
 
 <div className="ndl-image-with-background l">
 
-![](/library/modules/mapbox/guides/interacting/connection-1.png)
+![](library/modules/mapbox/guides/interacting/connection-1.png)
 
 </div>
 
@@ -86,7 +86,7 @@ Now try clicking around in the map. You should see the two texts updating whenev
 
 <div className="ndl-image-with-background l">
 
-![](/library/modules/mapbox/guides/interacting/screen-2.png)
+![](library/modules/mapbox/guides/interacting/screen-2.png)
 
 </div>
 
@@ -98,7 +98,7 @@ First add a [States](/nodes/utilities/logic/states) node that will hold the curr
 
 <div className="ndl-image-with-background">
 
-![](/library/modules/mapbox/guides/interacting/states-panel-1.png)
+![](library/modules/mapbox/guides/interacting/states-panel-1.png)
 
 </div>
 
@@ -106,7 +106,7 @@ Finally hook up the outputs **Click** and **Map Moved** signal to change the sta
 
 <div className="ndl-image-with-background l">
 
-![](/library/modules/mapbox/guides/interacting/nodes-2.png)
+![](library/modules/mapbox/guides/interacting/nodes-2.png)
 
 </div>
 

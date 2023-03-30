@@ -19,7 +19,7 @@ This sample shows how to use the tooltip callbacks to add additional content to 
 
 <div className="ndl-image-with-background l">
 
-![](/library/modules/chartjs/guides/custom-tooltip-content.png)
+![](library/modules/chartjs/guides/custom-tooltip-content.png)
 
 </div>
 
@@ -47,7 +47,7 @@ This sample shows how to use the external tooltip functionality to generate an H
 
 <div className="ndl-image-with-background l">
 
-![](/library/modules/chartjs/guides/custom-tooltip-content.png)
+![](library/modules/chartjs/guides/custom-tooltip-content.png)
 
 </div>
 
@@ -173,7 +173,7 @@ For this we just change the code to only return the titles.
 
 <div className="ndl-image-with-background l">
 
-![](/library/modules/chartjs/guides/only-show-titles-chart.png)
+![](library/modules/chartjs/guides/only-show-titles-chart.png)
 
 </div>
 

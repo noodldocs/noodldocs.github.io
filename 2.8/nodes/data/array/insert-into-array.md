@@ -12,7 +12,7 @@ This node is used to insert an _Object_ into an _Array_. Both the Array and the 
 
 <div className="ndl-image-with-background l">
 
-![](/nodes/data/array/insert-into-array/insert-object-into-array.png)
+![](nodes/data/array/insert-into-array/insert-object-into-array.png)
 
 </div>
 

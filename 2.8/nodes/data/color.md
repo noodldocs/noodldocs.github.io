@@ -12,7 +12,7 @@ This node holds a <span className="ndl-data">color</span> value.
 
 <div className="ndl-image-with-background l">
 
-![](/nodes/data/color/color_node.png)
+![](nodes/data/color/color_node.png)
 
 </div>
 

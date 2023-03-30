@@ -14,7 +14,7 @@ It also supports common URL schemes, like `mailto:` and `tel:`.
 
 <div className="ndl-image-with-background l">
 
-![](/nodes/navigation/external-link/external-link.png)
+![](nodes/navigation/external-link/external-link.png)
 
 </div>
 

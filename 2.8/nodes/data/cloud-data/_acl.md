@@ -4,7 +4,7 @@ When creating and updating records you can also specify access control rules. By
 
 <div className="ndl-image-with-background m">
 
-![](/nodes/data/cloud-data/acl-1.png)
+![](nodes/data/cloud-data/acl-1.png)
 
 </div>
 

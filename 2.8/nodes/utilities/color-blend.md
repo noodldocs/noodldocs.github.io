@@ -12,7 +12,7 @@ This node lets you blend between color values.
 
 <div className="ndl-image-with-background">
 
-![](/nodes/utilities/color-blend/color-blend.png)
+![](nodes/utilities/color-blend/color-blend.png)
 
 </div>
 

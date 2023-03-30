@@ -12,7 +12,7 @@ This node is used to pass parameters in the URL when navigating between pages in
 
 <div className="ndl-image-with-background l">
 
-![](/nodes/navigation/page-inputs/page-inputs.png)
+![](nodes/navigation/page-inputs/page-inputs.png)
 
 </div>
 

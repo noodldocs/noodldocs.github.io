@@ -13,7 +13,7 @@ You define your own string mappings. You can also define a default value to outp
 
 <div className="ndl-image-with-background l">
 
-![](/nodes/string-manipulation/string-mapper/string_mapper_node.png)
+![](nodes/string-manipulation/string-mapper/string_mapper_node.png)
 
 </div>
 

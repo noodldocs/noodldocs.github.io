@@ -12,7 +12,7 @@ The **Response** node is used to complete a cloud function and return the result
 
 <div className="ndl-image-with-background l">
 
-![](/nodes/cloud-functions/response/response-1.png)
+![](nodes/cloud-functions/response/response-1.png)
 
 </div>
 
@@ -20,7 +20,7 @@ The response is sent when a signal is received on the **Send** input. You can sp
 
 <div className="ndl-image-with-background l">
 
-![](/nodes/cloud-functions/response/response-2.png)
+![](nodes/cloud-functions/response/response-2.png)
 
 </div>
 
@@ -32,7 +32,7 @@ If the status is **Success** you can provide a number of result parameters that 
 
 <div className="ndl-image-with-background l">
 
-![](/nodes/cloud-functions/response/response-3.png)
+![](nodes/cloud-functions/response/response-3.png)
 
 </div>
 

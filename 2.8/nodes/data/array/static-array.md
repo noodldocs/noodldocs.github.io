@@ -12,7 +12,7 @@ Store static data to populate an [Array](/nodes/data/array/array-node) with item
 
 <div className="ndl-image-with-background l">
 
-![](/nodes/data/array/static-array/static-array-1.png)
+![](nodes/data/array/static-array/static-array-1.png)
 
 </div>
 

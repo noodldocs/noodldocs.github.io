@@ -9,7 +9,7 @@ This module allows you to add a map with marker functionality to your Noodl App,
 
 <div className="ndl-image-with-background">
 
-![](/library/modules/mapbox/guides/using-markers/screen-3.png)
+![](library/modules/mapbox/guides/using-markers/screen-3.png)
 
 </div>
 

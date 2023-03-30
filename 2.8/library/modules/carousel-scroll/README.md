@@ -13,7 +13,7 @@ This module contains a simple horizontal Carousel scroll with the following feat
 
 <div className="ndl-image-with-background">
 
-![](/library/modules/carousel-scroll/carousel-1.png)
+![](library/modules/carousel-scroll/carousel-1.png)
 
 </div>
 
@@ -23,7 +23,7 @@ When you import the module into your project you will get the following componen
 
 <div className="ndl-image-with-background">
 
-![](/library/modules/carousel-scroll/components.png)
+![](library/modules/carousel-scroll/components.png)
 
 </div>
 
@@ -43,7 +43,7 @@ Note that the **Carousel** node should have its cards as direct children. This c
 
 <div className="ndl-image-with-background">
 
-![](/library/modules/carousel-scroll/carousel-repeater.png)
+![](library/modules/carousel-scroll/carousel-repeater.png)
 
 </div>
 
@@ -58,7 +58,7 @@ The **Carousel** component have a few options available to tweak.
 
 <div className="ndl-image-with-background">
 
-![](/library/modules/carousel-scroll/carousel-params.png)
+![](library/modules/carousel-scroll/carousel-params.png)
 
 </div>
 
@@ -71,6 +71,6 @@ The most impactful component to change is the **Carousel Card**. You can for exa
 
 <div className="ndl-image-with-background l">
 
-![](/library/modules/carousel-scroll/carousel-card.png)
+![](library/modules/carousel-scroll/carousel-card.png)
 
 </div>

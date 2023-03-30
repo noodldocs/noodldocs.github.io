@@ -12,7 +12,7 @@ The **Request** node is the starting point for **Cloud Functions**, it is where 
 
 <div className="ndl-image-with-background l">
 
-![](/nodes/cloud-functions/request/request.png)
+![](nodes/cloud-functions/request/request.png)
 
 </div>
 
@@ -22,7 +22,7 @@ You specify what parameters the cloud function accepts in the properties of the 
 
 <div className="ndl-image-with-background l">
 
-![](/nodes/cloud-functions/request/request-2.png)
+![](nodes/cloud-functions/request/request-2.png)
 
 </div>
 
@@ -34,7 +34,7 @@ However, if you check the **Allow Unauthenticated** property the function can be
 
 <div className="ndl-image-with-background xl">
 
-![](/nodes/cloud-functions/request/request-3.png)
+![](nodes/cloud-functions/request/request-3.png)
 
 </div>
 

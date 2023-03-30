@@ -8,7 +8,7 @@ This module allows you to track user interactions with your Noodl app, using Goo
 
 <div className="ndl-image-with-background l">
 
-![](/library/modules/google-analytics/screenshot.png)
+![](library/modules/google-analytics/screenshot.png)
 
 </div>
 

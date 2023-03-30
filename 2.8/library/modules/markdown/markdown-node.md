@@ -8,7 +8,7 @@ hide_title: true
 
 This node enables you to use Markdown in Noodl.
 
-![](/library/modules/markdown/markdown-nodes.png)
+![](library/modules/markdown/markdown-nodes.png)
 <##head##>
 
 ## Inputs

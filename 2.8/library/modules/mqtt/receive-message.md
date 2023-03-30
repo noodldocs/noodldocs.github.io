@@ -10,7 +10,7 @@ hide_title: true
 **Receive Message** nodes are used to receive messages sent over MQTT, by a [**Send Message**](/library/modules/mqtt/send-message) node for example. Messages can be sent across devices and
 be used for inter-device communication and IoT. The **Receive Message** node subscribes to an MQTT topic and receives any message and payload published to that topic.
 
-![](/library/modules/mqtt/receive-message.png)
+![](library/modules/mqtt/receive-message.png)
 <##head##>
 
 <div class = "node-inputs">

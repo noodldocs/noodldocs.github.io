@@ -11,7 +11,7 @@ This logic node adds a tooltip to the visual tree.
 
 <div className="ndl-image-with-background l">
 
-![](/library/modules/simple-tooltips/show-tooltip.png)
+![](library/modules/simple-tooltips/show-tooltip.png)
 
 </div>
 

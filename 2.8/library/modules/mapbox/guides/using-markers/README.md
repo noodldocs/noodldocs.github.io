@@ -39,7 +39,7 @@ Markers are used to mark points in the map. They can be anywhere on the map.
 
 <div className="ndl-image-with-background s">
 
-![](/library/modules/mapbox/guides/using-markers/markers-1.png)
+![](library/modules/mapbox/guides/using-markers/markers-1.png)
 
 </div>
 
@@ -60,7 +60,7 @@ First we add an **Array** node. Give it the **id** `Map Markers`.
 
 <div className="ndl-image-with-background">
 
-![](/library/modules/mapbox/guides/using-markers/panel-1.png)
+![](library/modules/mapbox/guides/using-markers/panel-1.png)
 
 </div>
 
@@ -68,7 +68,7 @@ This will feed the markers to the **Mapbox** node, so connect its output **Items
 
 <div className="ndl-image-with-background l">
 
-![](/library/modules/mapbox/guides/using-markers/nodes-1.png)
+![](library/modules/mapbox/guides/using-markers/nodes-1.png)
 
 </div>
 
@@ -76,13 +76,13 @@ Now we need to add new **Objects** to the **Array** whenever the user clicks on 
 
 <div className="ndl-image-with-background l">
 
-![](/library/modules/mapbox/guides/using-markers/nodes-2.png)
+![](library/modules/mapbox/guides/using-markers/nodes-2.png)
 
 </div>
 
 <div className="ndl-image-with-background s">
 
-![](/library/modules/mapbox/guides/using-markers/panel-2.png)
+![](library/modules/mapbox/guides/using-markers/panel-2.png)
 
 </div>
 
@@ -90,7 +90,7 @@ We want to set the `Lat` and `Lon` to the position the user clicks, so connect t
 
 <div className="ndl-image-with-background l">
 
-![](/library/modules/mapbox/guides/using-markers/nodes-3.png)
+![](library/modules/mapbox/guides/using-markers/nodes-3.png)
 
 </div>
 
@@ -98,7 +98,7 @@ The newly created **Object** need to be added to the **Array** that holds the ma
 
 <div className="ndl-image-with-background l">
 
-![](/library/modules/mapbox/guides/using-markers/nodes-4.png)
+![](library/modules/mapbox/guides/using-markers/nodes-4.png)
 
 </div>
 
@@ -106,7 +106,7 @@ If everything was done correctly, you should now be able to place black markers 
 
 <div className="ndl-image-with-background">
 
-![](/library/modules/mapbox/guides/using-markers/screen-2.png)
+![](library/modules/mapbox/guides/using-markers/screen-2.png)
 
 </div>
 
@@ -121,7 +121,7 @@ Also, the **Marker Click** signal now makes the panel visible as well. The full 
 
 <div className="ndl-image-with-background l">
 
-![](/library/modules/mapbox/guides/using-markers/nodes-5.png)
+![](library/modules/mapbox/guides/using-markers/nodes-5.png)
 
 </div>
 
@@ -131,7 +131,7 @@ The `Current Marker` Variable holds the **Id** of the current marker, so just co
 
 <div className="ndl-image-with-background l">
 
-![](/library/modules/mapbox/guides/using-markers/nodes-6.png)
+![](library/modules/mapbox/guides/using-markers/nodes-6.png)
 
 </div>
 
@@ -142,19 +142,19 @@ So let's add a [Button](/nodes/ui-controls/button) to the panel. Remove its labe
 
 <div className="ndl-image-with-background s">
 
-![](/library/modules/mapbox/guides/using-markers/button-1.png)
+![](library/modules/mapbox/guides/using-markers/button-1.png)
 
 </div>
 
 <div className="ndl-image-with-background s">
 
-![](/library/modules/mapbox/guides/using-markers/button-panel-1.png)
+![](library/modules/mapbox/guides/using-markers/button-panel-1.png)
 
 </div>
 
 <div className="ndl-image-with-background">
 
-![](/library/modules/mapbox/guides/using-markers/screen-3.png)
+![](library/modules/mapbox/guides/using-markers/screen-3.png)
 
 </div>
 

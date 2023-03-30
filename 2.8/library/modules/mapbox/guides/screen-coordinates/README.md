@@ -8,7 +8,7 @@ This snippet is useful if you want to position something, for example a Noodl Co
 
 <div className="ndl-image-with-background l">
 
-![](/library/modules/mapbox/guides/screen-coordinates/meteor.png)
+![](library/modules/mapbox/guides/screen-coordinates/meteor.png)
 
 </div>
 

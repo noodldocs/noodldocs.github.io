@@ -11,7 +11,7 @@ This node adds a map to the visual tree, using [Mapbox](https://www.mapbox.com/)
 
 <div className="ndl-image-with-background l">
 
-![](/library/modules/mapbox/mapbox-map.png)
+![](library/modules/mapbox/mapbox-map.png)
 
 </div>
 
@@ -19,7 +19,7 @@ Markers can be placed on the map by sending an <span className="ndl-data">array<
 
 <div className="ndl-image-with-background l">
 
-![](/library/modules/mapbox/marker-data.png)
+![](library/modules/mapbox/marker-data.png)
 
 </div>
 

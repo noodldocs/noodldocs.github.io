@@ -12,7 +12,7 @@ This node is used to sign up new users in the Noodl Cloud Service.
 
 <div className="ndl-image-with-background l">
 
-![](/nodes/data/user/sign-up/sign-up_visual.png)
+![](nodes/data/user/sign-up/sign-up_visual.png)
 
 </div>
 
@@ -20,7 +20,7 @@ The <span className="ndl-node">Sign Up</span> node is the easiest way to handle 
 
 <div className="ndl-image-with-background l">
 
-![](/nodes/data/user/sign-up/sign-up_node.png)
+![](nodes/data/user/sign-up/sign-up_node.png)
 
 </div>
 

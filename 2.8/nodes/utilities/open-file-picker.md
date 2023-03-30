@@ -12,7 +12,7 @@ This node opens a file picker dialog. Noodl uses the system file picker dialog, 
 
 <div className="ndl-image-with-background l">
 
-![](/nodes/utilities/open-file-picker/open-file-picker.png)
+![](nodes/utilities/open-file-picker/open-file-picker.png)
 
 </div>
 

@@ -12,7 +12,7 @@ This node is used to remove a relation between two records, the owning record an
 
 <div className="ndl-image-with-background l">
 
-![](/nodes/data/cloud-data/remove-record-relation/remove-relation.png)
+![](nodes/data/cloud-data/remove-record-relation/remove-relation.png)
 
 </div>
 

@@ -13,7 +13,7 @@ This module allows you to add simple tooltips to your Noodl App, they are design
 
 <div className="ndl-image-with-background l">
 
-![](/library/modules/simple-tooltips/preview.png)
+![](library/modules/simple-tooltips/preview.png)
 
 </div>
 
@@ -28,7 +28,7 @@ We can start by placing the **Tooltip** node into our visual tree, and a button 
 
 <div className="ndl-image-with-background l">
 
-![](/library/modules/simple-tooltips/tooltip-setup-1.png)
+![](library/modules/simple-tooltips/tooltip-setup-1.png)
 
 </div>
 
@@ -36,7 +36,7 @@ After that we will do the most important part, setting the content inside the to
 
 <div className="ndl-image-with-background l">
 
-![](/library/modules/simple-tooltips/property-panel-1.png)
+![](library/modules/simple-tooltips/property-panel-1.png)
 
 </div>
 
@@ -44,7 +44,7 @@ Now when you hover the mouse on top of the button you will see the tooltip.
 
 <div className="ndl-image-with-background l">
 
-![](/library/modules/simple-tooltips/tooltip-setup-2.png)
+![](library/modules/simple-tooltips/tooltip-setup-2.png)
 
 </div>
 
@@ -52,7 +52,7 @@ But the tooltip is not in the center of the button, that is because the tooltip 
 
 <div className="ndl-image-with-background l">
 
-![](/library/modules/simple-tooltips/tooltip-setup-3.png)
+![](library/modules/simple-tooltips/tooltip-setup-3.png)
 
 </div>
 

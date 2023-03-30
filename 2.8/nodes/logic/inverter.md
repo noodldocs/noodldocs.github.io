@@ -12,7 +12,7 @@ This node changes <span className="ndl-data">true</span> values to be <span clas
 
 <div className="ndl-image-with-background l">
 
-![](/nodes/logic/inverter/inverter_node.png)
+![](nodes/logic/inverter/inverter_node.png)
 
 </div>
 

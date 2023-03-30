@@ -12,7 +12,7 @@ This node contains a set of useful utilities for components that have been dynam
 
 <div className="ndl-image-with-background l">
 
-![](/nodes/ui-controls/repeater-item/repeater-item.png)
+![](nodes/ui-controls/repeater-item/repeater-item.png)
 
 </div>
 

@@ -12,7 +12,7 @@ This node holds a <span className="ndl-data">boolean</span> (true/false) value. 
 
 <div className="ndl-image-with-background l">
 
-![](/nodes/data/boolean/boolean-1.png)
+![](nodes/data/boolean/boolean-1.png)
 
 </div>
 
@@ -20,7 +20,7 @@ You can connect the <span className="ndl-node">Boolean</span> node to a <span cl
 
 <div className="ndl-image-with-background l">
 
-![](/nodes/data/boolean/boolean-2.png)
+![](nodes/data/boolean/boolean-2.png)
 
 </div>
 

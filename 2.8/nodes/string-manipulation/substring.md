@@ -12,7 +12,7 @@ This node lets you extract a part of a <span className="ndl-data">string</span> 
 
 <div className="ndl-image-with-background l">
 
-![](/nodes/string-manipulation/substring/substring_node.png)
+![](nodes/string-manipulation/substring/substring_node.png)
 
 </div>
 

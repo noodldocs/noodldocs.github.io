@@ -12,7 +12,7 @@ This node holds a <span className="ndl-data">boolean</span> state. It is either 
 
 <div className="ndl-image-with-background l">
 
-![](/nodes/logic/switch/switch.gif)
+![](nodes/logic/switch/switch.gif)
 
 </div>
 

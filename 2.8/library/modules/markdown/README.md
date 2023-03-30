@@ -11,11 +11,11 @@ Markdown in Noodl is a combination of the **Markdown** and **CSS Definition** no
 
 Let's recreate this example.
 
-![](/library/modules/markdown/markdown-example.png)
+![](library/modules/markdown/markdown-example.png)
 
 We'll need three nodes. A **Group**, the **Markdown** node, and a **CSS Definition** node.
 
-![](/library/modules/markdown/markdown-nodes.png)
+![](library/modules/markdown/markdown-nodes.png)
 
 This is the markdown:
 

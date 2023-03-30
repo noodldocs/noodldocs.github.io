@@ -12,7 +12,7 @@ This node lets you navigate to a specific <span className="ndl-node">[Page](/nod
 
 <div className="ndl-image-with-background l">
 
-![](/nodes/navigation/navigate-to-path/navigate-to-path.png)
+![](nodes/navigation/navigate-to-path/navigate-to-path.png)
 
 </div>
 

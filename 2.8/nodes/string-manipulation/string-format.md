@@ -12,7 +12,7 @@ This node is used to construct a new text <span className="ndl-data">string</spa
 
 <div className="ndl-image-with-background l">
 
-![](/nodes/string-manipulation/string-format/stringformat-node.png)
+![](nodes/string-manipulation/string-format/stringformat-node.png)
 
 </div>
 
@@ -20,7 +20,7 @@ The <span className="ndl-node">String Format</span> node needs a format input wh
 
 <div className="ndl-image-with-background l">
 
-![](/nodes/string-manipulation/string-format/stringformat-visual.png)
+![](nodes/string-manipulation/string-format/stringformat-visual.png)
 
 </div>
 

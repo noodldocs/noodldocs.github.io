@@ -14,7 +14,7 @@ Generally your application should have a specific **password reset page** that i
 
 <div className="ndl-image-with-background l">
 
-![](/nodes/data/user/reset-password/reset-password.png)
+![](nodes/data/user/reset-password/reset-password.png)
 
 </div>
 

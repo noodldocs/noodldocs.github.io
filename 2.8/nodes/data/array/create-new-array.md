@@ -12,7 +12,7 @@ Creates a new Array. The outgoing property _Id_ is the id of the newly created a
 
 <div className="ndl-image-with-background l">
 
-![](/nodes/data/array/create-new-array/create-new-array.png)
+![](nodes/data/array/create-new-array/create-new-array.png)
 
 </div>
 

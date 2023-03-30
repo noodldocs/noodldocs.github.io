@@ -16,7 +16,7 @@ the **Component Children** node.
 
 <div className="ndl-image-with-background">
 
-![](/nodes/component-utilities/component-children/component-children.png)
+![](nodes/component-utilities/component-children/component-children.png)
 
 </div>
 

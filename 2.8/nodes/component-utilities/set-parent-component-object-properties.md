@@ -12,7 +12,7 @@ With this node you can set properties on the closed parent **Component Object**.
 
 <div className="ndl-image-with-background l">
 
-![](/nodes/component-utilities/set-parent-component-object-properties/set-parent-component-object-properties.png)
+![](nodes/component-utilities/set-parent-component-object-properties/set-parent-component-object-properties.png)
 
 </div>
 

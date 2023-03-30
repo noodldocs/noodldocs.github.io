@@ -11,7 +11,7 @@ This node is used to query data from a public Google Sheet. You can filter and s
 
 <div className="ndl-image-with-background l">
 
-![](/library/modules/gsheets/node-docs/query-sheet/query-sheet-1.png)
+![](library/modules/gsheets/node-docs/query-sheet/query-sheet-1.png)
 
 </div>
 
@@ -19,7 +19,7 @@ The node works in a similar way as the [Query Records](/nodes/data/cloud-data/qu
 
 <div className="ndl-image-with-background">
 
-![](/library/modules/gsheets/node-docs/query-sheet/query-sheet-2.png)
+![](library/modules/gsheets/node-docs/query-sheet/query-sheet-2.png)
 
 </div>
 
@@ -33,7 +33,7 @@ You refer to the document through its id. You find the id in the URL of the Goog
 
 <div className="ndl-image-with-background l">
 
-![](/library/modules/gsheets/node-docs/query-sheet/query-sheet-3.png)
+![](library/modules/gsheets/node-docs/query-sheet/query-sheet-3.png)
 
 </div>
 
@@ -41,7 +41,7 @@ You also have to specify the Sheet Name. You find the Sheet names in the Google 
 
 <div className="ndl-image-with-background">
 
-![](/library/modules/gsheets/node-docs/query-sheet/query-sheet-4.png)
+![](library/modules/gsheets/node-docs/query-sheet/query-sheet-4.png)
 
 </div>
 
@@ -51,7 +51,7 @@ A filter can be added to the query. It can be a combination of various filter op
 
 <div className="ndl-image-with-background l">
 
-![](/library/modules/gsheets/node-docs/query-sheet/query-sheet-5.png)
+![](library/modules/gsheets/node-docs/query-sheet/query-sheet-5.png)
 
 </div>
 

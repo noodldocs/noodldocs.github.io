@@ -10,13 +10,13 @@ title: Request Password Reset
 
 This action node is used to help users recover a lost password, or to change their password. In order to do this they first need to receive a reset link via email. This action will trigger such an email (it needs to be hooked up via one of Noodls cloud services integrations such as [Zapier](/docs/guides/business-logic/zapier)). Typically you would use some sort of password recovery page.
 
-![](/nodes/data/user/request-password-reset/request-ui.png)
+![](nodes/data/user/request-password-reset/request-ui.png)
 
 This page would run the **Request Password Reset** action as shown below. The node needs the <span className="ndl-data">Email</span> that it should request a password reset for, given that a user with that email exists. Then send a signal to <span className="ndl-signal">Do</span> to initiate the request.
 
 <div className="ndl-image-with-background l">
 
-![](/nodes/data/user/request-password-reset/request-nodes.png)
+![](nodes/data/user/request-password-reset/request-nodes.png)
 
 </div>
 

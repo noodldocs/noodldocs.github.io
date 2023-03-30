@@ -11,7 +11,7 @@ This node is used to connect to external [REST](https://en.wikipedia.org/wiki/Re
 
 <div className="ndl-image-with-background l">
 
-![](/nodes/data/rest/rest-1.png)
+![](nodes/data/rest/rest-1.png)
 
 </div>
 

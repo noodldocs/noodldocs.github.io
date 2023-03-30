@@ -12,7 +12,7 @@ Arrays are ordered lists of [Object](/nodes/data/object/object-node)s. See the g
 
 <div className="ndl-image-with-background l">
 
-![](/nodes/data/array/array/array.png)
+![](nodes/data/array/array/array.png)
 
 </div>
 

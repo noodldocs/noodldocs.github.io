@@ -12,7 +12,7 @@ title: Parent Component Object
 
 <div className="ndl-image-with-background">
 
-![](/nodes/component-utilities/parent-component-object/parent-component-object.png)
+![](nodes/component-utilities/parent-component-object/parent-component-object.png)
 
 </div>
 

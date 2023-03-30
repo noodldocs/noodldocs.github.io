@@ -8,7 +8,7 @@ The Google Sheets Module makes it easy to read data from publich Google Sheets. 
 
 <div className="ndl-image-with-background l">
 
-![](/library/modules/gsheets/suatch-1.png)
+![](library/modules/gsheets/suatch-1.png)
 
 </div>
 

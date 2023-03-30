@@ -9,4 +9,4 @@ This module enables you to use the GraphQL node which makes it quick and easy to
 
 After you add the module to your project you will have access to the **GraphQL Query** node. Find details in the [**GraphQL Query**](/library/modules/graphql/graphql-node) reference docs.
 
-![](/library/modules/graphql/graphql-guide-img/graphql-query-node.png)
+![](library/modules/graphql/graphql-guide-img/graphql-query-node.png)

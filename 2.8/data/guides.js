@@ -334,6 +334,23 @@ const guides = [
 
     {
         type: 'category',
+        label: 'User Management',
+        link: {type: 'doc', id: 'guides/user-management/overview'},
+        items:[
+            {
+                type:'doc',
+                label: 'Creating users in Noodl',
+                id:'guides/user-management/creating-users-in-noodl',
+                imageUrl: '/',
+                description: 'Learn how to create user accounts in your app'
+            }
+        ]
+
+    },
+
+
+    {
+        type: 'category',
         label: 'Cloud Functions',
         link: { type: 'doc', id: 'guides/cloud-logic/overview' },
         items: [

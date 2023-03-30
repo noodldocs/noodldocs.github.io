@@ -14,7 +14,7 @@ First let's take a look at a very basic example.
 
 <div className="ndl-image-with-background xl">
 
-![](/library/modules/validation/simple-validate.png)
+![](library/modules/validation/simple-validate.png)
 
 </div>
 
@@ -22,7 +22,7 @@ Here we introduce the **Validate** node and we will use it to validate a simple 
 
 <div className="ndl-image-with-background xl">
 
-![](/library/modules/validation/schema-property.png)
+![](library/modules/validation/schema-property.png)
 
 </div>
 
@@ -40,7 +40,7 @@ This will result in the following. If there is no _non empty_ string provided on
 
 <div className="ndl-image-with-background xl">
 
-![](/library/modules/validation/simple-validate-1.png)
+![](library/modules/validation/simple-validate-1.png)
 
 </div>
 
@@ -50,7 +50,7 @@ So that's a very basic example. Now let's take a look at one a little bit more i
 
 <div className="ndl-image-with-background xl">
 
-![](/library/modules/validation/sign-up-example.png)
+![](library/modules/validation/sign-up-example.png)
 
 </div>
 
@@ -105,7 +105,7 @@ You don't need to connect each individual property if you instead have an object
 
 <div className="ndl-image-with-background xl">
 
-![](/library/modules/validation/object-validation.png)
+![](library/modules/validation/object-validation.png)
 
 </div>
 

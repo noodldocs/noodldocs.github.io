@@ -12,7 +12,7 @@ This node is used to create a new record of a given class. You specify the class
 
 <div className="ndl-image-with-background l">
 
-![](/nodes/data/cloud-data/create-new-record/create-new-record.png)
+![](nodes/data/cloud-data/create-new-record/create-new-record.png)
 
 </div>
 
@@ -38,7 +38,7 @@ When creating and updating records you can also specify access control rules. By
 
 <div className="ndl-image-with-background m">
 
-![](/nodes/data/cloud-data/acl-1.png)
+![](nodes/data/cloud-data/acl-1.png)
 
 </div>
 

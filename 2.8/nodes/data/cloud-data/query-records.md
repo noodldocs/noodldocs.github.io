@@ -12,7 +12,7 @@ This node is used to fetch a selection of records from the Noodl Cloud Services 
 
 <div className="ndl-image-with-background l">
 
-![](/nodes/data/cloud-data/query-records/query-records-node.png)
+![](nodes/data/cloud-data/query-records/query-records-node.png)
 
 </div>
 
@@ -20,7 +20,7 @@ You can specify the query using filter, sorting and limit in the Property Panel.
 
 <div className="ndl-image-with-background l">
 
-![](/nodes/data/cloud-data/query-records/query-records-filter-1.png)
+![](nodes/data/cloud-data/query-records/query-records-filter-1.png)
 
 </div>
 
@@ -36,7 +36,7 @@ The **Simple** filters are created through a UI where you select properties and 
 
 <div className="ndl-image-with-background l">
 
-![](/nodes/data/cloud-data/query-records/query-records-filter-2.png)
+![](nodes/data/cloud-data/query-records/query-records-filter-2.png)
 
 </div>
 
@@ -44,7 +44,7 @@ Note that you can select if you want the filter to use a static value or a value
 
 <div className="ndl-image-with-background l">
 
-![](/nodes/data/cloud-data/query-records/query-records-filter-3.png)
+![](nodes/data/cloud-data/query-records/query-records-filter-3.png)
 
 </div>
 
@@ -56,7 +56,7 @@ For each property you can choose the sorting order.
 
 <div className="ndl-image-with-background l">
 
-![](/nodes/data/cloud-data/query-records/query-records-sorting-1.png)
+![](nodes/data/cloud-data/query-records/query-records-sorting-1.png)
 
 </div>
 
@@ -66,7 +66,7 @@ Be default up to a 1000 records are returned. But you can specify a **Limit**, t
 
 <div className="ndl-image-with-background m">
 
-![](/nodes/data/cloud-data/query-records/query-records-limit.png)
+![](nodes/data/cloud-data/query-records/query-records-limit.png)
 
 </div>
 
@@ -76,7 +76,7 @@ If you choose to limit the returned records or if you have more than the maximum
 
 <div className="ndl-image-with-background m">
 
-![](/nodes/data/cloud-data/query-records/query-records-total-count.png)
+![](nodes/data/cloud-data/query-records/query-records-total-count.png)
 
 </div>
 

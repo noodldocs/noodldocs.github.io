@@ -9,7 +9,7 @@ hide_title: true
 
 <div className="ndl-image-with-background l">
 
-![](/library/modules/chartjs/charts/bar-chart.png)
+![](library/modules/chartjs/charts/bar-chart.png)
 
 </div>
 
@@ -51,7 +51,7 @@ Outputs.Data = {
 
 <div className="ndl-image-with-background l">
 
-![](/library/modules/chartjs/charts/horizontal-bar-chart.png)
+![](library/modules/chartjs/charts/horizontal-bar-chart.png)
 
 </div>
 

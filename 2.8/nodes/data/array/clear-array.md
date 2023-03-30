@@ -12,7 +12,7 @@ This node is used to remove all _Objects_ from an _Array_. The Array is referred
 
 <div className="ndl-image-with-background l">
 
-![](/nodes/data/array/clear-array/clear-array.png)
+![](nodes/data/array/clear-array/clear-array.png)
 
 </div>
 

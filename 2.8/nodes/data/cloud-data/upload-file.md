@@ -12,7 +12,7 @@ This node uploads a file to the Noodl Cloud Services. Can be used in combination
 
 <div className="ndl-image-with-background l">
 
-![](/nodes/data/cloud-data/upload-file/upload-file.png)
+![](nodes/data/cloud-data/upload-file/upload-file.png)
 
 </div>
 <##head##>

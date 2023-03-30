@@ -18,7 +18,7 @@ The Drag node can only have one child, but that child can have many children.
 
 <div className="ndl-image-with-background l">
 
-![](/nodes/utilities/drag/drag.png)
+![](nodes/utilities/drag/drag.png)
 
 </div>
 

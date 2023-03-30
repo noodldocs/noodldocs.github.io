@@ -11,7 +11,7 @@ The **Camera QR Scanner** node is used to open the camera view finder and scan f
 
 <div className="ndl-image-with-background l">
 
-![](/library/modules/qr-scanner/nodes/camera-qr-scanner/camera-qr-scanner.png)
+![](library/modules/qr-scanner/nodes/camera-qr-scanner/camera-qr-scanner.png)
 
 </div>
 When a QR code has been successfully identified, the node will send a <span className="ndl-signal">Scan Successful</span> event and the decoded string, otherwise <span className="ndl-signal">Scan Failed</span>.

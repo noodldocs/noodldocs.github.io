@@ -11,8 +11,8 @@ The documentation for this node will be coming soon.
 
 ## Inputs
 
-![](/library/modules/lottie/lottie-inputs.png)
+![](library/modules/lottie/lottie-inputs.png)
 
 ## Outputs
 
-![](/library/modules/lottie/lottie-outputs.png)
+![](library/modules/lottie/lottie-outputs.png)

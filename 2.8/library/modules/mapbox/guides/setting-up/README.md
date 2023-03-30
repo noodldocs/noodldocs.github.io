@@ -31,7 +31,7 @@ When in the project, open the "Module" tab to the left. Find the "Mapbox" module
 
 <div className="ndl-image-with-background s">
 
-![](/library/modules/mapbox/guides/setting-up/module-1.png)
+![](library/modules/mapbox/guides/setting-up/module-1.png)
 
 </div>
 
@@ -39,7 +39,7 @@ After the module is imported, you should now be able to find the [Mapbox Map](/l
 
 <div className="ndl-image-with-background s">
 
-![](/library/modules/mapbox/guides/setting-up/nodepicker-1.png)
+![](library/modules/mapbox/guides/setting-up/nodepicker-1.png)
 
 </div>
 
@@ -47,7 +47,7 @@ Add the node. Then put it as a child to your main App group. As you will see, yo
 
 <div className="ndl-image-with-background">
 
-![](/library/modules/mapbox/guides/setting-up/no-token.png)
+![](library/modules/mapbox/guides/setting-up/no-token.png)
 
 </div>
 
@@ -59,7 +59,7 @@ Once you got the token (which will look like a long password) you open up the "P
 
 <div className="ndl-image-with-background">
 
-![](/library/modules/mapbox/guides/setting-up/token-1.png)
+![](library/modules/mapbox/guides/setting-up/token-1.png)
 
 </div>
 
@@ -67,7 +67,7 @@ Once you've added in the token, reload the viewer, and you should now have a Map
 
 <div className="ndl-image-with-background">
 
-![](/library/modules/mapbox/guides/setting-up/screen-1.png)
+![](library/modules/mapbox/guides/setting-up/screen-1.png)
 
 </div>
 

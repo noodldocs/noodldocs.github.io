@@ -12,7 +12,7 @@ This node performs a logic OR operation on its inputs. If any input is <span cla
 
 <div className="ndl-image-with-background l">
 
-![](/nodes/logic/or/or_node.png)
+![](nodes/logic/or/or_node.png)
 
 </div>
 

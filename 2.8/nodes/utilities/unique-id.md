@@ -12,7 +12,7 @@ This node generates a unique ID, something that is very useful when storing data
 
 <div className="ndl-image-with-background l">
 
-![](/nodes/utilities/unique-id/unique-id.png)
+![](nodes/utilities/unique-id/unique-id.png)
 
 </div>
 

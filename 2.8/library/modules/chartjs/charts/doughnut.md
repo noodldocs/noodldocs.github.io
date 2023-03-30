@@ -9,7 +9,7 @@ hide_title: true
 
 <div className="ndl-image-with-background l">
 
-![](/library/modules/chartjs/charts/doughnut-chart.png)
+![](library/modules/chartjs/charts/doughnut-chart.png)
 
 </div>
 

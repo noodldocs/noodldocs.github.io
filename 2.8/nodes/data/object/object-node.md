@@ -12,7 +12,7 @@ An **Object** is a basic data object in Noodl that stores any amount of properti
 
 <div className="ndl-image-with-background l">
 
-![](/nodes/data/object/object/object-3.png)
+![](nodes/data/object/object/object-3.png)
 
 </div>
 
@@ -20,7 +20,7 @@ The **Object** node is typically used together with the [Create New Object](/nod
 
 <div className="ndl-image-with-background l">
 
-![](/nodes/data/object/object/object-lifecycle.png)
+![](nodes/data/object/object/object-lifecycle.png)
 
 </div>
 

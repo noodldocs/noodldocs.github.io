@@ -12,7 +12,7 @@ The **Pop Component Stack** node is used together with a [Component Stack](/node
 
 <div className="ndl-image-with-background l">
 
-![](/nodes/component-stack/pop-component/pop-component-stack.png)
+![](nodes/component-stack/pop-component/pop-component-stack.png)
 
 </div>
 

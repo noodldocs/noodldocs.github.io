@@ -12,7 +12,7 @@ This node sends a <span className="ndl-signal">signal</span> to another place in
 
 <div className="ndl-image-with-background l">
 
-![](/nodes/events/send-event/send-event.png)
+![](nodes/events/send-event/send-event.png)
 
 </div>
 

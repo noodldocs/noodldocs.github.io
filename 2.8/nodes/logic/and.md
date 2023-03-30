@@ -12,7 +12,7 @@ This node performs a logic AND operation on its inputs. If all inputs are <span 
 
 <div className="ndl-image-with-background l">
 
-![](/nodes/logic/and/and_node.png)
+![](nodes/logic/and/and_node.png)
 
 </div>
 

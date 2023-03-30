@@ -12,7 +12,7 @@ This node is used to read data from a **Record**. A **Record** is an **Object** 
 
 <div className="ndl-image-with-background l">
 
-![](/nodes/data/cloud-data/record/record-node.png)
+![](nodes/data/cloud-data/record/record-node.png)
 
 </div>
 
