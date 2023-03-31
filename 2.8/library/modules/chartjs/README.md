@@ -5,6 +5,8 @@ hide_title: true
 
 # Chart.js Module
 
+[![GitHub](https://img.shields.io/static/v1?style=plastic&logo=github&label=GitHub&message=Source%20Code)](https://github.com/noodlapp/modules/tree/main/modules/noodl-chartjs)
+
 This module allows you to add charts to your Noodl App, using [Chart.js](https://www.chartjs.org/).
 
 ![](/library/modules/chartjs/preview-bar-chart-nodes.png)
