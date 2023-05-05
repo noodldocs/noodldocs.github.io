@@ -12,4 +12,4 @@ This module allows you to track user interactions with your Noodl app, using Goo
 
 </div>
 
-Follow the [Setting up Google Analytics](library/modules/google-analytics/guides/setting-up-google-analytics/) guide or jump straight to the [node documentation](library/modules/google-analytics/nodes/google-analytics-root/).
+Follow the [Setting up Google Analytics](/library/modules/google-analytics/guides/setting-up-google-analytics/) guide or jump straight to the [node documentation](/library/modules/google-analytics/nodes/google-analytics-root/).

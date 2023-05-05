@@ -62,6 +62,24 @@ From left to right, the alignment options are:
 | <span className="ndl-data">Align Horizontal Center</span> | Align this node to the horizontal center of its parent. |
 | <span className="ndl-data">Align Right</span>             | Align this node to the right of its parent.             |
 
+#### Connection Values
+
+When making a connection to the layout property, the values are a little different than the ones in the dropdown.
+Here is a list of the values, that should be passed in:
+
+<div className="ndl-table-35-65">
+
+| Display Name            | Value     |
+| ----------------------- | --------- |
+| Align Bottom            | `bottom`  |
+| Align Vertical Center   | `center`  |
+| Align Top               | `top`     |
+| Align Left              | `left`    |
+| Align Horizontal Center | `center`  |
+| Align Right             | `right`   |
+
+</div>
+
 ## Dimensions
 
 Controling the width and height of the node is done with the Dimension Gadget.
@@ -115,11 +133,28 @@ Controls the layout of this node is in its parent group.
 
 By default all children are stacked. This property specifies the stacking direction.
 
+<div className="ndl-table-35-65">
+
 | Data                                         | Description                        |
 | -------------------------------------------- | ---------------------------------- |
 | <span className="ndl-data">Vertical</span>   | Children are stacked vertically.   |
 | <span className="ndl-data">Horizontal</span> | Children are stacked horizontally. |
 | <span className="ndl-data">None</span>       | Children are not stacked.          |
+
+</div>
+
+When making a connection to the layout property, the values are a little different than the ones in the dropdown.
+Here is a list of the values, that should be passed in:
+
+<div className="ndl-table-35-65">
+
+| Display Name   | Value      |
+| -------------- | ---------- |
+| Vertical       | `column`   |
+| Horizontal     | `row`      |
+| None           | `none`     |
+
+</div>
 
 ### • Multi Line Wrap
 
