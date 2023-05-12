@@ -278,11 +278,11 @@ Here is a list of the values, that should be passed in:
 
 <div className="ndl-table-35-65">
 
-| Display Name   | Value      |
-| -------------- | ---------- |
-| Vertical       | `column`   |
-| Horizontal     | `row`      |
-| None           | `none`     |
+| Display Name | Value    |
+| ------------ | -------- |
+| Vertical     | `column` |
+| Horizontal   | `row`    |
+| None         | `none`   |
 
 </div>
 
@@ -295,6 +295,15 @@ This property specifies what happens with children that are stacked outside of t
 | <span className="ndl-data">Off</span>        | Children are stacked beyond the boundaries of the node. If _Clip_ is enabled they will not be visible. |
 | <span className="ndl-data">On</span>         | Children are wrapped to the next row or column (depending on layout direction).                        |
 | <span className="ndl-data">On Reverse</span> | Same as _On_ but opposite layout direction.                                                            |
+
+### • Gap
+
+This property is used to add spacing between children in the group.
+
+| Data                                             | Description                                                                                               |
+| ------------------------------------------------ | --------------------------------------------------------------------------------------------------------- |
+| <span className="ndl-data">Vertical Gap</span>   | Vertical space between children. Shown if _Layout_ is set to _Vertical_ or _Multi Line Wrap_ is _On_.     |
+| <span className="ndl-data">Horizontal Gap</span> | Horizontal space between children. Shown if _Layout_ is set to _Horizontal_ or _Multi Line Wrap_ is _On_. |
 
 ### • Clip content
 
