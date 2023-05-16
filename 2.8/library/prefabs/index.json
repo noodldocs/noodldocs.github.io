@@ -115,7 +115,7 @@
     "label": "Rating",
     "desc": "An interactive star rating component.",
     "icon": "library/prefabs/rating/rating.png",
-    "project": "library/prefabs/rating/rating-0-1.zip",
+    "project": "library/prefabs/rating/rating-0-2.zip",
     "docs": "/library/prefabs/rating/",
     "tags": ["UI"]
   },
@@ -221,6 +221,14 @@
     "icon": "library/prefabs/openai/openai.png",
     "project": "library/prefabs/openai/openai-0-4.zip",
     "docs": "/library/prefabs/openai/",
-    "tags": ["UI"]
-  }     
+    "tags": ["Cloud"]
+  },
+  {
+    "label": "PDF Export",
+    "desc": "A prefab for creating a PDF file from a web page",
+    "icon": "library/prefabs/pdf/pdf.png",
+    "project": "library/prefabs/pdf/pdf-0-1.zip",
+    "docs": "/library/prefabs/pdf/",
+    "tags": ["Cloud"]
+  }        
 ]
