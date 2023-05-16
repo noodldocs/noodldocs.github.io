@@ -262,6 +262,14 @@ const guides = [
                 description:
                     'learn how to limit access control to records to certain users.',
             },
+            {
+                type: 'doc',
+                label: 'Importing and exporting data',
+                id: 'guides/cloud-data/import-export-csv',
+                imageUrl: '/img/featured-content-images/data.png',
+                description:
+                    'learn how to import and export data to/from your cloud services database.',
+            },
         ],
     },
 

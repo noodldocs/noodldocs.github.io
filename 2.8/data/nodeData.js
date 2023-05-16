@@ -632,6 +632,16 @@ const nodeData = [
         id: 'cloud-functions/response',
         nodeType: NodeType.Data,
       },
+      {
+        label: 'Cloud Data',
+        items: [
+          {
+            label: 'Aggregate Records',
+            id: 'cloud-functions/cloud-data/aggregate-records',
+            nodeType: NodeType.Data,
+          },
+        ]
+      }
     ],
   },
 ];
