@@ -3,6 +3,8 @@ hide_title: true
 title: Visual Input Properties
 ---
 
+<div className="ndl-table-35-65">
+
 # Visual Input Properties
 
 All visual nodes feature a plethora of visual properties that can be accessed both in the Property Panel and through inputs. These are documented below. Plese refer to the individual node documentation pages to see which nodes feature what visual properties.
@@ -371,3 +373,6 @@ The Dimension Constraints Gadget allows you to clamp the values of the [Dimensio
 | ------------------------------------------- | ----------------------------------------------------------------------- |
 | <span className="ndl-data">CSS Class</span> | <##input:cssClass##>Specify a CSS class this node will have.<##input##> |
 | **CSS Style**                               | Use this property to specify your custom CSS.                           |
+
+
+</div>

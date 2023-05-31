@@ -74,11 +74,6 @@ This node supports the following [Visual Output Properties](/nodes/shared-props/
 
 <div className="hidden-props-for-editor">
 
----
-hide_title: true
-title: Visual Input Properties
----
-
 # Visual Input Properties
 
 All visual nodes feature a plethora of visual properties that can be accessed both in the Property Panel and through inputs. These are documented below. Plese refer to the individual node documentation pages to see which nodes feature what visual properties.
@@ -448,10 +443,6 @@ The Dimension Constraints Gadget allows you to clamp the values of the [Dimensio
 | <span className="ndl-data">CSS Class</span> | <##input:cssClass##>Specify a CSS class this node will have.<##input##> |
 | **CSS Style**                               | Use this property to specify your custom CSS.                           |
 
----
-hide_title: true
-title: Visual Output Properties
----
 
 # Visual Output Properties
 
@@ -511,6 +502,6 @@ title: Visual Output Properties
 | --------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <span className="ndl-data">Child Index</span> | <##output:childIndex##>The place this node has in relation to its parent. E.g. if a **Group** has three children, then the first child will have _Child Index_ `0`, the second child will have _Child Index_ `1`, and so on.<##output##> |
 | <span className="ndl-data">This</span>        | <##output:this##>A reference to this node. Used in custom **JavaScript** nodes and more.<##output##>                                                                                                                                     |
-)
+
 
 </div>

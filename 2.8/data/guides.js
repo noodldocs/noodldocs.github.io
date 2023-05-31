@@ -275,6 +275,46 @@ const guides = [
 
     {
         type: 'category',
+        label: 'Visualizing Data',
+        link: { type: 'doc', id: 'guides/visualizing-data/overview' },
+        items: [
+            {
+                type: 'doc',
+                label: 'Using the Table component to visualize data',
+                id: 'guides/visualizing-data/table-to-visualize-data',
+                imageUrl: '/img/featured-content-images/data.png',
+                description:
+                    'Learn how to use the Table node and Query Records to display data in a table.',
+            },
+            {
+                type: 'doc',
+                label: 'Adding pagination to the Table component',
+                id: 'guides/visualizing-data/table-pagination',
+                imageUrl: '/img/featured-content-images/data.png',
+                description:
+                    'Learn how to use the Pages And Rows component to paginate the data in your Table.',
+            },
+            {
+                type: 'doc',
+                label: 'Filter your Table data',
+                id: 'guides/visualizing-data/filter-table-data',
+                imageUrl: '/img/featured-content-images/data.png',
+                description:
+                    'Learn how to use the Filter prefab to filter out data from a Query Node and display it in a Table.',
+            },
+            {
+                type: 'doc',
+                label: 'Styling the Table',
+                id: 'guides/visualizing-data/styling-table',
+                imageUrl: '/img/featured-content-images/data.png',
+                description:
+                    'Learn how to make style changes to the Table prefab.',
+            }
+        ],
+    },
+
+    {
+        type: 'category',
         label: 'Building business logic',
         link: { type: 'doc', id: 'guides/business-logic/overview' },
         items: [

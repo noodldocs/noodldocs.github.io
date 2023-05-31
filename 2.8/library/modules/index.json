@@ -19,7 +19,7 @@
     "label": "Chart.js",
     "desc": "A module with components to build charts.",
     "icon": "library/modules/chartjs/chartjs.png",
-    "project": "library/modules/chartjs/chartjs-module-1-4-1.zip",
+    "project": "library/modules/chartjs/chartjs-module-1-4-2.zip",
     "docs": "/library/modules/chartjs/",
     "tags": ["UI"]
   },
@@ -77,6 +77,14 @@
     "icon": "library/modules/material-icons/material-icons.png",
     "project": "library/modules/material-icons/material-icons-1-1.zip",
     "docs": "/library/modules/material-icons/",
+    "tags": ["UI"]
+  },
+  {
+    "label": "Font Awesome Brands",
+    "desc": "The Font Awesome 6 brand icon library.",
+    "icon": "library/modules/font-awesome-brands/font-awesome-brands.png",
+    "project": "library/modules/font-awesome-brands/font-awesome-brands-1-0.zip",
+    "docs": "/library/modules/font-awesome-brands/",
     "tags": ["UI"]
   },
   {
@@ -166,6 +174,14 @@
     "project": "library/modules/parse-cloud-function/parse-cloud-function-1-0-0.zip",
     "docs": "/library/modules/parse-cloud-function/",
     "tags": ["Data", "Networking"]
+  },
+  {
+    "label": "Geospatial Analysis",
+    "desc": "A module for using Turf.js to making it easy to working with GeoJSON.",
+    "icon": "library/modules/geospatial-analysis/geospatial-analysis.png",
+    "project": "library/modules/geospatial-analysis/geospatial-analysis-module-1-0-0.zip",
+    "docs": "/library/modules/geospatial-analysis/",
+    "tags": ["Data"]
   },
   {
     "label": "Data Context",

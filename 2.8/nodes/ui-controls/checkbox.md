@@ -38,19 +38,29 @@ This control contains all logic such as accessibility etc. It can be styled in v
 
 The main input of the Checkbox node is the <span className="ndl-data">Checked</span> input:
 
+<div className="ndl-table-35-65">
+
 | Data                                               | Description                                                                                                                                                              |
 | -------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | <span className="ndl-data">Checked</span>          | <##input:checked##>A boolean setting the checkbox in "checked" or "unchecked" state. This is the value of the checkbox and can be connected to a data source.<##input##> |
 | <span className="ndl-data">Background Color</span> | <##input:backgroundColor##>The background color when the checkbox is "checked"<##input##>.                                                                               |
 
+</div>
+
 It can be enabled and disabled using the <span className="ndl-data">Enabled</span> input:
+
+<div className="ndl-table-35-65">
 
 | Data                                      | Description                                                                                                                                                            |
 | ----------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <span className="ndl-data">Enabled</span> | <##input:enabled##>Specifies if the control is **Enabled** (`true`) or **Disabled** (`false`). A disabled control will not respond to any user interaction.<##input##> |
 
 
+</div>
+
 The Checkbox node has a set of label properties that can be set:
+
+<div className="ndl-table-35-65">
 
 | Data                                           | Description                                                                                      |
 | ---------------------------------------------- | ------------------------------------------------------------------------------------------------ |
@@ -59,7 +69,11 @@ The Checkbox node has a set of label properties that can be set:
 | <span className="ndl-data">Label</span>        | A text string that will be shown as the label on the button.                                     |
 | <span className="ndl-data">Spacing</span>      | The spacing between the label and the checkbox.                                                  |
 
+</div>
+
 Similarly, it has a set of icon properties:
+
+<div className="ndl-table-35-65">
 
 | Data                                          | Description                                                                                         |
 | --------------------------------------------- | --------------------------------------------------------------------------------------------------- |
@@ -70,31 +84,48 @@ Similarly, it has a set of icon properties:
 | <span className="ndl-data">Size</span>        | The width of the icon in `px`.                                                                      |
 | <span className="ndl-data">Color</span>       | Sets the color of the icon. Only visible if _Type_ is set to `icon`.                                |
 
+</div>
+
+<div className="ndl-table-35-65">
+
+| Signal                                    | Description                                                                                                                                                                                           |
+| ----------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <span className="ndl-signal">Check</span>   | Reflects the same action as the user checked the Checkbox.                                                                                                                                            |
+| <span className="ndl-signal">Uncheck</span> | Reflects the same action as the user unchecked the Checkbox.                                                                                                                                                                                      |
+
+</div>
+
 ### Visual
 
 This node supports the following [Visual Input Properties](/nodes/shared-props/inputs/visual-input-properties/):
 
--   [Margin](/nodes/shared-props/inputs/visual-input-properties/#margin)
--   [Alignment](/nodes/shared-props/inputs/visual-input-properties/#alignment)
--   [Dimensions](/nodes/shared-props/inputs/visual-input-properties/#dimensions)
--   [Layout, Position](/nodes/shared-props/inputs/visual-input-properties/#-position)
--   [Style](/nodes/shared-props/inputs/visual-input-properties/#style)
--   [Border Style](/nodes/shared-props/inputs/visual-input-properties/#border-style)
--   [Corner Radius](/nodes/shared-props/inputs/visual-input-properties/#corner-radius)
--   [Box Shadow](/nodes/shared-props/inputs/visual-input-properties/#box-shadow)
--   [Placement](/nodes/shared-props/inputs/visual-input-properties/#placement)
--   [Other](/nodes/shared-props/inputs/visual-input-properties/#other)
--   [Advanced Style](/nodes/shared-props/inputs/visual-input-properties/#advanced-style)
+- [Margin](/nodes/shared-props/inputs/visual-input-properties/#margin)
+- [Alignment](/nodes/shared-props/inputs/visual-input-properties/#alignment)
+- [Dimensions](/nodes/shared-props/inputs/visual-input-properties/#dimensions)
+- [Layout, Position](/nodes/shared-props/inputs/visual-input-properties/#-position)
+- [Style](/nodes/shared-props/inputs/visual-input-properties/#style)
+- [Border Style](/nodes/shared-props/inputs/visual-input-properties/#border-style)
+- [Corner Radius](/nodes/shared-props/inputs/visual-input-properties/#corner-radius)
+- [Box Shadow](/nodes/shared-props/inputs/visual-input-properties/#box-shadow)
+- [Placement](/nodes/shared-props/inputs/visual-input-properties/#placement)
+- [Other](/nodes/shared-props/inputs/visual-input-properties/#other)
+- [Advanced Style](/nodes/shared-props/inputs/visual-input-properties/#advanced-style)
 
 ## Outputs
 
 The main output of the Checkbox node is the <span className="ndl-data">Checked</span> output.
 
+<div className="ndl-table-35-65">
+
 | Data                                      | Description                                                                                                                                                                                                                                    |
 | ----------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <span className="ndl-data">Checked</span> | <##output:checked##>A boolean output that is true when this checkbox control is checked and false if not. This is useful when using this control as a base for your own component that will represent visually that it is checked.<##output##> |
 
+</div>
+
 It also features a set of <span className="ndl-signal">signals</span>:
+
+<div className="ndl-table-35-65">
 
 | Signal                                           | Description                                                                                                                   |
 | ------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
@@ -107,9 +138,13 @@ It also features a set of <span className="ndl-signal">signals</span>:
 | <span className="ndl-signal">Hover End</span>    | <##output:hoverEnd##>Emitted when the mouse leaves the node.<##output##>                                                      |
 
 
+</div>
+
 ### States
 
 Apart from triggering <span className="ndl-signal">signals</span> the Checkbox node also notifies of its state through <span className="ndl-data">data</span> outputs:
+
+<div className="ndl-table-35-65">
 
 | Data                                      | Description                                                                                                                                                                                                                                                                                                                                                    |
 | ----------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -119,20 +154,17 @@ Apart from triggering <span className="ndl-signal">signals</span> the Checkbox n
 | <span className="ndl-data">Pressed</span> | <##output:pressedState##>A boolean output that is true when the user is currently pressing the control. This is useful when using this control as a base for your own component that will represent visually that it is pressed.<##output##>                                                                                                                   |
 
 
+</div>
+
 ### Visual
 
 This node supports the following [Visual Output Properties](/nodes/shared-props/outputs/visual-output-properties/):
 
--   [Bounding Box](/nodes/shared-props/outputs/visual-output-properties/#bounding-box)
--   [Mounted](/nodes/shared-props/outputs/visual-output-properties/#mounted)
--   [Other](/nodes/shared-props/outputs/visual-output-properties/#other)
+- [Bounding Box](/nodes/shared-props/outputs/visual-output-properties/#bounding-box)
+- [Mounted](/nodes/shared-props/outputs/visual-output-properties/#mounted)
+- [Other](/nodes/shared-props/outputs/visual-output-properties/#other)
 
 <div className="hidden-props-for-editor">
-
----
-hide_title: true
-title: Visual Input Properties
----
 
 # Visual Input Properties
 
@@ -503,10 +535,6 @@ The Dimension Constraints Gadget allows you to clamp the values of the [Dimensio
 | <span className="ndl-data">CSS Class</span> | <##input:cssClass##>Specify a CSS class this node will have.<##input##> |
 | **CSS Style**                               | Use this property to specify your custom CSS.                           |
 
----
-hide_title: true
-title: Visual Output Properties
----
 
 # Visual Output Properties
 

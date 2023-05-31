@@ -4,6 +4,12 @@ hide_title: true
 ---
 # Release Notes
 
+Version 1.4.2 [2023-05-16]
+* Add Chart node, custom node allowing a full Chart.js config to create the chart.
+
+Version 1.4.1 [2023-05-04]
+* Add Helpers output to all nodes, allowing for interactions.
+
 Version 1.4.0 [2023-04-06]
 * Change "Maintain Aspect Ratio" default from `true` to `false`
 * Fix responsiveness
