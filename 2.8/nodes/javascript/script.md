@@ -26,10 +26,45 @@ Reading the Javascript [guide](/docs/guides/business-logic/javascript) gives a b
 
 Here is an example of how you create a function that you can call in the node graph:
 
-```javascript
+```js
+Script.Inputs = {
+  Prefix: "string",
+  Value: "number"
+};
+
+Script.Outputs = {
+  Done: "signal",
+  Value: "string",
+};
+
 Script.Signals.MyFunction = function (value) {
   // run javascript code
+  
+  Script.Outputs.Value = Script.Inputs.Prefix + " " + Script.Inputs.Value;
+  Script.Outputs.Done();
 };
+```
+
+This can also be done with a setter so you dont have to call the `MyFunction` signal.
+
+```js
+Script.Inputs = {
+  Prefix: "string",
+  Value: "number"
+};
+
+Script.Outputs = {
+  Done: "signal",
+  Value: "string",
+};
+
+function onChange() {
+  Script.Outputs.Value = Script.Inputs.Prefix + " " + Script.Inputs.Value;
+  Script.Outputs.Done();
+}
+
+Script.Setters.Prefix = onChange;
+Script.Setters.Value = onChange;
 ```
 
 <##head##>

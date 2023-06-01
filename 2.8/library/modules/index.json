@@ -88,6 +88,14 @@
     "tags": ["UI"]
   },
   {
+    "label": "Font Awesome Solid",
+    "desc": "The Font Awesome 6 solid icon library.",
+    "icon": "library/modules/font-awesome-solid/font-awesome-solid.png",
+    "project": "library/modules/font-awesome-solid/font-awesome-solid-1-0.zip",
+    "docs": "/library/modules/font-awesome-solid/",
+    "tags": ["UI"]
+  },
+  {
     "label": "Markdown",
     "desc": "Use Markdown in Noodl and style it with CSS.",
     "project": "library/modules/markdown/noodl-markdown-1-0-1.zip",
