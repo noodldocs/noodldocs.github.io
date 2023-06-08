@@ -4,6 +4,10 @@ hide_title: true
 ---
 # Release Notes
 
+Version 1.4.3 [2023-06-08]
+* Add Animation `On Data Update` input on Chart nodes, provides the ability to prevent animations when updating the chart in real time. ([Preventing Animations](https://www.chartjs.org/docs/latest/developers/updates.html#preventing-animations))
+* Add Animations object to all nodes, similar to Scales, making it possible to create nicer animations. ([Chart.js Animations](https://www.chartjs.org/docs/latest/configuration/animations.html#animations))
+
 Version 1.4.2 [2023-05-16]
 * Add Chart node, custom node allowing a full Chart.js config to create the chart.
 

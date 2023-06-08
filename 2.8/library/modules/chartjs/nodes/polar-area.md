@@ -33,6 +33,12 @@ This visual node adds a polar area chart to the visual tree.
 | <span className="ndl-data">Maintain Aspect Ratio</span>          | Maintain the original canvas aspect ratio (width / height) when resizing.                                                                                            |
 | <span className="ndl-data">Aspect Ratio</span>                   | Canvas aspect ratio (i.e. width / height, a value of 1 representing a square canvas). Default: 1                                                                     |
 
+### Animation
+
+| Data                                                             | Description                                                                                                                                                          |
+| ---------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <span className="ndl-data">On Data Update</span>                 | When false, it wont animate when you update the data object. ([Preventing Animations](https://www.chartjs.org/docs/latest/developers/updates.html#preventing-animations)) |
+
 ### Title
 
 | Data                                                             | Description                                                                                                                                                          |

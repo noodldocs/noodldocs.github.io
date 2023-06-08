@@ -19,7 +19,7 @@
     "label": "Chart.js",
     "desc": "A module with components to build charts.",
     "icon": "library/modules/chartjs/chartjs.png",
-    "project": "library/modules/chartjs/chartjs-module-1-4-2.zip",
+    "project": "library/modules/chartjs/chartjs-module-1-4-3.zip",
     "docs": "/library/modules/chartjs/",
     "tags": ["UI"]
   },

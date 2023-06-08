@@ -67,6 +67,17 @@ Script.Setters.Prefix = onChange;
 Script.Setters.Value = onChange;
 ```
 
+### Handling when the node is unmounted
+
+When the node is unmounted like going to a different page, the `OnDestroy` method will be called.
+In this method, you can clean up potential listeners or libraries to keep the app performant.
+
+```js
+Script.OnDestroy = function () {
+  // called when the node is unmounted
+}
+```
+
 <##head##>
 
 ## Inputs

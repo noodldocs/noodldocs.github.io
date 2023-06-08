@@ -219,7 +219,7 @@
     "label": "OpenAI",
     "desc": "A prefab with cloud functions for creating chat bots with the OpenAI API.",
     "icon": "library/prefabs/openai/openai.png",
-    "project": "library/prefabs/openai/openai-0-4.zip",
+    "project": "library/prefabs/openai/openai-0-5.zip",
     "docs": "/library/prefabs/openai/",
     "tags": ["Cloud"]
   },
