@@ -11,7 +11,7 @@
     "label": "Mapbox",
     "desc": "Use this module to add maps and location visualisations to your app.",
     "icon": "library/modules/mapbox/mapbox.png",
-    "project": "library/modules/mapbox/mapbox-1-7-2.zip",
+    "project": "library/modules/mapbox/mapbox-2-0-0.zip",
     "docs": "/library/modules/mapbox/",
     "tags": ["UI", "Service"]
   },
@@ -61,6 +61,14 @@
     "project": "library/modules/simple-tooltips/simple-tooltips-v1-0-0.zip",
     "icon": "library/modules/simple-tooltips/simple-tooltips.png",
     "docs": "/library/modules/simple-tooltips/",
+    "tags": ["UI"]
+  },
+  {
+    "label": "Marquee",
+    "desc": "Add a marquee container to your Noodl App.",
+    "project": "library/modules/marquee/marquee-v1-0-0.zip",
+    "icon": "library/modules/marquee/marquee.png",
+    "docs": "/library/modules/marquee/",
     "tags": ["UI"]
   },
   {

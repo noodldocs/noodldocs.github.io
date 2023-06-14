@@ -11,20 +11,16 @@ This guide will teach you how to implement basic interactions with your Mapbox m
 
 ## Overview
 
-If you haven't already looked at the guide for setting up the Mapbox Module, it's recommended to recommended to do that before starting this guide. You can find it [here](/library/modules/mapbox/guides/setting-up).
+If you haven't setup Mapbox, it is recommended to read [setting up Mapbox guide](/library/modules/mapbox/guides/setting-up) before continuing this guide.
 
 We will go though the following steps:
 
--   Getting the latitude and longitude of the position a user clicked on the map.
--   Detecting when a user moves the map.
-
-There is also a video walking through the guide.
-
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/oDGEKKvlD74" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+- Getting the latitude and longitude of the position a user clicked on the map.
+- Detecting when a user moves the map.
 
 ## Getting the position that the user clicked
 
-If we start out with the same super simple app as in the previous guide we can start adding some interactions to it.
+If we start out with the same super simple app as in the previous guide ([Setting up](/library/modules/mapbox/guides/setting-up) guide) we can start adding some interactions to it.
 
 <div className="ndl-image-with-background l">
 
@@ -40,7 +36,7 @@ Let's first remove the "Hello World"-text. Instead we replace it with a panel. W
 
 </div>
 
-We want it to float on top of the MapboxMap so change it's **Position** to **Absolute**. Center it and dock it to the bottom using the **Layout** controls. Set a size of 300 pixels wide and 100 pixels high for now. Give it a bottom margin of 20 pixels to give it some space.
+We want it to float on top of the Mapbox Map so change it's **Position** to **Absolute**. Center it and dock it to the bottom using the **Layout** controls. Set a size of 300 pixels wide and 100 pixels high for now. Give it a bottom margin of 20 pixels to give it some space.
 
 <div className="ndl-image-with-background s">
 
@@ -48,7 +44,7 @@ We want it to float on top of the MapboxMap so change it's **Position** to **Abs
 
 </div>
 
-Also make it white, with rounded corners of 10 pixels and a 2 pixel outline of a dark grey color. Also tick "Shadow Enabled" to make it a little nicer visually.
+Also make it white, with rounded corners of 10 pixels and a 2 pixel outline of a dark grey color. Also tick `Shadow Enabled` to make it a little nicer visually.
 
 <div className="ndl-image-with-background s">
 
@@ -74,7 +70,9 @@ Add two text nodes in the panel. Adjust the padding (horizontally and vertically
 
 </div>
 
-Then connect the two outputs "Longitude" and "Latitude" to the respective text. _Make sure it's the one under "Mapped Clicked" Section_ since there are two other similarly named outputs that holds the current panning position of the map.
+Then connect the two outputs `Longitude` and `Latitude` to the respective text.
+
+_Make sure it's the one under "Mapped Clicked" Section_ since there are two other similarly named outputs that holds the current panning position of the map.
 
 <div className="ndl-image-with-background l">
 
@@ -92,7 +90,7 @@ Now try clicking around in the map. You should see the two texts updating whenev
 
 ## Tracking Map Movement
 
-Now let's add some behavior to the panel. We want it to appear from the bottom when the user clicks on the map. Then, when the user starts panning or zooming in the map. To do this we are going to use the **Click** and **Map Moved** signals.
+Now let's add some behavior to the panel. We want it to appear from the bottom when the user clicks on the map. Then, when the user starts panning or zooming in the map. To do this we are going to use the `Click` and `Map Moved` output signals.
 
 First add a [States](/nodes/utilities/logic/states) node that will hold the current state of the panel. Add the states "Off Screen" and "On Screen". Create a value to control in the state, lets call it "Y Position". This is the value that will control the Y position of the panel. It will be 120 when the panel is "Off Screen" (i.e. it will be below the screen). Then it will be 0 when the panel is "On Screen", i.e. it will be back at the bottom of the screen.
 
@@ -102,7 +100,7 @@ First add a [States](/nodes/utilities/logic/states) node that will hold the curr
 
 </div>
 
-Finally hook up the outputs **Click** and **Map Moved** signal to change the state between "On Screen" and "Off Screen". Feed back the output "Y Position" to the **Pos Y** of the panel.
+Finally hook up the outputs `Click` and `Map Moved` signal to change the state between "On Screen" and "Off Screen". Feed back the output "Y Position" to the **Pos Y** of the panel.
 
 <div className="ndl-image-with-background l">
 
@@ -111,13 +109,3 @@ Finally hook up the outputs **Click** and **Map Moved** signal to change the sta
 </div>
 
 Now you should be able to move around and click on the map, showing and hiding the panel printing the longitude and latitude.
-
-If you want to import the final project, click the "Import" button below and follow the instructions.
-
-import ImportButton from '/src/components/importbutton'
-import useBaseUrl from '@docusaurus/useBaseUrl'
-
-<div className="ndl-image-with-background l">
-    <img src={useBaseUrl("/library/modules/mapbox/guides/interacting/final-result.gif")} className="ndl-image large"></img>
-    <ImportButton zip="interacting.zip" name="Mapbox Interactions" thumb="screen-2.png"/>
-</div>
