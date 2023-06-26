@@ -86,7 +86,7 @@
     "project": "library/prefabs/modal/modal-0-1.zip",
     "docs": "/library/prefabs/modal/",
     "tags": ["UI"]
-  },  
+  },
   {
     "label": "Toast",
     "desc": "Contains Toast messages for success, warnings, errors, and neutral.",
@@ -230,5 +230,13 @@
     "project": "library/prefabs/pdf/pdf-0-1.zip",
     "docs": "/library/prefabs/pdf/",
     "tags": ["Cloud"]
-  }        
+  },
+  {
+    "label": "Xano",
+    "desc": "Connects to Xano and handles queries, users and authTokens. Built by @gmaison.",
+    "icon": "library/prefabs/xano/xano-thumb.png",
+    "project": "library/prefabs/xano/xano-prefab-1.zip",
+    "docs": "/library/prefabs/xano/",
+    "tags": ["Data"]
+  }
 ]
