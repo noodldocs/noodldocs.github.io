@@ -238,5 +238,13 @@
     "project": "library/prefabs/xano/xano-prefab-1.zip",
     "docs": "/library/prefabs/xano/",
     "tags": ["Data"]
+  },
+  {
+    "label": "Supabase",
+    "desc": "Connects to Supabase and handles queries, users and authTokens. Built by @gmaison and @RicoTrevisan.",
+    "icon": "library/prefabs/supabase/thumb.png",
+    "project": "library/prefabs/supabase/supabase-prefab-1.zip",
+    "docs": "/library/prefabs/supabase/",
+    "tags": ["Data"]
   }
 ]
