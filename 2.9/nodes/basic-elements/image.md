@@ -36,7 +36,7 @@ This node supports the following [Visual Input Properties](/nodes/shared-props/i
 -   [Placement](/nodes/shared-props/inputs/visual-input-properties#placement)
 -   [Dimension Constraints](/nodes/shared-props/inputs/visual-input-properties#dimension-constraints)
 -   [Other](/nodes/shared-props/inputs/visual-input-properties#other)
--   [Advanced Style](/nodes/shared-props/inputs/visual-input-properties#advanced-style)
+-   [Advanced HTML](/nodes/shared-props/inputs/visual-input-properties#advanced-html)
 
 ## Outputs
 
@@ -414,7 +414,7 @@ The Dimension Constraints Gadget allows you to clamp the values of the [Dimensio
 | <span className="ndl-data">Block Pointer Events</span>   | This will cause this node to block all pointer events, e.g. any node that is behind this node will not receive pointer events.                                                                                                                            |
 | <span className="ndl-data">Mounted</span>                | This property is used to completely remove the node from the DOM. If this property is set to false the node is removed from the visual tree. It differs from the _Visible_ property where the node is still part of the visual tree but invisible.        |
 
-## Advanced Style
+## Advanced HTML
 
 | Data                                        | Description                                                             |
 | ------------------------------------------- | ----------------------------------------------------------------------- |

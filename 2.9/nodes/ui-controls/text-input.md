@@ -28,12 +28,15 @@ The captured value can easily be connected to other nodes in a project.
 
 ## Inputs
 
+<div className="ndl-table-35-65">
+
 | Data                                                  | Description                                                                                                                                                                                                                                                                                    |
 | ----------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <span className="ndl-data">Text</span>                | The text string of the Text Input node. Setting this will change the current text, unless _Set_ is connected, then it will be updated when _Set_ receives a signal.                                                                                                                            |
 | <span className="ndl-data">Type</span>                | The type of the Text Input.<br/><br/>`Text`: A single line text input (default).<br/>`Text Area`: A multi line text input.<br/>`Email`: A single line email text input.<br/>`Number`: A single line number input.<br/>`Password`: A single line password input, will mask password by default. |
 | <span className="ndl-data">Placeholder</span>         | The placeholder text for when the Text Input is empty.                                                                                                                                                                                                                                         |
 | <span className="ndl-data">Placeholder Opacity</span> | The opacity of the placeholder text. `0` is completely transparent and invisible. `1` is completely solid and opaque.                                                                                                                                                                          |
+| <span className="ndl-data">Text Alignment</span>      | The alignment of the text string within the Text Input node's bounding box.                                                                                                                                                                                                                    |
 
 | Signal                                    | Description                                                                                                                                                                                           |
 | ----------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -42,25 +45,29 @@ The captured value can easily be connected to other nodes in a project.
 | <span className="ndl-signal">Focus</span> | Focuses the text field.<br/><br/>_Note_: Some browsers, most notably Safari, only allow focus if it originates from a user event, like a click. So using a Delay node or other method might not work. |
 | <span className="ndl-signal">Blur</span>  | Removes the keyboard focus.                                                                                                                                                                           |
 
+</div>
+
 ### Visual
 
 This node supports the following [Visual Input Properties](/nodes/shared-props/inputs/visual-input-properties/):
 
--   [Margin](/nodes/shared-props/inputs/visual-input-properties/#margin)
--   [Padding](/nodes/shared-props/inputs/visual-input-properties/#padding)
--   [Alignment](/nodes/shared-props/inputs/visual-input-properties/#alignment)
--   [Dimensions](/nodes/shared-props/inputs/visual-input-properties/#dimensions)
--   [Layout, Position](/nodes/shared-props/inputs/visual-input-properties/#-position)
--   [Text Style](/nodes/shared-props/inputs/visual-input-properties/#text-style)
--   [Style](/nodes/shared-props/inputs/visual-input-properties/#style)
--   [Border Style](/nodes/shared-props/inputs/visual-input-properties/#border-style)
--   [Corner Radius](/nodes/shared-props/inputs/visual-input-properties/#corner-radius)
--   [Box Shadow](/nodes/shared-props/inputs/visual-input-properties/#box-shadow)
--   [Placement](/nodes/shared-props/inputs/visual-input-properties/#placement)
--   [Other](/nodes/shared-props/inputs/visual-input-properties/#other)
--   [Advanced Style](/nodes/shared-props/inputs/visual-input-properties/#advanced-style)
+- [Margin](/nodes/shared-props/inputs/visual-input-properties/#margin)
+- [Padding](/nodes/shared-props/inputs/visual-input-properties/#padding)
+- [Alignment](/nodes/shared-props/inputs/visual-input-properties/#alignment)
+- [Dimensions](/nodes/shared-props/inputs/visual-input-properties/#dimensions)
+- [Layout, Position](/nodes/shared-props/inputs/visual-input-properties/#-position)
+- [Text Style](/nodes/shared-props/inputs/visual-input-properties/#text-style)
+- [Style](/nodes/shared-props/inputs/visual-input-properties/#style)
+- [Border Style](/nodes/shared-props/inputs/visual-input-properties/#border-style)
+- [Corner Radius](/nodes/shared-props/inputs/visual-input-properties/#corner-radius)
+- [Box Shadow](/nodes/shared-props/inputs/visual-input-properties/#box-shadow)
+- [Placement](/nodes/shared-props/inputs/visual-input-properties/#placement)
+- [Other](/nodes/shared-props/inputs/visual-input-properties/#other)
+- [Advanced HTML](/nodes/shared-props/inputs/visual-input-properties/#advanced-html)
 
 ## Outputs
+
+<div className="ndl-table-35-65">
 
 | Data                                   | Description              |
 | -------------------------------------- | ------------------------ |
@@ -69,6 +76,8 @@ This node supports the following [Visual Input Properties](/nodes/shared-props/i
 | Signal                                       | Description                                        |
 | -------------------------------------------- | -------------------------------------------------- |
 | <span className="ndl-signal">On Enter</span> | Signal triggered when Enter/Return key is pressed. |
+
+</div>
 
 It also features the standard set of UI control <span className="ndl-signal">signals</span>:
 
@@ -99,9 +108,9 @@ Apart from triggering <span className="ndl-signal">signals</span> the Checkbox n
 
 This node supports the following [Visual Output Properties](/nodes/shared-props/outputs/visual-output-properties/):
 
--   [Bounding Box](/nodes/shared-props/outputs/visual-output-properties/#bounding-box)
--   [Mounted](/nodes/shared-props/outputs/visual-output-properties/#mounted)
--   [Other](/nodes/shared-props/outputs/visual-output-properties/#other)
+- [Bounding Box](/nodes/shared-props/outputs/visual-output-properties/#bounding-box)
+- [Mounted](/nodes/shared-props/outputs/visual-output-properties/#mounted)
+- [Other](/nodes/shared-props/outputs/visual-output-properties/#other)
 
 <div className="hidden-props-for-editor">
 
@@ -467,7 +476,7 @@ The Dimension Constraints Gadget allows you to clamp the values of the [Dimensio
 | <span className="ndl-data">Block Pointer Events</span>   | This will cause this node to block all pointer events, e.g. any node that is behind this node will not receive pointer events.                                                                                                                            |
 | <span className="ndl-data">Mounted</span>                | This property is used to completely remove the node from the DOM. If this property is set to false the node is removed from the visual tree. It differs from the _Visible_ property where the node is still part of the visual tree but invisible.        |
 
-## Advanced Style
+## Advanced HTML
 
 | Data                                        | Description                                                             |
 | ------------------------------------------- | ----------------------------------------------------------------------- |

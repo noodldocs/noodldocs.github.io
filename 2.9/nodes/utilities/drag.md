@@ -69,7 +69,7 @@ The Drag node can only have one child, but that child can have many children.
 
 This node supports the following [Visual Input Properties](/nodes/shared-props/inputs/visual-input-properties):
 
--   [Advanced Style](/nodes/shared-props/inputs/visual-input-properties#advanced-style)
+-   [Advanced HTML](/nodes/shared-props/inputs/visual-input-properties#advanced-html)
 
 ## Outputs
 

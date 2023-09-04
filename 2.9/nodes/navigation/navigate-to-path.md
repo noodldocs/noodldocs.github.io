@@ -28,10 +28,13 @@ In a way, **Navigate To Path** is very much like writing a URL directly into the
 
 ## Inputs
 
+<div className="ndl-table-35-65">
+
 | Data                                               | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | -------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <span className="ndl-data">Path</span>             | <##input:path##>Use this property to set the path to navigate to. Note that the **Path** should not include the domain but only the route within the Noodl project. The **Path** may include a **Path Parameter** as the final part, that will be forwarded to the receiving **Page**. You can also use `{}` to make part of the **Path** dynamic and expose the part as an input. For example the path `/{a}/{b}/` will expose two new inputs _a_ and _b_.<##input##> |
 | <span className="ndl-data">Query Parameters</span> | You can add any number of **Query Parameters** that will be forwarded to the receiving [Page](/nodes/navigation/page/) through their [Page](/nodes/navigation/page-inputs/) node.                                                                                                                                                                                                                                                                                      |
+| <span className="ndl-data">Open in new tab</span>  | Open the new page in a new browser tab.                                                                                                                                                                                                                                                                                                                                                                                                                                |
 
 | Signal                                       | Description                                                                                                                   |
 | -------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
@@ -40,3 +43,5 @@ In a way, **Navigate To Path** is very much like writing a URL directly into the
 <span className="hidden-props-for-editor"><##input:q-\*##>A **Query Parameter** that will be forwarded to the receiving **Page** node through their **Page Inputs** node.<##input##></span>
 
 <span className="hidden-props-for-editor"><##input:p-\*##>A **Path Parameter** that will be part of the **Path**.<##input##></span>
+
+</div>

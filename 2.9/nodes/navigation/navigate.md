@@ -22,10 +22,13 @@ You can use a [Page Inputs](/nodes/navigation/page-inputs) node to pass paramete
 
 ## Inputs
 
-| Data                                          | Description                                                                                                                                                          |
-| --------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <span className="ndl-data">Router</span>      | Here you select which **Page Router** that this **Navigation** node will act on. This input is only available if there are multiple **Page Routers** in the project. |
-| <span className="ndl-data">Target Page</span> | Here you select the **Page** to navigate to. The pages available are based on which **Page Router** this **Navigation** node is associated with.                     |
+<div className="ndl-table-35-65">
+
+| Data                                              | Description                                                                                                                                                          |
+| ------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <span className="ndl-data">Router</span>          | Here you select which **Page Router** that this **Navigation** node will act on. This input is only available if there are multiple **Page Routers** in the project. |
+| <span className="ndl-data">Target Page</span>     | Here you select the **Page** to navigate to. The pages available are based on which **Page Router** this **Navigation** node is associated with.                     |
+| <span className="ndl-data">Open in new tab</span> | Open the new page in a new browser tab.                                                                                                                              |
 
 | Signal                                       | Description                                                                                                       |
 | -------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
@@ -37,8 +40,14 @@ You can use a [Page Inputs](/nodes/navigation/page-inputs) node to pass paramete
 
 <span className="hidden-props-for-editor"><##input:pm-\*##> An input parameter originating from the **Page Inputs** node of the **Target Page**.<##input##></span>
 
+</div>
+
 ## Outputs
+
+<div className="ndl-table-35-65">
 
 | Signal                                        | Description                                                                                    |
 | --------------------------------------------- | ---------------------------------------------------------------------------------------------- |
 | <span className="ndl-signal">Navigated</span> | <##output:navigated##>This event is triggered when a navigation as been performed.<##output##> |
+
+</div>
