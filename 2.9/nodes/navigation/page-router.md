@@ -195,14 +195,14 @@ Here is a list of the values, that should be passed in:
 
 <div className="ndl-table-35-65">
 
-| Display Name            | Value     |
-| ----------------------- | --------- |
-| Align Bottom            | `bottom`  |
-| Align Vertical Center   | `center`  |
-| Align Top               | `top`     |
-| Align Left              | `left`    |
-| Align Horizontal Center | `center`  |
-| Align Right             | `right`   |
+| Display Name            | Value    |
+| ----------------------- | -------- |
+| Align Bottom            | `bottom` |
+| Align Vertical Center   | `center` |
+| Align Top               | `top`    |
+| Align Left              | `left`   |
+| Align Horizontal Center | `center` |
+| Align Right             | `right`  |
 
 </div>
 
@@ -493,10 +493,11 @@ The Dimension Constraints Gadget allows you to clamp the values of the [Dimensio
 
 ## Advanced HTML
 
-| Data                                        | Description                                                             |
-| ------------------------------------------- | ----------------------------------------------------------------------- |
-| <span className="ndl-data">CSS Class</span> | <##input:cssClass##>Specify a CSS class this node will have.<##input##> |
-| **CSS Style**                               | Use this property to specify your custom CSS.                           |
+| Data                                        | Description                                                                                         |
+| ------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| <span className="ndl-data">Tag</span>       | The tag used when this node renders in the app. Only available on the **Group** and **Text** nodes. |
+| <span className="ndl-data">CSS Class</span> | <##input:cssClass##>Specify a CSS class this node will have.<##input##>                             |
+| <span className="ndl-data">CSS Style</span> | Use this property to specify your custom CSS.                                                       |
 
 
 # Visual Output Properties
@@ -553,10 +554,11 @@ The Dimension Constraints Gadget allows you to clamp the values of the [Dimensio
 
 ## Other
 
-| Data                                          | Description                                                                                                                                                                                                                              |
-| --------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <span className="ndl-data">Child Index</span> | <##output:childIndex##>The place this node has in relation to its parent. E.g. if a **Group** has three children, then the first child will have _Child Index_ `0`, the second child will have _Child Index_ `1`, and so on.<##output##> |
-| <span className="ndl-data">This</span>        | <##output:this##>A reference to this node. Used in custom **JavaScript** nodes and more.<##output##>                                                                                                                                     |
+| Data                                             | Description                                                                                                                                                                                                                              |
+| ------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <span className="ndl-data">Child Index</span>    | <##output:childIndex##>The place this node has in relation to its parent. E.g. if a **Group** has three children, then the first child will have _Child Index_ `0`, the second child will have _Child Index_ `1`, and so on.<##output##> |
+| <span className="ndl-data">This</span>           | <##output:this##>A reference to this node. Used in custom **JavaScript** nodes and more.<##output##>                                                                                                                                     |
+| <span className="ndl-data">Children Count</span> | <##output:this##>Outputs the number of children that this node has (if the node supports children).<##output##>                                                                                                                          |
 
 
 </div>
