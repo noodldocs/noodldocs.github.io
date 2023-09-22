@@ -34,22 +34,22 @@ Many of the UI nodes share the same inputs. Please refer to the [Visual Input Pr
 
 This node supports the following properties:
 
--   [Margin](/nodes/shared-props/inputs/visual-input-properties#margin)
--   [Padding](/nodes/shared-props/inputs/visual-input-properties#padding)
--   [Alignment](/nodes/shared-props/inputs/visual-input-properties#alignment)
--   [Dimensions](/nodes/shared-props/inputs/visual-input-properties#dimensions)
--   [Layout](/nodes/shared-props/inputs/visual-input-properties#layout)
--   [Align and justify content](/nodes/shared-props/inputs/visual-input-properties#align-and-justify-content)
--   [Scroll](/nodes/shared-props/inputs/visual-input-properties#scroll)
--   [Style](/nodes/shared-props/inputs/visual-input-properties#style)
--   [Border Style](/nodes/shared-props/inputs/visual-input-properties#border-style)
--   [Corner Radius](/nodes/shared-props/inputs/visual-input-properties#corner-radius)
--   [Box Shadow](/nodes/shared-props/inputs/visual-input-properties#box-shadow)
--   [Placement](/nodes/shared-props/inputs/visual-input-properties#placement)
--   [Dimension Constraints](/nodes/shared-props/inputs/visual-input-properties#dimension-constraints)
--   [Focus](/nodes/shared-props/inputs/visual-input-properties#focus)
--   [Other](/nodes/shared-props/inputs/visual-input-properties#other)
--   [Advanced HTML](/nodes/shared-props/inputs/visual-input-properties#advanced-html)
+- [Margin](/nodes/shared-props/inputs/visual-input-properties#margin)
+- [Padding](/nodes/shared-props/inputs/visual-input-properties#padding)
+- [Alignment](/nodes/shared-props/inputs/visual-input-properties#alignment)
+- [Dimensions](/nodes/shared-props/inputs/visual-input-properties#dimensions)
+- [Layout](/nodes/shared-props/inputs/visual-input-properties#layout)
+- [Align and justify content](/nodes/shared-props/inputs/visual-input-properties#align-and-justify-content)
+- [Scroll](/nodes/shared-props/inputs/visual-input-properties#scroll)
+- [Style](/nodes/shared-props/inputs/visual-input-properties#style)
+- [Border Style](/nodes/shared-props/inputs/visual-input-properties#border-style)
+- [Corner Radius](/nodes/shared-props/inputs/visual-input-properties#corner-radius)
+- [Box Shadow](/nodes/shared-props/inputs/visual-input-properties#box-shadow)
+- [Placement](/nodes/shared-props/inputs/visual-input-properties#placement)
+- [Dimension Constraints](/nodes/shared-props/inputs/visual-input-properties#dimension-constraints)
+- [Focus](/nodes/shared-props/inputs/visual-input-properties#focus)
+- [Other](/nodes/shared-props/inputs/visual-input-properties#other)
+- [Advanced HTML](/nodes/shared-props/inputs/visual-input-properties#advanced-html)
 
 ## Outputs
 
@@ -57,13 +57,13 @@ Many of the UI nodes share the same outputs. Please refer to the [Visual Output 
 
 This node supports the following properties:
 
--   [Scrolling](/nodes/shared-props/outputs/visual-output-properties#scrolling)
--   [Bounding Box](/nodes/shared-props/outputs/visual-output-properties#bounding-box)
--   [Mounted](/nodes/shared-props/outputs/visual-output-properties#mounted)
--   [Pointer Events](/nodes/shared-props/outputs/visual-output-properties#pointer-events)
--   [Hover Events](/nodes/shared-props/outputs/visual-output-properties#hover-events)
--   [Focus](/nodes/shared-props/outputs/visual-output-properties#focus)
--   [Other](/nodes/shared-props/outputs/visual-output-properties#other)
+- [Scrolling](/nodes/shared-props/outputs/visual-output-properties#scrolling)
+- [Bounding Box](/nodes/shared-props/outputs/visual-output-properties#bounding-box)
+- [Mounted](/nodes/shared-props/outputs/visual-output-properties#mounted)
+- [Pointer Events](/nodes/shared-props/outputs/visual-output-properties#pointer-events)
+- [Hover Events](/nodes/shared-props/outputs/visual-output-properties#hover-events)
+- [Focus](/nodes/shared-props/outputs/visual-output-properties#focus)
+- [Other](/nodes/shared-props/outputs/visual-output-properties#other)
 
 <div className="hidden-props-for-editor">
 

@@ -30,7 +30,7 @@ A Component Stack should have a number of _component entries_ that it can push o
 
 With the **clip** property set to <span className="ndl-data">false</span>, the **Component Stack** will automatically take up as much space as available and expand beyond that if its component currently showing is larger. If the **clip** property is set to <span className="ndl-data">true</span> it fill up any available space in its parent container and clip its components if they are larger than that.
 
-If you want to control the size of the **Component Stack** beyond that, you should put it as a child in a [Group](/nodes/basic-elements/group) node.
+If you want to control the size of the **Component Stack** beyond that, you should put it as a child in a [Group](/nodes/basic-elements/group/README.md) node.
 
 <##head##>
 
