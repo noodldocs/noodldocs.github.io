@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunknoodl_docs=self.webpackChunknoodl_docs||[]).push([[1615],{85233:e=>{e.exports=JSON.parse('{"permalink":"/2.9/whats-new","page":1,"postsPerPage":1,"totalPages":13,"totalCount":13,"nextPage":"/2.9/whats-new/page/2","blogDescription":"Blog","blogTitle":"Blog"}')}}]);
