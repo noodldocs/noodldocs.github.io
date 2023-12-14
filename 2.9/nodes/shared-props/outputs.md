@@ -1,3 +1,10 @@
+---
+hide_title: true
+title: Visual Output Properties
+---
+
+<div className="ndl-table-35-65">
+
 # Visual Output Properties
 
 ## Scrolling
@@ -57,3 +64,6 @@
 | <span className="ndl-data">Child Index</span>    | <##output:childIndex##>The place this node has in relation to its parent. E.g. if a **Group** has three children, then the first child will have _Child Index_ `0`, the second child will have _Child Index_ `1`, and so on.<##output##> |
 | <span className="ndl-data">This</span>           | <##output:this##>A reference to this node. Used in custom **JavaScript** nodes and more.<##output##>                                                                                                                                     |
 | <span className="ndl-data">Children Count</span> | <##output:this##>Outputs the number of children that this node has (if the node supports children).<##output##>                                                                                                                          |
+
+
+</div>
